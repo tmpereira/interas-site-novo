@@ -1,8 +1,13 @@
 // Cabeçalho (anúncio + navbar), rodapé, breadcrumbs e coluna principal.
 
 // --- Coluna principal -------------------------------------------------------
-.pagina {
+.conteudo-principal {
   flex: 1 0 auto;
+  width: 100%;
+}
+
+// Contêiner de conteúdo de cada página (a faixa de título ocupa a largura toda, fora dele)
+.pagina {
   width: 100%;
   max-width: calc(#{$largura-conteudo} + 2 * #{$margem-lateral});
   margin: 0 auto;
@@ -119,7 +124,8 @@
 // --- Breadcrumb -------------------------------------------------------------
 .trilha {
   @extend .breadcrumb;
-  margin-top: 1rem;
+  --bs-breadcrumb-divider: "#{$divisor-breadcrumb}";
+  margin-top: 1.8rem;
   margin-bottom: 0.5em;
   font-size: $tamanho-breadcrumb;
 
@@ -176,5 +182,20 @@
     &__redes {
       justify-self: center;
     }
+  }
+}
+
+// --- Faixa de título (páginas de listagem) ----------------------------------
+.faixa-titulo {
+  margin-bottom: 2rem;
+  padding: $espaco-faixa-titulo 0;
+  background-color: $cor-primaria;
+  color: $cor-fundo;
+
+  &__titulo {
+    margin: 0;
+    font-size: $tamanho-titulo-faixa;
+    font-weight: $peso-forte;
+    color: inherit;
   }
 }

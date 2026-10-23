@@ -34,7 +34,7 @@ export default function RootLayout({
           {anuncio && <BarraAnuncio id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto)} />}
           <Navbar titulo={site.titulo} logo={site.logo} logoAlt={site.logo_alt} menu={site.menu} />
         </header>
-        <main id="conteudo" className="pagina">
+        <main id="conteudo" className="conteudo-principal">
           {children}
         </main>
         <Rodape rodape={site.rodape} />

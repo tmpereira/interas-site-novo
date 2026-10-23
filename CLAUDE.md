@@ -720,6 +720,15 @@ Regras:
   `_destaques.scss`.
 - **Âncoras:** `/publicacoes/#artigos` e `/publicacoes/#patentes` (no site antigo
   eram `#articles` e `#patents`). A página de publicações deve usar esses `id`.
+- **Estrutura das páginas:** `main.conteudo-principal` não limita a largura;
+  cada página envolve seu conteúdo em `<div className="pagina">` (coluna de
+  1135px). As páginas de listagem começam com `<FaixaTitulo>` (faixa azul de
+  largura total com o `<h1>`), fora dessa coluna.
+- **Equipe (etapa 5):** `/equipe/` mostra só pessoas com `ativo: true`;
+  `/equipe/[slug]/` é gerada para todas (inclusive inativas, para não quebrar
+  links). O perfil mostra, além do que o site antigo mostrava, os grupos e as
+  publicações da pessoa (campos `grupos` e `pessoas` das outras coleções). A
+  listagem tem breadcrumb, que o site antigo não tinha (CLAUDE.md, seção 7).
 - **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
   faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
 

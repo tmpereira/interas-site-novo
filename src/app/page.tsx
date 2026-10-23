@@ -9,7 +9,7 @@ import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 export default function Home() {
   const { home, noticias, publicacoes } = carregarConteudo();
   return (
-    <>
+    <div className="pagina">
       <Hero hero={home.hero} />
 
       <section className="apresentacao">
@@ -39,6 +39,6 @@ export default function Home() {
         </h2>
         <ListaPublicacoes publicacoes={publicacoes.slice(0, home.publicacoes.quantidade)} />
       </section>
-    </>
+    </div>
   );
 }

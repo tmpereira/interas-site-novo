@@ -1,1 +1,145 @@
-// Estilos do componente: pessoas
+// Equipe: listagem por categoria (cartões) e perfil de cada pessoa.
+
+// --- Listagem ---------------------------------------------------------------
+.secao-equipe {
+  margin-top: 2.5rem;
+
+  h2 {
+    margin-top: 0;
+    font-size: $tamanho-secao-equipe;
+    font-weight: $peso-forte;
+  }
+}
+
+.grade-pessoas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5em;
+
+  @media (max-width: $bp-destaque) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.card-pessoa {
+  @extend .card;
+
+  &__link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__foto {
+    position: relative;
+    height: $altura-foto-cartao;
+    overflow: hidden;
+    border-top-left-radius: $raio-imagem;
+    border-top-right-radius: $raio-imagem;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__corpo {
+    @extend .card-body;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__nome {
+    margin: 0;
+    font-size: $tamanho-nome-cartao;
+    font-weight: $peso-medio;
+  }
+
+  &__cargo {
+    margin: 0;
+    font-size: $tamanho-cargo-cartao;
+  }
+}
+
+// --- Perfil -----------------------------------------------------------------
+.perfil {
+  max-width: $largura-perfil;
+  margin: 0 auto;
+
+  &__cabecalho {
+    margin-top: $espaco-topo-perfil;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__foto {
+    position: relative;
+    width: $tamanho-foto-perfil;
+    height: $tamanho-foto-perfil;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__nome {
+    margin-bottom: 0.25rem;
+    font-size: $tamanho-titulo-perfil;
+    font-weight: $peso-forte;
+  }
+
+  &__cargo {
+    @extend .lead;
+    margin-bottom: 1.5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: $largura-linha-perfil;
+    margin: 0 auto;
+    padding: 1rem 0 0;
+    border-top: 1px solid $cor-borda;
+    list-style: none;
+  }
+
+  &__botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid $cor-texto-suave;
+    border-radius: $raio-botao;
+    font-size: $tamanho-botao-perfil;
+    color: $cor-texto-suave;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $cor-texto-suave;
+      color: $cor-fundo;
+    }
+  }
+
+  // No perfil, os títulos de seção não têm linha embaixo (como no site antigo)
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: $tamanho-secao-perfil;
+    font-weight: $peso-forte;
+  }
+}
