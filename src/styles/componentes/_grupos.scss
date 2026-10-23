@@ -1,1 +1,25 @@
-// Estilos do componente: grupos
+// Páginas de grupos: abas e conteúdo.
+
+.abas {
+  margin: 1.5rem 0;
+
+  &__lista {
+    @extend .nav;
+    @extend .nav-tabs;
+  }
+
+  &__aba {
+    @extend .nav-link;
+  }
+
+  &__painel {
+    @extend .card;
+    display: block;
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+}

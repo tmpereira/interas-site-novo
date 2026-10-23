@@ -210,7 +210,16 @@
   &__titulo {
     margin: 0;
     font-size: $tamanho-titulo-faixa;
-    font-weight: $peso-forte;
+    font-weight: $peso-titulo;
     color: inherit;
+  }
+
+  &__etiquetas {
+    margin: 0.75rem 0 0;
+
+    .etiqueta {
+      border-color: $cor-etiqueta-faixa;
+      color: $cor-etiqueta-faixa;
+    }
   }
 }

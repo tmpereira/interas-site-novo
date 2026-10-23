@@ -1,1 +1,52 @@
-// Estilos do componente: videos
+// Páginas de vídeos.
+
+.links-video {
+  padding-left: 1.5rem;
+
+  a {
+    font-weight: $peso-forte;
+  }
+}
+
+// Cartões de contato (página de contato)
+.cartoes-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cartao-contato {
+  @extend .card;
+  overflow: hidden;
+  background: $cor-fundo-alternativo;
+
+  h2#{&}__titulo {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background: $cor-cabecalho-cartao-contato;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $cor-texto;
+  }
+
+  &__corpo {
+    padding: 1rem;
+  }
+
+  &--destaque {
+    border: 1px solid $cor-primaria;
+    background: $cor-fundo;
+  }
+
+  &--destaque h2#{&}__titulo,
+  &--destaque &__titulo {
+    background: $cor-primaria;
+    color: $cor-fundo;
+  }
+}

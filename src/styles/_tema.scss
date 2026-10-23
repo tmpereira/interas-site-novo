@@ -3,6 +3,10 @@
 $primary: $cor-primaria;
 $font-family-sans-serif: $fonte-base;
 $font-size-root: $tamanho-fonte-raiz;
+$h1-font-size: $tamanho-h1;
+$h2-font-size: $tamanho-h2;
+$h3-font-size: $tamanho-h3;
+$h4-font-size: $tamanho-h4;
 
 @import "bootswatch/dist/materia/variables";
 @import "bootstrap/scss/bootstrap";

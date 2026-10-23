@@ -6,8 +6,6 @@
 
   h2 {
     margin-top: 0;
-    font-size: $tamanho-secao-equipe;
-    font-weight: $peso-forte;
   }
 }
 
@@ -96,7 +94,7 @@
   &__nome {
     margin-bottom: 0.25rem;
     font-size: $tamanho-titulo-perfil;
-    font-weight: $peso-forte;
+    font-weight: $peso-titulo;
   }
 
   &__cargo {
@@ -140,6 +138,6 @@
     padding-bottom: 0;
     border-bottom: 0;
     font-size: $tamanho-secao-perfil;
-    font-weight: $peso-forte;
+    font-weight: $peso-titulo;
   }
 }

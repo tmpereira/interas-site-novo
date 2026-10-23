@@ -1,0 +1,96 @@
+// Lista com barra de categorias à direita (notícias, vídeos e grupos) e grade de cartões.
+
+.filtro-categorias {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) $largura-barra-categorias;
+  gap: 0 2rem;
+  align-items: start;
+  margin-top: 1rem;
+
+  &__itens {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__barra {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  h2#{&}__titulo {
+    margin: 0.5rem 0;
+    padding: 0;
+    border: 0;
+    font-size: 1rem;
+    font-weight: $peso-titulo;
+  }
+
+  &__lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__opcao {
+    padding: 0.1rem 0;
+    border: 0;
+    background: none;
+    color: $cor-texto;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      font-weight: $peso-forte;
+      color: $cor-primaria;
+    }
+  }
+
+  // Telas pequenas: categorias acima da lista, em linha
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: minmax(0, 1fr);
+
+    &__barra,
+    &__itens {
+      grid-column: 1;
+    }
+
+    &__barra {
+      grid-row: 1;
+    }
+
+    &__itens {
+      grid-row: 2;
+    }
+
+    &__lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+    }
+  }
+}
+
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    min-width: 0;
+  }
+
+  @media (max-width: $bp-destaque) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

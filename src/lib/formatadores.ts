@@ -39,3 +39,10 @@ export function normalizarBusca(texto: string): string {
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase();
 }
+
+/** Minúsculas, sem acentos, com hífens: "Inteligência artificial" → "inteligencia-artificial". */
+export function slugificar(texto: string): string {
+  return normalizarBusca(texto)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}

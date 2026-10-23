@@ -740,6 +740,20 @@ Regras:
   inclui metadados para o Google Acadêmico. As patentes não têm página
   própria: os detalhes do registro ficam num bloco expansível. O bloco
   "Citação" (BibTeX) das páginas antigas não foi portado.
+- **Títulos:** o Quarto usa h1 2rem, h2 1,65rem, h3 1,45rem, h4 1,25rem e peso
+  600 em h1–h3 (o Materia usa h2 = 2rem e peso 500). Estão nos tokens
+  (`$tamanho-h1`...`$peso-titulo`) e valem para todo o site.
+- **Notícias, vídeos e grupos (etapa 7):** as três listagens usam o mesmo
+  componente de cliente `FiltroPorCategoria` (barra "Categorias" à direita,
+  como no Quarto; no celular fica acima da lista). Os itens são renderizados no
+  servidor e passados prontos para ele. Em `/grupos/` o filtro aceita os links
+  antigos `?tema=diagnostico` e `#category=intelig%C3%AAncia%20artificial`.
+  Na notícia, os títulos do corpo descem um nível (o `#` vira `h2`), porque a
+  página já tem o seu `<h1>`. Callouts do Quarto viraram citações (`>`), sem
+  a cor de fundo. Os grupos usam abas acessíveis (`Abas`: setas, Home e End).
+- **Páginas de texto:** `/sobre-o-interas/`, `/areas-de-pesquisa/` e `/contato/`
+  usam `PaginaTexto`; o contato mostra os `cartoes` de `paginas.json`. A página
+  de Áreas de Pesquisa está vazia (só o título), por decisão do usuário.
 - **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
   faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
 

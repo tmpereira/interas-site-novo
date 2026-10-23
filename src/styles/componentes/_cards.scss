@@ -4,7 +4,7 @@
   margin-top: 2rem;
 
   &__titulo a {
-    font-weight: $peso-forte;
+    font-weight: $peso-titulo;
   }
 }
 
@@ -43,12 +43,28 @@
     flex: 1 1 auto;
   }
 
-  &__titulo {
+  &__imagem--alta {
+    height: $altura-imagem-grupo;
+  }
+
+  &__etiquetas {
+    margin: 0 0 0.5rem;
+  }
+
+  &__descricao {
     margin-bottom: 1rem;
-    font-weight: $peso-forte;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: $cor-texto-suave;
+    font-size: $tamanho-descricao-cartao;
+    line-height: 1.5;
+  }
+
+  &__titulo {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    border: 0;
+    font-weight: $peso-medio;
+    font-size: $tamanho-nome-cartao;
+    line-height: 1.2;
+    color: $cor-texto;
   }
 
   &__data {

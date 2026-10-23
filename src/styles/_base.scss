@@ -14,6 +14,15 @@ a {
   text-underline-offset: 3px;
 }
 
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-weight: $peso-titulo;
+}
+
 // Títulos de seção dentro do conteúdo (como no Quarto: linha embaixo)
 .pagina h2,
 .pagina .h2 {
@@ -68,4 +77,93 @@ a {
   font-size: $tamanho-etiqueta;
   text-transform: uppercase;
   color: $cor-texto-suave;
+}
+
+// --- Coluna de leitura (páginas de texto, artigos, vídeos, grupos) ---------
+.leitura {
+  max-width: $largura-artigo;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  &__titulo {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: $tamanho-titulo-artigo;
+    font-weight: $peso-titulo;
+    line-height: 1.25;
+  }
+
+  &__subtitulo {
+    @extend .lead;
+  }
+
+  // Seções com título simples (sem a linha embaixo), como "Descrição" nos vídeos
+  section > h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: $tamanho-secao-perfil;
+    font-weight: $peso-titulo;
+  }
+}
+
+// Título de páginas de listagem sem faixa (ex.: vídeos)
+.cabecalho-pagina {
+  margin-top: 1.5rem;
+
+  &__titulo {
+    margin-bottom: 0.25rem;
+    font-size: $tamanho-titulo-secao-producao;
+    font-weight: $peso-titulo;
+  }
+
+  &__subtitulo {
+    @extend .lead;
+  }
+}
+
+// Texto vindo de Markdown (corpo de notícias, conteúdo de páginas, abas)
+.texto {
+  // Tabelas largas rolam na horizontal, sem estourar a página no celular
+  table {
+    @extend .table;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  h2:first-child,
+  h3:first-child,
+  h4:first-child {
+    margin-top: 0;
+  }
+
+  img {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+// Ficha de metadados (autor, data de publicação...)
+.ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2rem;
+  margin: 1.5rem 0;
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  &__rotulo {
+    font-size: $tamanho-rotulo;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $cor-texto-suave;
+  }
+
+  &__valor {
+    margin: 0 0 0.75rem;
+  }
 }

@@ -1,7 +1,8 @@
 // Consultas sobre o conteúdo validado, usadas pelas páginas.
 
 import { carregarConteudo } from "./conteudo.ts";
-import type { CategoriaPessoa, Grupo, Pagina, Pessoa, Publicacao } from "./esquemas.ts";
+import type { CategoriaPessoa, Grupo, Noticia, Pagina, Pessoa, Publicacao } from "./esquemas.ts";
+import { markdownParaTexto, truncarTexto } from "./markdown.ts";
 
 /** Página institucional ou texto de abertura de uma listagem (content/paginas.json). */
 export function paginaPorSlug(slug: string): Pagina {
@@ -33,4 +34,17 @@ export function publicacoesDaPessoa(slug: string): Publicacao[] {
 export function gruposDaPessoa(pessoa: Pessoa): Grupo[] {
   const { grupos } = carregarConteudo();
   return pessoa.grupos.map((s) => grupos.find((g) => g.slug === s)).filter((g): g is Grupo => Boolean(g));
+}
+
+/**
+ * Resumo de uma notícia na listagem: o campo `resumo` ou, se vazio, o primeiro parágrafo do corpo
+ * (sem títulos, imagens, listas, citações e tabelas), cortado em ~200 caracteres.
+ */
+export function resumoDaNoticia(noticia: Noticia): string {
+  if (noticia.resumo) return noticia.resumo;
+  const paragrafo = noticia.corpo
+    .split(/\n{2,}/)
+    .map((b) => b.trim())
+    .find((b) => b && !/^(#|!\[|>|\||[-*+] |\d+\. |:::|---)/.test(b));
+  return truncarTexto(markdownParaTexto(paragrafo ?? ""), 200);
 }
