@@ -256,6 +256,7 @@ cada categoria.
       "citacoes": null,
       "fator_impacto": null,
       "qualis": null,
+      "colaboracao_internacional": null,
       "fonte": "bib-2026-04-15"
     }
   ]
@@ -272,6 +273,9 @@ cada categoria.
   publicações de cada pessoa no perfil dela.
 - `grupos`: slugs de `grupos.json` (substitui o antigo `gpesqlab`). Links de
   preprint/materiais, se existirem, entram como `preprint` e `materiais`.
+- `colaboracao_internacional`: `true`, `false` ou `null` (ainda não informado).
+  A tabela de `/publicacoes/` mostra Sim / Não / "—" e, quando algum registro
+  tiver valor, ganha o filtro "Colaboração internacional".
 - **Métricas** (`citacoes`, `fator_impacto`, `qualis`) começam como `null`. A
   página de publicações as exibe **quando preenchidas** e permite ordenar e
   filtrar por elas; quando estão todas vazias, não aparecem. Outros campos
@@ -729,8 +733,12 @@ Regras:
   links). O perfil mostra, além do que o site antigo mostrava, os grupos e as
   publicações da pessoa (campos `grupos` e `pessoas` das outras coleções). A
   listagem tem breadcrumb, que o site antigo não tinha (CLAUDE.md, seção 7).
-- **Publicações (etapa 6):** `/publicacoes/` tem a seção `#artigos` (lista com
-  busca por título/autor/periódico, filtro por ano e ordenação) e a seção
+- **Publicações (etapa 6, tabela desde o pedido do usuário):** `/publicacoes/` tem a seção `#artigos`
+  como **tabela** com as colunas Ano, Título, JCR (`fator_impacto`), Autores e
+  Internacional (`colaboracao_internacional`), ordenáveis pelo cabeçalho. O
+  título leva direto ao DOI da revista (sem DOI, à página de detalhe). Busca por
+  título/autor/periódico e filtro por ano continuam. Antes era uma lista
+  com busca, filtro por ano e ordenação e a seção
   `#patentes`. Os controles de **grupo, Qualis, citações e fator de impacto só
   aparecem quando algum registro tem esses dados** (hoje todos estão vazios);
   se `grupos` ou as métricas forem preenchidos em `publicacoes.json`, os

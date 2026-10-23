@@ -147,6 +147,12 @@
               "null"
             ]
           },
+          "colaboracao_internacional": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
           "fonte": {
             "type": "string",
             "minLength": 1

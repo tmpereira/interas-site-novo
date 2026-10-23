@@ -128,6 +128,8 @@ export const publicacao = z.looseObject({
   citacoes: z.number().int().min(0).nullable(),
   fator_impacto: z.number().min(0).nullable(),
   qualis: z.string().nullable(),
+  /** Tem coautoria internacional? `null` = ainda não informado (a tabela mostra "—"). */
+  colaboracao_internacional: z.boolean().nullable().optional(),
   /** Origem do registro, ex.: "bib-2026-04-15" ou "lattes-2026-11-03". */
   fonte: texto,
   preprint: url.nullable().optional(),

@@ -126,40 +126,81 @@
   }
 }
 
-.lista-artigos {
-  @include lista-sem-marcador;
+// Tabela de artigos: ano, título (link para o DOI), JCR, autores e coautoria internacional
+.tabela-artigos {
+  overflow-x: auto;
+  border: 1px solid $cor-borda;
+  border-radius: $raio-tabela;
 
-  &__item {
-    @include item-duas-colunas;
-  }
+  &__tabela {
+    width: 100%;
+    min-width: $largura-minima-tabela;
+    border-collapse: collapse;
 
-  &__data,
-  &__autores {
-    font-size: $tamanho-texto-meta;
-    color: $cor-texto;
-  }
+    th,
+    td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid $cor-borda;
+      vertical-align: top;
+    }
 
-  &__autores {
-    margin: 0;
-  }
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
 
-  &__titulo {
-    @include titulo-de-lista;
-
-    &:hover {
-      text-decoration: underline;
+    tbody tr:hover {
+      background: $cor-fundo-alternativo;
     }
   }
 
-  &__periodico,
-  &__metricas {
-    margin: 0.25rem 0 0;
+  &__cabecalho {
+    background: $cor-fundo-alternativo;
+    white-space: nowrap;
+  }
+
+  &__ordenar {
+    padding: 0;
+    border: 0;
+    background: none;
+    font-weight: $peso-titulo;
+    color: $cor-texto;
+    cursor: pointer;
+  }
+
+  &__seta {
+    margin-left: 0.35rem;
     font-size: $tamanho-texto-meta;
     color: $cor-texto-suave;
   }
 
-  &__metricas span + span::before {
-    content: " · ";
+  &__ano,
+  &__jcr,
+  &__internacional {
+    white-space: nowrap;
+  }
+
+  &__jcr,
+  &__cabecalho--jcr {
+    text-align: right;
+  }
+
+  &__titulo {
+    min-width: $largura-coluna-titulo;
+
+    a {
+      color: $cor-primaria;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__autores {
+    min-width: $largura-coluna-autores;
+    font-size: $tamanho-texto-meta;
+    color: $cor-texto-suave;
   }
 }
 

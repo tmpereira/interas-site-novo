@@ -4,7 +4,6 @@ import FiltroPublicacoes, { type ItemPublicacao } from "@/components/FiltroPubli
 import ListaPatentes from "@/components/ListaPatentes";
 import { carregarConteudo } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
-import { formatarData } from "@/lib/formatadores";
 import { markdownEmLinha } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 
@@ -23,15 +22,15 @@ export default function Publicacoes() {
     titulo: p.titulo,
     tituloHtml: markdownEmLinha(p.titulo),
     autores: p.autores.join(", "),
-    primeiroAutor: p.autores[0] ?? "",
     ano: p.ano,
-    dataExibida: formatarData(p.data),
     data: p.data,
     periodico: p.periodico,
     grupos: p.grupos,
     citacoes: p.citacoes,
     fator_impacto: p.fator_impacto,
     qualis: p.qualis,
+    doi: p.doi,
+    internacional: p.colaboracao_internacional ?? null,
   }));
   const gruposComPublicacao = grupos.filter((g) => publicacoes.some((p) => p.grupos.includes(g.slug))).map((g) => ({ slug: g.slug, titulo: g.titulo }));
 
