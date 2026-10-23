@@ -1,0 +1,15 @@
+// Tokens visuais: os ÚNICOS valores fixos de estilo do projeto.
+// Os demais arquivos SCSS só referenciam estas variáveis.
+// Os valores serão portados do custom.scss antigo na etapa 4 (layout base).
+
+// Cores
+$cor-primaria: #2196f3; // primária do Bootswatch Materia
+
+// Tipografia
+$fonte-base: "Roboto", -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
+
+// Mesmos tokens expostos como variáveis CSS
+:root {
+  --cor-primaria: #{$cor-primaria};
+  --fonte-base: #{$fonte-base};
+}

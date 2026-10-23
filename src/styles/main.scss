@@ -1,0 +1,14 @@
+// Ponto de entrada único do estilo do site. Só importa os demais, nesta ordem.
+@import "tokens";
+@import "tema";
+@import "base";
+@import "layout";
+
+@import "componentes/hero";
+@import "componentes/destaques";
+@import "componentes/cards";
+@import "componentes/pessoas";
+@import "componentes/publicacoes";
+@import "componentes/noticias";
+@import "componentes/grupos";
+@import "componentes/videos";

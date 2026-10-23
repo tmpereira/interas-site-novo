@@ -1,0 +1,25 @@
+# Cópia do site antigo (Quarto) — só leitura, nunca versionar
+/_legado/
+
+# dependências
+/node_modules
+/.pnp
+.pnp.*
+
+# Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# diversos
+.DS_Store
+*.pem
+npm-debug.log*
+
+# variáveis de ambiente
+.env*
+
+# vercel
+.vercel

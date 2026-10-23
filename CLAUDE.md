@@ -1,0 +1,714 @@
+# Site do INCT INTERAS — reconstrução em Next.js
+
+Este arquivo orienta o Claude Code na reconstrução e na manutenção do site do
+INCT INTERAS (Instituto Nacional de Ciência e Tecnologia das Radiações na
+Saúde), hoje em www.interas.org. Leia este arquivo inteiro antes de começar
+qualquer etapa.
+
+Idioma de trabalho: **português do Brasil** (conversa, comentários no código,
+mensagens de commit e conteúdo do site).
+
+---
+
+## 1. Contexto e motivação
+
+O site atual está no repositório `https://github.com/interas-inct/interaswebsite`
+e é feito em **Quarto** (ecossistema R), gerado localmente na pasta `docs/` e
+publicado pelo GitHub Pages. Ele funciona, mas é muito trabalhoso de atualizar:
+
+- Cada pessoa da equipe é um arquivo `.qmd` separado (≈ 94 arquivos em 8 pastas),
+  cada um com YAML e um bloco de HTML de breadcrumb copiado à mão.
+- Cada artigo é um `.qmd` gerado por um script R (`gera_pub_bib2.R`) a partir de
+  um `.bib` do Zotero (≈ 368 arquivos). Atualizar exige rodar o R e regerar tudo.
+- Cada notícia, vídeo, grupo e patente também é um arquivo `.qmd` próprio.
+- É preciso ter R + Quarto instalados e commitar a saída gerada (`docs/`, 58 MB).
+- Há 4 cópias de `.bib` acumuladas no repositório.
+
+**Objetivo:** refazer o site em Next.js, mantendo o mesmo visual e o mesmo
+conteúdo, com **todo o conteúdo em arquivos JSON**. A manutenção do dia a dia
+será feita pelo usuário pedindo ao Claude Code coisas como "extraia os artigos
+novos do Lattes deste pesquisador e atualize `publicacoes.json`" ou "inclua esta
+pessoa como líder de laboratório". Por isso a base de dados precisa ser
+previsível, validada e fácil de ler e editar por máquina.
+
+---
+
+## 2. Decisões já tomadas (não reabrir sem o usuário pedir)
+
+| Tema | Decisão |
+|---|---|
+| Framework | **Next.js** (App Router, TypeScript) com **exportação estática** (`output: 'export'`). O site final é só HTML/CSS/JS. |
+| Conteúdo | **Tudo em JSON**, na pasta `content/`: configurações do site, home, pessoas, publicações, patentes, grupos, vídeos e páginas institucionais. **Única exceção: notícias**, que ficam na pasta `content/noticias/`, **um arquivo Markdown por notícia** (seção 6.5). Nada de YAML nem `.bib` como fonte do site. |
+| Quem edita | Apenas o usuário, no **VS Code**, normalmente pedindo ao **Claude Code** para atualizar os JSON. **Não criar CMS, painel /admin nem formulários.** |
+| Hospedagem futura | Vercel, plano Hobby, conta pessoal do usuário. **Não configurar deploy agora.** |
+| Visual | **Manter o visual atual** (tema Bootswatch *Materia* + `custom.scss`, logos, banner, cores). Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9). |
+| Fora do escopo | "INTERAS em números", "Preprints", "Mulheres INTERAS". Não migrar. |
+| Versão em inglês | **Última etapa**, só depois que o site em português estiver pronto e aprovado. |
+| Ambiente | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois. |
+| Banco de dados / backend | Nenhum. Tudo é gerado no build a partir dos JSON do repositório. |
+
+---
+
+## 3. Princípios do projeto
+
+1. **Conteúdo é dado, não código.** Todo conteúdo fica em `content/`
+   (`*.json` e `noticias/*.md`). Componentes React nunca contêm texto
+   institucional fixo, exceto rótulos de interface.
+2. **Uma coleção = um arquivo JSON.** Cada tipo de conteúdo (pessoas,
+   publicações, grupos...) é uma lista dentro de um único arquivo. Adicionar
+   algo é acrescentar um objeto à lista, nunca criar arquivos novos (exceto
+   imagens). **Exceção: notícias**, em que cada notícia é um arquivo `.md`
+   dentro de `content/noticias/`.
+3. **Textos longos ficam dentro do JSON**, em um campo `conteudo` com
+   **Markdown** (string). Nas notícias, o próprio corpo do arquivo `.md` é o
+   texto. O site converte o Markdown em HTML no build.
+4. **Páginas de detalhe são geradas automaticamente** (`generateStaticParams`)
+   a partir dos dados. Ninguém cria página à mão.
+5. **Validação no build.** Todos os JSON e os cabeçalhos das notícias são
+   validados com **Zod**. Se faltar
+   um campo obrigatório, um `id` estiver duplicado, uma categoria for inválida
+   ou uma referência apontar para algo inexistente (ex.: grupo com `slug` de
+   pessoa que não existe), o build falha com mensagem clara em português
+   indicando o arquivo, o item e o campo.
+6. **Campos extras são permitidos.** Os esquemas validam só o que é
+   obrigatório e aceitam campos adicionais (`.passthrough()`), para que o
+   usuário possa enriquecer os dados (citações, fator de impacto, Qualis,
+   ORCID...) sem alterar código.
+7. **Simplicidade.** Poucas dependências. Nada de CMS, banco, autenticação,
+   API routes ou recursos que exijam servidor.
+8. **Breadcrumbs, menus e listagens são componentes**, nunca HTML repetido no
+   conteúdo.
+
+---
+
+## 4. Stack técnica
+
+- Next.js (versão estável mais recente) + TypeScript + App Router
+- `output: 'export'`, `images: { unoptimized: true }`, `trailingSlash: true`
+- **Bootstrap 5 + Bootswatch Materia** (via npm) + **Sass**
+- **Bootstrap Icons** (o site atual usa ícones `bi-*`)
+- `zod` para validar os JSON; `zod-to-json-schema` para gerar os JSON Schemas
+  (seção 6.0)
+- `remark` + `remark-gfm` + `rehype` para converter os campos `conteudo` e o
+  corpo das notícias (Markdown) em HTML
+- `gray-matter` para ler o cabeçalho (front matter) das notícias
+- Busca/filtro de publicações no cliente, sem biblioteca pesada (filtro simples
+  em JS é suficiente para ~400 itens)
+- Somente nos scripts de migração (`scripts/migracao/`): `yaml` para ler os
+  `.qmd` antigos, e `@retorquere/bibtex-parser` para ler o `.bib`
+  antigo. Essas bibliotecas não são usadas pelo site.
+
+Antes de instalar, confira as versões atuais dos pacotes; não fixe versões de
+memória.
+
+---
+
+## 5. Estrutura de pastas alvo
+
+```
+/
+├── CLAUDE.md
+├── content/                    # TODA a base de dados do site
+│   ├── site.json               # título, menu, anúncio, rodapé, redes, Google Analytics
+│   ├── home.json               # hero, apresentação e blocos de destaque da página inicial
+│   ├── pessoas.json            # toda a equipe
+│   ├── publicacoes.json        # todas as publicações
+│   ├── patentes.json           # patentes, softwares e marcas (INPI)
+│   ├── grupos.json             # grupos e laboratórios
+│   ├── noticias/               # UMA notícia por arquivo Markdown
+│   │   └── <aaaa-mm-dd>-<slug>.md
+│   ├── videos.json             # produções audiovisuais
+│   ├── paginas.json            # páginas institucionais (sobre, áreas de pesquisa, contato)
+│   └── schemas/                # JSON Schemas gerados a partir do Zod (não editar à mão)
+├── public/
+│   ├── images/                 # imagens institucionais (logo, banner, home)
+│   ├── images/grupos/
+│   ├── fotos/pessoas/<slug>.jpg
+│   ├── noticias/<id>/...       # imagens das notícias
+│   ├── videos/...              # capas dos vídeos
+│   └── arquivos/               # PDFs e outros anexos
+├── src/
+│   ├── app/                    # rotas (ver seção 7)
+│   ├── components/             # Navbar, Footer, Breadcrumb, CardPessoa, ListaPublicacoes...
+│   ├── lib/
+│   │   ├── esquemas.ts         # esquemas Zod de todas as coleções (fonte única)
+│   │   └── conteudo.ts         # funções que leem e validam os JSON e as notícias
+│   └── styles/                 # TODO o estilo do site (ver seção 9)
+├── scripts/
+│   ├── migracao/               # scripts de migração ÚNICA do Quarto → content/ (seção 8)
+│   ├── validar.ts              # `npm run validar`: valida todos os JSON sem fazer build
+│   └── gerar-schemas.ts        # `npm run schemas`: regenera content/schemas/
+├── .vscode/settings.json       # associa cada JSON ao seu schema (autocompletar e erros no editor)
+└── _legado/                    # clone do repositório antigo, SÓ LEITURA, no .gitignore
+```
+
+---
+
+## 6. Formatos de dados (esquemas)
+
+Use estes formatos como ponto de partida. Ajuste se a migração revelar campos
+que não estão previstos, mas avise o usuário e atualize esta seção.
+
+### 6.0 Convenções gerais de todos os JSON
+
+- Codificação UTF-8, indentação de **2 espaços**, chaves em português,
+  `snake_case` (ex.: `fator_impacto`, `palavras_chave`).
+- Cada arquivo de coleção é um objeto com uma lista dentro, por exemplo
+  `{ "pessoas": [ ... ] }`. Isso permite incluir `"$schema"` no topo do arquivo.
+- Todo item tem um identificador estável: `id` (publicações, notícias) ou
+  `slug` (pessoas, grupos, vídeos, páginas). Ele vira a URL e **nunca muda**
+  depois de criado. Slugs em minúsculas, sem acentos, com hífens.
+- Datas no formato `AAAA-MM-DD`.
+- Campos sem valor: `null` (não omitir campos obrigatórios; campos opcionais
+  podem ser omitidos).
+- Textos longos: campo `conteudo` com Markdown. Quebras de linha como `\n`.
+  Sem HTML com `style=` nem classes visuais dentro do conteúdo.
+- Caminhos de imagem relativos a `public/`, começando com `/`.
+- Ordem estável dentro de cada arquivo (definida em cada coleção abaixo), para
+  que os diffs no Git fiquem limpos.
+- `src/lib/esquemas.ts` é a fonte única dos formatos. Os arquivos em
+  `content/schemas/` são gerados a partir dele (`npm run schemas`) e o
+  `.vscode/settings.json` os associa aos JSON, para que o VS Code mostre
+  autocompletar e erros enquanto se edita.
+
+### 6.1 `content/pessoas.json`
+
+```json
+{
+  "$schema": "./schemas/pessoas.schema.json",
+  "pessoas": [
+    {
+      "slug": "denise-maria-zezell",
+      "nome": "Denise Maria Zezell",
+      "categoria": "coordenacao",
+      "cargo": "Coordenadora",
+      "ordem": 1,
+      "foto": "/fotos/pessoas/denise-maria-zezell.jpeg",
+      "instituicao": {
+        "nome": "Instituto de Pesquisas Energéticas e Nucleares - IPEN",
+        "url": "http://www.ipen.br"
+      },
+      "grupos": ["lab-biofotonica"],
+      "lattes": "http://lattes.cnpq.br/0751040282401769",
+      "scholar": "https://scholar.google.com/citations?user=T-7bPc0AAAAJ",
+      "orcid": null,
+      "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; ...",
+      "atuacao": "Gerenciar o INCT, coordenação geral e dos subprojetos; ...",
+      "ativo": true
+    }
+  ]
+}
+```
+
+- Ordem no arquivo: por categoria (na ordem da tabela abaixo), depois `ordem`,
+  depois nome.
+- `ativo: false` mantém a pessoa no histórico sem exibi-la na página da equipe.
+- O `lattes` é o identificador usado nas atualizações via Lattes (seção 11).
+
+Categorias válidas (na ordem de exibição da página "Coordenação e Equipe"):
+
+| chave | título da seção | pasta antiga | qtd. aprox. |
+|---|---|---|---|
+| `coordenacao` | Coordenação | `pessoas/coordenacao` | 3 |
+| `comite-gestor` | Comitê Gestor | `pessoas/membro-do-comite-gestor` | 4 |
+| `lider-laboratorio` | Líderes de Laboratórios Associados | `pessoas/lider-de-laboratorio-associado` | 9 |
+| `pesquisador` | Pesquisadores | `pessoas/pesquisador` | 17 |
+| `equipe-estrangeira` | Equipe Estrangeira | `pessoas/equipe-estrangeira` | 9 |
+| `colaborador` | Colaboradores | `pessoas/colaborador` | 6 |
+| `bolsista` | Bolsistas | `pessoas/bolsista` | 44 |
+| `apoio-tecnico` | Apoio Técnico | `pessoas/apoio-tecnico` | 2 |
+
+Confira na listagem antiga (`pessoas/coord-equipe.qmd`) a ordem real das seções
+e os títulos exatos, e siga o que estiver lá. Os títulos das seções ficam em
+`site.json` (não no código).
+
+### 6.2 `content/publicacoes.json`
+
+```json
+{
+  "$schema": "./schemas/publicacoes.schema.json",
+  "publicacoes": [
+    {
+      "id": "abreu_frenectomia_2024",
+      "tipo": "artigo",
+      "titulo": "Frenectomia lingual com laser de alta potência em paciente com transtorno do espectro autista - relato de caso",
+      "autores": ["Abreu, Darlene Felix De", "Batista, Roberta M.", "Moraes, Marcia Cristina Dias De"],
+      "ano": 2024,
+      "data": "2024-01-01",
+      "periodico": "Cadernos de Odontologia",
+      "volume": "6",
+      "numero": "1",
+      "paginas": null,
+      "doi": "10.29327/2442440.6.1-12",
+      "url": null,
+      "resumo": "O transtorno do espectro autista (TEA)...",
+      "palavras_chave": [],
+      "pessoas": ["denise-maria-zezell"],
+      "grupos": [],
+      "citacoes": null,
+      "fator_impacto": null,
+      "qualis": null,
+      "fonte": "bib-2026-04-15"
+    }
+  ]
+}
+```
+
+- `id`: na migração, a chave BibTeX original (ex.: `abreu_frenectomia_2024`).
+  Para artigos novos, seguir o mesmo padrão `sobrenome_primeirapalavra_ano`
+  (minúsculas, sem acentos) e garantir que seja único.
+- Ordem no arquivo: `data` decrescente, depois `id`.
+- `tipo`: `artigo`, `livro`, `capitulo`, `trabalho-evento`, `outro`.
+- `pessoas`: slugs de `pessoas.json` dos membros do INTERAS que são autores.
+  Preencher quando for possível identificar com segurança; permite listar as
+  publicações de cada pessoa no perfil dela.
+- `grupos`: slugs de `grupos.json` (substitui o antigo `gpesqlab`). Links de
+  preprint/materiais, se existirem, entram como `preprint` e `materiais`.
+- **Métricas** (`citacoes`, `fator_impacto`, `qualis`) começam como `null`. A
+  página de publicações as exibe **quando preenchidas** e permite ordenar e
+  filtrar por elas; quando estão todas vazias, não aparecem. Outros campos
+  (ex.: `jcr_quartil`, `area`) podem ser criados livremente.
+- `fonte`: de onde o registro veio (ex.: `bib-2026-04-15`, `lattes-2026-11-03`).
+- **Duplicatas:** antes de incluir um artigo, verificar se já existe pelo DOI
+  (comparação sem diferenciar maiúsculas e sem prefixo `https://doi.org/`) e,
+  sem DOI, por título normalizado + ano. Nunca incluir duas vezes.
+- **Nunca sobrescrever** campos preenchidos manualmente (métricas, `pessoas`,
+  `grupos`) ao atualizar um registro existente.
+
+Geração inicial (migração, seção 8):
+- Fonte: o `.bib` mais recente do repositório antigo
+  (`INTERAS_20260415_ate202604.bib`, 356 entradas: 354 `@article`, 2 `@misc`).
+- **Descartar o campo `file`** (contém caminhos locais do Zotero, ex.:
+  `/home/mario/Zotero/storage/...`).
+- Converter LaTeX residual para texto (sobrescrito, subscrito, `\&`, `\%`,
+  chaves soltas), como fazia a função `sanitize_for_yaml` do script R antigo.
+  Não alterar a capitalização de títulos sem perguntar.
+- O site antigo tinha 368 páginas de artigos, mas o `.bib` atual tem 356
+  entradas. **Investigar a diferença** comparando as chaves dos arquivos em
+  `_legado/publicacoes/artigos/*.qmd` com as do `.bib`, e reportar ao usuário
+  antes de decidir.
+
+### 6.3 `content/patentes.json`
+
+```json
+{
+  "patentes": [
+    {
+      "id": "p2023-software-focal",
+      "titulo": "Software FOCAL",
+      "tipo": "software",
+      "autores": ["Telles, L. F. K.", "Oliveira, L. S. S.", "Santos Filho, M. L.", "Souza, D. N."],
+      "numero": "512023003626-9",
+      "orgao": "INPI - Programa de Computador",
+      "data": "2023-11-24",
+      "categorias": ["Software", "INPI"],
+      "pessoas": [],
+      "conteudo": null
+    }
+  ]
+}
+```
+
+- `tipo`: `patente`, `software`, `marca`, `modelo-utilidade`, `outro`.
+- Ordem: `data` decrescente. Origem: `_legado/publicacoes/patentes/*.qmd`
+  (11 registros); o `id` é o nome do arquivo antigo.
+
+### 6.4 `content/grupos.json`
+
+```json
+{
+  "grupos": [
+    {
+      "slug": "lab-biofotonica",
+      "titulo": "Laboratório de Biofotônica Aplicada",
+      "resumo": "Nosso laboratório busca gerar conhecimento científico...",
+      "imagem": "/images/grupos/lab_biofotonica_g.jpeg",
+      "temas": ["diagnostico", "terapias", "dados", "inteligencia-artificial", "formacao"],
+      "instituicao": "IPEN-CNEN",
+      "site": "https://biophotonics.my.canva.site/",
+      "coordenacao": ["denise-maria-zezell"],
+      "abas": [
+        { "titulo": "Membros do Laboratório", "conteudo": "#### Coordenação\n\n..." }
+      ],
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto..."
+    }
+  ]
+}
+```
+
+- Os grupos antigos usam `::: {.panel-tabset}`; cada aba vira um item de
+  `abas`, exibido com um componente de abas.
+- `coordenacao` são slugs de `pessoas.json` e viram links para os perfis.
+  Links internos antigos (`/pessoas/...qmd`) viram links para a nova rota.
+- `temas` válidos ficam definidos em `site.json` (`temas_grupos`, com `slug` e
+  `rotulo`). Lista inicial a confirmar lendo os `.qmd` dos grupos e os links da
+  `index.qmd` antiga (`grupos.html#category=diagnostico` etc.): `diagnostico`,
+  `terapias`, `moleculas`, `dados`, `inteligencia-artificial`, `formacao`.
+- Ordem: `titulo` alfabético. Origem: `_legado/grupos/*.qmd` (5 grupos).
+
+### 6.5 `content/noticias/` (uma notícia por arquivo Markdown)
+
+Notícias são a única coleção que **não** fica em JSON. Cada notícia é um
+arquivo `.md` dentro de `content/noticias/`. Adicionar uma notícia = criar um
+arquivo novo nessa pasta; apagar = remover o arquivo.
+
+Exemplo: `content/noticias/2026-05-23-2o-workshop-anual.md`
+
+```markdown
+---
+titulo: "2º Workshop Anual do INTERAS"
+data: 2026-05-23
+autor: "Mário O. de Menezes"
+categorias: [evento, pesquisa, interas]
+imagem: /noticias/2026-05-23-2o-workshop-anual/capa.jpg
+resumo: ""
+destaque: false
+---
+
+# 2º Workshop do INCT das Radiações na Saúde
+
+O avanço científico nacional depende, fundamentalmente, da articulação...
+```
+
+- **Nome do arquivo** = `AAAA-MM-DD-slug.md` (minúsculas, sem acentos, com
+  hífens). O nome sem a extensão é o `id` da notícia e vira a URL
+  `/noticias/<id>/`. Não renomear depois de publicada.
+- **Cabeçalho** (entre `---`): `titulo`, `data` e `imagem` obrigatórios;
+  `autor`, `categorias`, `resumo` e `destaque` opcionais. Campos extras são
+  aceitos. O cabeçalho é validado com Zod como os JSON; erros indicam o nome
+  do arquivo e o campo.
+- A `data` do cabeçalho deve coincidir com a data do nome do arquivo (o build
+  avisa se não coincidir).
+- **Corpo**: Markdown padrão (títulos, listas, negrito, links, imagens,
+  tabelas). Sem HTML com `style=` nem classes visuais.
+- Se `resumo` estiver vazio, usar o primeiro parágrafo do corpo na listagem.
+- Imagens da notícia ficam em `public/noticias/<id>/` e são referenciadas no
+  corpo como `![descrição](/noticias/<id>/arquivo.jpg)`.
+- A listagem ordena por `data` decrescente (a ordem dos arquivos na pasta não
+  importa).
+- Origem: `_legado/noticias/posts/<pasta>/index.qmd` (13 notícias). Converter
+  sintaxe do Quarto (`{target="_blank"}`, `::: {.callout}`, `{{< ... >}}` etc.)
+  para Markdown padrão. Links externos abrem em nova aba automaticamente (o
+  site antigo usava `link-external-newwindow: true`).
+
+### 6.6 `content/videos.json`
+
+```json
+{
+  "videos": [
+    {
+      "slug": "centro-lasers-aplicacoes",
+      "titulo": "Centro de Lasers e Aplicações do IPEN-CNEN",
+      "data": "2026-04-10",
+      "resumo": "Apresentação de algumas pesquisas do CELAP",
+      "capa": "/videos/INTERAS_CLA.png",
+      "categorias": ["Dosimetria", "Fotônica", "Ótica"],
+      "links": [
+        { "rotulo": "Servidor Principal (Google Drive)", "url": "https://drive.google.com/file/d/.../view" },
+        { "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)", "url": "https://cloud.cinas.ipen.br/s/..." }
+      ],
+      "conteudo": "Este vídeo apresenta algumas pesquisas..."
+    }
+  ]
+}
+```
+
+- Ordem: `data` decrescente. Origem: `_legado/videos/videos_arqs/*.qmd`.
+
+### 6.7 `content/paginas.json`
+
+```json
+{
+  "paginas": [
+    { "slug": "sobre-o-interas", "titulo": "O INCT INTERAS", "descricao": "...", "conteudo": "..." },
+    { "slug": "areas-de-pesquisa", "titulo": "Áreas de Pesquisa", "descricao": "...", "conteudo": "..." },
+    { "slug": "contato", "titulo": "Contato", "descricao": "...", "conteudo": "..." }
+  ]
+}
+```
+
+Origem: `sobre-o-interas.qmd`, `areas-de-pesquisa.qmd`, `contato.qmd`.
+
+### 6.8 `content/home.json`
+
+Textos e imagens da página inicial: `hero` (título, texto, imagem de fundo),
+`apresentacao` (texto), `destaques` (lista com `titulo`, `texto`, `imagem`,
+`posicao_imagem` = `esquerda` | `direita`, `botao` com rótulo e link), e
+quantos itens mostrar de publicações (6) e notícias (3). Origem: `index.qmd`.
+O HTML com estilo inline da home antiga vira dado aqui + classes CSS nos
+componentes.
+
+### 6.9 `content/site.json`
+
+Título, logo, favicon, itens do menu, `anuncio` (barra de aviso no topo: `id`,
+`ativo`, `icone`, `texto`, `link`, pode ser fechada pelo visitante), rodapé,
+redes sociais, ID do Google Analytics (`G-GSTPFS7CEE`), títulos das categorias
+de pessoas e `temas_grupos`. **Corrigir** no rodapé: o link do GitHub aponta
+para `ipencnensp/interaswebsite` (repositório antigo) e o do Twitter aponta só
+para `twitter.com`. Perguntar ao usuário quais links usar.
+
+---
+
+## 7. Páginas e rotas
+
+| Rota | Conteúdo | Origem antiga |
+|---|---|---|
+| `/` | Hero, apresentação, blocos de destaque, 6 publicações e 3 notícias mais recentes | `index.qmd` |
+| `/sobre-o-interas/` | Página institucional | `sobre-o-interas.qmd` |
+| `/equipe/` | Pessoas ativas agrupadas por categoria, em grade com foto (coordenação) ou cartões com nome e cargo | `pessoas/coord-equipe.qmd` |
+| `/equipe/[slug]/` | Perfil: foto, cargo, links (Lattes, Scholar, ORCID, instituição), áreas, atuação, grupos e publicações da pessoa | `pessoas/*/*.qmd` |
+| `/areas-de-pesquisa/` | Página institucional | `areas-de-pesquisa.qmd` |
+| `/grupos/` | Grade de grupos com filtro por tema (aceitar `#category=...` e `?tema=...`) | `grupos.qmd` |
+| `/grupos/[slug]/` | Página do grupo, com abas | `grupos/*.qmd` |
+| `/publicacoes/` | Artigos (busca por título/autor/periódico, filtro por ano, grupo e métricas, ordenação) + seção de patentes e softwares | `publicacoes/index.qmd` |
+| `/publicacoes/[id]/` | Detalhe: título, autores (membros com link), periódico, volume/número, ano, métricas, resumo, botão DOI | `publicacoes/artigos/*.qmd` |
+| `/noticias/` | Lista de notícias, mais recentes primeiro, com categorias | `noticias/index.qmd` |
+| `/noticias/[id]/` | Notícia | `noticias/posts/*/index.qmd` |
+| `/videos/` | Grade de vídeos | `videos/index.qmd` |
+| `/videos/[slug]/` | Detalhe do vídeo com links | `videos/videos_arqs/*.qmd` |
+| `/contato/` | Página institucional | `contato.qmd` |
+| `404` | Página não encontrada | — |
+
+Menu (mesma organização do site antigo), definido em `site.json`:
+- **INCT INTERAS** ▸ O INCT INTERAS · Coordenação e Equipe · Áreas de Pesquisa · Grupos e Laboratórios · Contato
+- **PRODUÇÃO** ▸ Artigos · Patentes
+- **NOTÍCIAS**
+- **VÍDEOS**
+
+Breadcrumbs automáticos em todas as páginas internas. `lang="pt-BR"`.
+Gerar `sitemap.xml` e metadados (título, descrição, Open Graph com imagem) por
+página.
+
+**Mapa de URLs antigas → novas:** gerar durante a migração
+`scripts/migracao/redirecionamentos.json` com todas as URLs antigas do site
+Quarto (ex.: `/pessoas/bolsista/allan-bereczki.html`) e a nova rota
+correspondente. Será usado depois para configurar redirecionamentos na Vercel,
+preservando links compartilhados e indexados no Google.
+
+---
+
+## 8. Migração do conteúdo (feita uma única vez)
+
+1. O site antigo **já vem dentro de `_legado/`** na raiz do projeto (cópia do
+   repositório `interas-inct/interaswebsite`, sem a pasta `.git` e sem a pasta
+   gerada `docs/`). Conferir que `_legado/` contém `_quarto.yml`, `pessoas/`,
+   `publicacoes/`, `noticias/`, `grupos/`, `videos/`, `images/` e o `.bib`
+   `INTERAS_20260415_ate202604.bib`.
+   - Se `_legado/` não existir ou estiver incompleta, baixar com
+     `git clone --depth 1 https://github.com/interas-inct/interaswebsite.git _legado`
+     e em seguida **apagar `_legado/.git`**, para que a cópia fique desligada
+     do GitHub.
+   - Garantir que `_legado/` está no `.gitignore`. **Nunca editar nada em
+     `_legado/`.**
+2. Escrever scripts em `scripts/migracao/` (Node/TypeScript) que leem os `.qmd`
+   antigos (front matter YAML + corpo) e geram os JSON de `content/`:
+   - pessoas → `pessoas.json` (do YAML: `title`, `subtitle`, `sortby`,
+     `about.image`, `about.links`; do corpo: seções "Instituição", "Áreas de
+     Atuação", "Atuação no Projeto"; a categoria vem da pasta). Copiar fotos de
+     `pessoas/*/fotos/` para `public/fotos/pessoas/`.
+   - `.bib` mais recente → `publicacoes.json`.
+   - patentes, grupos, vídeos, páginas, home e configurações do site
+     (`_quarto.yml`) → JSON correspondentes.
+   - cada notícia antiga (`noticias/posts/<pasta>/index.qmd`) → um arquivo
+     `content/noticias/<aaaa-mm-dd>-<slug>.md` (seção 6.5), com as imagens da
+     pasta movidas para `public/noticias/<id>/`. Pastas antigas sem data
+     completa no nome (ex.: `202504-...`) usam a `date` do front matter.
+   - imagens usadas (`images/`, `images/grupos/`, capas de vídeos e notícias) →
+     `public/`. **Não copiar** imagens que não são referenciadas em lugar nenhum
+     (há várias versões duplicadas `.png`/`.jpeg` e `_v2`); listar para o
+     usuário as que ficaram de fora.
+   - PDFs em `images/` (ex.: `2026-INTERAS-ProgramaPreliminar.pdf`) → verificar
+     se são linkados e, se forem, mover para `public/arquivos/`.
+   - Depois de gerar pessoas e publicações, tentar preencher `pessoas` em cada
+     publicação cruzando nomes de autores com `pessoas.json`. Só marcar
+     correspondências seguras; listar as duvidosas no relatório.
+3. Rodar `npm run validar` e gerar um **relatório de migração**
+   (`scripts/migracao/RELATORIO.md`) com contagens por tipo (antes × depois),
+   campos vazios (ex.: pessoas sem foto, sem Lattes, "Áreas de Atuação" vazias
+   como `-`), itens com problema e decisões tomadas.
+4. Revisar manualmente uma amostra de cada tipo comparando com o site antigo.
+5. Depois de aprovada a migração, os scripts não são mais necessários. Podem
+   ficar no repositório como histórico, mas o site **não depende** deles.
+
+Ignorar na migração: `docs/`, `.Rproj`, `gera_pub_bib*.R`, `ejs/`, `.bib`
+antigos, `interas-em-numeros.qmd`, qualquer coisa de preprints e
+mulheres INTERAS, `.nojekyll`, `CNAME`.
+
+---
+
+## 9. Visual
+
+- Reproduzir o visual atual o mais fielmente possível: tema **Materia** do
+  Bootswatch + regras do `custom.scss` e `custom_logo_interas.scss` antigos
+  (hero com imagem de fundo e 80vh, blocos com imagem esmaecida à esquerda/
+  direita, cartões, cores, tipografia).
+- Navbar com logo `logo_pt_transparente.png`, menu à direita, colapsa abaixo de
+  `lg`. Rodapé com logo pequena, copyright e ícones.
+- Responsivo: conferir em celular (≈ 375px), tablet e desktop.
+- Usar o site no ar (www.interas.org) como referência visual durante o
+  desenvolvimento. Capturar telas do site antigo e do novo lado a lado nas
+  verificações.
+
+### 9.1 Separação total do estilo
+
+Todo o estilo vive em `src/styles/`, separado da estrutura (componentes) e do
+conteúdo (`content/`). Organização:
+
+```
+src/styles/
+├── main.scss            # único ponto de entrada; só importa os demais, na ordem
+├── _tokens.scss         # cores, fontes, tamanhos, espaçamentos, sombras, raios, breakpoints
+├── _tema.scss           # carrega Bootstrap + Bootswatch Materia, sobrescrevendo variáveis com os tokens
+├── _base.scss           # tipografia e elementos HTML gerais
+├── _layout.scss         # navbar, rodapé, barra de anúncio, breadcrumbs, containers
+└── componentes/
+    ├── _hero.scss
+    ├── _destaques.scss  # blocos com imagem esmaecida da home
+    ├── _cards.scss
+    ├── _pessoas.scss
+    ├── _publicacoes.scss
+    ├── _noticias.scss
+    ├── _grupos.scss
+    └── _videos.scss
+```
+
+Regras:
+- **Nenhum valor visual fixo fora de `_tokens.scss`.** Cores, fontes, tamanhos,
+  espaçamentos e sombras são sempre referências a tokens. Expor os tokens
+  também como **variáveis CSS** (`:root { --cor-primaria: ... }`).
+- **Nada de estilo nos componentes React:** sem `style={{...}}`, sem CSS-in-JS,
+  sem cores ou tamanhos no TSX. Componentes usam apenas **classes semânticas**
+  (ex.: `className="card-pessoa"`, `className="destaque destaque--imagem-esquerda"`),
+  definidas nos arquivos SCSS. Classes utilitárias do Bootstrap só para grade e
+  espaçamento básico (`row`, `col-*`, `container`).
+- **Nada de estilo no conteúdo:** os JSON não contêm HTML com `style=` nem
+  classes visuais.
+- Imagens de fundo definidas por conteúdo são passadas como variável CSS
+  (`--imagem-fundo`) a partir do dado, nunca como regra fixa no componente.
+- Um arquivo SCSS por componente visual, com o mesmo nome do componente.
+- Manter o resultado visual idêntico ao do site antigo. A organização acima é
+  sobre **onde** o estilo fica, não sobre mudar a aparência.
+
+---
+
+## 10. Etapas de execução
+
+Fazer **uma etapa por vez**, mostrar o resultado ao usuário e esperar
+aprovação antes de seguir. Fazer commit ao fim de cada etapa.
+
+1. **Preparação** — conferir `_legado/` (seção 8, passo 1), iniciar Git **local** (`git init`,
+   sem remoto), criar o `.gitignore` (com `_legado/`, `node_modules/`, `out/`,
+   `.next/`), criar o projeto Next.js na raiz sem apagar o `CLAUDE.md`,
+   configurar export estático, Bootstrap/Materia/Sass, ESLint e a estrutura de
+   pastas.
+2. **Esquemas** — `src/lib/esquemas.ts` com todos os esquemas Zod,
+   `npm run validar`, `npm run schemas` e `.vscode/settings.json`.
+3. **Migração** — scripts da seção 8, relatório, revisão com o usuário.
+4. **Layout base** — navbar, rodapé, barra de anúncio, breadcrumbs, estilos
+   portados, página inicial a partir de `home.json`.
+5. **Equipe** — listagem por categoria e perfis.
+6. **Publicações** — lista com busca/filtros (e métricas quando preenchidas),
+   páginas de detalhe, patentes.
+7. **Notícias, vídeos, grupos e páginas institucionais.**
+8. **Acabamento** — 404, sitemap, metadados/Open Graph, Google Analytics,
+   acessibilidade (alt em imagens, contraste, navegação por teclado), mapa de
+   redirecionamentos.
+9. **Verificação final** — `npm run build` sem erros nem avisos, checagem de
+   links internos quebrados, comparação visual com o site antigo, contagens
+   batendo com o relatório de migração.
+10. **(Depois, só quando o usuário pedir)** versão em inglês.
+11. **(Depois, só quando o usuário pedir)** publicação na Vercel, branch nova,
+    domínio e redirecionamentos.
+
+---
+
+## 11. Manutenção do site (pedidos do dia a dia ao Claude Code)
+
+Depois de pronto, o usuário vai atualizar o site pedindo ao Claude Code. Siga
+estes procedimentos. **Em todos eles:** editar só o que está em `content/` (e
+`public/` para imagens), respeitar a ordem de cada arquivo, rodar
+`npm run validar` ao final e mostrar ao usuário um resumo do que mudou (itens
+incluídos, alterados e ignorados) antes do commit.
+
+### 11.1 Atualizar publicações a partir do Lattes ou de outra fonte
+
+O usuário pode fornecer o currículo Lattes de um pesquisador (XML exportado
+pela Plataforma Lattes, PDF ou texto copiado), um `.bib`, uma lista de DOIs ou
+outra fonte.
+
+1. Identificar a pessoa em `pessoas.json` (pelo link do Lattes ou pelo nome).
+2. Extrair as publicações da fonte. Por padrão, considerar só as que ainda não
+   estão na base; se o usuário indicar um período ("os artigos de 2026"),
+   respeitar.
+3. Para cada uma, checar duplicata (DOI; sem DOI, título normalizado + ano).
+   - Se já existe: só acrescentar a pessoa em `pessoas` e completar campos
+     vazios (ex.: DOI que faltava). **Nunca sobrescrever** campos preenchidos.
+   - Se é nova: criar o registro no formato da seção 6.2, com `fonte`
+     indicando a origem e a data.
+4. Por padrão incluir apenas **artigos em periódicos**. Outros tipos (eventos,
+   capítulos, livros) só se o usuário pedir.
+5. Não inventar dados: se faltar DOI, volume ou resumo, deixar `null`. Pode-se
+   buscar o DOI ou o resumo em fontes confiáveis (Crossref, site da revista) se
+   o usuário autorizar.
+6. Relatar: quantas novas, quantas já existiam, quais ficaram sem DOI e
+   quaisquer casos duvidosos.
+
+### 11.2 Incluir ou alterar uma pessoa
+
+1. Usar o Lattes (ou os dados fornecidos) para preencher nome, instituição,
+   áreas de atuação, link do Lattes e, se houver, ORCID/Scholar.
+2. A **categoria e o cargo vêm do usuário** ("vai ser líder de laboratório").
+   Se não forem informados, perguntar.
+3. Gerar o `slug` a partir do nome, garantindo que seja único.
+4. Foto: se o usuário fornecer, salvar em `public/fotos/pessoas/<slug>.jpg`.
+5. Se pedido, rodar também o procedimento 11.1 para as publicações da pessoa.
+6. Pessoa que saiu do projeto: marcar `"ativo": false` (não apagar, para não
+   quebrar links de publicações e grupos), a menos que o usuário peça para
+   remover.
+
+### 11.3 Métricas de publicações
+
+Fator de impacto, Qualis, citações e outros indicadores são editados direto em
+`publicacoes.json`. Campos novos podem ser criados livremente (a validação os
+aceita). Ao preencher em lote, informar a fonte e a data dos valores ao
+usuário.
+
+### 11.4 Notícias, vídeos, patentes, grupos e páginas
+
+- **Nova notícia:** criar `content/noticias/<aaaa-mm-dd>-<slug>.md` com o
+  cabeçalho da seção 6.5 e o texto em Markdown, e salvar as imagens em
+  `public/noticias/<aaaa-mm-dd>-<slug>/`. Se o usuário mandar o texto pronto
+  (e-mail, release, documento), manter o conteúdo e só ajustar a formatação
+  para Markdown; não reescrever sem pedir.
+- **Editar ou remover notícia:** editar ou apagar o arquivo correspondente.
+- **Novo vídeo ou patente:** acrescentar em `videos.json` ou `patentes.json`.
+- **Grupos e páginas institucionais:** editar `grupos.json` ou `paginas.json`.
+- **Aviso no topo do site:** editar `anuncio` em `site.json`.
+
+### 11.5 Comandos
+
+- `npm run dev` — ver o site em `http://localhost:3000`.
+- `npm run validar` — conferir todos os JSON e as notícias sem gerar o site.
+- `npm run build` — gerar o site (falha com mensagem clara se algum dado
+  estiver errado).
+
+---
+
+## 12. Regras de trabalho para o Claude Code
+
+- Não reabrir as decisões da seção 2 por conta própria.
+- Não criar CMS, painel administrativo, formulários de edição, banco de dados
+  nem funções de servidor.
+- Não configurar deploy, Vercel, DNS ou GitHub Actions até o usuário pedir.
+- Não adicionar remoto Git nem fazer `push` até o usuário pedir.
+- Não modificar o repositório antigo nem nada dentro de `_legado/`.
+- Não inventar conteúdo: textos, nomes, cargos e dados vêm do site antigo ou de
+  fontes fornecidas pelo usuário. Se algo estiver faltando ou ambíguo,
+  perguntar.
+- Antes de mudanças estruturais (formato dos JSON, rotas, dependências novas),
+  explicar a proposta e esperar o "ok". Se o formato de um JSON mudar,
+  atualizar `esquemas.ts`, regenerar os schemas e atualizar a seção 6 deste
+  arquivo.
+- Ao terminar cada etapa: rodar o build, conferir no navegador e resumir em
+  poucas linhas o que foi feito e o que falta.
+- Commits pequenos e descritivos, em português.

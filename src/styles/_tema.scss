@@ -1,0 +1,8 @@
+// Bootstrap 5 + Bootswatch Materia, com variáveis sobrescritas pelos tokens.
+// Ordem exigida pelo Bootswatch: variáveis do tema → Bootstrap → regras do tema.
+$primary: $cor-primaria;
+$font-family-sans-serif: $fonte-base;
+
+@import "bootswatch/dist/materia/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/materia/bootswatch";
