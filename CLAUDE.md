@@ -738,12 +738,10 @@ Regras:
   Internacional (`colaboracao_internacional`), ordenáveis pelo cabeçalho. O
   título leva direto ao DOI da revista (sem DOI, à página de detalhe). Busca por
   título/autor/periódico e filtro por ano continuam. Antes era uma lista
-  com busca, filtro por ano e ordenação e a seção
-  `#patentes`. Os controles de **grupo, Qualis, citações e fator de impacto só
-  aparecem quando algum registro tem esses dados** (hoje todos estão vazios);
-  se `grupos` ou as métricas forem preenchidos em `publicacoes.json`, os
-  controles surgem sozinhos, com as ordenações "Mais citadas" e "Maior fator de
-  impacto". A página de detalhe liga cada autor ao perfil quando ele é da
+  com busca, filtro por ano e ordenação. A seção `#patentes` continua. Os
+  controles de **grupo, Qualis, citações, JCR mínimo e colaboração internacional
+  só aparecem quando algum registro tem esses dados** (hoje todos estão vazios);
+  se forem preenchidos em `publicacoes.json`, os controles surgem sozinhos. A página de detalhe liga cada autor ao perfil quando ele é da
   equipe (`src/lib/autores.ts`, usando só as pessoas marcadas em `pessoas`) e
   inclui metadados para o Google Acadêmico. As patentes não têm página
   própria: os detalhes do registro ficam num bloco expansível. O bloco
