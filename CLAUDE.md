@@ -44,7 +44,7 @@ previsível, validada e fácil de ler e editar por máquina.
 | Visual | **Visual "espectro"** (pedido do usuário em 2026-10-23, a partir do protótipo `interas.html`), que substituiu o Materia. Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9). |
 | Fora do escopo | "Preprints", "Mulheres INTERAS". Não migrar. ("INTERAS em números" não foi migrado do site antigo, mas foi refeito em 2026-10-23 a pedido do usuário, com números calculados dos JSON; ver seção 7.) |
 | Versão em inglês | **Última etapa**, só depois que o site em português estiver pronto e aprovado. |
-| Ambiente | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois. |
+| Ambiente | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois.  **Atualização (2026-10-23):** a pedido do usuário, o projeto foi enviado para o repositório privado `tmpereira/interas-site-novo` no GitHub (remoto `origin`). Deploy, Vercel e domínio continuam para depois. |
 | Banco de dados / backend | Nenhum. Tudo é gerado no build a partir dos JSON do repositório. |
 
 ---
