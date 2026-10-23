@@ -52,3 +52,20 @@ a {
     left: 0;
   }
 }
+
+// Texto só para leitores de tela (ex.: <h1> que não aparece no desenho da página)
+.somente-leitor {
+  @extend .visually-hidden;
+}
+
+// Etiqueta pequena com contorno (tipo de publicação, categorias de patentes)
+.etiqueta {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid $cor-texto-suave;
+  border-radius: $raio-botao;
+  font-size: $tamanho-etiqueta;
+  text-transform: uppercase;
+  color: $cor-texto-suave;
+}

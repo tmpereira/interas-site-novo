@@ -128,9 +128,24 @@
   margin-top: 1.8rem;
   margin-bottom: 0.5em;
   font-size: $tamanho-breadcrumb;
+  flex-wrap: nowrap;
 
   &__item {
     @extend .breadcrumb-item;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    // O último item (página atual) pode ser longo, como o título de um artigo: corta com reticências
+    &:last-child {
+      flex-shrink: 1;
+      min-width: 0;
+    }
+  }
+
+  &__texto {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

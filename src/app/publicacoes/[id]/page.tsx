@@ -1,0 +1,148 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
+import { vincularAutores } from "@/lib/autores";
+import { carregarConteudo } from "@/lib/conteudo";
+import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga } from "@/lib/formatadores";
+import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
+
+type Props = { params: Promise<{ id: string }> };
+
+function publicacaoPorId(id: string) {
+  const publicacao = carregarConteudo().publicacoes.find((p) => p.id === id);
+  if (!publicacao) throw new Error(`content/publicacoes.json: não existe a publicação "${id}"`);
+  return publicacao;
+}
+
+export function generateStaticParams() {
+  return carregarConteudo().publicacoes.map((p) => ({ id: p.id }));
+}
+
+/** Texto simples de um trecho em Markdown em linha (para <title> e meta tags). */
+const semMarcacao = (texto: string) => texto.replace(/[*_`]/g, "");
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const p = publicacaoPorId((await params).id);
+  const descricao = p.resumo ? semMarcacao(p.resumo).slice(0, 200) : [p.autores.slice(0, 3).join(", "), p.periodico].filter(Boolean).join(" — ");
+  return {
+    title: semMarcacao(p.titulo),
+    description: descricao || undefined,
+    // Metadados lidos pelo Google Acadêmico
+    other: {
+      citation_title: semMarcacao(p.titulo),
+      citation_author: p.autores,
+      citation_publication_date: p.data.replaceAll("-", "/"),
+      ...(p.periodico && { citation_journal_title: p.periodico }),
+      ...(p.volume && { citation_volume: p.volume }),
+      ...(p.numero && { citation_issue: p.numero }),
+      ...(p.doi && { citation_doi: p.doi }),
+    },
+  };
+}
+
+export default async function PaginaPublicacao({ params }: Props) {
+  const p = publicacaoPorId((await params).id);
+  const { pessoas, grupos } = carregarConteudo();
+  const autores = vincularAutores(
+    p.autores,
+    pessoas.filter((x) => p.pessoas.includes(x.slug)),
+  );
+  const gruposDaPublicacao = grupos.filter((g) => p.grupos.includes(g.slug));
+  const veiculo = [
+    p.periodico,
+    p.volume && `v. ${p.volume}`,
+    p.numero && `n. ${p.numero}`,
+    p.paginas && `p. ${p.paginas}`,
+  ].filter(Boolean);
+  const metricas = [
+    p.qualis && { rotulo: "Qualis", valor: p.qualis },
+    p.fator_impacto !== null && { rotulo: "Fator de impacto", valor: String(p.fator_impacto) },
+    p.citacoes !== null && { rotulo: "Citações", valor: String(p.citacoes) },
+  ].filter((m): m is { rotulo: string; valor: string } => Boolean(m));
+
+  return (
+    <div className="pagina">
+      <Breadcrumb itens={[{ rotulo: "Publicações", href: "/publicacoes/" }, { rotulo: semMarcacao(p.titulo) }]} />
+      <article className="artigo">
+        <header>
+          <h1 className="artigo__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(p.titulo) }} />
+          <p className="artigo__etiquetas">
+            <span className="etiqueta">{ROTULOS_TIPO_PUBLICACAO[p.tipo]}</span>
+          </p>
+        </header>
+
+        <div className="artigo__grade">
+          <section>
+            <h2 className="artigo__rotulo">Autores</h2>
+            <ul className="artigo__autores">
+              {autores.map((a, i) => (
+                <li key={`${a.nome}-${i}`}>{a.slug ? <Link href={`/equipe/${a.slug}/`}>{a.nome}</Link> : a.nome}</li>
+              ))}
+            </ul>
+          </section>
+          <section>
+            <h2 className="artigo__rotulo">Data de publicação</h2>
+            <p>{formatarDataLonga(p.data)}</p>
+            {veiculo.length > 0 && (
+              <>
+                <h2 className="artigo__rotulo">Publicado em</h2>
+                <p>{veiculo.join(", ")}</p>
+              </>
+            )}
+            {metricas.length > 0 && (
+              <>
+                <h2 className="artigo__rotulo">Indicadores</h2>
+                <ul className="artigo__metricas">
+                  {metricas.map((m) => (
+                    <li key={m.rotulo}>
+                      {m.rotulo}: <strong>{m.valor}</strong>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {gruposDaPublicacao.length > 0 && (
+              <>
+                <h2 className="artigo__rotulo">{gruposDaPublicacao.length === 1 ? "Grupo" : "Grupos"}</h2>
+                <ul className="artigo__metricas">
+                  {gruposDaPublicacao.map((g) => (
+                    <li key={g.slug}>
+                      <Link href={`/grupos/${g.slug}/`}>{g.titulo}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </section>
+        </div>
+
+        <section>
+          <h2 className="artigo__rotulo">Resumo</h2>
+          {p.resumo ? <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(p.resumo) }} /> : <p>Resumo não disponível.</p>}
+        </section>
+
+        {p.palavras_chave.length > 0 && (
+          <section>
+            <h2 className="artigo__rotulo">Palavras-chave</h2>
+            <p>{p.palavras_chave.join(", ")}</p>
+          </section>
+        )}
+
+        {(p.doi || p.url) && (
+          <p className="artigo__acoes">
+            {p.doi && (
+              <a href={`https://doi.org/${p.doi}`} target="_blank" rel="noopener noreferrer" className="artigo__botao">
+                <i className="bi bi-box-arrow-up-right" aria-hidden="true" /> DOI: <span className="artigo__doi">{p.doi}</span>
+              </a>
+            )}
+            {p.url && (
+              <a href={p.url} target="_blank" rel="noopener noreferrer" className="artigo__botao artigo__botao--secundario">
+                <i className="bi bi-link-45deg" aria-hidden="true" /> Página da publicação
+              </a>
+            )}
+          </p>
+        )}
+      </article>
+    </div>
+  );
+}

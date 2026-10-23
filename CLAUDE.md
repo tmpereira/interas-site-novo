@@ -729,6 +729,17 @@ Regras:
   links). O perfil mostra, além do que o site antigo mostrava, os grupos e as
   publicações da pessoa (campos `grupos` e `pessoas` das outras coleções). A
   listagem tem breadcrumb, que o site antigo não tinha (CLAUDE.md, seção 7).
+- **Publicações (etapa 6):** `/publicacoes/` tem a seção `#artigos` (lista com
+  busca por título/autor/periódico, filtro por ano e ordenação) e a seção
+  `#patentes`. Os controles de **grupo, Qualis, citações e fator de impacto só
+  aparecem quando algum registro tem esses dados** (hoje todos estão vazios);
+  se `grupos` ou as métricas forem preenchidos em `publicacoes.json`, os
+  controles surgem sozinhos, com as ordenações "Mais citadas" e "Maior fator de
+  impacto". A página de detalhe liga cada autor ao perfil quando ele é da
+  equipe (`src/lib/autores.ts`, usando só as pessoas marcadas em `pessoas`) e
+  inclui metadados para o Google Acadêmico. As patentes não têm página
+  própria: os detalhes do registro ficam num bloco expansível. O bloco
+  "Citação" (BibTeX) das páginas antigas não foi portado.
 - **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
   faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
 

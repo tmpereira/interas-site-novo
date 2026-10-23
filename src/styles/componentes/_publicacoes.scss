@@ -1,16 +1,43 @@
-// Lista simples de publicações (data à esquerda, título à direita).
+// Publicações: lista da home, lista com filtros, patentes e página de detalhe.
 
-.lista-publicacoes {
+// Item com a data/autores à esquerda e o título à direita (como as listagens do Quarto)
+@mixin item-duas-colunas {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $cor-borda;
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+@mixin titulo-de-lista {
+  margin: 0;
+  font-size: $tamanho-titulo-lista;
+  line-height: 1.3;
+  color: $cor-texto-suave;
+  text-decoration: none;
+
+  @media (max-width: $bp-mobile) {
+    font-size: $tamanho-titulo-lista-mobile;
+  }
+}
+
+@mixin lista-sem-marcador {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+// --- Lista simples (home e perfis) ------------------------------------------
+.lista-publicacoes {
+  @include lista-sem-marcador;
 
   &__item {
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: 1rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid $cor-borda;
+    @include item-duas-colunas;
   }
 
   &__data {
@@ -19,20 +46,241 @@
   }
 
   &__titulo {
-    font-size: $tamanho-titulo-lista;
-    line-height: 1.3;
+    @include titulo-de-lista;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// --- Página /publicacoes/ ---------------------------------------------------
+.secao-producao {
+  margin-top: 1.5rem;
+
+  h2#{&}__titulo {
+    margin-top: 1.5rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: $tamanho-titulo-secao-producao;
+    font-weight: $peso-forte;
+  }
+}
+
+.filtro-publicacoes {
+  &__controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+  }
+
+  &__campo {
+    display: flex;
+    flex-direction: column;
+    min-width: 8rem;
+
+    &--busca {
+      flex: 1 1 $largura-campo-filtro;
+    }
+  }
+
+  &__rotulo {
+    font-size: $tamanho-rotulo;
     color: $cor-texto-suave;
-    text-decoration: none;
+  }
+
+  &__entrada {
+    @extend .form-control-sm;
+  }
+
+  select#{&}__entrada {
+    @extend .form-select;
+  }
+
+  input#{&}__entrada {
+    @extend .form-control;
+  }
+
+  &__contagem {
+    margin: 0.75rem 0;
+    font-size: $tamanho-texto-meta;
+    color: $cor-texto-suave;
+  }
+
+  &__limpar {
+    margin-left: 0.75rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: inherit;
+    color: $cor-primaria;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__vazio {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
+
+.lista-artigos {
+  @include lista-sem-marcador;
+
+  &__item {
+    @include item-duas-colunas;
+  }
+
+  &__data,
+  &__autores {
+    font-size: $tamanho-texto-meta;
+    color: $cor-texto;
+  }
+
+  &__autores {
+    margin: 0;
+  }
+
+  &__titulo {
+    @include titulo-de-lista;
 
     &:hover {
       text-decoration: underline;
     }
   }
 
-  @media (max-width: $bp-mobile) {
-    &__item {
-      grid-template-columns: 1fr;
-      gap: 0.25rem;
+  &__periodico,
+  &__metricas {
+    margin: 0.25rem 0 0;
+    font-size: $tamanho-texto-meta;
+    color: $cor-texto-suave;
+  }
+
+  &__metricas span + span::before {
+    content: " · ";
+  }
+}
+
+.lista-patentes {
+  @include lista-sem-marcador;
+
+  &__item {
+    @include item-duas-colunas;
+  }
+
+  &__data,
+  &__autores,
+  &__registro {
+    font-size: $tamanho-texto-meta;
+    color: $cor-texto;
+  }
+
+  &__autores {
+    margin: 0;
+  }
+
+  &__titulo {
+    @include titulo-de-lista;
+    border: 0;
+    font-weight: 400;
+  }
+
+  &__registro {
+    margin: 0.25rem 0;
+  }
+
+  &__etiquetas {
+    margin: 0 0 0.25rem;
+  }
+
+  &__detalhes {
+    font-size: $tamanho-texto-meta;
+
+    summary {
+      cursor: pointer;
+      color: $cor-primaria;
     }
+  }
+}
+
+// --- Página de detalhe ------------------------------------------------------
+.artigo {
+  max-width: $largura-artigo;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  &__titulo {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: $tamanho-titulo-artigo;
+    font-weight: $peso-forte;
+    line-height: 1.25;
+  }
+
+  &__etiquetas {
+    margin-bottom: 1.5rem;
+  }
+
+  &__grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+
+    @media (max-width: $bp-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Rótulos de campo ("AUTORES", "RESUMO"...): pequenos, em caixa alta, sem a linha dos títulos
+  h2 {
+    margin: 1rem 0 0.25rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: $tamanho-rotulo;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $cor-texto-suave;
+  }
+
+  &__autores,
+  &__metricas {
+    margin: 0 0 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__autores li {
+    margin-bottom: 0.2rem;
+  }
+
+  &__acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  &__botao {
+    @extend .btn;
+    @extend .btn-primary;
+
+    &--secundario {
+      border: 1px solid $cor-primaria;
+      background: $cor-fundo;
+      color: $cor-primaria;
+      box-shadow: none;
+
+      &:hover {
+        background: $cor-primaria;
+        color: $cor-fundo;
+      }
+    }
+  }
+
+  // O DOI é um identificador: não vai em caixa alta como o resto do botão
+  &__doi {
+    text-transform: none;
   }
 }
