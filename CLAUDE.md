@@ -42,7 +42,7 @@ previsível, validada e fácil de ler e editar por máquina.
 | Quem edita | Apenas o usuário, no **VS Code**, normalmente pedindo ao **Claude Code** para atualizar os JSON. **Não criar CMS, painel /admin nem formulários.** |
 | Hospedagem futura | Vercel, plano Hobby, conta pessoal do usuário. **Não configurar deploy agora.** |
 | Visual | **Visual "espectro"** (pedido do usuário em 2026-10-23, a partir do protótipo `interas.html`), que substituiu o Materia. Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9). |
-| Fora do escopo | "INTERAS em números", "Preprints", "Mulheres INTERAS". Não migrar. |
+| Fora do escopo | "Preprints", "Mulheres INTERAS". Não migrar. ("INTERAS em números" não foi migrado do site antigo, mas foi refeito em 2026-10-23 a pedido do usuário, com números calculados dos JSON; ver seção 7.) |
 | Versão em inglês | **Última etapa**, só depois que o site em português estiver pronto e aprovado. |
 | Ambiente | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois. |
 | Banco de dados / backend | Nenhum. Tudo é gerado no build a partir dos JSON do repositório. |
@@ -229,6 +229,38 @@ títulos das seções ficam em `site.json` (`categorias_pessoas`, lista de
 `{ chave, titulo }` na ordem de exibição); a validação exige um título para
 cada categoria.
 
+### 6.1.1 `content/alunos.json`
+
+Orientações dos pesquisadores (extraídas do Lattes), exibidas em `/alunos/`.
+
+```json
+{
+  "$schema": "./schemas/alunos.schema.json",
+  "alunos": [
+    {
+      "nome": "Maria Renata Valente Brandão Freire",
+      "orientador": "denise-maria-zezell",
+      "nivel": "pos-doutorado",
+      "situacao": "em-andamento",
+      "titulo": null,
+      "ano_inicio": 2024,
+      "ano_conclusao": null,
+      "instituicao": "Comissão Nacional de Energia Nuclear",
+      "coorientacao": "Nome Livre (opcional)",
+      "fonte": "lattes-2026-10-23"
+    }
+  ]
+}
+```
+
+- `nivel`: `iniciacao-cientifica`, `mestrado`, `doutorado`, `pos-doutorado` (ordem das seções
+  da página; títulos em `TITULOS_NIVEL_ALUNO`, `src/lib/consultas.ts`).
+- `situacao`: `em-andamento` ou `concluida`. `orientador` é slug de `pessoas.json` (validado).
+- Não há identificador único: a mesma pessoa pode aparecer mais de uma vez (ex.: duas bolsas de IC).
+- A página mostra uma tabela-resumo (em andamento × concluídos por nível) e uma tabela por
+  nível; dentro de cada nível, em andamento primeiro, depois por ano mais recente e nome.
+  A ordem do arquivo não é conferida.
+
 ### 6.2 `content/publicacoes.json`
 
 ```json
@@ -275,6 +307,11 @@ cada categoria.
 - `colaboracao_internacional`: `true`, `false` ou `null` (ainda não informado).
   A tabela de `/publicacoes/` mostra Sim / Não / "—" e, quando algum registro
   tiver valor, ganha o filtro "Colaboração internacional".
+- `paises` (opcional): códigos ISO de 2 letras dos países dos autores (ex.: `["BR", "US"]`).
+  O cartão do artigo mostra os estrangeiros com nome curto ("Colaboração internacional: EUA,
+  França"); os nomes ficam em `NOMES_PAISES` (`src/lib/consultas.ts`), e código sem nome
+  cadastrado aparece como está. `fonte_metricas` indica a origem de citações/JCR/países
+  (ex.: `openalex-2026-10-23`, provisório até o JCR oficial da Clarivate).
 - **Métricas** (`citacoes`, `fator_impacto`, `qualis`) começam como `null`. A
   página de publicações as exibe **quando preenchidas** e permite ordenar e
   filtrar por elas; quando estão todas vazias, não aparecem. Outros campos
@@ -567,6 +604,7 @@ Além do formato de cada campo, `npm run validar` e o build conferem:
 | `/` | Hero, apresentação, blocos de destaque, 6 publicações e 3 notícias mais recentes | `index.qmd` |
 | `/sobre-o-interas/` | Página institucional | `sobre-o-interas.qmd` |
 | `/equipe/` | Pessoas ativas agrupadas por categoria, em grade com foto (coordenação) ou cartões com nome e cargo | `pessoas/coord-equipe.qmd` |
+| `/alunos/` | Resumo por nível e uma tabela por nível (IC, mestrado, doutorado, pós-doc) a partir de `alunos.json` | — (novo) |
 | `/equipe/[slug]/` | Perfil: foto, cargo, links (Lattes, Scholar, ORCID, instituição), áreas, atuação, grupos e publicações da pessoa | `pessoas/*/*.qmd` |
 | `/areas-de-pesquisa/` | Página institucional | `areas-de-pesquisa.qmd` |
 | `/grupos/` | Grade de grupos com filtro por tema (aceitar `#category=...` e `?tema=...`) | `grupos.qmd` |
@@ -577,14 +615,16 @@ Além do formato de cada campo, `npm run validar` e o build conferem:
 | `/noticias/[id]/` | Notícia | `noticias/posts/*/index.qmd` |
 | `/videos/` | Grade de vídeos | `videos/index.qmd` |
 | `/videos/[slug]/` | Detalhe do vídeo com links | `videos/videos_arqs/*.qmd` |
+| `/interas-em-numeros/` | Cartões de resumo e gráficos de barras calculados dos JSON (`estatisticas()` em `src/lib/consultas.ts`, componente `GraficoBarras`): artigos, JCR médio e citações por ano; alunos formados por ano em quatro gráficos com a mesma escala; no fim, rede de coautoria entre membros (`src/lib/rede.ts` calcula as posições no build a partir do campo `pessoas` das publicações; `RedeCoautoria` tem pílulas de período — Todos e cada ano com coautoria —, com as posições fixas em todos os períodos; realça as conexões ao passar o mouse e traz a tabela dos pares); por último, "Internacionalização": mapa-múndi (`MapaInternacional`, dados de `src/lib/internacional.ts` a partir do campo `paises`) com o Brasil em azul e os países parceiros numa escala de 5 tons de laranja (mais escuro = mais artigos no período; escala logarítmica relativa ao maior país, tons em `$tons-mapa-parceiro`), fundo preto e contornos brancos. As pílulas de período são as mesmas da rede e ficam sincronizadas (`PainelColaboracao`). Os contornos estão em `src/lib/mapa-mundi.json`, gerado uma vez do Natural Earth 1:110m por `scripts/ferramentas/gerar-mapa-mundi.mjs` (o site não depende dos pacotes usados no script). Texto de abertura em `paginas.json` (`interas-em-numeros`) | — (refeito; o antigo `interas-em-numeros.qmd` não foi migrado) |
 | `/contato/` | Página institucional | `contato.qmd` |
 | `404` | Página não encontrada | — |
 
 Menu (mesma organização do site antigo), definido em `site.json`:
-- **INCT INTERAS** ▸ O INCT INTERAS · Coordenação e Equipe · Áreas de Pesquisa · Grupos e Laboratórios · Contato
+- **INCT INTERAS** ▸ O INCT INTERAS · Coordenação e Equipe · Alunos · Áreas de Pesquisa · Grupos e Laboratórios · Contato
 - **PRODUÇÃO** ▸ Artigos · Patentes
 - **NOTÍCIAS**
 - **VÍDEOS**
+- **INTERAS em números**
 
 Sem breadcrumbs nem abas de seção nas páginas internas (pedido do usuário em 2026-10-23: a
 navegação fica só no menu do topo). `lang="pt-BR"`.
@@ -814,8 +854,11 @@ Regras:
   artigos em **lista no formato do protótipo** (pedido do usuário em 2026-10-23, substituiu a
   tabela da seção 9.2): título da seção com os anos em pílulas ao lado, busca, e cada artigo
   em uma linha com ano (mono), título (link para o DOI), três primeiros autores + "et al.",
-  periódico com volume(número) e páginas, DOI e "Detalhes →" para a página do artigo. JCR e
-  colaboração internacional aparecem na linha quando preenchidos. Patentes em cartões.
+  periódico com volume(número) e páginas, DOI e, à direita, "Publicado em" + data. Clicar no
+  cartão (ou no botão da data, pelo teclado) **expande e mostra o resumo**; sem resumo, mostra
+  "Não há resumo." (pedido do usuário em 2026-10-23; o link "Detalhes →" saiu). Por isso o
+  resumo, já em HTML, vai para o navegador. A página `/publicacoes/[id]/` continua existindo
+  (linkada da home e dos perfis). JCR e colaboração internacional aparecem na linha quando preenchidos. A lista é paginada (pedido do usuário em 2026-10-23): 10 por página por padrão, seletor "Artigos por página" (10, 20, 50, 100) e páginas numeradas embaixo; mudar um filtro volta para a página 1. Patentes em cartões.
 - Áreas de pesquisa (`/areas-de-pesquisa/`, pedido do usuário em 2026-10-23): índice em
   pílulas e um bloco por área (`BlocoArea.tsx`), com imagem alternando de lado, número, faixa
   do espectro, título, texto, etiquetas e botão. **Os textos vêm de `home.json` (`destaques`)**,

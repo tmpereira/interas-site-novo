@@ -78,6 +78,10 @@ $cor-sombra: var(--cor-sombra);
 $cor-veu: var(--cor-veu);
 $filtro-logo: var(--filtro-logo);
 $cor-branca: #fff;
+// Pílulas de JCR e citações: tom suave do acento (acompanha o modo claro/escuro)
+$cor-fundo-metrica: color-mix(in srgb, var(--cor-acento) 14%, transparent);
+$cor-borda-metrica: color-mix(in srgb, var(--cor-acento) 40%, transparent);
+$cor-placa-logo: #fff; // fundo do logo do topo, igual nos dois modos
 $cor-etiqueta-video: rgba(0, 0, 0, 0.6);
 
 // Cores do arco-íris do espectro visível (fixas nos dois modos)
@@ -132,6 +136,7 @@ $largura-titulo-pagina: 56rem;
 $largura-titulo-etapas: 48rem;
 $altura-minima-bloco-area: 26rem;
 $espessura-faixa-bloco: 3px;
+$tamanho-seta-cartao: 0.5rem;
 $margem-lateral: 16px;
 $espaco-1: 0.25rem;
 $espaco-2: 0.5rem;
@@ -157,13 +162,36 @@ $largura-triangulo-play: 0.85rem;
 $duracao-varredura: 6s;
 $largura-coluna-ano: 4rem;
 $largura-numeros-producao: 42rem;
+$largura-botao-pagina: 2.5rem;
+$altura-grafico: 12rem;
+$altura-grafico-compacto: 7rem;
+$largura-maxima-barra: 3rem;
+$espaco-entre-barras: 2px;
+$largura-minima-grafico: 20rem;
+$largura-minima-grafico-compacto: 15rem;
+$largura-minima-rede: 44rem;
+$tamanho-texto-rede: 11px; // em unidades do viewBox (1000 de largura)
+$tamanho-chave-rede: 0.625rem;
+$opacidade-aresta: 0.6;
+// Mapa da internacionalização: sempre escuro (fundo preto, contornos brancos); Brasil com o
+// acento da paleta escura e os países parceiros numa escala de laranja
+$cor-mapa-fundo: #000;
+$cor-mapa-contorno: rgba(255, 255, 255, 0.75);
+$cor-mapa-brasil: map-get($paleta-escura, "acento");
+// Escala dos países parceiros, do mais claro (poucos artigos) ao mais escuro (mais artigos)
+$tons-mapa-parceiro: #fde4c8, #f9c68f, #f0a24a, #d9771a, #a84f05;
+$tamanho-degrau-mapa: 1.25rem;
+$espessura-contorno-mapa: 0.6;
+$opacidade-aresta-ativa: 1;
 $largura-minima-campo: 8rem;
 $espaco-campo-y: 0.625rem;
 $espaco-seta: 0.35rem;
 $espaco-autor: 0.2rem;
 $deslocamento-ancora: 6rem; // espaço para o cabeçalho fixo ao saltar para #ancoras
 
-$altura-logo-navbar: 3.75rem;
+$altura-logo-navbar: 4.25rem;
+$espaco-placa-logo-y: 0.125rem;
+$espaco-placa-logo-x: 0.5rem;
 $altura-logo-rodape: 2.5rem;
 $largura-submenu: 18rem;
 $largura-coluna-faixa: 12rem;
@@ -177,6 +205,8 @@ $espessura-anel-foto: 3px;
 $tamanho-ponto: 0.5rem;
 $tamanho-botao-play: 3.5rem;
 $largura-coluna-autores: 14rem;
+$largura-coluna-titulo-trabalho: 22rem; // título do trabalho na tabela de alunos
+$largura-minima-tabela-alunos: 56rem;
 $largura-minima-espectro: 640px;
 $proporcao-hero: unquote("1024 / 804");
 $proporcao-pilar: unquote("4 / 3");
@@ -192,8 +222,10 @@ $raio-xl: 0.75rem;
 $raio-2xl: 1rem;
 $raio-3xl: 1.5rem;
 $raio-pilula: 999px;
+$raio-placa-logo: $raio-xl;
 $borda: 1px solid $cor-linha;
 $sombra-submenu: 0 12px 32px -12px $cor-sombra;
+$sombra-placa-logo: 0 0 0 1px $cor-linha;
 $sombra-botao-play: 0 10px 20px -6px $cor-sombra;
 $contorno-foco: 2px solid $cor-acento;
 $transicao-rapida: 0.2s ease;

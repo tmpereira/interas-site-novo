@@ -28,11 +28,16 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 5.116,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "PE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "telles_feasibility_2026",
@@ -64,11 +69,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "fernandes_towards_2026",
@@ -95,11 +104,15 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.799,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "bereczki_novel_2026",
@@ -127,11 +140,16 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.116,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "IL"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carlos_ordering_2026",
@@ -162,11 +180,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.795,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "cavalheiro_prognostic_2026",
@@ -194,11 +216,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dos_santos_soil_2026",
@@ -227,11 +253,15 @@
         "elvis-joacir-de-franca"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.573,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_chico_monte_2026",
@@ -261,11 +291,15 @@
         "maria-elisa-chuery-martins-rostelato"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.707,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_formation_2026",
@@ -288,11 +322,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.606,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_unraveling_2026",
@@ -324,11 +362,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 3.353,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_comprehensive_2026",
@@ -360,11 +402,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 3.926,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "zanetti_revealing_2026",
@@ -399,11 +445,15 @@
         "anderson-zanardi-de-freitas"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_comparison_2026",
@@ -433,11 +483,15 @@
         "marcela-sorelli-carneiro-ramos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 7.356,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "leite_microrna_2026",
@@ -469,11 +523,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.714,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "medeiros_analysis_2026",
@@ -503,11 +561,15 @@
         "carlos-alberto-zeituni"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.861,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "sampaio_portable_2026",
@@ -537,11 +599,15 @@
         "luciano-bachmann"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.23,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "almeida-santos_cd39_2026",
@@ -583,11 +649,17 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.846,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "FR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "barbedo_explainability_2026",
@@ -627,11 +699,17 @@
         "joaquim-cezar-felipe"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 11.044,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CN",
+        "IN"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_souza_developing_2026",
@@ -657,11 +735,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.548,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dutra_can_2026",
@@ -694,11 +776,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.619,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "UY"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_analysis_2026",
@@ -725,11 +812,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.012,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_luminescent_2026",
@@ -756,11 +847,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.203,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "stefanelli-silva_microplastics_2026",
@@ -793,11 +888,15 @@
         "anderson-zanardi-de-freitas"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "tortamano_evaluation_2026",
@@ -829,11 +928,16 @@
         "ilka-tiemy-kato"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.179,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "xu_post-column_2026",
@@ -865,11 +969,16 @@
         "arian-perez-nario"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.837,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CN"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_inflammasome_2026",
@@ -901,11 +1010,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 7.084,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "agne_rare_2026",
@@ -936,11 +1049,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.901,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "araujo_longterm_2026",
@@ -967,11 +1084,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.698,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_oliveira_goncalves_use_2026",
@@ -999,11 +1120,15 @@
         "daniel-perez-vieira"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.861,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "gau_nomogram_2026",
@@ -1050,11 +1175,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 0.828,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CA"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "wetter_modern_2026",
@@ -1078,11 +1208,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.517,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "sanches_sampaio_estimation_2026",
@@ -1110,11 +1244,15 @@
         "luciano-bachmann"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.739,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "correianeto_machine_2026",
@@ -1147,11 +1285,15 @@
         "thiago-martini-pereira"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.92,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_urban_2026",
@@ -1183,11 +1325,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.778,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferreira_comparative_2026",
@@ -1218,11 +1364,15 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 5.001,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "alape_vibrational_2026",
@@ -1251,11 +1401,16 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.116,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ES"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dedivitis_competencies_2026",
@@ -1288,11 +1443,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "nunes_saliva_2026",
@@ -1324,11 +1483,16 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.461,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "AE",
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_porphyrin-coated_2026",
@@ -1355,11 +1519,16 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 7.738,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BE",
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferreira_rodrigues_photobiomodulation_2025",
@@ -1386,11 +1555,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.935,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "bertin_low_2025",
@@ -1415,11 +1588,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.407,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "cavalcanti_optical_2025",
@@ -1446,11 +1623,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.012,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "costa_atr-ftir_2025",
@@ -1483,11 +1664,15 @@
         "luciano-bachmann"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 4.201,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_jornada_changes_2025",
@@ -1514,11 +1699,16 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.012,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CL"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_souza_production_2025",
@@ -1545,11 +1735,15 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 8.592,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dedivitis_artificial_2025",
@@ -1577,11 +1771,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.368,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dipold_white_2025",
@@ -1608,11 +1806,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.824,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "nogueira_response_2025",
@@ -1636,11 +1838,16 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.085,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "IE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "povoa-correa_assessing_2025",
@@ -1679,11 +1886,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 0.85,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "secco_burden_2025",
@@ -1717,11 +1928,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.448,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_thermoluminescence_2025",
@@ -1744,11 +1959,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pieretti_unveiling_2025",
@@ -1782,11 +2001,16 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 4.936,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "borbon_biomasp_2025",
@@ -1864,11 +2088,16 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 4.997,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "FR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_enhancing_2025",
@@ -1901,11 +2130,16 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.935,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "maciel_angelika_2025",
@@ -1929,11 +2163,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.72,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "almeida_analysis_2025",
@@ -1961,11 +2199,15 @@
         "marcus-paulo-raele"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.861,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_castro_competencies_2025",
@@ -1997,11 +2239,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "fogaca-ruiz_one_2025",
@@ -2029,11 +2275,12 @@
         "marcela-sorelli-carneiro-ramos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.761,
       "qualis": null,
       "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "jimenez_histine_2025",
@@ -2064,11 +2311,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 5.116,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "martins_national_2025",
@@ -2096,11 +2347,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "sepulveda_thyrotropin_2025",
@@ -2135,11 +2390,17 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.328,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "AR",
+        "BR",
+        "ES"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "cabral_effect_2025",
@@ -2167,11 +2428,15 @@
         "ana-cecilia-correa-aranha"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.935,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_bem_wrf_2025",
@@ -2201,11 +2466,18 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.337,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "FR",
+        "IT",
+        "RE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "agne_surgical_2025",
@@ -2234,11 +2506,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.579,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "barrera_effect_2025",
@@ -2268,11 +2544,16 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 2.012,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CO"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carneiro-ramos_aki_2025",
@@ -2303,11 +2584,16 @@
         "jessica-veronica-da-silva"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 6.668,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "DE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_differentiation_2025",
@@ -2335,11 +2621,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.678,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "marinho_survival_2025",
@@ -2367,11 +2657,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 2.407,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "nascimento_promotion_2025",
@@ -2405,11 +2699,16 @@
         "elvis-joacir-de-franca"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 5.893,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ES"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pieretti_nitric_2025",
@@ -2435,11 +2734,15 @@
         "marcela-sorelli-carneiro-ramos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.312,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_processing_2025",
@@ -2462,11 +2765,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.606,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "siqueira_exploring_2025",
@@ -2505,11 +2812,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.407,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rodrigues_computational_2025",
@@ -2536,11 +2848,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 5.013,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "eugenio_integrated_2025",
@@ -2570,11 +2886,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 0.94,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "bento_can_2025",
@@ -2602,11 +2922,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_engineered_2025",
@@ -2636,11 +2961,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 4.293,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "siqueira_trop2_2025",
@@ -2678,11 +3007,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 1.92,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "slivar_deciphering_2025",
@@ -2711,11 +3045,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 1.92,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "UY"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_long-range_2025",
@@ -2746,11 +3085,15 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 3.701,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "baffa_comparative_2025",
@@ -2781,11 +3124,15 @@
         "joaquim-cezar-felipe"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.308,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silvamoreira_identification_2025",
@@ -2819,11 +3166,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.87,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "moreira_evidence_2025",
@@ -2870,11 +3221,21 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 5.308,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "AR",
+        "BR",
+        "CL",
+        "EC",
+        "ES",
+        "PT",
+        "VE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "guimaraes_prognostic_2025",
@@ -2903,11 +3264,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.407,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "manap_dataset_2025",
@@ -2940,11 +3305,21 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.815,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ID",
+        "IT",
+        "LT",
+        "MY",
+        "NG",
+        "SE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "neto_integrating_2025",
@@ -2970,11 +3345,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 3.804,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pedroso_preoperative_2025",
@@ -3014,11 +3393,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 15,
+      "fator_impacto": 6.035,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CA"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pereira_dos_santos_dft_2025",
@@ -3047,11 +3431,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 6.429,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "agne_transoral_2025",
@@ -3087,11 +3475,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 3.311,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "barbezan_evaluation_2025",
@@ -3130,11 +3523,15 @@
         "maria-elisa-chuery-martins-rostelato"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.001,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carlesse_evaluation_2025",
@@ -3163,11 +3560,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_microwave-assisted_2025",
@@ -3195,11 +3596,15 @@
         "elvis-joacir-de-franca"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 8,
+      "fator_impacto": 10.417,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_araujo_filho_time_2025",
@@ -3224,11 +3629,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferrari_de_castro_endoscopic_2025",
@@ -3257,11 +3666,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 14,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "franceschi_staging_2025",
@@ -3291,11 +3704,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "gimenes_factors_2025",
@@ -3322,11 +3739,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "goncalves_overview_2025",
@@ -3368,11 +3789,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "gusmao_innovative_2025",
@@ -3400,11 +3825,15 @@
         "orlando-rodrigues-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 6.146,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "lisboa_recurrence_2025",
@@ -3434,11 +3863,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "nascimento_performance_2025",
@@ -3463,11 +3896,16 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "DE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pasquel_does_2025",
@@ -3501,11 +3939,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rocha_evaluation_2025",
@@ -3534,11 +3976,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "seferin_sentinel_2025",
@@ -3569,11 +4015,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "vasconcellos_knowledge_2025",
@@ -3601,11 +4051,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "siles_integrated_2025",
@@ -3637,11 +4091,17 @@
         "joao-loures-salinet-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 3.653,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ES",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_prevalence_2025",
@@ -3670,11 +4130,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 0.94,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_assuncao_density_2025",
@@ -3704,11 +4168,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.353,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferreira_ftir_2025",
@@ -3738,11 +4206,16 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 3.218,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "IE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pinheiro_effect_2025",
@@ -3771,11 +4244,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "andrade_one_2025",
@@ -3806,11 +4283,15 @@
         "daniel-perez-vieira"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.001,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "chaves_challenges_2025",
@@ -3855,11 +4336,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.404,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_random_2025",
@@ -3888,11 +4374,15 @@
         "jessica-dipold"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 4.568,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "latorre_evaluation_2025",
@@ -3924,11 +4414,16 @@
         "ilka-tiemy-kato"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.935,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "UY"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "arcas_cortisone_2025",
@@ -3956,11 +4451,15 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 4.005,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carvalho_decoding_2025",
@@ -3994,11 +4493,16 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.001,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ES"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "lima_brightness_2025",
@@ -4027,11 +4531,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 4.352,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_landfill_2025",
@@ -4061,11 +4569,15 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.569,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "valero_clinical_2025",
@@ -4103,11 +4615,17 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 9,
+      "fator_impacto": 7.48,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "KZ",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_machine_2025",
@@ -4139,11 +4657,16 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 2.994,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "IE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "coelho_renewable_2025",
@@ -4176,11 +4699,15 @@
         "elvis-joacir-de-franca"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 5.292,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "gomes_high-efficiency_2025",
@@ -4211,11 +4738,15 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 4.149,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferreira_microplastic_2025",
@@ -4248,11 +4779,16 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 3.778,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "barbosa_da_cruz_junior_absorption_2025",
@@ -4281,11 +4817,15 @@
         "luciano-bachmann"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 5,
+      "fator_impacto": 2.358,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "machado_unveiling_2025",
@@ -4315,11 +4855,15 @@
         "orlando-rodrigues-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 4.506,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "salazar-silva_external_2025",
@@ -4347,11 +4891,15 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.756,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "maia_role_2025",
@@ -4380,11 +4928,15 @@
         "ana-cecilia-correa-aranha"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.821,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "fortes_cl-doped_2025",
@@ -4414,11 +4966,15 @@
         "orlando-rodrigues-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 9,
+      "fator_impacto": 6.965,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "parize_evaluation_2025",
@@ -4449,11 +5005,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 4.027,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "moreno-loaiza_il-1_2025",
@@ -4536,11 +5096,16 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 24,
+      "fator_impacto": 8.261,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rodriguez_vitro_2025",
@@ -4567,11 +5132,15 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.935,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "costa_development_2025",
@@ -4603,11 +5172,16 @@
         "marcus-paulo-raele"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.861,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "parra_corrigendum_2025",
@@ -4639,11 +5213,15 @@
         "diego-roberto-da-cunha-pascoal"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "angelocci_silico_2025",
@@ -4672,11 +5250,15 @@
         "carlos-alberto-zeituni"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 1.707,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "fernandes_s-bend_2025",
@@ -4704,11 +5286,15 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 4.568,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "machado_green_2025",
@@ -4735,11 +5321,16 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 6.871,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "magdalon_remote_2025",
@@ -4768,11 +5359,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.94,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "e_souza-ferreira_first_2025",
@@ -4804,11 +5399,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 17,
+      "fator_impacto": 5.308,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_photodynamic_2025",
@@ -4837,11 +5436,15 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 3.573,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "agne_pre-clinical_2025",
@@ -4870,11 +5473,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "camilo_evaluation_2025",
@@ -4904,11 +5511,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 1.432,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dipold_strong_2025",
@@ -4936,11 +5547,16 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 5.89,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "lopes_plastic_2025",
@@ -4970,11 +5586,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "manna_etching_2025",
@@ -5003,11 +5623,15 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.811,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "n_geraldes_evaluation_2025",
@@ -5031,11 +5655,12 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 0.892,
       "qualis": null,
       "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "parra_microplastics_2025",
@@ -5065,11 +5690,15 @@
         "allan-bereczki"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 12,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pieretti_triboelectrochemical_2025",
@@ -5101,11 +5730,16 @@
         "wagner-de-rossi"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 2.378,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "pozzo_medicina_2025",
@@ -5131,11 +5765,15 @@
         "mario-olimpio-de-menezes"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 1.114,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "prado-silva_controlling_2025",
@@ -5163,11 +5801,15 @@
         "luciano-bachmann"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 7.414,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rodrigues_different_2025",
@@ -5196,11 +5838,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.831,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "sebastiao_forensic_2025",
@@ -5231,11 +5877,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 5,
+      "fator_impacto": 10.207,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "souza_targeting_2025",
@@ -5265,11 +5915,16 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 4.043,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "zucco_impact_2025",
@@ -5305,11 +5960,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 9.605,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_educacao_2024",
@@ -5335,11 +5994,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.224,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "parize_evaluation_2024",
@@ -5369,11 +6032,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.042,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rosales_plant-derived_2024",
@@ -5399,11 +6066,15 @@
         "emerson-soares-bernardes"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 31,
+      "fator_impacto": 10.051,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "reis_uma_2024",
@@ -5428,11 +6099,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.046,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "anjos_identifying_2024",
@@ -5465,11 +6140,15 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 6.582,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "moll-bernardes_immune_2024",
@@ -5511,11 +6190,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.96,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dos_santos_characterization_2024",
@@ -5540,11 +6223,15 @@
         "orlando-rodrigues-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.616,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dos_santos_combination_2024",
@@ -5577,11 +6264,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 5,
+      "fator_impacto": 1.265,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "ferreira_recognizing_2024",
@@ -5614,11 +6305,17 @@
         "anderson-zanardi-de-freitas"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB",
+        "PT"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "furlan_morphodynamics_2024",
@@ -5650,11 +6347,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 12.353,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_structural_2024",
@@ -5681,11 +6382,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 2.012,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "sc_alumina_2024",
@@ -5710,11 +6415,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.616,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "vieira_metastasis_2024",
@@ -5739,11 +6448,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.407,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "mata-santos_heart_2024",
@@ -5779,11 +6492,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 4.113,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "chagas_sigmar1_2024",
@@ -5817,11 +6534,16 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 7.084,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "costa_comparison_2024",
@@ -5850,11 +6572,16 @@
         "adamo-ferreira-gomes-do-monte"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 1.297,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "US"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "da_silva_effect_2024",
@@ -5880,11 +6607,15 @@
         "elvis-joacir-de-franca"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "hajj_using_2024",
@@ -5924,11 +6655,15 @@
         "maria-elisa-chuery-martins-rostelato"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "rodrigues_investigation_2024",
@@ -5962,11 +6697,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_understanding_2024",
@@ -5996,11 +6735,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 5.799,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "tavares_attenuation_2024",
@@ -6024,11 +6767,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "villani_computed_2024",
@@ -6053,11 +6800,16 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "DE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "reganin_monteiro_high-wavenumber_2024",
@@ -6087,11 +6839,16 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 2.63,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "IE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "almeida_junior_characterization_2024",
@@ -6116,11 +6873,15 @@
         "orlando-rodrigues-junior"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dedivitis_neck_2024",
@@ -6147,11 +6908,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 1.199,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "raele_autocorrelation_2024",
@@ -6178,11 +6943,15 @@
         "anderson-zanardi-de-freitas"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 2.678,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santos_effect_2024",
@@ -6205,11 +6974,15 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 1,
+      "fator_impacto": 6.429,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "savi_step-by-step_2024",
@@ -6236,11 +7009,16 @@
       "palavras_chave": [],
       "pessoas": [],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 3.58,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "DE"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "schaustz_cardiac_2024",
@@ -6279,11 +7057,15 @@
         "emiliano-horacio-medei"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.01,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "dipold_ndyvo4_2024",
@@ -6309,11 +7091,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 2.63,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "diniz_de_oliveira_guedes_protecao_2024",
@@ -6340,11 +7126,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.137,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "matos_kavanah_2024",
@@ -6368,11 +7158,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.94,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carvalho_editorial_2024",
@@ -6396,11 +7190,15 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 6,
+      "fator_impacto": 3.331,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "chaves_da_silva_aspectos_2024",
@@ -6424,11 +7222,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.457,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "benetti_atr_2024",
@@ -6458,11 +7260,16 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 2.185,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "borges_infrared_2024",
@@ -6492,11 +7299,15 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 3,
+      "fator_impacto": 5.116,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "freire_estimation_2024",
@@ -6526,11 +7337,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.203,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "silva_exploring_2024",
@@ -6560,11 +7375,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 12,
+      "fator_impacto": 2.203,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "cernea_multidisciplinary_2024",
@@ -6590,11 +7409,15 @@
         "leandro-luongo-de-matos"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 2,
+      "fator_impacto": 0.94,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "bordon_improved_2024",
@@ -6626,11 +7449,15 @@
         "anderson-zanardi-de-freitas"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 4,
+      "fator_impacto": 3.824,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "cabral_photodynamic_2024",
@@ -6659,11 +7486,16 @@
         "martha-simoes-ribeiro"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 18,
+      "fator_impacto": 8.905,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "GB"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "carvalho_oral_2024",
@@ -6695,11 +7527,16 @@
         "herculano-da-silva-martinho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 9,
+      "fator_impacto": 3.003,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "ES"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "de_abreu_role_2024",
@@ -6729,11 +7566,16 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 2.678,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": true,
+      "paises": [
+        "BR",
+        "CO"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "farooq_advances_2024",
@@ -6758,11 +7600,15 @@
         "denise-maria-zezell"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 25,
+      "fator_impacto": 8.447,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "junot_development_2024",
@@ -6789,11 +7635,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 7,
+      "fator_impacto": 2.203,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "lopes_blue_2024",
@@ -6821,11 +7671,15 @@
         "niklaus-ursus-wetter"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 10,
+      "fator_impacto": 5.566,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "moreira_analyzing_2024",
@@ -6852,11 +7706,15 @@
         "eduardo-landulfo"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 12,
+      "fator_impacto": 3.346,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "santana_contribuicoes_2024",
@@ -6880,11 +7738,15 @@
         "divanizia-do-nascimento-souza"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.251,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "morais_rare_2024",
@@ -6912,11 +7774,15 @@
         "luis-felipe-das-chagas-e-silva-de-carvalho"
       ],
       "grupos": [],
-      "citacoes": null,
-      "fator_impacto": null,
+      "citacoes": 0,
+      "fator_impacto": 0.359,
       "qualis": null,
-      "colaboracao_internacional": null,
-      "fonte": "bib-2026-04-15"
+      "colaboracao_internacional": false,
+      "paises": [
+        "BR"
+      ],
+      "fonte": "bib-2026-04-15",
+      "fonte_metricas": "openalex-2026-10-23"
     },
     {
       "id": "bravo_prognostic_2024",

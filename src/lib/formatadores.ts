@@ -46,3 +46,9 @@ export function slugificar(texto: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+
+/** JCR / fator de impacto com vírgula: 5.116 → "5,116"; 3.5 → "3,5". */
+export const formatarJcr = (valor: number) => valor.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 });
+
+/** "1 citação", "12 citações". */
+export const formatarCitacoes = (n: number) => `${n.toLocaleString("pt-BR")} ${n === 1 ? "citação" : "citações"}`;

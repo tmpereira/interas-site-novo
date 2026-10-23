@@ -1,0 +1,2475 @@
+{
+  "periodicos": [
+    {
+      "slug": "acs-applied-materials-interfaces",
+      "nome": "ACS Applied Materials & Interfaces",
+      "abreviacao": "ACS Appl. Mater. Interfaces",
+      "issn": [
+        "1944-8244",
+        "1944-8252"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "acs-applied-nano-materials",
+      "nome": "ACS Applied Nano Materials",
+      "abreviacao": "ACS Appl. Nano Mater.",
+      "issn": [
+        "2574-0970"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "acs-omega",
+      "nome": "ACS Omega",
+      "abreviacao": "ACS Omega",
+      "issn": [
+        "2470-1343"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 5,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "advances-in-materials-science-and-engineering",
+      "nome": "Advances in Materials Science and Engineering",
+      "abreviacao": "Advances in Materials Science and Engineering",
+      "issn": [
+        "1687-8434",
+        "1687-8442"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "advances-in-therapy",
+      "nome": "Advances in Therapy",
+      "abreviacao": "Adv Ther",
+      "issn": [
+        "0741-238X",
+        "1865-8652"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "aerosol-and-air-quality-research",
+      "nome": "Aerosol and Air Quality Research",
+      "abreviacao": "Aerosol Air Qual. Res.",
+      "issn": [
+        "16808584",
+        "20711409"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "aims-materials-science",
+      "nome": "AIMS Materials Science",
+      "abreviacao": "AIMSMATES",
+      "issn": [
+        "2372-0484"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "american-journal-of-infection-control",
+      "nome": "American Journal of Infection Control",
+      "abreviacao": "American Journal of Infection Control",
+      "issn": [
+        "01966553"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "analytical-chemistry",
+      "nome": "Analytical Chemistry",
+      "abreviacao": "Anal. Chem.",
+      "issn": [
+        "0003-2700",
+        "1520-6882"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "annals-of-otology-rhinology-laryngology",
+      "nome": "Annals of Otology, Rhinology & Laryngology",
+      "abreviacao": "Ann Otol Rhinol Laryngol",
+      "issn": [
+        "0003-4894",
+        "1943-572X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "antibiotics",
+      "nome": "Antibiotics",
+      "abreviacao": "Antibiotics",
+      "issn": [
+        "2079-6382"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "applied-optics",
+      "nome": "Applied Optics",
+      "abreviacao": "Appl. Opt.",
+      "issn": [
+        "1559-128X",
+        "2155-3165"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "applied-radiation-and-isotopes",
+      "nome": "Applied Radiation and Isotopes",
+      "abreviacao": "Applied Radiation and Isotopes",
+      "issn": [
+        "09698043"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "applied-spectroscopy",
+      "nome": "Applied Spectroscopy",
+      "abreviacao": "Appl Spectrosc",
+      "issn": [
+        "0003-7028",
+        "1943-3530"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "appliedchem",
+      "nome": "AppliedChem",
+      "abreviacao": "AppliedChem",
+      "issn": [
+        "2673-9623"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "archives-of-endocrinology-and-metabolism",
+      "nome": "Archives of Endocrinology and Metabolism",
+      "abreviacao": null,
+      "issn": [
+        "2359-3997",
+        "2359-4292"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "archives-of-head-and-neck-surgery",
+      "nome": "Archives of Head and Neck Surgery",
+      "abreviacao": null,
+      "issn": [],
+      "editora": null,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "arquivos-brasileiros-de-cardiologia",
+      "nome": "Arquivos Brasileiros de Cardiologia",
+      "abreviacao": "Arq. Bras. Cardiol.",
+      "issn": [
+        "0066-782X",
+        "1678-4170"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "atmosphere",
+      "nome": "Atmosphere",
+      "abreviacao": "Atmosphere",
+      "issn": [
+        "2073-4433"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "atmospheric-pollution-research",
+      "nome": "Atmospheric Pollution Research",
+      "abreviacao": "Atmospheric Pollution Research",
+      "issn": [
+        "13091042"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "biochemical-and-biophysical-research-communications",
+      "nome": "Biochemical and Biophysical Research Communications",
+      "abreviacao": "Biochemical and Biophysical Research Communications",
+      "issn": [
+        "0006291X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "biochimie",
+      "nome": "Biochimie",
+      "abreviacao": "Biochimie",
+      "issn": [
+        "03009084"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "biomedical-physics-engineering-express",
+      "nome": "Biomedical Physics & Engineering Express",
+      "abreviacao": "Biomed. Phys. Eng. Express",
+      "issn": [
+        "2057-1976"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "biomedicine-pharmacotherapy",
+      "nome": "Biomedicine & Pharmacotherapy",
+      "abreviacao": "Biomedicine & Pharmacotherapy",
+      "issn": [
+        "07533322"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "bionanoscience",
+      "nome": "BioNanoScience",
+      "abreviacao": "BioNanoSci.",
+      "issn": [
+        "2191-1630",
+        "2191-1649"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "biophysical-reviews",
+      "nome": "Biophysical Reviews",
+      "abreviacao": "Biophys Rev",
+      "issn": [
+        "1867-2450",
+        "1867-2469"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "bmc-medical-ethics",
+      "nome": "BMC Medical Ethics",
+      "abreviacao": "BMC Med Ethics",
+      "issn": [
+        "1472-6939"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "bmc-pregnancy-and-childbirth",
+      "nome": "BMC Pregnancy and Childbirth",
+      "abreviacao": "BMC Pregnancy Childbirth",
+      "issn": [
+        "1471-2393"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "brazilian-journal-of-otorhinolaryngology",
+      "nome": "Brazilian Journal of Otorhinolaryngology",
+      "abreviacao": "Brazilian Journal of Otorhinolaryngology",
+      "issn": [
+        "18088694"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 21,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "brazilian-journal-of-periodontology",
+      "nome": "Brazilian Journal of Periodontology",
+      "abreviacao": "Braz J Periodontol.",
+      "issn": [
+        "01039393"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "brazilian-journal-of-physics",
+      "nome": "Brazilian Journal of Physics",
+      "abreviacao": "Braz J Phys",
+      "issn": [
+        "0103-9733",
+        "1678-4448"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "brazilian-journal-of-radiation-sciences",
+      "nome": "Brazilian Journal of Radiation Sciences",
+      "abreviacao": "Braz. J. Rad. Sci.",
+      "issn": [
+        "2319-0612"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "breast-cancer-research-and-treatment",
+      "nome": "Breast Cancer Research and Treatment",
+      "abreviacao": "Breast Cancer Res Treat",
+      "issn": [
+        "0167-6806",
+        "1573-7217"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "british-journal-of-surgery",
+      "nome": "British Journal of Surgery",
+      "abreviacao": null,
+      "issn": [],
+      "editora": "Oxford University Press US",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "bulletin-of-environmental-contamination-and-toxicology",
+      "nome": "Bulletin of Environmental Contamination and Toxicology",
+      "abreviacao": "Bull Environ Contam Toxicol",
+      "issn": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "bulletin-of-the-american-meteorological-society",
+      "nome": "Bulletin of the American Meteorological Society",
+      "abreviacao": null,
+      "issn": [
+        "0003-0007",
+        "1520-0477"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "cadernos-de-odontologia",
+      "nome": "Cadernos de Odontologia",
+      "abreviacao": "Cadernos de Odontologia",
+      "issn": [
+        "2674-8223"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "cadernos-de-odontologia-do-unifeso",
+      "nome": "Cadernos de Odontologia do UNIFESO",
+      "abreviacao": null,
+      "issn": [],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "cancer-nanotechnology",
+      "nome": "Cancer Nanotechnology",
+      "abreviacao": "Cancer Nano",
+      "issn": [
+        "1868-6958",
+        "1868-6966"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "cancers",
+      "nome": "Cancers",
+      "abreviacao": "Cancers",
+      "issn": [
+        "2072-6694"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "cardiology-in-the-young",
+      "nome": "Cardiology in the Young",
+      "abreviacao": "Cardiol Young",
+      "issn": [
+        "1047-9511",
+        "1467-1107"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "catalysis-today",
+      "nome": "Catalysis Today",
+      "abreviacao": "Catalysis Today",
+      "issn": [
+        "09205861"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "cells",
+      "nome": "Cells",
+      "abreviacao": "Cells",
+      "issn": [
+        "2073-4409"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "cellular-physiology-and-biochemistry",
+      "nome": "Cellular Physiology and Biochemistry",
+      "abreviacao": "Cell Physiol Biochem",
+      "issn": [
+        "10158987",
+        "14219778"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "ceramics-international",
+      "nome": "Ceramics International",
+      "abreviacao": "Ceramics International",
+      "issn": [
+        "02728842"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "chemcatchem",
+      "nome": "ChemCatChem",
+      "abreviacao": "ChemCatChem",
+      "issn": [
+        "1867-3880",
+        "1867-3899"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "chemosensors",
+      "nome": "Chemosensors",
+      "abreviacao": "Chemosensors",
+      "issn": [
+        "2227-9040"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "ciencia-saude-coletiva",
+      "nome": "Ciência & Saúde Coletiva",
+      "abreviacao": "Ciênc. saúde coletiva",
+      "issn": [
+        "1413-8123",
+        "1678-4561"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "clinical-and-experimental-dental-research",
+      "nome": "Clinical and Experimental Dental Research",
+      "abreviacao": "Clinical &amp; Exp Dental Res",
+      "issn": [
+        "2057-4347"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "clinical-oral-investigations",
+      "nome": "Clinical Oral Investigations",
+      "abreviacao": "Clin Oral Invest",
+      "issn": [
+        "1436-3771"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "clinics",
+      "nome": "Clinics",
+      "abreviacao": "Clinics",
+      "issn": [
+        "18075932"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "computational-condensed-matter",
+      "nome": "Computational Condensed Matter",
+      "abreviacao": "Computational Condensed Matter",
+      "issn": [
+        "23522143"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "computer-methods-and-programs-in-biomedicine",
+      "nome": "Computer Methods and Programs in Biomedicine",
+      "abreviacao": "Computer Methods and Programs in Biomedicine",
+      "issn": [
+        "01692607"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "computers-and-electronics-in-agriculture",
+      "nome": "Computers and Electronics in Agriculture",
+      "abreviacao": "Computers and Electronics in Agriculture",
+      "issn": [
+        "01681699"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "critical-reviews-in-food-science-and-nutrition",
+      "nome": "Critical Reviews in Food Science and Nutrition",
+      "abreviacao": "Critical Reviews in Food Science and Nutrition",
+      "issn": [
+        "1040-8398",
+        "1549-7852"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "critical-reviews-in-oncology-hematology",
+      "nome": "Critical Reviews in Oncology/Hematology",
+      "abreviacao": "Critical Reviews in Oncology/Hematology",
+      "issn": [
+        "10408428"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "cuadernos-de-educacion-y-desarrollo",
+      "nome": "Cuadernos de Educación y Desarrollo",
+      "abreviacao": "Cuad. Ed. Desar.",
+      "issn": [
+        "1989-4155"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "current-materials-science",
+      "nome": "Current Materials Science",
+      "abreviacao": "CMS",
+      "issn": [
+        "26661454"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "current-oncology-reports",
+      "nome": "Current Oncology Reports",
+      "abreviacao": "Curr Oncol Rep",
+      "issn": [
+        "1523-3790",
+        "1534-6269"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "data-in-brief",
+      "nome": "Data in Brief",
+      "abreviacao": "Data in Brief",
+      "issn": [
+        "23523409"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "diagnostics",
+      "nome": "Diagnostics",
+      "abreviacao": "Diagnostics",
+      "issn": [
+        "2075-4418"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "discover-nano",
+      "nome": "Discover Nano",
+      "abreviacao": "Discover Nano",
+      "issn": [
+        "2731-9229"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "einstein-sao-paulo",
+      "nome": "einstein (São Paulo)",
+      "abreviacao": null,
+      "issn": [
+        "1679-4508",
+        "2317-6385"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 5,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "ejnmmi-radiopharmacy-and-chemistry",
+      "nome": "EJNMMI Radiopharmacy and Chemistry",
+      "abreviacao": "EJNMMI radiopharm. chem.",
+      "issn": [
+        "2365-421X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "endocrine",
+      "nome": "Endocrine",
+      "abreviacao": "Endocrine",
+      "issn": [
+        "1559-0100"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "food-chemistry",
+      "nome": "Food Chemistry",
+      "abreviacao": "Food Chemistry",
+      "issn": [
+        "03088146"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "food-control",
+      "nome": "Food Control",
+      "abreviacao": "Food Control",
+      "issn": [
+        "09567135"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "frontiers-in-earth-science",
+      "nome": "Frontiers in Earth Science",
+      "abreviacao": "Front. Earth Sci.",
+      "issn": [
+        "2296-6463"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "frontiers-in-oral-health",
+      "nome": "Frontiers in Oral Health",
+      "abreviacao": "Front. Oral. Health",
+      "issn": [
+        "2673-4842"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "geoscientific-instrumentation-methods-and-data-systems",
+      "nome": "Geoscientific Instrumentation, Methods and Data Systems",
+      "abreviacao": "Geosci. Instrum. Method. Data Syst.",
+      "issn": [
+        "2193-0864"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "health-physics",
+      "nome": "Health Physics",
+      "abreviacao": "Health Physics",
+      "issn": [
+        "0017-9078",
+        "1538-5159"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "heart-lung-and-circulation",
+      "nome": "Heart, Lung and Circulation",
+      "abreviacao": "Heart, Lung and Circulation",
+      "issn": [
+        "14439506"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "heliyon",
+      "nome": "Heliyon",
+      "abreviacao": "Heliyon",
+      "issn": [
+        "24058440"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "hematology-transfusion-and-cell-therapy",
+      "nome": "Hematology, Transfusion and Cell Therapy",
+      "abreviacao": "Hematology, Transfusion and Cell Therapy",
+      "issn": [
+        "25311379"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "ieee-transactions-on-geoscience-and-remote-sensing",
+      "nome": "IEEE Transactions on Geoscience and Remote Sensing",
+      "abreviacao": "IEEE Trans. Geosci. Remote Sensing",
+      "issn": [
+        "0196-2892",
+        "1558-0644"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "ijc-heart-vasculature",
+      "nome": "IJC Heart & Vasculature",
+      "abreviacao": "IJC Heart & Vasculature",
+      "issn": [
+        "23529067"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "instrumentation-science-technology",
+      "nome": "Instrumentation Science & Technology",
+      "abreviacao": "Instrumentation Science & Technology",
+      "issn": [
+        "1073-9149",
+        "1525-6030"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "international-archives-of-otorhinolaryngology",
+      "nome": "International Archives of Otorhinolaryngology",
+      "abreviacao": "Int Arch Otorhinolaryngol",
+      "issn": [
+        "1809-4864",
+        "1809-9777"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "international-journal-of-biological-macromolecules",
+      "nome": "International Journal of Biological Macromolecules",
+      "abreviacao": "International Journal of Biological Macromolecules",
+      "issn": [
+        "01418130"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "international-journal-of-cardiology-congenital-heart-disease",
+      "nome": "International Journal of Cardiology Congenital Heart Disease",
+      "abreviacao": "International Journal of Cardiology Congenital Heart Disease",
+      "issn": [
+        "26666685"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "international-journal-of-health-science",
+      "nome": "International Journal of Health Science",
+      "abreviacao": "JHS",
+      "issn": [
+        "27640159"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "international-journal-of-molecular-sciences",
+      "nome": "International Journal of Molecular Sciences",
+      "abreviacao": "IJMS",
+      "issn": [
+        "1422-0067"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "international-journal-of-nanomedicine",
+      "nome": "International Journal of Nanomedicine",
+      "abreviacao": "IJN",
+      "issn": [
+        "1178-2013"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "international-journal-of-obesity",
+      "nome": "International Journal of Obesity",
+      "abreviacao": "Int J Obes",
+      "issn": [
+        "0307-0565",
+        "1476-5497"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "international-journal-of-pharmaceutics",
+      "nome": "International Journal of Pharmaceutics",
+      "abreviacao": "International Journal of Pharmaceutics",
+      "issn": [
+        "03785173"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "international-journal-of-radiation-oncology-biology-physics",
+      "nome": "International Journal of Radiation Oncology*Biology*Physics",
+      "abreviacao": "International Journal of Radiation Oncology*Biology*Physics",
+      "issn": [
+        "03603016"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "investigacoes-em-ensino-de-ciencias",
+      "nome": "Investigações em Ensino de Ciências",
+      "abreviacao": "IENCI",
+      "issn": [
+        "1518-8795"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "iosr-journal-of-humanities-and-social-science-iosr-jhss",
+      "nome": "IOSR Journal Of Humanities And Social Science (IOSR-JHSS)",
+      "abreviacao": "IOSH-JHSS",
+      "issn": [
+        "2279-0837"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "jco-global-oncology",
+      "nome": "JCO Global Oncology",
+      "abreviacao": "JCO Glob Oncol",
+      "issn": [
+        "2687-8941"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "jnci-journal-of-the-national-cancer-institute",
+      "nome": "JNCI: Journal of the National Cancer Institute",
+      "abreviacao": null,
+      "issn": [
+        "0027-8874",
+        "1460-2105"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-archives-of-health",
+      "nome": "Journal Archives of Health",
+      "abreviacao": "Arch. Health",
+      "issn": [
+        "2675-4711"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-alloys-and-compounds",
+      "nome": "Journal of Alloys and Compounds",
+      "abreviacao": "Journal of Alloys and Compounds",
+      "issn": [
+        "09258388"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-applied-crystallography",
+      "nome": "Journal of Applied Crystallography",
+      "abreviacao": "J Appl Crystallogr",
+      "issn": [
+        "1600-5767"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-applied-oral-science",
+      "nome": "Journal of Applied Oral Science",
+      "abreviacao": "J. Appl. Oral Sci.",
+      "issn": [
+        "1678-7757",
+        "1678-7765"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-arid-environments",
+      "nome": "Journal of Arid Environments",
+      "abreviacao": "Journal of Arid Environments",
+      "issn": [
+        "01401963"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-biophotonics",
+      "nome": "Journal of Biophotonics",
+      "abreviacao": "Journal of Biophotonics",
+      "issn": [
+        "1864-063X",
+        "1864-0648"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-clinical-immunology",
+      "nome": "Journal of Clinical Immunology",
+      "abreviacao": "J Clin Immunol",
+      "issn": [
+        "0271-9142",
+        "1573-2592"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-clinical-medicine",
+      "nome": "Journal of Clinical Medicine",
+      "abreviacao": "JCM",
+      "issn": [
+        "2077-0383"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-craniofacial-surgery",
+      "nome": "Journal of Craniofacial Surgery",
+      "abreviacao": null,
+      "issn": [
+        "1049-2275"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-endodontics",
+      "nome": "Journal of Endodontics",
+      "abreviacao": "Journal of Endodontics",
+      "issn": [
+        "00992399"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-environmental-management",
+      "nome": "Journal of Environmental Management",
+      "abreviacao": "Journal of Environmental Management",
+      "issn": [
+        "03014797"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-esthetic-and-restorative-dentistry",
+      "nome": "Journal of Esthetic and Restorative Dentistry",
+      "abreviacao": "J Esthet Restor Dent",
+      "issn": [
+        "1496-4155",
+        "1708-8240"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-fungi",
+      "nome": "Journal of Fungi",
+      "abreviacao": "JoF",
+      "issn": [
+        "2309-608X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-luminescence",
+      "nome": "Journal of Luminescence",
+      "abreviacao": "Journal of Luminescence",
+      "issn": [
+        "00222313"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-materials-science",
+      "nome": "Journal of Materials Science",
+      "abreviacao": "J Mater Sci",
+      "issn": [
+        "0022-2461",
+        "1573-4803"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-oral-pathology-medicine",
+      "nome": "Journal of Oral Pathology & Medicine",
+      "abreviacao": "J Oral Pathology Medicine",
+      "issn": [
+        "0904-2512",
+        "1600-0714"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-pharmaceutical-and-biomedical-analysis",
+      "nome": "Journal of Pharmaceutical and Biomedical Analysis",
+      "abreviacao": "Journal of Pharmaceutical and Biomedical Analysis",
+      "issn": [
+        "07317085"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-pharmacy-and-pharmacology-research",
+      "nome": "Journal of Pharmacy and Pharmacology Research",
+      "abreviacao": "J Pharm Pharmacol Res 2024",
+      "issn": [
+        "25781553"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-photochemistry-and-photobiology-b-biology",
+      "nome": "Journal of Photochemistry and Photobiology B: Biology",
+      "abreviacao": "Journal of Photochemistry and Photobiology B: Biology",
+      "issn": [
+        "10111344"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-physics-conference-series",
+      "nome": "Journal of Physics: Conference Series",
+      "abreviacao": "J. Phys.: Conf. Ser.",
+      "issn": [
+        "1742-6588",
+        "1742-6596"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-proteome-research",
+      "nome": "Journal of Proteome Research",
+      "abreviacao": "J. Proteome Res.",
+      "issn": [
+        "1535-3893",
+        "1535-3907"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-radioanalytical-and-nuclear-chemistry",
+      "nome": "Journal of Radioanalytical and Nuclear Chemistry",
+      "abreviacao": "J Radioanal Nucl Chem",
+      "issn": [
+        "0236-5731",
+        "1588-2780"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-robotic-surgery",
+      "nome": "Journal of Robotic Surgery",
+      "abreviacao": "J Robotic Surg",
+      "issn": [
+        "1863-2491"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-the-brazilian-chemical-society",
+      "nome": "Journal of the Brazilian Chemical Society",
+      "abreviacao": "J. Braz. Chem. Soc.",
+      "issn": [
+        "01035053",
+        "16784790"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-the-optical-society-of-america-a",
+      "nome": "Journal of the Optical Society of America A",
+      "abreviacao": "J. Opt. Soc. Am. A",
+      "issn": [
+        "1084-7529",
+        "1520-8532"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-the-optical-society-of-america-b",
+      "nome": "Journal of the Optical Society of America B",
+      "abreviacao": "J. Opt. Soc. Am. B",
+      "issn": [
+        "0740-3224",
+        "1520-8540"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "laryngoscope-investigative-otolaryngology",
+      "nome": "Laryngoscope Investigative Otolaryngology",
+      "abreviacao": "Laryngoscope Investig Oto",
+      "issn": [
+        "2378-8038"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "laser-physics",
+      "nome": "Laser Physics",
+      "abreviacao": "Laser Phys.",
+      "issn": [
+        "1054-660X",
+        "1555-6611"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "laser-therapy",
+      "nome": "Laser Therapy",
+      "abreviacao": "Laser Ther J",
+      "issn": [
+        "0898-5901",
+        "1884-7269"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "lasers-in-medical-science",
+      "nome": "Lasers in Medical Science",
+      "abreviacao": "Lasers Med Sci",
+      "issn": [
+        "1435-604X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "lasers-in-surgery-and-medicine",
+      "nome": "Lasers in Surgery and Medicine",
+      "abreviacao": "Lasers Surg Med",
+      "issn": [
+        "0196-8092",
+        "1096-9101"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "life-sciences",
+      "nome": "Life Sciences",
+      "abreviacao": "Life Sciences",
+      "issn": [
+        "00243205"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "macromolecular-symposia",
+      "nome": "Macromolecular Symposia",
+      "abreviacao": "Macromolecular Symposia",
+      "issn": [
+        "1022-1360",
+        "1521-3900"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "marine-pollution-bulletin",
+      "nome": "Marine Pollution Bulletin",
+      "abreviacao": "Marine Pollution Bulletin",
+      "issn": [
+        "0025326X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "materialia",
+      "nome": "Materialia",
+      "abreviacao": "Materialia",
+      "issn": [
+        "25891529"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "materials",
+      "nome": "Materials",
+      "abreviacao": "Materials",
+      "issn": [
+        "1996-1944"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "materials-performance-and-characterization",
+      "nome": "Materials Performance and Characterization",
+      "abreviacao": null,
+      "issn": [
+        "2165-3992",
+        "2379-1365"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "materials-science-and-engineering-b",
+      "nome": "Materials Science and Engineering: B",
+      "abreviacao": "Materials Science and Engineering: B",
+      "issn": [
+        "09215107"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "microbiology-spectrum",
+      "nome": "Microbiology Spectrum",
+      "abreviacao": "Microbiol Spectr",
+      "issn": [
+        "2165-0497"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "micromachines",
+      "nome": "Micromachines",
+      "abreviacao": "Micromachines",
+      "issn": [
+        "2072-666X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "microplastics",
+      "nome": "Microplastics",
+      "abreviacao": "Microplastics",
+      "issn": [
+        "2673-8929"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "molecular-cellular-proteomics",
+      "nome": "Molecular & Cellular Proteomics",
+      "abreviacao": "Molecular & Cellular Proteomics",
+      "issn": [
+        "15359476"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "mucosal-immunology",
+      "nome": "Mucosal Immunology",
+      "abreviacao": "Mucosal Immunology",
+      "issn": [
+        "19330219"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "nanomaterials",
+      "nome": "Nanomaterials",
+      "abreviacao": "Nanomaterials",
+      "issn": [
+        "2079-4991"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "nanoscale",
+      "nome": "Nanoscale",
+      "abreviacao": "Nanoscale",
+      "issn": [
+        "2040-3364",
+        "2040-3372"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "nanoscale-advances",
+      "nome": "Nanoscale Advances",
+      "abreviacao": "Nanoscale Adv.",
+      "issn": [
+        "2516-0230"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "nanotheranostics",
+      "nome": "Nanotheranostics",
+      "abreviacao": "Nanotheranostics",
+      "issn": [
+        "2206-7418"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "nature-cardiovascular-research",
+      "nome": "Nature Cardiovascular Research",
+      "abreviacao": "Nat Cardiovasc Res",
+      "issn": [
+        "2731-0590"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "next-materials",
+      "nome": "Next Materials",
+      "abreviacao": "Next Materials",
+      "issn": [
+        "29498228"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "nitric-oxide",
+      "nome": "Nitric Oxide",
+      "abreviacao": "Nitric Oxide",
+      "issn": [
+        "10898603"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "nuclear-medicine-and-biology",
+      "nome": "Nuclear Medicine and Biology",
+      "abreviacao": "Nuclear Medicine and Biology",
+      "issn": [
+        "09698051"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "ocean-and-coastal-research",
+      "nome": "Ocean and Coastal Research",
+      "abreviacao": "Ocean Coast. Res.",
+      "issn": [
+        "2675-2824"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "optical-and-quantum-electronics",
+      "nome": "Optical and Quantum Electronics",
+      "abreviacao": "Opt Quant Electron",
+      "issn": [
+        "1572-817X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "optical-materials",
+      "nome": "Optical Materials",
+      "abreviacao": "Optical Materials",
+      "issn": [
+        "09253467"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "optics-laser-technology",
+      "nome": "Optics & Laser Technology",
+      "abreviacao": "Optics & Laser Technology",
+      "issn": [
+        "00303992"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "oral-oncology",
+      "nome": "Oral Oncology",
+      "abreviacao": "Oral Oncology",
+      "issn": [
+        "13688375"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "oral-surgery-oral-medicine-oral-pathology-and-oral-radiology",
+      "nome": "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
+      "abreviacao": "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
+      "issn": [
+        "22124403"
+      ],
+      "editora": "Elsevier",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "pharmaceutics",
+      "nome": "Pharmaceutics",
+      "abreviacao": "Pharmaceutics",
+      "issn": [
+        "1999-4923"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "photoacoustics",
+      "nome": "Photoacoustics",
+      "abreviacao": "Photoacoustics",
+      "issn": [
+        "22135979"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "photobiomodulation-photomedicine-and-laser-surgery",
+      "nome": "Photobiomodulation, Photomedicine, and Laser Surgery",
+      "abreviacao": "Photobiomodulation, Photomedicine, and Laser Surgery",
+      "issn": [
+        "2578-5478"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "photochemical-photobiological-sciences",
+      "nome": "Photochemical & Photobiological Sciences",
+      "abreviacao": "Photochem Photobiol Sci",
+      "issn": [
+        "1474-905X",
+        "1474-9092"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "photochemistry-and-photobiology",
+      "nome": "Photochemistry and Photobiology",
+      "abreviacao": "Photochem & Photobiology",
+      "issn": [
+        "0031-8655",
+        "1751-1097"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "photodiagnosis-and-photodynamic-therapy",
+      "nome": "Photodiagnosis and Photodynamic Therapy",
+      "abreviacao": "Photodiagnosis and Photodynamic Therapy",
+      "issn": [
+        "15721000"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "photonics",
+      "nome": "Photonics",
+      "abreviacao": "Photonics",
+      "issn": [
+        "2304-6732"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 5,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "physica-b-condensed-matter",
+      "nome": "Physica B: Condensed Matter",
+      "abreviacao": "Physica B: Condensed Matter",
+      "issn": [
+        "09214526"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "physical-chemistry-chemical-physics",
+      "nome": "Physical Chemistry Chemical Physics",
+      "abreviacao": "Phys. Chem. Chem. Phys.",
+      "issn": [
+        "1463-9076",
+        "1463-9084"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "plants",
+      "nome": "Plants",
+      "abreviacao": "Plants",
+      "issn": [
+        "2223-7747"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "plasmonics",
+      "nome": "Plasmonics",
+      "abreviacao": "Plasmonics",
+      "issn": [
+        "1557-1955",
+        "1557-1963"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "plos-neglected-tropical-diseases",
+      "nome": "PLOS Neglected Tropical Diseases",
+      "abreviacao": "PLoS Negl Trop Dis",
+      "issn": [
+        "1935-2735"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "plos-one",
+      "nome": "PLOS ONE",
+      "abreviacao": "PLoS ONE",
+      "issn": [
+        "1932-6203"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "polymers",
+      "nome": "Polymers",
+      "abreviacao": "Polymers",
+      "issn": [
+        "2073-4360"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "proceedings-of-the-institution-of-mechanical-engineers-part-b-journal-of-engineering-manufacture",
+      "nome": "Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture",
+      "abreviacao": "Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture",
+      "issn": [
+        "0954-4054",
+        "2041-2975"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "processes",
+      "nome": "Processes",
+      "abreviacao": "Processes",
+      "issn": [
+        "2227-9717"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "radiation-and-environmental-biophysics",
+      "nome": "Radiation and Environmental Biophysics",
+      "abreviacao": "Radiat Environ Biophys",
+      "issn": [
+        "0301-634X",
+        "1432-2099"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "radiation-measurements",
+      "nome": "Radiation Measurements",
+      "abreviacao": "Radiation Measurements",
+      "issn": [
+        "13504487"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "radiation-physics-and-chemistry",
+      "nome": "Radiation Physics and Chemistry",
+      "abreviacao": "Radiation Physics and Chemistry",
+      "issn": [
+        "0969806X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 11,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "radiation-research",
+      "nome": "Radiation Research",
+      "abreviacao": "Radiation Research",
+      "issn": [
+        "0033-7587"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "radiotherapy-and-oncology",
+      "nome": "Radiotherapy and Oncology",
+      "abreviacao": "Radiotherapy and Oncology",
+      "issn": [
+        "01678140"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "rapid-communications-in-mass-spectrometry",
+      "nome": "Rapid Communications in Mass Spectrometry",
+      "abreviacao": "Rapid Comm Mass Spectrometry",
+      "issn": [
+        "0951-4198",
+        "1097-0231"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "remote-sensing",
+      "nome": "Remote Sensing",
+      "abreviacao": "Remote Sensing",
+      "issn": [
+        "2072-4292"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "research-society-and-development",
+      "nome": "Research, Society and Development",
+      "abreviacao": "RSD",
+      "issn": [
+        "2525-3409"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "reviews-in-cardiovascular-medicine",
+      "nome": "Reviews in Cardiovascular Medicine",
+      "abreviacao": "Rev. Cardiovasc. Med.",
+      "issn": [
+        "1530-6550",
+        "2153-8174"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "revista-brasileira-de-cancerologia",
+      "nome": "Revista Brasileira de Cancerologia",
+      "abreviacao": "Rev. Bras. Cancerol.",
+      "issn": [
+        "2176-9745"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-brasileira-de-educacao-medica",
+      "nome": "Revista Brasileira de Educação Médica",
+      "abreviacao": "Rev. bras. educ. med.",
+      "issn": [
+        "0100-5502",
+        "1981-5271"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-brasileira-de-ensino-de-fisica",
+      "nome": "Revista Brasileira de Ensino de Física",
+      "abreviacao": "Rev. Bras. Ensino Fís.",
+      "issn": [
+        "1806-1117",
+        "1806-9126"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "revista-brasileira-de-fisica-medica",
+      "nome": "Revista Brasileira de Física Médica",
+      "abreviacao": "Rev Bras Fis Med",
+      "issn": [
+        "1984-9001",
+        "2176-8978"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-brasileira-multidisciplinar",
+      "nome": "Revista Brasileira Multidisciplinar",
+      "abreviacao": "RBM",
+      "issn": [
+        "1415-3580",
+        "2527-2675"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "revista-ensin-ufms",
+      "nome": "Revista Ensin@ UFMS",
+      "abreviacao": "RevENSIN@",
+      "issn": [
+        "2525-7056"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-insignare-scientia-ris",
+      "nome": "Revista Insignare Scientia - RIS",
+      "abreviacao": "RIS",
+      "issn": [
+        "2595-4520"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-thema-et-scientia",
+      "nome": "Revista Thêma et Scientia",
+      "abreviacao": null,
+      "issn": [
+        "2237-843X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "road-materials-and-pavement-design",
+      "nome": "Road Materials and Pavement Design",
+      "abreviacao": "Road Materials and Pavement Design",
+      "issn": [
+        "1468-0629",
+        "2164-7402"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "science-of-the-total-environment",
+      "nome": "Science of The Total Environment",
+      "abreviacao": "Science of The Total Environment",
+      "issn": [
+        "00489697"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "scientific-reports",
+      "nome": "Scientific Reports",
+      "abreviacao": "Sci Rep",
+      "issn": [
+        "2045-2322"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "scientifica",
+      "nome": "Scientifica",
+      "abreviacao": "Scientifica",
+      "issn": [
+        "2090-908X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "sleep-medicine",
+      "nome": "Sleep Medicine",
+      "abreviacao": "Sleep Medicine",
+      "issn": [
+        "13899457"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "spectrochimica-acta-part-a-molecular-and-biomolecular-spectroscopy",
+      "nome": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
+      "abreviacao": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
+      "issn": [
+        "13861425"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "technology-in-cancer-research-treatment",
+      "nome": "Technology in Cancer Research & Treatment",
+      "abreviacao": "Technol Cancer Res Treat",
+      "issn": [
+        "1533-0338",
+        "1533-0346"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "the-european-physical-journal-special-topics",
+      "nome": "The European Physical Journal Special Topics",
+      "abreviacao": "Eur. Phys. J. Spec. Top.",
+      "issn": [
+        "1951-6355",
+        "1951-6401"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "the-journal-of-nutritional-biochemistry",
+      "nome": "The Journal of Nutritional Biochemistry",
+      "abreviacao": "The Journal of Nutritional Biochemistry",
+      "issn": [
+        "09552863"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "the-journal-of-physiology",
+      "nome": "The Journal of Physiology",
+      "abreviacao": "The Journal of Physiology",
+      "issn": [
+        "0022-3751",
+        "1469-7793"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "the-lancet-diabetes-endocrinology",
+      "nome": "The Lancet Diabetes & Endocrinology",
+      "abreviacao": "The Lancet Diabetes & Endocrinology",
+      "issn": [
+        "22138587"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "the-lancet-digital-health",
+      "nome": "The Lancet Digital Health",
+      "abreviacao": "The Lancet Digital Health",
+      "issn": [
+        "25897500"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "the-lancet-healthy-longevity",
+      "nome": "The Lancet Healthy Longevity",
+      "abreviacao": "The Lancet Healthy Longevity",
+      "issn": [
+        "26667568"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "the-laryngoscope",
+      "nome": "The Laryngoscope",
+      "abreviacao": "The Laryngoscope",
+      "issn": [
+        "0023-852X",
+        "1531-4995"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "the-open-dentistry-journal",
+      "nome": "The Open Dentistry Journal",
+      "abreviacao": null,
+      "issn": [],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "thyroid",
+      "nome": "Thyroid®",
+      "abreviacao": "Thyroid®",
+      "issn": [
+        "1050-7256",
+        "1557-9077"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "toxins",
+      "nome": "Toxins",
+      "abreviacao": "Toxins",
+      "issn": [
+        "2072-6651"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "tribology-international",
+      "nome": "Tribology International",
+      "abreviacao": "Tribology International",
+      "issn": [
+        "0301679X"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "vibrational-spectroscopy",
+      "nome": "Vibrational Spectroscopy",
+      "abreviacao": "Vibrational Spectroscopy",
+      "issn": [
+        "09242031"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "virchows-archiv",
+      "nome": "Virchows Archiv",
+      "abreviacao": "Virchows Arch",
+      "issn": [
+        "0945-6317",
+        "1432-2307"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "wind-energy-science",
+      "nome": "Wind Energy Science",
+      "abreviacao": "Wind Energ. Sci.",
+      "issn": [
+        "2366-7451"
+      ],
+      "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    }
+  ]
+}

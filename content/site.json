@@ -20,6 +20,10 @@
           "link": "/equipe/"
         },
         {
+          "rotulo": "Alunos",
+          "link": "/alunos/"
+        },
+        {
           "rotulo": "Áreas de pesquisa",
           "link": "/areas-de-pesquisa/"
         },
@@ -53,6 +57,10 @@
     {
       "rotulo": "Vídeos",
       "link": "/videos/"
+    },
+    {
+      "rotulo": "INTERAS em números",
+      "link": "/interas-em-numeros/"
     }
   ],
   "anuncio": {

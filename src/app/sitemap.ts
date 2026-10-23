@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(data && { lastModified: data }),
   });
   return [
-    ...["/", "/sobre-o-interas/", "/equipe/", "/areas-de-pesquisa/", "/grupos/", "/publicacoes/", "/noticias/", "/videos/", "/contato/"].map((c) => url(c)),
+    ...["/", "/sobre-o-interas/", "/equipe/", "/alunos/", "/areas-de-pesquisa/", "/grupos/", "/publicacoes/", "/noticias/", "/videos/", "/interas-em-numeros/", "/contato/"].map((c) => url(c)),
     ...pessoas.map((p) => url(`/equipe/${p.slug}/`)),
     ...grupos.map((g) => url(`/grupos/${g.slug}/`)),
     ...publicacoes.map((p) => url(`/publicacoes/${p.id}/`)),

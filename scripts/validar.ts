@@ -16,6 +16,7 @@ console.log(
   [
     "✓ Conteúdo válido:",
     `  ${conteudo.pessoas.length} pessoas`,
+    `  ${conteudo.alunos.length} alunos`,
     `  ${conteudo.publicacoes.length} publicações`,
     `  ${conteudo.patentes.length} patentes`,
     `  ${conteudo.grupos.length} grupos`,

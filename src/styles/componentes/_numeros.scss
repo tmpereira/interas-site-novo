@@ -1,0 +1,475 @@
+// INTERAS em números: cartões de resumo e gráficos de barras (GraficoBarras.tsx).
+
+.numeros-interas {
+  @include grade-celulas;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: $espaco-8;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  &__item {
+    padding: $espaco-5;
+
+    dt {
+      font-size: $tamanho-sm;
+      font-weight: $peso-normal;
+      color: $cor-texto-suave;
+    }
+
+    dd {
+      margin: $espaco-1 0 0;
+    }
+  }
+
+  &__valor {
+    display: block;
+    font-family: $fonte-titulo;
+    font-size: $tamanho-3xl;
+    font-weight: $peso-titulo;
+    font-variant-numeric: tabular-nums;
+
+    @media (min-width: $bp-md) {
+      font-size: $tamanho-4xl;
+    }
+  }
+
+  &__nota {
+    display: block;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+}
+
+.secao-numeros {
+  margin-top: $espaco-12;
+
+  &__titulo {
+    @include sobretitulo;
+    margin-bottom: $espaco-4;
+    color: $cor-texto-suave;
+  }
+
+  &__grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, $largura-minima-grafico), 1fr));
+    gap: $espaco-4;
+
+    &--multiplos {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, $largura-minima-grafico-compacto), 1fr));
+    }
+  }
+
+  &__nota {
+    margin: $espaco-3 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+}
+
+.grafico-barras {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: $espaco-5;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+
+  &__cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: $espaco-1;
+    margin-bottom: $espaco-6;
+  }
+
+  &__titulo {
+    font-family: $fonte-titulo;
+    font-size: $tamanho-xl;
+    font-weight: $peso-titulo;
+    line-height: $altura-linha-titulo;
+  }
+
+  &__descricao {
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+
+  &__colunas {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    gap: $espaco-entre-barras;
+    margin: auto 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__coluna {
+    display: grid;
+    grid-template-rows: auto $altura-grafico auto;
+    justify-items: center;
+    cursor: default;
+  }
+
+  &__valor {
+    margin-bottom: $espaco-1;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__barra {
+    display: block;
+    width: 100%;
+    max-width: $largura-maxima-barra;
+    height: 100%;
+
+    rect {
+      fill: $cor-acento;
+      transition: opacity $transicao-rapida;
+    }
+  }
+
+  &__coluna:hover &__barra rect {
+    opacity: $opacidade-hover;
+  }
+
+  // A borda de cima dos rótulos forma a linha de base contínua sob as barras
+  &__rotulo {
+    width: 100%;
+    padding-top: $espaco-1;
+    border-top: $borda;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+    text-align: center;
+  }
+
+  &__nota {
+    margin: $espaco-4 0 0;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  &--compacto {
+    padding: $espaco-4;
+  }
+
+  &--compacto &__cabecalho {
+    margin-bottom: $espaco-4;
+  }
+
+  &--compacto &__titulo {
+    font-size: $tamanho-lg;
+  }
+
+  &--compacto &__coluna {
+    grid-template-rows: auto $altura-grafico-compacto auto;
+  }
+}
+
+// Rede de coautoria (RedeCoautoria.tsx)
+.rede-coautoria {
+  margin: 0;
+  padding: $espaco-5;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+
+  &__cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: $espaco-2;
+    margin-bottom: $espaco-4;
+  }
+
+  &__titulo {
+    font-family: $fonte-titulo;
+    font-size: $tamanho-xl;
+    font-weight: $peso-titulo;
+    line-height: $altura-linha-titulo;
+  }
+
+  &__legenda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $espaco-2 $espaco-4;
+    font-size: $tamanho-sm;
+  }
+
+  &__chave {
+    display: inline-flex;
+    align-items: center;
+    gap: $espaco-2;
+
+    &::before {
+      content: "";
+      width: $tamanho-chave-rede;
+      height: $tamanho-chave-rede;
+      border-radius: 50%;
+      background: var(--cor-no);
+    }
+
+    &--pesquisador {
+      --cor-no: #{$cor-acento};
+    }
+
+    &--bolsista {
+      --cor-no: #{$cor-luz};
+    }
+  }
+
+  &__explicacao {
+    color: $cor-texto-suave;
+  }
+
+
+  // No celular o desenho mantém uma largura mínima e rola na horizontal
+  &__rolagem {
+    overflow-x: auto;
+    border-radius: $raio-xl;
+    background: $cor-fundo;
+  }
+
+  &__svg {
+    display: block;
+    width: 100%;
+    min-width: $largura-minima-rede;
+    height: auto;
+  }
+
+  &__aresta {
+    stroke: $cor-texto;
+    stroke-linecap: round;
+    opacity: $opacidade-aresta;
+    transition: opacity $transicao-rapida;
+  }
+
+  &__no {
+    --cor-no: #{$cor-acento};
+    transition: opacity $transicao-rapida;
+
+    &--bolsista {
+      --cor-no: #{$cor-luz};
+    }
+
+    circle {
+      fill: var(--cor-no);
+      stroke: $cor-fundo;
+      stroke-width: 2;
+    }
+
+    text {
+      font-family: $fonte-base;
+      font-size: $tamanho-texto-rede;
+      fill: $cor-texto;
+      text-anchor: middle;
+      paint-order: stroke;
+      stroke: $cor-fundo;
+      stroke-width: 3;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+  }
+
+  // Ao passar o mouse numa pessoa, o resto fica apagado
+  &__svg--realce &__aresta {
+    opacity: $opacidade-apagada * 0.5;
+  }
+
+  &__svg--realce &__aresta--ativa {
+    stroke: $cor-texto;
+    opacity: $opacidade-aresta-ativa;
+  }
+
+  &__svg--realce &__no {
+    opacity: $opacidade-apagada;
+  }
+
+  &__svg--realce &__no--ativo {
+    opacity: 1;
+  }
+
+  &__nota {
+    margin: $espaco-3 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+
+  &__tabela {
+    margin-top: $espaco-3;
+    font-size: $tamanho-sm;
+
+    summary {
+      margin-bottom: $espaco-3;
+      cursor: pointer;
+    }
+  }
+}
+
+// Pílulas de período compartilhadas pela rede e pelo mapa (PainelColaboracao.tsx)
+.seletor-periodo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espaco-2;
+  margin-bottom: $espaco-4;
+
+  &__opcao {
+    @include pilula-pequena;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+// Tons da escala de laranja: --nivel-1 (poucos artigos) a --nivel-5 (mais artigos) definem --cor-pais
+@mixin tons-mapa {
+  @each $tom in $tons-mapa-parceiro {
+    $i: index($tons-mapa-parceiro, $tom);
+    &--nivel-#{$i} {
+      --cor-pais: #{$tom};
+    }
+  }
+}
+
+// Mapa da internacionalização (MapaInternacional.tsx): fundo preto e contornos brancos
+// nos dois modos de cor
+.mapa-internacional {
+  margin: 0;
+  padding: $espaco-5;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+
+  &__cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: $espaco-2;
+    margin-bottom: $espaco-4;
+  }
+
+  &__titulo {
+    font-family: $fonte-titulo;
+    font-size: $tamanho-xl;
+    font-weight: $peso-titulo;
+    line-height: $altura-linha-titulo;
+  }
+
+  &__legenda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $espaco-2 $espaco-4;
+    font-size: $tamanho-sm;
+  }
+
+  &__chave {
+    display: inline-flex;
+    align-items: center;
+    gap: $espaco-2;
+
+    &::before {
+      content: "";
+      width: $tamanho-chave-rede;
+      height: $tamanho-chave-rede;
+      border-radius: 50%;
+      background: var(--cor-pais);
+    }
+
+    &--brasil {
+      --cor-pais: #{$cor-mapa-brasil};
+    }
+
+  }
+
+  &__escala {
+    display: inline-flex;
+    align-items: center;
+    gap: $espaco-2;
+  }
+
+  &__degraus {
+    display: inline-flex;
+    gap: $espaco-entre-barras;
+  }
+
+  &__degrau {
+    width: $tamanho-degrau-mapa;
+    height: $tamanho-chave-rede;
+    border-radius: $raio-sm;
+    background: var(--cor-pais);
+    @include tons-mapa;
+  }
+
+  &__resumo {
+    color: $cor-texto-suave;
+  }
+
+  &__desenho {
+    overflow: hidden;
+    border-radius: $raio-xl;
+    background: $cor-mapa-fundo;
+  }
+
+  &__svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__pais {
+    fill: $cor-mapa-fundo;
+    stroke: $cor-mapa-contorno;
+    stroke-width: $espessura-contorno-mapa;
+    stroke-linejoin: round;
+    transition: fill $transicao-rapida;
+
+    &--brasil {
+      fill: $cor-mapa-brasil;
+    }
+
+    &[class*="--nivel-"] {
+      fill: var(--cor-pais);
+    }
+
+    @include tons-mapa;
+
+    &--brasil:hover,
+    &[class*="--nivel-"]:hover {
+      opacity: $opacidade-hover;
+    }
+  }
+
+  &__parceiros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin: $espaco-4 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__parceiro {
+    @include pilula-pequena;
+    cursor: default;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  &__contagem {
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  &__nota {
+    margin: $espaco-3 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+}

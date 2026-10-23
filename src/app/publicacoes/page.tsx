@@ -3,8 +3,9 @@ import CabecalhoPagina from "@/components/CabecalhoPagina";
 import FiltroPublicacoes, { type ItemPublicacao } from "@/components/FiltroPublicacoes";
 import ListaPatentes from "@/components/ListaPatentes";
 import { carregarConteudo } from "@/lib/conteudo";
-import { paginaPorSlug } from "@/lib/consultas";
-import { markdownEmLinha } from "@/lib/markdown";
+import { paginaPorSlug, paisesEstrangeiros } from "@/lib/consultas";
+import { formatarData } from "@/lib/formatadores";
+import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
@@ -16,7 +17,7 @@ export default function Publicacoes() {
   const { publicacoes, patentes, grupos, pessoas } = carregarConteudo();
   const pagina = paginaPorSlug("publicacoes");
 
-  // Dados mínimos de cada publicação para a lista com filtros (o resumo não vai para o navegador)
+  // Dados de cada publicação para a lista com filtros (o resumo aparece ao expandir o cartão)
   const itens: ItemPublicacao[] = publicacoes.map((p) => ({
     id: p.id,
     titulo: p.titulo,
@@ -24,6 +25,8 @@ export default function Publicacoes() {
     autores: p.autores,
     ano: p.ano,
     data: p.data,
+    dataTexto: formatarData(p.data),
+    resumoHtml: p.resumo ? markdownParaHtml(p.resumo) : null,
     periodico: p.periodico,
     volume: p.volume,
     numero: p.numero,
@@ -34,6 +37,7 @@ export default function Publicacoes() {
     qualis: p.qualis,
     doi: p.doi,
     internacional: p.colaboracao_internacional ?? null,
+    paises: paisesEstrangeiros(p.paises),
   }));
   const gruposComPublicacao = grupos.filter((g) => publicacoes.some((p) => p.grupos.includes(g.slug))).map((g) => ({ slug: g.slug, titulo: g.titulo }));
 

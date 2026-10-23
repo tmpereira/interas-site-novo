@@ -49,6 +49,28 @@
     font-size: $tamanho-sm;
     font-style: italic;
   }
+
+  &__metricas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin: $espaco-3 0 0;
+  }
+}
+
+// Pílula de destaque para JCR e citações (listas de artigos)
+.pilula-metrica {
+  display: inline-flex;
+  align-items: center;
+  padding: $espaco-etiqueta-y $espaco-3;
+  border: 1px solid $cor-borda-metrica;
+  border-radius: $raio-pilula;
+  background: $cor-fundo-metrica;
+  font-size: $tamanho-sm;
+  font-weight: $peso-medio;
+  color: $cor-texto;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 // --- Números da produção (topo de /publicacoes/) ----------------------------
@@ -189,14 +211,22 @@
 .lista-artigos {
   @include lista-linhas;
 
+  // O cartão inteiro é clicável: expande e mostra o resumo embaixo
   &__item {
     display: grid;
     gap: $espaco-3;
-    padding: $espaco-6 0;
+    padding: $espaco-6 $espaco-3;
+    cursor: pointer;
+    transition: background-color $transicao-rapida;
 
     @media (min-width: $bp-md) {
       grid-template-columns: $largura-coluna-ano minmax(0, 1fr) auto;
       gap: $espaco-3 $espaco-4;
+    }
+
+    &:hover,
+    &--aberto {
+      background: $cor-superficie;
     }
   }
 
@@ -261,9 +291,92 @@
     word-break: break-all;
   }
 
-  &__link {
-    @include link-seta;
+  // Lado direito: "Publicado em" + data e a seta (botão que expande, para quem usa teclado)
+  &__alternar {
+    display: flex;
+    align-items: flex-start;
+    gap: $espaco-3;
     align-self: start;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $cor-texto-suave;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  &__publicado {
+    display: grid;
+    font-size: $tamanho-sm;
+    white-space: nowrap;
+  }
+
+  &__publicado-rotulo {
+    @include sobretitulo;
+  }
+
+  &__publicado time {
+    color: $cor-texto;
+    font-variant-numeric: tabular-nums;
+  }
+
+  // Seta desenhada com bordas; gira quando o cartão está aberto
+  &__seta {
+    width: $tamanho-seta-cartao;
+    height: $tamanho-seta-cartao;
+    margin-top: $espaco-2;
+    border-right: 2px solid $cor-texto-suave;
+    border-bottom: 2px solid $cor-texto-suave;
+    transform: rotate(45deg);
+    transition: transform $transicao-rapida;
+  }
+
+  &__item--aberto &__seta {
+    transform: rotate(225deg);
+  }
+
+  &__resumo {
+    padding-top: $espaco-4;
+    border-top: $borda;
+    cursor: auto;
+
+    @media (min-width: $bp-md) {
+      grid-column: 2 / -1;
+    }
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  &__resumo-rotulo {
+    @include sobretitulo;
+    margin-bottom: $espaco-2;
+    color: $cor-texto-suave;
+  }
+
+  &__resumo-texto {
+    max-width: $largura-leitura;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__resumo-vazio {
+    margin: 0;
+    font-size: $tamanho-sm;
+    font-style: italic;
+    color: $cor-texto-suave;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__item,
+    &__seta {
+      transition: none;
+    }
   }
 }
 
@@ -400,5 +513,58 @@
   &__doi {
     font-family: $fonte-mono;
     font-size: $tamanho-sm;
+  }
+}
+
+// Paginação da lista de artigos (FiltroPublicacoes.tsx): artigos por página à esquerda,
+// páginas à direita; no celular, um embaixo do outro
+.paginacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $espaco-4;
+  margin-top: $espaco-6;
+
+  &__por-pagina {
+    display: inline-flex;
+    align-items: center;
+    gap: $espaco-2;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+
+    select {
+      width: auto;
+    }
+  }
+
+  &__paginas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $espaco-2;
+  }
+
+  &__botao {
+    @include pilula-pequena;
+    font-variant-numeric: tabular-nums;
+
+    &--numero {
+      justify-content: center;
+      min-width: $largura-botao-pagina;
+    }
+
+    &:disabled {
+      opacity: $opacidade-apagada * 2;
+      cursor: default;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  &__salto {
+    color: $cor-texto-suave;
   }
 }

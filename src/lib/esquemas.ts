@@ -101,6 +101,37 @@ export const arquivoPessoas = z.looseObject({
 });
 
 // ---------------------------------------------------------------------------
+// Alunos (orientações dos pesquisadores) — content/alunos.json
+// ---------------------------------------------------------------------------
+
+/** Na ordem de exibição da página "Alunos". */
+export const NIVEIS_ALUNO = ["iniciacao-cientifica", "mestrado", "doutorado", "pos-doutorado"] as const;
+
+export const SITUACOES_ALUNO = ["em-andamento", "concluida"] as const;
+
+export const aluno = z.looseObject({
+  nome: texto,
+  /** Slug de pessoas.json. */
+  orientador: slug,
+  nivel: z.enum(NIVEIS_ALUNO),
+  situacao: z.enum(SITUACOES_ALUNO),
+  /** Título do trabalho (TCC, dissertação, tese, projeto). */
+  titulo: z.string().nullable(),
+  ano_inicio: z.number().int().min(1900).max(2100).nullable(),
+  ano_conclusao: z.number().int().min(1900).max(2100).nullable(),
+  instituicao: z.string().nullable(),
+  /** Nome de quem coorientou (texto livre; pode não ser da equipe). */
+  coorientacao: z.string().nullable().optional(),
+  /** Origem do registro, ex.: "lattes-2026-10-23". */
+  fonte: texto,
+});
+
+export const arquivoAlunos = z.looseObject({
+  $schema: z.string().optional(),
+  alunos: z.array(aluno),
+});
+
+// ---------------------------------------------------------------------------
 // Publicações — content/publicacoes.json
 // ---------------------------------------------------------------------------
 
@@ -130,6 +161,8 @@ export const publicacao = z.looseObject({
   qualis: z.string().nullable(),
   /** Tem coautoria internacional? `null` = ainda não informado (a tabela mostra "—"). */
   colaboracao_internacional: z.boolean().nullable().optional(),
+  /** Países das instituições dos autores, em código ISO de 2 letras (ex.: ["BR", "US"]). */
+  paises: z.array(z.string().regex(/^[A-Z]{2}$/, "use o código ISO de 2 letras, ex.: US")).optional(),
   /** Origem do registro, ex.: "bib-2026-04-15" ou "lattes-2026-11-03". */
   fonte: texto,
   preprint: url.nullable().optional(),
@@ -377,6 +410,8 @@ export const arquivoSite = z.looseObject({
 
 export type CategoriaPessoa = z.infer<typeof categoriaPessoa>;
 export type Pessoa = z.infer<typeof pessoa>;
+export type NivelAluno = (typeof NIVEIS_ALUNO)[number];
+export type Aluno = z.infer<typeof aluno>;
 export type Publicacao = z.infer<typeof publicacao>;
 export type Patente = z.infer<typeof patente>;
 export type Grupo = z.infer<typeof grupo>;
@@ -392,6 +427,7 @@ export const ARQUIVOS_JSON = {
   "site.json": arquivoSite,
   "home.json": arquivoHome,
   "pessoas.json": arquivoPessoas,
+  "alunos.json": arquivoAlunos,
   "publicacoes.json": arquivoPublicacoes,
   "patentes.json": arquivoPatentes,
   "grupos.json": arquivoGrupos,

@@ -3,7 +3,7 @@ import Link from "next/link";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { vincularAutores } from "@/lib/autores";
 import { carregarConteudo } from "@/lib/conteudo";
-import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga } from "@/lib/formatadores";
+import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga, formatarJcr } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 
@@ -59,8 +59,8 @@ export default async function PaginaPublicacao({ params }: Props) {
   ].filter(Boolean);
   const metricas = [
     p.qualis && { rotulo: "Qualis", valor: p.qualis },
-    p.fator_impacto !== null && { rotulo: "Fator de impacto", valor: String(p.fator_impacto) },
-    p.citacoes !== null && { rotulo: "Citações", valor: String(p.citacoes) },
+    p.fator_impacto !== null && { rotulo: "Fator de impacto (JCR)", valor: formatarJcr(p.fator_impacto) },
+    p.citacoes !== null && { rotulo: "Citações", valor: p.citacoes.toLocaleString("pt-BR") },
   ].filter((m): m is { rotulo: string; valor: string } => Boolean(m));
 
   return (

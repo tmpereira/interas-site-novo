@@ -76,6 +76,12 @@
       "conteudo": ""
     },
     {
+      "slug": "alunos",
+      "titulo": "Alunos",
+      "descricao": "Orientações de iniciação científica, mestrado, doutorado e pós-doutorado dos pesquisadores do INTERAS",
+      "conteudo": ""
+    },
+    {
       "slug": "grupos",
       "titulo": "Grupos de Pesquisa do INTERAS",
       "descricao": null,
@@ -100,6 +106,12 @@
       "titulo": "Produções Audiovisuais",
       "descricao": "Documentação e Divulgação Científica INTERAS",
       "conteudo": "Nesta seção, disponibilizamos vídeos institucionais, registros de eventos e materiais de divulgação produzidos pelo INTERAS."
+    },
+    {
+      "slug": "interas-em-numeros",
+      "titulo": "INTERAS em números",
+      "descricao": "Produção científica e formação de recursos humanos do INCT INTERAS",
+      "conteudo": ""
     }
   ]
 }

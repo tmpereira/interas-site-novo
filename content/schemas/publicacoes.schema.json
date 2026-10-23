@@ -153,6 +153,13 @@
               "null"
             ]
           },
+          "paises": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            }
+          },
           "fonte": {
             "type": "string",
             "minLength": 1

@@ -1,0 +1,116 @@
+// Alunos: resumo por nível e uma tabela por nível (iniciação científica, mestrado...).
+
+.secao-alunos {
+  margin-top: $espaco-12;
+
+  h2#{&}__titulo {
+    @include sobretitulo;
+    margin-bottom: $espaco-4;
+    color: $cor-texto-suave;
+  }
+
+  &__contagem {
+    color: $cor-texto-suave;
+  }
+}
+
+// Tabelas largas rolam na horizontal, sem estourar a página no celular
+.tabela-alunos__rolagem {
+  overflow-x: auto;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+}
+
+.tabela-alunos {
+  width: 100%;
+  min-width: $largura-minima-tabela-alunos;
+  border-collapse: collapse;
+  font-size: $tamanho-sm;
+
+  &--resumo {
+    min-width: 0;
+    font-size: $tamanho-base;
+  }
+
+  th,
+  td {
+    padding: $espaco-3 $espaco-4;
+    border-bottom: $borda;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead th {
+    @include sobretitulo;
+    padding-top: $espaco-4;
+    color: $cor-texto-suave;
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+
+  tbody th {
+    font-weight: $peso-medio;
+  }
+
+  tfoot > tr > * {
+    border-top: $borda;
+    border-bottom: 0;
+    font-weight: $peso-semi;
+  }
+
+  a {
+    color: $cor-texto;
+    text-decoration-color: $cor-linha;
+
+    &:hover {
+      color: $cor-acento;
+    }
+  }
+
+  // th/td no seletor para vencer o alinhamento à esquerda de `.tabela-alunos th`
+  th#{&}__numero,
+  td#{&}__numero {
+    font-family: $fonte-mono;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__periodo {
+    font-family: $fonte-mono;
+    white-space: nowrap;
+  }
+
+  &__coorientacao {
+    display: block;
+    margin-top: $espaco-1;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  &__titulo-trabalho {
+    min-width: $largura-coluna-titulo-trabalho;
+    color: $cor-texto-suave;
+  }
+}
+
+.situacao-aluno {
+  display: inline-block;
+  padding: $espaco-etiqueta-y $espaco-etiqueta-x;
+  border-radius: $raio-pilula;
+  font-size: $tamanho-xs;
+  white-space: nowrap;
+
+  &--em-andamento {
+    background: $cor-sucesso-fundo;
+    color: $cor-sucesso;
+  }
+
+  &--concluida {
+    border: $borda;
+    color: $cor-texto-suave;
+  }
+}

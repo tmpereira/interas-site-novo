@@ -89,15 +89,19 @@
     padding: $espaco-1 max(#{$margem-lateral}, env(safe-area-inset-right, 0px)) $espaco-1 max(#{$margem-lateral}, env(safe-area-inset-left, 0px));
   }
 
+  // Logo sobre uma placa branca de cantos arredondados (branca também no modo escuro)
   &__marca {
     display: inline-flex;
     align-items: center;
+    padding: $espaco-placa-logo-y $espaco-placa-logo-x;
+    border-radius: $raio-placa-logo;
+    background: $cor-placa-logo;
+    box-shadow: $sombra-placa-logo;
   }
 
   &__logo {
     width: auto;
     height: $altura-logo-navbar;
-    filter: $filtro-logo;
   }
 
   // Botão "Menu" (só no celular e tablet)

@@ -11,6 +11,7 @@ import {
   CATEGORIAS_PESSOA,
   cabecalhoNoticia,
   idNoticia,
+  type Aluno,
   type Grupo,
   type Home,
   type Noticia,
@@ -30,6 +31,7 @@ export type Conteudo = {
   site: Site;
   home: Home;
   pessoas: Pessoa[];
+  alunos: Aluno[];
   publicacoes: Publicacao[];
   patentes: Patente[];
   grupos: Grupo[];
@@ -223,6 +225,7 @@ export function validarConteudo(): ResultadoValidacao {
     site: lido["site.json"] as Site,
     home: lido["home.json"] as Home,
     pessoas: (lido["pessoas.json"] as { pessoas: Pessoa[] }).pessoas,
+    alunos: (lido["alunos.json"] as { alunos: Aluno[] }).alunos,
     publicacoes: (lido["publicacoes.json"] as { publicacoes: Publicacao[] }).publicacoes,
     patentes: (lido["patentes.json"] as { patentes: Patente[] }).patentes,
     grupos: (lido["grupos.json"] as { grupos: Grupo[] }).grupos,
@@ -237,7 +240,7 @@ export function validarConteudo(): ResultadoValidacao {
 
 /** Checagens entre coleções: ids únicos, referências existentes, imagens, ordem dos arquivos. */
 function verificarReferencias(c: Conteudo, erros: string[], avisos: string[]) {
-  const { site, home, pessoas, publicacoes, patentes, grupos, videos, paginas, noticias } = c;
+  const { site, home, pessoas, alunos, publicacoes, patentes, grupos, videos, paginas, noticias } = c;
 
   // Identificadores únicos
   const unicos = <T>(arquivo: string, lista: T[], chave: (x: T) => string, nomeCampo: string) => {
@@ -268,6 +271,9 @@ function verificarReferencias(c: Conteudo, erros: string[], avisos: string[]) {
     }
   };
   for (const p of pessoas) conferir("content/pessoas.json", `slug "${p.slug}"`, "grupos", p.grupos, slugsGrupos, "grupos.json");
+  alunos.forEach((a, i) =>
+    conferir("content/alunos.json", `[${i}] ("${a.nome}")`, "orientador", [a.orientador], slugsPessoas, "pessoas.json"),
+  );
   for (const p of publicacoes) {
     conferir("content/publicacoes.json", `id "${p.id}"`, "pessoas", p.pessoas, slugsPessoas, "pessoas.json");
     conferir("content/publicacoes.json", `id "${p.id}"`, "grupos", p.grupos, slugsGrupos, "grupos.json");

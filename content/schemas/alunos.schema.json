@@ -1,0 +1,105 @@
+{
+  "$comment": "Gerado por `npm run schemas` a partir de src/lib/esquemas.ts. Não edite à mão.",
+  "title": "content/alunos.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "alunos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "orientador": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "nivel": {
+            "type": "string",
+            "enum": [
+              "iniciacao-cientifica",
+              "mestrado",
+              "doutorado",
+              "pos-doutorado"
+            ]
+          },
+          "situacao": {
+            "type": "string",
+            "enum": [
+              "em-andamento",
+              "concluida"
+            ]
+          },
+          "titulo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ano_inicio": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1900,
+                "maximum": 2100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ano_conclusao": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1900,
+                "maximum": 2100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "instituicao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "coorientacao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonte": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "nome",
+          "orientador",
+          "nivel",
+          "situacao",
+          "titulo",
+          "ano_inicio",
+          "ano_conclusao",
+          "instituicao",
+          "fonte"
+        ],
+        "additionalProperties": {}
+      }
+    }
+  },
+  "required": [
+    "alunos"
+  ],
+  "additionalProperties": {}
+}
