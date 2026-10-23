@@ -1,0 +1,10 @@
+// Página 404
+.nao-encontrada {
+  padding: $espaco-secao 0;
+  text-align: center;
+
+  &__botao {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}

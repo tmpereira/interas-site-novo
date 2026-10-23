@@ -5,6 +5,7 @@ import { vincularAutores } from "@/lib/autores";
 import { carregarConteudo } from "@/lib/conteudo";
 import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -24,11 +25,13 @@ const semMarcacao = (texto: string) => texto.replace(/[*_`]/g, "");
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = publicacaoPorId((await params).id);
   const descricao = p.resumo ? semMarcacao(p.resumo).slice(0, 200) : [p.autores.slice(0, 3).join(", "), p.periodico].filter(Boolean).join(" — ");
-  return {
-    title: semMarcacao(p.titulo),
-    description: descricao || undefined,
+  return metadadosPagina({
+    titulo: semMarcacao(p.titulo),
+    descricao,
+    caminho: `/publicacoes/${p.id}/`,
+    tipo: "article",
     // Metadados lidos pelo Google Acadêmico
-    other: {
+    extra: { other: {
       citation_title: semMarcacao(p.titulo),
       citation_author: p.autores,
       citation_publication_date: p.data.replaceAll("-", "/"),
@@ -36,8 +39,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...(p.volume && { citation_volume: p.volume }),
       ...(p.numero && { citation_issue: p.numero }),
       ...(p.doi && { citation_doi: p.doi }),
-    },
-  };
+    } },
+  });
 }
 
 export default async function PaginaPublicacao({ params }: Props) {

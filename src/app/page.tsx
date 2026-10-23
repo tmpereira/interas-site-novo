@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import CardsNoticias from "@/components/CardsNoticias";
 import Destaque from "@/components/Destaque";
@@ -5,6 +6,12 @@ import Hero from "@/components/Hero";
 import ListaPublicacoes from "@/components/ListaPublicacoes";
 import { carregarConteudo } from "@/lib/conteudo";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
+
+export function generateMetadata(): Metadata {
+  const { site } = carregarConteudo();
+  return { ...metadadosPagina({ titulo: site.titulo, caminho: "/" }), title: { absolute: site.titulo } };
+}
 
 export default function Home() {
   const { home, noticias, publicacoes } = carregarConteudo();

@@ -754,6 +754,14 @@ Regras:
 - **Páginas de texto:** `/sobre-o-interas/`, `/areas-de-pesquisa/` e `/contato/`
   usam `PaginaTexto`; o contato mostra os `cartoes` de `paginas.json`. A página
   de Áreas de Pesquisa está vazia (só o título), por decisão do usuário.
+- **Acabamento (etapa 8):** `src/lib/metadados.ts` (`metadadosPagina`) monta
+  título, descrição, URL canônica, Open Graph e cartão do Twitter de todas as
+  páginas; a imagem de compartilhamento é a da página (foto, capa, imagem da
+  notícia) ou, na falta dela, `imagem_compartilhamento` e por último o logo do
+  site. `sitemap.xml` (485 URLs) e `robots.txt` saem de `src/app/sitemap.ts` e
+  `robots.ts`; `404.html` de `not-found.tsx`. O Google Analytics (`next/script`,
+  sem dependência extra) só é carregado em build de produção. O mapa de URLs
+  antigas tem 496 entradas e todos os destinos existem em `out/`.
 - **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
   faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
 

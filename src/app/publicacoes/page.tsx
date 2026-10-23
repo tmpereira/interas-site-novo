@@ -6,10 +6,11 @@ import { carregarConteudo } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
 import { formatarData } from "@/lib/formatadores";
 import { markdownEmLinha } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
   const pagina = paginaPorSlug("publicacoes");
-  return { title: pagina.titulo, description: "Artigos, patentes e softwares do INCT INTERAS." };
+  return metadadosPagina({ titulo: pagina.titulo, descricao: "Artigos, patentes e softwares do INCT INTERAS.", caminho: "/publicacoes/" });
 }
 
 export default function Publicacoes() {

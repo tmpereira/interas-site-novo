@@ -5,9 +5,10 @@ import FiltroPorCategoria from "@/components/FiltroPorCategoria";
 import ItemNoticia from "@/components/ItemNoticia";
 import { carregarConteudo } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
-  return { title: paginaPorSlug("noticias").titulo, description: "Notícias do INCT INTERAS." };
+  return metadadosPagina({ titulo: paginaPorSlug("noticias").titulo, descricao: "Notícias do INCT INTERAS.", caminho: "/noticias/" });
 }
 
 export default function Noticias() {

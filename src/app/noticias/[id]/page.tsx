@@ -5,6 +5,7 @@ import { carregarConteudo } from "@/lib/conteudo";
 import { resumoDaNoticia } from "@/lib/consultas";
 import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -21,12 +22,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const n = noticiaPorId((await params).id);
   const descricao = resumoDaNoticia(n);
-  return {
-    title: n.titulo,
-    description: descricao,
-    authors: n.autor ? [{ name: n.autor }] : undefined,
-    openGraph: { type: "article", title: n.titulo, description: descricao, publishedTime: n.data, images: [n.imagem] },
-  };
+  const meta = metadadosPagina({
+    titulo: n.titulo,
+    descricao,
+    caminho: `/noticias/${n.id}/`,
+    imagem: n.imagem,
+    tipo: "article",
+    extra: { authors: n.autor ? [{ name: n.autor }] : undefined },
+  });
+  return { ...meta, openGraph: { ...meta.openGraph, type: "article", publishedTime: n.data } };
 }
 
 export default async function PaginaNoticia({ params }: Props) {

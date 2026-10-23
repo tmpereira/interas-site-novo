@@ -3,6 +3,7 @@ import Abas from "@/components/Abas";
 import Breadcrumb from "@/components/Breadcrumb";
 import { carregarConteudo } from "@/lib/conteudo";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const g = grupoPorSlug((await params).slug);
-  return { title: g.titulo, description: g.resumo ?? undefined, openGraph: g.imagem ? { images: [g.imagem] } : undefined };
+  return metadadosPagina({ titulo: g.titulo, descricao: g.resumo, caminho: `/grupos/${g.slug}/`, imagem: g.imagem });
 }
 
 export default async function PaginaGrupo({ params }: Props) {

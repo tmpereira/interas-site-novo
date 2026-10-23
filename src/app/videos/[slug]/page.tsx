@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { carregarConteudo } from "@/lib/conteudo";
 import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -18,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const v = videoPorSlug((await params).slug);
-  return { title: v.titulo, description: v.resumo ?? undefined, openGraph: v.capa ? { images: [v.capa] } : undefined };
+  return metadadosPagina({ titulo: v.titulo, descricao: v.resumo, caminho: `/videos/${v.slug}/`, imagem: v.capa });
 }
 
 export default async function PaginaVideo({ params }: Props) {

@@ -6,6 +6,7 @@ import ListaPublicacoes from "@/components/ListaPublicacoes";
 import { carregarConteudo } from "@/lib/conteudo";
 import { gruposDaPessoa, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consultas";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,11 +18,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pessoa = pessoaPorSlug((await params).slug);
   const descricao = [pessoa.cargo, pessoa.instituicao?.nome].filter(Boolean).join(" — ");
-  return {
-    title: pessoa.nome,
-    description: descricao || undefined,
-    openGraph: pessoa.foto ? { images: [pessoa.foto] } : undefined,
-  };
+  return metadadosPagina({ titulo: pessoa.nome, descricao, caminho: `/equipe/${pessoa.slug}/`, imagem: pessoa.foto, tipo: "profile" });
 }
 
 export default async function PerfilPessoa({ params }: Props) {

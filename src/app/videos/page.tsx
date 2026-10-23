@@ -6,10 +6,11 @@ import { carregarConteudo } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
 import { formatarData } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
   const pagina = paginaPorSlug("videos");
-  return { title: pagina.titulo, description: pagina.descricao ?? undefined };
+  return metadadosPagina({ titulo: pagina.titulo, descricao: pagina.descricao, caminho: "/videos/" });
 }
 
 export default function Videos() {

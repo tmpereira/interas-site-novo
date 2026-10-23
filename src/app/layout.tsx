@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/styles/main.scss";
 import BarraAnuncio from "@/components/BarraAnuncio";
@@ -27,6 +28,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
+        {site.google_analytics && process.env.NODE_ENV === "production" && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${site.google_analytics}`} strategy="afterInteractive" />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${site.google_analytics}');`}
+            </Script>
+          </>
+        )}
         <a href="#conteudo" className="pular-para-conteudo">
           Pular para o conteúdo
         </a>

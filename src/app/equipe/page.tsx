@@ -3,9 +3,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 import CardPessoa from "@/components/CardPessoa";
 import FaixaTitulo from "@/components/FaixaTitulo";
 import { equipePorCategoria, paginaPorSlug } from "@/lib/consultas";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
-  return { title: paginaPorSlug("equipe").titulo };
+  return metadadosPagina({ titulo: paginaPorSlug("equipe").titulo, caminho: "/equipe/" });
 }
 
 export default function Equipe() {

@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import PaginaTexto from "@/components/PaginaTexto";
 import { paginaPorSlug } from "@/lib/consultas";
 import { markdownParaHtml } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
-  return { title: paginaPorSlug("contato").titulo, description: "Como entrar em contato com o INCT INTERAS." };
+  return metadadosPagina({ titulo: paginaPorSlug("contato").titulo, descricao: "Como entrar em contato com o INCT INTERAS.", caminho: "/contato/" });
 }
 
 type Cartao = { titulo: string; icone?: string; conteudo: string };

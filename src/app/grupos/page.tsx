@@ -6,9 +6,10 @@ import FiltroPorCategoria from "@/components/FiltroPorCategoria";
 import { carregarConteudo } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
 import { markdownParaHtml, truncarTexto } from "@/lib/markdown";
+import { metadadosPagina } from "@/lib/metadados";
 
 export function generateMetadata(): Metadata {
-  return { title: paginaPorSlug("grupos").titulo, description: "Grupos de pesquisa e laboratórios do INCT INTERAS." };
+  return metadadosPagina({ titulo: paginaPorSlug("grupos").titulo, descricao: "Grupos de pesquisa e laboratórios do INCT INTERAS.", caminho: "/grupos/" });
 }
 
 export default function Grupos() {
