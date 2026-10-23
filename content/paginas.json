@@ -1,0 +1,67 @@
+{
+  "$schema": "./schemas/paginas.schema.json",
+  "paginas": [
+    {
+      "slug": "sobre-o-interas",
+      "titulo": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde",
+      "descricao": "INTERAS",
+      "conteudo": "Novas tecnologias para caracterização rápida, não-invasiva e de baixo custo para doenças, são decisivas na diminuição da mortalidade, o que ficou evidenciado durante a pandemia. Aos desafios na detecção precoce e no tratamento do câncer, somaram-se questões relacionadas ao surgimento de novos vírus com alta taxa de letalidade, como o SARS-CoV-2. Tratamentos clínicos avançaram exponencialmente nas últimas décadas, mas podem ser caros e ineficazes. O INTERAS se propõe desenvolver e aplicar métodos diagnósticos e terapêuticos numa ampla diversidade de doenças (cânceres, doenças cardíacas e cardiorenais, infecções virais, doenças negligenciadas) assistidos por radiações em ampla faixa do espectro eletromagnético. O IPEN é o caso mais bem sucedido de inovação translacional, levando a hospitais e clínicas os produtos e processos desenvolvidos desde a pesquisa básica, na área de radiofármacos, desde sua criaçao em 1956. Os objetivos específicos compreendem o desenvolvimento de novos radiofármacos baseados em anticorpos para diagnóstico por imagem PET/SPECT, radioterapia alvo-dirigida de tumores, nanobraquiterapia, processos terapêuticos com lasers, diagnóstico de diferentes doenças por imagem hiperespectral no infravermelho e raman, avaliados por inteligência artificial. Pretende-se executar a translação não apenas para clínica, mas principalmente para o setor produtivo. Estamos fortemente convencidos que o estabelecimento de um diagnóstico e terapia médica de precisão e personalizada é um dos grandes desafios da medicina moderna que o INTERAS também poderá resolver criando um mosaico científico-industrial. Para isto, apresentamos proposta transdisciplinar com mais de 30 pesquisadores de 8 Instituições (AM, PE, SP, RJ e SE) e colaboradores internacionais e nacionais. Vale ressaltar, que os pesquisadores do INTERAS possuem uma alta inserção acadêmica e industrial. Propomos ainda implementar um diálogo contínuo com a sociedade por meio de ações de divulgação científica.\n\nInstituições participantes Nacionais:\n\n  1. Instituto de Pesquisas Energéticas e Nucleares - Executora/Sede\n  2. Universidade Federal do ABC - Laboratório Associado\n  3. Universidade Federal do Rio de Janeiro - Laboratório Associado\n  4. Universidade Federal de Sergipe - Laboratório Associado\n  5.  Universidade Federal de Uberlândia  - Laboratório Associado\n  6. Universidade de São Paulo  (FOUSP e FFCLRP, Ribeirão Preto) - Laboratório Associado\n  7. Universidade Federal de São Paulo - Laboratório Associado\n  8. Instituto do Câncer do Estado de São Paulo - Octávio Frias de Oliveira - Laboratório Associado\n  9. Centro Regional de Ciências Nucleares do Nordeste - Laboratório Associado\n\nInstituições participantes estrangeiras:\n\n* University of Wisconsin - Madison - WISCONSIN, United States\n* Hôpital Universitaire Necker-Enfants Malades - NECKER, France\n* Durham University - DURHAM, England\n* Ruprecht-Karls-Universität Heidelberg - HEIDELBERG, Germany\n* University of Exeter - EXETER, England\n* Universidad Autónoma de Madrid - UAM, Spain\n* University of St Andrews - ST-ANDREWS, Scotland\n\nEmpresas:\n\n* Revolugenix Biotecnologia, Pesquisa e Desenvolvimento Ltda - SP, Brazil\n* BRVANT e IBRV - Instituto de Pesquisa e Desenvolvimento - IBRV, SP, Brazil\n* ANACOM Científica\n* AXCEM Dermatologia\n* Biolambda, Científica e Comercial Ltda\n* Clean Clinica Especializada em Anatomia Oral S/C\n* CK Estomatologia S/C Ltda\n* Curitiba Biotecnologia - Curitiba Biotech, PR, Brazil\n* LM Insight Ltda"
+    },
+    {
+      "slug": "areas-de-pesquisa",
+      "titulo": "Áreas de Pesquisa",
+      "descricao": null,
+      "conteudo": ""
+    },
+    {
+      "slug": "contato",
+      "titulo": "Contato",
+      "descricao": null,
+      "conteudo": "## Sede do INTERAS\n\n#### IPEN\n\nO INTERAS tem sede no IPEN - Instituto de Pesquisas Energéticas e Nucleares.",
+      "cartoes": [
+        {
+          "titulo": "Secretaria e Contatos",
+          "icone": "people-fill",
+          "conteudo": "**Patrícia Neves**  \nSecretaria INTERAS\n\nTelefone: +5511 2810-1646\n\n**Horário de Atendimento:**  \nSegunda a Sexta-feira: 08h00 às 16h45"
+        },
+        {
+          "titulo": "Localização e Email",
+          "icone": "geo-alt-fill",
+          "conteudo": "Para entrar em contato, use nosso email:\n\n### [inctinteras@gmail.com](mailto:inctinteras@gmail.com)\n\n**Endereço Físico:**\n\nInstituto de Pesquisas Energéticas e Nucleares - IPEN/CNEN, SP  \nINTERAS - Centro de Lasers e Aplicações (CELAP)  \nAv. Lineu Prestes, 2242 - Cidade Universitária  \nCEP 05508-000 -- São Paulo/SP"
+        }
+      ]
+    },
+    {
+      "slug": "equipe",
+      "titulo": "COORDENAÇÃO E EQUIPE",
+      "descricao": null,
+      "conteudo": ""
+    },
+    {
+      "slug": "grupos",
+      "titulo": "Grupos de Pesquisa do INTERAS",
+      "descricao": null,
+      "conteudo": "Abaixo estão listados os grupos de pesquisa e laboratórios que compõem o Instituto Nacional de Tecnologia das Radiações na Saúde (INTERAS).\n\nUtilize os filtros para navegar pelos principais eixos de atuação do instituto."
+    },
+    {
+      "slug": "publicacoes",
+      "titulo": "Produção Científica e Tecnológica",
+      "descricao": null,
+      "conteudo": "",
+      "titulo_artigos": "Artigos Originais",
+      "titulo_patentes": "Propriedade Intelectual (Patentes e Softwares)"
+    },
+    {
+      "slug": "noticias",
+      "titulo": "NOTÍCIAS",
+      "descricao": null,
+      "conteudo": ""
+    },
+    {
+      "slug": "videos",
+      "titulo": "Produções Audiovisuais",
+      "descricao": "Documentação e Divulgação Científica INTERAS",
+      "conteudo": "Nesta seção, disponibilizamos vídeos institucionais, registros de eventos e materiais de divulgação produzidos pelo INTERAS."
+    }
+  ]
+}

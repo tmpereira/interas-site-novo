@@ -1,0 +1,144 @@
+{
+  "$schema": "./schemas/grupos.schema.json",
+  "grupos": [
+    {
+      "slug": "resgroup-cinas",
+      "titulo": "Grupo de Pesquisas em Computação e Inteligência Artificial em Nuclear e Saúde",
+      "resumo": "O Grupo de Computação e Inteligência Artificial em Nuclear e Saúde (CINAS) atua na fronteira do conhecimento, preenchendo a lacuna entre o desenvolvimento algorítmico e a aplicação crítica em infraestruturas nucleares e ambientes clínicos. Nossa missão é desenvolver metodologias que incorporam o conhecimento físico e biológico (domain knowledge) dentro da arquitetura de modelos inteligentes.",
+      "imagem": "/images/grupos/logo_CINAS_348x348.png",
+      "temas": [
+        "inteligencia-artificial",
+        "computacao-cientifica",
+        "dados",
+        "formacao"
+      ],
+      "instituicao": "IPEN-CNEN",
+      "site": "https://cinas.ipen.br",
+      "coordenacao": [
+        "mario-olimpio-de-menezes"
+      ],
+      "abas": [
+        {
+          "titulo": "Membros do Laboratório",
+          "conteudo": "#### Coordenação\n\n[Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/)\n\n#### Pós Docs\nAline Araújo Perini (co-orientação)\n\n#### Mestrandos\n\n**Acadêmico**\n\nGabriel Caldana Guimarães  \nLuiza Manso  \nMárcio de Aguiar dos Santos  \nNathália Luzia Aidar Alves  \n\n<!-- Luciana Silva Albuquerque Melo (2025)   -->\n<!-- Patrícia Pedrosa Moreira Mendes (2023) -->\n<!-- Caroline Zeppellini dos Santos Emiliozzi (2023)   -->\n<!-- Cláudia Chamas (2021)   -->\n<!-- Glauber Mauch de Carvalho (2020)   -->\n\n**Profissional**\n\nGuilherme Cremasco  \nJardson Oliveira Peixinho  \nJuciene dos Santos Batista  \nLarisse Neumann Bonatto  \nLeandro dos Santos Baptista  \nLilian Polidório Caires  \nLuan Forstman Pantolfi  \nWendell da Luz Silva  \n\n<!-- Erica Maurício Policarpo (2024)   -->\n<!-- Marcelo Moreira da Silva (2024)   -->\n<!-- Ana Karolina Defente Caetano (2024)   -->\n<!-- Carolina Roberta Caldeira -- co-orientação (2023)   -->\n<!-- Cíntia Maria Perotto Mesquita da Silva (2022) -->\n\n#### Iniciação Científica\n\nMarcelo Henrique da Cunha Ponciano"
+        },
+        {
+          "titulo": "Endereço de Correspondência",
+          "conteudo": "#### Grupo de Pesquisas CINAS\n\nResearch Reactors Center -- CERPQ  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
+        }
+      ],
+      "conteudo": "## Sobre o Grupo\n\nO CINAS consolida uma iniciativa de pesquisa translacional situada na convergência entre a Ciência da Computação Avançada e as Ciências das Radiações.\n\nEm um cenário global onde a transformação digital redefine paradigmas científicos, operamos sob a premissa de que a próxima fronteira da inovação nuclear e médica virá da inteligência extraída dos dados.\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Grupo de Pesquisa em Computação e Inteligência Artificial em Nuclear e Saúde (CINAS) do IPEN é coordenado pelo [Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/).\n\nVisite a [página do Grupo para conhecer mais!](https://cinas.ipen.br)"
+    },
+    {
+      "slug": "lab-biofotonica",
+      "titulo": "Laboratório de Biofotônica Aplicada",
+      "resumo": "Nosso laboratório busca gerar conhecimento científico, formar profissionais e desenvolver novas terapias e diagnósticos a laser. Nossa principal pesquisa é entender as mudanças que o laser provoca nos tecidos, o que nos permite criar novos tratamentos para a medicina e odontologia.",
+      "imagem": "/images/grupos/lab_biofotonica_g.jpeg",
+      "temas": [
+        "diagnostico",
+        "terapias",
+        "dados",
+        "inteligencia-artificial",
+        "formacao"
+      ],
+      "instituicao": "IPEN-CNEN",
+      "site": "https://biophotonics.my.canva.site/",
+      "coordenacao": [
+        "denise-maria-zezell"
+      ],
+      "abas": [
+        {
+          "titulo": "Membros do Laboratório",
+          "conteudo": "#### Coordenação\n\n[Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/)\n\n#### Pós Docs\nDaniela de Fatima Teixiera da Silva  \nMaria Renata Valente Brandão Freire  \nLuciane Hiramatsu Azevedo\n\n#### Doutorandos\nValeria Mendes  \nDaniela Cerqueira Leite  \nDaniella Lúmara Pereira Mendes de Oliveira Peres  \nVinicius Pereira dos Anjos  \nRafaelle Stasi\n\n#### Mestrandos\nJulia Guerra Cavalero"
+        },
+        {
+          "titulo": "Algumas fotos dos membros",
+          "conteudo": "![Dezembro 2024](/images/grupos/lab_biofotonica_Dez_2024.jpeg)\n\n![Alunos](/images/grupos/lab_biofotonica_alunos-Denise-Maria-Zezell.jpg)"
+        },
+        {
+          "titulo": "Endereço de Correspondência",
+          "conteudo": "#### Laboratory of Biophotonics\n\nCenter for Lasers and Applications  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
+        }
+      ],
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Laboratório de Biofotônica do IPEN é coordenado pela [Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/).\n\nVisite a [página do Laboratório para conhecer mais!](https://biophotonics.my.canva.site/)"
+    },
+    {
+      "slug": "lab-cardioimunologia",
+      "titulo": "Laboratório de Cardioimunologia",
+      "resumo": "Nosso principal eixo de pesquisa diz respeito ao estudo de como o coração e o sistema imune conversam entre si.",
+      "imagem": "/images/grupos/lab_cardioimunologia_g.jpeg",
+      "temas": [
+        "diagnostico",
+        "formacao"
+      ],
+      "instituicao": "UFRJ",
+      "site": "https://pesquisa.biof.ufrj.br/medicina-regenerativa/lci/",
+      "coordenacao": [
+        "emiliano-horacio-medei"
+      ],
+      "abas": [
+        {
+          "titulo": "Membros do Laboratório",
+          "conteudo": "#### Coordenação\n\n[Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/)\n\n#### Pós Docs\nRicardo Correia\n\n#### Doutorandos, Mestrandos, ICs e ITs\nGuilherme Muradas Pires  \nSimone Reis Barbosa"
+        },
+        {
+          "titulo": "Endereço de Correspondência",
+          "conteudo": "#### Laboratório de Cardioimunologia\n\nAv. Carlos Chagas Filho 373  \nCCS - Bloco G - Segundo andar Sala 45  \nCEP 21941-902 - Rio de Janeiro - Brasil"
+        }
+      ],
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Biofísica Carlos Chagas Filho (IBCCF) da Universidade Federal do Rio de Janeiro (UFRJ), o Laboratório de Cardioimunologia é coordenado pelo [Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/).\n\nVisite a [página do Laboratório para conhecer mais!](https://pesquisa.biof.ufrj.br/medicina-regenerativa/lci/)"
+    },
+    {
+      "slug": "lab-imunologiacardio-ufabc",
+      "titulo": "Laboratório de Imunologia Cardiovascular",
+      "resumo": "Nosso principal eixo de pesquisa diz respeito ao estudo do impacto da resposta inflamatória e o sistema imune nas mudanças cardiovasculares observadas na Síndrome Cardiorenal e o papel das toxinas urêmicas sulfato de indoxyl e sulfato p-cresyl no desenvolvimento da síndrome cardiorenal.",
+      "imagem": "/images/grupos/logo_lab_imunologia_cardiovascular_ufabc.jpg",
+      "temas": [
+        "diagnostico",
+        "formacao"
+      ],
+      "instituicao": "UFABC",
+      "site": null,
+      "coordenacao": [
+        "marcela-sorelli-carneiro-ramos"
+      ],
+      "abas": [
+        {
+          "titulo": "Membros do Laboratório",
+          "conteudo": "#### Coordenação\n\n[Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)\n\n#### Pós Docs\nAline Parletta\n\n#### Doutorandos, Mestrandos, ICs e ITs\n[Raquel Silva Neres dos Santos](/equipe/raquel-silva-neres-dos-santos/)"
+        },
+        {
+          "titulo": "Endereço de Correspondência",
+          "conteudo": "#### Laboratório de Imunologia Cardiovascular\n\nAvenida dos Estados, 5001 - Bloco L - L-308  \nSanto André - SP  \nCEP 09210-580"
+        }
+      ],
+      "conteudo": "## Sobre o Laboratório\n\nCom sede na Universidade Federal do ABC (UFABC), o Laboratório de Imunologia Cardiovascular é coordenado pela [Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)."
+    },
+    {
+      "slug": "lab-investigacaomedica28",
+      "titulo": "Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)",
+      "resumo": "Nosso laboratório investiga MicroRNAs associados ao processo de invasão tumoral do câncer de cavidade oral com o uso de modelos experimentais",
+      "imagem": "/images/grupos/lab_investigacaomedica_g.jpeg",
+      "temas": [
+        "diagnostico",
+        "formacao"
+      ],
+      "instituicao": "FMUSP",
+      "site": "https://limhc.fm.usp.br/portal/lim28-laboratorio-de-cirurgia-vascular-e-da-cabeca-e-pescoco/",
+      "coordenacao": [
+        "leandro-luongo-de-matos"
+      ],
+      "abas": [
+        {
+          "titulo": "Membros do Laboratório",
+          "conteudo": "#### Coordenação\n\n[Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/)\n\n#### Pós Docs\nRicardo Correia\n\n#### Doutorandos, Mestrandos, ICs e ITs\nGuilherme Muradas Pires  \nSimone Reis Barbosa"
+        },
+        {
+          "titulo": "Endereço de Correspondência",
+          "conteudo": "#### Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)\n\nAv. Dr. Arnaldo, 455  \n2º andar – sala 2206 / ICHC 8º andar – sala 8174  \nTel. (011) 3061-7373 / 3081-7453 / 2661-6425  \nCerqueira César, Pacaembu  \nCEP 01246-903 - São Paulo, SP, Brasil"
+        }
+      ],
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Faculdade de Medicina da Universidade de São Paulo, o Laboratório de Investigação Médica 28/08 (Cirurgia de Cabeça e Pescoço) é coordenado pelo [Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/).\n\nVisite a [página do Laboratório para conhecer mais!](https://limhc.fm.usp.br/portal/lim28-laboratorio-de-cirurgia-vascular-e-da-cabeca-e-pescoco/)"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "./schemas/site.schema.json",
+  "titulo": "INTERAS",
+  "descricao": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde",
+  "url_base": "https://www.interas.org",
+  "logo": "/images/logo_pt_transparente.png",
+  "logo_alt": "INCT INTERAS",
+  "favicon": "/images/favicon.ico",
+  "imagem_compartilhamento": null,
+  "menu": [
+    {
+      "rotulo": "INCT INTERAS",
+      "itens": [
+        {
+          "rotulo": "O INCT INTERAS",
+          "link": "/sobre-o-interas/"
+        },
+        {
+          "rotulo": "COORDENAÇÃO E EQUIPE",
+          "link": "/equipe/"
+        },
+        {
+          "rotulo": "ÁREAS DE PESQUISA",
+          "link": "/areas-de-pesquisa/"
+        },
+        {
+          "rotulo": "GRUPOS E LABORATÓRIOS",
+          "link": "/grupos/"
+        },
+        {
+          "rotulo": "CONTATO",
+          "link": "/contato/"
+        }
+      ]
+    },
+    {
+      "rotulo": "PRODUÇÃO",
+      "itens": [
+        {
+          "rotulo": "ARTIGOS",
+          "link": "/publicacoes/#artigos"
+        },
+        {
+          "rotulo": "PATENTES",
+          "link": "/publicacoes/#patentes"
+        }
+      ]
+    },
+    {
+      "rotulo": "NOTÍCIAS",
+      "link": "/noticias/"
+    },
+    {
+      "rotulo": "VÍDEOS",
+      "link": "/videos/"
+    }
+  ],
+  "anuncio": {
+    "id": "news-video2-inst-1-2026",
+    "ativo": true,
+    "icone": "play-btn",
+    "texto": "📢 **Novos Vídeos Institucionais do INTERAS**. [Assista!](/videos/)",
+    "link": null
+  },
+  "rodape": {
+    "logo": "/images/3125_bordas_minimas_redim.png",
+    "texto": "Copyright 2026 INTERAS",
+    "redes": []
+  },
+  "google_analytics": "G-GSTPFS7CEE",
+  "categorias_pessoas": [
+    {
+      "chave": "coordenacao",
+      "titulo": "COORDENAÇÃO"
+    },
+    {
+      "chave": "comite-gestor",
+      "titulo": "COMITÊ GESTOR"
+    },
+    {
+      "chave": "pesquisador",
+      "titulo": "PESQUISADORES"
+    },
+    {
+      "chave": "colaborador",
+      "titulo": "COLABORADORES"
+    },
+    {
+      "chave": "equipe-estrangeira",
+      "titulo": "EQUIPE ESTRANGEIRA"
+    },
+    {
+      "chave": "lider-laboratorio",
+      "titulo": "LÍDERES DE LABORATÓRIOS ASSOCIADOS"
+    },
+    {
+      "chave": "apoio-tecnico",
+      "titulo": "APOIO TÉCNICO"
+    },
+    {
+      "chave": "bolsista",
+      "titulo": "BOLSISTAS"
+    }
+  ],
+  "temas_grupos": [
+    {
+      "slug": "diagnostico",
+      "rotulo": "diagnostico"
+    },
+    {
+      "slug": "terapias",
+      "rotulo": "terapias"
+    },
+    {
+      "slug": "dados",
+      "rotulo": "dados"
+    },
+    {
+      "slug": "inteligencia-artificial",
+      "rotulo": "inteligência artificial"
+    },
+    {
+      "slug": "formacao",
+      "rotulo": "formacao"
+    },
+    {
+      "slug": "computacao-cientifica",
+      "rotulo": "computação científica"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "./schemas/home.schema.json",
+  "hero": {
+    "titulo": "Iluminando o Futuro da Saúde",
+    "texto": "No INTERAS, unimos os maiores especialistas do país para transformar as radiações — da luz visível às radiações atômicas — em poderosas ferramentas para diagnósticos precoces e terapias inovadoras. Nossa missão é clara: usar a ciência da radiação para salvar vidas e melhorar a saúde de todos.",
+    "imagem": "/images/topo_desvanecendo_sem_texto_logo_interas2.png"
+  },
+  "apresentacao": "A pandemia de COVID-19 nos mostrou a urgência por diagnósticos rápidos e tratamentos eficazes. Inspirados por este e outros grandes desafios da saúde, como o câncer e as doenças cardiovasculares, nasceu o INTERAS. Somos um Instituto Nacional de Ciência e Tecnologia dedicado a desenvolver soluções inovadoras baseadas em todo o espectro da radiação. Unindo fotônica, nanotecnologia, radiações atômicas e medicina nuclear com o poder de ferramentas avançadas de Ciência de Dados e Inteligência Artificial (especialmente Machine Learning), nossa rede de pesquisadores cria métodos diagnósticos não-invasivos, terapias de alta precisão e forma os futuros líderes da ciência no Brasil.",
+  "destaques": [
+    {
+      "titulo": "A Luz que Revela",
+      "texto": "Utilizamos a luz como uma poderosa ferramenta de investigação, atuando em duas frentes cruciais. Em nível fundamental, usamos feixes de luz para entender os mecanismos das doenças em modelos experimentais, iluminando seus processos e nos permitindo descobrir novos alvos terapêuticos.\n\nEm paralelo, transformamos esse conhecimento em diagnóstico precoce. Desenvolvemos métodos de alta precisão que usam espectroscopia (Raman e Infravermelho), inteligência artificial e biofluídos — como sangue e saliva — para detectar câncer, infecções e outras doenças em seus estágios iniciais. Nosso objetivo é criar exames mais rápidos, precisos e menos invasivos, transformando o prognóstico e salvando vidas.",
+      "imagem": "/images/luz_que_revela.jpeg",
+      "posicao_imagem": "esquerda",
+      "botao": {
+        "rotulo": "Veja os grupos que atuam nesse tema",
+        "link": "/grupos/?tema=diagnostico"
+      }
+    },
+    {
+      "titulo": "Radiação que Cura",
+      "texto": "Vamos além do diagnóstico. Pesquisamos e desenvolvemos terapias de ponta que usam a radiação de forma controlada e precisa para tratar doenças. Nossas frentes incluem desde o aprimoramento da radioterapia, o uso de nanopartículas para tratamentos localizados (nanobraquiterapia), até a aplicação de lasers em cirurgias e terapias fotodinâmicas para combater infecções. Buscamos tratamentos mais eficazes, seguros e personalizados.",
+      "imagem": "/images/feixe_incidindo_celulas_cancerosas_v2.jpeg",
+      "posicao_imagem": "direita",
+      "botao": {
+        "rotulo": "Veja os grupos que atuam nesse tema",
+        "link": "/grupos/?tema=terapias"
+      }
+    },
+    {
+      "titulo": "Moléculas Inteligentes",
+      "texto": "Para que as imagens médicas revelem o que é invisível e as terapias atinjam apenas o alvo certo, criamos \"moléculas inteligentes\" chamadas radiofármacos. Desenvolvemos e testamos novos compostos que guiam os equipamentos de imagem (PET/SPECT) ou entregam doses terapêuticas diretamente nas células doentes. Toda essa inovação é validada em rigorosos ensaios pré-clínicos, garantindo a segurança e a eficácia das tecnologias que chegarão aos hospitais.",
+      "imagem": "/images/imagem_pet_estilizada_v2.jpeg",
+      "posicao_imagem": "esquerda",
+      "botao": null
+    },
+    {
+      "titulo": "Inteligência que Acelera",
+      "texto": "O futuro da saúde passa pela análise inteligente de dados. No INTERAS, usamos aprendizado de máquina e *deep learning* para decifrar a complexa informação contida em imagens médicas e dados espectrais. Nossos algoritmos ajudam a identificar padrões invisíveis ao olho humano, tornando o diagnóstico mais rápido e assertivo. Além disso, criamos simulações computacionais para melhorar a entrega de doses, para entender a origem das doenças e desenhar novas terapias.",
+      "imagem": "/images/imagem_microscopia_rede_neural_v2.jpeg",
+      "posicao_imagem": "direita",
+      "botao": {
+        "rotulo": "Veja os grupos que atuam nesse tema",
+        "link": "/grupos/?tema=inteligencia-artificial"
+      }
+    },
+    {
+      "titulo": "Conhecimento que Transforma",
+      "texto": "Acreditamos que o conhecimento deve ser compartilhado. Formamos a próxima geração de cientistas, desde a iniciação científica até o pós-doutorado; através da atuação dos nossos pesquisadores nos diversos cursos de graduação e nos programas de pós-graduação, atuamos para melhorar a formação da nova geração, aperfeiçoar os profissionais em programas de Mestrado Profissional, Pós-Graduação Acadêmica e outros cursos para profissionais da saúde. Promovemos a colaboração internacional e trabalhamos para que nossas descobertas se tornem produtos e protocolos acessíveis no mercado e no SUS. Nosso compromisso é levar a ciência para além dos laboratórios, impactando diretamente a vida das pessoas.",
+      "imagem": "/images/image_conhecimento_transforma.jpeg",
+      "posicao_imagem": "esquerda",
+      "botao": {
+        "rotulo": "Veja os grupos que atuam nesse tema",
+        "link": "/grupos/?tema=formacao"
+      }
+    }
+  ],
+  "nota": "**Coordenação**: [Denise M. Zezell - IPEN - CNEN](/equipe/denise-maria-zezell/)  \n**Vice-Coordenação**: [Emiliano H. Medei  - UFRJ](/equipe/emiliano-horacio-medei/)",
+  "noticias": {
+    "titulo": "Últimas notícias do INTERAS",
+    "quantidade": 3
+  },
+  "publicacoes": {
+    "titulo": "Últimas publicações do INTERAS",
+    "quantidade": 6
+  }
+}

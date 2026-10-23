@@ -205,6 +205,10 @@ que não estão previstos, mas avise o usuário e atualize esta seção.
 
 - Ordem no arquivo: por categoria (na ordem da tabela abaixo), depois `ordem`,
   depois nome.
+- `ordem: null` = ordem alfabética pelo nome. No site antigo todos tinham o
+  mesmo `sortby`, então a migração deixou `null` para todos.
+- `grupos`: na migração, só foi preenchido quando a página do grupo tinha link
+  para o perfil da pessoa (coordenadores e poucos membros).
 - `ativo: false` mantém a pessoa no histórico sem exibi-la na página da equipe.
 - O `lattes` é o identificador usado nas atualizações via Lattes (seção 11).
 
@@ -287,10 +291,12 @@ Geração inicial (migração, seção 8):
 - Converter LaTeX residual para texto (sobrescrito, subscrito, `\&`, `\%`,
   chaves soltas), como fazia a função `sanitize_for_yaml` do script R antigo.
   Não alterar a capitalização de títulos sem perguntar.
-- O site antigo tinha 368 páginas de artigos, mas o `.bib` atual tem 356
-  entradas. **Investigar a diferença** comparando as chaves dos arquivos em
-  `_legado/publicacoes/artigos/*.qmd` com as do `.bib`, e reportar ao usuário
-  antes de decidir.
+- `titulo` e `resumo` podem conter itálico em Markdown (ex.:
+  `*Neisseria gonorrhoeae*`), vindo do `<i>` do BibTeX; o site renderiza esses
+  campos como Markdown em linha.
+- Diferença 368 × 356 (investigada): a pasta antiga de artigos tem exatamente
+  as 356 chaves do `.bib`; o "368" era a listagem de `/publicacoes/` do site no
+  ar, que somava 356 artigos + 11 patentes (+ índice). Nenhum artigo faltando.
 
 ### 6.3 `content/patentes.json`
 
@@ -345,9 +351,11 @@ Geração inicial (migração, seção 8):
 - `coordenacao` são slugs de `pessoas.json` e viram links para os perfis.
   Links internos antigos (`/pessoas/...qmd`) viram links para a nova rota.
 - `temas` válidos ficam definidos em `site.json` (`temas_grupos`, com `slug` e
-  `rotulo`). Lista inicial a confirmar lendo os `.qmd` dos grupos e os links da
-  `index.qmd` antiga (`grupos.html#category=diagnostico` etc.): `diagnostico`,
-  `terapias`, `moleculas`, `dados`, `inteligencia-artificial`, `formacao`.
+  `rotulo`). Temas encontrados nos grupos antigos: `diagnostico`, `terapias`,
+  `dados`, `inteligencia-artificial`, `formacao`, `computacao-cientifica`
+  (`moleculas` não é usado por nenhum grupo).
+- `site` é o endereço externo do laboratório (também citado no `conteudo`);
+  `instituicao` é a sigla da sede, tirada do texto "Com sede no/na ...".
 - Ordem: `titulo` alfabético. Origem: `_legado/grupos/*.qmd` (5 grupos).
 
 ### 6.5 `content/noticias/` (uma notícia por arquivo Markdown)
@@ -424,14 +432,36 @@ O avanço científico nacional depende, fundamentalmente, da articulação...
 ```json
 {
   "paginas": [
-    { "slug": "sobre-o-interas", "titulo": "O INCT INTERAS", "descricao": "...", "conteudo": "..." },
-    { "slug": "areas-de-pesquisa", "titulo": "Áreas de Pesquisa", "descricao": "...", "conteudo": "..." },
-    { "slug": "contato", "titulo": "Contato", "descricao": "...", "conteudo": "..." }
+    { "slug": "sobre-o-interas", "titulo": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde", "descricao": "INTERAS", "conteudo": "..." },
+    { "slug": "areas-de-pesquisa", "titulo": "Áreas de Pesquisa", "descricao": null, "conteudo": "" },
+    {
+      "slug": "contato", "titulo": "Contato", "descricao": null, "conteudo": "## Sede do INTERAS\n\n...",
+      "cartoes": [ { "titulo": "Secretaria e Contatos", "icone": "people-fill", "conteudo": "**Patrícia Neves**  \n..." } ]
+    },
+    { "slug": "equipe", "titulo": "COORDENAÇÃO E EQUIPE", "descricao": null, "conteudo": "" },
+    { "slug": "grupos", "titulo": "Grupos de Pesquisa do INTERAS", "descricao": null, "conteudo": "Abaixo estão listados..." },
+    {
+      "slug": "publicacoes", "titulo": "Produção Científica e Tecnológica", "descricao": null, "conteudo": "",
+      "titulo_artigos": "Artigos Originais", "titulo_patentes": "Propriedade Intelectual (Patentes e Softwares)"
+    },
+    { "slug": "noticias", "titulo": "NOTÍCIAS", "descricao": null, "conteudo": "" },
+    { "slug": "videos", "titulo": "Produções Audiovisuais", "descricao": "Documentação e Divulgação Científica INTERAS", "conteudo": "Nesta seção..." }
   ]
 }
 ```
 
-Origem: `sobre-o-interas.qmd`, `areas-de-pesquisa.qmd`, `contato.qmd`.
+- Três páginas institucionais (com rota própria: `/sobre-o-interas/`,
+  `/areas-de-pesquisa/`, `/contato/`) e os textos de abertura das páginas de
+  listagem (`equipe`, `grupos`, `publicacoes`, `noticias`, `videos`), lidos
+  pelas rotas correspondentes da seção 7. Não existe rota genérica `/[slug]/`.
+- `descricao` é o subtítulo da página.
+- Campos extras usados: `cartoes` no contato (cartões com `titulo`, `icone`
+  Bootstrap Icons sem o prefixo `bi-`, e `conteudo` em Markdown);
+  `titulo_artigos` e `titulo_patentes` em `publicacoes`.
+- Origem: `sobre-o-interas.qmd`, `areas-de-pesquisa.qmd` (só tem título),
+  `contato.qmd` (cartões HTML transcritos), `pessoas/coord-equipe.qmd`,
+  `grupos.qmd`, `publicacoes/index.qmd`, `noticias/index.qmd`,
+  `videos/index.qmd`.
 
 ### 6.8 `content/home.json`
 
@@ -598,6 +628,15 @@ preservando links compartilhados e indexados no Google.
 5. Depois de aprovada a migração, os scripts não são mais necessários. Podem
    ficar no repositório como histórico, mas o site **não depende** deles.
 
+**Como foi feita:** `npm run migrar` (`scripts/migracao/migrar.ts`) apaga e
+regera `content/*.json`, `content/noticias/` e as pastas de `public/` que
+produz, a partir de `_legado/`, e grava `RELATORIO.md` e
+`redirecionamentos.json`. **Depois que o conteúdo começar a ser editado à mão,
+não rodar `npm run migrar` de novo**: ele sobrescreve tudo. Ajustes pontuais
+feitos na migração (tabelas R da notícia "pesquisadores influentes" copiadas do
+site no ar, cartões do contato, link Elsevier corrigido) estão documentados no
+próprio código e no relatório.
+
 Ignorar na migração: `docs/`, `.Rproj`, `gera_pub_bib*.R`, `ejs/`, `.bib`
 antigos, `interas-em-numeros.qmd`, qualquer coisa de preprints e
 mulheres INTERAS, `.nojekyll`, `CNAME`.
@@ -757,8 +796,9 @@ usuário.
 
 - `npm run dev` — ver o site em `http://localhost:3000`.
 - `npm run validar` — conferir todos os JSON e as notícias sem gerar o site.
-- `npm run build` — gerar o site (falha com mensagem clara se algum dado
-  estiver errado).
+- `npm run build` — gerar o site. Roda `npm run validar` antes (`prebuild`) e
+  falha com mensagem clara se algum dado estiver errado.
+- `npm run schemas` — regenerar `content/schemas/` depois de mudar `esquemas.ts`.
 
 ---
 

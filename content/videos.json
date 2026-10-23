@@ -1,0 +1,206 @@
+{
+  "$schema": "./schemas/videos.schema.json",
+  "videos": [
+    {
+      "slug": "video-institucional-diagnostico",
+      "titulo": "Vídeo Institucional - Eixo Diagnóstico (INTERAS 2026)",
+      "data": "2026-09-24",
+      "resumo": "Vídeo Institucional do INTERAS - Eixo Diagnóstico",
+      "capa": "/videos/video_institucional_diagnostico.jpg",
+      "categorias": [
+        "Institucional",
+        "Diagnóstico"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1r4J1SoyxJ6MMb_o6oXGq3u6LYqka73xH/view?usp=sharing"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/Ba6YeJ3H4FPNEff"
+        }
+      ],
+      "conteudo": "Este vídeo institucional apresenta as pesquisas desenvolvidas no **Eixo Diagnóstico** do INCT Tecnologia das Radiações na Saúde (INTERAS). O material aborda metodologias ópticas e espectroscópicas avançadas, incluindo a espectroscopia FTIR em biofluidos (como saliva) para detecção não invasiva de biomarcadores e o imageamento hiperespectral voltado ao diagnóstico precoce de câncer bucal."
+    },
+    {
+      "slug": "video-institucional-translacional",
+      "titulo": "Vídeo Institucional - Eixo Pesquisa Translacional (INTERAS 2026)",
+      "data": "2026-09-24",
+      "resumo": "Vídeo Institucional do INTERAS - Eixo Pesquisa Translacional",
+      "capa": "/videos/video_institucional_translacional.jpg",
+      "categorias": [
+        "Institucional",
+        "Pesquisa Translacional"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1erNYKSXGkhx7MWMzOOpbqI1s3NO90a9S/view?usp=sharing"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/Xiedp2xYfPxaXHZ"
+        }
+      ],
+      "conteudo": "Este vídeo institucional detalha as pesquisas do **Eixo de Pesquisa Translacional** do INCT Tecnologia das Radiações na Saúde (INTERAS). O conteúdo destaca a síntese limpa de nanopartículas de ouro radiossensibilizadoras via laser pulsado de femtossegundo para potencialização da radioterapia, a caracterização em nanoescala e o imageamento molecular pioneiro em modelos vegetais por micro-PET/CT utilizando o radiofármaco traçador ¹⁸F-FDG."
+    },
+    {
+      "slug": "video-institucional-tratamento",
+      "titulo": "Vídeo Institucional - Eixo Tratamento (INTERAS 2026)",
+      "data": "2026-09-24",
+      "resumo": "Vídeo Institucional do INTERAS - Eixo Tratamento",
+      "capa": "/videos/video_institucional_tratamento.jpg",
+      "categorias": [
+        "Institucional",
+        "Tratamento"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1vnTbGuDC0CR6Pyo0oz8KPH8rcNa4Trvg/view?usp=sharing"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/FCZNKsf9A49FY4Q"
+        }
+      ],
+      "conteudo": "Este vídeo institucional apresenta as inovações terapêuticas desenvolvidas no **Eixo Tratamento** do INCT Tecnologia das Radiações na Saúde (INTERAS). São demonstradas pesquisas com nanocarreadores direcionados para terapia localizada do câncer de próstata, bem como a aplicação de lasers de Nd:YAG associados a fotoabsorvedores nanoparticulados na odontologia e em tecidos biológicos, visando intervenções com máxima preservação de tecidos saudáveis."
+    },
+    {
+      "slug": "video-institucional-1",
+      "titulo": "Vídeo Institucional - INTERAS 2026",
+      "data": "2026-06-16",
+      "resumo": "Vídeo Institucional do INTERAS",
+      "capa": "/videos/video_institucional_1.jpg",
+      "categorias": [
+        "Institucional"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1nWzT88v6U-u_15PY-_t3TUcS_JoDt1Fo/view"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/CmzttRCwyw4JjPN"
+        }
+      ],
+      "conteudo": "Este é um Vídeo Institucional sobre o INTERAS, que apresenta algumas das pesquisas que têm sido desenvolvidas nos diversos grupos e laboratórios que compõe o INCT Tecnologia das Radiações na Saúde (INTERAS)"
+    },
+    {
+      "slug": "interascla",
+      "titulo": "Centro de Lasers e Aplicações do IPEN-CNEN",
+      "data": "2026-04-10",
+      "resumo": "Apresentação de algumas pesquisas do CELAP",
+      "capa": "/videos/INTERAS_CLA.png",
+      "categorias": [
+        "Dosimetria",
+        "Fotônica",
+        "Ótica"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1pNZvu5m7ea3DtEZ5Qf4NZwMJglJAQc_R/view"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/CSMgF55ysw2X4Mx"
+        }
+      ],
+      "conteudo": "Este vídeo apresenta algumas pesquisas que estão sendo realizadas no âmbido do INTERAS pelo Centro de Lasers e Aplicações (CELAP), mostrando diversas aplicações da luz nos mais diversos ramos de integração entre ótica, física, física médica e aplicações na área da saúde."
+    },
+    {
+      "slug": "kaio-luciano",
+      "titulo": "Precisão de Oxímetros de Pulso em Pacientes de UTI - INTERAS 2026",
+      "data": "2026-04-10",
+      "resumo": "Apresentação da pesquisa de doutorado do Kaio",
+      "capa": "/videos/INTERAS_KaioOximetros_redim.png",
+      "categorias": [
+        "Dosimetria",
+        "Fotônica",
+        "Ótica"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1DvhEOIFCTmAXQyfHQ1tEk8N209i0KfvC/view"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/JtnwMcNkiDEbLfm"
+        }
+      ],
+      "conteudo": "O pesquisador **Kaio**, doutorando orientado pelo [Prof. Dr. Luciano Bachmann](/equipe/luciano-bachmann/), estuda a precisão dos oxímetros de pulso em pacientes reais de UTI. Ele compara os dados desses aparelhos com exames de sangue para verificar se fatores como cor da pele, idade e elasticidade afetam os resultados. O objetivo é descobrir se o tom de pele pode causar erros de leitura que prejudiquem o tratamento médico. Assim, a pesquisa busca garantir que esses equipamentos sejam justos e precisos para qualquer tipo de paciente."
+    },
+    {
+      "slug": "marthainteras",
+      "titulo": "Diversas aplicações de lasers como coadjuvante em processos clínicos -- INTERAS 2026",
+      "data": "2026-04-10",
+      "resumo": "Apresentação do trabalho da Dra Martha Simões",
+      "capa": "/videos/INTERAS_Martha.png",
+      "categorias": [
+        "Dosimetria",
+        "Fotônica",
+        "Ótica"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1G3hjypTGzVfdrkuCtNv_-Zb-nwAsCIRp/view"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/sQy8psnbsHLgmmb"
+        }
+      ],
+      "conteudo": "Este vídeo apresenta alguns resultados de trabalhos do Grupo de Pesquisas em Biofotônica do Centro de Lasers e Aplicações (CELAP) do IPEN-CNEN/SP; em especial, o vídeo mostra a aceleração da cicatrização como resultado da aplicação do laser; também a aplicação do laser para prevenção de mucosite oral e pacientes de radio e quimioterapia; outra aplicação é a remoção de lesões bucais em paciente HIV positivo."
+    },
+    {
+      "slug": "murilosampaio",
+      "titulo": "Dosimetria Ótica em Tecidos Biológicos - INTERAS 2026",
+      "data": "2026-04-10",
+      "resumo": "Apresentação da pesquisa de doutorado do Murilo",
+      "capa": "/videos/INTERAS_AlunoLuciano.png",
+      "categorias": [
+        "Dosimetria",
+        "Fotônica",
+        "Ótica"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/1H-VNwv39QBXRXdT0AEbh8D4UsE8e9N5j/view"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/APyTCNDE944BMfB"
+        }
+      ],
+      "conteudo": "Este vídeo apresenta o trabalho do pesquisador **Murilo Sanches Sampaio**, doutorando do Grupo de Ótica da USP - Riberão Preto, orientado pelo Prof.Luciano Bachmann. A pesquisa tem como tema a *'Dosimetria ótica em tecidos biológicos'*, foca na integração entre física médica e aplicações clínicas da radiação."
+    },
+    {
+      "slug": "braquinanoterapia202604",
+      "titulo": "Braquiterapia e Nanobraquiterapia - INTERAS 2026",
+      "data": "2026-04-08",
+      "resumo": "Apresentação do desenvolvimento da Nanobraquiterapia no INTERAS.",
+      "capa": "/videos/screenshotnanobraqui.jpg",
+      "categorias": [
+        "Braquiterapia",
+        "Nanobraquiterapia"
+      ],
+      "links": [
+        {
+          "rotulo": "Servidor Principal (Google Drive)",
+          "url": "https://drive.google.com/file/d/136G38rA9sk9iOF_ak10qeBISMN0EHzyp/view?usp=sharing"
+        },
+        {
+          "rotulo": "Servidor Alternativo (NextCloud CINAS-IPEN)",
+          "url": "https://cloud.cinas.ipen.br/s/bcB6mcoAJojfnTj"
+        }
+      ],
+      "conteudo": "Este vídeo apresenta o trabalho do pesquisador **Noé Gabriel P. Machado**, doutorando orientado pelo **Prof. Dr. Wagner de Rossi**. A pesquisa, intitulada *'Síntese de nanopartículas de ouro via ablação por laser de femtossegundos, visando aplicações em nanobraquiterapia'*, foca na integração entre física médica e aplicações clínicas da radiação."
+    }
+  ]
+}

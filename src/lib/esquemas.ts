@@ -23,7 +23,7 @@ export const slug = z
 /** Id de publicação/patente: como o slug, mas também aceita "_" (chaves BibTeX). */
 export const idRegistro = z
   .string()
-  .regex(/^[a-z0-9]+([_-][a-z0-9]+)*$/, "deve ter só minúsculas sem acento, números, hífens e '_' (ex.: silva_laser_2024)");
+  .regex(/^[a-z0-9][a-z0-9_-]*$/, "deve ter só minúsculas sem acento, números, hífens e '_' (ex.: silva_laser_2024)");
 
 /** Data no formato AAAA-MM-DD, conferindo se o dia existe. */
 export const data = z
