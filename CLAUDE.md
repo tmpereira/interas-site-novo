@@ -696,6 +696,33 @@ Regras:
 - Manter o resultado visual idêntico ao do site antigo. A organização acima é
   sobre **onde** o estilo fica, não sobre mudar a aparência.
 
+### 9.2 Como o estilo foi portado (etapa 4)
+
+- **Fonte raiz de 17px** (`$tamanho-fonte-raiz` em `_tokens.scss`): o Quarto
+  define `--bs-root-font-size: 17px`, e todos os `rem` do site antigo partem
+  disso. Sem isso, tudo fica ~6% menor que o original.
+- **Classes do Bootstrap nos componentes:** o TSX usa só classes semânticas
+  (`.menu-principal`, `.destaque`, `.card-noticia`...). O visual do Bootstrap/
+  Materia vem de `@extend` nos arquivos SCSS (ex.: `.destaque__botao { @extend
+  .btn; @extend .btn-primary; }`). No TSX só entram `row`, `col-*` e
+  espaçamentos (`mb-0`).
+- **Cabeçalho:** `position: sticky` (anúncio + navbar). O antigo era `fixed-top`
+  com o Headroom do Quarto; o efeito é o mesmo sem JavaScript de deslocamento.
+- **Menu:** `Navbar.tsx` é um componente de cliente (abre/fecha submenu e o
+  menu do celular; fecha com clique fora, Esc ou ao navegar). Não usa o
+  JavaScript do Bootstrap.
+- **Barra de anúncio:** começa oculta no HTML e aparece no navegador se o
+  visitante ainda não a fechou (`localStorage`, chave `anuncio-fechado-<id>`).
+- **Blocos de destaque da home:** os pares (2º, 4º...) têm fundo
+  `$cor-fundo-alternativo`. No site antigo só o 2º tinha esse fundo (estilo
+  inline em um único bloco); a alternância foi escolhida por ser regra e não
+  exceção. Para voltar ao original, trocar `&:nth-child(even)` em
+  `_destaques.scss`.
+- **Âncoras:** `/publicacoes/#artigos` e `/publicacoes/#patentes` (no site antigo
+  eram `#articles` e `#patents`). A página de publicações deve usar esses `id`.
+- **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
+  faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
+
 ---
 
 ## 10. Etapas de execução

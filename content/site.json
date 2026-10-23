@@ -105,27 +105,27 @@
   "temas_grupos": [
     {
       "slug": "diagnostico",
-      "rotulo": "diagnostico"
+      "rotulo": "Diagnóstico"
     },
     {
       "slug": "terapias",
-      "rotulo": "terapias"
+      "rotulo": "Terapias"
     },
     {
       "slug": "dados",
-      "rotulo": "dados"
+      "rotulo": "Dados"
     },
     {
       "slug": "inteligencia-artificial",
-      "rotulo": "inteligência artificial"
+      "rotulo": "Inteligência artificial"
     },
     {
       "slug": "formacao",
-      "rotulo": "formacao"
+      "rotulo": "Formação"
     },
     {
       "slug": "computacao-cientifica",
-      "rotulo": "computação científica"
+      "rotulo": "Computação científica"
     }
   ]
 }

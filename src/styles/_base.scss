@@ -1,1 +1,54 @@
 // Tipografia e elementos HTML gerais.
+
+html {
+  scroll-padding-top: $deslocamento-ancora;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+// Títulos de seção dentro do conteúdo (como no Quarto: linha embaixo)
+.pagina h2,
+.pagina .h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $cor-borda;
+}
+
+.pagina blockquote {
+  border-left: 0.25rem solid $cor-borda-citacao;
+}
+
+// Título principal de cada página
+.titulo-pagina {
+  @extend .display-4;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.pagina img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Link "pular para o conteúdo" (acessibilidade por teclado)
+.pular-para-conteudo {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: $z-cabecalho + 1;
+  padding: 0.5rem 1rem;
+  background: $cor-fundo;
+
+  &:focus {
+    left: 0;
+  }
+}

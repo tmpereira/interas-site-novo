@@ -1,5 +1,5 @@
 ---
-titulo: 2º Wokshop Anual do INTERAS
+titulo: 2º Workshop Anual do INTERAS
 data: 2026-05-23
 autor: Mário O. de Menezes
 categorias: [evento, pesquisa, interas]

@@ -1,1 +1,180 @@
-// Navbar, rodapé, barra de anúncio, breadcrumbs e containers.
+// Cabeçalho (anúncio + navbar), rodapé, breadcrumbs e coluna principal.
+
+// --- Coluna principal -------------------------------------------------------
+.pagina {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: calc(#{$largura-conteudo} + 2 * #{$margem-lateral});
+  margin: 0 auto;
+  padding-left: $margem-lateral;
+  padding-right: $margem-lateral;
+}
+
+// --- Cabeçalho --------------------------------------------------------------
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: $z-cabecalho;
+}
+
+// --- Barra de anúncio -------------------------------------------------------
+.anuncio {
+  @extend .alert;
+  @extend .alert-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0.5em;
+  border-radius: 0;
+  font-size: $tamanho-anuncio;
+
+  &__icone {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+  }
+
+  &__texto {
+    margin-right: auto;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__fechar {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+// --- Navbar -----------------------------------------------------------------
+.menu-principal {
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: $cor-primaria;
+
+  &__container {
+    @extend .container-fluid;
+  }
+
+  &__botao {
+    @extend .navbar-toggler;
+  }
+
+  &__icone-botao {
+    @extend .navbar-toggler-icon;
+  }
+
+  &__colapso {
+    @extend .collapse;
+    @extend .navbar-collapse;
+  }
+
+  &__marca {
+    @extend .navbar-brand;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: auto;
+    max-height: $altura-logo-navbar;
+    margin-right: 0.25rem;
+  }
+
+  &__lista {
+    @extend .navbar-nav;
+    @extend .ms-auto;
+  }
+
+  &__item {
+    @extend .nav-item;
+    @extend .dropdown;
+  }
+
+  &__link {
+    @extend .nav-link;
+
+    &--submenu {
+      @extend .dropdown-toggle;
+    }
+  }
+
+  &__submenu {
+    @extend .dropdown-menu;
+    @extend .dropdown-menu-end;
+  }
+
+  &__subitem {
+    @extend .dropdown-item;
+  }
+}
+
+// --- Breadcrumb -------------------------------------------------------------
+.trilha {
+  @extend .breadcrumb;
+  margin-top: 1rem;
+  margin-bottom: 0.5em;
+  font-size: $tamanho-breadcrumb;
+
+  &__item {
+    @extend .breadcrumb-item;
+  }
+}
+
+// --- Rodapé -----------------------------------------------------------------
+.rodape {
+  flex-shrink: 0;
+  margin-top: $espaco-secao;
+  border-top: 1px solid $cor-borda;
+  background: $cor-fundo;
+  color: $cor-rodape-texto;
+  font-size: $tamanho-rodape;
+
+  a {
+    color: $cor-rodape-texto;
+  }
+
+  &__conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    min-height: 3.5em;
+    padding: 0.5rem 1em;
+    text-align: center;
+  }
+
+  &__logo {
+    justify-self: start;
+    height: $altura-logo-rodape;
+    width: auto;
+  }
+
+  &__redes {
+    display: flex;
+    justify-self: end;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @media (max-width: $bp-mobile) {
+    &__conteudo {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    &__logo,
+    &__redes {
+      justify-self: center;
+    }
+  }
+}

@@ -1,1 +1,53 @@
-// Estilos do componente: hero
+// Hero da página inicial: título, imagem de fundo (--imagem-fundo, vinda do dado) e texto.
+
+.hero {
+  &__titulo {
+    @extend .titulo-pagina;
+  }
+
+  &__imagem {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: $altura-hero;
+    padding-bottom: 1vh;
+    background-image: var(--imagem-fundo);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__conteudo {
+    @extend .container;
+    text-align: center;
+  }
+
+  &__texto {
+    @extend .lead;
+    margin-top: 1.5rem;
+  }
+
+  // Telas pequenas: a imagem ocupa o topo e o texto flui abaixo dela
+  @media (max-width: $bp-mobile) {
+    &__imagem {
+      display: block;
+      height: auto;
+      padding-top: $espaco-topo-hero-mobile;
+      padding-bottom: $espaco-base-hero-mobile;
+    }
+
+    &__conteudo {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.apresentacao {
+  @extend .container;
+  text-align: center;
+
+  &__texto {
+    @extend .lead;
+  }
+}

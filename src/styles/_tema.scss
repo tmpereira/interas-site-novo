@@ -2,6 +2,7 @@
 // Ordem exigida pelo Bootswatch: variáveis do tema → Bootstrap → regras do tema.
 $primary: $cor-primaria;
 $font-family-sans-serif: $fonte-base;
+$font-size-root: $tamanho-fonte-raiz;
 
 @import "bootswatch/dist/materia/variables";
 @import "bootstrap/scss/bootstrap";

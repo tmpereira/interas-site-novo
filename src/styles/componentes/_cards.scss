@@ -1,1 +1,62 @@
-// Estilos do componente: cards
+// Seções "Últimas ..." (título com link) e cartões em grade.
+
+.secao-recentes {
+  margin-top: 2rem;
+
+  &__titulo a {
+    font-weight: $peso-forte;
+  }
+}
+
+.card-noticia {
+  @extend .card;
+  height: 100%;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  &__imagem {
+    position: relative;
+    height: $altura-imagem-cartao;
+    overflow: hidden;
+    border-top-left-radius: $raio-imagem;
+    border-top-right-radius: $raio-imagem;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__corpo {
+    @extend .card-body;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  &__titulo {
+    margin-bottom: 1rem;
+    font-weight: $peso-forte;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: $cor-texto-suave;
+  }
+
+  &__data {
+    margin-top: auto;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: $tamanho-data-cartao;
+    font-weight: $peso-medio;
+    color: $cor-texto-suave;
+  }
+}

@@ -1,15 +1,87 @@
 // Tokens visuais: os ÚNICOS valores fixos de estilo do projeto.
 // Os demais arquivos SCSS só referenciam estas variáveis.
-// Os valores serão portados do custom.scss antigo na etapa 4 (layout base).
+// Valores portados do tema Materia (Bootswatch) e do custom.scss do site antigo.
 
+// ---------------------------------------------------------------------------
 // Cores
+// ---------------------------------------------------------------------------
 $cor-primaria: #2196f3; // primária do Bootswatch Materia
+$cor-texto: #444;
+$cor-texto-suave: #6c757d;
+$cor-fundo: #fff;
+$cor-fundo-alternativo: #f8f9fa;
+$cor-borda: #dee2e6;
+$cor-borda-citacao: #eee;
+$cor-rodape-texto: hsl(0, 0%, 46%);
+$cor-sombra-imagem: rgba(0, 0, 0, 0.15);
+$cor-fade-transparente: rgba(255, 255, 255, 0);
+$cor-fade-opaca: rgba(255, 255, 255, 1);
 
+// ---------------------------------------------------------------------------
 // Tipografia
+// ---------------------------------------------------------------------------
 $fonte-base: "Roboto", -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
+$tamanho-fonte-raiz: 17px; // o Quarto define a fonte raiz em 17px; todos os rem partem daqui
+$peso-leve: 300;
+$peso-medio: 500;
+$peso-forte: 700;
+$tamanho-lead: 1.25rem;
+$tamanho-titulo-pagina: 3.5rem; // display-4
+$tamanho-titulo-destaque: 2.5rem; // display-6
+$tamanho-rodape: 0.825em;
+$tamanho-anuncio: 0.9em;
+$tamanho-breadcrumb: 0.9rem;
+$tamanho-data-cartao: 0.8em;
+$tamanho-titulo-lista: 1.4rem;
+$tamanho-data-lista: 0.8rem;
+
+// ---------------------------------------------------------------------------
+// Espaçamento e layout
+// ---------------------------------------------------------------------------
+$largura-conteudo: 1135px; // coluna principal do site antigo em telas largas
+$margem-lateral: 1.5rem;
+$espaco-secao: 4rem;
+$espaco-grade: 2rem;
+$altura-logo-navbar: 1.5rem;
+$altura-logo-rodape: 40px;
+$altura-imagem-cartao: 150px;
+$altura-minima-imagem-destaque: 400px;
+$deslocamento-ancora: 6rem; // espaço para o cabeçalho fixo ao saltar para #ancoras
+
+// ---------------------------------------------------------------------------
+// Forma
+// ---------------------------------------------------------------------------
+$raio-imagem: 0.5rem;
+$sombra-imagem: 0 4px 20px $cor-sombra-imagem;
+
+// ---------------------------------------------------------------------------
+// Hero
+// ---------------------------------------------------------------------------
+$altura-hero: 80vh;
+$espaco-topo-hero-mobile: 50vh;
+$espaco-base-hero-mobile: 4rem;
+
+// ---------------------------------------------------------------------------
+// Breakpoints
+// ---------------------------------------------------------------------------
+$bp-mobile: 768px;
+$bp-destaque: 992px;
+
+// ---------------------------------------------------------------------------
+// Camadas
+// ---------------------------------------------------------------------------
+$z-cabecalho: 1030;
+$z-texto-destaque: 2;
 
 // Mesmos tokens expostos como variáveis CSS
 :root {
   --cor-primaria: #{$cor-primaria};
+  --cor-texto: #{$cor-texto};
+  --cor-texto-suave: #{$cor-texto-suave};
+  --cor-fundo-alternativo: #{$cor-fundo-alternativo};
+  --cor-borda: #{$cor-borda};
   --fonte-base: #{$fonte-base};
+  --largura-conteudo: #{$largura-conteudo};
+  --margem-lateral: #{$margem-lateral};
+  --raio-imagem: #{$raio-imagem};
 }
