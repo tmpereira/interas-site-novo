@@ -1,143 +1,220 @@
 // Equipe: listagem por categoria (cartões) e perfil de cada pessoa.
 
-// --- Listagem ---------------------------------------------------------------
-.secao-equipe {
-  margin-top: 2.5rem;
+// --- Foto redonda com anel --------------------------------------------------
+.foto-pessoa {
+  display: block;
+  flex-shrink: 0;
+  width: $tamanho-foto-cartao;
+  height: $tamanho-foto-cartao;
+  padding: $espessura-anel-foto;
+  border-radius: 50%;
+  background: var(--cor-frente, #{$cor-acento});
 
-  h2 {
-    margin-top: 0;
-  }
-}
-
-.grade-pessoas {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5em;
-
-  @media (max-width: $bp-destaque) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  &--grande {
+    width: $tamanho-foto-destaque;
+    height: $tamanho-foto-destaque;
   }
 
-  @media (max-width: $bp-mobile) {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-.card-pessoa {
-  @extend .card;
-
-  &__link {
-    display: block;
-    height: 100%;
-    color: inherit;
-    text-decoration: none;
-
-    &:hover {
-      color: inherit;
-    }
+  &--perfil {
+    width: $tamanho-foto-perfil;
+    height: $tamanho-foto-perfil;
   }
 
-  &__foto {
+  // Fresta clara entre o anel e a foto
+  &__moldura {
     position: relative;
-    height: $altura-foto-cartao;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    border-top-left-radius: $raio-imagem;
-    border-top-right-radius: $raio-imagem;
+    border: 2px solid $cor-superficie;
+    border-radius: 50%;
+    background: $cor-fundo;
   }
 
   &__img {
     object-fit: cover;
   }
 
-  &__corpo {
-    @extend .card-body;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  &__iniciais {
+    font-family: $fonte-titulo;
+    font-size: $tamanho-lg;
+    font-weight: $peso-titulo;
+    color: $cor-texto-suave;
   }
 
-  &__nome {
+  &--grande &__iniciais {
+    font-size: $tamanho-2xl;
+  }
+
+  &--perfil &__iniciais {
+    font-size: $tamanho-5xl;
+  }
+}
+
+// --- Listagem ---------------------------------------------------------------
+.secao-equipe {
+  margin-top: $espaco-12;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  h2#{&}__titulo {
+    @include sobretitulo;
+    margin-bottom: $espaco-4;
+    color: $cor-texto-suave;
+  }
+}
+
+.grade-pessoas {
+  @include grade-celulas;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  // Coordenação: dois cartões grandes lado a lado, sem a grade de células
+  &--destaque {
+    gap: $espaco-6;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+
+    > * {
+      margin: 0;
+      border: 0;
+      background: none;
+    }
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+.card-pessoa {
+  height: 100%;
+
+  &__link {
+    display: block;
+    height: 100%;
+    padding: $espaco-5;
+    color: $cor-texto;
+    text-decoration: none;
+
+    &:hover {
+      background: $cor-fundo;
+      color: $cor-texto;
+    }
+  }
+
+  &__corpo {
+    min-width: 0;
+    margin-top: $espaco-4;
+  }
+
+  h3#{&}__nome {
     margin: 0;
-    font-size: $tamanho-nome-cartao;
-    font-weight: $peso-medio;
+    font-size: $tamanho-base;
+    font-weight: $peso-semi;
+    line-height: $altura-linha-titulo;
+  }
+
+  &__link:hover &__nome {
+    color: $cor-acento;
   }
 
   &__cargo {
-    margin: 0;
-    font-size: $tamanho-cargo-cartao;
+    margin: $espaco-1 0 0;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  &__instituicao {
+    margin: $espaco-2 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+
+  // Cartão grande (coordenação): foto à esquerda, cargo como sobretítulo
+  &--destaque &__link {
+    display: flex;
+    align-items: flex-start;
+    gap: $espaco-5;
+    padding: $espaco-6;
+    border: $borda;
+    border-radius: $raio-2xl;
+    background: $cor-superficie;
+
+    &:hover {
+      background: $cor-superficie;
+    }
+  }
+
+  &--destaque &__corpo {
+    margin-top: 0;
+  }
+
+  &--destaque &__cargo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  &--destaque h3#{&}__nome {
+    margin-top: $espaco-1;
+    font-family: $fonte-titulo;
+    font-size: $tamanho-xl;
+    letter-spacing: $espacamento-titulo;
   }
 }
 
 // --- Perfil -----------------------------------------------------------------
 .perfil {
-  max-width: $largura-perfil;
-  margin: 0 auto;
-
-  &__cabecalho {
-    margin-top: $espaco-topo-perfil;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  &__foto {
-    position: relative;
-    width: $tamanho-foto-perfil;
-    height: $tamanho-foto-perfil;
-    margin: 0 auto 1.5rem;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  &__img {
-    object-fit: cover;
-  }
-
-  &__nome {
-    margin-bottom: 0.25rem;
-    font-size: $tamanho-titulo-perfil;
-    font-weight: $peso-titulo;
-  }
-
-  &__cargo {
-    @extend .lead;
-    margin-bottom: 1.5rem;
-  }
+  max-width: $largura-leitura;
 
   &__links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-    max-width: $largura-linha-perfil;
-    margin: 0 auto;
-    padding: 1rem 0 0;
-    border-top: 1px solid $cor-borda;
+    gap: $espaco-2;
+    margin: $espaco-6 0 0;
+    padding: 0;
     list-style: none;
   }
 
   &__botao {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.3rem 0.6rem;
-    border: 1px solid $cor-texto-suave;
-    border-radius: $raio-botao;
-    font-size: $tamanho-botao-perfil;
-    color: $cor-texto-suave;
-    text-decoration: none;
-
-    &:hover {
-      background-color: $cor-texto-suave;
-      color: $cor-fundo;
-    }
+    @include pilula-pequena;
   }
 
-  // No perfil, os títulos de seção não têm linha embaixo (como no site antigo)
+  section {
+    padding: $espaco-6 0;
+    border-top: $borda;
+  }
+
+  // Rótulos das seções ("Áreas de atuação", "Publicações"...)
   h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0;
-    border-bottom: 0;
-    font-size: $tamanho-secao-perfil;
-    font-weight: $peso-titulo;
+    @include sobretitulo;
+    margin-bottom: $espaco-3;
+    color: $cor-texto-suave;
+  }
+
+  section > div,
+  section > p {
+    color: $cor-texto-suave;
+  }
+
+  ul:not([class]) {
+    padding-left: $espaco-5;
+  }
+
+  .lista-publicacoes {
+    border-top: 0;
   }
 }

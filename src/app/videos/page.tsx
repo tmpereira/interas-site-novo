@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import CartaoConteudo from "@/components/CartaoConteudo";
 import FiltroPorCategoria from "@/components/FiltroPorCategoria";
 import { carregarConteudo } from "@/lib/conteudo";
@@ -21,19 +21,16 @@ export default function Videos() {
     .map((c) => ({ chave: c, rotulo: c }));
   return (
     <div className="pagina">
-      <Breadcrumb itens={[{ rotulo: "Vídeos" }]} />
-      <header className="cabecalho-pagina">
-        <h1 className="cabecalho-pagina__titulo">{pagina.titulo}</h1>
-        {pagina.descricao && <p className="cabecalho-pagina__subtitulo">{pagina.descricao}</p>}
-      </header>
-      <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo) }} />
+      <CabecalhoPagina caminho="/videos/" titulo={pagina.titulo} descricao={pagina.descricao}>
+        {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo) }} />}
+      </CabecalhoPagina>
       <FiltroPorCategoria
         categorias={categorias}
         classeLista="grade-cartoes"
         itens={videos.map((v) => ({
           id: v.slug,
           categorias: v.categorias,
-          elemento: <CartaoConteudo href={`/videos/${v.slug}/`} imagem={v.capa} titulo={v.titulo} descricao={v.resumo} data={{ texto: formatarData(v.data), dateTime: v.data }} />,
+          elemento: <CartaoConteudo video href={`/videos/${v.slug}/`} imagem={v.capa} titulo={v.titulo} descricao={v.resumo} data={{ texto: formatarData(v.data), dateTime: v.data }} />,
         }))}
       />
     </div>

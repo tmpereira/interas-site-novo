@@ -1,0 +1,142 @@
+// Espectro eletromagnético da home (SVG). Todas as cores do desenho vêm daqui.
+
+.espectro {
+  margin: 0;
+
+  &__legenda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: $espaco-2;
+    margin-bottom: $espaco-4;
+  }
+
+  &__legenda-titulo {
+    @include sobretitulo;
+    color: $cor-texto-suave;
+  }
+
+  &__legenda-escala {
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  // No celular o desenho rola na horizontal em vez de ficar ilegível
+  &__rolagem {
+    margin: 0 (-$espaco-1);
+    padding: 0 $espaco-1;
+    overflow-x: auto;
+  }
+
+  &__svg {
+    display: block;
+    width: 100%;
+    min-width: $largura-minima-espectro;
+  }
+
+  &__texto {
+    fill: $cor-texto-suave;
+    font-family: $fonte-mono;
+    font-size: $tamanho-texto-espectro;
+  }
+
+  &__rotulo {
+    fill: $cor-texto;
+    font-family: $fonte-mono;
+    font-size: $tamanho-rotulo-espectro;
+    font-weight: $peso-medio;
+  }
+
+  &__base {
+    fill: $cor-linha;
+  }
+
+  &__ionizante {
+    fill: $cor-ionizante;
+  }
+
+  &__divisa {
+    stroke: $cor-texto-suave;
+    stroke-dasharray: 3 3;
+  }
+
+  &__faixa {
+    fill: $cor-acento;
+
+    &--suave {
+      opacity: $opacidade-faixa;
+    }
+  }
+
+  &__marcador {
+    stroke: $cor-texto;
+    stroke-width: 1.5;
+  }
+
+  &__pico {
+    fill: $cor-fundo;
+    stroke: $cor-texto;
+    stroke-width: 2;
+  }
+
+  &__guia,
+  &__marca {
+    stroke: $cor-texto-suave;
+  }
+
+  @each $cor in $cores-visivel {
+    $i: index($cores-visivel, $cor);
+    &__parada--#{$i} {
+      stop-color: $cor;
+    }
+  }
+
+  // Varredura que percorre o espectro
+  &__varredura {
+    fill: $cor-texto;
+    opacity: $opacidade-varredura;
+    animation: espectro-varredura $duracao-varredura ease-in-out infinite alternate;
+  }
+
+  // Realce: com uma faixa ativa, as outras ficam apagadas
+  &__grupo {
+    transition: opacity $transicao-media;
+  }
+
+  &__svg--realce &__grupo:not(&__grupo--ativo) {
+    opacity: $opacidade-apagada;
+  }
+
+  &__botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin-top: $espaco-5;
+  }
+
+  &__botao {
+    @include pilula-pequena;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__varredura {
+      animation: none;
+      opacity: 0;
+    }
+
+    &__grupo {
+      transition: none;
+    }
+  }
+}
+
+@keyframes espectro-varredura {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(940px);
+  }
+}

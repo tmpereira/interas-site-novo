@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import CardPessoa from "@/components/CardPessoa";
-import FaixaTitulo from "@/components/FaixaTitulo";
 import { equipePorCategoria, paginaPorSlug } from "@/lib/consultas";
 import { metadadosPagina } from "@/lib/metadados";
 
@@ -12,21 +11,23 @@ export function generateMetadata(): Metadata {
 export default function Equipe() {
   const pagina = paginaPorSlug("equipe");
   return (
-    <>
-      <FaixaTitulo titulo={pagina.titulo} />
-      <div className="pagina">
-        <Breadcrumb itens={[{ rotulo: "Coord. e Equipe" }]} />
-        {equipePorCategoria().map((categoria) => (
+    <div className="pagina">
+      <CabecalhoPagina caminho="/equipe/" titulo={pagina.titulo} descricao={pagina.descricao} />
+      {equipePorCategoria().map((categoria) => {
+        const destaque = categoria.chave === "coordenacao";
+        return (
           <section key={categoria.chave} className="secao-equipe" aria-labelledby={`equipe-${categoria.chave}`}>
-            <h2 id={`equipe-${categoria.chave}`}>{categoria.titulo}</h2>
-            <div className="grade-pessoas">
+            <h2 id={`equipe-${categoria.chave}`} className="secao-equipe__titulo">
+              {categoria.titulo}
+            </h2>
+            <div className={destaque ? "grade-pessoas grade-pessoas--destaque" : "grade-pessoas"}>
               {categoria.pessoas.map((p) => (
-                <CardPessoa key={p.slug} pessoa={p} />
+                <CardPessoa key={p.slug} pessoa={p} destaque={destaque} />
               ))}
             </div>
           </section>
-        ))}
-      </div>
-    </>
+        );
+      })}
+    </div>
   );
 }

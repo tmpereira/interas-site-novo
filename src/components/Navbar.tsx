@@ -5,27 +5,29 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { Site } from "@/lib/esquemas";
+import { entradaDaPagina, estaEm, temItens } from "@/lib/menu";
 
 type Props = {
-  titulo: string;
   logo: string;
   logoAlt: string;
   menu: Site["menu"];
 };
 
-type Item = { rotulo: string; link: string };
-type Submenu = { rotulo: string; itens: Item[] };
+/** Seta do botão de submenu (gira quando o submenu abre). */
+function Seta() {
+  return (
+    <svg className="menu-principal__seta" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+      <path d="M2 3.5 5 6.5 8 3.5" />
+    </svg>
+  );
+}
 
-const temItens = (entrada: Site["menu"][number]): entrada is Submenu => "itens" in entrada;
-
-/** Caminho de um link sem âncora nem parâmetros, para comparar com a página atual. */
-const caminho = (link: string) => link.split(/[?#]/)[0];
-
-export default function Navbar({ titulo, logo, logoAlt, menu }: Props) {
+export default function Navbar({ logo, logoAlt, menu }: Props) {
   const [aberto, setAberto] = useState(false);
   const [submenuAberto, setSubmenuAberto] = useState<string | null>(null);
   const raiz = useRef<HTMLElement>(null);
   const pathname = usePathname();
+  const atual = entradaDaPagina(menu, pathname);
 
   // Fecha submenus ao clicar fora ou apertar Esc
   useEffect(() => {
@@ -46,62 +48,64 @@ export default function Navbar({ titulo, logo, logoAlt, menu }: Props) {
   const aoNavegar = () => {
     setAberto(false);
     setSubmenuAberto(null);
+    (document.activeElement as HTMLElement | null)?.blur();
   };
-  const ativo = (link: string) => caminho(link) === pathname;
 
   return (
-    <nav ref={raiz} className="menu-principal" data-bs-theme="dark" aria-label="Principal">
+    <nav ref={raiz} className="menu-principal" aria-label="Principal">
       <div className="menu-principal__container">
         <Link href="/" className="menu-principal__marca" onClick={aoNavegar}>
-          <Image src={logo} alt={logoAlt} width={48} height={24} className="menu-principal__logo" />
-          <span>{titulo}</span>
+          <Image src={logo} alt={logoAlt} width={250} height={125} className="menu-principal__logo" priority />
         </Link>
         <button
           type="button"
           className="menu-principal__botao"
           aria-controls="menu-principal-lista"
           aria-expanded={aberto}
-          aria-label="Alternar navegação"
           onClick={() => setAberto(!aberto)}
         >
-          <span className="menu-principal__icone-botao" />
+          Menu
         </button>
-        <div id="menu-principal-lista" className={`menu-principal__colapso${aberto ? " show" : ""}`}>
+        <div id="menu-principal-lista" className={`menu-principal__colapso${aberto ? " menu-principal__colapso--aberto" : ""}`}>
           <ul className="menu-principal__lista">
-            {menu.map((entrada) =>
-              temItens(entrada) ? (
-                <li key={entrada.rotulo} className="menu-principal__item">
+            {menu.map((entrada) => {
+              const classeItem = `menu-principal__item${entrada === atual ? " menu-principal__item--atual" : ""}`;
+              if (!temItens(entrada)) {
+                const ativo = estaEm(pathname, entrada.link);
+                return (
+                  <li key={entrada.rotulo} className={classeItem}>
+                    <Link href={entrada.link} className="menu-principal__link" aria-current={ativo ? "page" : undefined} onClick={aoNavegar}>
+                      {entrada.rotulo}
+                    </Link>
+                  </li>
+                );
+              }
+              const subAberto = submenuAberto === entrada.rotulo;
+              return (
+                <li key={entrada.rotulo} className={`${classeItem}${subAberto ? " menu-principal__item--aberto" : ""}`}>
                   <button
                     type="button"
                     className="menu-principal__link menu-principal__link--submenu"
-                    aria-expanded={submenuAberto === entrada.rotulo}
-                    onClick={() => setSubmenuAberto(submenuAberto === entrada.rotulo ? null : entrada.rotulo)}
+                    aria-expanded={subAberto}
+                    onClick={() => setSubmenuAberto(subAberto ? null : entrada.rotulo)}
                   >
                     {entrada.rotulo}
+                    <Seta />
                   </button>
-                  <ul className={`menu-principal__submenu${submenuAberto === entrada.rotulo ? " show" : ""}`}>
-                    {entrada.itens.map((item) => (
-                      <li key={item.link}>
-                        <Link href={item.link} className="menu-principal__subitem" onClick={aoNavegar}>
-                          {item.rotulo}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="menu-principal__painel">
+                    <ul className="menu-principal__submenu">
+                      {entrada.itens.map((item) => (
+                        <li key={item.link}>
+                          <Link href={item.link} className="menu-principal__subitem" onClick={aoNavegar}>
+                            {item.rotulo}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </li>
-              ) : (
-                <li key={entrada.rotulo} className="menu-principal__item">
-                  <Link
-                    href={(entrada as Item).link}
-                    className={`menu-principal__link${ativo((entrada as Item).link) ? " active" : ""}`}
-                    aria-current={ativo((entrada as Item).link) ? "page" : undefined}
-                    onClick={aoNavegar}
-                  >
-                    {entrada.rotulo}
-                  </Link>
-                </li>
-              ),
-            )}
+              );
+            })}
           </ul>
         </div>
       </div>

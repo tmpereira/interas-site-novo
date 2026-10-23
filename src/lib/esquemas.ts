@@ -229,6 +229,18 @@ export const pagina = z.looseObject({
   titulo: texto,
   descricao: z.string().nullable(),
   conteudo: markdown,
+  /** Faixa escura com sobretítulo, título (vira o <h1>), texto em Markdown e etiquetas (página "O INCT INTERAS"). */
+  missao: z
+    .looseObject({ sobretitulo: z.string().nullable(), titulo: texto, texto: markdown, etiquetas: z.array(texto) })
+    .optional(),
+  /** Passos numerados em um cartão (ex.: "Do laboratório ao SUS"). */
+  etapas: z
+    .looseObject({
+      sobretitulo: z.string().nullable(),
+      titulo: texto,
+      itens: z.array(z.looseObject({ titulo: texto, texto: z.string() })).min(1),
+    })
+    .optional(),
 });
 
 export const arquivoPaginas = z.looseObject({
@@ -265,12 +277,20 @@ export const botao = z.looseObject({
   link,
 });
 
+/** Faixas do espectro eletromagnético desenhadas na home (componente Espectro). */
+export const FAIXAS_ESPECTRO = ["luz", "cura", "moleculas"] as const;
+
 export const destaque = z.looseObject({
   titulo: texto,
   texto: markdown,
   imagem: caminhoPublico,
   posicao_imagem: z.enum(["esquerda", "direita"]),
   botao: botao.nullable(),
+  /** Faixa do espectro que este destaque realça; sem faixa = linha transversal. */
+  faixa: z.enum(FAIXAS_ESPECTRO).nullable().optional(),
+  /** Texto curto da coluna à esquerda (ex.: "Infravermelho e visível\n2,5–25 µm"); `\n` quebra a linha. */
+  rotulo_faixa: z.string().nullable().optional(),
+  etiquetas: z.array(texto).optional(),
 });
 
 export const secaoRecentes = z.looseObject({
@@ -285,8 +305,16 @@ export const arquivoHome = z.looseObject({
     titulo: texto,
     texto: markdown,
     imagem: caminhoPublico,
+    botoes: z.array(botao).optional(),
   }),
+  /** Sobretítulo pequeno da faixa escura da apresentação (ex.: "Por que existimos"). */
+  apresentacao_sobretitulo: z.string().nullable().optional(),
   apresentacao: markdown,
+  /** Cabeçalho da seção dos destaques (linhas de pesquisa), acima do espectro. */
+  secao_destaques: z
+    .looseObject({ sobretitulo: z.string().nullable(), titulo: texto, texto: z.string().nullable() })
+    .nullable()
+    .optional(),
   destaques: z.array(destaque),
   /** Bloco curto abaixo dos destaques (ex.: coordenação), em Markdown. */
   nota: markdown.nullable(),

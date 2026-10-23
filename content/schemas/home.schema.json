@@ -20,6 +20,35 @@
         "imagem": {
           "type": "string",
           "pattern": "^\\/[^\\s]+$"
+        },
+        "botoes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rotulo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "link": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[/#]"
+                  },
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rotulo",
+              "link"
+            ],
+            "additionalProperties": {}
+          }
         }
       },
       "required": [
@@ -29,8 +58,48 @@
       ],
       "additionalProperties": {}
     },
+    "apresentacao_sobretitulo": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "apresentacao": {
       "type": "string"
+    },
+    "secao_destaques": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "sobretitulo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "titulo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "texto": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "sobretitulo",
+            "titulo",
+            "texto"
+          ],
+          "additionalProperties": {}
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "destaques": {
       "type": "array",
@@ -87,6 +156,34 @@
                 "type": "null"
               }
             ]
+          },
+          "faixa": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "luz",
+                  "cura",
+                  "moleculas"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rotulo_faixa": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "etiquetas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           }
         },
         "required": [

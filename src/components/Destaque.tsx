@@ -1,33 +1,43 @@
+import Image from "next/image";
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import type { Home } from "@/lib/esquemas";
 import { markdownParaHtml } from "@/lib/markdown";
 
-/** Bloco de destaque da home: imagem esmaecida de um lado, título, texto e botão do outro. */
+/** Linha de pesquisa da home: faixa do espectro à esquerda, texto no meio, imagem e etiquetas à direita. */
 export default function Destaque({ destaque }: { destaque: Home["destaques"][number] }) {
-  const imagem = (
-    <div className="destaque__imagem" style={{ "--imagem-fundo": `url("${destaque.imagem}")` } as CSSProperties} role="presentation" />
-  );
-  const texto = (
-    <div className="destaque__texto">
-      <h2 className="destaque__titulo">{destaque.titulo}</h2>
-      <div className="destaque__corpo" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto) }} />
-      {destaque.botao && (
-        <Link href={destaque.botao.link} className="destaque__botao">
-          {destaque.botao.rotulo}
-        </Link>
-      )}
-    </div>
-  );
-  const esquerda = destaque.posicao_imagem === "esquerda";
+  const linhasFaixa = destaque.rotulo_faixa?.split("\n") ?? [];
   return (
-    <section className={`destaque destaque--imagem-${destaque.posicao_imagem}`}>
-      <div className="destaque__interno">
-        <div className="destaque__grade">
-          {esquerda ? imagem : texto}
-          {esquerda ? texto : imagem}
-        </div>
+    <article className="pilar">
+      <p className="pilar__faixa">
+        {linhasFaixa.map((l, i) => (
+          <span key={i} className="pilar__faixa-linha">
+            {l}
+          </span>
+        ))}
+      </p>
+      <div className="pilar__texto">
+        <h3 className="pilar__titulo">{destaque.titulo}</h3>
+        <div className="pilar__corpo" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto) }} />
+        {destaque.botao && (
+          <Link href={destaque.botao.link} className="pilar__botao">
+            {destaque.botao.rotulo} →
+          </Link>
+        )}
       </div>
-    </section>
+      <div className="pilar__lateral">
+        <div className="pilar__imagem">
+          <Image src={destaque.imagem} alt="" fill sizes="(min-width: 768px) 18rem, 100vw" className="pilar__img" />
+        </div>
+        {destaque.etiquetas && destaque.etiquetas.length > 0 && (
+          <ul className="pilar__etiquetas">
+            {destaque.etiquetas.map((e) => (
+              <li key={e} className="pilar__etiqueta">
+                {e}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </article>
   );
 }

@@ -1,25 +1,117 @@
-// Páginas de grupos: abas e conteúdo.
+// Páginas de grupos: abas em pílulas e painel do conteúdo.
 
 .abas {
-  margin: 1.5rem 0;
+  margin: $espaco-10 0 0;
 
   &__lista {
-    @extend .nav;
-    @extend .nav-tabs;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
   }
 
   &__aba {
-    @extend .nav-link;
+    @include pilula-pequena;
   }
 
   &__painel {
-    @extend .card;
     display: block;
-    margin-top: 1rem;
-    padding: 1.5rem;
+    margin-top: $espaco-4;
+    padding: $espaco-6;
+    border: $borda;
+    border-radius: $raio-2xl;
+    background: $cor-superficie;
+
+    @media (min-width: $bp-md) {
+      padding: $espaco-8;
+    }
 
     &[hidden] {
       display: none;
     }
+  }
+}
+
+// --- Lista de grupos (/grupos/) ---------------------------------------------
+.lista-grupos {
+  @include lista-linhas;
+}
+
+.item-grupo {
+  display: grid;
+  gap: $espaco-2;
+  padding: $espaco-5 0;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1.3fr) auto;
+    align-items: center;
+    gap: $espaco-4;
+  }
+
+  &__principal {
+    min-width: 0;
+  }
+
+  h2#{&}__titulo {
+    margin: 0;
+    font-family: $fonte-base;
+    font-size: $tamanho-lg;
+    font-weight: $peso-semi;
+    line-height: $altura-linha-justa;
+    letter-spacing: 0;
+
+    a {
+      color: $cor-texto;
+      text-decoration: none;
+
+      &:hover {
+        color: $cor-acento;
+      }
+    }
+  }
+
+  &__tema {
+    margin: $espaco-1 0 0;
+  }
+
+  &__instituicao {
+    margin: 0;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+  }
+
+  &__detalhes {
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__coordenacao {
+    color: $cor-texto;
+  }
+
+  &__link {
+    @include link-seta;
+  }
+}
+
+// Cor do ponto de cada tema dos grupos (mesmas cores das frentes da home)
+.frente {
+  &--diagnostico {
+    --cor-frente: #{$cor-luz};
+  }
+  &--terapias {
+    --cor-frente: #{$cor-cura};
+  }
+  &--formacao {
+    --cor-frente: #{$cor-moleculas};
+  }
+  &--dados,
+  &--inteligencia-artificial,
+  &--computacao-cientifica {
+    --cor-frente: #{$cor-ia};
   }
 }

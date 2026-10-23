@@ -1,4 +1,4 @@
-// Cabeçalho (anúncio + navbar), rodapé, breadcrumbs e coluna principal.
+// Cabeçalho (anúncio + navbar), rodapé, cabeçalho de página e coluna principal.
 
 // --- Coluna principal -------------------------------------------------------
 .conteudo-principal {
@@ -6,13 +6,23 @@
   width: 100%;
 }
 
-// Contêiner de conteúdo de cada página (a faixa de título ocupa a largura toda, fora dele)
-.pagina {
+// Coluna centralizada com margens laterais (as faixas escuras ocupam a largura toda, fora dela)
+.largura-pagina {
   width: 100%;
-  max-width: calc(#{$largura-conteudo} + 2 * #{$margem-lateral});
+  max-width: calc(#{$largura-pagina} + 2 * #{$margem-lateral});
   margin: 0 auto;
-  padding-left: $margem-lateral;
-  padding-right: $margem-lateral;
+  padding-left: max(#{$margem-lateral}, env(safe-area-inset-left, 0px));
+  padding-right: max(#{$margem-lateral}, env(safe-area-inset-right, 0px));
+}
+
+// Contêiner de conteúdo de cada página: a coluna, com espaço antes do rodapé
+.pagina {
+  @extend .largura-pagina;
+  padding-bottom: $espaco-20;
+
+  @media (min-width: $bp-md) {
+    padding-bottom: $espaco-28;
+  }
 }
 
 // --- Cabeçalho --------------------------------------------------------------
@@ -20,206 +30,423 @@
   position: sticky;
   top: 0;
   z-index: $z-cabecalho;
+  border-bottom: $borda;
+  background: $cor-fundo;
 }
 
-// --- Barra de anúncio -------------------------------------------------------
+// --- Barra de anúncio (faixa escura fina) -----------------------------------
 .anuncio {
-  @extend .alert;
-  @extend .alert-primary;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 0;
-  padding: 0.5em;
-  border-radius: 0;
-  font-size: $tamanho-anuncio;
+  gap: $espaco-3;
+  padding: $espaco-2 $margem-lateral;
+  background: $cor-profundo;
+  color: $cor-profundo-texto;
+  font-family: $fonte-mono;
+  font-size: $tamanho-xs;
+  text-align: center;
 
   &__icone {
-    margin-right: 0.5em;
-    font-size: 1.2em;
+    font-size: $tamanho-sm;
   }
 
   &__texto {
-    margin-right: auto;
-
     p {
-      margin-bottom: 0;
+      margin: 0;
+    }
+
+    a {
+      color: $cor-profundo-texto;
+      text-decoration: underline;
     }
   }
 
   &__fechar {
+    margin-left: $espaco-2;
     padding: 0;
     border: 0;
     background: none;
-    color: inherit;
+    color: $cor-profundo-suave;
     cursor: pointer;
+
+    &:hover {
+      color: $cor-profundo-texto;
+    }
   }
 }
 
 // --- Navbar -----------------------------------------------------------------
 .menu-principal {
-  @extend .navbar;
-  @extend .navbar-expand-lg;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: $cor-primaria;
-
   &__container {
-    @extend .container-fluid;
-  }
-
-  &__botao {
-    @extend .navbar-toggler;
-  }
-
-  &__icone-botao {
-    @extend .navbar-toggler-icon;
-  }
-
-  &__colapso {
-    @extend .collapse;
-    @extend .navbar-collapse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: $espaco-3 $espaco-6;
+    max-width: calc(#{$largura-pagina} + 2 * #{$margem-lateral});
+    margin: 0 auto;
+    padding: $espaco-1 max(#{$margem-lateral}, env(safe-area-inset-right, 0px)) $espaco-1 max(#{$margem-lateral}, env(safe-area-inset-left, 0px));
   }
 
   &__marca {
-    @extend .navbar-brand;
     display: inline-flex;
     align-items: center;
   }
 
   &__logo {
     width: auto;
-    max-height: $altura-logo-navbar;
-    margin-right: 0.25rem;
+    height: $altura-logo-navbar;
+    filter: $filtro-logo;
+  }
+
+  // Botão "Menu" (só no celular e tablet)
+  &__botao {
+    @include pilula-pequena;
+  }
+
+  // No celular, a lista fica abaixo da barra e só aparece aberta
+  &__colapso {
+    display: none;
+    flex-basis: 100%;
+
+    &--aberto {
+      display: block;
+    }
   }
 
   &__lista {
-    @extend .navbar-nav;
-    @extend .ms-auto;
+    margin: 0;
+    padding: 0 0 $espaco-3;
+    list-style: none;
   }
 
   &__item {
-    @extend .nav-item;
-    @extend .dropdown;
+    border-top: $borda;
   }
 
   &__link {
-    @extend .nav-link;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $espaco-pilula-y;
+    width: 100%;
+    padding: $espaco-3 0;
+    border: 0;
+    background: none;
+    font-size: $tamanho-base;
+    font-weight: $peso-medio;
+    color: $cor-texto;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
 
-    &--submenu {
-      @extend .dropdown-toggle;
+    &:hover {
+      color: $cor-acento;
     }
+  }
+
+  &__seta {
+    flex-shrink: 0;
+    transition: transform $transicao-rapida;
+
+    path {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  &__item--aberto &__seta {
+    transform: rotate(180deg);
+  }
+
+  &__painel {
+    display: none;
+  }
+
+  &__item--aberto &__painel {
+    display: block;
   }
 
   &__submenu {
-    @extend .dropdown-menu;
-    @extend .dropdown-menu-end;
+    margin: 0;
+    padding: 0 0 $espaco-2 $espaco-3;
+    list-style: none;
   }
 
   &__subitem {
-    @extend .dropdown-item;
-  }
-}
+    display: block;
+    padding: $espaco-2 0;
+    color: $cor-texto-suave;
+    text-decoration: none;
 
-// --- Breadcrumb -------------------------------------------------------------
-.trilha {
-  @extend .breadcrumb;
-  --bs-breadcrumb-divider: "#{$divisor-breadcrumb}";
-  margin-top: 1.8rem;
-  margin-bottom: 0.5em;
-  font-size: $tamanho-breadcrumb;
-  flex-wrap: nowrap;
-
-  &__item {
-    @extend .breadcrumb-item;
-    flex-shrink: 0;
-    white-space: nowrap;
-
-    // O último item (página atual) pode ser longo, como o título de um artigo: corta com reticências
-    &:last-child {
-      flex-shrink: 1;
-      min-width: 0;
+    &:hover {
+      color: $cor-acento;
     }
   }
 
+  // Telas grandes: menu em linha, links em pílula e submenu suspenso em cartão
+  @media (min-width: $bp-lg) {
+    &__container {
+      flex-wrap: nowrap;
+    }
+
+    &__botao {
+      display: none;
+    }
+
+    &__colapso {
+      display: block;
+      flex-basis: auto;
+    }
+
+    &__lista {
+      display: flex;
+      align-items: center;
+      gap: $espaco-1;
+      padding: 0;
+    }
+
+    &__item {
+      position: relative;
+      border-top: 0;
+    }
+
+    &__link {
+      width: auto;
+      padding: $espaco-2 $espaco-4;
+      border-radius: $raio-pilula;
+      font-size: $tamanho-sm;
+      font-weight: $peso-normal;
+
+      &:hover {
+        background: $cor-superficie;
+        color: $cor-texto;
+      }
+    }
+
+    &__item--atual > &__link {
+      background: $cor-superficie;
+      color: $cor-acento;
+    }
+
+    // Abre com o mouse, com o foco do teclado ou com clique
+    &__item:hover &__painel,
+    &__item:focus-within &__painel {
+      display: block;
+    }
+
+    &__item:hover &__seta {
+      transform: rotate(180deg);
+    }
+
+    &__painel {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: $z-submenu;
+      width: $largura-submenu;
+      padding-top: $espaco-2;
+    }
+
+    &__submenu {
+      padding: $espaco-2;
+      border: $borda;
+      border-radius: $raio-xl;
+      background: $cor-superficie;
+      box-shadow: $sombra-submenu;
+    }
+
+    &__subitem {
+      padding: $espaco-2 $espaco-3;
+      border-radius: $raio-lg;
+      color: $cor-texto;
+
+      &:hover,
+      &:focus-visible {
+        background: $cor-fundo;
+        color: $cor-acento;
+      }
+    }
+  }
+}
+
+// --- Topo das páginas internas ----------------------------------------------
+.cabecalho-pagina {
+  padding: $espaco-12 0 $espaco-10;
+
+  @media (min-width: $bp-md) {
+    padding-top: $espaco-20;
+    padding-bottom: $espaco-14;
+  }
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  &__principal--com-midia {
+    display: grid;
+    gap: $espaco-8;
+    align-items: center;
+
+    @media (min-width: $bp-md) {
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: $espaco-10;
+    }
+  }
+
+  &__corpo {
+    min-width: 0;
+  }
+
+  &__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-5xl);
+    max-width: $largura-titulo-pagina;
+  }
+
+  &__sobretitulo + &__titulo {
+    margin-top: $espaco-4;
+  }
+
+  &__subtitulo {
+    max-width: $largura-prosa;
+    margin: $espaco-5 0 0;
+    font-size: $tamanho-lg;
+    color: $cor-texto-suave;
+  }
+
+  &__etiquetas {
+    margin: $espaco-5 0 0;
+  }
+}
+
+// --- Faixa escura de largura total ------------------------------------------
+.faixa-profunda {
+  background: $cor-profundo;
+  color: $cor-profundo-texto;
+
+  h2,
+  h3 {
+    color: $cor-profundo-texto;
+  }
+
+  &__interno {
+    max-width: calc(#{$largura-pagina} + 2 * #{$margem-lateral});
+    margin: 0 auto;
+    padding: $espaco-20 $margem-lateral;
+
+    @media (min-width: $bp-md) {
+      padding-top: $espaco-28;
+      padding-bottom: $espaco-28;
+    }
+  }
+}
+
+// Cabeçalho de seção dentro de uma página (sobretítulo + título + texto ao lado)
+.cabecalho-secao {
+  display: grid;
+  gap: $espaco-6;
+  margin-bottom: $espaco-10;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: end;
+    margin-bottom: $espaco-12;
+  }
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  &__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-5xl);
+    margin-top: $espaco-4;
+  }
+
   &__texto {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-width: $largura-prosa;
+    margin: 0;
+    color: $cor-texto-suave;
+  }
+
+  // Variante só com título e um link à direita ("Todas as notícias")
+  &--compacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: $espaco-4;
+    margin-bottom: $espaco-6;
+  }
+
+  &--compacto &__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-4xl);
+  }
+
+  &__link {
+    @include pilula-pequena;
+    font-weight: $peso-medio;
   }
 }
 
 // --- Rodapé -----------------------------------------------------------------
 .rodape {
   flex-shrink: 0;
-  margin-top: $espaco-secao;
-  border-top: 1px solid $cor-borda;
-  background: $cor-fundo;
-  color: $cor-rodape-texto;
-  font-size: $tamanho-rodape;
+  border-top: $borda;
+  color: $cor-texto-suave;
+  font-size: $tamanho-sm;
 
   a {
-    color: $cor-rodape-texto;
+    color: $cor-texto-suave;
+
+    &:hover {
+      color: $cor-texto;
+    }
   }
 
   &__conteudo {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
-    min-height: 3.5em;
-    padding: 0.5rem 1em;
-    text-align: center;
+    justify-content: space-between;
+    gap: $espaco-4;
+    max-width: calc(#{$largura-pagina} + 2 * #{$margem-lateral});
+    margin: 0 auto;
+    padding: $espaco-10 $margem-lateral;
+  }
+
+  &__marca {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $espaco-4;
   }
 
   &__logo {
-    justify-self: start;
-    height: $altura-logo-rodape;
     width: auto;
+    height: $altura-logo-rodape;
+    filter: $filtro-logo;
+  }
+
+  &__texto {
+    margin: 0;
+  }
+
+  &__descricao {
+    margin: 0;
   }
 
   &__redes {
     display: flex;
-    justify-self: end;
-    gap: 1rem;
+    gap: $espaco-4;
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-
-  @media (max-width: $bp-mobile) {
-    &__conteudo {
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-
-    &__logo,
-    &__redes {
-      justify-self: center;
-    }
-  }
-}
-
-// --- Faixa de título (páginas de listagem) ----------------------------------
-.faixa-titulo {
-  margin-bottom: 2rem;
-  padding: $espaco-faixa-titulo 0;
-  background-color: $cor-primaria;
-  color: $cor-fundo;
-
-  &__titulo {
-    margin: 0;
-    font-size: $tamanho-titulo-faixa;
-    font-weight: $peso-titulo;
-    color: inherit;
-  }
-
-  &__etiquetas {
-    margin: 0.75rem 0 0;
-
-    .etiqueta {
-      border-color: $cor-etiqueta-faixa;
-      color: $cor-etiqueta-faixa;
-    }
+    font-size: $tamanho-lg;
   }
 }

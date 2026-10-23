@@ -1,0 +1,180 @@
+// Padrões visuais repetidos em vários componentes.
+
+// Rótulo pequeno em caixa alta e fonte mono, acima dos títulos ("eyebrow")
+@mixin sobretitulo {
+  margin: 0;
+  font-family: $fonte-mono;
+  font-size: $tamanho-xs;
+  font-weight: $peso-normal;
+  letter-spacing: $espacamento-sobretitulo;
+  text-transform: uppercase;
+}
+
+// Título de seção na fonte de títulos
+@mixin titulo-display($tamanho: $tamanho-3xl, $tamanho-md: $tamanho-5xl) {
+  margin: 0;
+  font-family: $fonte-titulo;
+  font-size: $tamanho;
+  font-weight: $peso-titulo;
+  line-height: $altura-linha-titulo;
+  letter-spacing: $espacamento-titulo;
+  text-wrap: balance;
+
+  @media (min-width: $bp-md) {
+    font-size: $tamanho-md;
+  }
+}
+
+// Botão em pílula. Variantes: primario (acento), contorno e profundo (sobre faixa escura)
+@mixin botao-pilula($variante: primario) {
+  display: inline-flex;
+  align-items: center;
+  gap: $espaco-2;
+  padding: $espaco-3 $espaco-6;
+  border: 1px solid transparent;
+  border-radius: $raio-pilula;
+  font-size: $tamanho-base;
+  font-weight: $peso-medio;
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color $transicao-rapida, opacity $transicao-rapida;
+
+  @if $variante == primario {
+    background: $cor-acento;
+    color: $cor-acento-texto;
+
+    &:hover {
+      color: $cor-acento-texto;
+      opacity: $opacidade-hover;
+    }
+  } @else if $variante == contorno {
+    border-color: $cor-linha;
+    background: transparent;
+    color: $cor-texto;
+
+    &:hover {
+      background: $cor-superficie;
+      color: $cor-texto;
+    }
+  } @else if $variante == profundo {
+    border-color: $cor-profundo-suave;
+    background: transparent;
+    color: $cor-profundo-texto;
+
+    &:hover {
+      color: $cor-profundo-texto;
+      opacity: $opacidade-hover;
+    }
+  }
+}
+
+// Botão pequeno em pílula (filtros, abas, links do perfil)
+@mixin pilula-pequena {
+  display: inline-flex;
+  align-items: center;
+  gap: $espaco-2;
+  padding: $espaco-pilula-y $espaco-4;
+  border: $borda;
+  border-radius: $raio-pilula;
+  background: transparent;
+  font-size: $tamanho-sm;
+  color: $cor-texto;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $cor-superficie;
+    color: $cor-texto;
+  }
+
+  &.active,
+  &[aria-pressed="true"],
+  &[aria-selected="true"],
+  &[aria-current="page"] {
+    border-color: $cor-texto;
+    background: $cor-texto;
+    color: $cor-fundo;
+  }
+}
+
+// Grade de células separadas por linhas finas. Cada célula desenha a linha à direita e
+// embaixo e avança 1px; as linhas da borda externa são cortadas pelo overflow. Assim a
+// última fileira incompleta não deixa blocos vazios coloridos.
+@mixin grade-celulas {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+  list-style: none;
+
+  > * {
+    min-width: 0;
+    margin: 0 -1px -1px 0;
+    border-right: $borda;
+    border-bottom: $borda;
+    background: $cor-superficie;
+  }
+}
+
+// Lista de linhas separadas por bordas (artigos, grupos, notícias)
+@mixin lista-linhas {
+  margin: 0;
+  padding: 0;
+  border-top: $borda;
+  list-style: none;
+
+  > * {
+    border-bottom: $borda;
+  }
+}
+
+// Ponto colorido que indica a frente de pesquisa (cor via --cor-frente)
+@mixin ponto-frente {
+  display: inline-block;
+  flex-shrink: 0;
+  width: $tamanho-ponto;
+  height: $tamanho-ponto;
+  border-radius: 50%;
+  background: var(--cor-frente, #{$cor-acento});
+}
+
+// Cores por frente: .frente--luz, .frente--cura... definem --cor-frente
+@mixin cores-frente {
+  &--luz {
+    --cor-frente: #{$cor-luz};
+  }
+  &--cura {
+    --cor-frente: #{$cor-cura};
+  }
+  &--moleculas {
+    --cor-frente: #{$cor-moleculas};
+  }
+  &--ia {
+    --cor-frente: #{$cor-ia};
+  }
+}
+
+// Link de texto com seta ("Conhecer →")
+@mixin link-seta {
+  font-size: $tamanho-sm;
+  font-weight: $peso-medio;
+  color: $cor-acento;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Imagem que cobre a caixa
+@mixin imagem-cobrindo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

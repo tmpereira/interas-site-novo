@@ -14,7 +14,7 @@ export default function Contato() {
   const pagina = paginaPorSlug("contato");
   const cartoes = (pagina.cartoes as Cartao[] | undefined) ?? [];
   return (
-    <PaginaTexto pagina={pagina} rotuloTrilha="Contato">
+    <PaginaTexto pagina={pagina} caminho="/contato/">
       {cartoes.length > 0 && (
         <div className="cartoes-contato">
           {cartoes.map((c, i) => (

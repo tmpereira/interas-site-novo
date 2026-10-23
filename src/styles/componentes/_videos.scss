@@ -1,52 +1,81 @@
-// Páginas de vídeos.
+// Páginas de vídeos, capa das páginas de leitura e cartões do contato.
 
 .links-video {
-  padding-left: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espaco-3;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   a {
-    font-weight: $peso-forte;
+    @include botao-pilula(contorno);
+  }
+
+  li:first-child a {
+    @include botao-pilula(primario);
+  }
+}
+
+// Imagem de capa no alto de notícias, vídeos e grupos
+.leitura__capa {
+  position: relative;
+  aspect-ratio: $proporcao-video;
+  margin-bottom: $espaco-8;
+  overflow: hidden;
+  border-radius: $raio-2xl;
+  background: $cor-fundo-imagem;
+}
+
+.leitura__capa-img {
+  object-fit: cover;
+}
+
+// Texto de abertura dentro do cabeçalho das listagens (grupos, vídeos)
+.cabecalho-pagina__texto {
+  max-width: $largura-prosa;
+  margin-top: $espaco-5;
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
 // Cartões de contato (página de contato)
 .cartoes-contato {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: $espaco-6;
+  margin-top: $espaco-10;
 
-  @media (max-width: $bp-mobile) {
-    grid-template-columns: 1fr;
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .cartao-contato {
-  @extend .card;
-  overflow: hidden;
-  background: $cor-fundo-alternativo;
+  padding: $espaco-6;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
 
   h2#{&}__titulo {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border: 0;
-    background: $cor-cabecalho-cartao-contato;
-    font-size: 1rem;
-    font-weight: 400;
-    color: $cor-texto;
+    @include sobretitulo;
+    display: flex;
+    align-items: center;
+    gap: $espaco-2;
+    margin-bottom: $espaco-4;
+    color: $cor-texto-suave;
   }
 
-  &__corpo {
-    padding: 1rem;
+  &__corpo p:last-child {
+    margin-bottom: 0;
   }
 
   &--destaque {
-    border: 1px solid $cor-primaria;
-    background: $cor-fundo;
+    border-color: $cor-acento;
   }
 
-  &--destaque h2#{&}__titulo,
-  &--destaque &__titulo {
-    background: $cor-primaria;
-    color: $cor-fundo;
+  &--destaque h2#{&}__titulo {
+    color: $cor-acento;
   }
 }

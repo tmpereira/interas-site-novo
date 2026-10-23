@@ -7,6 +7,7 @@ export default function NaoEncontrada() {
   return (
     <div className="pagina">
       <section className="nao-encontrada">
+        <p className="nao-encontrada__sobretitulo">Erro 404</p>
         <h1 className="nao-encontrada__titulo">Página não encontrada</h1>
         <p>O endereço que você acessou não existe ou foi movido.</p>
         <p>

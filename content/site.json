@@ -16,42 +16,42 @@
           "link": "/sobre-o-interas/"
         },
         {
-          "rotulo": "COORDENAÇÃO E EQUIPE",
+          "rotulo": "Coordenação e equipe",
           "link": "/equipe/"
         },
         {
-          "rotulo": "ÁREAS DE PESQUISA",
+          "rotulo": "Áreas de pesquisa",
           "link": "/areas-de-pesquisa/"
         },
         {
-          "rotulo": "GRUPOS E LABORATÓRIOS",
+          "rotulo": "Grupos e laboratórios",
           "link": "/grupos/"
         },
         {
-          "rotulo": "CONTATO",
+          "rotulo": "Contato",
           "link": "/contato/"
         }
       ]
     },
     {
-      "rotulo": "PRODUÇÃO",
+      "rotulo": "Produção",
       "itens": [
         {
-          "rotulo": "ARTIGOS",
+          "rotulo": "Artigos",
           "link": "/publicacoes/#artigos"
         },
         {
-          "rotulo": "PATENTES",
+          "rotulo": "Patentes",
           "link": "/publicacoes/#patentes"
         }
       ]
     },
     {
-      "rotulo": "NOTÍCIAS",
+      "rotulo": "Notícias",
       "link": "/noticias/"
     },
     {
-      "rotulo": "VÍDEOS",
+      "rotulo": "Vídeos",
       "link": "/videos/"
     }
   ],

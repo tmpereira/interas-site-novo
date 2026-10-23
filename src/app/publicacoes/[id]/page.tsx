@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Breadcrumb from "@/components/Breadcrumb";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { vincularAutores } from "@/lib/autores";
 import { carregarConteudo } from "@/lib/conteudo";
 import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga } from "@/lib/formatadores";
@@ -65,14 +65,14 @@ export default async function PaginaPublicacao({ params }: Props) {
 
   return (
     <div className="pagina">
-      <Breadcrumb itens={[{ rotulo: "Publicações", href: "/publicacoes/" }, { rotulo: semMarcacao(p.titulo) }]} />
+      <CabecalhoPagina
+        caminho="/publicacoes/"
+        sobretitulo={[ROTULOS_TIPO_PUBLICACAO[p.tipo], p.ano].join(" · ")}
+        titulo={semMarcacao(p.titulo)}
+        tituloHtml={markdownEmLinha(p.titulo)}
+        descricao={p.periodico}
+      />
       <article className="artigo">
-        <header>
-          <h1 className="artigo__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(p.titulo) }} />
-          <p className="artigo__etiquetas">
-            <span className="etiqueta">{ROTULOS_TIPO_PUBLICACAO[p.tipo]}</span>
-          </p>
-        </header>
 
         <div className="artigo__grade">
           <section>

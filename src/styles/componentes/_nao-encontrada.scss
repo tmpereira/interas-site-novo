@@ -1,10 +1,23 @@
 // Página 404
 .nao-encontrada {
-  padding: $espaco-secao 0;
-  text-align: center;
+  padding: $espaco-24 0;
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  h1#{&}__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-5xl);
+    margin: $espaco-4 0;
+  }
+
+  p {
+    color: $cor-texto-suave;
+  }
 
   &__botao {
-    @extend .btn;
-    @extend .btn-primary;
+    @include botao-pilula(primario);
+    margin-top: $espaco-4;
   }
 }

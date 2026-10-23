@@ -1,127 +1,252 @@
 // Tokens visuais: os ÚNICOS valores fixos de estilo do projeto.
 // Os demais arquivos SCSS só referenciam estas variáveis.
-// Valores portados do tema Materia (Bootswatch) e do custom.scss do site antigo.
+// Visual "espectro": fundo claro azulado, faixas escuras, Bricolage Grotesque nos títulos,
+// IBM Plex Sans no texto e IBM Plex Mono nos rótulos. Tem modo escuro automático.
 
 // ---------------------------------------------------------------------------
-// Cores
+// Cores — paletas clara e escura (viram variáveis CSS no :root, mais abaixo)
 // ---------------------------------------------------------------------------
-$cor-primaria: #2196f3; // primária do Bootswatch Materia
-$cor-texto: #444;
-$cor-texto-suave: #6c757d;
-$cor-fundo: #fff;
-$cor-fundo-alternativo: #f8f9fa;
-$cor-borda: #dee2e6;
-$cor-borda-citacao: #eee;
-$cor-cabecalho-cartao-contato: #c8c9ca;
-$cor-etiqueta-faixa: rgba(255, 255, 255, 0.75);
-$cor-rodape-texto: hsl(0, 0%, 46%);
-$cor-sombra-imagem: rgba(0, 0, 0, 0.15);
-$cor-fade-transparente: rgba(255, 255, 255, 0);
-$cor-fade-opaca: rgba(255, 255, 255, 1);
+$paleta-clara: (
+  "fundo": #f3f6f8,
+  "superficie": #ffffff,
+  "texto": #0d1b26,
+  "texto-suave": #4f606c,
+  "linha": #d3dbe1,
+  "acento": #2850de,
+  "acento-texto": #ffffff,
+  "profundo": #0b1a2a,
+  "profundo-texto": #e8eef3,
+  "profundo-suave": #9fb0be,
+  "ionizante": #c9d3db,
+  "luz": #c26a0a,
+  "cura": #2850de,
+  "moleculas": #0f7a6e,
+  "ia": #8a3fb8,
+  "sucesso": #146c43,
+  "sucesso-fundo": #ddf1e6,
+  "fundo-imagem": #2e3b5c,
+  "sombra": rgba(13, 27, 38, 0.25),
+  "veu": rgba(11, 26, 42, 0.72),
+  "filtro-logo": none,
+);
+
+$paleta-escura: (
+  "fundo": #091017,
+  "superficie": #101a22,
+  "texto": #e4ecf1,
+  "texto-suave": #93a3af,
+  "linha": #22313c,
+  "acento": #7a93ff,
+  "acento-texto": #091017,
+  "profundo": #0f2232,
+  "profundo-texto": #e8eef3,
+  "profundo-suave": #9fb0be,
+  "ionizante": #2a3a46,
+  "luz": #f0a24a,
+  "cura": #7a93ff,
+  "moleculas": #3cc3b0,
+  "ia": #c08bea,
+  "sucesso": #7fd8a6,
+  "sucesso-fundo": #133325,
+  "fundo-imagem": #1b2740,
+  "sombra": rgba(0, 0, 0, 0.5),
+  "veu": rgba(0, 0, 0, 0.6),
+  // O logo é escuro sobre fundo transparente: no modo escuro, inverte as cores
+  "filtro-logo": invert(1) hue-rotate(180deg),
+);
+
+// Atalhos usados no resto do SCSS (sempre via variável CSS, para o modo escuro funcionar)
+$cor-fundo: var(--cor-fundo);
+$cor-superficie: var(--cor-superficie);
+$cor-texto: var(--cor-texto);
+$cor-texto-suave: var(--cor-texto-suave);
+$cor-linha: var(--cor-linha);
+$cor-acento: var(--cor-acento);
+$cor-acento-texto: var(--cor-acento-texto);
+$cor-profundo: var(--cor-profundo);
+$cor-profundo-texto: var(--cor-profundo-texto);
+$cor-profundo-suave: var(--cor-profundo-suave);
+$cor-ionizante: var(--cor-ionizante);
+$cor-luz: var(--cor-luz);
+$cor-cura: var(--cor-cura);
+$cor-moleculas: var(--cor-moleculas);
+$cor-ia: var(--cor-ia);
+$cor-sucesso: var(--cor-sucesso);
+$cor-sucesso-fundo: var(--cor-sucesso-fundo);
+$cor-fundo-imagem: var(--cor-fundo-imagem);
+$cor-sombra: var(--cor-sombra);
+$cor-veu: var(--cor-veu);
+$filtro-logo: var(--filtro-logo);
+$cor-branca: #fff;
+$cor-etiqueta-video: rgba(0, 0, 0, 0.6);
+
+// Cores do arco-íris do espectro visível (fixas nos dois modos)
+$cores-visivel: #c8102e, #f28c28, #f2d22b, #2fa84f, #2a6fd6, #6a3fb5;
+
+// Cor primária em hexadecimal, só para o Bootstrap (que calcula tons a partir dela)
+$cor-primaria-bootstrap: map-get($paleta-clara, "acento");
 
 // ---------------------------------------------------------------------------
-// Tipografia
+// Tipografia (as famílias vêm de src/styles/fontes.ts, via variáveis CSS)
 // ---------------------------------------------------------------------------
-$fonte-base: "Roboto", -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
-$tamanho-fonte-raiz: 17px; // o Quarto define a fonte raiz em 17px; todos os rem partem daqui
-$peso-leve: 300;
-$peso-titulo: 600; // h1–h3 do Quarto (o Materia usa 500)
+$fonte-titulo: var(--fonte-titulo), ui-sans-serif, system-ui, sans-serif;
+$fonte-base: var(--fonte-texto), ui-sans-serif, system-ui, -apple-system, sans-serif;
+$fonte-mono: var(--fonte-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+$tamanho-fonte-raiz: 16px;
+$altura-linha: 1.6;
+$altura-linha-justa: 1.375;
+$peso-normal: 400;
 $peso-medio: 500;
-$peso-forte: 700;
-$tamanho-lead: 1.25rem;
-$tamanho-titulo-pagina: 3.5rem; // display-4
-$tamanho-titulo-destaque: 2.5rem; // display-6
-$tamanho-titulo-faixa: 2rem;
-$tamanho-titulo-perfil: 2rem;
-$tamanho-secao-perfil: 1.45rem;
-$tamanho-cargo-cartao: 1rem;
-$tamanho-nome-cartao: 1.1rem;
-$tamanho-descricao-cartao: 0.9rem;
-$tamanho-botao-perfil: 0.8rem;
-$tamanho-titulo-secao-producao: 2rem;
-$tamanho-h1: 2rem; // tamanhos de título do Quarto (o Materia usa h2 = 2rem)
-$tamanho-h2: 1.65rem;
-$tamanho-h3: 1.45rem;
-$tamanho-h4: 1.25rem;
-$tamanho-titulo-artigo: $tamanho-h1;
-$tamanho-rotulo: 0.8rem;
-$tamanho-etiqueta: 0.75rem;
-$tamanho-texto-meta: 0.8rem;
-$largura-campo-filtro: 14rem;
-$altura-imagem-grupo: 250px;
-$largura-imagem-noticia: 258px;
-$altura-imagem-noticia: 9rem;
-$largura-barra-categorias: 14rem;
-$largura-meta-noticia: 8rem;
-$tamanho-titulo-noticia: 1.45rem;
-$tamanho-rodape: 0.825em;
-$tamanho-anuncio: 0.9em;
-$tamanho-breadcrumb: 1rem;
-$tamanho-data-cartao: 0.8em;
-$tamanho-titulo-lista: 1.4rem;
-$tamanho-titulo-lista-mobile: 1.2rem;
-$tamanho-data-lista: 0.8rem;
+$peso-semi: 600;
+$peso-titulo: 600;
+$peso-extra: 800;
+
+$tamanho-xs: 0.75rem;
+$tamanho-sm: 0.875rem;
+$tamanho-mini: 0.78rem;
+$tamanho-base: 1rem;
+$tamanho-lg: 1.125rem;
+$tamanho-xl: 1.25rem;
+$tamanho-2xl: 1.5rem;
+$tamanho-3xl: 1.875rem;
+$tamanho-4xl: 2.25rem;
+$tamanho-5xl: 3rem;
+$tamanho-6xl: 3.75rem;
+$tamanho-hero-mobile: 2.6rem;
+$tamanho-hero-desktop: 4.6rem;
+$altura-linha-hero: 0.98;
+$altura-linha-titulo: 1.2;
+$espacamento-sobretitulo: 0.12em;
+$espacamento-titulo: -0.02em;
+$tamanho-texto-espectro: 11px; // em unidades do SVG (viewBox de 1000 de largura)
+$tamanho-rotulo-espectro: 12px;
 
 // ---------------------------------------------------------------------------
 // Espaçamento e layout
 // ---------------------------------------------------------------------------
-$largura-conteudo: 1135px; // coluna principal do site antigo em telas largas
-$margem-lateral: 1.5rem;
-$espaco-secao: 4rem;
-$espaco-grade: 2rem;
-$espaco-faixa-titulo: 2.5rem;
-$espaco-topo-perfil: 4.5rem;
-$divisor-breadcrumb: ">";
-$largura-perfil: 800px;
-$largura-artigo: 800px;
-$tamanho-foto-perfil: 255px;
-$altura-foto-cartao: 250px;
-$largura-linha-perfil: 480px;
-$altura-logo-navbar: 1.5rem;
-$altura-logo-rodape: 40px;
-$altura-imagem-cartao: 150px;
-$altura-minima-imagem-destaque: 400px;
+$largura-pagina: 76rem;
+$largura-prosa: 38rem;
+$largura-leitura: 46rem;
+$largura-titulo-pagina: 56rem;
+$largura-titulo-etapas: 48rem;
+$altura-minima-bloco-area: 26rem;
+$espessura-faixa-bloco: 3px;
+$margem-lateral: 16px;
+$espaco-1: 0.25rem;
+$espaco-2: 0.5rem;
+$espaco-3: 0.75rem;
+$espaco-4: 1rem;
+$espaco-5: 1.25rem;
+$espaco-6: 1.5rem;
+$espaco-8: 2rem;
+$espaco-10: 2.5rem;
+$espaco-12: 3rem;
+$espaco-14: 3.5rem;
+$espaco-16: 4rem;
+$espaco-20: 5rem;
+$espaco-24: 6rem;
+$espaco-28: 7rem;
+$espaco-pilula-y: 0.375rem;
+$espaco-etiqueta-y: 0.125rem;
+$espaco-etiqueta-x: 0.625rem;
+$fora-da-tela: -999px;
+$ajuste-play: 0.2rem;
+$tamanho-triangulo-play: 0.5rem;
+$largura-triangulo-play: 0.85rem;
+$duracao-varredura: 6s;
+$largura-coluna-ano: 4rem;
+$largura-numeros-producao: 42rem;
+$largura-minima-campo: 8rem;
+$espaco-campo-y: 0.625rem;
+$espaco-seta: 0.35rem;
+$espaco-autor: 0.2rem;
 $deslocamento-ancora: 6rem; // espaço para o cabeçalho fixo ao saltar para #ancoras
 
-// ---------------------------------------------------------------------------
-// Forma
-// ---------------------------------------------------------------------------
-$raio-imagem: 0.5rem;
-$raio-botao: 0.25rem;
-$sombra-imagem: 0 4px 20px $cor-sombra-imagem;
-
-// ---------------------------------------------------------------------------
-// Hero
-// ---------------------------------------------------------------------------
-$altura-hero: 80vh;
-$espaco-topo-hero-mobile: 50vh;
-$espaco-base-hero-mobile: 4rem;
-
-// ---------------------------------------------------------------------------
-// Breakpoints
-// ---------------------------------------------------------------------------
-$largura-minima-tabela: 56rem;
-$largura-coluna-titulo: 18rem;
+$altura-logo-navbar: 3.75rem;
+$altura-logo-rodape: 2.5rem;
+$largura-submenu: 18rem;
+$largura-coluna-faixa: 12rem;
+$largura-coluna-imagem-pilar: 18rem;
+$largura-barra-categorias: 14rem;
+$largura-miniatura-noticia: 12rem;
+$tamanho-foto-destaque: 6rem;
+$tamanho-foto-cartao: 4rem;
+$tamanho-foto-perfil: 11rem;
+$espessura-anel-foto: 3px;
+$tamanho-ponto: 0.5rem;
+$tamanho-botao-play: 3.5rem;
 $largura-coluna-autores: 14rem;
-$raio-tabela: 0.5rem;
-$bp-mobile: 768px;
-$bp-destaque: 992px;
+$largura-minima-espectro: 640px;
+$proporcao-hero: unquote("1024 / 804");
+$proporcao-pilar: unquote("4 / 3");
+$proporcao-video: unquote("16 / 9");
+
+// ---------------------------------------------------------------------------
+// Forma, sombra e movimento
+// ---------------------------------------------------------------------------
+$raio-sm: 0.25rem;
+$raio-md: 0.5rem;
+$raio-lg: 0.6rem;
+$raio-xl: 0.75rem;
+$raio-2xl: 1rem;
+$raio-3xl: 1.5rem;
+$raio-pilula: 999px;
+$borda: 1px solid $cor-linha;
+$sombra-submenu: 0 12px 32px -12px $cor-sombra;
+$sombra-botao-play: 0 10px 20px -6px $cor-sombra;
+$contorno-foco: 2px solid $cor-acento;
+$transicao-rapida: 0.2s ease;
+$transicao-media: 0.25s ease;
+$transicao-imagem: transform 0.5s ease;
+$escala-hover-imagem: 1.03;
+$opacidade-hover: 0.9;
+$opacidade-apagada: 0.18;
+$opacidade-faixa: 0.55;
+$opacidade-varredura: 0.5;
+$opacidade-capa-video: 0.85;
+
+// ---------------------------------------------------------------------------
+// Breakpoints (os mesmos do protótipo)
+// ---------------------------------------------------------------------------
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
 
 // ---------------------------------------------------------------------------
 // Camadas
 // ---------------------------------------------------------------------------
-$z-cabecalho: 1030;
-$z-texto-destaque: 2;
+$z-cabecalho: 50;
+$z-submenu: 60;
 
-// Mesmos tokens expostos como variáveis CSS
+// ---------------------------------------------------------------------------
+// Variáveis CSS: paleta clara por padrão; escura quando o sistema pede
+// (ou quando a página tiver data-theme="dark"; data-theme="light" força o claro)
+// ---------------------------------------------------------------------------
+@mixin emitir-paleta($paleta) {
+  @each $nome, $valor in $paleta {
+    @if $nome != "filtro-logo" {
+      --cor-#{$nome}: #{$valor};
+    }
+  }
+  --filtro-logo: #{map-get($paleta, "filtro-logo")};
+}
+
 :root {
-  --cor-primaria: #{$cor-primaria};
-  --cor-texto: #{$cor-texto};
-  --cor-texto-suave: #{$cor-texto-suave};
-  --cor-fundo-alternativo: #{$cor-fundo-alternativo};
-  --cor-borda: #{$cor-borda};
-  --fonte-base: #{$fonte-base};
-  --largura-conteudo: #{$largura-conteudo};
+  @include emitir-paleta($paleta-clara);
+  --largura-pagina: #{$largura-pagina};
   --margem-lateral: #{$margem-lateral};
-  --raio-imagem: #{$raio-imagem};
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include emitir-paleta($paleta-escura);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include emitir-paleta($paleta-escura);
+  color-scheme: dark;
 }

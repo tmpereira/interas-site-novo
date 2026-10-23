@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
-import FaixaTitulo from "@/components/FaixaTitulo";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import FiltroPorCategoria from "@/components/FiltroPorCategoria";
 import ItemNoticia from "@/components/ItemNoticia";
 import { carregarConteudo } from "@/lib/conteudo";
@@ -18,16 +17,13 @@ export default function Noticias() {
     .sort((a, b) => a.localeCompare(b, "pt-BR", { sensitivity: "base" }))
     .map((c) => ({ chave: c, rotulo: c }));
   return (
-    <>
-      <FaixaTitulo titulo={pagina.titulo} />
-      <div className="pagina">
-        <Breadcrumb itens={[{ rotulo: "Notícias" }]} />
-        <FiltroPorCategoria
-          categorias={categorias}
-          classeLista="lista-noticias"
-          itens={noticias.map((n) => ({ id: n.id, categorias: n.categorias ?? [], elemento: <ItemNoticia noticia={n} /> }))}
-        />
-      </div>
-    </>
+    <div className="pagina">
+      <CabecalhoPagina caminho="/noticias/" titulo={pagina.titulo} descricao={pagina.descricao} />
+      <FiltroPorCategoria
+        categorias={categorias}
+        classeLista="lista-noticias"
+        itens={noticias.map((n) => ({ id: n.id, categorias: n.categorias ?? [], elemento: <ItemNoticia noticia={n} /> }))}
+      />
+    </div>
   );
 }

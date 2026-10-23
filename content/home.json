@@ -3,9 +3,25 @@
   "hero": {
     "titulo": "Iluminando o Futuro da Saúde",
     "texto": "No INTERAS, unimos os maiores especialistas do país para transformar as radiações — da luz visível às radiações atômicas — em poderosas ferramentas para diagnósticos precoces e terapias inovadoras. Nossa missão é clara: usar a ciência da radiação para salvar vidas e melhorar a saúde de todos.",
-    "imagem": "/images/topo_desvanecendo_sem_texto_logo_interas2.png"
+    "imagem": "/images/hero-espectro.jpg",
+    "botoes": [
+      {
+        "rotulo": "Conheça as linhas de pesquisa",
+        "link": "/#linhas-de-pesquisa"
+      },
+      {
+        "rotulo": "Sobre o instituto",
+        "link": "/sobre-o-interas/"
+      }
+    ]
   },
-  "apresentacao": "A pandemia de COVID-19 nos mostrou a urgência por diagnósticos rápidos e tratamentos eficazes. Inspirados por este e outros grandes desafios da saúde, como o câncer e as doenças cardiovasculares, nasceu o INTERAS. Somos um Instituto Nacional de Ciência e Tecnologia dedicado a desenvolver soluções inovadoras baseadas em todo o espectro da radiação. Unindo fotônica, nanotecnologia, radiações atômicas e medicina nuclear com o poder de ferramentas avançadas de Ciência de Dados e Inteligência Artificial (especialmente Machine Learning), nossa rede de pesquisadores cria métodos diagnósticos não-invasivos, terapias de alta precisão e forma os futuros líderes da ciência no Brasil.",
+  "apresentacao_sobretitulo": "Por que existimos",
+  "apresentacao": "A pandemia de COVID-19 nos mostrou a urgência por diagnósticos rápidos e tratamentos eficazes.\n\nInspirados por este e outros grandes desafios da saúde, como o câncer e as doenças cardiovasculares, nasceu o INTERAS. Somos um Instituto Nacional de Ciência e Tecnologia dedicado a desenvolver soluções inovadoras baseadas em todo o espectro da radiação. Unindo fotônica, nanotecnologia, radiações atômicas e medicina nuclear com o poder de ferramentas avançadas de Ciência de Dados e Inteligência Artificial (especialmente Machine Learning), nossa rede de pesquisadores cria métodos diagnósticos não-invasivos, terapias de alta precisão e forma os futuros líderes da ciência no Brasil.",
+  "secao_destaques": {
+    "sobretitulo": "Linhas de pesquisa",
+    "titulo": "Cinco frentes, um mesmo espectro.",
+    "texto": "As três primeiras frentes ocupam faixas específicas do espectro. As duas últimas atravessam todas elas: os dados que aceleram cada descoberta e as pessoas que levam a ciência adiante."
+  },
   "destaques": [
     {
       "titulo": "A Luz que Revela",
@@ -15,7 +31,15 @@
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
         "link": "/grupos/?tema=diagnostico"
-      }
+      },
+      "faixa": "luz",
+      "rotulo_faixa": "Infravermelho e visível\n2,5–25 µm · 785 nm",
+      "etiquetas": [
+        "Espectroscopia Raman",
+        "FTIR",
+        "Biofluidos",
+        "Modelos experimentais"
+      ]
     },
     {
       "titulo": "Radiação que Cura",
@@ -25,14 +49,29 @@
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
         "link": "/grupos/?tema=terapias"
-      }
+      },
+      "faixa": "cura",
+      "rotulo_faixa": "Raios X, γ e lasers\nkeV → MeV",
+      "etiquetas": [
+        "Radioterapia",
+        "Nanobraquiterapia",
+        "Cirurgia a laser",
+        "Terapia fotodinâmica"
+      ]
     },
     {
       "titulo": "Moléculas Inteligentes",
       "texto": "Para que as imagens médicas revelem o que é invisível e as terapias atinjam apenas o alvo certo, criamos \"moléculas inteligentes\" chamadas radiofármacos. Desenvolvemos e testamos novos compostos que guiam os equipamentos de imagem (PET/SPECT) ou entregam doses terapêuticas diretamente nas células doentes. Toda essa inovação é validada em rigorosos ensaios pré-clínicos, garantindo a segurança e a eficácia das tecnologias que chegarão aos hospitais.",
       "imagem": "/images/imagem_pet_estilizada_v2.jpeg",
       "posicao_imagem": "esquerda",
-      "botao": null
+      "botao": null,
+      "faixa": "moleculas",
+      "rotulo_faixa": "Medicina nuclear\nSPECT 140 keV · PET 511 keV",
+      "etiquetas": [
+        "Radiofármacos",
+        "PET/SPECT",
+        "Ensaios pré-clínicos"
+      ]
     },
     {
       "titulo": "Inteligência que Acelera",
@@ -42,7 +81,14 @@
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
         "link": "/grupos/?tema=inteligencia-artificial"
-      }
+      },
+      "faixa": null,
+      "rotulo_faixa": "Transversal\nimagens e dados espectrais",
+      "etiquetas": [
+        "Machine Learning",
+        "Deep Learning",
+        "Simulação de dose"
+      ]
     },
     {
       "titulo": "Conhecimento que Transforma",
@@ -52,7 +98,14 @@
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
         "link": "/grupos/?tema=formacao"
-      }
+      },
+      "faixa": null,
+      "rotulo_faixa": "Transversal\nformação e transferência",
+      "etiquetas": [
+        "Pós-graduação",
+        "Cooperação internacional",
+        "Inovação no SUS"
+      ]
     }
   ],
   "nota": "**Coordenação**: [Denise M. Zezell - IPEN - CNEN](/equipe/denise-maria-zezell/)  \n**Vice-Coordenação**: [Emiliano H. Medei  - UFRJ](/equipe/emiliano-horacio-medei/)",

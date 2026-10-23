@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { carregarConteudo } from "@/lib/conteudo";
 import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
@@ -26,21 +27,19 @@ export default async function PaginaVideo({ params }: Props) {
   const v = videoPorSlug((await params).slug);
   return (
     <div className="pagina">
-      <Breadcrumb itens={[{ rotulo: "Vídeos", href: "/videos/" }, { rotulo: v.titulo }]} />
+      <CabecalhoPagina
+        caminho="/videos/"
+        sobretitulo="Vídeos"
+        titulo={v.titulo}
+        descricao={v.resumo}
+        etiquetas={v.categorias}
+      />
       <article className="leitura">
-        <header>
-          <h1 className="leitura__titulo">{v.titulo}</h1>
-          {v.categorias.length > 0 && (
-            <p>
-              {v.categorias.map((c) => (
-                <span key={c} className="etiqueta">
-                  {c}
-                </span>
-              ))}
-            </p>
-          )}
-          {v.resumo && <p>{v.resumo}</p>}
-        </header>
+        {v.capa && (
+          <div className="leitura__capa">
+            <Image src={v.capa} alt="" fill priority sizes="(min-width: 768px) 46rem, 100vw" className="leitura__capa-img" />
+          </div>
+        )}
         <dl className="ficha">
           <div>
             <dt className="ficha__rotulo">Data de publicação</dt>

@@ -1,78 +1,162 @@
-// Seções "Últimas ..." (título com link) e cartões em grade.
+// Células de notícias da home e cartões com imagem (vídeos e grupos).
 
-.secao-recentes {
-  margin-top: 2rem;
+// --- Notícias recentes (home) -----------------------------------------------
+.celulas-noticias {
+  @include grade-celulas;
 
-  &__titulo a {
-    font-weight: $peso-titulo;
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-}
-
-.card-noticia {
-  @extend .card;
-  height: 100%;
 
   &__link {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-content: start;
+    gap: $espaco-2;
     height: 100%;
-    color: inherit;
+    padding: $espaco-6;
+    color: $cor-texto;
     text-decoration: none;
 
     &:hover {
-      color: inherit;
+      background: $cor-fundo;
+      color: $cor-texto;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-3;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__categoria {
+    color: $cor-acento;
+    text-transform: capitalize;
+  }
+
+  &__titulo {
+    font-size: $tamanho-lg;
+    font-weight: $peso-semi;
+    line-height: $altura-linha-titulo;
+    text-wrap: balance;
+  }
+
+  &__link:hover &__titulo {
+    color: $cor-acento;
+  }
+}
+
+// --- Cartão com imagem ------------------------------------------------------
+.card-noticia {
+  height: 100%;
+
+  &__link {
+    display: block;
+    height: 100%;
+    color: $cor-texto;
+    text-decoration: none;
+
+    &:hover {
+      color: $cor-texto;
     }
   }
 
   &__imagem {
     position: relative;
-    height: $altura-imagem-cartao;
+    display: grid;
+    place-items: center;
+    aspect-ratio: $proporcao-video;
     overflow: hidden;
-    border-top-left-radius: $raio-imagem;
-    border-top-right-radius: $raio-imagem;
+    border-radius: $raio-xl;
+    background: $cor-fundo-imagem;
   }
 
   &__img {
     object-fit: cover;
+    transition: $transicao-imagem;
+  }
+
+  &__link:hover &__img {
+    transform: scale($escala-hover-imagem);
+  }
+
+  // Botão de play desenhado só com CSS (círculo claro e triângulo escuro)
+  &__play {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: $tamanho-botao-play;
+    height: $tamanho-botao-play;
+    border-radius: 50%;
+    background: $cor-profundo-texto;
+    box-shadow: $sombra-botao-play;
+    transition: transform $transicao-rapida;
+
+    &::before {
+      content: "";
+      margin-left: $ajuste-play;
+      border-style: solid;
+      border-width: $tamanho-triangulo-play 0 $tamanho-triangulo-play $largura-triangulo-play;
+      border-color: transparent transparent transparent $cor-profundo;
+    }
+  }
+
+  &__link:hover &__play {
+    transform: scale(1.1);
+  }
+
+  &--video &__img {
+    opacity: $opacidade-capa-video;
   }
 
   &__corpo {
-    @extend .card-body;
+    padding-top: $espaco-4;
+  }
+
+  &__meta {
     display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
+    flex-wrap: wrap;
+    gap: $espaco-1 $espaco-3;
+    margin: 0 0 $espaco-2;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
   }
 
-  &__imagem--alta {
-    height: $altura-imagem-grupo;
+  &__etiqueta {
+    color: $cor-acento;
   }
 
-  &__etiquetas {
-    margin: 0 0 0.5rem;
+  h3#{&}__titulo {
+    margin: 0;
+    font-size: $tamanho-lg;
+    font-weight: $peso-semi;
+    line-height: $altura-linha-titulo;
+  }
+
+  &__link:hover &__titulo {
+    color: $cor-acento;
   }
 
   &__descricao {
-    margin-bottom: 1rem;
-    font-size: $tamanho-descricao-cartao;
-    line-height: 1.5;
-  }
-
-  &__titulo {
-    margin-bottom: 0.5rem;
-    padding: 0;
-    border: 0;
-    font-weight: $peso-medio;
-    font-size: $tamanho-nome-cartao;
-    line-height: 1.2;
-    color: $cor-texto;
-  }
-
-  &__data {
-    margin-top: auto;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: $tamanho-data-cartao;
-    font-weight: $peso-medio;
+    margin: $espaco-2 0 0;
+    font-size: $tamanho-sm;
     color: $cor-texto-suave;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__img,
+    &__play {
+      transition: none;
+    }
+
+    &__link:hover &__img,
+    &__link:hover &__play {
+      transform: none;
+    }
   }
 }

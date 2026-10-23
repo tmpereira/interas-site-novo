@@ -1,10 +1,12 @@
 // Ponto de entrada único do estilo do site. Só importa os demais, nesta ordem.
 @import "tokens";
+@import "mixins";
 @import "tema";
 @import "base";
 @import "layout";
 
 @import "componentes/hero";
+@import "componentes/espectro";
 @import "componentes/destaques";
 @import "componentes/cards";
 @import "componentes/filtro-categorias";

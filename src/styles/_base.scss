@@ -8,129 +8,185 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: $cor-fundo;
+  color: $cor-texto;
+  font-family: $fonte-base;
+  font-size: $tamanho-base;
+  line-height: $altura-linha;
 }
 
 a {
+  color: $cor-acento;
   text-underline-offset: 3px;
+
+  &:hover {
+    color: $cor-acento;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: $contorno-foco;
+  outline-offset: 3px;
+  border-radius: $raio-sm;
 }
 
 h1,
 h2,
 h3,
-.h1,
-.h2,
-.h3 {
+h4 {
+  color: $cor-texto;
   font-weight: $peso-titulo;
+  text-wrap: balance;
 }
 
-// Títulos de seção dentro do conteúdo (como no Quarto: linha embaixo)
-.pagina h2,
-.pagina .h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid $cor-borda;
+h1,
+h2 {
+  font-family: $fonte-titulo;
+  letter-spacing: $espacamento-titulo;
 }
 
-.pagina blockquote {
-  border-left: 0.25rem solid $cor-borda-citacao;
-}
-
-// Título principal de cada página
-.titulo-pagina {
-  @extend .display-4;
-  margin-top: 1.7rem;
-  margin-bottom: 1rem;
-}
-
-.pagina img {
+img {
   max-width: 100%;
   height: auto;
+}
+
+hr {
+  border: 0;
+  border-top: $borda;
+  opacity: 1;
+}
+
+blockquote {
+  margin: $espaco-6 0;
+  padding: $espaco-4 $espaco-6;
+  border-left: 2px solid $cor-acento;
+  border-radius: 0 $raio-xl $raio-xl 0;
+  background: $cor-superficie;
+  color: $cor-texto-suave;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Link "pular para o conteúdo" (acessibilidade por teclado)
 .pular-para-conteudo {
   position: absolute;
-  left: -999px;
+  left: $fora-da-tela;
   top: 0;
-  z-index: $z-cabecalho + 1;
-  padding: 0.5rem 1rem;
-  background: $cor-fundo;
+  z-index: $z-submenu + 1;
+  padding: $espaco-2 $espaco-4;
+  background: $cor-superficie;
 
   &:focus {
     left: 0;
   }
 }
 
-// Texto só para leitores de tela (ex.: <h1> que não aparece no desenho da página)
+// Texto só para leitores de tela
 .somente-leitor {
   @extend .visually-hidden;
 }
 
-// Etiqueta pequena com contorno (tipo de publicação, categorias de patentes)
+// Etiqueta pequena com contorno (tipo de publicação, categorias)
 .etiqueta {
   display: inline-block;
-  margin-right: 0.35rem;
-  padding: 0.1rem 0.4rem;
-  border: 1px solid $cor-texto-suave;
-  border-radius: $raio-botao;
-  font-size: $tamanho-etiqueta;
-  text-transform: uppercase;
+  margin: 0 $espaco-1 $espaco-1 0;
+  padding: $espaco-etiqueta-y $espaco-etiqueta-x;
+  border: $borda;
+  border-radius: $raio-pilula;
+  background: $cor-superficie;
+  font-size: $tamanho-xs;
   color: $cor-texto-suave;
 }
 
-// --- Coluna de leitura (páginas de texto, artigos, vídeos, grupos) ---------
-.leitura {
-  max-width: $largura-artigo;
-  margin: 0 auto;
-  padding-bottom: 2rem;
+// Ponto colorido + nome da frente de pesquisa
+.frente {
+  @include cores-frente;
+  display: inline-flex;
+  align-items: center;
+  gap: $espaco-pilula-y;
+  font-size: $tamanho-xs;
+  color: $cor-texto-suave;
 
-  &__titulo {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    font-size: $tamanho-titulo-artigo;
-    font-weight: $peso-titulo;
-    line-height: 1.25;
-  }
-
-  &__subtitulo {
-    @extend .lead;
-  }
-
-  // Seções com título simples (sem a linha embaixo), como "Descrição" nos vídeos
-  section > h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0;
-    border-bottom: 0;
-    font-size: $tamanho-secao-perfil;
-    font-weight: $peso-titulo;
+  &::before {
+    content: "";
+    @include ponto-frente;
   }
 }
 
-// Título de páginas de listagem sem faixa (ex.: vídeos)
-.cabecalho-pagina {
-  margin-top: 1.5rem;
+// --- Coluna de leitura (páginas de texto, notícias, vídeos, grupos) --------
+.leitura {
+  max-width: $largura-leitura;
+  padding-bottom: $espaco-8;
 
   &__titulo {
-    margin-bottom: 0.25rem;
-    font-size: $tamanho-titulo-secao-producao;
-    font-weight: $peso-titulo;
+    @include titulo-display($tamanho-3xl, $tamanho-5xl);
+    margin-bottom: $espaco-4;
   }
 
   &__subtitulo {
-    @extend .lead;
+    max-width: $largura-prosa;
+    font-size: $tamanho-lg;
+    color: $cor-texto-suave;
+
+    @media (min-width: $bp-md) {
+      font-size: $tamanho-xl;
+    }
+  }
+
+  &__etiquetas {
+    margin: 0 0 $espaco-4;
+  }
+
+  &__resumo {
+    max-width: $largura-prosa;
+    font-size: $tamanho-lg;
+    color: $cor-texto-suave;
+  }
+
+  // Seções com rótulo pequeno ("Descrição", "Acesso ao conteúdo")
+  section > h2 {
+    @include sobretitulo;
+    margin: $espaco-10 0 $espaco-3;
+    color: $cor-texto-suave;
   }
 }
 
 // Texto vindo de Markdown (corpo de notícias, conteúdo de páginas, abas)
 .texto {
-  // Tabelas largas rolam na horizontal, sem estourar a página no celular
-  table {
-    @extend .table;
-    display: block;
-    max-width: 100%;
-    overflow-x: auto;
+  max-width: $largura-leitura;
+  color: $cor-texto;
+
+  p,
+  li {
+    color: $cor-texto-suave;
+  }
+
+  strong {
+    color: $cor-texto;
+  }
+
+  h2 {
+    margin: $espaco-10 0 $espaco-4;
+    font-size: $tamanho-2xl;
+
+    @media (min-width: $bp-md) {
+      font-size: $tamanho-3xl;
+    }
+  }
+
+  h3 {
+    margin: $espaco-8 0 $espaco-3;
+    font-size: $tamanho-xl;
+  }
+
+  h4 {
+    margin: $espaco-6 0 $espaco-2;
+    font-size: $tamanho-lg;
   }
 
   h2:first-child,
@@ -141,29 +197,48 @@ h3,
 
   img {
     display: block;
-    margin: 1rem 0;
+    margin: $espaco-6 0;
+    border-radius: $raio-2xl;
+  }
+
+  // Tabelas largas rolam na horizontal, sem estourar a página no celular
+  table {
+    display: block;
+    max-width: 100%;
+    margin: $espaco-6 0;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-size: $tamanho-sm;
+  }
+
+  th,
+  td {
+    padding: $espaco-2 $espaco-3;
+    border-bottom: $borda;
+    text-align: left;
+  }
+
+  th {
+    font-weight: $peso-semi;
   }
 }
 
 // Ficha de metadados (autor, data de publicação...)
 .ficha {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 2rem;
-  margin: 1.5rem 0;
-
-  @media (max-width: $bp-mobile) {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espaco-4 $espaco-10;
+  margin: $espaco-6 0 $espaco-8;
+  padding: $espaco-4 0;
+  border-top: $borda;
+  border-bottom: $borda;
 
   &__rotulo {
-    font-size: $tamanho-rotulo;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include sobretitulo;
     color: $cor-texto-suave;
   }
 
   &__valor {
-    margin: 0 0 0.75rem;
+    margin: $espaco-1 0 0;
   }
 }

@@ -1,13 +1,18 @@
-// Bootstrap 5 + Bootswatch Materia, com variáveis sobrescritas pelos tokens.
-// Ordem exigida pelo Bootswatch: variáveis do tema → Bootstrap → regras do tema.
-$primary: $cor-primaria;
-$font-family-sans-serif: $fonte-base;
+// Bootstrap 5, só as partes usadas pela estrutura: reboot, grade (row/col) e utilitários
+// de espaçamento. O visual dos componentes é todo próprio (arquivos em componentes/).
+$primary: $cor-primaria-bootstrap;
 $font-size-root: $tamanho-fonte-raiz;
-$h1-font-size: $tamanho-h1;
-$h2-font-size: $tamanho-h2;
-$h3-font-size: $tamanho-h3;
-$h4-font-size: $tamanho-h4;
+$enable-shadows: false;
 
-@import "bootswatch/dist/materia/variables";
-@import "bootstrap/scss/bootstrap";
-@import "bootswatch/dist/materia/bootswatch";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";

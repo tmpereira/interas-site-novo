@@ -1,53 +1,149 @@
-// Hero da página inicial: título, imagem de fundo (--imagem-fundo, vinda do dado) e texto.
+// Hero da página inicial e faixa escura da apresentação.
 
 .hero {
-  &__titulo {
-    @extend .titulo-pagina;
+  display: grid;
+  gap: $espaco-10;
+  padding: $espaco-16 0 $espaco-16;
+
+  @media (min-width: $bp-md) {
+    padding-top: $espaco-24;
+    padding-bottom: $espaco-20;
   }
 
-  &__imagem {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: $altura-hero;
-    padding-bottom: 1vh;
-    background-image: var(--imagem-fundo);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  @media (min-width: $bp-lg) {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
   }
 
   &__conteudo {
-    @extend .container;
-    text-align: center;
+    min-width: 0;
+  }
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  &__titulo {
+    margin: $espaco-5 0 0;
+    font-family: $fonte-titulo;
+    font-size: $tamanho-hero-mobile;
+    font-weight: $peso-extra;
+    line-height: $altura-linha-hero;
+    letter-spacing: $espacamento-titulo;
+
+    @media (min-width: $bp-sm) {
+      font-size: $tamanho-6xl;
+    }
+
+    @media (min-width: $bp-lg) {
+      font-size: $tamanho-hero-desktop;
+    }
   }
 
   &__texto {
-    @extend .lead;
-    margin-top: 1.5rem;
+    max-width: $largura-prosa;
+    margin-top: $espaco-8;
+    font-size: $tamanho-lg;
+    color: $cor-texto-suave;
+
+    @media (min-width: $bp-md) {
+      font-size: $tamanho-xl;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  // Telas pequenas: a imagem ocupa o topo e o texto flui abaixo dela
-  @media (max-width: $bp-mobile) {
-    &__imagem {
-      display: block;
-      height: auto;
-      padding-top: $espaco-topo-hero-mobile;
-      padding-bottom: $espaco-base-hero-mobile;
-    }
+  &__botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-3;
+    margin: $espaco-8 0 0;
+  }
 
-    &__conteudo {
-      padding-left: 1rem;
-      padding-right: 1rem;
+  &__botao {
+    @include botao-pilula(primario);
+
+    &--secundario {
+      @include botao-pilula(contorno);
     }
+  }
+
+  &__imagem {
+    position: relative;
+    min-width: 0;
+    aspect-ratio: $proporcao-hero;
+    overflow: hidden;
+    border-radius: $raio-3xl;
+    background: $cor-fundo-imagem;
+  }
+
+  &__img {
+    object-fit: cover;
   }
 }
 
+// Faixa escura com a apresentação ("Por que existimos")
 .apresentacao {
-  @extend .container;
-  text-align: center;
+  &__grade {
+    display: grid;
+    gap: $espaco-12;
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    }
+  }
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-profundo-suave;
+  }
+
+  h1#{&}__titulo,
+  h2#{&}__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-5xl);
+    margin-top: $espaco-4;
+    color: $cor-profundo-texto;
+  }
+
+  // Etiquetas com contorno sobre a faixa escura (Fotônica, Nanotecnologia...)
+  &__etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin: $espaco-8 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__etiqueta {
+    padding: $espaco-1 $espaco-3;
+    border: 1px solid $cor-profundo-suave;
+    border-radius: $raio-pilula;
+    font-size: $tamanho-sm;
+    color: $cor-profundo-texto;
+  }
 
   &__texto {
-    @extend .lead;
+    max-width: $largura-prosa;
+    font-size: $tamanho-lg;
+    color: $cor-profundo-suave;
+
+    p {
+      margin-bottom: $espaco-6;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    // Destaques do texto só mudam de cor (como no protótipo), sem negrito
+    strong,
+    em {
+      font-weight: $peso-normal;
+      color: $cor-profundo-texto;
+    }
   }
 }

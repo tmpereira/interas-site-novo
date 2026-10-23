@@ -1,101 +1,341 @@
-// Blocos de destaque da home: imagem esmaecida de um lado e texto do outro.
+// Linhas de pesquisa da home (blocos de destaque) e nota de coordenação.
 
-.destaque {
-  // Blocos pares têm fundo alternativo
-  &:nth-child(even) {
-    background-color: $cor-fundo-alternativo;
+// Cabeçalho das linhas de pesquisa e espectro, logo abaixo do hero
+.inicio__espectro {
+  padding-bottom: $espaco-20;
+
+  @media (min-width: $bp-md) {
+    padding-bottom: $espaco-28;
   }
+}
 
-  &__interno {
-    @extend .container;
+.inicio__secao {
+  padding-top: $espaco-20;
+
+  @media (min-width: $bp-md) {
+    padding-top: $espaco-28;
   }
+}
 
-  &__grade {
-    display: grid;
-    align-items: center;
-    gap: $espaco-grade;
-    padding: $espaco-secao 0;
-  }
+.linhas-pesquisa {
+  @include lista-linhas;
 
-  &--imagem-esquerda &__grade {
-    grid-template-columns: 5fr 7fr;
-  }
+  &__item {
+    transition: background-color $transicao-rapida;
 
-  &--imagem-direita &__grade {
-    grid-template-columns: 7fr 5fr;
-  }
-
-  &__imagem {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: $altura-minima-imagem-destaque;
-    background-image: var(--imagem-fundo);
-    background-size: cover;
-    background-position: center;
-    border-radius: $raio-imagem;
-    box-shadow: $sombra-imagem;
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: $raio-imagem;
+    &--ativo {
+      background: $cor-superficie;
     }
   }
 
-  &--imagem-esquerda &__imagem::after {
-    background: linear-gradient(to right, $cor-fade-transparente 65%, $cor-fade-opaca 100%);
-  }
-
-  &--imagem-direita &__imagem::after {
-    background: linear-gradient(to left, $cor-fade-transparente 65%, $cor-fade-opaca 100%);
-  }
-
-  // O texto avança um pouco sobre a parte esmaecida da imagem
-  &__texto {
-    position: relative;
-    z-index: $z-texto-destaque;
-  }
-
-  &--imagem-esquerda &__texto {
-    margin-left: -5%;
-  }
-
-  &--imagem-direita &__texto {
-    margin-right: -5%;
-    text-align: right;
-  }
-
-  &__titulo {
-    @extend .display-6;
-  }
-
-  &__corpo {
-    @extend .lead;
-  }
-
-  &__botao {
-    @extend .btn;
-    @extend .btn-primary;
-  }
-
-  @media (max-width: $bp-destaque) {
-    &--imagem-esquerda &__grade,
-    &--imagem-direita &__grade {
-      grid-template-columns: 1fr;
+  @media (prefers-reduced-motion: reduce) {
+    &__item {
+      transition: none;
     }
   }
 }
 
-// Nota de coordenação abaixo dos destaques
+.pilar {
+  display: grid;
+  gap: $espaco-6;
+  padding: $espaco-10 0;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: $largura-coluna-faixa minmax(0, 1fr) minmax(0, $largura-coluna-imagem-pilar);
+    padding-left: $espaco-6;
+    padding-right: $espaco-6;
+  }
+
+  &__faixa {
+    margin: 0;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    line-height: 1.7;
+    color: $cor-texto-suave;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__faixa-linha {
+    display: block;
+  }
+
+  &__texto {
+    min-width: 0;
+  }
+
+  h3#{&}__titulo {
+    margin: 0;
+    font-family: $fonte-titulo;
+    font-size: $tamanho-2xl;
+    font-weight: $peso-titulo;
+    letter-spacing: $espacamento-titulo;
+
+    @media (min-width: $bp-md) {
+      font-size: $tamanho-3xl;
+    }
+  }
+
+  &__corpo {
+    max-width: $largura-prosa;
+    margin-top: $espaco-4;
+    color: $cor-texto-suave;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__botao {
+    @include link-seta;
+    display: inline-block;
+    margin-top: $espaco-4;
+    white-space: normal;
+  }
+
+  &__lateral {
+    display: grid;
+    align-content: start;
+    gap: $espaco-4;
+  }
+
+  &__imagem {
+    position: relative;
+    aspect-ratio: $proporcao-pilar;
+    overflow: hidden;
+    border-radius: $raio-xl;
+    background: $cor-fundo-imagem;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__etiqueta {
+    padding: $espaco-1 $espaco-3;
+    border: $borda;
+    border-radius: $raio-pilula;
+    background: $cor-superficie;
+    font-size: $tamanho-sm;
+  }
+}
+
+// Nota de coordenação abaixo das linhas de pesquisa
 .nota-coordenacao {
-  margin: 1rem 0;
-  padding: 0.625rem 1.25rem;
-  border-left: 0.25rem solid $cor-borda-citacao;
+  margin-top: $espaco-10;
+  padding: $espaco-5 $espaco-6;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+  font-size: $tamanho-sm;
+  line-height: 1.9;
   color: $cor-texto-suave;
 
   strong {
-    font-weight: $peso-forte;
+    @include sobretitulo;
+    display: inline;
+    color: $cor-texto-suave;
+  }
+
+  a {
+    font-weight: $peso-medio;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Cartão com passos numerados ("Do laboratório ao SUS", página O INCT INTERAS)
+.etapas {
+  margin-top: $espaco-20;
+  padding: $espaco-6;
+  border: $borda;
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+
+  @media (min-width: $bp-md) {
+    margin-top: $espaco-28;
+    padding: $espaco-12;
+  }
+
+  &__sobretitulo {
+    @include sobretitulo;
+    color: $cor-acento;
+  }
+
+  h2#{&}__titulo {
+    @include titulo-display($tamanho-3xl, $tamanho-4xl);
+    max-width: $largura-titulo-etapas;
+    margin-top: $espaco-4;
+  }
+
+  &__lista {
+    @include grade-celulas;
+    margin-top: $espaco-10;
+    border-radius: $raio-xl;
+
+    @media (min-width: $bp-sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  &__item {
+    padding: $espaco-5;
+  }
+
+  &__numero {
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-acento;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h3#{&}__nome {
+    margin: $espaco-2 0 0;
+    font-size: $tamanho-base;
+    font-weight: $peso-semi;
+  }
+
+  &__texto {
+    margin: $espaco-1 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+}
+
+// --- Página Áreas de pesquisa: índice e blocos ------------------------------
+.indice-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espaco-2;
+  margin-top: $espaco-8;
+
+  &__link {
+    @include pilula-pequena;
+  }
+}
+
+.blocos-areas {
+  display: grid;
+  gap: $espaco-8;
+
+  @media (min-width: $bp-md) {
+    gap: $espaco-10;
+  }
+}
+
+.bloco-area {
+  @include cores-frente;
+  display: grid;
+  overflow: hidden;
+  border: $borda;
+  border-top: $espessura-faixa-bloco solid var(--cor-frente, #{$cor-acento});
+  border-radius: $raio-2xl;
+  background: $cor-superficie;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+
+    &--imagem-direita {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    }
+
+    &--imagem-direita .bloco-area__imagem {
+      order: 2;
+    }
+  }
+
+  &__imagem {
+    position: relative;
+    aspect-ratio: $proporcao-video;
+    background: $cor-fundo-imagem;
+
+    @media (min-width: $bp-lg) {
+      aspect-ratio: auto;
+      min-height: $altura-minima-bloco-area;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__conteudo {
+    min-width: 0;
+    padding: $espaco-6;
+
+    @media (min-width: $bp-md) {
+      padding: $espaco-10;
+    }
+  }
+
+  &__topo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: $espaco-2 $espaco-4;
+    margin: 0;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__numero {
+    color: var(--cor-frente, #{$cor-acento});
+    font-weight: $peso-medio;
+  }
+
+  h2#{&}__titulo {
+    @include titulo-display($tamanho-2xl, $tamanho-4xl);
+    margin-top: $espaco-3;
+  }
+
+  &__texto {
+    max-width: $largura-prosa;
+    margin-top: $espaco-5;
+    color: $cor-texto-suave;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-2;
+    margin: $espaco-6 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__etiqueta {
+    padding: $espaco-1 $espaco-3;
+    border: $borda;
+    border-radius: $raio-pilula;
+    background: $cor-fundo;
+    font-size: $tamanho-sm;
+  }
+
+  &__botao {
+    @include link-seta;
+    display: inline-block;
+    margin-top: $espaco-6;
+    white-space: normal;
   }
 }

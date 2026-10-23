@@ -1,68 +1,95 @@
 // Lista de notícias.
 
 .lista-noticias {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include lista-linhas;
 }
 
 .item-noticia {
   display: grid;
-  grid-template-columns: $largura-meta-noticia 1fr $largura-imagem-noticia;
-  gap: 1.5rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid $cor-borda;
+  gap: $espaco-4;
+  padding: $espaco-6 0;
 
-  &__meta {
-    font-size: $tamanho-texto-meta;
-  }
-
-  &__autor {
-    margin: 0;
-  }
-
-  h2#{&}__titulo {
-    margin: 0 0 0.25rem;
-    padding: 0;
-    border: 0;
-    font-size: $tamanho-titulo-noticia;
-    font-weight: 400;
-    line-height: 1.25;
-
-    a {
-      color: $cor-texto-suave;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  &__etiquetas {
-    margin: 0 0 0.5rem;
-  }
-
-  &__resumo {
-    margin: 0;
+  @media (min-width: $bp-md) {
+    grid-template-columns: $largura-miniatura-noticia minmax(0, 1fr);
+    gap: $espaco-6;
+    align-items: start;
   }
 
   &__imagem {
     position: relative;
     display: block;
-    height: $altura-imagem-noticia;
+    aspect-ratio: $proporcao-video;
+    overflow: hidden;
+    border-radius: $raio-xl;
+    background: $cor-fundo-imagem;
   }
 
   &__img {
     object-fit: cover;
+    transition: $transicao-imagem;
   }
 
-  @media (max-width: $bp-mobile) {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
+  &:hover &__img {
+    transform: scale($escala-hover-imagem);
+  }
 
-    &__imagem {
-      order: -1;
+  &__corpo {
+    min-width: 0;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espaco-1 $espaco-3;
+    margin: 0 0 $espaco-2;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    color: $cor-texto-suave;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__categoria {
+    color: $cor-acento;
+    text-transform: capitalize;
+  }
+
+  h2#{&}__titulo {
+    margin: 0;
+    font-family: $fonte-base;
+    font-size: $tamanho-xl;
+    font-weight: $peso-semi;
+    line-height: $altura-linha-titulo;
+    letter-spacing: 0;
+
+    a {
+      color: $cor-texto;
+      text-decoration: none;
+
+      &:hover {
+        color: $cor-acento;
+      }
+    }
+  }
+
+  &__resumo {
+    max-width: $largura-prosa;
+    margin: $espaco-2 0 0;
+    color: $cor-texto-suave;
+  }
+
+  &__autor {
+    margin: $espaco-2 0 0;
+    font-size: $tamanho-sm;
+    color: $cor-texto-suave;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__img {
+      transition: none;
+    }
+
+    &:hover &__img {
+      transform: none;
     }
   }
 }

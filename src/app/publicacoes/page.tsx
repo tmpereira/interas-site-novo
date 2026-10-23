@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import FiltroPublicacoes, { type ItemPublicacao } from "@/components/FiltroPublicacoes";
 import ListaPatentes from "@/components/ListaPatentes";
 import { carregarConteudo } from "@/lib/conteudo";
@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
 }
 
 export default function Publicacoes() {
-  const { publicacoes, patentes, grupos } = carregarConteudo();
+  const { publicacoes, patentes, grupos, pessoas } = carregarConteudo();
   const pagina = paginaPorSlug("publicacoes");
 
   // Dados mínimos de cada publicação para a lista com filtros (o resumo não vai para o navegador)
@@ -21,10 +21,13 @@ export default function Publicacoes() {
     id: p.id,
     titulo: p.titulo,
     tituloHtml: markdownEmLinha(p.titulo),
-    autores: p.autores.join(", "),
+    autores: p.autores,
     ano: p.ano,
     data: p.data,
     periodico: p.periodico,
+    volume: p.volume,
+    numero: p.numero,
+    paginas: p.paginas,
     grupos: p.grupos,
     citacoes: p.citacoes,
     fator_impacto: p.fator_impacto,
@@ -36,12 +39,25 @@ export default function Publicacoes() {
 
   return (
     <div className="pagina">
-      <Breadcrumb itens={[{ rotulo: "Publicações" }]} />
-      <h1 className="somente-leitor">{pagina.titulo}</h1>
+      <CabecalhoPagina caminho="/publicacoes/" titulo={pagina.titulo} descricao={pagina.descricao}>
+        <dl className="numeros-producao">
+          <div className="numeros-producao__item">
+            <dt>Artigos</dt>
+            <dd>{publicacoes.length}</dd>
+          </div>
+          <div className="numeros-producao__item">
+            <dt>Patentes e softwares</dt>
+            <dd>{patentes.length}</dd>
+          </div>
+          <div className="numeros-producao__item">
+            <dt>Pessoas na equipe</dt>
+            <dd>{pessoas.filter((p) => p.ativo).length}</dd>
+          </div>
+        </dl>
+      </CabecalhoPagina>
 
       <section id="artigos" className="secao-producao">
-        <h2 className="secao-producao__titulo">{(pagina.titulo_artigos as string | undefined) ?? "Artigos"}</h2>
-        <FiltroPublicacoes itens={itens} grupos={gruposComPublicacao} />
+        <FiltroPublicacoes titulo={(pagina.titulo_artigos as string | undefined) ?? "Artigos"} itens={itens} grupos={gruposComPublicacao} />
       </section>
 
       <section id="patentes" className="secao-producao">

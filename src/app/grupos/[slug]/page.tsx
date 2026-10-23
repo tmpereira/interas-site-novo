@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Abas from "@/components/Abas";
-import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { carregarConteudo } from "@/lib/conteudo";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
@@ -28,21 +29,19 @@ export default async function PaginaGrupo({ params }: Props) {
   const rotulo = new Map(site.temas_grupos.map((t) => [t.slug, t.rotulo]));
   return (
     <div className="pagina">
-      <Breadcrumb itens={[{ rotulo: "Grupos e Laboratórios", href: "/grupos/" }, { rotulo: g.titulo }]} />
+      <CabecalhoPagina
+        caminho="/grupos/"
+        sobretitulo={g.instituicao ?? "Grupos e laboratórios"}
+        titulo={g.titulo}
+        descricao={g.resumo}
+        etiquetas={g.temas.map((t) => rotulo.get(t) ?? t)}
+      />
       <article className="leitura">
-        <header>
-          <h1 className="leitura__titulo">{g.titulo}</h1>
-          {g.temas.length > 0 && (
-            <p>
-              {g.temas.map((t) => (
-                <span key={t} className="etiqueta">
-                  {rotulo.get(t) ?? t}
-                </span>
-              ))}
-            </p>
-          )}
-          {g.resumo && <p>{g.resumo}</p>}
-        </header>
+        {g.imagem && (
+          <div className="leitura__capa">
+            <Image src={g.imagem} alt="" fill priority sizes="(min-width: 768px) 46rem, 100vw" className="leitura__capa-img" />
+          </div>
+        )}
         {g.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(g.conteudo) }} />}
         {g.abas.length > 0 && <Abas prefixo={g.slug} abas={g.abas.map((a) => ({ titulo: a.titulo, html: markdownParaHtml(a.conteudo) }))} />}
       </article>

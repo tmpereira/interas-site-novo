@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/styles/main.scss";
+import { classesFontes } from "@/styles/fontes";
 import BarraAnuncio from "@/components/BarraAnuncio";
 import Navbar from "@/components/Navbar";
 import Rodape from "@/components/Rodape";
@@ -26,7 +27,7 @@ export default function RootLayout({
   const { site } = carregarConteudo();
   const anuncio = site.anuncio?.ativo ? site.anuncio : null;
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={classesFontes}>
       <body>
         {site.google_analytics && process.env.NODE_ENV === "production" && (
           <>
@@ -44,12 +45,12 @@ gtag('config', '${site.google_analytics}');`}
         </a>
         <header className="cabecalho">
           {anuncio && <BarraAnuncio id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto)} />}
-          <Navbar titulo={site.titulo} logo={site.logo} logoAlt={site.logo_alt} menu={site.menu} />
+          <Navbar logo={site.logo} logoAlt={site.logo_alt} menu={site.menu} />
         </header>
         <main id="conteudo" className="conteudo-principal">
           {children}
         </main>
-        <Rodape rodape={site.rodape} />
+        <Rodape rodape={site.rodape} descricao={site.descricao} />
       </body>
     </html>
   );

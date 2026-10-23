@@ -41,7 +41,7 @@ previsível, validada e fácil de ler e editar por máquina.
 | Conteúdo | **Tudo em JSON**, na pasta `content/`: configurações do site, home, pessoas, publicações, patentes, grupos, vídeos e páginas institucionais. **Única exceção: notícias**, que ficam na pasta `content/noticias/`, **um arquivo Markdown por notícia** (seção 6.5). Nada de YAML nem `.bib` como fonte do site. |
 | Quem edita | Apenas o usuário, no **VS Code**, normalmente pedindo ao **Claude Code** para atualizar os JSON. **Não criar CMS, painel /admin nem formulários.** |
 | Hospedagem futura | Vercel, plano Hobby, conta pessoal do usuário. **Não configurar deploy agora.** |
-| Visual | **Manter o visual atual** (tema Bootswatch *Materia* + `custom.scss`, logos, banner, cores). Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9). |
+| Visual | **Visual "espectro"** (pedido do usuário em 2026-10-23, a partir do protótipo `interas.html`), que substituiu o Materia. Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9). |
 | Fora do escopo | "INTERAS em números", "Preprints", "Mulheres INTERAS". Não migrar. |
 | Versão em inglês | **Última etapa**, só depois que o site em português estiver pronto e aprovado. |
 | Ambiente | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois. |
@@ -76,8 +76,7 @@ previsível, validada e fácil de ler e editar por máquina.
    ORCID...) sem alterar código.
 7. **Simplicidade.** Poucas dependências. Nada de CMS, banco, autenticação,
    API routes ou recursos que exijam servidor.
-8. **Breadcrumbs, menus e listagens são componentes**, nunca HTML repetido no
-   conteúdo.
+8. **Menus e listagens são componentes**, nunca HTML repetido no conteúdo.
 
 ---
 
@@ -85,7 +84,7 @@ previsível, validada e fácil de ler e editar por máquina.
 
 - Next.js (versão estável mais recente) + TypeScript + App Router
 - `output: 'export'`, `images: { unoptimized: true }`, `trailingSlash: true`
-- **Bootstrap 5 + Bootswatch Materia** (via npm) + **Sass**
+- **Bootstrap 5** (só reboot, grade e utilitários) + **Sass**. Fontes Bricolage Grotesque, IBM Plex Sans e IBM Plex Mono via `next/font/google` (`src/styles/fontes.ts`; baixadas no build)
 - **Bootstrap Icons** (o site atual usa ícones `bi-*`)
 - `zod` (v4) para validar os JSON; os JSON Schemas (seção 6.0) são gerados pelo
   próprio Zod (`z.toJSONSchema`), sem pacote extra
@@ -132,7 +131,7 @@ memória.
 │   └── arquivos/               # PDFs e outros anexos
 ├── src/
 │   ├── app/                    # rotas (ver seção 7)
-│   ├── components/             # Navbar, Footer, Breadcrumb, CardPessoa, ListaPublicacoes...
+│   ├── components/             # Navbar, Rodape, CabecalhoPagina, CardPessoa, ListaPublicacoes...
 │   ├── lib/
 │   │   ├── esquemas.ts         # esquemas Zod de todas as coleções (fonte única)
 │   │   └── conteudo.ts         # funções que leem e validam os JSON e as notícias
@@ -459,6 +458,11 @@ O avanço científico nacional depende, fundamentalmente, da articulação...
   listagem (`equipe`, `grupos`, `publicacoes`, `noticias`, `videos`), lidos
   pelas rotas correspondentes da seção 7. Não existe rota genérica `/[slug]/`.
 - `descricao` é o subtítulo da página.
+- "O INCT INTERAS" (`sobre-o-interas`) usa os campos opcionais `missao` (`sobretitulo`,
+  `titulo` — vira o `<h1>` —, `texto` em Markdown, `etiquetas`) e `etapas` (`sobretitulo`,
+  `titulo`, `itens` com `titulo` e `texto`; numerados 01, 02...). Desde 2026-10-23, a pedido do
+  usuário, o `conteudo` dessa página está vazio (o texto antigo saiu; está no histórico do Git).
+  Em `missao.texto`, `**negrito**` aparece só como cor mais clara, sem negrito.
 - Campos extras usados: `cartoes` no contato (cartões com `titulo`, `icone`
   Bootstrap Icons sem o prefixo `bi-`, e `conteudo` em Markdown);
   `titulo_artigos` e `titulo_patentes` em `publicacoes`.
@@ -489,6 +493,11 @@ O avanço científico nacional depende, fundamentalmente, da articulação...
 }
 ```
 
+- Campos opcionais do visual "espectro": `hero.botoes` (lista de `{ rotulo, link }`),
+  `apresentacao_sobretitulo`, `secao_destaques` (`{ sobretitulo, titulo, texto }`) e, em cada
+  destaque, `faixa` (`luz`, `cura`, `moleculas` ou `null` = transversal; liga o destaque à
+  faixa do espectro), `rotulo_faixa` (texto mono à esquerda; `\n` quebra a linha) e `etiquetas`.
+  O primeiro parágrafo de `apresentacao` vira o título da faixa escura; o resto, o texto ao lado.
 - `texto`, `apresentacao` e `nota` são Markdown. `botao` pode ser `null`
   (o destaque "Moléculas Inteligentes" não tem botão). `nota` é o bloco de
   coordenação abaixo dos destaques.
@@ -577,7 +586,8 @@ Menu (mesma organização do site antigo), definido em `site.json`:
 - **NOTÍCIAS**
 - **VÍDEOS**
 
-Breadcrumbs automáticos em todas as páginas internas. `lang="pt-BR"`.
+Sem breadcrumbs nem abas de seção nas páginas internas (pedido do usuário em 2026-10-23: a
+navegação fica só no menu do topo). `lang="pt-BR"`.
 Gerar `sitemap.xml` e metadados (título, descrição, Open Graph com imagem) por
 página.
 
@@ -649,6 +659,10 @@ mulheres INTERAS, `.nojekyll`, `CNAME`.
 
 ## 9. Visual
 
+> **Atualização (2026-10-23):** o visual Materia foi trocado pelo visual "espectro" (seção
+> 9.3). O que as seções 9 e 9.2 dizem sobre Materia, faixa azul de título e `@extend` de
+> classes do Bootstrap ficou só como histórico; a organização dos arquivos (9.1) continua valendo.
+
 - Reproduzir o visual atual o mais fielmente possível: tema **Materia** do
   Bootswatch + regras do `custom.scss` e `custom_logo_interas.scss` antigos
   (hero com imagem de fundo e 80vh, blocos com imagem esmaecida à esquerda/
@@ -671,7 +685,7 @@ src/styles/
 ├── _tokens.scss         # cores, fontes, tamanhos, espaçamentos, sombras, raios, breakpoints
 ├── _tema.scss           # carrega Bootstrap + Bootswatch Materia, sobrescrevendo variáveis com os tokens
 ├── _base.scss           # tipografia e elementos HTML gerais
-├── _layout.scss         # navbar, rodapé, barra de anúncio, breadcrumbs, containers
+├── _layout.scss         # navbar, rodapé, barra de anúncio, cabeçalho de página, containers
 └── componentes/
     ├── _hero.scss
     ├── _destaques.scss  # blocos com imagem esmaecida da home
@@ -757,9 +771,8 @@ Regras:
   Na notícia, os títulos do corpo descem um nível (o `#` vira `h2`), porque a
   página já tem o seu `<h1>`. Callouts do Quarto viraram citações (`>`), sem
   a cor de fundo. Os grupos usam abas acessíveis (`Abas`: setas, Home e End).
-- **Páginas de texto:** `/sobre-o-interas/`, `/areas-de-pesquisa/` e `/contato/`
-  usam `PaginaTexto`; o contato mostra os `cartoes` de `paginas.json`. A página
-  de Áreas de Pesquisa está vazia (só o título), por decisão do usuário.
+- **Páginas de texto:** `/sobre-o-interas/` (ver 9.3), `/areas-de-pesquisa/` (ver 9.3) e
+  `/contato/`; o contato usa `PaginaTexto` e mostra os `cartoes` de `paginas.json`.
 - **Acabamento (etapa 8):** `src/lib/metadados.ts` (`metadadosPagina`) monta
   título, descrição, URL canônica, Open Graph e cartão do Twitter de todas as
   páginas; a imagem de compartilhamento é a da página (foto, capa, imagem da
@@ -768,10 +781,51 @@ Regras:
   `robots.ts`; `404.html` de `not-found.tsx`. O Google Analytics (`next/script`,
   sem dependência extra) só é carregado em build de produção. O mapa de URLs
   antigas tem 496 entradas e todos os destinos existem em `out/`.
-- **Ícone de busca da navbar:** o site antigo tinha a busca do Quarto; ela não
+- **Ícone de busca da navbar (histórico):** o site antigo tinha a busca do Quarto; ela não
   faz parte do escopo (CLAUDE.md, seção 3, princípio 7) e não foi portada.
 
 ---
+
+### 9.3 Visual "espectro" (atual)
+
+- Origem: protótipo HTML/Tailwind enviado pelo usuário. Foi portado para SCSS com tokens
+  (sem Tailwind); os dados fictícios do protótipo **não** foram trazidos (pesquisadores,
+  artigos, notícias, estatísticas de exemplo, formulário de contato, passos "Do laboratório ao
+  SUS" e "Formação").
+- Tokens em `_tokens.scss`: paletas clara e escura (mapas `$paleta-clara`/`$paleta-escura`)
+  emitidas como variáveis CSS `--cor-*`; o modo escuro segue o sistema
+  (`prefers-color-scheme`) e pode ser forçado com `data-theme` no `<html>`. Os atalhos SCSS
+  (`$cor-fundo` etc.) apontam para as variáveis. O logo é invertido no modo escuro (`--filtro-logo`).
+- Padrões repetidos em `_mixins.scss`: `sobretitulo`, `titulo-display`, `botao-pilula`,
+  `pilula-pequena`, `grade-celulas`, `lista-linhas`.
+- `CabecalhoPagina` é o topo de todas as páginas internas: sobretítulo (rótulo do submenu de
+  `site.json`), `<h1>` grande e descrição. Substituiu `FaixaTitulo`. **Não há breadcrumb nem
+  abas de seção** (removidos a pedido do usuário; o componente `Breadcrumb` foi apagado). A
+  lógica de "em que seção do menu estou" está em `src/lib/menu.ts` e também marca o item atual
+  na navbar.
+- Home, nesta ordem: hero em duas colunas; logo abaixo, o cabeçalho "Linhas de pesquisa"
+  (`secao_destaques`) com o **espectro eletromagnético** interativo (pedido do usuário: no topo
+  da página); faixa escura da apresentação; as linhas de pesquisa (destaques); nota de
+  coordenação; notícias em células; publicações em linhas. `Espectro.tsx` tem três partes:
+  `ProvedorEspectro` (envolve a home e guarda a faixa realçada), `Espectro` (desenho + botões,
+  que fixam uma faixa) e `LinhasPesquisa` (passar o mouse num destaque realça a faixa dele).
+- Equipe: coordenação em cartões grandes; demais categorias em grade de células, com foto
+  redonda (ou iniciais, quando não há foto). Publicações: números da produção (calculados),
+  artigos em **lista no formato do protótipo** (pedido do usuário em 2026-10-23, substituiu a
+  tabela da seção 9.2): título da seção com os anos em pílulas ao lado, busca, e cada artigo
+  em uma linha com ano (mono), título (link para o DOI), três primeiros autores + "et al.",
+  periódico com volume(número) e páginas, DOI e "Detalhes →" para a página do artigo. JCR e
+  colaboração internacional aparecem na linha quando preenchidos. Patentes em cartões.
+- Áreas de pesquisa (`/areas-de-pesquisa/`, pedido do usuário em 2026-10-23): índice em
+  pílulas e um bloco por área (`BlocoArea.tsx`), com imagem alternando de lado, número, faixa
+  do espectro, título, texto, etiquetas e botão. **Os textos vêm de `home.json` (`destaques`)**,
+  os mesmos da home, para não haver duas cópias; o subtítulo é `secao_destaques.texto`
+  (quando `descricao` da página for `null`). A cor do bloco segue a `faixa` do destaque.
+- Grupos (`/grupos/`): **lista em linhas no formato do protótipo** (pedido do usuário em
+  2026-10-23, substituiu a grade de cartões): título + tema principal (o primeiro de `temas`,
+  com ponto colorido), sigla da `instituicao` em mono, nomes da `coordenacao` + demais temas,
+  e "Conhecer →" (`ItemGrupo.tsx`). Cores dos pontos por tema em `_grupos.scss`. O protótipo
+  mostrava cidade/UF e palavras-chave, que não existem nos dados. Notícias, vídeos e grupos: filtro em pílulas acima da lista.
 
 ## 10. Etapas de execução
 

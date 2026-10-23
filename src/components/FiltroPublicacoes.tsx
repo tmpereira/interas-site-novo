@@ -10,10 +10,13 @@ export type ItemPublicacao = {
   /** Título já convertido de Markdown em linha para HTML. */
   tituloHtml: string;
   titulo: string;
-  autores: string;
+  autores: string[];
   ano: number;
   data: string;
   periodico: string | null;
+  volume: string | null;
+  numero: string | null;
+  paginas: string | null;
   grupos: string[];
   citacoes: number | null;
   /** JCR (fator de impacto). */
@@ -25,26 +28,26 @@ export type ItemPublicacao = {
 };
 
 type Props = {
+  /** Título da seção, exibido na mesma linha dos filtros de ano. */
+  titulo: string;
   itens: ItemPublicacao[];
   grupos: { slug: string; titulo: string }[];
 };
 
-type Coluna = "ano" | "titulo" | "jcr" | "autores" | "internacional";
-type Ordem = { coluna: Coluna; decrescente: boolean };
-
-const COLUNAS: { chave: Coluna; rotulo: string }[] = [
-  { chave: "ano", rotulo: "Ano" },
-  { chave: "titulo", rotulo: "Título" },
-  { chave: "jcr", rotulo: "JCR" },
-  { chave: "autores", rotulo: "Autores" },
-  { chave: "internacional", rotulo: "Internacional" },
-];
-
-const comparaTexto = (a: string, b: string) => a.localeCompare(b, "pt-BR", { sensitivity: "base" });
 const rotuloInternacional = (v: boolean | null) => (v === null ? "—" : v ? "Sim" : "Não");
 const formatarJcr = (v: number) => v.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 3 });
 
-export default function FiltroPublicacoes({ itens, grupos }: Props) {
+/** Autores abreviados: os três primeiros e "et al." */
+const autoresCurtos = (autores: string[]) => (autores.length > 3 ? `${autores.slice(0, 3).join("; ")} et al.` : autores.join("; "));
+
+/** Periódico com volume, número e páginas: "Lasers in Medical Science, 39(1), 12–20". */
+function veiculo(i: ItemPublicacao): string | null {
+  if (!i.periodico) return null;
+  const volume = i.volume ? `${i.volume}${i.numero ? `(${i.numero})` : ""}` : i.numero ? `(${i.numero})` : null;
+  return [i.periodico, volume, i.paginas].filter(Boolean).join(", ");
+}
+
+export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
   const [busca, setBusca] = useState("");
   const [ano, setAno] = useState("");
   const [grupo, setGrupo] = useState("");
@@ -52,7 +55,6 @@ export default function FiltroPublicacoes({ itens, grupos }: Props) {
   const [internacional, setInternacional] = useState("");
   const [minCitacoes, setMinCitacoes] = useState("");
   const [minImpacto, setMinImpacto] = useState("");
-  const [ordem, setOrdem] = useState<Ordem>({ coluna: "ano", decrescente: true });
 
   // Os controles que dependem de dados opcionais só aparecem quando há algum valor preenchido
   const temCitacoes = itens.some((i) => i.citacoes !== null);
@@ -60,33 +62,23 @@ export default function FiltroPublicacoes({ itens, grupos }: Props) {
   const temInternacional = itens.some((i) => i.internacional !== null);
   const valoresQualis = useMemo(() => [...new Set(itens.map((i) => i.qualis).filter((q): q is string => Boolean(q)))].sort(), [itens]);
   const anos = useMemo(() => [...new Set(itens.map((i) => i.ano))].sort((a, b) => b - a), [itens]);
-  const indiceBusca = useMemo(() => new Map(itens.map((i) => [i.id, normalizarBusca(`${i.titulo} ${i.autores} ${i.periodico ?? ""}`)])), [itens]);
+  const indiceBusca = useMemo(() => new Map(itens.map((i) => [i.id, normalizarBusca(`${i.titulo} ${i.autores.join(" ")} ${i.periodico ?? ""}`)])), [itens]);
 
   const visiveis = useMemo(() => {
     const termos = normalizarBusca(busca).split(/\s+/).filter(Boolean);
-    const lista = itens.filter((i) => {
-      if (ano && String(i.ano) !== ano) return false;
-      if (grupo && !i.grupos.includes(grupo)) return false;
-      if (qualis && i.qualis !== qualis) return false;
-      if (internacional && rotuloInternacional(i.internacional) !== internacional) return false;
-      if (minCitacoes && (i.citacoes ?? -1) < Number(minCitacoes)) return false;
-      if (minImpacto && (i.fator_impacto ?? -1) < Number(minImpacto)) return false;
-      const texto = indiceBusca.get(i.id) ?? "";
-      return termos.every((t) => texto.includes(t));
-    });
-    const porData = (a: ItemPublicacao, b: ItemPublicacao) => b.data.localeCompare(a.data) || a.id.localeCompare(b.id);
-    // Sem valor (JCR ou internacional ainda não informados) vai sempre para o fim
-    const numero = (v: number | null) => v ?? Number.NEGATIVE_INFINITY;
-    const base: Record<Coluna, (a: ItemPublicacao, b: ItemPublicacao) => number> = {
-      ano: (a, b) => a.data.localeCompare(b.data) || a.id.localeCompare(b.id),
-      titulo: (a, b) => comparaTexto(a.titulo, b.titulo),
-      jcr: (a, b) => numero(a.fator_impacto) - numero(b.fator_impacto),
-      autores: (a, b) => comparaTexto(a.autores, b.autores),
-      internacional: (a, b) => Number(a.internacional ?? -1) - Number(b.internacional ?? -1),
-    };
-    const sinal = ordem.decrescente ? -1 : 1;
-    return [...lista].sort((a, b) => sinal * base[ordem.coluna](a, b) || porData(a, b));
-  }, [itens, indiceBusca, busca, ano, grupo, qualis, internacional, minCitacoes, minImpacto, ordem]);
+    return itens
+      .filter((i) => {
+        if (ano && String(i.ano) !== ano) return false;
+        if (grupo && !i.grupos.includes(grupo)) return false;
+        if (qualis && i.qualis !== qualis) return false;
+        if (internacional && rotuloInternacional(i.internacional) !== internacional) return false;
+        if (minCitacoes && (i.citacoes ?? -1) < Number(minCitacoes)) return false;
+        if (minImpacto && (i.fator_impacto ?? -1) < Number(minImpacto)) return false;
+        const texto = indiceBusca.get(i.id) ?? "";
+        return termos.every((t) => texto.includes(t));
+      })
+      .sort((a, b) => b.data.localeCompare(a.data) || a.id.localeCompare(b.id));
+  }, [itens, indiceBusca, busca, ano, grupo, qualis, internacional, minCitacoes, minImpacto]);
 
   const filtrando = Boolean(busca || ano || grupo || qualis || internacional || minCitacoes || minImpacto);
   const limpar = () => {
@@ -98,26 +90,27 @@ export default function FiltroPublicacoes({ itens, grupos }: Props) {
     setMinCitacoes("");
     setMinImpacto("");
   };
-  const ordenarPor = (coluna: Coluna) =>
-    setOrdem((o) => (o.coluna === coluna ? { coluna, decrescente: !o.decrescente } : { coluna, decrescente: coluna === "ano" || coluna === "jcr" }));
 
   return (
     <div className="filtro-publicacoes">
+      <div className="filtro-publicacoes__topo">
+        <h2 className="filtro-publicacoes__titulo">{titulo}</h2>
+        <div className="filtro-publicacoes__anos" role="group" aria-label="Filtrar por ano">
+          <button type="button" className="filtro-publicacoes__ano" aria-pressed={ano === ""} onClick={() => setAno("")}>
+            Todos
+          </button>
+          {anos.map((a) => (
+            <button key={a} type="button" className="filtro-publicacoes__ano" aria-pressed={ano === String(a)} onClick={() => setAno(String(a))}>
+              {a}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="filtro-publicacoes__controles">
         <label className="filtro-publicacoes__campo filtro-publicacoes__campo--busca">
           <span className="filtro-publicacoes__rotulo">Buscar por título, veículo ou autor</span>
           <input type="search" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="Digite para buscar…" className="filtro-publicacoes__entrada" />
-        </label>
-        <label className="filtro-publicacoes__campo">
-          <span className="filtro-publicacoes__rotulo">Ano</span>
-          <select value={ano} onChange={(e) => setAno(e.target.value)} className="filtro-publicacoes__entrada">
-            <option value="">Todos</option>
-            {anos.map((a) => (
-              <option key={a} value={a}>
-                {a}
-              </option>
-            ))}
-          </select>
         </label>
         {temInternacional && (
           <label className="filtro-publicacoes__campo">
@@ -170,9 +163,7 @@ export default function FiltroPublicacoes({ itens, grupos }: Props) {
       </div>
 
       <p className="filtro-publicacoes__contagem" aria-live="polite">
-        {visiveis.length === itens.length
-          ? `${itens.length} publicações`
-          : `${visiveis.length} de ${itens.length} publicações`}
+        {visiveis.length === itens.length ? `${itens.length} publicações` : `${visiveis.length} de ${itens.length} publicações`}
         {filtrando && (
           <button type="button" className="filtro-publicacoes__limpar" onClick={limpar}>
             Limpar filtros
@@ -183,44 +174,37 @@ export default function FiltroPublicacoes({ itens, grupos }: Props) {
       {visiveis.length === 0 ? (
         <p className="filtro-publicacoes__vazio">Nenhuma publicação encontrada com esses filtros.</p>
       ) : (
-        <div className="tabela-artigos">
-          <table className="tabela-artigos__tabela">
-            <thead>
-              <tr>
-                {COLUNAS.map((c) => {
-                  const ativa = ordem.coluna === c.chave;
-                  return (
-                    <th key={c.chave} scope="col" className={`tabela-artigos__cabecalho tabela-artigos__cabecalho--${c.chave}`} aria-sort={ativa ? (ordem.decrescente ? "descending" : "ascending") : "none"}>
-                      <button type="button" className="tabela-artigos__ordenar" onClick={() => ordenarPor(c.chave)}>
-                        {c.rotulo}
-                        <span aria-hidden="true" className="tabela-artigos__seta">
-                          {ativa ? (ordem.decrescente ? "▼" : "▲") : "↕"}
-                        </span>
-                      </button>
-                    </th>
-                  );
-                })}
-              </tr>
-            </thead>
-            <tbody>
-              {visiveis.map((i) => (
-                <tr key={i.id}>
-                  <td className="tabela-artigos__ano">{i.ano}</td>
-                  <td className="tabela-artigos__titulo">
+        <ul className="lista-artigos">
+          {visiveis.map((i) => {
+            const publicadoEm = veiculo(i);
+            return (
+              <li key={i.id} className="lista-artigos__item">
+                <span className="lista-artigos__ano">{i.ano}</span>
+                <div className="lista-artigos__corpo">
+                  <h3 className="lista-artigos__titulo">
                     {i.doi ? (
                       <a href={`https://doi.org/${i.doi}`} target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: i.tituloHtml }} />
                     ) : (
                       <Link href={`/publicacoes/${i.id}/`} dangerouslySetInnerHTML={{ __html: i.tituloHtml }} />
                     )}
-                  </td>
-                  <td className="tabela-artigos__jcr">{i.fator_impacto !== null ? formatarJcr(i.fator_impacto) : "—"}</td>
-                  <td className="tabela-artigos__autores">{i.autores}</td>
-                  <td className="tabela-artigos__internacional">{rotuloInternacional(i.internacional)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                  </h3>
+                  {i.autores.length > 0 && <p className="lista-artigos__autores">{autoresCurtos(i.autores)}</p>}
+                  {publicadoEm && <p className="lista-artigos__periodico">{publicadoEm}</p>}
+                  {(i.doi || i.fator_impacto !== null || i.internacional) && (
+                    <p className="lista-artigos__meta">
+                      {i.fator_impacto !== null && <span className="lista-artigos__indicador">JCR {formatarJcr(i.fator_impacto)}</span>}
+                      {i.internacional && <span className="lista-artigos__indicador">Colaboração internacional</span>}
+                      {i.doi && <span className="lista-artigos__doi">DOI {i.doi}</span>}
+                    </p>
+                  )}
+                </div>
+                <Link href={`/publicacoes/${i.id}/`} className="lista-artigos__link">
+                  Detalhes →
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       )}
     </div>
   );

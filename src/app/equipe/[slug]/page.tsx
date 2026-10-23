@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import Breadcrumb from "@/components/Breadcrumb";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
+import { FotoPessoa } from "@/components/CardPessoa";
 import ListaPublicacoes from "@/components/ListaPublicacoes";
 import { carregarConteudo } from "@/lib/conteudo";
 import { gruposDaPessoa, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consultas";
@@ -35,49 +35,26 @@ export default async function PerfilPessoa({ params }: Props) {
 
   return (
     <div className="pagina">
-      <Breadcrumb
-        itens={[
-          { rotulo: "Coord. e Equipe", href: "/equipe/" },
-          ...(pessoa.cargo ? [{ rotulo: pessoa.cargo }] : []),
-          { rotulo: pessoa.nome },
-        ]}
-      />
-      <article className="perfil">
-        <header className="perfil__cabecalho">
-          {pessoa.foto && (
-            <div className="perfil__foto">
-              <Image src={pessoa.foto} alt={`Foto de ${pessoa.nome}`} fill sizes="255px" className="perfil__img" priority />
-            </div>
-          )}
-          <h1 className="perfil__nome">{pessoa.nome}</h1>
-          {pessoa.cargo && <p className="perfil__cargo">{pessoa.cargo}</p>}
-          {links.length > 0 && (
-            <ul className="perfil__links">
-              {links.map((l) => (
-                <li key={l.rotulo}>
-                  <a href={l.url} target="_blank" rel="noopener noreferrer" className="perfil__botao">
-                    <i className={`bi bi-${l.icone}`} aria-hidden="true" /> {l.rotulo}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </header>
-
-        {pessoa.instituicao && (
-          <section>
-            <h2>Instituição</h2>
-            <p>
-              {pessoa.instituicao.url ? (
-                <a href={pessoa.instituicao.url} target="_blank" rel="noopener noreferrer">
-                  {pessoa.instituicao.nome}
+      <CabecalhoPagina
+        caminho="/equipe/"
+        sobretitulo={pessoa.cargo}
+        titulo={pessoa.nome}
+        descricao={pessoa.instituicao?.nome}
+        midia={<FotoPessoa pessoa={pessoa} tamanho="perfil" alt={`Foto de ${pessoa.nome}`} />}
+      >
+        {links.length > 0 && (
+          <ul className="perfil__links">
+            {links.map((l) => (
+              <li key={l.rotulo}>
+                <a href={l.url} target="_blank" rel="noopener noreferrer" className="perfil__botao">
+                  <i className={`bi bi-${l.icone}`} aria-hidden="true" /> {l.rotulo}
                 </a>
-              ) : (
-                pessoa.instituicao.nome
-              )}
-            </p>
-          </section>
+              </li>
+            ))}
+          </ul>
         )}
+      </CabecalhoPagina>
+      <article className="perfil">
         {pessoa.areas && (
           <section>
             <h2>Áreas de Atuação</h2>

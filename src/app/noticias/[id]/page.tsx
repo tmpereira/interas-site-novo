@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/Breadcrumb";
-import FaixaTitulo from "@/components/FaixaTitulo";
+import Image from "next/image";
+import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { carregarConteudo } from "@/lib/conteudo";
 import { resumoDaNoticia } from "@/lib/consultas";
 import { formatarDataLonga } from "@/lib/formatadores";
@@ -36,26 +36,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PaginaNoticia({ params }: Props) {
   const n = noticiaPorId((await params).id);
   return (
-    <>
-      <FaixaTitulo titulo={n.titulo} etiquetas={n.categorias} />
-      <div className="pagina">
-        <Breadcrumb itens={[{ rotulo: "Notícias", href: "/noticias/" }, { rotulo: n.titulo }]} />
-        <article className="leitura">
-          <dl className="ficha">
-            {n.autor && (
-              <div>
-                <dt className="ficha__rotulo">Autor</dt>
-                <dd className="ficha__valor">{n.autor}</dd>
-              </div>
-            )}
+    <div className="pagina">
+      <CabecalhoPagina caminho="/noticias/" sobretitulo="Notícias" titulo={n.titulo} etiquetas={n.categorias} />
+      <article className="leitura">
+        <div className="leitura__capa">
+          <Image src={n.imagem} alt="" fill priority sizes="(min-width: 768px) 46rem, 100vw" className="leitura__capa-img" />
+        </div>
+        <dl className="ficha">
+          {n.autor && (
             <div>
-              <dt className="ficha__rotulo">Data de publicação</dt>
-              <dd className="ficha__valor">{formatarDataLonga(n.data)}</dd>
+              <dt className="ficha__rotulo">Autor</dt>
+              <dd className="ficha__valor">{n.autor}</dd>
             </div>
-          </dl>
-          <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(n.corpo, { rebaixarTitulos: true }) }} />
-        </article>
-      </div>
-    </>
+          )}
+          <div>
+            <dt className="ficha__rotulo">Data de publicação</dt>
+            <dd className="ficha__valor">{formatarDataLonga(n.data)}</dd>
+          </div>
+        </dl>
+        <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(n.corpo, { rebaixarTitulos: true }) }} />
+      </article>
+    </div>
   );
 }
