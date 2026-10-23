@@ -1,0 +1,309 @@
+{
+  "$comment": "Gerado por `npm run schemas` a partir de src/lib/esquemas.ts. Não edite à mão.",
+  "title": "content/site.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "descricao": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url_base": {
+      "type": "string",
+      "format": "uri"
+    },
+    "logo": {
+      "type": "string",
+      "pattern": "^\\/[^\\s]+$"
+    },
+    "logo_alt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "favicon": {
+      "type": "string",
+      "pattern": "^\\/[^\\s]+$"
+    },
+    "imagem_compartilhamento": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\/[^\\s]+$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "menu": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "rotulo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "link": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[/#]"
+                  },
+                  {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rotulo",
+              "link"
+            ],
+            "additionalProperties": {}
+          },
+          {
+            "type": "object",
+            "properties": {
+              "rotulo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "itens": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "rotulo": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "link": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^[/#]"
+                        },
+                        {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "rotulo",
+                    "link"
+                  ],
+                  "additionalProperties": {}
+                }
+              }
+            },
+            "required": [
+              "rotulo",
+              "itens"
+            ],
+            "additionalProperties": {}
+          }
+        ]
+      }
+    },
+    "anuncio": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            },
+            "ativo": {
+              "type": "boolean"
+            },
+            "icone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "texto": {
+              "type": "string"
+            },
+            "link": {
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[/#]"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "ativo",
+            "icone",
+            "texto",
+            "link"
+          ],
+          "additionalProperties": {}
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rodape": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\/[^\\s]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "texto": {
+          "type": "string"
+        },
+        "redes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icone": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rotulo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "icone",
+              "rotulo",
+              "url"
+            ],
+            "additionalProperties": {}
+          }
+        }
+      },
+      "required": [
+        "logo",
+        "texto",
+        "redes"
+      ],
+      "additionalProperties": {}
+    },
+    "google_analytics": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^G-[A-Z0-9]+$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "categorias_pessoas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chave": {
+            "type": "string",
+            "enum": [
+              "coordenacao",
+              "comite-gestor",
+              "pesquisador",
+              "colaborador",
+              "equipe-estrangeira",
+              "lider-laboratorio",
+              "apoio-tecnico",
+              "bolsista"
+            ]
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "chave",
+          "titulo"
+        ],
+        "additionalProperties": {}
+      }
+    },
+    "temas_grupos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "rotulo": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "slug",
+          "rotulo"
+        ],
+        "additionalProperties": {}
+      }
+    }
+  },
+  "required": [
+    "titulo",
+    "descricao",
+    "url_base",
+    "logo",
+    "logo_alt",
+    "favicon",
+    "imagem_compartilhamento",
+    "menu",
+    "anuncio",
+    "rodape",
+    "google_analytics",
+    "categorias_pessoas",
+    "temas_grupos"
+  ],
+  "additionalProperties": {}
+}

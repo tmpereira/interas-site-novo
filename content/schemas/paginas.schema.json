@@ -1,0 +1,47 @@
+{
+  "$comment": "Gerado por `npm run schemas` a partir de src/lib/esquemas.ts. Não edite à mão.",
+  "title": "content/paginas.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "paginas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "descricao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "conteudo": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "titulo",
+          "descricao",
+          "conteudo"
+        ],
+        "additionalProperties": {}
+      }
+    }
+  },
+  "required": [
+    "paginas"
+  ],
+  "additionalProperties": {}
+}

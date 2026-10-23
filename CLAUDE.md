@@ -87,8 +87,11 @@ previsível, validada e fácil de ler e editar por máquina.
 - `output: 'export'`, `images: { unoptimized: true }`, `trailingSlash: true`
 - **Bootstrap 5 + Bootswatch Materia** (via npm) + **Sass**
 - **Bootstrap Icons** (o site atual usa ícones `bi-*`)
-- `zod` para validar os JSON; `zod-to-json-schema` para gerar os JSON Schemas
-  (seção 6.0)
+- `zod` (v4) para validar os JSON; os JSON Schemas (seção 6.0) são gerados pelo
+  próprio Zod (`z.toJSONSchema`), sem pacote extra
+- Scripts em `scripts/*.ts` rodam direto no Node 24 (`node scripts/x.ts`, sem
+  `tsx`). Por isso o `package.json` tem `"type": "module"` e os imports entre
+  arquivos `.ts` usam a extensão (`./esquemas.ts`)
 - `remark` + `remark-gfm` + `rehype` para converter os campos `conteudo` e o
   corpo das notícias (Markdown) em HTML
 - `gray-matter` para ler o cabeçalho (front matter) das notícias
@@ -209,18 +212,19 @@ Categorias válidas (na ordem de exibição da página "Coordenação e Equipe")
 
 | chave | título da seção | pasta antiga | qtd. aprox. |
 |---|---|---|---|
-| `coordenacao` | Coordenação | `pessoas/coordenacao` | 3 |
+| `coordenacao` | Coordenação | `pessoas/coordenacao` | 2 |
 | `comite-gestor` | Comitê Gestor | `pessoas/membro-do-comite-gestor` | 4 |
-| `lider-laboratorio` | Líderes de Laboratórios Associados | `pessoas/lider-de-laboratorio-associado` | 9 |
 | `pesquisador` | Pesquisadores | `pessoas/pesquisador` | 17 |
-| `equipe-estrangeira` | Equipe Estrangeira | `pessoas/equipe-estrangeira` | 9 |
 | `colaborador` | Colaboradores | `pessoas/colaborador` | 6 |
-| `bolsista` | Bolsistas | `pessoas/bolsista` | 44 |
+| `equipe-estrangeira` | Equipe Estrangeira | `pessoas/equipe-estrangeira` | 9 |
+| `lider-laboratorio` | Líderes de Laboratórios Associados | `pessoas/lider-de-laboratorio-associado` | 9 |
 | `apoio-tecnico` | Apoio Técnico | `pessoas/apoio-tecnico` | 2 |
+| `bolsista` | Bolsistas | `pessoas/bolsista` | 44 |
 
-Confira na listagem antiga (`pessoas/coord-equipe.qmd`) a ordem real das seções
-e os títulos exatos, e siga o que estiver lá. Os títulos das seções ficam em
-`site.json` (não no código).
+A ordem acima é a real da listagem antiga (`pessoas/coord-equipe.qmd`). Os
+títulos das seções ficam em `site.json` (`categorias_pessoas`, lista de
+`{ chave, titulo }` na ordem de exibição); a validação exige um título para
+cada categoria.
 
 ### 6.2 `content/publicacoes.json`
 
@@ -431,21 +435,85 @@ Origem: `sobre-o-interas.qmd`, `areas-de-pesquisa.qmd`, `contato.qmd`.
 
 ### 6.8 `content/home.json`
 
-Textos e imagens da página inicial: `hero` (título, texto, imagem de fundo),
-`apresentacao` (texto), `destaques` (lista com `titulo`, `texto`, `imagem`,
-`posicao_imagem` = `esquerda` | `direita`, `botao` com rótulo e link), e
-quantos itens mostrar de publicações (6) e notícias (3). Origem: `index.qmd`.
-O HTML com estilo inline da home antiga vira dado aqui + classes CSS nos
-componentes.
+```json
+{
+  "$schema": "./schemas/home.schema.json",
+  "hero": { "titulo": "Iluminando o Futuro da Saúde", "texto": "No INTERAS...", "imagem": "/images/..." },
+  "apresentacao": "A pandemia de COVID-19 nos mostrou...",
+  "destaques": [
+    {
+      "titulo": "A Luz que Revela",
+      "texto": "Utilizamos a luz...",
+      "imagem": "/images/luz_que_revela.jpeg",
+      "posicao_imagem": "esquerda",
+      "botao": { "rotulo": "Veja os grupos que atuam nesse tema", "link": "/grupos/?tema=diagnostico" }
+    }
+  ],
+  "nota": "**Coordenação**: [Denise M. Zezell - IPEN - CNEN](/equipe/denise-maria-zezell/)  \n...",
+  "noticias": { "titulo": "Últimas notícias do INTERAS", "quantidade": 3 },
+  "publicacoes": { "titulo": "Últimas publicações do INTERAS", "quantidade": 6 }
+}
+```
+
+- `texto`, `apresentacao` e `nota` são Markdown. `botao` pode ser `null`
+  (o destaque "Moléculas Inteligentes" não tem botão). `nota` é o bloco de
+  coordenação abaixo dos destaques.
+- Origem: `index.qmd`. O HTML com estilo inline da home antiga vira dado aqui
+  + classes CSS nos componentes.
 
 ### 6.9 `content/site.json`
 
-Título, logo, favicon, itens do menu, `anuncio` (barra de aviso no topo: `id`,
-`ativo`, `icone`, `texto`, `link`, pode ser fechada pelo visitante), rodapé,
-redes sociais, ID do Google Analytics (`G-GSTPFS7CEE`), títulos das categorias
-de pessoas e `temas_grupos`. **Corrigir** no rodapé: o link do GitHub aponta
-para `ipencnensp/interaswebsite` (repositório antigo) e o do Twitter aponta só
-para `twitter.com`. Perguntar ao usuário quais links usar.
+```json
+{
+  "$schema": "./schemas/site.schema.json",
+  "titulo": "INTERAS",
+  "descricao": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde",
+  "url_base": "https://www.interas.org",
+  "logo": "/images/logo_pt_transparente.png",
+  "logo_alt": "INCT INTERAS",
+  "favicon": "/images/favicon.ico",
+  "imagem_compartilhamento": null,
+  "menu": [
+    { "rotulo": "INCT INTERAS", "itens": [ { "rotulo": "O INCT INTERAS", "link": "/sobre-o-interas/" } ] },
+    { "rotulo": "NOTÍCIAS", "link": "/noticias/" }
+  ],
+  "anuncio": { "id": "news-video2-inst-1-2026", "ativo": true, "icone": "play-btn", "texto": "📢 **Novos Vídeos...**", "link": "/videos/" },
+  "rodape": {
+    "logo": "/images/3125_bordas_minimas_redim.png",
+    "texto": "Copyright 2026 INTERAS",
+    "redes": [ { "icone": "github", "rotulo": "GitHub", "url": "https://github.com/..." } ]
+  },
+  "google_analytics": "G-GSTPFS7CEE",
+  "categorias_pessoas": [ { "chave": "coordenacao", "titulo": "COORDENAÇÃO" } ],
+  "temas_grupos": [ { "slug": "diagnostico", "rotulo": "Diagnóstico" } ]
+}
+```
+
+- `menu`: cada entrada é um link (`rotulo` + `link`) ou um submenu (`rotulo` +
+  `itens`). Links internos são rotas novas (`/videos/`), não `.qmd`.
+- `url_base` e `imagem_compartilhamento` servem ao sitemap e ao Open Graph.
+- `anuncio` pode ser `null`; o `id` muda quando o aviso muda, para reaparecer
+  para quem fechou o anterior.
+- `temas_grupos`: os grupos antigos também usam "computação científica", além
+  dos temas da seção 6.4.
+- **Corrigir** no rodapé: o link do GitHub aponta para
+  `ipencnensp/interaswebsite` (repositório antigo) e o do Twitter aponta só
+  para `twitter.com`. Perguntar ao usuário quais links usar.
+
+### 6.10 Validação (`src/lib/conteudo.ts`)
+
+Além do formato de cada campo, `npm run validar` e o build conferem:
+- **Erros** (interrompem o build): arquivo ausente ou JSON mal formado; `id`/
+  `slug` repetido; referência a pessoa, grupo ou tema inexistente; título
+  faltando para alguma categoria de pessoa; `ano` diferente do ano de `data`;
+  duas publicações com o mesmo DOI; imagem referenciada que não existe em
+  `public/`; nome de arquivo de notícia fora do padrão.
+- **Avisos** (não interrompem): itens fora da ordem do arquivo; data do
+  cabeçalho da notícia diferente da do nome do arquivo; publicações sem DOI com
+  mesmo título e ano.
+- As funções de ordenação de cada coleção (`compararPessoas`,
+  `compararPublicacoes`...) estão exportadas em `conteudo.ts`; usá-las ao gravar
+  os JSON para manter a ordem estável.
 
 ---
 

@@ -1,3 +1,14 @@
 {
-  "json.schemas": []
+  // Associa cada JSON de content/ ao seu schema (autocompletar e erros no editor).
+  // Os schemas são gerados por `npm run schemas` a partir de src/lib/esquemas.ts.
+  "json.schemas": [
+    { "fileMatch": ["/content/site.json"], "url": "./content/schemas/site.schema.json" },
+    { "fileMatch": ["/content/home.json"], "url": "./content/schemas/home.schema.json" },
+    { "fileMatch": ["/content/pessoas.json"], "url": "./content/schemas/pessoas.schema.json" },
+    { "fileMatch": ["/content/publicacoes.json"], "url": "./content/schemas/publicacoes.schema.json" },
+    { "fileMatch": ["/content/patentes.json"], "url": "./content/schemas/patentes.schema.json" },
+    { "fileMatch": ["/content/grupos.json"], "url": "./content/schemas/grupos.schema.json" },
+    { "fileMatch": ["/content/videos.json"], "url": "./content/schemas/videos.schema.json" },
+    { "fileMatch": ["/content/paginas.json"], "url": "./content/schemas/paginas.schema.json" }
+  ]
 }

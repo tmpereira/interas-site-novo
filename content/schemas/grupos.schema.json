@@ -1,0 +1,118 @@
+{
+  "$comment": "Gerado por `npm run schemas` a partir de src/lib/esquemas.ts. Não edite à mão.",
+  "title": "content/grupos.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "grupos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resumo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "imagem": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\/[^\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "temas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "instituicao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "site": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "coordenacao": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "abas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "titulo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "conteudo": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "titulo",
+                "conteudo"
+              ],
+              "additionalProperties": {}
+            }
+          },
+          "conteudo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "slug",
+          "titulo",
+          "resumo",
+          "imagem",
+          "temas",
+          "instituicao",
+          "site",
+          "coordenacao",
+          "abas",
+          "conteudo"
+        ],
+        "additionalProperties": {}
+      }
+    }
+  },
+  "required": [
+    "grupos"
+  ],
+  "additionalProperties": {}
+}

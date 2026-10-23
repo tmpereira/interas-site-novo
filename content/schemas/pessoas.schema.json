@@ -1,0 +1,182 @@
+{
+  "$comment": "Gerado por `npm run schemas` a partir de src/lib/esquemas.ts. Não edite à mão.",
+  "title": "content/pessoas.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "pessoas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "categoria": {
+            "type": "string",
+            "enum": [
+              "coordenacao",
+              "comite-gestor",
+              "pesquisador",
+              "colaborador",
+              "equipe-estrangeira",
+              "lider-laboratorio",
+              "apoio-tecnico",
+              "bolsista"
+            ]
+          },
+          "cargo": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ordem": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "foto": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\/[^\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "instituicao": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "url": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "nome",
+                  "url"
+                ],
+                "additionalProperties": {}
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "grupos": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "lattes": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "scholar": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "orcid": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "areas": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "atuacao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ativo": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "slug",
+          "nome",
+          "categoria",
+          "cargo",
+          "ordem",
+          "foto",
+          "instituicao",
+          "grupos",
+          "lattes",
+          "scholar",
+          "orcid",
+          "areas",
+          "atuacao",
+          "ativo"
+        ],
+        "additionalProperties": {}
+      }
+    }
+  },
+  "required": [
+    "pessoas"
+  ],
+  "additionalProperties": {}
+}
