@@ -6,6 +6,7 @@
       "nome": "Denise Maria Zezell",
       "categoria": "coordenacao",
       "cargo": "Coordenadora",
+      "cargo_en": "Coordinator",
       "ordem": null,
       "foto": "/fotos/pessoas/denise-maria-zezell.jpeg",
       "instituicao": {
@@ -20,7 +21,9 @@
       "orcid": "https://orcid.org/0000-0001-7404-9606",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6603450411",
       "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part.",
+      "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles",
       "atuacao": "Gerenciar o INCT, coordenação geral e dos subprojetos; liderar a equipe, coordenar os ensaios pré-clínicos (in vitro e in vivo); coordenar as ações de difusão científica; coordenar as ações de transferência de tecnologia para empresas e hospitais; coordenar a busca de parcerias nacionais e internacionais; coordenar as atividades de formação de recursos humanos.",
+      "atuacao_en": "Managing the INCT, with overall coordination and coordination of the subprojects; leading the team; coordinating the preclinical studies (in vitro and in vivo); coordinating science communication activities; coordinating technology transfer to companies and hospitals; coordinating the search for national and international partnerships; coordinating human resources training activities.",
       "ativo": true
     },
     {
@@ -28,6 +31,7 @@
       "nome": "Emiliano Horacio Medei",
       "categoria": "coordenacao",
       "cargo": "Vice-Coordenador",
+      "cargo_en": "Vice-Coordinator",
       "ordem": null,
       "foto": "/fotos/pessoas/emiliano-horacio-medei.jpeg",
       "instituicao": {
@@ -42,7 +46,9 @@
       "orcid": "https://orcid.org/0000-0002-0044-1311",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=24401270700",
       "areas": "Medicina, Fisiologia, Células tronco, Chagas, Eletrofisiologia Cardiaca, Arritmias Cardiacas",
+      "areas_en": "Medicine, Physiology, Stem cells, Chagas disease, Cardiac Electrophysiology, Cardiac Arrhythmias",
       "atuacao": "Será responsável pela caracterização e análise dos resultados relativos à fisiopatologia da fibrilação atrial (FA) induzida em modelo animal. A FA é a arritmia cardíaca mais frequente, sendo importante fator de morbidade e mortalidade. Na última década vários trabalhos têm mostrado que as patologias cardiovasculares, de alta relevância para a saúde pública, apresentam como pontos em comum o estabelecimento de uma inflamação sistêmica/local. As análises funcionais serão realizadas através de registros de eletrocardiograma e registro de potencial de ação e transiente de cálcio ventricular em coração inteiro, exvivo. Ainda, a geometria e função atrial serão analisadas utilizando RMN-7T e Ultrassonografia de alta resolução. A Microscopia de Fluorescência no Campo Local (ulsed Local Field Fluorescence Microscopy, PLFM nos auxiliará a estudar de maneira holística os fenômenos elétricos e o manejo do cálcio no coração inteiro simultaneamente, sem necessidade de isolamento de células cardíacas",
+      "atuacao_en": "Responsible for characterizing and analyzing the results on the pathophysiology of atrial fibrillation (AF) induced in an animal model. AF is the most common cardiac arrhythmia and an important cause of morbidity and mortality. Over the last decade, several studies have shown that cardiovascular diseases, which are highly relevant to public health, have in common the establishment of systemic/local inflammation. Functional analyses will be carried out through electrocardiogram recordings and recordings of action potentials and ventricular calcium transients in the whole heart, ex vivo. In addition, atrial geometry and function will be analyzed using 7T MRI and high-resolution ultrasonography. Pulsed Local Field Fluorescence Microscopy (PLFM) will help us study, holistically and simultaneously, electrical phenomena and calcium handling in the whole heart, without the need to isolate cardiac cells.",
       "ativo": true
     },
     {
@@ -50,6 +56,7 @@
       "nome": "Divanizia do Nascimento Souza",
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
+      "cargo_en": "Steering Committee Member",
       "ordem": null,
       "foto": "/fotos/pessoas/divanizia-do-nascimento-souza.jpg",
       "instituicao": {
@@ -62,7 +69,9 @@
       "orcid": "https://orcid.org/0000-0001-9634-7380",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55582700900",
       "areas": "Instrumentação para Medida e Controle de Radiação, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Métodos e Técnicas de Ensino, Física, Física da Matéria Condensada",
+      "areas_en": "Instrumentation for Radiation Measurement and Control, Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Teaching Methods and Techniques, Physics, Condensed Matter Physics",
       "atuacao": "O uso de fontes radioativas em medicina demanda estudos dosimétricos com técnicas que se adequem tanto a procedimentos de irradiação simulados quanto in vivo. Nas simulações, que podem ser físicas ou computacionais, pacientes ou amostras são representados por objetos simuladores (phantoms). Os phantoms podem ser físicos ou virtuais, tais como sólidos com uma geometria simples ou os antropomórficos. Neste projeto, a minha colaboração e do grupo e laboratório de Física Médica que coordeno na Universidade Federal de Sergipe será realizar procedimentos dosimétricos empregado técnicas luminescentes e computacionais. Será enfatizado o desenvolvimento de protocolos dosimétricos para radioterapia empregando fontes radioativas sintetizadas e caracterizadas neste projeto e de demais feixes de radiação de interesse. A termoluminescência e a luminescência opticamente estimulada serão as técnicas físicas empregadas; para as simulações computacionais será empregado o código computacional Monte Carlo",
+      "atuacao_en": "The use of radioactive sources in medicine requires dosimetric studies with techniques suited to both simulated and in vivo irradiation procedures. In simulations, which may be physical or computational, patients or samples are represented by phantoms. Phantoms can be physical or virtual, such as solids with simple geometry or anthropomorphic phantoms. In this project, my contribution and that of the Medical Physics group and laboratory I coordinate at the Universidade Federal de Sergipe will be to carry out dosimetric procedures using luminescence and computational techniques. Emphasis will be placed on developing dosimetric protocols for radiotherapy using the radioactive sources synthesized and characterized in this project and other radiation beams of interest. Thermoluminescence and optically stimulated luminescence will be the physical techniques used; the computer simulations will use the Monte Carlo code.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -71,6 +80,7 @@
       "nome": "Herculano da Silva Martinho",
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
+      "cargo_en": "Steering Committee Member",
       "ordem": null,
       "foto": "/fotos/pessoas/herculano-da-silva-martinho.jpg",
       "instituicao": {
@@ -82,7 +92,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=YHF4glsAAAAJ",
       "orcid": "https://orcid.org/0000-0002-7690-014X",
       "areas": "Física da Matéria Condensada, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Propriedades Térmicas da Matéria Condensada, Modelos Analíticos e de Simulação, Engenharia Biomédica",
+      "areas_en": "Condensed Matter Physics, Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Thermal Properties of Condensed Matter, Analytical and Simulation Models, Biomedical Engineering",
       "atuacao": "Liderará experimentos envolvendo espectroscopia vibracional (espectroscopias Raman, Absorção no Infravermelho) em escalas macro (milímetros), micro (microns), e nano (200 nanômetros) de amostras de biofluidos (saliva, plasma, sangue) de pacientes acometidos por doenças ou situações clínicas onde inflamação ou hiperinflamação são fatores importantes ((por exemplo COVID-19, ¿Monkeypox¿). Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver metodologia adequada para a obtenção dos sinais espectrais; ii) liderar o desenvolvimento de métodos de análise dos dados espectrais, usando ferramentas de mineração de dados; iii) liderar a busca por possíveis correlações entre os achados espectrais e outras técnicas; iv) liderar o desenvolvimento de simulações computacionais de macromoléculas e tecidos a fim de subsidiar a interpretação dos dados.",
+      "atuacao_en": "Will lead experiments involving vibrational spectroscopy (Raman and infrared absorption spectroscopy) at macro (millimeters), micro (microns) and nano (200 nanometers) scales on biofluid samples (saliva, plasma, blood) from patients affected by diseases or clinical conditions in which inflammation or hyperinflammation are important factors (e.g., COVID-19, \"Monkeypox\"). The main scientific and technological challenges to be overcome include, but are not limited to: i) developing an appropriate methodology for obtaining the spectral signals; ii) leading the development of methods for analyzing the spectral data using data mining tools; iii) leading the search for possible correlations between the spectral findings and other techniques; iv) leading the development of computer simulations of macromolecules and tissues to support data interpretation.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -91,6 +103,7 @@
       "nome": "Maria Elisa Chuery Martins Rostelato",
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
+      "cargo_en": "Steering Committee Member",
       "ordem": null,
       "foto": "/fotos/pessoas/maria-elisa-chuery-martins-rostelato.jpg",
       "instituicao": {
@@ -103,7 +116,9 @@
       "orcid": "https://orcid.org/0000-0003-2943-6097",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8613224900",
       "areas": "Produção de Radioisótopos, Aplicações Industriais de Radioisótopos, Produção de Fontes Radioativas",
+      "areas_en": "Radioisotope Production, Industrial Applications of Radioisotopes, Production of Radioactive Sources",
       "atuacao": "Responsável pelo desenvolvimento de novas tecnologias para tratamento de câncer com radiações ionizantes, em especial a nanobraquiterapia, e pelo Laboratório de Produção de Fontes Radioativas para Radioterapia do IPEN, que produz e distribui fontes radioativas para os hospitais, desde 1997. Os principais desafios incluem: síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor; ensaios de citotoxicidade in vitro; ensaios em modelo animal de tumor de próstata; associação da Terapia com Laser de Baixa Potência à nanobraquiterapia in vivo; desenvolvimento de ensaios pré-clínicos de câncer de próstata para investigar o efeito biológico da associação das radiações ionizante e não ionizante; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica, ao uso de fontes radioativas em câncer, auxiliando nas tomadas de decisões na Saúde; dosimetria em radioterapia.",
+      "atuacao_en": "Responsible for developing new technologies for cancer treatment with ionizing radiation, especially nanobrachytherapy, and for IPEN's Laboratory for the Production of Radioactive Sources for Radiotherapy, which has produced and distributed radioactive sources to hospitals since 1997. The main challenges include: synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting; in vitro cytotoxicity assays; studies in an animal model of prostate tumor; combining Low-Level Laser Therapy with nanobrachytherapy in vivo; developing preclinical prostate cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation; conducting clinical trials to increase the level of evidence in the scientific literature on the use of radioactive sources in cancer, supporting health decision-making; dosimetry in radiotherapy.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -112,6 +127,7 @@
       "nome": "Wagner de Rossi",
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
+      "cargo_en": "Steering Committee Member",
       "ordem": null,
       "foto": "/fotos/pessoas/wagner-de-rossi.jpg",
       "instituicao": {
@@ -124,7 +140,9 @@
       "orcid": "https://orcid.org/0000-0003-1371-7521",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=16311450700",
       "areas": "Processos de Usinagem a Laser, microusinagem com laser de femtosegundo, Soldagem a Laser, Lasers",
+      "areas_en": "Laser Machining Processes, femtosecond laser micromachining, Laser Welding, Lasers",
       "atuacao": "1-Responsável pela Estação de microusinagem com laser de femtosegundos.",
+      "atuacao_en": "1- Responsible for the femtosecond laser micromachining station.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -133,6 +151,7 @@
       "nome": "Anderson Zanardi de Freitas",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/anderson-zanardi-de-freitas.jpg",
       "instituicao": {
@@ -145,7 +164,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8572637000",
       "areas": "Médotos de Diagnóstico Ópticos, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Laser, Sensoriamento Remoto, Linguagens de Programação",
+      "areas_en": "Optical Diagnostic Methods, Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Laser, Remote Sensing, Programming Languages",
       "atuacao": "Gerenciar os experimentos envolvendo a técnica de tomografia por coerência óptica para realização de caracterizações morfológicas e funcionais (microfluxo) de tecidos biológicos (biópsia óptica), envolvendo as técnicas de fluxometria doppler e laser speckle. Coordenar os experimentos no IPEN, envolvendo caracterização espectral de tecidos biológicos por meio de espalhamento Raman em escala micrométrica e nanométrica com a utilização das técnicas TERS (Tip Enhanced Raman Spectroscopy) e SNOM.",
+      "atuacao_en": "Managing the experiments using optical coherence tomography for the morphological and functional (microflow) characterization of biological tissues (optical biopsy), involving Doppler flowmetry and laser speckle techniques. Coordinating the experiments at IPEN involving the spectral characterization of biological tissues by Raman scattering at the micrometer and nanometer scales, using TERS (Tip Enhanced Raman Spectroscopy) and SNOM.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -154,6 +175,7 @@
       "nome": "Ariel Escobar",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -166,6 +188,7 @@
       "orcid": "https://orcid.org/0000-0003-1705-9546",
       "areas": null,
       "atuacao": "Em seu grupo na University of California ¿Merced¿ USA irá conduzir estudos eletrofisiológicos e medidas de transiente de cálcio em coração inteiro.",
+      "atuacao_en": "Will conduct electrophysiological studies and whole-heart calcium transient measurements in the group at the University of California, Merced (USA).",
       "ativo": true
     },
     {
@@ -173,6 +196,7 @@
       "nome": "Carlos Alberto Zeituni",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/carlos-alberto-zeituni.jpg",
       "instituicao": {
@@ -185,7 +209,9 @@
       "orcid": "https://orcid.org/0000-0002-7303-6720",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6508070904",
       "areas": "Exames Pós Irradiação, Aplicações Industriais de Radioisótopos, Administração de Recursos Humanos, Garantia de Controle de Qualidade",
+      "areas_en": "Post-Irradiation Examination, Industrial Applications of Radioisotopes, Human Resources Management, Quality Control Assurance",
       "atuacao": "Responsável pela produçao de novas fontes radioativas para o desenvolvimento de novas tecnologias para tratamento de câncer. Irradiar as nanoparticulas no reator nuclear IEA-R1 desenvolvendo previamente a tecnologia para que não ocorra a aglutinação das mesmas durante o tempo da irradiação. Além disso será responsável pela manipulação das nanopartículas radioativas na hot-cell do CETER (Centro de Tecnologia das Radiações do IPENCNEN) de forma que durante a funcionalização das nanos com o material carreador químico, todo o processo ocorra de maneira segura e que garanta a minimização de dose dos operadores/pesquisadores nesta etapa do projeto.",
+      "atuacao_en": "Responsible for producing new radioactive sources for the development of new cancer treatment technologies. Irradiating the nanoparticles in the IEA-R1 nuclear reactor, after first developing the technology to prevent them from agglomerating during irradiation. Also responsible for handling the radioactive nanoparticles in the hot cell of CETER (IPEN-CNEN's Radiation Technology Center), so that the whole process of functionalizing the nanoparticles with the chemical carrier is carried out safely and keeps the dose to operators/researchers to a minimum at this stage of the project.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -194,6 +220,7 @@
       "nome": "Daniel Perez Vieira",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/daniel-perez-vieira.jpg",
       "instituicao": {
@@ -206,7 +233,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55504380000",
       "areas": "Radiologia e Fotobiologia, Biologia Molecular, Hematologia, Protozoologia Parasitária Humana, Protozoologia Parasitária Animal, Imunologia Celular",
+      "areas_en": "Radiology and Photobiology, Molecular Biology, Hematology, Human Parasitic Protozoology, Animal Parasitic Protozoology, Cellular Immunology",
       "atuacao": "Planejamento, execução e apoio para ensaios de citotoxicidade, genotoxicidade e microscopia óptica de fluorescência para avaliação dos efeitos de radiofármacos ou de novos compostos em modelos in vitro estruturados em duas ou três dimensões. Poderão ser utilizados modelos tumorais ou não-tumorais, majoritariamente na forma de esferoides de linhagem celular única.",
+      "atuacao_en": "Planning, conducting and supporting cytotoxicity and genotoxicity assays and fluorescence optical microscopy to evaluate the effects of radiopharmaceuticals or new compounds in two- or three-dimensional in vitro models. Tumor or non-tumor models may be used, mostly in the form of single-cell-line spheroids.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -215,6 +244,7 @@
       "nome": "Eduardo Landulfo",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/eduardo-landulfo.jpg",
       "instituicao": {
@@ -227,7 +257,9 @@
       "orcid": "https://orcid.org/0000-0002-9691-5306",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6602420251",
       "areas": "Sensoriamento Remoto, Métodos Experimentais e Instrumentação para Partículas Elementares e Física Nuclear, Estrutura Nuclear, Desenvolvimento de Instrumentação Geofísica",
+      "areas_en": "Remote Sensing, Experimental Methods and Instrumentation for Elementary Particles and Nuclear Physics, Nuclear Structure, Development of Geophysical Instrumentation",
       "atuacao": "Desenvolver uma metodologia de detecção de bioaerossóis na atmosfera e ambientes fechados e concomitantemente levantar um banco de dados de fluorescência e espectroscopia Raman + FTIR de aerossóis de origem biológica.",
+      "atuacao_en": "Developing a methodology for detecting bioaerosols in the atmosphere and in indoor environments and, at the same time, building a database of fluorescence and Raman + FTIR spectroscopy of aerosols of biological origin.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -236,6 +268,7 @@
       "nome": "Emerson Soares Bernardes",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/emerson-soares-bernardes.jpg",
       "instituicao": {
@@ -247,7 +280,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Imagem Molecular, Glicobiologia tumoral, Glicoimunologia, Inflamação e Câncer",
+      "areas_en": "Molecular Imaging, Tumor Glycobiology, Glycoimmunology, Inflammation and Cancer",
       "atuacao": "Desenvolver radiofármacos baseados em anticorpos como estratégia diagnóstica e terapêutica no combate ao câncer. O desenvolvimento de radio-imunoconjugados tem como potencial não só prever o nível de progressão da doença oncológica, como também auxiliar no planejamento do tratamento e na monitorização da resposta ao tratamento em pacientes com câncer. Entre os principais desafios encontram-se: (1) radiomarcação de anticorpos com radioisótopos emissores de pósitron para imagem diagnóstica por Tomografia por Emissão de Pósitron (PET) e radioisótopos emissores gama para a imagem diagnóstica por Tomografia por Emissão de Fóton Único (SPECT) e respectivo controle de qualidade; (2) Desenvolvimento de ensaios pré-clínicos in vitro para investigar a imunoreatividade dos radio-imunoconjugados; (3) Desenvolvimento de modelos tumorais in vivo relevantes para a realização de ensaios pré-clinicos de imagem PET/SPECT, biodistribuição e farmacocinética.",
+      "atuacao_en": "Developing antibody-based radiopharmaceuticals as a diagnostic and therapeutic strategy against cancer. Radioimmunoconjugates have the potential not only to predict the level of progression of oncological disease, but also to help plan treatment and monitor treatment response in cancer patients. The main challenges include: (1) radiolabeling antibodies with positron-emitting radioisotopes for Positron Emission Tomography (PET) diagnostic imaging and with gamma-emitting radioisotopes for Single Photon Emission Computed Tomography (SPECT) diagnostic imaging, and the corresponding quality control; (2) developing in vitro preclinical assays to investigate the immunoreactivity of the radioimmunoconjugates; (3) developing relevant in vivo tumor models for preclinical PET/SPECT imaging, biodistribution and pharmacokinetic studies.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -256,6 +291,7 @@
       "nome": "Ilka Tiemy Kato",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/ilka-tiemy-kato.jpg",
       "instituicao": {
@@ -268,7 +304,9 @@
       "orcid": "https://orcid.org/0000-0003-4365-965X",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8398276600",
       "areas": "ESTOMATOLOGIA, Terapia Fotodinâmica, Modelagem de Sistemas Biológicos, Laser em Odontologia",
+      "areas_en": "Stomatology, Photodynamic Therapy, Modeling of Biological Systems, Lasers in Dentistry",
       "atuacao": "Empregar a biofotônica para estudar a interação da radiação não ionizante com os tecidos do sistema nervoso central e desenvolver estratégias terapêuticas que empregam tecnologias baseadas em luz no tratamento das sequelas causadas pela asfixia perinatal. Os principais desafios a serem superados: desenvolver metodologias de análise para avaliar a penetração da radiação nas estruturas do encéfalo de animais neonatos; desenvolver e aprimorar estratégias terapêuticas para evitar ou minimizar as sequelas causadas pela privação de oxigênio nos tecidos cerebrais.",
+      "atuacao_en": "Using biophotonics to study the interaction of non-ionizing radiation with central nervous system tissues and to develop therapeutic strategies that use light-based technologies to treat the sequelae of perinatal asphyxia. The main challenges to be overcome: developing analysis methodologies to assess the penetration of radiation into the brain structures of neonatal animals; developing and improving therapeutic strategies to prevent or minimize the sequelae caused by oxygen deprivation in brain tissue.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -277,6 +315,7 @@
       "nome": "João Loures Salinet Júnior",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/joao-loures-salinet-junior.jpg",
       "instituicao": {
@@ -288,7 +327,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Engenharia Biomédica, Bioengenharia, Instrumentação Odontológica e Médico-Hospitalar, Processamento de Sinais Biológicos",
+      "areas_en": "Biomedical Engineering, Bioengineering, Dental and Medical-Hospital Instrumentation, Biological Signal Processing",
       "atuacao": "A fibrilação atrial (FA) é a arritmia cardíaca sustentada mais frequente na prática clínica, considerada uma epidemia cardiovascular não infecciosa crônica, com sérias ameaças à saúde humana, e grande consumo de recursos. Devido à complexidade dessa arritmia e grande sensibilidade a erros pelos atuais sistemas comerciais, a localização das áreas responsáveis pelo disparo e manutenção da FA, para cauterização e eliminação da arritmia, é o atual desafio clínico. Este projeto visa caracterizar o miocárdio através da biofotônica e a óptica biomédica, relacionando-o com os padrões e mecanismos a serem observados durante um modelo experimental in situ de FA induzida em coelhos, através do mapeamento óptico panorâmico e elétrico simultaneamente, de forma a possibilitar a geração de mapas eletrofisiológicos e eletrocardiográficos mais realísticos com a fisiopatologia da FA, que podem ser posteriormente trasladados para a prática clínica, através do aprimoramento dos equipamentos comerciais.",
+      "atuacao_en": "Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia in clinical practice. It is considered a chronic non-communicable cardiovascular epidemic, poses serious threats to human health and consumes substantial resources. Because of the complexity of this arrhythmia and the high susceptibility of current commercial systems to errors, locating the areas responsible for triggering and maintaining AF, so that they can be ablated and the arrhythmia eliminated, is the current clinical challenge. This project aims to characterize the myocardium using biophotonics and biomedical optics, relating it to the patterns and mechanisms observed in an in situ experimental model of AF induced in rabbits, through simultaneous panoramic optical and electrical mapping, so as to generate electrophysiological and electrocardiographic maps that better reflect the pathophysiology of AF and can later be translated into clinical practice by improving commercial equipment.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -297,6 +338,7 @@
       "nome": "Luciane Hiramatsu Azevedo",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/luciane-hiramatsu-azevedo.jpg",
       "instituicao": {
@@ -308,7 +350,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=BKOvvrMAAAAJ",
       "orcid": "https://orcid.org/0000-0001-9481-0108",
       "areas": "Odontologia, Odontopediatria, LASER",
+      "areas_en": "Dentistry, Pediatric Dentistry, LASER",
       "atuacao": "Utilizar os lasers de alta potência no tratamento cirúrgico de lesões dos tecidos moles orais em pacientes que apresentem tumores benignos, lesões vasculares e lesões potencialmente cancerizáveis. As lesões removidas serão encaminhadas para exames histopatológicos (Departamento de Patologia da FOUSP). A eficácia da aplicação de lasers de alta potência no tratamento de lesões da mucosa oral será avaliada dentro dos seguintes critérios: ausência de recidiva após 1 (no mínimo) de seguimento clínico, conforto do paciente no pós- operatório, sintomatologia e uso de medicamentos analgésicos e antiinflamatórios. Promover treinamento de profissionais e atuar na difusào cientifica.",
+      "atuacao_en": "Using high-power lasers in the surgical treatment of oral soft tissue lesions in patients with benign tumors, vascular lesions and potentially malignant lesions. The removed lesions will be sent for histopathological examination (Department of Pathology, FOUSP). The effectiveness of high-power lasers in treating oral mucosal lesions will be assessed by the following criteria: absence of recurrence during clinical follow-up, patient comfort after surgery, symptoms and use of analgesic and anti-inflammatory drugs. Training professionals and contributing to science communication.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -317,6 +361,7 @@
       "nome": "Luis Felipe das Chagas e Silva de Carvalho",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/luis-felipe-das-chagas-e-silva-de-carvalho.jpg",
       "instituicao": {
@@ -328,7 +373,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=xDsvfUEAAAAJ",
       "orcid": null,
       "areas": "Nanobiotecnologia, Estomatologia, Câncer Bucal",
+      "areas_en": "Nanobiotechnology, Stomatology, Oral Cancer",
       "atuacao": "Será responsável por investigar amostras de salivas de pacientes com câncer bucal e normasis visando 1) padronizar a caracterização do biofluído em indivíduos saudáveis como grupo comparador; 2) investigar fatores confundidores do paciente (por exemplo, fumantes versus não fumantes); 3) investigar condições potencialmente malignas. Sua abordagem terá viés diretamente clínico, em conjunto com a CK Estomatologia e outros parceiros neste projeto.",
+      "atuacao_en": "Responsible for investigating saliva samples from patients with oral cancer and from healthy individuals in order to 1) standardize the characterization of the biofluid in healthy individuals as a comparison group; 2) investigate patient confounding factors (e.g., smokers versus non-smokers); 3) investigate potentially malignant conditions. The approach will be directly clinical, together with CK Estomatologia and other partners in this project.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -337,6 +384,7 @@
       "nome": "Marcus Paulo Raele",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/marcus-paulo-raele.jpg",
       "instituicao": {
@@ -348,7 +396,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=kfOAsHIAAAAJ",
       "orcid": "https://orcid.org/0000-0002-6461-6766",
       "areas": "Ótica, Interferometria, Física Nuclear, Estrutura Nuclear",
+      "areas_en": "Optics, Interferometry, Nuclear Physics, Nuclear Structure",
       "atuacao": "Propor, executar e auxiliar na análise de características ópticas de tecidos biológicos via espectroscopia de absorção visando um melhor entendimento da aplicação de radiação não ionizante transcraniana em camundongos neonatos (em parceria com Profa Dra Ilka Tiemy Kato Prates, UFABC). Produzir, via ablação de laser de femtosegundos nanopartículas de ouro para aplicação em nano braquiterapia (em parceria com a Profa Dra Elisa Rostelato e Prof Dr. Wagner de Rossi IPEN).",
+      "atuacao_en": "Proposing, conducting and helping analyze the optical characteristics of biological tissues by absorption spectroscopy, aiming at a better understanding of the application of transcranial non-ionizing radiation in neonatal mice (in partnership with Prof. Dr. Ilka Tiemy Kato Prates, UFABC). Producing gold nanoparticles by femtosecond laser ablation for use in nanobrachytherapy (in partnership with Prof. Dr. Elisa Rostelato and Prof. Dr. Wagner de Rossi, IPEN).",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -357,6 +407,7 @@
       "nome": "María de la Salud Guillhem Sánchez",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -369,6 +420,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "A Profa Guillhem é especialista em estudos em fibrilação atrial, e sua contribuição no projeto envolve o modelo animal, setup experimental e análise crítica dos resultados.",
+      "atuacao_en": "Prof. Guillhem is a specialist in atrial fibrillation studies and contributes to the project with the animal model, the experimental setup and the critical analysis of the results.",
       "ativo": true
     },
     {
@@ -376,6 +428,7 @@
       "nome": "Mario Olimpio de Menezes",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/mario-olimpio-de-menezes.jpg",
       "instituicao": {
@@ -390,7 +443,9 @@
       "orcid": "https://orcid.org/0000-0003-0263-3541",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57211271327",
       "areas": "Inteligência Artificial e Aprendizado de Máquina, Física Nuclear, Modelos Analíticos e de Simulação, Computação Paralela e Distribuída, Ciência da Computação, Física",
+      "areas_en": "Artificial Intelligence and Machine Learning, Nuclear Physics, Analytical and Simulation Models, Parallel and Distributed Computing, Computer Science, Physics",
       "atuacao": "Estudo e aplicação de aprendizado de máquina, redes neurais diversas e outras técnicas de inteligência artificial para análises de dados e imagens, geração de insights e melhoria de processos. Analisar imagens hiperespectrais de amostras de tecidos irradiados por luz em diversos processos biológicos no tratamentos de cânceres. Os principais desafios científicos e tecnológicos que deverá superar incluem, mas não se limitam a: i) apropriação dos conceitos básicos relacionados à técnica de FTIR; ii) apropriação dos conceitos básicos da aquisição das imagens e dos respectivos espectrômetros; iii) identificação das técnicas de aprendizado de máquina apropriadas para análises deste tipo de imagens; iv) expor as explicações das técnicas de aprendizado de máquina empregadas nas análises de modo a aumentar a confiabilidade dos resultados; v) buscar o engajamento com outros pesquisadores de aprendizado de máquina e inteligência artificial do projeto visando fomentar a formação de alunos.",
+      "atuacao_en": "Study and application of machine learning, various neural networks and other artificial intelligence techniques for data and image analysis, generating insights and improving processes. Analyzing hyperspectral images of tissue samples irradiated by light in various biological processes in cancer treatment. The main scientific and technological challenges to be overcome include, but are not limited to: i) mastering the basic concepts of the FTIR technique; ii) mastering the basic concepts of image acquisition and of the corresponding spectrometers; iii) identifying machine learning techniques suitable for analyzing this type of image; iv) explaining the machine learning techniques used in the analyses so as to increase the reliability of the results; v) engaging with other machine learning and artificial intelligence researchers in the project to foster student training.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -399,6 +454,7 @@
       "nome": "Martha Simões Ribeiro",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/martha-simoes-ribeiro.jpg",
       "instituicao": {
@@ -411,7 +467,9 @@
       "orcid": "https://orcid.org/0000-0002-4203-1134",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7201715432",
       "areas": "Terapia Óptica, Biofotônica, Radiologia e Fotobiologia",
+      "areas_en": "Optical Therapy, Biophotonics, Radiology and Photobiology",
       "atuacao": "Desenvolver estratégias terapêuticas de vanguarda baseadas em radiações e sistemas nanoestruturados para combate ao câncer e doenças infecciosas resistentes, de modo a fornecer tecnologias de ponta para a melhora da qualidade de vida da população. Os principais desafios incluem: desenvolvimento de ensaios pré-clínicos de câncer de mama para investigar o efeito biológico da associação das radiações ionizante e não ionizante; desenvolvimento de modelos pré-clínicos de doenças infecciosas (bacterianas, fúngicas e parasitárias) para explorar o uso de compostos fotoativos e nanoestruturados; Desenvolver irradiadores dedicados baseados em LEDs, em parceria com uma startup, para tratamento de infecções resistentes a antimicrobianos convencionais bem como verificar a viabilidade do uso de OLEDs como curativo em infecções de pele; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica do uso de tecnologias baseadas em luz, para tomada de decisões.",
+      "atuacao_en": "Developing cutting-edge therapeutic strategies based on radiation and nanostructured systems to fight cancer and resistant infectious diseases, providing state-of-the-art technologies to improve the population's quality of life. The main challenges include: developing preclinical breast cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation; developing preclinical models of infectious diseases (bacterial, fungal and parasitic) to explore the use of photoactive and nanostructured compounds; developing dedicated LED-based irradiators, in partnership with a startup, to treat infections resistant to conventional antimicrobials, as well as assessing the feasibility of using OLEDs as dressings for skin infections; conducting clinical trials to increase the level of evidence in the scientific literature on the use of light-based technologies, to support decision-making.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -420,6 +478,7 @@
       "nome": "Moisés Oliveira dos Santos",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/moises-oliveira-dos-santos.jpg",
       "instituicao": {
@@ -432,7 +491,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56081210300",
       "areas": "Física Geral, Física da Matéria Condensada, Ótica, Robótica, Mecatrônica e Automação, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part.",
+      "areas_en": "General Physics, Condensed Matter Physics, Optics, Robotics, Mechatronics and Automation, Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles",
       "atuacao": "Estudar e desenvolver (i) métodos e dispositivos de análise de imagem multiespectral que são capazes de recuperar dados de imagens hiperespectrais; (ii) desenvolver métodos de análise de imagens (classificação e diferenciação) hiperespectrais na faixa do infravermelho médio (espectroscopia vibracional) e na região do visível (microscopia óptica) de amostras de câncer de mama e outros tecidos biológicos. As análises serão baseadas em aprendizado de máquina, incluindo aprendizado profundo.",
+      "atuacao_en": "Studying and developing (i) multispectral image analysis methods and devices capable of recovering hyperspectral image data; (ii) methods for analyzing (classifying and differentiating) hyperspectral images in the mid-infrared range (vibrational spectroscopy) and in the visible region (optical microscopy) of breast cancer samples and other biological tissues. The analyses will be based on machine learning, including deep learning.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -441,6 +502,7 @@
       "nome": "Niklaus Ursus Wetter",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": "/fotos/pessoas/niklaus-ursus-wetter.jpg",
       "instituicao": {
@@ -453,7 +515,9 @@
       "orcid": "https://orcid.org/0000-0002-9379-9530",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6701628386",
       "areas": "Ótica, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Lasers, Processamento de Sinais Biológicos, Instrumentação Odontológica e Médico-Hospitalar",
+      "areas_en": "Optics, Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Lasers, Biological Signal Processing, Dental and Medical-Hospital Instrumentation",
       "atuacao": "1) Responsável pelo equipamento multiusuário n-SNOM (Scanning Near Field Optical Microscopy): (https://www.sites.google.com/site/ipencla/multiusuario/sistemas-fapesp/snom) 2) Dar apoio aos experimentos que envolvem medidas de microRaman, nanoRaman, TERS (Tip Enhanced Raman Spectroscopy). 3) Desenvolvimento de substratos SERS (Surface Enhanced Raman Spectroscopy) para medidas em amostras biológicas.",
+      "atuacao_en": "1) Responsible for the n-SNOM (Scanning Near Field Optical Microscopy) multi-user facility: (https://www.sites.google.com/site/ipencla/multiusuario/sistemas-fapesp/snom) 2) Supporting experiments involving microRaman, nanoRaman and TERS (Tip Enhanced Raman Spectroscopy) measurements. 3) Developing SERS (Surface Enhanced Raman Spectroscopy) substrates for measurements on biological samples.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -462,6 +526,7 @@
       "nome": "Orlando Rodrigues Junior",
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
+      "cargo_en": "Researcher",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -474,7 +539,9 @@
       "orcid": "https://orcid.org/0000-0002-6704-1910",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=27868071100",
       "areas": "Instrumentação para Medida e Controle de Radiação, Proteção Radiológica, Métodos Matemáticos da Física, Modelos Analíticos e de Simulação, Sistemas de Informação",
+      "areas_en": "Instrumentation for Radiation Measurement and Control, Radiation Protection, Mathematical Methods of Physics, Analytical and Simulation Models, Information Systems",
       "atuacao": "Pesquisa e desenvolvimento de materiais de interesse em dosimetria para radiações ionizantes e não ionizantes em aplicações nas áreas da indústria e saúde. Dosimetria experimental; irradiação de amostras, estudos por ressonância paramagnética eletrônica; impressão 3D; simulações computacionais e processamento de imagens.",
+      "atuacao_en": "Research and development of materials of interest for the dosimetry of ionizing and non-ionizing radiation in industrial and health applications. Experimental dosimetry; sample irradiation; electron paramagnetic resonance studies; 3D printing; computer simulations and image processing.",
       "ativo": true
     },
     {
