@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Home } from "@/lib/esquemas";
+import { type Idioma, linkNoIdioma } from "@/lib/i18n/rotas";
 import { markdownParaHtml } from "@/lib/markdown";
 
 /** Topo da home: sobretítulo, título grande, texto, botões e imagem ao lado. */
-export default function Hero({ hero, sobretitulo }: { hero: Home["hero"]; sobretitulo: string | null }) {
+export default function Hero({ hero, sobretitulo, idioma }: { hero: Home["hero"]; sobretitulo: string | null; idioma: Idioma }) {
   return (
     <section className="hero">
       <div className="hero__conteudo">
@@ -14,7 +15,7 @@ export default function Hero({ hero, sobretitulo }: { hero: Home["hero"]; sobret
         {hero.botoes && hero.botoes.length > 0 && (
           <p className="hero__botoes">
             {hero.botoes.map((b, i) => (
-              <Link key={b.link} href={b.link} className={`hero__botao${i > 0 ? " hero__botao--secundario" : ""}`}>
+              <Link key={b.link} href={linkNoIdioma(b.link, idioma)} className={`hero__botao${i > 0 ? " hero__botao--secundario" : ""}`}>
                 {b.rotulo}
               </Link>
             ))}

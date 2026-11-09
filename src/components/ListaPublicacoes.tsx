@@ -1,13 +1,14 @@
 import Link from "next/link";
 import type { Publicacao } from "@/lib/esquemas";
 import { formatarCitacoes, formatarJcr } from "@/lib/formatadores";
+import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { markdownEmLinha } from "@/lib/markdown";
 
 /** Autores abreviados: os três primeiros e "et al." */
 const autoresCurtos = (autores: string[]) => (autores.length > 3 ? `${autores.slice(0, 3).join("; ")} et al.` : autores.join("; "));
 
 /** Lista de publicações em linhas: ano, título (link para o detalhe), autores, periódico e, quando houver, JCR e citações. */
-export default function ListaPublicacoes({ publicacoes }: { publicacoes: Publicacao[] }) {
+export default function ListaPublicacoes({ publicacoes, idioma }: { publicacoes: Publicacao[]; idioma: Idioma }) {
   return (
     <ul className="lista-publicacoes">
       {publicacoes.map((p) => (
@@ -16,7 +17,7 @@ export default function ListaPublicacoes({ publicacoes }: { publicacoes: Publica
             {p.ano}
           </time>
           <div className="lista-publicacoes__corpo">
-            <Link href={`/publicacoes/${p.id}/`} className="lista-publicacoes__titulo">
+            <Link href={rota("publicacoes", idioma, p.id)} className="lista-publicacoes__titulo">
               <span dangerouslySetInnerHTML={{ __html: markdownEmLinha(p.titulo) }} />
             </Link>
             {p.autores.length > 0 && <p className="lista-publicacoes__autores">{autoresCurtos(p.autores)}</p>}

@@ -1,4 +1,5 @@
 import type { Site } from "./esquemas";
+import { type Idioma, linkNoIdioma } from "./i18n/rotas";
 
 export type ItemMenu = { rotulo: string; link: string };
 export type SubmenuMenu = { rotulo: string; itens: ItemMenu[] };
@@ -13,7 +14,15 @@ export const caminhoDoLink = (link: string) => link.split(/[?#]/)[0].replace(/\/
 export function estaEm(caminho: string, link: string): boolean {
   const pagina = caminhoDoLink(caminho);
   const alvo = caminhoDoLink(link);
-  return alvo === "/" ? pagina === "/" : pagina === alvo || pagina.startsWith(`${alvo}/`);
+  // As páginas iniciais ("/" e "/en") só contêm a si mesmas
+  return alvo === "/" || alvo === "/en" ? pagina === alvo : pagina === alvo || pagina.startsWith(`${alvo}/`);
+}
+
+/** Menu de site.json com os links internos convertidos para as rotas do idioma. */
+export function menuNoIdioma(menu: EntradaMenu[], idioma: Idioma): EntradaMenu[] {
+  return menu.map((e) =>
+    temItens(e) ? { ...e, itens: e.itens.map((i) => ({ ...i, link: linkNoIdioma(i.link, idioma) })) } : { ...e, link: linkNoIdioma(e.link, idioma) },
+  );
 }
 
 /** Entrada do menu (link ou submenu) que contém a página. */

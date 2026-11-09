@@ -10,7 +10,10 @@ import { entradaDaPagina, estaEm, temItens } from "@/lib/menu";
 type Props = {
   logo: string;
   logoAlt: string;
+  /** Menu já com os links no idioma da página. */
   menu: Site["menu"];
+  /** Página inicial do idioma (link do logo). */
+  inicio: string;
 };
 
 /** Seta do botão de submenu (gira quando o submenu abre). */
@@ -22,7 +25,7 @@ function Seta() {
   );
 }
 
-export default function Navbar({ logo, logoAlt, menu }: Props) {
+export default function Navbar({ logo, logoAlt, menu, inicio }: Props) {
   const [aberto, setAberto] = useState(false);
   const [submenuAberto, setSubmenuAberto] = useState<string | null>(null);
   const raiz = useRef<HTMLElement>(null);
@@ -54,7 +57,7 @@ export default function Navbar({ logo, logoAlt, menu }: Props) {
   return (
     <nav ref={raiz} className="menu-principal" aria-label="Principal">
       <div className="menu-principal__container">
-        <Link href="/" className="menu-principal__marca" onClick={aoNavegar}>
+        <Link href={inicio} className="menu-principal__marca" onClick={aoNavegar}>
           <Image src={logo} alt={logoAlt} width={250} height={125} className="menu-principal__logo" priority />
         </Link>
         <button

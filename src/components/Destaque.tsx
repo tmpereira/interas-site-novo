@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Home } from "@/lib/esquemas";
+import { type Idioma, linkNoIdioma } from "@/lib/i18n/rotas";
 import { markdownParaHtml } from "@/lib/markdown";
 
 /** Linha de pesquisa da home: faixa do espectro à esquerda, texto no meio, imagem e etiquetas à direita. */
-export default function Destaque({ destaque }: { destaque: Home["destaques"][number] }) {
+export default function Destaque({ destaque, idioma }: { destaque: Home["destaques"][number]; idioma: Idioma }) {
   const linhasFaixa = destaque.rotulo_faixa?.split("\n") ?? [];
   return (
     <article className="pilar">
@@ -19,7 +20,7 @@ export default function Destaque({ destaque }: { destaque: Home["destaques"][num
         <h3 className="pilar__titulo">{destaque.titulo}</h3>
         <div className="pilar__corpo" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto) }} />
         {destaque.botao && (
-          <Link href={destaque.botao.link} className="pilar__botao">
+          <Link href={linkNoIdioma(destaque.botao.link, idioma)} className="pilar__botao">
             {destaque.botao.rotulo} →
           </Link>
         )}

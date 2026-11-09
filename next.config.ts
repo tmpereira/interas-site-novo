@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   // Sem servidor não há otimização de imagens do Next.
   images: { unoptimized: true },
+  // Há dois layouts raiz, app/(pt) e app/en (versão em inglês); o 404 do site inteiro
+  // vem de app/global-not-found.tsx.
+  experimental: { globalNotFound: true },
   sassOptions: {
     // O Bootstrap 5.3 ainda usa @import e funções antigas do Sass;
     // silencia os avisos de depreciação vindos de node_modules.

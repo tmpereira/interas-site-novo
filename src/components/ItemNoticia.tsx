@@ -3,10 +3,11 @@ import Link from "next/link";
 import { resumoDaNoticia } from "@/lib/consultas";
 import type { Noticia } from "@/lib/esquemas";
 import { formatarData } from "@/lib/formatadores";
+import { type Idioma, rota } from "@/lib/i18n/rotas";
 
 /** Item da lista de notícias: imagem, categoria e data, título, resumo e autor. */
-export default function ItemNoticia({ noticia }: { noticia: Noticia }) {
-  const href = `/noticias/${noticia.id}/`;
+export default function ItemNoticia({ noticia, idioma }: { noticia: Noticia; idioma: Idioma }) {
+  const href = rota("noticias", idioma, noticia.id);
   return (
     <article className="item-noticia">
       <Link href={href} className="item-noticia__imagem" tabIndex={-1} aria-hidden="true">

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Home } from "@/lib/esquemas";
+import { type Idioma, linkNoIdioma } from "@/lib/i18n/rotas";
 import { markdownParaHtml } from "@/lib/markdown";
 
 type Props = {
   destaque: Home["destaques"][number];
+  idioma: Idioma;
   /** Posição na lista (1, 2, 3...), exibida como "01", "02"... */
   numero: number;
   /** Âncora do bloco (usada pelo índice no topo da página). */
@@ -12,7 +14,7 @@ type Props = {
 };
 
 /** Bloco de uma área de pesquisa: imagem de um lado; número, faixa, título, texto, etiquetas e botão do outro. */
-export default function BlocoArea({ destaque, numero, id }: Props) {
+export default function BlocoArea({ destaque, idioma, numero, id }: Props) {
   const lado = numero % 2 === 1 ? "esquerda" : "direita";
   const frente = destaque.faixa ? ` frente--${destaque.faixa}` : "";
   return (
@@ -39,7 +41,7 @@ export default function BlocoArea({ destaque, numero, id }: Props) {
           </ul>
         )}
         {destaque.botao && (
-          <Link href={destaque.botao.link} className="bloco-area__botao">
+          <Link href={linkNoIdioma(destaque.botao.link, idioma)} className="bloco-area__botao">
             {destaque.botao.rotulo} →
           </Link>
         )}

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import type { Grupo } from "@/lib/esquemas";
+import { type Idioma, rota } from "@/lib/i18n/rotas";
 
 type Props = {
   grupo: Grupo;
+  idioma: Idioma;
   /** Rótulos dos temas (slug → rótulo, de site.json). */
   rotulos: Map<string, string>;
   /** Nomes de quem coordena o grupo (de pessoas.json). */
@@ -10,9 +12,9 @@ type Props = {
 };
 
 /** Linha da lista de grupos: título e tema principal, instituição, coordenação e demais temas, link. */
-export default function ItemGrupo({ grupo, rotulos, coordenacao }: Props) {
+export default function ItemGrupo({ grupo, idioma, rotulos, coordenacao }: Props) {
   const [principal, ...outros] = grupo.temas;
-  const href = `/grupos/${grupo.slug}/`;
+  const href = rota("grupos", idioma, grupo.slug);
   return (
     <article className="item-grupo">
       <div className="item-grupo__principal">

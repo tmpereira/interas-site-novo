@@ -130,7 +130,8 @@ memória.
 │   ├── videos/...              # capas dos vídeos
 │   └── arquivos/               # PDFs e outros anexos
 ├── src/
-│   ├── app/                    # rotas (ver seção 7)
+│   ├── app/                    # rotas (ver seção 7); desde a versão em inglês, em (pt)/ e en/ (seção 13.3)
+│   ├── paginas/                # JSX de cada página, compartilhado pelos dois idiomas (seção 13.3)
 │   ├── components/             # Navbar, Rodape, CabecalhoPagina, CardPessoa, ListaPublicacoes...
 │   ├── lib/
 │   │   ├── esquemas.ts         # esquemas Zod de todas as coleções (fonte única)
@@ -1045,6 +1046,13 @@ Pedido do usuário em 2026-11-09: criar a versão em inglês do site. Esta seç�
 - O mapa fica num só lugar, `src/lib/i18n/rotas.ts` (`rota(chave, idioma,
   slug?)`), usado pelo menu, pelos links internos, pelo seletor de idioma,
   pelo sitemap e pelo hreflang. **Nenhum componente monta URL à mão.**
+- Links internos escritos no conteúdo (menu de `site.json`, botões de
+  `home.json`) continuam com a rota em português; `linkNoIdioma(link, idioma)`
+  (mesmo arquivo) os converte para o idioma da página (`/grupos/?tema=x` →
+  `/en/groups/?tema=x`). Arquivos de `public/` (caminho com extensão), links
+  externos e âncoras ficam como estão. Assim o menu não tem `link_en`: um item
+  novo vale para os dois idiomas. `menuNoIdioma` (`src/lib/menu.ts`) aplica isso
+  ao menu inteiro.
 
 ### 13.3 Estrutura de rotas (dois layouts raiz)
 
@@ -1067,8 +1075,23 @@ src/paginas/         # o JSX de cada página, compartilhado pelos dois idiomas
   `src/paginas/` passando `idioma="pt"` ou `idioma="en"`. A lógica e o
   markup **não podem ser duplicados** entre as duas árvores.
 - `generateStaticParams` das rotas `[slug]`/`[id]` é o mesmo nos dois idiomas.
-- 404: `not-found.tsx` em português na raiz; se a versão do Next permitir,
-  uma versão em inglês para `/en/`.
+- **Como ficou (etapa 1, 2026-11-09):** cada módulo de `src/paginas/` exporta
+  o componente (`{ idioma }`, mais `slug`/`id` nas rotas dinâmicas),
+  `metadados(idioma[, slug])` e, nas rotas dinâmicas, `parametros()`. Os
+  `page.tsx` só repassam esses valores. O HTML comum (`<html lang>`, anúncio,
+  menu, rodapé, Analytics) está em `src/paginas/Documento.tsx`, usado pelos
+  dois `layout.tsx`. `CabecalhoPagina` descobre o idioma pelo `caminho` que
+  recebe (`idiomaDoCaminho`); os componentes que geram links recebem `idioma`.
+- 404: com dois layouts raiz não há um layout único para o `not-found.tsx`.
+  Usa-se `src/app/global-not-found.tsx` (opção `experimental.globalNotFound`
+  no `next.config.ts`), que monta o documento inteiro com `Documento`. O export
+  estático gera um único `404.html`, então o 404 fica **só em português**.
+- Os arquivos internos de navegação do Next (`out/**/__next.*.txt`) passaram a
+  ter `!KHB0KQ` no nome (o grupo `(pt)` codificado). Não são URLs públicas.
+- **Pendente para a etapa 3:** links internos dentro de textos em Markdown
+  (ex.: `nota` da home, abas dos grupos com `/equipe/<slug>/`) ainda apontam
+  para o português em `/en/`. Converter no `markdownParaHtml` (recebendo o
+  idioma e usando `linkNoIdioma`).
 - Trocar de idioma recarrega a página inteira (mudança de layout raiz); isso
   é esperado.
 
@@ -1166,9 +1189,10 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 
 ### 13.9 Etapas (uma por vez, com aprovação e commit ao fim de cada uma)
 
-1. **Estrutura**: `(pt)/` + `en/`, `src/paginas/`, `rotas.ts`, `rotulos.ts`
+1. **Estrutura** (feita em 2026-11-09): `(pt)/` + `en/`, `src/paginas/`, `rotas.ts`, `rotulos.ts`
    com o português; `/en/` ainda mostrando português. Conferir que o site em
-   português ficou **idêntico** (mesmas URLs no `out/`).
+   português ficou **idêntico** (mesmas URLs no `out/`). `rotulos.ts` tem por
+   enquanto só os textos do layout e do 404.
 2. **Rótulos**: extrair todos os textos fixos dos componentes para
    `rotulos.ts` e preencher `en`. Formatação por idioma (13.5).
 3. **Esquemas**: campos `_en`, notícias em `content/noticias/en/`,

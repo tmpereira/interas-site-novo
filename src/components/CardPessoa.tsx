@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Pessoa } from "@/lib/esquemas";
+import { type Idioma, rota } from "@/lib/i18n/rotas";
 
 /** Iniciais do primeiro e do último nome, para quem não tem foto. */
 const iniciais = (nome: string) => {
@@ -26,10 +27,10 @@ export function FotoPessoa({ pessoa, tamanho, alt = "" }: { pessoa: Pessoa; tama
 }
 
 /** Cartão de pessoa na listagem da equipe. `destaque` = cartão grande (coordenação). */
-export default function CardPessoa({ pessoa, destaque = false }: { pessoa: Pessoa; destaque?: boolean }) {
+export default function CardPessoa({ pessoa, idioma, destaque = false }: { pessoa: Pessoa; idioma: Idioma; destaque?: boolean }) {
   return (
     <article className={`card-pessoa${destaque ? " card-pessoa--destaque" : ""}`}>
-      <Link href={`/equipe/${pessoa.slug}/`} className="card-pessoa__link">
+      <Link href={rota("equipe", idioma, pessoa.slug)} className="card-pessoa__link">
         <FotoPessoa pessoa={pessoa} tamanho={destaque ? "grande" : "pequena"} />
         <div className="card-pessoa__corpo">
           {destaque && pessoa.cargo && <p className="card-pessoa__cargo">{pessoa.cargo}</p>}
