@@ -549,6 +549,7 @@
       "nome": "Andréa Emilia Marques Stinghen",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -561,7 +562,9 @@
       "orcid": "https://orcid.org/0000-0001-8595-5321",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6507865179",
       "areas": "Nefrologia, Fisiologia Renal, Biologia Celular, Citologia e Biologia Celular",
+      "areas_en": "Nephrology, Renal Physiology, Cell Biology, Cytology and Cell Biology",
       "atuacao": "Empregará técnicas de espectroscopia vibracional, em amostras de soro e dialisato peritoneal, de pacientes em diferentes fases da doença renal crônica. O objetivo é mapear novos biomarcadores nas diferentes fases da doença.",
+      "atuacao_en": "Will use vibrational spectroscopy techniques on serum and peritoneal dialysate samples from patients at different stages of chronic kidney disease. The aim is to map new biomarkers at the different stages of the disease.",
       "ativo": true
     },
     {
@@ -569,6 +572,7 @@
       "nome": "Gustavo Ramos",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -581,6 +585,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Em seu grupo na Universität Würzburg (Alemanha) irá avaliar o papel do sistema imune no coração.",
+      "atuacao_en": "Will evaluate the role of the immune system in the heart, in the group at the Universität Würzburg (Germany).",
       "ativo": true
     },
     {
@@ -588,6 +593,7 @@
       "nome": "Ilija Uzelac",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -600,6 +606,7 @@
       "orcid": "https://orcid.org/0000-0003-3743-5342",
       "areas": null,
       "atuacao": "Irá colaborar no desenvolvimento do setup experimental e análise crítica dos resultados, em especial no modelo animal e mapeamento óptico panorâmico da atividade arrítmica.",
+      "atuacao_en": "Will collaborate on the development of the experimental setup and on the critical analysis of the results, especially regarding the animal model and the panoramic optical mapping of arrhythmic activity.",
       "ativo": true
     },
     {
@@ -607,6 +614,7 @@
       "nome": "Jesica Ayelen Dimmer",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -619,6 +627,7 @@
       "orcid": "https://orcid.org/0000-0003-2040-7038",
       "areas": null,
       "atuacao": "Estudo conjuntos com o IPEN no uso de tecnologias assistidas por luz para caracterização e terapia de doença de Chagas e Leishmania.",
+      "atuacao_en": "Joint studies with IPEN on the use of light-assisted technologies for the characterization and therapy of Chagas disease and Leishmania.",
       "ativo": true
     },
     {
@@ -626,6 +635,7 @@
       "nome": "Marcia Cristina Dias de Moraes",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -637,7 +647,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Laserterapia, Clínica Odontológica, Analgesia Gasosa",
+      "areas_en": "Laser Therapy, Clinical Dentistry, Inhalation Sedation",
       "atuacao": "Empregar em ambiente ambulatorial e/ou hospitalar, lasers em alta e baixa intensidade e a terapia fotodinâmica antimicrobiana (aPDT) em processos infecciosos na cavidade oral; manejo de osteonecrose dos maxilares e descontaminação pré-cirúrgica nas estruturas ósseas orais; infecções oportunistas em pacientes oncológicos e pacientes com necessidades especiais. Empregar a tomografia por coerência óptica (OCT) para avaliar as alterações em tecidos orais provenientes de tratamento oncológico e em diferentes patologias, em tecidos moles e duros na cavidade oral.",
+      "atuacao_en": "Using high- and low-intensity lasers and antimicrobial photodynamic therapy (aPDT), in outpatient and/or hospital settings, for infectious processes in the oral cavity; management of osteonecrosis of the jaws and pre-surgical decontamination of oral bone structures; opportunistic infections in cancer patients and patients with special needs. Using optical coherence tomography (OCT) to assess changes in oral tissues resulting from cancer treatment and from different pathologies, in soft and hard tissues of the oral cavity.",
       "ativo": true
     },
     {
@@ -645,6 +657,7 @@
       "nome": "Renata Aparecida Belotto",
       "categoria": "colaborador",
       "cargo": "Colaborador",
+      "cargo_en": "Collaborator",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -656,7 +669,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Biofotônica, Colposcopia, Ginecologia, Laserterapia, patologia do trato genital inferior",
+      "areas_en": "Biophotonics, Colposcopy, Gynecology, Laser Therapy, Lower Genital Tract Pathology",
       "atuacao": "Será responsável por coordenar as atividades de pesquisa junto a pacientes no Hospital Pérola Byington.",
+      "atuacao_en": "Responsible for coordinating research activities with patients at Hospital Pérola Byington.",
       "ativo": true
     },
     {
@@ -664,6 +679,7 @@
       "nome": "Benedicte Manoury",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -676,6 +692,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Em seu grupo no Hôpital Necker-Enfants Malades (Paris França) irá realizar experimentos de cardioimunologia principalmente FACS, citometria de fluxo, e outras técnicas de imunologia.",
+      "atuacao_en": "Will carry out cardioimmunology experiments, mainly FACS, flow cytometry and other immunology techniques, in the group at Hôpital Necker-Enfants Malades (Paris, France).",
       "ativo": true
     },
     {
@@ -683,6 +700,7 @@
       "nome": "Ifor David William Samuel",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -696,6 +714,7 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7101730891",
       "areas": null,
       "atuacao": "Estudar a fotofísica e o desenvolvimento de novos materiais como diodos emissores de luz e lasers. Colaboração com Martha S. Ribeiro do IPEN nos Diodos Emissores de Luz Orgânicos (OLEDs), para desenvolvimento de fontes de luz vestíveis para terapia fotodinâmica ambulatorial de câncer de pele e outras doenças.",
+      "atuacao_en": "Studying photophysics and the development of new materials such as light-emitting diodes and lasers. Collaboration with Martha S. Ribeiro of IPEN on Organic Light-Emitting Diodes (OLEDs), to develop wearable light sources for outpatient photodynamic therapy of skin cancer and other diseases.",
       "ativo": true
     },
     {
@@ -703,6 +722,7 @@
       "nome": "John Michael Girkin",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -715,6 +735,7 @@
       "orcid": "https://orcid.org/0000-0003-2568-3576",
       "areas": null,
       "atuacao": "Colaborar com o grupo de aplicações de laser e também no diagnóstico com luz. Usar a imagem no domínio da frequência espacial (SFDI) como um candidato promissor para melhorar o diagnóstico da ferida cirúrgica, detectando a heterogeneidade vertical e medindo o valor de espalhamento reduzido ¿¿¿¿¿¿ Para melhorar melhorar a imagem in vivo no pulmão. Novos Detectores de Avalanche de Fóton Único (SPADS) que foram projetados com eletrônica de contagem de fóton único integrado para realizar imagens de vida de fluorescência com alta resolução espectral, espacial e temporal. Esta tecnologia é combinada com uma gama de novos marcadores fluorescentes medicamente seguros e um único feixe de fibra coerente de modo único para obter imagens gravadas dentro do pulmão humano vivo.",
+      "atuacao_en": "Collaborating with the laser applications group and also on light-based diagnosis. Using spatial frequency domain imaging (SFDI) as a promising candidate for improving the diagnosis of surgical wounds, by detecting vertical heterogeneity and measuring the reduced scattering coefficient. To improve in vivo imaging in the lung, new Single Photon Avalanche Detectors (SPADs) were designed with integrated single-photon counting electronics to perform fluorescence lifetime imaging with high spectral, spatial and temporal resolution. This technology is combined with a range of new medically safe fluorescent markers and a single coherent single-mode fiber bundle to obtain images recorded inside the living human lung.",
       "ativo": true
     },
     {
@@ -722,6 +743,7 @@
       "nome": "Juan Jose Nogueira",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -735,6 +757,7 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=26531572700",
       "areas": null,
       "atuacao": "Lidera o grupo de dinâmica molecular, que irá contribuir desenvolvendo métodos de simulação computacional visando desvendar mecanismos e processos relacionados ao desenvolvimento de novos fármacos.",
+      "atuacao_en": "Leads the molecular dynamics group, which will contribute by developing computer simulation methods to unravel mechanisms and processes related to the development of new drugs.",
       "ativo": true
     },
     {
@@ -742,6 +765,7 @@
       "nome": "Larry Dewerd",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -754,6 +778,7 @@
       "orcid": "https://orcid.org/0000-0003-2003-2344",
       "areas": null,
       "atuacao": "Fara a intercomparação da metodologia de dosimetria das nanoparticulas radioativas com a dosimetria utilizada para radioisótopos e radiofarmacos além de ser um consultor para auxiliar o desenvolvimento desta metodologia. Por ser o responsavel pelo Laboratório de Dosimetria da Universidade de Wisconsin, ele nos possibilitará intercomparar os nossos sistemas dosimétricos com os sistemas padrões utilizados neste laboratório.",
+      "atuacao_en": "Will carry out the intercomparison of the dosimetry methodology for radioactive nanoparticles with the dosimetry used for radioisotopes and radiopharmaceuticals, and will also act as a consultant to help develop this methodology. As head of the Dosimetry Laboratory at the University of Wisconsin, will allow us to intercompare our dosimetry systems with the standard systems used in that laboratory.",
       "ativo": true
     },
     {
@@ -761,6 +786,7 @@
       "nome": "Nicholas Stone",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -773,6 +799,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Irá colaborar no desenvolvimento de plataformas SERS e métodos baseados em espectroscopia vibracional para tecnologias de diagnóstico não invasivo.",
+      "atuacao_en": "Will collaborate on the development of SERS platforms and vibrational spectroscopy-based methods for non-invasive diagnostic technologies.",
       "ativo": true
     },
     {
@@ -780,6 +807,7 @@
       "nome": "Peter Bode",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -792,6 +820,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Colaborará com o CRCN-NE na detecção de lesões benignas e malignas em osso e nos estudos de diagnóstico de pacientes com Alzheimer.",
+      "atuacao_en": "Will collaborate with CRCN-NE on the detection of benign and malignant bone lesions and on diagnostic studies of patients with Alzheimer's disease.",
       "ativo": true
     },
     {
@@ -799,6 +828,7 @@
       "nome": "Terence Kenneth Smith",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -811,6 +841,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "To find, validate and exploit differences between protozoan and mammalian metabolism, in particular the molecular and biochemical parasitology, including T. brucei, T.cruzi, Leishmania, Toxoplasma and Plasmodium, treated by antimicrobial photodynamic therapy (aPDT) in collaboration with Martha S. Ribeiro from IPEN.",
+      "atuacao_en": "To find, validate and exploit differences between protozoan and mammalian metabolism, in particular the molecular and biochemical parasitology, including T. brucei, T. cruzi, Leishmania, Toxoplasma and Plasmodium, treated by antimicrobial photodynamic therapy (aPDT) in collaboration with Martha S. Ribeiro from IPEN.",
       "ativo": true
     },
     {
@@ -818,6 +849,7 @@
       "nome": "Tiago Buckup",
       "categoria": "equipe-estrangeira",
       "cargo": "Equipe Estrangeira",
+      "cargo_en": "International Team",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -830,6 +862,7 @@
       "orcid": "https://orcid.org/0000-0002-1194-0837",
       "areas": null,
       "atuacao": "Empregará técnicas de espectroscopia ultra-rápida (femtosegundos) para elucidação de mecanismos de reação e processos dinâmicos ocorrendo em biofluidos.",
+      "atuacao_en": "Will use ultrafast (femtosecond) spectroscopy techniques to elucidate reaction mechanisms and dynamic processes occurring in biofluids.",
       "ativo": true
     },
     {
@@ -837,6 +870,7 @@
       "nome": "Adamo Ferreira Gomes do Monte",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/adamo-ferreira-gomes-do-monte.jpg",
       "instituicao": {
@@ -849,7 +883,9 @@
       "orcid": "https://orcid.org/0000-0003-3438-3735",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7004412814",
       "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Instrumentação Odontológica e Médico-Hospitalar, Prop. Óticas e Elétricas de Nanoestruturas Semicondutoras",
+      "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Dental and Medical-Hospital Instrumentation, Optical and Electrical Properties of Semiconductor Nanostructures",
       "atuacao": "Obter protocolos clínicos com resultado terapêutico in-vivo baseado no conhecimento da localização e concentração de cromóforos no tecido cutâneo (oxi-hemoglobina, deoxi-hemoglobina, água, melanina e lipídios). Desenvolvemos método inovador no Brasil in-vivo não-invasivo para determinar a concentração desses cromóforos e sua distribuição espacial, por meio da reconstituição da imagem óptica difusa utilizando redes neurais artificiais para o mapeamento e diagnóstico de tumores e lesões de tecidos. Detectar quantitativa e não-invasiva da absorção óptica e do espalhamento em tecidos. A técnica de imagem no domínio da frequência espacial (SFDI) irá funcionar como um dispositivo aplicado à Medicina, promovendo grande impacto com o desenvolvimento de estudos ligados ao diagnóstico óptico precoce de tecidos e também mapeamento de tumores cutâneos in-vivo. Na área tecnológica, a também será utilizada para realizar tomografía óptica de tecidos.",
+      "atuacao_en": "Obtaining clinical protocols with in vivo therapeutic outcomes based on knowledge of the location and concentration of chromophores in skin tissue (oxyhemoglobin, deoxyhemoglobin, water, melanin and lipids). We have developed an innovative in vivo, non-invasive method in Brazil to determine the concentration of these chromophores and their spatial distribution, by reconstructing diffuse optical images using artificial neural networks for the mapping and diagnosis of tumors and tissue lesions. Quantitative, non-invasive detection of optical absorption and scattering in tissues. Spatial frequency domain imaging (SFDI) will work as a device applied to medicine, with great impact through studies on early optical diagnosis of tissues and the in vivo mapping of skin tumors. In the technological area, the technique will also be used to perform optical tomography of tissues.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -858,6 +894,7 @@
       "nome": "Ana Cecília Corrêa Aranha",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/ana-cecilia-correa-aranha.jpg",
       "instituicao": {
@@ -869,7 +906,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=UkTVB5IAAAAJ",
       "orcid": null,
       "areas": "Odontologia, Dentistica Restauradora, Clínica Odontológica, Materiais Odontológicos, Laser",
+      "areas_en": "Dentistry, Restorative Dentistry, Clinical Dentistry, Dental Materials, Laser",
       "atuacao": "Estudar os efeitos da radiação ionizante nas proteases endógenas em dentina hígida e restaurada. Desenvolvimento de metodologia com uso de lasers combinada ou não a outras tecnicas para prevençao e tratamento de lesões cervicais não cariosas, hipersensibilidade dentinária. Estudo clinico duplo cego, longitudinal randomizado com Laser de Er, Cr:YSGG e pasta de fosfosilicato de sódio cálcio como tratamentos de consultório da hipersensibilidade dentinária. Promover treinamento de profissionais e atuar na difusão científica.",
+      "atuacao_en": "Studying the effects of ionizing radiation on endogenous proteases in sound and restored dentin. Developing a methodology using lasers, combined or not with other techniques, for the prevention and treatment of non-carious cervical lesions and dentin hypersensitivity. Double-blind, longitudinal, randomized clinical study with Er,Cr:YSGG laser and calcium sodium phosphosilicate paste as in-office treatments for dentin hypersensitivity. Training professionals and contributing to science communication.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -878,6 +917,7 @@
       "nome": "Elvis Joacir De França",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -890,7 +930,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56962754900",
       "areas": "Ciclagem de Elementos Químicos, Análise de Traços e Química Ambiental, Controle de Qualidade, Manejo Ambiental, Manejo e Conservação do Solo, Radioecologia",
+      "areas_en": "Cycling of Chemical Elements, Trace Analysis and Environmental Chemistry, Quality Control, Environmental Management, Soil Management and Conservation, Radioecology",
       "atuacao": "A proximidade de um cíclotron ao hospital público favorece a aplicação das Radiações Ionizantes na Saúde, ampliando-se a gama de fármacos a serem utilizados para o imageamento molecular em pacientes com respeito ao diagnóstico/enfrentamento de neoplasias, doenças coronárias e desordens cerebrais. Neste INCT, propõe-se disponibilizar infraestrutura para ensaios pré-clínicos para antígeno de membrana prostático específico (PSMA), receptor de estrogênio positivo de câncer de mama (FES) е fluoreto de sódio (NaF), denominado de farmacêutico sem carreador para a detecção de lesões benignas e malignas em osso, além de flutemetamol para o diagnóstico de pacientes com Alzheimer. Os esforços para a implementação do laboratório integrado de pesquisas na Região Nordeste, no contexto desse INCT, são motivados a partir da necessidade de expandir os serviços prestados à sociedade em Medicina Nuclear na Região Norte/Nordeste, além de fomentar pesquisas científicas de alto nível.",
+      "atuacao_en": "Having a cyclotron close to a public hospital favors the application of ionizing radiation in health, broadening the range of drugs that can be used for molecular imaging of patients in the diagnosis and treatment of neoplasms, coronary diseases and brain disorders. In this INCT, the proposal is to provide infrastructure for preclinical studies with prostate-specific membrane antigen (PSMA), estrogen receptor-positive breast cancer imaging (FES) and sodium fluoride (NaF), a carrier-free pharmaceutical for detecting benign and malignant bone lesions, as well as flutemetamol for the diagnosis of patients with Alzheimer's disease. The efforts to set up the integrated research laboratory in the Northeast Region, in the context of this INCT, are driven by the need to expand Nuclear Medicine services to society in the North/Northeast Region and to foster high-level scientific research.",
       "ativo": true
     },
     {
@@ -898,6 +940,7 @@
       "nome": "Joaquim Cezar Felipe",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -910,7 +953,9 @@
       "orcid": "https://orcid.org/0000-0002-3411-3551",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7004283400",
       "areas": "INFORMÁTICA BIOMÉDICA, Indexação e Recuperação de Imagens, Sistemas de Diagnóstico Auxiliado por Computador, Bioinformática, Sistemas de Informação em Saúde, Banco de Dados",
+      "areas_en": "Biomedical Informatics, Image Indexing and Retrieval, Computer-Aided Diagnosis Systems, Bioinformatics, Health Information Systems, Databases",
       "atuacao": "Investigação e avaliação de técnicas de Aprendizado de Máquina, convencionais e também aquelas baseadas em aprendizado profundo, aplicadas ao auxílio ao diagnóstico médico, por meio da análise de imagens de amostras histológicas, assim como dos sinais hiperespectrais obtidos por absorção no infravermelho. Extrair características radiômicas da imagem de HE e analisar sinais hiperespectrais explorando a informação contida nos espectros de infravermelho de cada pixel da amostra de diferentes tecidos humanos (saudáveis e lesionados) previamente avaliados por especialistas. As técnicas de aprendizado profundo a serem exploradas são as redes neurais convolucionais, as redes neurais completamente conectadas e as redes neurais recorrentes, em abordagem supervisionada para a modelagem de classificadores. Este grupo também fornecerá suporte em aplicações de Aprendizado de Máquina para outros grupos pertencentes ao INTERAS, nas demandas em que for pertinente a utilização de tais técnicas.",
+      "atuacao_en": "Investigating and evaluating machine learning techniques, both conventional and deep learning-based, applied to support medical diagnosis through the analysis of images of histological samples and of hyperspectral signals obtained by infrared absorption. Extracting radiomic features from H&E images and analyzing hyperspectral signals, exploring the information contained in the infrared spectra of each pixel of samples of different human tissues (healthy and diseased) previously assessed by specialists. The deep learning techniques to be explored are convolutional neural networks, fully connected neural networks and recurrent neural networks, in a supervised approach for building classifiers. This group will also support machine learning applications for other INTERAS groups whenever the use of such techniques is relevant.",
       "ativo": true
     },
     {
@@ -918,6 +963,7 @@
       "nome": "Leandro Luongo de Matos",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/leandro-luongo-de-matos.jpg",
       "instituicao": {
@@ -933,7 +979,9 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=13405708500",
       "scopus_alternativo": "https://www.scopus.com/authid/detail.uri?authorId=57219465859",
       "areas": "Cirurgia de Cabeça e Pescoço, Cirurgia, Medicina, Biologia Molecular, Bioestatística, Epidemologia",
+      "areas_en": "Head and Neck Surgery, Surgery, Medicine, Molecular Biology, Biostatistics, Epidemiology",
       "atuacao": "É crescente a busca por microRNAs associados à carcinogênese, progressão tumoral e também no prognóstico de pacientes com carcinoma espinocelular de cavidade oral. Para essa neoplasia, a espessura tumoral é bem documentada como um fator isolado de pior prognóstico, porém pouco se sabe sobre as causas moleculares envolvidas nesse processo. Dessa forma, neste Instituto iremos contribuir na avaliação do papel dos proteoglicanos e identificação dos microRNAs envolvidos no processo de invasão tumoral, além de relacioná-los com variáveis demográficas, histopatológicas e imuno-histoquímicas e o prognóstico de pacientes acometidos por carcinoma espinocelular de cavidade oral, assim como tireóide. Selecionar e preparar tissue micro-arrays (TMAs) destes tecidos em lâminas cristalina de CaF2 para análise vibracional por imagem por FTIR.",
+      "atuacao_en": "There is a growing search for microRNAs associated with carcinogenesis, tumor progression and the prognosis of patients with oral cavity squamous cell carcinoma. For this neoplasm, tumor thickness is well documented as an independent factor of worse prognosis, but little is known about the molecular causes involved in this process. In this Institute, we will therefore contribute to evaluating the role of proteoglycans and identifying the microRNAs involved in the tumor invasion process, and to relating them to demographic, histopathological and immunohistochemical variables and to the prognosis of patients with oral cavity squamous cell carcinoma, as well as thyroid cancer. Selecting and preparing tissue microarrays (TMAs) of these tissues on CaF2 crystal slides for vibrational analysis by FTIR imaging.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -942,6 +990,7 @@
       "nome": "Luciano Bachmann",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/luciano-bachmann.jpg",
       "instituicao": {
@@ -954,7 +1003,9 @@
       "orcid": "https://orcid.org/0000-0001-6622-251X",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7005450678",
       "areas": "Física da Matéria Condensada, Aplicações de Lasers Em Ciências da Vida, fisica médica, Métodos Óticos de Análise, MEDICINA II",
+      "areas_en": "Condensed Matter Physics, Laser Applications in Life Sciences, Medical Physics, Optical Methods of Analysis, Medicine II",
       "atuacao": "Os sinais hiperespectrais, obtidos por meio de equipamentos de infravermelho, caracterizam-se por apresentar para cada pixel da imagem um espectro de valores de absorbância para as diferentes frequências, que se mostra sensível às características do tecido subjacente. Iremos contribuir neste Instituto investigando sinais hiperespectrais infravermelhos obtidos a partir de lâminas contendo amostras de tecido sadio e de tecido anormal oriundas de diferentes órgãos, tais como tireoide, pele e mama, sadios e com características anormais, em especial a ocorrência de neoplasias, com uso de técnicas computacionais de Aprendizagem Profunda, para a implementação de classificadores, com os quais será possível caracterizar as regiões da lâmina de acordo com as possíveis anomalias presentes. A validação será feita com imagens obtidas a partir de lâminas de biópsias coradas com Hematoxilina e Eosina.",
+      "atuacao_en": "Hyperspectral signals obtained with infrared equipment provide, for each pixel of the image, a spectrum of absorbance values at different frequencies that is sensitive to the characteristics of the underlying tissue. We will contribute to this Institute by investigating infrared hyperspectral signals obtained from slides containing samples of healthy and abnormal tissue from different organs, such as the thyroid, skin and breast, both healthy and with abnormal features, especially neoplasms, using Deep Learning computational techniques to build classifiers that make it possible to characterize regions of the slide according to the anomalies present. Validation will be carried out with images obtained from biopsy slides stained with Hematoxylin and Eosin.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -963,6 +1014,7 @@
       "nome": "Marcela Sorelli Carneiro Ramos",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/marcela-sorelli-carneiro-ramos.jpg",
       "instituicao": {
@@ -976,7 +1028,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Fisiologia Cardiovascular, Citologia e Biologia Celular, Histologia, Imunologia Celular, Fisiologia Endócrina",
+      "areas_en": "Cardiovascular Physiology, Cytology and Cell Biology, Histology, Cellular Immunology, Endocrine Physiology",
       "atuacao": "Coordenar as investigação dos processos inflamatórios derivados de doenças cardiovasculares. É bem estabelecido que as funções cardíacas e renais estão intimamente conectadas e, portanto, alteração em um dos órgãos, é capaz de levar à alterações no outro órgão. Nesse sentido, é bastante relevante o entendimento dos conectores do eixo rim-coração. Assim, dentre as diversas doenças cardiovasculares, iremos focar no quadro de síndrome cardiorrenal tipo 3, onde é possível observar os efeitos cardíacos oriundos de um quadro de lesão renal aguda (LRA). A LRA apresenta elevada incidência na população mundial e, quando não diagnosticada corretamente ou tardiamente, pode levar ao quadro de doença renal crônica, onde ocorre a perda progressiva e irreversível da função renal e, consequentemente, cardíaca. O presente projeto conta com as colaborações nacionais e internacionais (UFPR, Canada e Espanha)",
+      "atuacao_en": "Coordinating the investigation of inflammatory processes arising from cardiovascular diseases. It is well established that cardiac and renal functions are closely connected, so that changes in one of these organs can lead to changes in the other. Understanding the connectors of the kidney-heart axis is therefore highly relevant. Among the various cardiovascular diseases, we will focus on type 3 cardiorenal syndrome, in which the cardiac effects of acute kidney injury (AKI) can be observed. AKI has a high incidence in the world population and, when it is not diagnosed correctly or is diagnosed late, it can lead to chronic kidney disease, with progressive and irreversible loss of renal and, consequently, cardiac function. This project has national and international collaborations (UFPR, Canada and Spain).",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -985,6 +1039,7 @@
       "nome": "Patricia Aparecida da Ana",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/patricia-aparecida-da-ana.jpg",
       "instituicao": {
@@ -997,7 +1052,9 @@
       "orcid": "https://orcid.org/0000-0003-2857-7517",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=15059916900",
       "areas": "Biofotonica e Óptica Biomédica, Engenharia Biomédica, Lasers Em Odontologia",
+      "areas_en": "Biophotonics and Biomedical Optics, Biomedical Engineering, Lasers in Dentistry",
       "atuacao": "Empregar a Biofotônica e a óptica biomédica para desenvolver estratégias diagnósticas e terapêuticas para combate ao câncer e doenças crônicas que acometem a cavidade oral, tais como cárie, erosão dentária e osteoporose, para fornecer tecnologias de ponta e de baixo custo para melhora da qualidade de vida. Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver dispositivo baseado em fluorescência e inteligência artificial para diagnóstico precoce e preditivo de câncer de mama por análise de saliva; ii) desenvolver e aprimorar estratégias que empreguem lasers de alta potência Q-switched para paralisar lesões de tecidos duros dentais; iii) desenvolver e aplicar biomaterial à base de colágeno com potencial de drug delivery, a fim de possibilitar o reparo de lesões de tecidos ósseos; iv) aprimorar metodologia analítica, envolvendo tomografia por coerência óptica, para diagnóstico precoce e monitoramento de osteoporose.",
+      "atuacao_en": "Using biophotonics and biomedical optics to develop diagnostic and therapeutic strategies against cancer and chronic diseases of the oral cavity, such as caries, dental erosion and osteoporosis, to provide cutting-edge, low-cost technologies that improve quality of life. The main scientific and technological challenges to be overcome include, but are not limited to: i) developing a device based on fluorescence and artificial intelligence for the early and predictive diagnosis of breast cancer by saliva analysis; ii) developing and improving strategies using high-power Q-switched lasers to arrest lesions in dental hard tissues; iii) developing and applying a collagen-based biomaterial with drug delivery potential to enable the repair of bone tissue lesions; iv) improving an analytical methodology, involving optical coherence tomography, for the early diagnosis and monitoring of osteoporosis.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -1006,6 +1063,7 @@
       "nome": "Thiago Martini Pereira",
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
+      "cargo_en": "Associated Laboratory Leader",
       "ordem": null,
       "foto": "/fotos/pessoas/thiago-martini-pereira.jpg",
       "instituicao": {
@@ -1018,7 +1076,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=12345555800",
       "areas": "ESPECTROSCOPIA NO INFRAVERMELHO, ESPECTROSCOPIA RAMAN, PROCESSAMENTO DE SINAIS BIOESPECTROSCOPICOS, COMPUTER AIDED DIAGNOSIS",
+      "areas_en": "Infrared Spectroscopy, Raman Spectroscopy, Biospectroscopic Signal Processing, Computer-Aided Diagnosis",
       "atuacao": "Otimização de métodos de processamento de imagens hiperespectrais na região do infravermelho para o diagnóstico de neoplasias e outras doenças de interesse do projeto. Adicionalmente será o responsável pelo desenvolvimento da plataforma Web para a unificação dos dados espectroscópicos com o objetivo de divulgar as técnicas ópticas dentro da comunidade médica. Serás o responsável pelo desenvolvimento de uma aplicação para tablet na qual ira auxiliar o patologista na análise dos dados do projeto.",
+      "atuacao_en": "Optimizing methods for processing hyperspectral infrared images for the diagnosis of neoplasms and other diseases of interest to the project. Also responsible for developing the web platform that brings together the spectroscopic data, with the aim of disseminating optical techniques within the medical community. Responsible for developing a tablet application to help the pathologist analyze the project data.",
       "ativo": true,
       "foto_fonte": "lattes-2026-11-09"
     },
@@ -1027,6 +1087,7 @@
       "nome": "Anselmo Feher",
       "categoria": "apoio-tecnico",
       "cargo": "Apoio Técnico",
+      "cargo_en": "Technical Support",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1038,7 +1099,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0009-0004-8910-4865",
       "areas": "Engenharia Mecânica",
+      "areas_en": "Mechanical Engineering",
       "atuacao": "Fornecer suporte tecnico especializado e na instrumentação, nos projetos de radioterapia e nanobraquiterapia.",
+      "atuacao_en": "Providing specialized technical and instrumentation support for the radiotherapy and nanobrachytherapy projects.",
       "ativo": true
     },
     {
@@ -1046,6 +1109,7 @@
       "nome": "Fábio Eduardo da Costa",
       "categoria": "apoio-tecnico",
       "cargo": "Apoio Técnico",
+      "cargo_en": "Technical Support",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1058,6 +1122,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Fornecer apoio tecnico, especialmente em eletrônica especializada, para os experimentos em radioterapia e nanobraquiterapia.",
+      "atuacao_en": "Providing technical support, especially in specialized electronics, for the radiotherapy and nanobrachytherapy experiments.",
       "ativo": true
     },
     {
