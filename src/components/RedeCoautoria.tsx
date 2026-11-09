@@ -52,7 +52,7 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
 
       <div className="rede-coautoria__rolagem">
         <svg
-          className={`rede-coautoria__svg${ativo ? " rede-coautoria__svg--realce" : ""}`}
+          className="rede-coautoria__svg"
           viewBox={`0 0 ${rede.largura} ${rede.altura}`}
           role="img"
           aria-label={`Rede de coautoria (${periodo.chave === "todos" ? "todos os anos" : periodo.rotulo}) com ${nosVisiveis.length} pesquisadores e ${periodo.arestas.length} pares de coautores. A tabela abaixo traz os mesmos dados.`}
@@ -63,11 +63,13 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
               const n1 = porSlug.get(a.a);
               const n2 = porSlug.get(a.b);
               if (!n1 || !n2) return null;
-              const destaque = ativo !== null && (a.a === ativo || a.b === ativo);
+              // O estado vai em cada elemento (e não só no <svg>): o Safari nem sempre
+              // redesenha partes de um SVG quando muda apenas a classe de um ancestral
+              const estado = ativo === null ? "" : a.a === ativo || a.b === ativo ? " rede-coautoria__aresta--ativa" : " rede-coautoria__aresta--apagada";
               return (
                 <line
                   key={`${a.a}|${a.b}`}
-                  className={`rede-coautoria__aresta${destaque ? " rede-coautoria__aresta--ativa" : ""}`}
+                  className={`rede-coautoria__aresta${estado}`}
                   x1={arredondar(n1.x)}
                   y1={arredondar(n1.y)}
                   x2={arredondar(n2.x)}
@@ -81,11 +83,13 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
             {nosVisiveis.map((n) => {
               const publicacoes = periodo.publicacoes[n.slug];
               const raio = periodo.raios[n.slug];
+              const estado = vizinhos === null ? "" : vizinhos.has(n.slug) ? " rede-coautoria__no--ativo" : " rede-coautoria__no--apagado";
               return (
                 <g
                   key={n.slug}
-                  className={`rede-coautoria__no rede-coautoria__no--${n.grupo}${vizinhos?.has(n.slug) ? " rede-coautoria__no--ativo" : ""}`}
+                  className={`rede-coautoria__no rede-coautoria__no--${n.grupo}${estado}`}
                   onMouseEnter={() => setAtivo(n.slug)}
+                  onClick={() => setAtivo(n.slug)}
                 >
                   <title>{`${n.nome} · ${ROTULOS_GRUPO[n.grupo]} · ${publicacoes} ${publicacoes === 1 ? "publicação" : "publicações"}`}</title>
                   <circle cx={arredondar(n.x)} cy={arredondar(n.y)} r={arredondar(raio)} />

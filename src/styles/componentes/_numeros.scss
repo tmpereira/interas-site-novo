@@ -127,15 +127,23 @@
     width: 100%;
     max-width: $largura-maxima-barra;
     height: 100%;
+    overflow: hidden;
+    transition: opacity $transicao-rapida;
 
     rect {
       fill: $cor-acento;
-      transition: opacity $transicao-rapida;
     }
   }
 
-  &__coluna:hover &__barra rect {
+  // A opacidade muda no <svg> inteiro, não no <rect>: mudar só o <rect> de um SVG
+  // esticado (preserveAspectRatio="none") deixa restos da barra pintados fora do lugar
+  &__coluna:hover &__barra {
     opacity: $opacidade-hover;
+  }
+
+  // Isola a pintura de cada coluna, para que nada vaze para baixo da linha de base
+  &__coluna {
+    contain: paint;
   }
 
   // A borda de cima dos rótulos forma a linha de base contínua sob as barras
@@ -277,22 +285,22 @@
     }
   }
 
-  // Ao passar o mouse numa pessoa, o resto fica apagado
-  &__svg--realce &__aresta {
+  // Ao passar o mouse (ou tocar) numa pessoa, o resto fica apagado.
+  // As classes ficam em cada elemento, não no <svg>, por causa do Safari (ver RedeCoautoria.tsx).
+  &__aresta--apagada {
     opacity: $opacidade-apagada * 0.5;
   }
 
-  &__svg--realce &__aresta--ativa {
-    stroke: $cor-texto;
+  &__aresta--ativa {
     opacity: $opacidade-aresta-ativa;
   }
 
-  &__svg--realce &__no {
-    opacity: $opacidade-apagada;
+  &__no {
+    cursor: pointer;
   }
 
-  &__svg--realce &__no--ativo {
-    opacity: 1;
+  &__no--apagado {
+    opacity: $opacidade-apagada;
   }
 
   &__nota {
