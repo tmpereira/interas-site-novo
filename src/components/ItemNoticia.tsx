@@ -20,7 +20,7 @@ export default function ItemNoticia({ noticia, idioma }: { noticia: Noticia; idi
               {c}
             </span>
           ))}
-          <time dateTime={noticia.data}>{formatarData(noticia.data)}</time>
+          <time dateTime={noticia.data}>{formatarData(noticia.data, idioma)}</time>
         </p>
         <h2 className="item-noticia__titulo">
           <Link href={href}>{noticia.titulo}</Link>

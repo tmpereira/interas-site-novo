@@ -6,6 +6,7 @@ import { carregarConteudo } from "@/lib/conteudo";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 function grupoPorSlug(slug: string) {
   const grupo = carregarConteudo().grupos.find((g) => g.slug === slug);
@@ -30,7 +31,7 @@ export default function PaginaGrupo({ idioma, slug }: { idioma: Idioma; slug: st
     <div className="pagina">
       <CabecalhoPagina
         caminho={rota("grupos", idioma)}
-        sobretitulo={g.instituicao ?? "Grupos e laboratórios"}
+        sobretitulo={g.instituicao ?? rotulos(idioma).grupos.sobretitulo}
         titulo={g.titulo}
         descricao={g.resumo}
         etiquetas={g.temas.map((t) => rotulo.get(t) ?? t)}

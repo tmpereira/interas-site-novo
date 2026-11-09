@@ -4,9 +4,10 @@ import { paginaPorSlug } from "@/lib/consultas";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  return metadadosPagina({ titulo: paginaPorSlug("contato").titulo, descricao: "Como entrar em contato com o INCT INTERAS.", caminho: rota("contato", idioma) });
+  return metadadosPagina({ titulo: paginaPorSlug("contato").titulo, descricao: rotulos(idioma).contato.descricaoPagina, caminho: rota("contato", idioma) });
 }
 
 type Cartao = { titulo: string; icone?: string; conteudo: string };

@@ -24,8 +24,8 @@ export default function ListaPublicacoes({ publicacoes, idioma }: { publicacoes:
             {p.periodico && <p className="lista-publicacoes__periodico">{p.periodico}</p>}
             {(p.fator_impacto !== null || p.citacoes !== null) && (
               <p className="lista-publicacoes__metricas">
-                {p.fator_impacto !== null && <span className="pilula-metrica">JCR {formatarJcr(p.fator_impacto)}</span>}
-                {p.citacoes !== null && <span className="pilula-metrica">{formatarCitacoes(p.citacoes)}</span>}
+                {p.fator_impacto !== null && <span className="pilula-metrica">JCR {formatarJcr(p.fator_impacto, idioma)}</span>}
+                {p.citacoes !== null && <span className="pilula-metrica">{formatarCitacoes(p.citacoes, idioma)}</span>}
               </p>
             )}
           </div>

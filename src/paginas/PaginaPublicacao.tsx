@@ -3,10 +3,11 @@ import Link from "next/link";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { vincularAutores } from "@/lib/autores";
 import { carregarConteudo } from "@/lib/conteudo";
-import { ROTULOS_TIPO_PUBLICACAO, formatarDataLonga, formatarJcr } from "@/lib/formatadores";
+import { formatarDataLonga, formatarJcr, formatarNumero } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 function publicacaoPorId(id: string) {
   const publicacao = carregarConteudo().publicacoes.find((p) => p.id === id);
@@ -50,23 +51,25 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
     pessoas.filter((x) => p.pessoas.includes(x.slug)),
   );
   const gruposDaPublicacao = grupos.filter((g) => p.grupos.includes(g.slug));
+  const r = rotulos(idioma);
+  const rp = r.publicacao;
   const veiculo = [
     p.periodico,
-    p.volume && `v. ${p.volume}`,
-    p.numero && `n. ${p.numero}`,
-    p.paginas && `p. ${p.paginas}`,
+    p.volume && rp.volume(p.volume),
+    p.numero && rp.numero(p.numero),
+    p.paginas && rp.paginas(p.paginas),
   ].filter(Boolean);
   const metricas = [
-    p.qualis && { rotulo: "Qualis", valor: p.qualis },
-    p.fator_impacto !== null && { rotulo: "Fator de impacto (JCR)", valor: formatarJcr(p.fator_impacto) },
-    p.citacoes !== null && { rotulo: "Citações", valor: p.citacoes.toLocaleString("pt-BR") },
+    p.qualis && { rotulo: rp.qualis, valor: p.qualis },
+    p.fator_impacto !== null && { rotulo: rp.fatorImpacto, valor: formatarJcr(p.fator_impacto, idioma) },
+    p.citacoes !== null && { rotulo: rp.citacoes, valor: formatarNumero(p.citacoes, idioma) },
   ].filter((m): m is { rotulo: string; valor: string } => Boolean(m));
 
   return (
     <div className="pagina">
       <CabecalhoPagina
         caminho={rota("publicacoes", idioma)}
-        sobretitulo={[ROTULOS_TIPO_PUBLICACAO[p.tipo], p.ano].join(" · ")}
+        sobretitulo={[r.publicacoes.tipos[p.tipo], p.ano].join(" · ")}
         titulo={semMarcacao(p.titulo)}
         tituloHtml={markdownEmLinha(p.titulo)}
         descricao={p.periodico}
@@ -75,7 +78,7 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
 
         <div className="artigo__grade">
           <section>
-            <h2 className="artigo__rotulo">Autores</h2>
+            <h2 className="artigo__rotulo">{rp.autores}</h2>
             <ul className="artigo__autores">
               {autores.map((a, i) => (
                 <li key={`${a.nome}-${i}`}>{a.slug ? <Link href={rota("equipe", idioma, a.slug)}>{a.nome}</Link> : a.nome}</li>
@@ -83,17 +86,17 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
             </ul>
           </section>
           <section>
-            <h2 className="artigo__rotulo">Data de publicação</h2>
-            <p>{formatarDataLonga(p.data)}</p>
+            <h2 className="artigo__rotulo">{r.comum.dataPublicacao}</h2>
+            <p>{formatarDataLonga(p.data, idioma)}</p>
             {veiculo.length > 0 && (
               <>
-                <h2 className="artigo__rotulo">Publicado em</h2>
+                <h2 className="artigo__rotulo">{rp.publicadoEm}</h2>
                 <p>{veiculo.join(", ")}</p>
               </>
             )}
             {metricas.length > 0 && (
               <>
-                <h2 className="artigo__rotulo">Indicadores</h2>
+                <h2 className="artigo__rotulo">{rp.indicadores}</h2>
                 <ul className="artigo__metricas">
                   {metricas.map((m) => (
                     <li key={m.rotulo}>
@@ -105,7 +108,7 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
             )}
             {gruposDaPublicacao.length > 0 && (
               <>
-                <h2 className="artigo__rotulo">{gruposDaPublicacao.length === 1 ? "Grupo" : "Grupos"}</h2>
+                <h2 className="artigo__rotulo">{r.comum.grupos(gruposDaPublicacao.length)}</h2>
                 <ul className="artigo__metricas">
                   {gruposDaPublicacao.map((g) => (
                     <li key={g.slug}>
@@ -119,13 +122,13 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
         </div>
 
         <section>
-          <h2 className="artigo__rotulo">Resumo</h2>
-          {p.resumo ? <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(p.resumo) }} /> : <p>Resumo não disponível.</p>}
+          <h2 className="artigo__rotulo">{r.comum.resumo}</h2>
+          {p.resumo ? <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(p.resumo) }} /> : <p>{rp.resumoIndisponivel}</p>}
         </section>
 
         {p.palavras_chave.length > 0 && (
           <section>
-            <h2 className="artigo__rotulo">Palavras-chave</h2>
+            <h2 className="artigo__rotulo">{rp.palavrasChave}</h2>
             <p>{p.palavras_chave.join(", ")}</p>
           </section>
         )}
@@ -134,12 +137,12 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
           <p className="artigo__acoes">
             {p.doi && (
               <a href={`https://doi.org/${p.doi}`} target="_blank" rel="noopener noreferrer" className="artigo__botao">
-                <i className="bi bi-box-arrow-up-right" aria-hidden="true" /> DOI: <span className="artigo__doi">{p.doi}</span>
+                <i className="bi bi-box-arrow-up-right" aria-hidden="true" /> {rp.doi} <span className="artigo__doi">{p.doi}</span>
               </a>
             )}
             {p.url && (
               <a href={p.url} target="_blank" rel="noopener noreferrer" className="artigo__botao artigo__botao--secundario">
-                <i className="bi bi-link-45deg" aria-hidden="true" /> Página da publicação
+                <i className="bi bi-link-45deg" aria-hidden="true" /> {rp.paginaPublicacao}
               </a>
             )}
           </p>

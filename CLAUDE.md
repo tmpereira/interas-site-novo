@@ -258,7 +258,7 @@ Orientações dos pesquisadores (extraídas do Lattes), exibidas em `/alunos/`.
 ```
 
 - `nivel`: `iniciacao-cientifica`, `mestrado`, `doutorado`, `pos-doutorado` (ordem das seções
-  da página; títulos em `TITULOS_NIVEL_ALUNO`, `src/lib/consultas.ts`).
+  da página; títulos em `rotulos.ts`, `alunos.niveis`; seção 13.4).
 - `situacao`: `em-andamento` ou `concluida`. `orientador` é slug de `pessoas.json` (validado).
 - Não há identificador único: a mesma pessoa pode aparecer mais de uma vez (ex.: duas bolsas de IC).
 - A página mostra uma tabela-resumo (em andamento × concluídos por nível) e uma tabela por
@@ -314,7 +314,8 @@ Orientações dos pesquisadores (extraídas do Lattes), exibidas em `/alunos/`.
 - `paises` (opcional): códigos ISO de 2 letras dos países dos autores (ex.: `["BR", "US"]`).
   O cartão do artigo mostra os estrangeiros com nome curto ("Colaboração internacional: EUA,
   França"); os nomes ficam em `NOMES_PAISES` (`src/lib/consultas.ts`), e código sem nome
-  cadastrado aparece como está. `fonte_metricas` indica a origem de citações/JCR/países
+  cadastrado aparece como está. Em inglês, os nomes vêm de `Intl.DisplayNames`, com as
+  exceções curtas em `NOMES_PAISES_EN` (EUA → "USA", R. Unido → "UK"...). `fonte_metricas` indica a origem de citações/JCR/países
   (ex.: `openalex-2026-10-23`, provisório até o JCR oficial da Clarivate).
 - **Métricas** (`citacoes`, `fator_impacto`, `qualis`) começam como `null`. A
   página de publicações as exibe **quando preenchidas** e permite ordenar e
@@ -1106,6 +1107,17 @@ os `ROTULOS_TIPO_*` de `formatadores.ts` e os textos fixos hoje espalhados em
 `Espectro`, `ListaPatentes`, `FiltroPorCategoria`, `publicacoes/page.tsx` e
 `interas-em-numeros/page.tsx` (conferir com `grep` se há outros).
 
+**Como ficou (etapa 2, 2026-11-09):** todos os textos fixos de `src/components/`
+e `src/paginas/` estão em `rotulos.ts`, agrupados por área (`comum`, `layout`,
+`perfil`, `alunos`, `filtroPublicacoes`, `numeros`, `rede`, `mapa`...). Textos com
+número ou nome são funções (`contagem(n)`, `fotoDe(nome)`). Componentes de
+servidor e de cliente recebem `idioma` e chamam `rotulos(idioma)`; o dicionário
+vai junto no JavaScript dos componentes de cliente (é pequeno). Os títulos das
+categorias de pessoas e os rótulos dos temas dos grupos **continuam em
+`site.json`** (`categorias_pessoas`, `temas_grupos`): já são dados do JSON, então
+ganham `titulo_en`/`rotulo_en` na etapa 3, em vez de uma segunda cópia aqui.
+O texto do 404 também está em `rotulos.ts`, mas o `404.html` é um só (português).
+
 **Conteúdo dos JSON:** campos com sufixo **`_en`** ao lado do original, no
 mesmo item. Exemplos:
 
@@ -1151,6 +1163,13 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
   fixo (`"pt-BR"` / `"en"`). Datas em inglês: "Sep 24, 2026".
 - Plurais ("1 citação / 3 citações") via `rotulos.ts`, não com `if` no
   componente.
+- **Como ficou:** `LOCALE` (`rotas.ts`) dá o código do `Intl` de cada idioma;
+  `formatadores.ts` tem `formatarData`, `formatarDataLonga`, `formatarNumero`,
+  `formatarJcr`, `formatarCitacoes` e `compararTexto`, todos com o idioma. Ficam
+  em `"pt-BR"` de propósito: as funções de ordem dos arquivos (`conteudo.ts`) e a
+  ordem dos nós da rede de coautoria (`rede.ts`), da qual dependem as posições
+  do desenho. O mapa-múndi em inglês troca os nomes de `mapa-mundi.json`
+  (português) pelos de `Intl.DisplayNames` no build.
 
 ### 13.6 SEO e navegação
 
@@ -1192,8 +1211,8 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 1. **Estrutura** (feita em 2026-11-09): `(pt)/` + `en/`, `src/paginas/`, `rotas.ts`, `rotulos.ts`
    com o português; `/en/` ainda mostrando português. Conferir que o site em
    português ficou **idêntico** (mesmas URLs no `out/`). `rotulos.ts` tem por
-   enquanto só os textos do layout e do 404.
-2. **Rótulos**: extrair todos os textos fixos dos componentes para
+   enquanto só os textos do layout e do 404 (completado na etapa 2).
+2. **Rótulos** (feita em 2026-11-09): extrair todos os textos fixos dos componentes para
    `rotulos.ts` e preencher `en`. Formatação por idioma (13.5).
 3. **Esquemas**: campos `_en`, notícias em `content/noticias/en/`,
    `traduzir()`, avisos do validador.

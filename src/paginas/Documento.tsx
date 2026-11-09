@@ -7,13 +7,10 @@ import BarraAnuncio from "@/components/BarraAnuncio";
 import Navbar from "@/components/Navbar";
 import Rodape from "@/components/Rodape";
 import { carregarConteudo } from "@/lib/conteudo";
-import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { type Idioma, LOCALE, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 import { markdownEmLinha } from "@/lib/markdown";
 import { menuNoIdioma } from "@/lib/menu";
-
-/** Atributo `lang` do <html> de cada idioma. */
-const LANG: Record<Idioma, string> = { pt: "pt-BR", en: "en" };
 
 /** Metadados comuns a todas as páginas (usados pelos dois layouts raiz). */
 export function metadadosRaiz(): Metadata {
@@ -35,7 +32,7 @@ export default function Documento({ idioma, children }: { idioma: Idioma; childr
   const anuncio = site.anuncio?.ativo ? site.anuncio : null;
   const r = rotulos(idioma);
   return (
-    <html lang={LANG[idioma]} className={classesFontes}>
+    <html lang={LOCALE[idioma]} className={classesFontes}>
       <body>
         {site.google_analytics && process.env.NODE_ENV === "production" && (
           <>
@@ -49,11 +46,11 @@ gtag('config', '${site.google_analytics}');`}
           </>
         )}
         <a href="#conteudo" className="pular-para-conteudo">
-          {r.pularParaConteudo}
+          {r.layout.pularParaConteudo}
         </a>
         <header className="cabecalho">
-          {anuncio && <BarraAnuncio id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto)} />}
-          <Navbar logo={site.logo} logoAlt={site.logo_alt} menu={menuNoIdioma(site.menu, idioma)} inicio={rota("inicio", idioma)} />
+          {anuncio && <BarraAnuncio idioma={idioma} id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto)} />}
+          <Navbar idioma={idioma} logo={site.logo} logoAlt={site.logo_alt} menu={menuNoIdioma(site.menu, idioma)} inicio={rota("inicio", idioma)} />
         </header>
         <main id="conteudo" className="conteudo-principal">
           {children}

@@ -7,9 +7,10 @@ import { paginaPorSlug } from "@/lib/consultas";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  return metadadosPagina({ titulo: paginaPorSlug("grupos").titulo, descricao: "Grupos de pesquisa e laboratórios do INCT INTERAS.", caminho: rota("grupos", idioma) });
+  return metadadosPagina({ titulo: paginaPorSlug("grupos").titulo, descricao: rotulos(idioma).grupos.descricaoPagina, caminho: rota("grupos", idioma) });
 }
 
 export default function Grupos({ idioma }: { idioma: Idioma }) {
@@ -19,10 +20,11 @@ export default function Grupos({ idioma }: { idioma: Idioma }) {
   const nomes = new Map(pessoas.map((p) => [p.slug, p.nome]));
   return (
     <div className="pagina">
-      <CabecalhoPagina caminho={rota("grupos", idioma)} sobretitulo="Grupos e laboratórios" titulo={pagina.titulo} descricao={pagina.descricao}>
+      <CabecalhoPagina caminho={rota("grupos", idioma)} sobretitulo={rotulos(idioma).grupos.sobretitulo} titulo={pagina.titulo} descricao={pagina.descricao}>
         {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo) }} />}
       </CabecalhoPagina>
       <FiltroPorCategoria
+        idioma={idioma}
         lerDaUrl
         categorias={site.temas_grupos.map((t) => ({ chave: t.slug, rotulo: t.rotulo }))}
         classeLista="lista-grupos"

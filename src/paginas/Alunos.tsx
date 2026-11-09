@@ -5,6 +5,8 @@ import { alunosPorNivel, paginaPorSlug, type AlunoComOrientador } from "@/lib/co
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
+import type { Rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
   const pagina = paginaPorSlug("alunos");
@@ -14,15 +16,16 @@ export function metadados(idioma: Idioma): Metadata {
 const emAndamento = (alunos: AlunoComOrientador[]) => alunos.filter((a) => a.situacao === "em-andamento").length;
 
 /** "2021–2024", "desde 2024", "2024" ou "—". */
-function periodo(a: AlunoComOrientador): string {
-  if (a.situacao === "em-andamento") return a.ano_inicio ? `desde ${a.ano_inicio}` : "—";
+function periodo(a: AlunoComOrientador, r: Rotulos["alunos"]): string {
+  if (a.situacao === "em-andamento") return a.ano_inicio ? r.desde(a.ano_inicio) : "—";
   if (a.ano_inicio && a.ano_conclusao && a.ano_inicio !== a.ano_conclusao) return `${a.ano_inicio}–${a.ano_conclusao}`;
   return String(a.ano_conclusao ?? a.ano_inicio ?? "—");
 }
 
 export default function Alunos({ idioma }: { idioma: Idioma }) {
   const pagina = paginaPorSlug("alunos");
-  const niveis = alunosPorNivel();
+  const r = rotulos(idioma).alunos;
+  const niveis = alunosPorNivel(idioma);
   const total = niveis.reduce((s, n) => s + n.alunos.length, 0);
   const totalAndamento = niveis.reduce((s, n) => s + emAndamento(n.alunos), 0);
   return (
@@ -33,16 +36,16 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
 
       <section className="secao-alunos" aria-labelledby="alunos-resumo">
         <h2 id="alunos-resumo" className="secao-alunos__titulo">
-          Resumo
+          {r.resumo}
         </h2>
         <div className="tabela-alunos__rolagem">
           <table className="tabela-alunos tabela-alunos--resumo">
             <thead>
               <tr>
-                <th scope="col">Nível</th>
-                <th scope="col" className="tabela-alunos__numero">Em andamento</th>
-                <th scope="col" className="tabela-alunos__numero">Concluídos</th>
-                <th scope="col" className="tabela-alunos__numero">Total</th>
+                <th scope="col">{r.nivel}</th>
+                <th scope="col" className="tabela-alunos__numero">{r.emAndamento}</th>
+                <th scope="col" className="tabela-alunos__numero">{r.concluidos}</th>
+                <th scope="col" className="tabela-alunos__numero">{r.total}</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +62,7 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
             </tbody>
             <tfoot>
               <tr>
-                <th scope="row">Total</th>
+                <th scope="row">{r.total}</th>
                 <td className="tabela-alunos__numero">{totalAndamento}</td>
                 <td className="tabela-alunos__numero">{total - totalAndamento}</td>
                 <td className="tabela-alunos__numero">{total}</td>
@@ -78,12 +81,12 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
             <table className="tabela-alunos">
               <thead>
                 <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Orientação</th>
-                  <th scope="col">Situação</th>
-                  <th scope="col">Período</th>
-                  <th scope="col">Instituição</th>
-                  <th scope="col">Título do trabalho</th>
+                  <th scope="col">{r.nome}</th>
+                  <th scope="col">{r.orientacao}</th>
+                  <th scope="col">{r.situacao}</th>
+                  <th scope="col">{r.periodo}</th>
+                  <th scope="col">{r.instituicao}</th>
+                  <th scope="col">{r.tituloTrabalho}</th>
                 </tr>
               </thead>
               <tbody>
@@ -92,14 +95,14 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
                     <th scope="row" className="tabela-alunos__nome">{a.nome}</th>
                     <td>
                       <Link href={rota("equipe", idioma, a.orientador)}>{a.pessoaOrientadora.nome}</Link>
-                      {a.coorientacao && <span className="tabela-alunos__coorientacao">Coorientação: {a.coorientacao}</span>}
+                      {a.coorientacao && <span className="tabela-alunos__coorientacao">{r.coorientacao(a.coorientacao)}</span>}
                     </td>
                     <td>
                       <span className={`situacao-aluno situacao-aluno--${a.situacao}`}>
-                        {a.situacao === "em-andamento" ? "Em andamento" : "Concluída"}
+                        {a.situacao === "em-andamento" ? r.situacaoEmAndamento : r.situacaoConcluida}
                       </span>
                     </td>
-                    <td className="tabela-alunos__periodo">{periodo(a)}</td>
+                    <td className="tabela-alunos__periodo">{periodo(a, r)}</td>
                     <td>{a.instituicao ?? "—"}</td>
                     <td className="tabela-alunos__titulo-trabalho">{a.titulo ?? "—"}</td>
                   </tr>

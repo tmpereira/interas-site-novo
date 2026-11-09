@@ -1,20 +1,21 @@
 "use client";
 
 import { useMemo, useState, type ReactNode } from "react";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 import type { PeriodoRede, Rede } from "@/lib/rede";
 
 type Props = {
+  idioma: Idioma;
   rede: Rede;
   /** Período mostrado (escolhido fora, no mesmo seletor do mapa). */
   periodo: PeriodoRede;
+  /** Período para as frases ("2025"); `null` = todos os anos. */
+  rotuloPeriodo: string | null;
   /** Pílulas de período, desenhadas abaixo da legenda. */
   seletor: ReactNode;
 };
 
-const ROTULOS_GRUPO = {
-  pesquisador: "Pesquisador(a)",
-  bolsista: "Bolsista",
-} as const;
 const arredondar = (n: number) => Math.round(n * 10) / 10;
 /** Espessura da linha: cresce com o número de artigos em comum, com limite. */
 const espessura = (peso: number) => arredondar(Math.min(1 + (peso - 1) * 0.6, 9));
@@ -24,7 +25,8 @@ const espessura = (peso: number) => arredondar(Math.min(1 + (peso - 1) * 0.6, 9)
  * Passar o mouse numa pessoa realça as conexões dela. As posições são as mesmas em todos
  * os períodos, para facilitar a comparação.
  */
-export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
+export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, seletor }: Props) {
+  const r = rotulos(idioma).rede;
   const [ativo, setAtivo] = useState<string | null>(null);
   const porSlug = useMemo(() => new Map(rede.nos.map((n) => [n.slug, n])), [rede.nos]);
   const nosVisiveis = rede.nos.filter((n) => periodo.publicacoes[n.slug] !== undefined);
@@ -42,9 +44,9 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
   return (
     <figure className="rede-coautoria">
       <figcaption className="rede-coautoria__cabecalho">
-        <span className="rede-coautoria__titulo">Coautoria entre pesquisadores do INTERAS</span>
+        <span className="rede-coautoria__titulo">{r.titulo}</span>
         <span className="rede-coautoria__legenda">
-          <span className="rede-coautoria__explicacao">Bolinha maior = mais publicações · linha mais grossa = mais artigos juntos</span>
+          <span className="rede-coautoria__explicacao">{r.explicacao}</span>
         </span>
       </figcaption>
 
@@ -55,7 +57,7 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
           className="rede-coautoria__svg"
           viewBox={`0 0 ${rede.largura} ${rede.altura}`}
           role="img"
-          aria-label={`Rede de coautoria (${periodo.chave === "todos" ? "todos os anos" : periodo.rotulo}) com ${nosVisiveis.length} pesquisadores e ${periodo.arestas.length} pares de coautores. A tabela abaixo traz os mesmos dados.`}
+          aria-label={r.descricao(rotuloPeriodo, nosVisiveis.length, periodo.arestas.length)}
           onMouseLeave={() => setAtivo(null)}
         >
           <g className="rede-coautoria__arestas">
@@ -91,7 +93,7 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
                   onMouseEnter={() => setAtivo(n.slug)}
                   onClick={() => setAtivo(n.slug)}
                 >
-                  <title>{`${n.nome} · ${ROTULOS_GRUPO[n.grupo]} · ${publicacoes} ${publicacoes === 1 ? "publicação" : "publicações"}`}</title>
+                  <title>{`${n.nome} · ${r[n.grupo]} · ${r.publicacoes(publicacoes)}`}</title>
                   <circle cx={arredondar(n.x)} cy={arredondar(n.y)} r={arredondar(raio)} />
                   <text x={arredondar(n.x)} y={arredondar(n.y - raio - 6)}>
                     {n.rotulo}
@@ -104,22 +106,19 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
       </div>
 
       {periodo.isolados.length > 0 && (
-        <p className="rede-coautoria__nota">
-          Sem coautoria com outro membro do INTERAS
-          {periodo.chave === "todos" ? "" : ` em ${periodo.rotulo}`}: {periodo.isolados.map((i) => i.nome).join(", ")}.
-        </p>
+        <p className="rede-coautoria__nota">{r.isolados(rotuloPeriodo, periodo.isolados.map((i) => i.nome).join(", "))}</p>
       )}
 
       <details className="rede-coautoria__tabela">
-        <summary>Ver tabela de coautorias ({periodo.arestas.length})</summary>
+        <summary>{r.verTabela(periodo.arestas.length)}</summary>
         <div className="tabela-alunos__rolagem">
           <table className="tabela-alunos tabela-alunos--resumo">
             <thead>
               <tr>
-                <th scope="col">Membro</th>
-                <th scope="col">Membro</th>
+                <th scope="col">{r.membro}</th>
+                <th scope="col">{r.membro}</th>
                 <th scope="col" className="tabela-alunos__numero">
-                  Artigos juntos
+                  {r.artigosJuntos}
                 </th>
               </tr>
             </thead>

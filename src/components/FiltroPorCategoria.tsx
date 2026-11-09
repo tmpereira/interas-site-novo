@@ -2,6 +2,8 @@
 
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { slugificar } from "@/lib/formatadores";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export type ItemFiltravel = {
   id: string;
@@ -12,6 +14,7 @@ export type ItemFiltravel = {
 };
 
 type Props = {
+  idioma: Idioma;
   categorias: { chave: string; rotulo: string }[];
   itens: ItemFiltravel[];
   /** Classe da lista (ul) e de cada item (li). */
@@ -39,7 +42,7 @@ function categoriaDaUrl(): string {
 }
 
 /** Lista com filtro por categoria (barra lateral à direita, como no Quarto). */
-export default function FiltroPorCategoria({ categorias, itens, classeLista, classeItem, lerDaUrl = false }: Props) {
+export default function FiltroPorCategoria({ idioma, categorias, itens, classeLista, classeItem, lerDaUrl = false }: Props) {
   const [escolhida, setEscolhida] = useState<string | null>(null);
   const daUrl = useSyncExternalStore(
     inscrever,
@@ -47,6 +50,7 @@ export default function FiltroPorCategoria({ categorias, itens, classeLista, cla
     () => "",
   );
   const ativa = escolhida ?? daUrl;
+  const r = rotulos(idioma);
 
   const contagens = categorias
     .map((c) => ({ ...c, total: itens.filter((i) => i.categorias.includes(c.chave)).length }))
@@ -57,12 +61,12 @@ export default function FiltroPorCategoria({ categorias, itens, classeLista, cla
 
   return (
     <div className="filtro-categorias">
-      <nav className="filtro-categorias__barra" aria-label="Categorias">
-        <h2 className="filtro-categorias__titulo">Categorias</h2>
+      <nav className="filtro-categorias__barra" aria-label={r.filtroCategorias.titulo}>
+        <h2 className="filtro-categorias__titulo">{r.filtroCategorias.titulo}</h2>
         <ul className="filtro-categorias__lista">
           <li>
             <button type="button" className={`filtro-categorias__opcao${ativaValida === "" ? " active" : ""}`} aria-pressed={ativaValida === ""} onClick={() => setEscolhida("")}>
-              Todos ({itens.length})
+              {r.comum.todos} ({itens.length})
             </button>
           </li>
           {contagens.map((c) => (

@@ -1,6 +1,9 @@
 import type { PontoGrafico } from "@/lib/consultas";
+import { formatarNumero } from "@/lib/formatadores";
+import type { Idioma } from "@/lib/i18n/rotas";
 
 type Props = {
+  idioma: Idioma;
   titulo: string;
   /** Texto curto abaixo do título (o que é medido). */
   descricao?: string;
@@ -16,13 +19,11 @@ type Props = {
   compacto?: boolean;
 };
 
-const formatar = (valor: number, casas: number) => valor.toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas });
-
 /**
  * Gráfico de barras verticais simples, renderizado no build.
  * Cada barra é um SVG esticado na altura da coluna; valores e anos ficam em HTML.
  */
-export default function GraficoBarras({ titulo, descricao, pontos, unidade, casasDecimais = 0, maximo, nota, compacto = false }: Props) {
+export default function GraficoBarras({ idioma, titulo, descricao, pontos, unidade, casasDecimais = 0, maximo, nota, compacto = false }: Props) {
   const topo = maximo ?? Math.max(...pontos.map((p) => p.valor), 1);
   return (
     <figure className={`grafico-barras${compacto ? " grafico-barras--compacto" : ""}`}>
@@ -32,7 +33,7 @@ export default function GraficoBarras({ titulo, descricao, pontos, unidade, casa
       </figcaption>
       <ol className="grafico-barras__colunas">
         {pontos.map((p) => {
-          const valor = formatar(p.valor, casasDecimais);
+          const valor = formatarNumero(p.valor, idioma, casasDecimais);
           return (
             <li key={p.rotulo} className="grafico-barras__coluna" title={`${p.rotulo}: ${valor} ${unidade}`}>
               <span className="grafico-barras__valor" aria-hidden="true">

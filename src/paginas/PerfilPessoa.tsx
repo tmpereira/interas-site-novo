@@ -8,6 +8,7 @@ import { gruposDaPessoa, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consul
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export function parametros() {
   // Inclui pessoas inativas: o perfil continua existindo para não quebrar links de publicações e grupos
@@ -25,11 +26,12 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
   const publicacoes = publicacoesDaPessoa(pessoa.slug);
   const grupos = gruposDaPessoa(pessoa);
 
+  const r = rotulos(idioma);
   const links = [
-    { rotulo: "Lattes", icone: "link-45deg", url: pessoa.lattes },
-    { rotulo: "Scholar", icone: "mortarboard", url: pessoa.scholar },
-    { rotulo: "ORCID", icone: "person-badge", url: pessoa.orcid },
-    { rotulo: "Instituição", icone: "bank", url: pessoa.instituicao?.url ?? null },
+    { rotulo: r.perfil.lattes, icone: "link-45deg", url: pessoa.lattes },
+    { rotulo: r.perfil.scholar, icone: "mortarboard", url: pessoa.scholar },
+    { rotulo: r.perfil.orcid, icone: "person-badge", url: pessoa.orcid },
+    { rotulo: r.perfil.instituicao, icone: "bank", url: pessoa.instituicao?.url ?? null },
   ].filter((l): l is { rotulo: string; icone: string; url: string } => Boolean(l.url));
 
   return (
@@ -39,7 +41,7 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
         sobretitulo={pessoa.cargo}
         titulo={pessoa.nome}
         descricao={pessoa.instituicao?.nome}
-        midia={<FotoPessoa pessoa={pessoa} tamanho="perfil" alt={`Foto de ${pessoa.nome}`} />}
+        midia={<FotoPessoa pessoa={pessoa} tamanho="perfil" alt={r.perfil.fotoDe(pessoa.nome)} />}
       >
         {links.length > 0 && (
           <ul className="perfil__links">
@@ -56,19 +58,19 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
       <article className="perfil">
         {pessoa.areas && (
           <section>
-            <h2>Áreas de Atuação</h2>
+            <h2>{r.perfil.areas}</h2>
             <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.areas) }} />
           </section>
         )}
         {pessoa.atuacao && (
           <section>
-            <h2>Atuação no Projeto</h2>
+            <h2>{r.perfil.atuacao}</h2>
             <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.atuacao) }} />
           </section>
         )}
         {grupos.length > 0 && (
           <section>
-            <h2>{grupos.length === 1 ? "Grupo" : "Grupos"}</h2>
+            <h2>{r.comum.grupos(grupos.length)}</h2>
             <ul>
               {grupos.map((g) => (
                 <li key={g.slug}>
@@ -80,7 +82,7 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
         )}
         {publicacoes.length > 0 && (
           <section>
-            <h2>Publicações ({publicacoes.length})</h2>
+            <h2>{r.perfil.publicacoes(publicacoes.length)}</h2>
             <ListaPublicacoes publicacoes={publicacoes} idioma={idioma} />
           </section>
         )}

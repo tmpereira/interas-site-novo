@@ -1,8 +1,11 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 type Props = {
+  idioma: Idioma;
   id: string;
   icone: string | null;
   /** Texto do aviso já convertido de Markdown para HTML. */
@@ -36,7 +39,8 @@ function jaFechado(id: string): boolean {
  * Barra de aviso no topo. O visitante pode fechar; o aviso só volta se o `id` mudar.
  * No HTML gerado ela começa oculta e aparece no navegador se ainda não foi fechada (como no site antigo).
  */
-export default function BarraAnuncio({ id, icone, html }: Props) {
+export default function BarraAnuncio({ idioma, id, icone, html }: Props) {
+  const r = rotulos(idioma).layout;
   const fechado = useSyncExternalStore(
     inscrever,
     () => jaFechado(id),
@@ -55,10 +59,10 @@ export default function BarraAnuncio({ id, icone, html }: Props) {
 
   if (fechado) return null;
   return (
-    <div className="anuncio" role="region" aria-label="Aviso">
+    <div className="anuncio" role="region" aria-label={r.aviso}>
       {icone && <i className={`anuncio__icone bi bi-${icone}`} aria-hidden="true" />}
       <div className="anuncio__texto" dangerouslySetInnerHTML={{ __html: html }} />
-      <button type="button" className="anuncio__fechar" aria-label="Fechar aviso" onClick={fechar}>
+      <button type="button" className="anuncio__fechar" aria-label={r.fecharAviso} onClick={fechar}>
         <i className="bi bi-x-lg" aria-hidden="true" />
       </button>
     </div>

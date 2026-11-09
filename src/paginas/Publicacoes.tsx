@@ -8,15 +8,17 @@ import { formatarData } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
   const pagina = paginaPorSlug("publicacoes");
-  return metadadosPagina({ titulo: pagina.titulo, descricao: "Artigos, patentes e softwares do INCT INTERAS.", caminho: rota("publicacoes", idioma) });
+  return metadadosPagina({ titulo: pagina.titulo, descricao: rotulos(idioma).publicacoes.descricaoPagina, caminho: rota("publicacoes", idioma) });
 }
 
 export default function Publicacoes({ idioma }: { idioma: Idioma }) {
   const { publicacoes, patentes, grupos, pessoas } = carregarConteudo();
   const pagina = paginaPorSlug("publicacoes");
+  const r = rotulos(idioma).publicacoes;
 
   // Dados de cada publicação para a lista com filtros (o resumo aparece ao expandir o cartão)
   const itens: ItemPublicacao[] = publicacoes.map((p) => ({
@@ -26,7 +28,7 @@ export default function Publicacoes({ idioma }: { idioma: Idioma }) {
     autores: p.autores,
     ano: p.ano,
     data: p.data,
-    dataTexto: formatarData(p.data),
+    dataTexto: formatarData(p.data, idioma),
     resumoHtml: p.resumo ? markdownParaHtml(p.resumo) : null,
     periodico: p.periodico,
     volume: p.volume,
@@ -38,7 +40,7 @@ export default function Publicacoes({ idioma }: { idioma: Idioma }) {
     qualis: p.qualis,
     doi: p.doi,
     internacional: p.colaboracao_internacional ?? null,
-    paises: paisesEstrangeiros(p.paises),
+    paises: paisesEstrangeiros(idioma, p.paises),
   }));
   const gruposComPublicacao = grupos.filter((g) => publicacoes.some((p) => p.grupos.includes(g.slug))).map((g) => ({ slug: g.slug, titulo: g.titulo }));
 
@@ -47,27 +49,27 @@ export default function Publicacoes({ idioma }: { idioma: Idioma }) {
       <CabecalhoPagina caminho={rota("publicacoes", idioma)} titulo={pagina.titulo} descricao={pagina.descricao}>
         <dl className="numeros-producao">
           <div className="numeros-producao__item">
-            <dt>Artigos</dt>
+            <dt>{r.artigos}</dt>
             <dd>{publicacoes.length}</dd>
           </div>
           <div className="numeros-producao__item">
-            <dt>Patentes e softwares</dt>
+            <dt>{r.patentesSoftwares}</dt>
             <dd>{patentes.length}</dd>
           </div>
           <div className="numeros-producao__item">
-            <dt>Pessoas na equipe</dt>
+            <dt>{r.pessoasEquipe}</dt>
             <dd>{pessoas.filter((p) => p.ativo).length}</dd>
           </div>
         </dl>
       </CabecalhoPagina>
 
       <section id="artigos" className="secao-producao">
-        <FiltroPublicacoes titulo={(pagina.titulo_artigos as string | undefined) ?? "Artigos"} itens={itens} grupos={gruposComPublicacao} />
+        <FiltroPublicacoes idioma={idioma} titulo={(pagina.titulo_artigos as string | undefined) ?? r.artigos} itens={itens} grupos={gruposComPublicacao} />
       </section>
 
       <section id="patentes" className="secao-producao">
-        <h2 className="secao-producao__titulo">{(pagina.titulo_patentes as string | undefined) ?? "Patentes e softwares"}</h2>
-        <ListaPatentes patentes={patentes} />
+        <h2 className="secao-producao__titulo">{(pagina.titulo_patentes as string | undefined) ?? r.patentesSoftwares}</h2>
+        <ListaPatentes patentes={patentes} idioma={idioma} />
       </section>
     </div>
   );

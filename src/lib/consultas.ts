@@ -2,6 +2,8 @@
 
 import { carregarConteudo } from "./conteudo.ts";
 import { NIVEIS_ALUNO, type Aluno, type CategoriaPessoa, type Grupo, type NivelAluno, type Noticia, type Pagina, type Pessoa, type Publicacao } from "./esquemas.ts";
+import { type Idioma, LOCALE } from "./i18n/rotas.ts";
+import { rotulos } from "./i18n/rotulos.ts";
 import { markdownParaTexto, truncarTexto } from "./markdown.ts";
 
 /** Página institucional ou texto de abertura de uma listagem (content/paginas.json). */
@@ -19,15 +21,7 @@ export function equipePorCategoria(): { chave: CategoriaPessoa; titulo: string; 
     .filter((c) => c.pessoas.length > 0);
 }
 
-/** Títulos das seções da página "Alunos". */
-export const TITULOS_NIVEL_ALUNO: Record<NivelAluno, string> = {
-  "iniciacao-cientifica": "Iniciação científica",
-  mestrado: "Mestrado",
-  doutorado: "Doutorado",
-  "pos-doutorado": "Pós-doutorado",
-};
-
-/** Nomes curtos dos países (código ISO de 2 letras), exibidos nos cartões de artigos. */
+/** Nomes curtos dos países em português (código ISO de 2 letras), exibidos nos cartões de artigos e no mapa. */
 const NOMES_PAISES: Record<string, string> = {
   AE: "EAU",
   AR: "Argentina",
@@ -60,29 +54,56 @@ const NOMES_PAISES: Record<string, string> = {
   VE: "Venezuela",
 };
 
+/**
+ * Nomes em inglês que fogem do padrão de `Intl.DisplayNames` (curtos, como em português,
+ * ou sem "&" e parênteses). Os demais países vêm do próprio `Intl`, sem lista à mão.
+ */
+const NOMES_PAISES_EN: Record<string, string> = {
+  AE: "UAE",
+  BA: "Bosnia and Herzegovina",
+  CD: "DR Congo",
+  CG: "Republic of the Congo",
+  GB: "UK",
+  MM: "Myanmar",
+  TT: "Trinidad and Tobago",
+  US: "USA",
+};
+const nomesIntlEn = new Intl.DisplayNames("en", { type: "region" });
+
+/** Nome de um país em inglês pelo código ISO; `null` se o `Intl` não o conhecer. */
+export function nomePaisEn(codigo: string): string | null {
+  if (NOMES_PAISES_EN[codigo]) return NOMES_PAISES_EN[codigo];
+  try {
+    const nome = nomesIntlEn.of(codigo);
+    return nome && nome !== codigo ? nome : null;
+  } catch {
+    return null;
+  }
+}
+
 /** Nome curto de um país pelo código ISO de 2 letras (o próprio código, se não houver nome). */
-export const nomeCurtoPais = (codigo: string) => NOMES_PAISES[codigo] ?? codigo;
+export const nomeCurtoPais = (codigo: string, idioma: Idioma) => (idioma === "en" ? nomePaisEn(codigo) : NOMES_PAISES[codigo]) ?? codigo;
 
 /** Países estrangeiros (sem o Brasil), com nome curto; código desconhecido aparece como está. */
-export const paisesEstrangeiros = (codigos: string[] = []) => codigos.filter((c) => c !== "BR").map(nomeCurtoPais);
+export const paisesEstrangeiros = (idioma: Idioma, codigos: string[] = []) => codigos.filter((c) => c !== "BR").map((c) => nomeCurtoPais(c, idioma));
 
 export type AlunoComOrientador = Aluno & { pessoaOrientadora: Pessoa };
 
 /** Em andamento primeiro (início mais recente antes), depois concluídos (conclusão mais recente antes), depois nome. */
-const compararAlunos = (a: Aluno, b: Aluno) =>
+const compararAlunos = (idioma: Idioma) => (a: Aluno, b: Aluno) =>
   (a.situacao === "em-andamento" ? 0 : 1) - (b.situacao === "em-andamento" ? 0 : 1) ||
   (b.ano_conclusao ?? b.ano_inicio ?? 0) - (a.ano_conclusao ?? a.ano_inicio ?? 0) ||
-  a.nome.localeCompare(b.nome, "pt-BR", { sensitivity: "base" });
+  a.nome.localeCompare(b.nome, LOCALE[idioma], { sensitivity: "base" });
 
 /** Alunos (content/alunos.json) agrupados por nível, na ordem de exibição, com a pessoa orientadora. */
-export function alunosPorNivel(): { nivel: NivelAluno; titulo: string; alunos: AlunoComOrientador[] }[] {
+export function alunosPorNivel(idioma: Idioma): { nivel: NivelAluno; titulo: string; alunos: AlunoComOrientador[] }[] {
   const { alunos } = carregarConteudo();
   return NIVEIS_ALUNO.map((nivel) => ({
     nivel,
-    titulo: TITULOS_NIVEL_ALUNO[nivel],
+    titulo: rotulos(idioma).alunos.niveis[nivel],
     alunos: alunos
       .filter((a) => a.nivel === nivel)
-      .sort(compararAlunos)
+      .sort(compararAlunos(idioma))
       .map((a) => ({ ...a, pessoaOrientadora: pessoaPorSlug(a.orientador) })),
   })).filter((n) => n.alunos.length > 0);
 }
@@ -124,7 +145,7 @@ export type PontoGrafico = { rotulo: string; valor: number };
 const faixaDeAnos = (inicio: number, fim: number) => Array.from({ length: fim - inicio + 1 }, (_, i) => inicio + i);
 
 /** Números da página "INTERAS em números", calculados a partir das coleções. */
-export function estatisticas() {
+export function estatisticas(idioma: Idioma) {
   const { publicacoes, patentes, pessoas, alunos } = carregarConteudo();
   const anosPub = publicacoes.map((p) => p.ano);
   const anos = faixaDeAnos(Math.min(...anosPub), Math.max(...anosPub));
@@ -162,7 +183,7 @@ export function estatisticas() {
       .map((ano): PontoGrafico => ({ rotulo: String(ano), valor: doAno(ano).reduce((s, p) => s + (p.citacoes ?? 0), 0) })),
     alunosPorNivel: NIVEIS_ALUNO.map((nivel) => ({
       nivel,
-      titulo: TITULOS_NIVEL_ALUNO[nivel],
+      titulo: rotulos(idioma).alunos.niveis[nivel],
       pontos: faixaAlunos.map((ano): PontoGrafico => ({ rotulo: String(ano), valor: concluidos.filter((a) => a.nivel === nivel && a.ano_conclusao === ano).length })),
     })),
     /** Ano mais recente das publicações (pode estar incompleto). */

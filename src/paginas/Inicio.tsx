@@ -9,6 +9,7 @@ import { carregarConteudo } from "@/lib/conteudo";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
   const { site } = carregarConteudo();
@@ -20,6 +21,7 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
   // O primeiro parágrafo da apresentação vira o título da faixa escura; o resto, o texto ao lado
   const [abertura, ...resto] = home.apresentacao.split(/\n\s*\n/);
   const secao = home.secao_destaques;
+  const r = rotulos(idioma).inicio;
   const faixas = home.destaques.filter((d) => d.faixa).map((d) => ({ chave: d.faixa as Faixa, titulo: d.titulo }));
 
   return (
@@ -39,7 +41,7 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
               {secao.texto && <p className="cabecalho-secao__texto">{secao.texto}</p>}
             </div>
           )}
-          <Espectro faixas={faixas} />
+          <Espectro idioma={idioma} faixas={faixas} />
         </section>
       </div>
 
@@ -56,7 +58,7 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
       <div className="pagina">
         <section id="linhas-de-pesquisa" className="inicio__secao" aria-labelledby="linhas-titulo">
           <h2 id="linhas-titulo" className="somente-leitor">
-            {secao?.sobretitulo ?? "Linhas de pesquisa"}
+            {secao?.sobretitulo ?? r.linhasPesquisa}
           </h2>
           <LinhasPesquisa pilares={home.destaques.map((d) => ({ id: d.titulo, faixa: (d.faixa ?? null) as Faixa | null, elemento: <Destaque destaque={d} idioma={idioma} /> }))} />
           {home.nota && <div className="nota-coordenacao" dangerouslySetInnerHTML={{ __html: markdownEmLinha(home.nota) }} />}
@@ -68,7 +70,7 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
               {home.noticias.titulo}
             </h2>
             <Link href={rota("noticias", idioma)} className="cabecalho-secao__link">
-              Todas as notícias
+              {r.todasNoticias}
             </Link>
           </div>
           <CardsNoticias noticias={noticias.slice(0, home.noticias.quantidade)} idioma={idioma} />
@@ -80,7 +82,7 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
               {home.publicacoes.titulo}
             </h2>
             <Link href={rota("publicacoes", idioma)} className="cabecalho-secao__link">
-              Todas as publicações
+              {r.todasPublicacoes}
             </Link>
           </div>
           <ListaPublicacoes publicacoes={publicacoes.slice(0, home.publicacoes.quantidade)} idioma={idioma} />

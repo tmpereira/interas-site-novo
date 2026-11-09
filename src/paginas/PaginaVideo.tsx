@@ -6,6 +6,7 @@ import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 function videoPorSlug(slug: string) {
   const video = carregarConteudo().videos.find((v) => v.slug === slug);
@@ -24,11 +25,12 @@ export function metadados(idioma: Idioma, slug: string): Metadata {
 
 export default function PaginaVideo({ idioma, slug }: { idioma: Idioma; slug: string }) {
   const v = videoPorSlug(slug);
+  const r = rotulos(idioma);
   return (
     <div className="pagina">
       <CabecalhoPagina
         caminho={rota("videos", idioma)}
-        sobretitulo="Vídeos"
+        sobretitulo={r.videos.sobretitulo}
         titulo={v.titulo}
         descricao={v.resumo}
         etiquetas={v.categorias}
@@ -41,19 +43,19 @@ export default function PaginaVideo({ idioma, slug }: { idioma: Idioma; slug: st
         )}
         <dl className="ficha">
           <div>
-            <dt className="ficha__rotulo">Data de publicação</dt>
-            <dd className="ficha__valor">{formatarDataLonga(v.data)}</dd>
+            <dt className="ficha__rotulo">{r.comum.dataPublicacao}</dt>
+            <dd className="ficha__valor">{formatarDataLonga(v.data, idioma)}</dd>
           </div>
         </dl>
         {v.conteudo && (
           <section>
-            <h2>Descrição</h2>
+            <h2>{r.videos.descricao}</h2>
             <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(v.conteudo) }} />
           </section>
         )}
         {v.links.length > 0 && (
           <section>
-            <h2>Acesso ao conteúdo</h2>
+            <h2>{r.videos.acesso}</h2>
             <ul className="links-video">
               {v.links.map((l) => (
                 <li key={l.url}>

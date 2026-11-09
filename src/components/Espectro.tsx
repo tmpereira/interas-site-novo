@@ -1,6 +1,8 @@
 "use client";
 
 import { createContext, useContext, useId, useState, type ReactNode } from "react";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 export type Faixa = "luz" | "cura" | "moleculas";
 
@@ -39,14 +41,16 @@ const EIXO = [
   { x: 657, rotulo: "100 pm" },
   { x: 761, rotulo: "10 pm" },
   { x: 866, rotulo: "1 pm" },
-  { x: 970, rotulo: "0,1 pm", ancora: "end" },
+  // O último rótulo (0,1 pm) tem casa decimal e vem dos rótulos do idioma
+  { x: 970, rotulo: null, ancora: "end" },
 ] as const;
 
 /**
  * Espectro eletromagnético em escala logarítmica, com as faixas onde o INTERAS atua.
  * Os botões (um por linha de pesquisa com faixa) fixam o realce de uma faixa.
  */
-export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: string }[] }) {
+export default function Espectro({ idioma, faixas }: { idioma: Idioma; faixas: { chave: Faixa; titulo: string }[] }) {
+  const r = rotulos(idioma).espectro;
   const { fixada, setFixada, sobre } = useRealce();
   const ativa = sobre ?? fixada;
   const id = useId();
@@ -57,14 +61,12 @@ export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: s
   return (
     <figure className="espectro">
       <figcaption className="espectro__legenda">
-        <span className="espectro__legenda-titulo">Onde atuamos no espectro eletromagnético</span>
-        <span className="espectro__legenda-escala">escala logarítmica de comprimento de onda λ</span>
+        <span className="espectro__legenda-titulo">{r.legenda}</span>
+        <span className="espectro__legenda-escala">{r.escala}</span>
       </figcaption>
       <div className="espectro__rolagem">
         <svg className={`espectro__svg${ativa ? " espectro__svg--realce" : ""}`} viewBox="0 0 1000 190" role="img" aria-labelledby={idTitulo}>
-          <title id={idTitulo}>
-            Espectro de 100 micrômetros a 0,1 picômetro, com as faixas de infravermelho e visível usadas no diagnóstico, raios X e gama usados em terapia, e as energias de 140 e 511 quilo-elétron-volts usadas em SPECT e PET.
-          </title>
+          <title id={idTitulo}>{r.descricao}</title>
           <defs>
             <linearGradient id={idGradiente} x1="0" x2="1">
               {[0, 0.2, 0.4, 0.6, 0.8, 1].map((o, i) => (
@@ -78,10 +80,10 @@ export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: s
           <rect className="espectro__ionizante" x="343" y="70" width="627" height="28" />
           <line className="espectro__divisa" x1="343" y1="58" x2="343" y2="110" />
           <text className="espectro__texto" x="337" y="54" textAnchor="end">
-            não ionizante
+            {r.naoIonizante}
           </text>
           <text className="espectro__texto" x="349" y="54">
-            ionizante ≈ 10 eV
+            {r.ionizante}
           </text>
 
           {/* A Luz que Revela: infravermelho e visível */}
@@ -90,17 +92,17 @@ export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: s
             <rect x="255" y="70" width="25" height="28" fill={`url(#${idGradiente})`} />
             <line className="espectro__marcador" x1="250" y1="62" x2="250" y2="106" />
             <text className="espectro__rotulo" x="93" y="128">
-              Infravermelho · 2,5–25 µm
+              {r.infravermelho}
             </text>
             <text className="espectro__texto" x="250" y="146" textAnchor="middle">
-              Raman 785 nm
+              {r.raman}
             </text>
           </g>
           {/* Radiação que Cura: raios X e gama */}
           <g className={classeFaixa("cura")}>
             <rect className="espectro__faixa" x="447" y="76" width="460" height="16" />
             <text className="espectro__rotulo" x="447" y="128">
-              Raios X e γ terapêuticos · keV → MeV
+              {r.raiosX}
             </text>
           </g>
           {/* Moléculas Inteligentes: 140 keV (SPECT) e 511 keV (PET) */}
@@ -121,7 +123,7 @@ export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: s
           {EIXO.map((m) => (
             <g key={m.x}>
               <text className="espectro__texto" x={m.x} y="24" textAnchor={"ancora" in m ? m.ancora : "middle"}>
-                {m.rotulo}
+                {m.rotulo ?? r.eixoMenor}
               </text>
               <line className="espectro__marca" x1={m.x} y1="32" x2={m.x} y2="40" />
             </g>
@@ -129,7 +131,7 @@ export default function Espectro({ faixas }: { faixas: { chave: Faixa; titulo: s
         </svg>
       </div>
       {faixas.length > 0 && (
-        <div className="espectro__botoes" role="group" aria-label="Destacar faixa no espectro">
+        <div className="espectro__botoes" role="group" aria-label={r.destacar}>
           {faixas.map((f) => (
             <button key={f.chave} type="button" className="espectro__botao" aria-pressed={fixada === f.chave} onClick={() => setFixada(fixada === f.chave ? null : f.chave)}>
               {f.titulo}

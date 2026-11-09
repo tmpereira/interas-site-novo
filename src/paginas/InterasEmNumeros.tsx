@@ -5,6 +5,8 @@ import PainelColaboracao from "@/components/PainelColaboracao";
 import { estatisticas, paginaPorSlug } from "@/lib/consultas";
 import { mapaInternacional } from "@/lib/internacional";
 import { markdownParaHtml } from "@/lib/markdown";
+import { formatarNumero } from "@/lib/formatadores";
+import { rotulos } from "@/lib/i18n/rotulos";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { redeCoautoria } from "@/lib/rede";
@@ -14,30 +16,30 @@ export function metadados(idioma: Idioma): Metadata {
   return metadadosPagina({ titulo: pagina.titulo, descricao: pagina.descricao, caminho: rota("numeros", idioma) });
 }
 
-const inteiro = (n: number) => n.toLocaleString("pt-BR");
-
 export default function InterasEmNumeros({ idioma }: { idioma: Idioma }) {
   const pagina = paginaPorSlug("interas-em-numeros");
-  const e = estatisticas();
+  const r = rotulos(idioma).numeros;
+  const inteiro = (n: number) => formatarNumero(n, idioma);
+  const e = estatisticas(idioma);
   const { resumo } = e;
   const maximoAlunos = Math.max(...e.alunosPorNivel.flatMap((n) => n.pontos.map((p) => p.valor)), 1);
 
   const notaJcr = [
-    ...e.jcrIncompleto.map((a) => `em ${a.ano}, ${a.com} de ${a.total} artigos têm JCR`),
-    ...(e.artigosPorAno.length > e.jcrPorAno.length ? ["anos sem barra ainda não têm JCR preenchido"] : []),
+    ...e.jcrIncompleto.map((a) => r.jcrIncompleto(a.ano, a.com, a.total)),
+    ...(e.artigosPorAno.length > e.jcrPorAno.length ? [r.jcrAnosSemBarra] : []),
   ].join("; ");
 
   const cartoes = [
-    { rotulo: "Artigos publicados", valor: inteiro(resumo.artigos) },
-    { rotulo: "Patentes e softwares", valor: inteiro(resumo.patentes) },
-    { rotulo: "Citações", valor: inteiro(resumo.citacoes), nota: resumo.artigosComCitacoes < resumo.artigos ? `em ${resumo.artigosComCitacoes} artigos com dados` : undefined },
+    { rotulo: r.artigosPublicados, valor: inteiro(resumo.artigos) },
+    { rotulo: r.patentesSoftwares, valor: inteiro(resumo.patentes) },
+    { rotulo: r.citacoes, valor: inteiro(resumo.citacoes), nota: resumo.artigosComCitacoes < resumo.artigos ? r.comDados(resumo.artigosComCitacoes) : undefined },
     {
-      rotulo: "JCR médio",
-      valor: resumo.jcrMedio === null ? "—" : resumo.jcrMedio.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
-      nota: resumo.artigosComJcr < resumo.artigos ? `em ${resumo.artigosComJcr} artigos com dados` : undefined,
+      rotulo: r.jcrMedio,
+      valor: resumo.jcrMedio === null ? "—" : formatarNumero(resumo.jcrMedio, idioma, 2),
+      nota: resumo.artigosComJcr < resumo.artigos ? r.comDados(resumo.artigosComJcr) : undefined,
     },
-    { rotulo: "Alunos formados", valor: inteiro(resumo.alunosFormados), nota: "IC, mestrado, doutorado e pós-doc" },
-    { rotulo: "Membros da equipe", valor: inteiro(resumo.equipe) },
+    { rotulo: r.alunosFormados, valor: inteiro(resumo.alunosFormados), nota: r.alunosFormadosNota },
+    { rotulo: r.membrosEquipe, valor: inteiro(resumo.equipe) },
   ];
 
   return (
@@ -60,40 +62,50 @@ export default function InterasEmNumeros({ idioma }: { idioma: Idioma }) {
 
       <section className="secao-numeros" aria-labelledby="numeros-producao">
         <h2 id="numeros-producao" className="secao-numeros__titulo">
-          Produção científica
+          {r.producao}
         </h2>
         <div className="secao-numeros__grade">
           <GraficoBarras
-            titulo="Artigos por ano"
-            descricao="Artigos em periódicos, pelo ano de publicação"
+            idioma={idioma}
+            titulo={r.artigosPorAno}
+            descricao={r.artigosPorAnoDescricao}
             pontos={e.artigosPorAno}
-            unidade="artigos"
-            nota={`${e.anoAtual}: ano em andamento.`}
+            unidade={r.unidadeArtigos}
+            nota={r.anoEmAndamento(e.anoAtual)}
           />
-          <GraficoBarras titulo="JCR médio por ano" descricao="Média do fator de impacto das revistas" pontos={e.jcrPorAno} unidade="de JCR médio" casasDecimais={2} nota={notaJcr ? `${notaJcr[0].toUpperCase()}${notaJcr.slice(1)}.` : undefined} />
           <GraficoBarras
-            titulo="Citações por ano de publicação"
-            descricao="Soma das citações dos artigos publicados em cada ano"
+            idioma={idioma}
+            titulo={r.jcrPorAno}
+            descricao={r.jcrPorAnoDescricao}
+            pontos={e.jcrPorAno}
+            unidade={r.unidadeJcr}
+            casasDecimais={2}
+            nota={notaJcr ? `${notaJcr[0].toUpperCase()}${notaJcr.slice(1)}.` : undefined}
+          />
+          <GraficoBarras
+            idioma={idioma}
+            titulo={r.citacoesPorAno}
+            descricao={r.citacoesPorAnoDescricao}
             pontos={e.citacoesPorAno}
-            unidade="citações"
-            nota="Artigos mais recentes tiveram menos tempo para ser citados."
+            unidade={r.unidadeCitacoes}
+            nota={r.citacoesNota}
           />
         </div>
       </section>
 
       <section className="secao-numeros" aria-labelledby="numeros-alunos">
         <h2 id="numeros-alunos" className="secao-numeros__titulo">
-          Alunos formados por ano
+          {r.alunosPorAno}
         </h2>
         <div className="secao-numeros__grade secao-numeros__grade--multiplos">
           {e.alunosPorNivel.map((n) => (
-            <GraficoBarras key={n.nivel} titulo={n.titulo} pontos={n.pontos} unidade="concluídos" maximo={maximoAlunos} compacto />
+            <GraficoBarras key={n.nivel} idioma={idioma} titulo={n.titulo} pontos={n.pontos} unidade={r.unidadeConcluidos} maximo={maximoAlunos} compacto />
           ))}
         </div>
-        <p className="secao-numeros__nota">Orientações concluídas pelos pesquisadores do INTERAS, pelo ano de conclusão. Os quatro gráficos usam a mesma escala.</p>
+        <p className="secao-numeros__nota">{r.alunosNota}</p>
       </section>
 
-      <PainelColaboracao rede={redeCoautoria()} mapa={mapaInternacional()} />
+      <PainelColaboracao idioma={idioma} rede={redeCoautoria()} mapa={mapaInternacional(idioma)} />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 function noticiaPorId(id: string) {
   const noticia = carregarConteudo().noticias.find((n) => n.id === id);
@@ -34,9 +35,10 @@ export function metadados(idioma: Idioma, id: string): Metadata {
 
 export default function PaginaNoticia({ idioma, id }: { idioma: Idioma; id: string }) {
   const n = noticiaPorId(id);
+  const r = rotulos(idioma);
   return (
     <div className="pagina">
-      <CabecalhoPagina caminho={rota("noticias", idioma)} sobretitulo="Notícias" titulo={n.titulo} etiquetas={n.categorias} />
+      <CabecalhoPagina caminho={rota("noticias", idioma)} sobretitulo={r.noticias.sobretitulo} titulo={n.titulo} etiquetas={n.categorias} />
       <article className="leitura">
         <div className="leitura__capa">
           <Image src={n.imagem} alt="" fill priority sizes="(min-width: 768px) 46rem, 100vw" className="leitura__capa-img" />
@@ -44,13 +46,13 @@ export default function PaginaNoticia({ idioma, id }: { idioma: Idioma; id: stri
         <dl className="ficha">
           {n.autor && (
             <div>
-              <dt className="ficha__rotulo">Autor</dt>
+              <dt className="ficha__rotulo">{r.noticias.autor}</dt>
               <dd className="ficha__valor">{n.autor}</dd>
             </div>
           )}
           <div>
-            <dt className="ficha__rotulo">Data de publicação</dt>
-            <dd className="ficha__valor">{formatarDataLonga(n.data)}</dd>
+            <dt className="ficha__rotulo">{r.comum.dataPublicacao}</dt>
+            <dd className="ficha__valor">{formatarDataLonga(n.data, idioma)}</dd>
           </div>
         </dl>
         <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(n.corpo, { rebaixarTitulos: true }) }} />

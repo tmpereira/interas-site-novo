@@ -7,6 +7,9 @@
 export const IDIOMAS = ["pt", "en"] as const;
 export type Idioma = (typeof IDIOMAS)[number];
 
+/** Código de idioma para `Intl` (datas, números, ordenação) e para o `lang` do <html>. */
+export const LOCALE: Record<Idioma, string> = { pt: "pt-BR", en: "en" };
+
 /** Seções do site. Os itens (`slug`/`id`) são os mesmos nos dois idiomas. */
 const ROTAS = {
   inicio: { pt: "/", en: "/en/" },

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Grupo } from "@/lib/esquemas";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
+import { rotulos as rotulosInterface } from "@/lib/i18n/rotulos";
 
 type Props = {
   grupo: Grupo;
@@ -15,6 +16,7 @@ type Props = {
 export default function ItemGrupo({ grupo, idioma, rotulos, coordenacao }: Props) {
   const [principal, ...outros] = grupo.temas;
   const href = rota("grupos", idioma, grupo.slug);
+  const r = rotulosInterface(idioma).grupos;
   return (
     <article className="item-grupo">
       <div className="item-grupo__principal">
@@ -28,8 +30,8 @@ export default function ItemGrupo({ grupo, idioma, rotulos, coordenacao }: Props
         {coordenacao.length > 0 && <p className="item-grupo__coordenacao">{coordenacao.join(", ")}</p>}
         {outros.length > 0 && <p className="item-grupo__temas">{outros.map((t) => rotulos.get(t) ?? t).join(" · ")}</p>}
       </div>
-      <Link href={href} className="item-grupo__link" aria-label={`Conhecer ${grupo.titulo}`}>
-        Conhecer →
+      <Link href={href} className="item-grupo__link" aria-label={r.conhecerAria(grupo.titulo)}>
+        {r.conhecer}
       </Link>
     </article>
   );

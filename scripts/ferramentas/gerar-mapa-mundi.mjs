@@ -11,6 +11,8 @@ const { geoNaturalEarth1, geoPath } = require("d3-geo");
 const paises = require("i18n-iso-countries");
 paises.registerLocale(require("i18n-iso-countries/langs/pt.json"));
 const topo = require("world-atlas/countries-110m.json");
+// O i18n-iso-countries traz os nomes dos dois Congos trocados em português
+const CORRECOES_NOMES = { CD: "República Democrática do Congo", CG: "República do Congo" };
 const fc = feature(topo, topo.objects.countries);
 fc.features = fc.features.filter((f) => f.properties.name !== "Antarctica");
 const W = 1000, H = 520;
@@ -18,7 +20,7 @@ const proj = geoNaturalEarth1().fitExtent([[4, 4], [W - 4, H - 4]], fc);
 const path = geoPath(proj).digits(0);
 const lista = fc.features.map((f) => {
   const iso2 = f.id ? paises.numericToAlpha2(f.id) : null;
-  return { iso2: iso2 ?? null, nome: iso2 ? paises.getName(iso2, "pt") : f.properties.name, d: path(f) };
+  return { iso2: iso2 ?? null, nome: iso2 ? (CORRECOES_NOMES[iso2] ?? paises.getName(iso2, "pt")) : f.properties.name, d: path(f) };
 }).filter((p) => p.d);
 lista.sort((a, b) => (a.iso2 ?? "ZZ").localeCompare(b.iso2 ?? "ZZ") || a.nome.localeCompare(b.nome));
 const saida = { fonte: "Natural Earth 1:110m (domínio público), via world-atlas@2; projeção Natural Earth", largura: W, altura: H, paises: lista };

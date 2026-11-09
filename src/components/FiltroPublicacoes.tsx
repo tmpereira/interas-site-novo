@@ -2,6 +2,8 @@
 
 import { useMemo, useRef, useState } from "react";
 import { formatarCitacoes, formatarJcr, normalizarBusca } from "@/lib/formatadores";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 
 /** Dados de cada publicação enviados ao navegador. */
 export type ItemPublicacao = {
@@ -12,7 +14,7 @@ export type ItemPublicacao = {
   autores: string[];
   ano: number;
   data: string;
-  /** Data já formatada no servidor (ex.: "24 de set. de 2026"). */
+  /** Data já formatada no servidor, no idioma da página (ex.: "24 de set. de 2026"). */
   dataTexto: string;
   /** Resumo já convertido de Markdown para HTML; `null` = sem resumo. */
   resumoHtml: string | null;
@@ -28,18 +30,20 @@ export type ItemPublicacao = {
   doi: string | null;
   /** Coautoria internacional; `null` = ainda não informado. */
   internacional: boolean | null;
-  /** Países estrangeiros dos coautores, já com nome curto (ex.: ["EUA", "França"]). */
+  /** Países estrangeiros dos coautores, já com nome curto no idioma (ex.: ["EUA", "França"]). */
   paises: string[];
 };
 
 type Props = {
+  idioma: Idioma;
   /** Título da seção, exibido na mesma linha dos filtros de ano. */
   titulo: string;
   itens: ItemPublicacao[];
   grupos: { slug: string; titulo: string }[];
 };
 
-const rotuloInternacional = (v: boolean | null) => (v === null ? "—" : v ? "Sim" : "Não");
+/** Valor interno do filtro de colaboração internacional (o texto exibido vem dos rótulos). */
+const valorInternacional = (v: boolean | null) => (v === null ? "—" : v ? "Sim" : "Não");
 
 const OPCOES_POR_PAGINA = [10, 20, 50, 100];
 
@@ -61,7 +65,9 @@ function veiculo(i: ItemPublicacao): string | null {
   return [i.periodico, volume, i.paginas].filter(Boolean).join(", ");
 }
 
-export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
+export default function FiltroPublicacoes({ idioma, titulo, itens, grupos }: Props) {
+  const r = rotulos(idioma);
+  const f = r.filtroPublicacoes;
   const [busca, setBusca] = useState("");
   const [ano, setAno] = useState("");
   const [grupo, setGrupo] = useState("");
@@ -98,7 +104,7 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
         if (ano && String(i.ano) !== ano) return false;
         if (grupo && !i.grupos.includes(grupo)) return false;
         if (qualis && i.qualis !== qualis) return false;
-        if (internacional && rotuloInternacional(i.internacional) !== internacional) return false;
+        if (internacional && valorInternacional(i.internacional) !== internacional) return false;
         if (minCitacoes && (i.citacoes ?? -1) < Number(minCitacoes)) return false;
         if (minImpacto && (i.fator_impacto ?? -1) < Number(minImpacto)) return false;
         const texto = indiceBusca.get(i.id) ?? "";
@@ -131,9 +137,9 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
     <div className="filtro-publicacoes">
       <div className="filtro-publicacoes__topo">
         <h2 className="filtro-publicacoes__titulo">{titulo}</h2>
-        <div className="filtro-publicacoes__anos" role="group" aria-label="Filtrar por ano">
+        <div className="filtro-publicacoes__anos" role="group" aria-label={f.filtrarAno}>
           <button type="button" className="filtro-publicacoes__ano" aria-pressed={ano === ""} onClick={() => setAno("")}>
-            Todos
+            {r.comum.todos}
           </button>
           {anos.map((a) => (
             <button key={a} type="button" className="filtro-publicacoes__ano" aria-pressed={ano === String(a)} onClick={() => setAno(String(a))}>
@@ -145,24 +151,24 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
 
       <div className="filtro-publicacoes__controles">
         <label className="filtro-publicacoes__campo filtro-publicacoes__campo--busca">
-          <span className="filtro-publicacoes__rotulo">Buscar por título, veículo ou autor</span>
-          <input type="search" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder="Digite para buscar…" className="filtro-publicacoes__entrada" />
+          <span className="filtro-publicacoes__rotulo">{f.buscar}</span>
+          <input type="search" value={busca} onChange={(e) => setBusca(e.target.value)} placeholder={f.digite} className="filtro-publicacoes__entrada" />
         </label>
         {temInternacional && (
           <label className="filtro-publicacoes__campo">
-            <span className="filtro-publicacoes__rotulo">Colaboração internacional</span>
+            <span className="filtro-publicacoes__rotulo">{r.publicacoes.colaboracaoInternacional}</span>
             <select value={internacional} onChange={(e) => setInternacional(e.target.value)} className="filtro-publicacoes__entrada">
-              <option value="">Todos</option>
-              <option value="Sim">Sim</option>
-              <option value="Não">Não</option>
+              <option value="">{r.comum.todos}</option>
+              <option value="Sim">{r.comum.sim}</option>
+              <option value="Não">{r.comum.nao}</option>
             </select>
           </label>
         )}
         {grupos.length > 0 && (
           <label className="filtro-publicacoes__campo">
-            <span className="filtro-publicacoes__rotulo">Grupo</span>
+            <span className="filtro-publicacoes__rotulo">{f.grupo}</span>
             <select value={grupo} onChange={(e) => setGrupo(e.target.value)} className="filtro-publicacoes__entrada">
-              <option value="">Todos</option>
+              <option value="">{r.comum.todos}</option>
               {grupos.map((g) => (
                 <option key={g.slug} value={g.slug}>
                   {g.titulo}
@@ -173,9 +179,9 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
         )}
         {valoresQualis.length > 0 && (
           <label className="filtro-publicacoes__campo">
-            <span className="filtro-publicacoes__rotulo">Qualis</span>
+            <span className="filtro-publicacoes__rotulo">{f.qualis}</span>
             <select value={qualis} onChange={(e) => setQualis(e.target.value)} className="filtro-publicacoes__entrada">
-              <option value="">Todos</option>
+              <option value="">{r.comum.todos}</option>
               {valoresQualis.map((q) => (
                 <option key={q} value={q}>
                   {q}
@@ -186,30 +192,30 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
         )}
         {temCitacoes && (
           <label className="filtro-publicacoes__campo">
-            <span className="filtro-publicacoes__rotulo">Citações (mín.)</span>
+            <span className="filtro-publicacoes__rotulo">{f.citacoesMin}</span>
             <input type="number" min={0} value={minCitacoes} onChange={(e) => setMinCitacoes(e.target.value)} className="filtro-publicacoes__entrada" />
           </label>
         )}
         {temImpacto && (
           <label className="filtro-publicacoes__campo">
-            <span className="filtro-publicacoes__rotulo">JCR (mín.)</span>
+            <span className="filtro-publicacoes__rotulo">{f.jcrMin}</span>
             <input type="number" min={0} step="0.1" value={minImpacto} onChange={(e) => setMinImpacto(e.target.value)} className="filtro-publicacoes__entrada" />
           </label>
         )}
       </div>
 
       <p ref={inicioLista} className="filtro-publicacoes__contagem" aria-live="polite">
-        {visiveis.length === itens.length ? `${itens.length} publicações` : `${visiveis.length} de ${itens.length} publicações`}
-        {totalPaginas > 1 && ` · mostrando ${primeiro + 1}–${primeiro + daPagina.length}`}
+        {visiveis.length === itens.length ? f.contagem(itens.length) : f.contagemFiltrada(visiveis.length, itens.length)}
+        {totalPaginas > 1 && f.mostrando(primeiro + 1, primeiro + daPagina.length)}
         {filtrando && (
           <button type="button" className="filtro-publicacoes__limpar" onClick={limpar}>
-            Limpar filtros
+            {f.limpar}
           </button>
         )}
       </p>
 
       {visiveis.length === 0 ? (
-        <p className="filtro-publicacoes__vazio">Nenhuma publicação encontrada com esses filtros.</p>
+        <p className="filtro-publicacoes__vazio">{f.vazio}</p>
       ) : (
         <ul className="lista-artigos">
           {daPagina.map((i) => {
@@ -237,12 +243,12 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
                   {publicadoEm && <p className="lista-artigos__periodico">{publicadoEm}</p>}
                   {(i.doi || i.fator_impacto !== null || i.citacoes !== null || i.internacional) && (
                     <p className="lista-artigos__meta">
-                      {i.fator_impacto !== null && <span className="pilula-metrica">JCR {formatarJcr(i.fator_impacto)}</span>}
+                      {i.fator_impacto !== null && <span className="pilula-metrica">JCR {formatarJcr(i.fator_impacto, idioma)}</span>}
                       {i.citacoes !== null && (
-                        <span className="pilula-metrica">{formatarCitacoes(i.citacoes)}</span>
+                        <span className="pilula-metrica">{formatarCitacoes(i.citacoes, idioma)}</span>
                       )}
                       {i.internacional && (
-                        <span className="lista-artigos__indicador">{i.paises.length > 0 ? `Colaboração internacional: ${i.paises.join(", ")}` : "Colaboração internacional"}</span>
+                        <span className="lista-artigos__indicador">{i.paises.length > 0 ? r.publicacoes.colaboracaoCom(i.paises.join(", ")) : r.publicacoes.colaboracaoInternacional}</span>
                       )}
                       {i.doi && <span className="lista-artigos__doi">DOI {i.doi}</span>}
                     </p>
@@ -250,18 +256,18 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
                 </div>
                 <button type="button" className="lista-artigos__alternar" aria-expanded={aberto} aria-controls={`resumo-${i.id}`} onClick={() => alternar(i.id)}>
                   <span className="lista-artigos__publicado">
-                    <span className="lista-artigos__publicado-rotulo">Publicado em</span>
+                    <span className="lista-artigos__publicado-rotulo">{r.publicacoes.publicadoEm}</span>
                     <time dateTime={i.data}>{i.dataTexto}</time>
                   </span>
                   <span className="lista-artigos__seta" aria-hidden="true" />
-                  <span className="somente-leitor">{aberto ? "Ocultar resumo" : "Mostrar resumo"}</span>
+                  <span className="somente-leitor">{aberto ? f.ocultarResumo : f.mostrarResumo}</span>
                 </button>
                 <div id={`resumo-${i.id}`} className="lista-artigos__resumo" hidden={!aberto}>
-                  <p className="lista-artigos__resumo-rotulo">Resumo</p>
+                  <p className="lista-artigos__resumo-rotulo">{r.comum.resumo}</p>
                   {i.resumoHtml ? (
                     <div className="lista-artigos__resumo-texto" dangerouslySetInnerHTML={{ __html: i.resumoHtml }} />
                   ) : (
-                    <p className="lista-artigos__resumo-vazio">Não há resumo.</p>
+                    <p className="lista-artigos__resumo-vazio">{f.semResumo}</p>
                   )}
                 </div>
               </li>
@@ -273,7 +279,7 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
       {visiveis.length > 0 && (
         <div className="paginacao">
           <label className="paginacao__por-pagina">
-            <span>Artigos por página</span>
+            <span>{f.porPagina}</span>
             <select value={porPagina} onChange={(e) => setPorPagina(Number(e.target.value))} className="filtro-publicacoes__entrada">
               {OPCOES_POR_PAGINA.map((n) => (
                 <option key={n} value={n}>
@@ -283,9 +289,11 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
             </select>
           </label>
           {totalPaginas > 1 && (
-            <nav className="paginacao__paginas" aria-label="Páginas de artigos">
+            <nav className="paginacao__paginas" aria-label={f.paginas}>
               <button type="button" className="paginacao__botao" disabled={pagina === 1} onClick={() => irPara(pagina - 1)}>
-                ← <span className="somente-leitor">Página</span> anterior
+                {f.anterior.antes}
+                <span className="somente-leitor">{f.anterior.oculto}</span>
+                {f.anterior.depois}
               </button>
               {paginasVisiveis(pagina, totalPaginas).map((n, i) =>
                 n === "…" ? (
@@ -298,7 +306,7 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
                     type="button"
                     className="paginacao__botao paginacao__botao--numero"
                     aria-current={n === pagina ? "page" : undefined}
-                    aria-label={`Página ${n}`}
+                    aria-label={f.pagina(n)}
                     onClick={() => irPara(n)}
                   >
                     {n}
@@ -306,7 +314,9 @@ export default function FiltroPublicacoes({ titulo, itens, grupos }: Props) {
                 ),
               )}
               <button type="button" className="paginacao__botao" disabled={pagina === totalPaginas} onClick={() => irPara(pagina + 1)}>
-                Próxima <span className="somente-leitor">página</span> →
+                {f.proxima.antes}
+                <span className="somente-leitor">{f.proxima.oculto}</span>
+                {f.proxima.depois}
               </button>
             </nav>
           )}

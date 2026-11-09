@@ -5,9 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { Site } from "@/lib/esquemas";
+import type { Idioma } from "@/lib/i18n/rotas";
+import { rotulos } from "@/lib/i18n/rotulos";
 import { entradaDaPagina, estaEm, temItens } from "@/lib/menu";
 
 type Props = {
+  idioma: Idioma;
   logo: string;
   logoAlt: string;
   /** Menu já com os links no idioma da página. */
@@ -25,7 +28,8 @@ function Seta() {
   );
 }
 
-export default function Navbar({ logo, logoAlt, menu, inicio }: Props) {
+export default function Navbar({ idioma, logo, logoAlt, menu, inicio }: Props) {
+  const r = rotulos(idioma).layout;
   const [aberto, setAberto] = useState(false);
   const [submenuAberto, setSubmenuAberto] = useState<string | null>(null);
   const raiz = useRef<HTMLElement>(null);
@@ -55,7 +59,7 @@ export default function Navbar({ logo, logoAlt, menu, inicio }: Props) {
   };
 
   return (
-    <nav ref={raiz} className="menu-principal" aria-label="Principal">
+    <nav ref={raiz} className="menu-principal" aria-label={r.menuPrincipal}>
       <div className="menu-principal__container">
         <Link href={inicio} className="menu-principal__marca" onClick={aoNavegar}>
           <Image src={logo} alt={logoAlt} width={250} height={125} className="menu-principal__logo" priority />
@@ -67,7 +71,7 @@ export default function Navbar({ logo, logoAlt, menu, inicio }: Props) {
           aria-expanded={aberto}
           onClick={() => setAberto(!aberto)}
         >
-          Menu
+          {r.botaoMenu}
         </button>
         <div id="menu-principal-lista" className={`menu-principal__colapso${aberto ? " menu-principal__colapso--aberto" : ""}`}>
           <ul className="menu-principal__lista">
