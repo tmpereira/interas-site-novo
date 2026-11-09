@@ -30,7 +30,7 @@ export default function BlocoArea({ destaque, idioma, numero, id }: Props) {
         <h2 id={`${id}-titulo`} className="bloco-area__titulo">
           {destaque.titulo}
         </h2>
-        <div className="bloco-area__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto) }} />
+        <div className="bloco-area__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto, idioma) }} />
         {destaque.etiquetas && destaque.etiquetas.length > 0 && (
           <ul className="bloco-area__etiquetas">
             {destaque.etiquetas.map((e) => (

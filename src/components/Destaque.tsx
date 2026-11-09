@@ -18,7 +18,7 @@ export default function Destaque({ destaque, idioma }: { destaque: Home["destaqu
       </p>
       <div className="pilar__texto">
         <h3 className="pilar__titulo">{destaque.titulo}</h3>
-        <div className="pilar__corpo" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto) }} />
+        <div className="pilar__corpo" dangerouslySetInnerHTML={{ __html: markdownParaHtml(destaque.texto, idioma) }} />
         {destaque.botao && (
           <Link href={linkNoIdioma(destaque.botao.link, idioma)} className="pilar__botao">
             {destaque.botao.rotulo} →

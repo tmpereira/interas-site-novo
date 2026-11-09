@@ -5,19 +5,19 @@ import Destaque from "@/components/Destaque";
 import Espectro, { LinhasPesquisa, ProvedorEspectro, type Faixa } from "@/components/Espectro";
 import Hero from "@/components/Hero";
 import ListaPublicacoes from "@/components/ListaPublicacoes";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  const { site } = carregarConteudo();
+  const { site } = conteudoNoIdioma(idioma);
   return { ...metadadosPagina({ titulo: site.titulo, caminho: rota("inicio", idioma) }), title: { absolute: site.titulo } };
 }
 
 export default function Inicio({ idioma }: { idioma: Idioma }) {
-  const { home, noticias, publicacoes, site } = carregarConteudo();
+  const { home, noticias, publicacoes, site } = conteudoNoIdioma(idioma);
   // O primeiro parágrafo da apresentação vira o título da faixa escura; o resto, o texto ao lado
   const [abertura, ...resto] = home.apresentacao.split(/\n\s*\n/);
   const secao = home.secao_destaques;
@@ -49,9 +49,9 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
         <div className="faixa-profunda__interno apresentacao__grade">
           <div>
             {home.apresentacao_sobretitulo && <p className="apresentacao__sobretitulo">{home.apresentacao_sobretitulo}</p>}
-            <h2 id="apresentacao-titulo" className="apresentacao__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(abertura) }} />
+            <h2 id="apresentacao-titulo" className="apresentacao__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(abertura, idioma) }} />
           </div>
-          {resto.length > 0 && <div className="apresentacao__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(resto.join("\n\n")) }} />}
+          {resto.length > 0 && <div className="apresentacao__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(resto.join("\n\n"), idioma) }} />}
         </div>
       </section>
 
@@ -61,20 +61,23 @@ export default function Inicio({ idioma }: { idioma: Idioma }) {
             {secao?.sobretitulo ?? r.linhasPesquisa}
           </h2>
           <LinhasPesquisa pilares={home.destaques.map((d) => ({ id: d.titulo, faixa: (d.faixa ?? null) as Faixa | null, elemento: <Destaque destaque={d} idioma={idioma} /> }))} />
-          {home.nota && <div className="nota-coordenacao" dangerouslySetInnerHTML={{ __html: markdownEmLinha(home.nota) }} />}
+          {home.nota && <div className="nota-coordenacao" dangerouslySetInnerHTML={{ __html: markdownEmLinha(home.nota, idioma) }} />}
         </section>
 
-        <section className="inicio__secao" aria-labelledby="noticias-titulo">
-          <div className="cabecalho-secao cabecalho-secao--compacto">
-            <h2 id="noticias-titulo" className="cabecalho-secao__titulo">
-              {home.noticias.titulo}
-            </h2>
-            <Link href={rota("noticias", idioma)} className="cabecalho-secao__link">
-              {r.todasNoticias}
-            </Link>
-          </div>
-          <CardsNoticias noticias={noticias.slice(0, home.noticias.quantidade)} idioma={idioma} />
-        </section>
+        {/* Em inglês, só aparecem as notícias traduzidas; sem nenhuma, a seção não aparece */}
+        {noticias.length > 0 && (
+          <section className="inicio__secao" aria-labelledby="noticias-titulo">
+            <div className="cabecalho-secao cabecalho-secao--compacto">
+              <h2 id="noticias-titulo" className="cabecalho-secao__titulo">
+                {home.noticias.titulo}
+              </h2>
+              <Link href={rota("noticias", idioma)} className="cabecalho-secao__link">
+                {r.todasNoticias}
+              </Link>
+            </div>
+            <CardsNoticias noticias={noticias.slice(0, home.noticias.quantidade)} idioma={idioma} />
+          </section>
+        )}
 
         <section className="inicio__secao" aria-labelledby="publicacoes-titulo">
           <div className="cabecalho-secao cabecalho-secao--compacto">

@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { vincularAutores } from "@/lib/autores";
-import { carregarConteudo } from "@/lib/conteudo";
+import { carregarConteudo, conteudoNoIdioma } from "@/lib/conteudo";
 import { formatarDataLonga, formatarJcr, formatarNumero } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
-function publicacaoPorId(id: string) {
-  const publicacao = carregarConteudo().publicacoes.find((p) => p.id === id);
+function publicacaoPorId(id: string, idioma: Idioma) {
+  const publicacao = conteudoNoIdioma(idioma).publicacoes.find((p) => p.id === id);
   if (!publicacao) throw new Error(`content/publicacoes.json: não existe a publicação "${id}"`);
   return publicacao;
 }
@@ -23,7 +23,7 @@ export function parametros() {
 const semMarcacao = (texto: string) => texto.replace(/[*_`]/g, "");
 
 export function metadados(idioma: Idioma, id: string): Metadata {
-  const p = publicacaoPorId(id);
+  const p = publicacaoPorId(id, idioma);
   const descricao = p.resumo ? semMarcacao(p.resumo).slice(0, 200) : [p.autores.slice(0, 3).join(", "), p.periodico].filter(Boolean).join(" — ");
   return metadadosPagina({
     titulo: semMarcacao(p.titulo),
@@ -44,8 +44,8 @@ export function metadados(idioma: Idioma, id: string): Metadata {
 }
 
 export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: string }) {
-  const p = publicacaoPorId(id);
-  const { pessoas, grupos } = carregarConteudo();
+  const p = publicacaoPorId(id, idioma);
+  const { pessoas, grupos } = conteudoNoIdioma(idioma);
   const autores = vincularAutores(
     p.autores,
     pessoas.filter((x) => p.pessoas.includes(x.slug)),
@@ -71,7 +71,7 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
         caminho={rota("publicacoes", idioma)}
         sobretitulo={[r.publicacoes.tipos[p.tipo], p.ano].join(" · ")}
         titulo={semMarcacao(p.titulo)}
-        tituloHtml={markdownEmLinha(p.titulo)}
+        tituloHtml={markdownEmLinha(p.titulo, idioma)}
         descricao={p.periodico}
       />
       <article className="artigo">
@@ -123,7 +123,7 @@ export default function PaginaPublicacao({ idioma, id }: { idioma: Idioma; id: s
 
         <section>
           <h2 className="artigo__rotulo">{r.comum.resumo}</h2>
-          {p.resumo ? <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(p.resumo) }} /> : <p>{rp.resumoIndisponivel}</p>}
+          {p.resumo ? <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(p.resumo, idioma) }} /> : <p>{rp.resumoIndisponivel}</p>}
         </section>
 
         {p.palavras_chave.length > 0 && (

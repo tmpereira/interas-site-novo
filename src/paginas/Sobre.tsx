@@ -5,14 +5,13 @@ import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 
 export function metadados(idioma: Idioma): Metadata {
-  const p = paginaPorSlug("sobre-o-interas");
+  const p = paginaPorSlug("sobre-o-interas", idioma);
   return metadadosPagina({ titulo: p.titulo, descricao: p.descricao, caminho: rota("sobre", idioma) });
 }
 
 /** "O INCT INTERAS": faixa escura com a missão e o cartão "Do laboratório ao SUS" (content/paginas.json). */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars -- o idioma será usado quando o conteúdo tiver tradução (etapa 3)
 export default function Sobre({ idioma }: { idioma: Idioma }) {
-  const pagina = paginaPorSlug("sobre-o-interas");
+  const pagina = paginaPorSlug("sobre-o-interas", idioma);
   const { missao, etapas } = pagina;
   return (
     <>
@@ -21,10 +20,10 @@ export default function Sobre({ idioma }: { idioma: Idioma }) {
           <div className="faixa-profunda__interno apresentacao__grade">
             <div>
               {missao.sobretitulo && <p className="apresentacao__sobretitulo">{missao.sobretitulo}</p>}
-              <h1 id="missao-titulo" className="apresentacao__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(missao.titulo) }} />
+              <h1 id="missao-titulo" className="apresentacao__titulo" dangerouslySetInnerHTML={{ __html: markdownEmLinha(missao.titulo, idioma) }} />
             </div>
             <div>
-              <div className="apresentacao__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(missao.texto) }} />
+              <div className="apresentacao__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(missao.texto, idioma) }} />
               {missao.etiquetas.length > 0 && (
                 <ul className="apresentacao__etiquetas">
                   {missao.etiquetas.map((e) => (
@@ -59,7 +58,7 @@ export default function Sobre({ idioma }: { idioma: Idioma }) {
             </ol>
           </section>
         )}
-        {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, { rebaixarTitulos: false }) }} />}
+        {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, idioma, { rebaixarTitulos: false }) }} />}
       </div>
     </>
   );

@@ -11,7 +11,7 @@ export default function Hero({ hero, sobretitulo, idioma }: { hero: Home["hero"]
       <div className="hero__conteudo">
         {sobretitulo && <p className="hero__sobretitulo">{sobretitulo}</p>}
         <h1 className="hero__titulo">{hero.titulo}</h1>
-        <div className="hero__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(hero.texto) }} />
+        <div className="hero__texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(hero.texto, idioma) }} />
         {hero.botoes && hero.botoes.length > 0 && (
           <p className="hero__botoes">
             {hero.botoes.map((b, i) => (

@@ -20,7 +20,21 @@
             "type": "string",
             "minLength": 1
           },
+          "titulo_en": {
+            "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "resumo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resumo_en": {
+            "description": "Tradução em inglês de \"resumo\". Vazio = usa o português.",
             "type": [
               "string",
               "null"
@@ -77,8 +91,22 @@
                   "type": "string",
                   "minLength": 1
                 },
+                "titulo_en": {
+                  "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
                 "conteudo": {
                   "type": "string"
+                },
+                "conteudo_en": {
+                  "description": "Tradução em inglês de \"conteudo\". Vazio = usa o português.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 }
               },
               "required": [
@@ -89,6 +117,13 @@
             }
           },
           "conteudo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "conteudo_en": {
+            "description": "Tradução em inglês de \"conteudo\". Vazio = usa o português.",
             "type": [
               "string",
               "null"

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
-import { carregarConteudo } from "@/lib/conteudo";
+import { carregarConteudo, conteudoNoIdioma } from "@/lib/conteudo";
 import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
-function videoPorSlug(slug: string) {
-  const video = carregarConteudo().videos.find((v) => v.slug === slug);
+function videoPorSlug(slug: string, idioma: Idioma) {
+  const video = conteudoNoIdioma(idioma).videos.find((v) => v.slug === slug);
   if (!video) throw new Error(`content/videos.json: não existe o vídeo "${slug}"`);
   return video;
 }
@@ -19,12 +19,12 @@ export function parametros() {
 }
 
 export function metadados(idioma: Idioma, slug: string): Metadata {
-  const v = videoPorSlug(slug);
+  const v = videoPorSlug(slug, idioma);
   return metadadosPagina({ titulo: v.titulo, descricao: v.resumo, caminho: rota("videos", idioma, v.slug), imagem: v.capa });
 }
 
 export default function PaginaVideo({ idioma, slug }: { idioma: Idioma; slug: string }) {
-  const v = videoPorSlug(slug);
+  const v = videoPorSlug(slug, idioma);
   const r = rotulos(idioma);
   return (
     <div className="pagina">
@@ -50,7 +50,7 @@ export default function PaginaVideo({ idioma, slug }: { idioma: Idioma; slug: st
         {v.conteudo && (
           <section>
             <h2>{r.videos.descricao}</h2>
-            <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(v.conteudo) }} />
+            <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(v.conteudo, idioma) }} />
           </section>
         )}
         {v.links.length > 0 && (

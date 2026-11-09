@@ -20,11 +20,25 @@
             "type": "string",
             "minLength": 1
           },
+          "titulo_en": {
+            "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "data": {
             "type": "string",
             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
           },
           "resumo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resumo_en": {
+            "description": "Tradução em inglês de \"resumo\". Vazio = usa o português.",
             "type": [
               "string",
               "null"
@@ -48,6 +62,20 @@
               "minLength": 1
             }
           },
+          "categorias_en": {
+            "description": "Tradução em inglês de \"categorias\": lista do mesmo tamanho e na mesma ordem. Vazia = usa o português.",
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
           "links": {
             "type": "array",
             "items": {
@@ -56,6 +84,13 @@
                 "rotulo": {
                   "type": "string",
                   "minLength": 1
+                },
+                "rotulo_en": {
+                  "description": "Tradução em inglês de \"rotulo\". Vazio = usa o português.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 },
                 "url": {
                   "anyOf": [
@@ -78,6 +113,13 @@
             }
           },
           "conteudo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "conteudo_en": {
+            "description": "Tradução em inglês de \"conteudo\". Vazio = usa o português.",
             "type": [
               "string",
               "null"

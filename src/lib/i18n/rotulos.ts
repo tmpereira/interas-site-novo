@@ -99,6 +99,8 @@ const pt = {
     sobretitulo: "Notícias",
     descricaoPagina: "Notícias do INCT INTERAS.",
     autor: "Autor",
+    /** Listagem sem nenhuma notícia (em inglês, quando nenhuma foi traduzida). */
+    nenhuma: "Nenhuma notícia publicada.",
   },
   videos: {
     sobretitulo: "Vídeos",
@@ -331,6 +333,7 @@ const en: Rotulos = {
     sobretitulo: "News",
     descricaoPagina: "News from INCT INTERAS.",
     autor: "Author",
+    nenhuma: "No news available in English yet.",
   },
   videos: {
     sobretitulo: "Videos",

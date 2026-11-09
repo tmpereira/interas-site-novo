@@ -1,21 +1,21 @@
 // Consultas sobre o conteúdo validado, usadas pelas páginas.
 
-import { carregarConteudo } from "./conteudo.ts";
+import { carregarConteudo, conteudoNoIdioma } from "./conteudo.ts";
 import { NIVEIS_ALUNO, type Aluno, type CategoriaPessoa, type Grupo, type NivelAluno, type Noticia, type Pagina, type Pessoa, type Publicacao } from "./esquemas.ts";
 import { type Idioma, LOCALE } from "./i18n/rotas.ts";
 import { rotulos } from "./i18n/rotulos.ts";
 import { markdownParaTexto, truncarTexto } from "./markdown.ts";
 
-/** Página institucional ou texto de abertura de uma listagem (content/paginas.json). */
-export function paginaPorSlug(slug: string): Pagina {
-  const pagina = carregarConteudo().paginas.find((p) => p.slug === slug);
+/** Página institucional ou texto de abertura de uma listagem (content/paginas.json), no idioma. */
+export function paginaPorSlug(slug: string, idioma: Idioma): Pagina {
+  const pagina = conteudoNoIdioma(idioma).paginas.find((p) => p.slug === slug);
   if (!pagina) throw new Error(`content/paginas.json: não existe a página "${slug}"`);
   return pagina;
 }
 
 /** Pessoas ativas agrupadas por categoria, na ordem de exibição e com os títulos de site.json. */
-export function equipePorCategoria(): { chave: CategoriaPessoa; titulo: string; pessoas: Pessoa[] }[] {
-  const { site, pessoas } = carregarConteudo();
+export function equipePorCategoria(idioma: Idioma): { chave: CategoriaPessoa; titulo: string; pessoas: Pessoa[] }[] {
+  const { site, pessoas } = conteudoNoIdioma(idioma);
   return site.categorias_pessoas
     .map(({ chave, titulo }) => ({ chave, titulo, pessoas: pessoas.filter((p) => p.ativo && p.categoria === chave) }))
     .filter((c) => c.pessoas.length > 0);
@@ -108,8 +108,9 @@ export function alunosPorNivel(idioma: Idioma): { nivel: NivelAluno; titulo: str
   })).filter((n) => n.alunos.length > 0);
 }
 
-export function pessoaPorSlug(slug: string): Pessoa {
-  const pessoa = carregarConteudo().pessoas.find((p) => p.slug === slug);
+/** Pessoa pelo slug, no idioma (o português, se omitido: só nome e dados que não se traduzem). */
+export function pessoaPorSlug(slug: string, idioma: Idioma = "pt"): Pessoa {
+  const pessoa = conteudoNoIdioma(idioma).pessoas.find((p) => p.slug === slug);
   if (!pessoa) throw new Error(`content/pessoas.json: não existe a pessoa "${slug}"`);
   return pessoa;
 }
@@ -120,8 +121,8 @@ export function publicacoesDaPessoa(slug: string): Publicacao[] {
 }
 
 /** Grupos dos quais a pessoa participa (campo `grupos` da pessoa). */
-export function gruposDaPessoa(pessoa: Pessoa): Grupo[] {
-  const { grupos } = carregarConteudo();
+export function gruposDaPessoa(pessoa: Pessoa, idioma: Idioma): Grupo[] {
+  const { grupos } = conteudoNoIdioma(idioma);
   return pessoa.grupos.map((s) => grupos.find((g) => g.slug === s)).filter((g): g is Grupo => Boolean(g));
 }
 

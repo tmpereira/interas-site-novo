@@ -44,6 +44,13 @@
               }
             ]
           },
+          "cargo_en": {
+            "description": "Tradução em inglês de \"cargo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "ordem": {
             "anyOf": [
               {
@@ -145,7 +152,21 @@
               "null"
             ]
           },
+          "areas_en": {
+            "description": "Tradução em inglês de \"areas\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "atuacao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "atuacao_en": {
+            "description": "Tradução em inglês de \"atuacao\". Vazio = usa o português.",
             "type": [
               "string",
               "null"

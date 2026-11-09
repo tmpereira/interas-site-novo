@@ -7,16 +7,16 @@ import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  return metadadosPagina({ titulo: paginaPorSlug("contato").titulo, descricao: rotulos(idioma).contato.descricaoPagina, caminho: rota("contato", idioma) });
+  return metadadosPagina({ titulo: paginaPorSlug("contato", idioma).titulo, descricao: rotulos(idioma).contato.descricaoPagina, caminho: rota("contato", idioma) });
 }
 
 type Cartao = { titulo: string; icone?: string; conteudo: string };
 
 export default function Contato({ idioma }: { idioma: Idioma }) {
-  const pagina = paginaPorSlug("contato");
+  const pagina = paginaPorSlug("contato", idioma);
   const cartoes = (pagina.cartoes as Cartao[] | undefined) ?? [];
   return (
-    <PaginaTexto pagina={pagina} caminho={rota("contato", idioma)}>
+    <PaginaTexto pagina={pagina} idioma={idioma} caminho={rota("contato", idioma)}>
       {cartoes.length > 0 && (
         <div className="cartoes-contato">
           {cartoes.map((c, i) => (
@@ -24,7 +24,7 @@ export default function Contato({ idioma }: { idioma: Idioma }) {
               <h2 className="cartao-contato__titulo">
                 {c.icone && <i className={`bi bi-${c.icone}`} aria-hidden="true" />} {c.titulo}
               </h2>
-              <div className="cartao-contato__corpo texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(c.conteudo) }} />
+              <div className="cartao-contato__corpo texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(c.conteudo, idioma) }} />
             </section>
           ))}
         </div>

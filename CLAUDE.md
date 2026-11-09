@@ -173,6 +173,11 @@ que não estão previstos, mas avise o usuário e atualize esta seção.
   `content/schemas/` são gerados a partir dele (`npm run schemas`) e o
   `.vscode/settings.json` os associa aos JSON, para que o VS Code mostre
   autocompletar e erros enquanto se edita.
+- **Traduções para o inglês (desde 2026-11-09, seção 13.4):** cada campo traduzível
+  tem um irmão opcional com sufixo `_en` no mesmo item (`titulo` → `titulo_en`). Os
+  exemplos desta seção 6 mostram só o português; os campos `_en` de cada coleção são os
+  declarados em `esquemas.ts` (lista resumida na seção 13.4). Listas de texto
+  (`categorias`, `etiquetas`) têm a tradução como lista do mesmo tamanho e na mesma ordem.
 
 ### 6.1 `content/pessoas.json`
 
@@ -448,6 +453,10 @@ O avanço científico nacional depende, fundamentalmente, da articulação...
   sintaxe do Quarto (`{target="_blank"}`, `::: {.callout}`, `{{< ... >}}` etc.)
   para Markdown padrão. Links externos abrem em nova aba automaticamente (o
   site antigo usava `link-external-newwindow: true`).
+- **Versão em inglês:** `content/noticias/en/<mesmo nome>.md`, com cabeçalho só com
+  `titulo` (obrigatório), `resumo` e `categorias` (opcionais) e o corpo traduzido; data,
+  imagem e autor vêm do original. Arquivo em `en/` sem original com o mesmo nome é erro.
+  Só as notícias com versão em inglês aparecem em `/en/` (seção 13.4).
 
 ### 6.6 `content/videos.json`
 
@@ -594,10 +603,11 @@ Além do formato de cada campo, `npm run validar` e o build conferem:
   `slug` repetido; referência a pessoa, grupo ou tema inexistente; título
   faltando para alguma categoria de pessoa; `ano` diferente do ano de `data`;
   duas publicações com o mesmo DOI; imagem referenciada que não existe em
-  `public/`; nome de arquivo de notícia fora do padrão.
+  `public/`; nome de arquivo de notícia fora do padrão; lista `_en` com tamanho
+  diferente da original; notícia em `content/noticias/en/` sem original ou com texto vazio.
 - **Avisos** (não interrompem): itens fora da ordem do arquivo; data do
   cabeçalho da notícia diferente da do nome do arquivo; publicações sem DOI com
-  mesmo título e ano.
+  mesmo título e ano; campos traduzíveis sem `_en` (resumo por arquivo; seção 13.8).
 - As funções de ordenação de cada coleção (`compararPessoas`,
   `compararPublicacoes`...) estão exportadas em `conteudo.ts`; usá-las ao gravar
   os JSON para manter a ordem estável.
@@ -976,6 +986,8 @@ usuário.
 
 - `npm run dev` — ver o site em `http://localhost:3000`.
 - `npm run validar` — conferir todos os JSON e as notícias sem gerar o site.
+  `npm run validar -- --en` lista cada campo sem tradução para o inglês;
+  `npm run validar -- --en-estrito` faz desses campos um erro (seção 13.8).
 - `npm run build` — gerar o site. Roda `npm run validar` antes (`prebuild`) e
   falha com mensagem clara se algum dado estiver errado.
 - `npm run schemas` — regenerar `content/schemas/` depois de mudar `esquemas.ts`.
@@ -1089,10 +1101,12 @@ src/paginas/         # o JSX de cada página, compartilhado pelos dois idiomas
   estático gera um único `404.html`, então o 404 fica **só em português**.
 - Os arquivos internos de navegação do Next (`out/**/__next.*.txt`) passaram a
   ter `!KHB0KQ` no nome (o grupo `(pt)` codificado). Não são URLs públicas.
-- **Pendente para a etapa 3:** links internos dentro de textos em Markdown
-  (ex.: `nota` da home, abas dos grupos com `/equipe/<slug>/`) ainda apontam
-  para o português em `/en/`. Converter no `markdownParaHtml` (recebendo o
-  idioma e usando `linkNoIdioma`).
+- Links internos dentro de textos em Markdown (ex.: `nota` da home, abas dos
+  grupos com `/equipe/<slug>/`): `markdownParaHtml(texto, idioma)` e
+  `markdownEmLinha(texto, idioma)` os convertem com `linkNoIdioma` (etapa 3).
+  O conteúdo continua escrevendo as rotas em português, também nos campos `_en`.
+- `src/app/en/not-found.tsx`: 404 em inglês para `notFound()` chamado dentro de
+  `/en/`. Hoje só é usado pelo id provisório das notícias (13.4).
 - Trocar de idioma recarrega a página inteira (mudança de layout raiz); isso
   é esperado.
 
@@ -1156,6 +1170,40 @@ notícias" da home em inglês e para o sitemap.
 rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 `content/noticias/en/` e validar que todo arquivo de lá tem um original.
 
+**Como ficou (etapa 3, 2026-11-09):**
+
+- `esquemas.ts` declara cada `_en` explicitamente (auxiliares `en("campo")` e
+  `enLista("campo")`). **É traduzível todo campo que tem o irmão `_en` no esquema**;
+  não há outra lista. Campos com `_en` hoje:
+  - `site.json`: `descricao`, `logo_alt`, `menu[].rotulo` (e `itens[].rotulo`),
+    `anuncio.texto`, `rodape.texto`, `categorias_pessoas[].titulo`, `temas_grupos[].rotulo`;
+  - `home.json`: `hero.titulo`/`texto`/`botoes[].rotulo`, `apresentacao_sobretitulo`,
+    `apresentacao`, `secao_destaques.*`, `destaques[].titulo`/`texto`/`rotulo_faixa`/
+    `etiquetas`/`botao.rotulo`, `nota`, `noticias.titulo`, `publicacoes.titulo`;
+  - `paginas.json`: `titulo`, `descricao`, `conteudo`, `missao.*`, `etapas.*` (e
+    `itens[]`), `cartoes[].titulo`/`conteudo`, `titulo_artigos`, `titulo_patentes`
+    (esses três últimos passaram a ser campos formais do esquema);
+  - `grupos.json`: `titulo`, `resumo`, `conteudo`, `abas[].titulo`/`conteudo`;
+  - `pessoas.json`: `cargo`, `areas`, `atuacao`;
+  - `videos.json`: `titulo`, `resumo`, `categorias`, `conteudo`, `links[].rotulo`;
+  - `patentes.json`: `titulo`, `categorias`, `conteudo`.
+- `src/lib/i18n/traduzir.ts`: `traduzir(item, campo, idioma)` (o tipo só aceita
+  campos com `_en`); `localizar(esquema, dados, idioma)` percorre os dados guiado pelo
+  esquema e troca cada campo pela versão `_en` preenchida; `verificarTraducoes` dá
+  as pendências e os erros de tamanho das listas.
+- `conteudoNoIdioma(idioma)` (`conteudo.ts`) é o conteúdo que as páginas leem: em
+  português é o próprio `carregarConteudo()`; em inglês, os campos traduzidos e só as
+  notícias com versão em inglês (título, resumo, categorias e texto delas). As
+  consultas (`paginaPorSlug`, `equipePorCategoria`, `gruposDaPessoa`...) recebem o
+  idioma. Campo `_en` vazio = a página em inglês mostra o português.
+- Sem nenhuma notícia traduzida, a home em inglês esconde a seção de notícias e
+  `/en/news/` mostra um aviso. O export estático exige ao menos uma página em
+  `/en/news/[id]/`, então `parametros` devolve o id provisório `_sem-noticias`, que
+  responde 404 (`notFound`, com `noindex`); ele some com a primeira notícia traduzida.
+- `web_scraping/get_lattes_data.py` regrava os itens inteiros, então preserva os
+  `_en`. As patentes novas que ele cria vêm só em português; o relatório lista a
+  tradução pendente.
+
 ### 13.5 Formatação por idioma
 
 - `formatadores.ts`, `GraficoBarras`, `interas-em-numeros`, `publicacoes/[id]`
@@ -1202,6 +1250,10 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 - `npm run validar` passa a **avisar** (sem falhar) quantos campos traduzíveis
   estão sem `_en`, por arquivo e item. Com `npm run validar -- --en-estrito`
   esses avisos viram erro (usar antes de publicar).
+- **Como ficou:** por padrão, uma linha por arquivo ("pessoas.json: 259 campos sem
+  tradução em 93 itens") e a contagem de notícias sem versão em inglês; a lista por
+  item e campo sai com `npm run validar -- --en`. O `--en-estrito` não conta as
+  notícias sem tradução (não ter versão em inglês é permitido).
 - Checar também que nenhum link em `/en/` aponta para rota em português, e
   que não sobrou texto em português nas páginas `/en/` (procurar no `out/en/`
   por palavras comuns: " de ", "ção", "ões", "Página").
@@ -1214,7 +1266,7 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
    enquanto só os textos do layout e do 404 (completado na etapa 2).
 2. **Rótulos** (feita em 2026-11-09): extrair todos os textos fixos dos componentes para
    `rotulos.ts` e preencher `en`. Formatação por idioma (13.5).
-3. **Esquemas**: campos `_en`, notícias em `content/noticias/en/`,
+3. **Esquemas** (feita em 2026-11-09): campos `_en`, notícias em `content/noticias/en/`,
    `traduzir()`, avisos do validador.
 4. **Tradução do conteúdo**, em lotes revisados pelo usuário: `site.json` e
    `home.json` → `paginas.json` → `grupos.json` → `pessoas.json` →

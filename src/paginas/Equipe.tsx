@@ -6,15 +6,15 @@ import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 
 export function metadados(idioma: Idioma): Metadata {
-  return metadadosPagina({ titulo: paginaPorSlug("equipe").titulo, caminho: rota("equipe", idioma) });
+  return metadadosPagina({ titulo: paginaPorSlug("equipe", idioma).titulo, caminho: rota("equipe", idioma) });
 }
 
 export default function Equipe({ idioma }: { idioma: Idioma }) {
-  const pagina = paginaPorSlug("equipe");
+  const pagina = paginaPorSlug("equipe", idioma);
   return (
     <div className="pagina">
       <CabecalhoPagina caminho={rota("equipe", idioma)} titulo={pagina.titulo} descricao={pagina.descricao} />
-      {equipePorCategoria().map((categoria) => {
+      {equipePorCategoria(idioma).map((categoria) => {
         const destaque = categoria.chave === "coordenacao";
         return (
           <section key={categoria.chave} className="secao-equipe" aria-labelledby={`equipe-${categoria.chave}`}>

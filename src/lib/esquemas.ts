@@ -6,6 +6,9 @@
 // - Objetos aceitam campos extras (z.looseObject), para enriquecer os dados sem mudar código.
 // - Campos obrigatórios sem valor usam `null`; campos opcionais podem ser omitidos.
 // - Referências entre coleções (slugs de pessoas, grupos, temas) são conferidas em conteudo.ts.
+// - Versão em inglês (seção 13.4 do CLAUDE.md): cada campo traduzível tem um irmão com sufixo
+//   `_en` no mesmo item. É a presença do `_en` aqui que torna um campo traduzível: o validador
+//   (pendências de tradução) e `conteudoNoIdioma` (src/lib/i18n/traduzir.ts) leem esta lista.
 
 import { z } from "zod";
 
@@ -57,6 +60,18 @@ export const doi = z
 
 const texto = z.string().min(1, "não pode ficar vazio");
 
+/** Tradução em inglês de um campo de texto. Vazia ou ausente = a página em inglês mostra o português. */
+const en = (campo: string) =>
+  z.string().nullable().optional().describe(`Tradução em inglês de "${campo}". Vazio = usa o português.`);
+
+/** Tradução em inglês de uma lista de textos: mesmo tamanho e mesma ordem do original. */
+const enLista = (campo: string) =>
+  z
+    .array(z.string())
+    .nullable()
+    .optional()
+    .describe(`Tradução em inglês de "${campo}": lista do mesmo tamanho e na mesma ordem. Vazia = usa o português.`);
+
 // ---------------------------------------------------------------------------
 // Pessoas — content/pessoas.json
 // ---------------------------------------------------------------------------
@@ -80,6 +95,7 @@ export const pessoa = z.looseObject({
   nome: texto,
   categoria: categoriaPessoa,
   cargo: texto.nullable(),
+  cargo_en: en("cargo"),
   /** Posição dentro da categoria (menor primeiro); null = depois dos numerados, por nome. */
   ordem: z.number().int().nullable(),
   foto: caminhoPublico.nullable(),
@@ -90,7 +106,9 @@ export const pessoa = z.looseObject({
   scholar: url.nullable(),
   orcid: url.nullable(),
   areas: z.string().nullable(),
+  areas_en: en("areas"),
   atuacao: z.string().nullable(),
+  atuacao_en: en("atuacao"),
   /** false = mantém no histórico, mas não aparece na página da equipe. */
   ativo: z.boolean(),
 });
@@ -183,15 +201,18 @@ export const TIPOS_PATENTE = ["patente", "software", "marca", "modelo-utilidade"
 export const patente = z.looseObject({
   id: idRegistro,
   titulo: texto,
+  titulo_en: en("titulo"),
   tipo: z.enum(TIPOS_PATENTE),
   autores: z.array(texto),
   numero: z.string().nullable(),
   orgao: z.string().nullable(),
   data,
   categorias: z.array(texto),
+  categorias_en: enLista("categorias"),
   /** Slugs de pessoas.json. */
   pessoas: z.array(slug),
   conteudo: markdown.nullable(),
+  conteudo_en: en("conteudo"),
 });
 
 export const arquivoPatentes = z.looseObject({
@@ -205,13 +226,17 @@ export const arquivoPatentes = z.looseObject({
 
 export const abaGrupo = z.looseObject({
   titulo: texto,
+  titulo_en: en("titulo"),
   conteudo: markdown,
+  conteudo_en: en("conteudo"),
 });
 
 export const grupo = z.looseObject({
   slug,
   titulo: texto,
+  titulo_en: en("titulo"),
   resumo: z.string().nullable(),
+  resumo_en: en("resumo"),
   imagem: caminhoPublico.nullable(),
   /** Slugs de `temas_grupos` em site.json. */
   temas: z.array(slug),
@@ -221,6 +246,7 @@ export const grupo = z.looseObject({
   coordenacao: z.array(slug),
   abas: z.array(abaGrupo),
   conteudo: markdown.nullable(),
+  conteudo_en: en("conteudo"),
 });
 
 export const arquivoGrupos = z.looseObject({
@@ -234,18 +260,23 @@ export const arquivoGrupos = z.looseObject({
 
 export const linkRotulado = z.looseObject({
   rotulo: texto,
+  rotulo_en: en("rotulo"),
   url: link,
 });
 
 export const video = z.looseObject({
   slug,
   titulo: texto,
+  titulo_en: en("titulo"),
   data,
   resumo: z.string().nullable(),
+  resumo_en: en("resumo"),
   capa: caminhoPublico.nullable(),
   categorias: z.array(texto),
+  categorias_en: enLista("categorias"),
   links: z.array(linkRotulado),
   conteudo: markdown.nullable(),
+  conteudo_en: en("conteudo"),
 });
 
 export const arquivoVideos = z.looseObject({
@@ -260,20 +291,53 @@ export const arquivoVideos = z.looseObject({
 export const pagina = z.looseObject({
   slug,
   titulo: texto,
+  titulo_en: en("titulo"),
   descricao: z.string().nullable(),
+  descricao_en: en("descricao"),
   conteudo: markdown,
+  conteudo_en: en("conteudo"),
   /** Faixa escura com sobretítulo, título (vira o <h1>), texto em Markdown e etiquetas (página "O INCT INTERAS"). */
   missao: z
-    .looseObject({ sobretitulo: z.string().nullable(), titulo: texto, texto: markdown, etiquetas: z.array(texto) })
+    .looseObject({
+      sobretitulo: z.string().nullable(),
+      sobretitulo_en: en("sobretitulo"),
+      titulo: texto,
+      titulo_en: en("titulo"),
+      texto: markdown,
+      texto_en: en("texto"),
+      etiquetas: z.array(texto),
+      etiquetas_en: enLista("etiquetas"),
+    })
     .optional(),
   /** Passos numerados em um cartão (ex.: "Do laboratório ao SUS"). */
   etapas: z
     .looseObject({
       sobretitulo: z.string().nullable(),
+      sobretitulo_en: en("sobretitulo"),
       titulo: texto,
-      itens: z.array(z.looseObject({ titulo: texto, texto: z.string() })).min(1),
+      titulo_en: en("titulo"),
+      itens: z
+        .array(z.looseObject({ titulo: texto, titulo_en: en("titulo"), texto: z.string(), texto_en: en("texto") }))
+        .min(1),
     })
     .optional(),
+  /** Cartões abaixo do texto (página de contato): ícone do Bootstrap Icons sem o prefixo "bi-". */
+  cartoes: z
+    .array(
+      z.looseObject({
+        titulo: texto,
+        titulo_en: en("titulo"),
+        icone: z.string().nullable().optional(),
+        conteudo: markdown,
+        conteudo_en: en("conteudo"),
+      }),
+    )
+    .optional(),
+  /** Títulos das seções de artigos e de patentes (página de publicações). */
+  titulo_artigos: z.string().nullable().optional(),
+  titulo_artigos_en: en("titulo_artigos"),
+  titulo_patentes: z.string().nullable().optional(),
+  titulo_patentes_en: en("titulo_patentes"),
 });
 
 export const arquivoPaginas = z.looseObject({
@@ -301,12 +365,23 @@ export const cabecalhoNoticia = z.looseObject({
   destaque: z.boolean().optional(),
 });
 
+/**
+ * Cabeçalho da versão em inglês de uma notícia: content/noticias/en/<mesmo nome>.md.
+ * Só os campos traduzidos; data, imagem e autor vêm do original.
+ */
+export const cabecalhoNoticiaEn = z.looseObject({
+  titulo: texto,
+  resumo: z.string().nullable().optional(),
+  categorias: z.array(texto).optional(),
+});
+
 // ---------------------------------------------------------------------------
 // Página inicial — content/home.json
 // ---------------------------------------------------------------------------
 
 export const botao = z.looseObject({
   rotulo: texto,
+  rotulo_en: en("rotulo"),
   link,
 });
 
@@ -315,7 +390,9 @@ export const FAIXAS_ESPECTRO = ["luz", "cura", "moleculas"] as const;
 
 export const destaque = z.looseObject({
   titulo: texto,
+  titulo_en: en("titulo"),
   texto: markdown,
+  texto_en: en("texto"),
   imagem: caminhoPublico,
   posicao_imagem: z.enum(["esquerda", "direita"]),
   botao: botao.nullable(),
@@ -323,11 +400,14 @@ export const destaque = z.looseObject({
   faixa: z.enum(FAIXAS_ESPECTRO).nullable().optional(),
   /** Texto curto da coluna à esquerda (ex.: "Infravermelho e visível\n2,5–25 µm"); `\n` quebra a linha. */
   rotulo_faixa: z.string().nullable().optional(),
+  rotulo_faixa_en: en("rotulo_faixa"),
   etiquetas: z.array(texto).optional(),
+  etiquetas_en: enLista("etiquetas"),
 });
 
 export const secaoRecentes = z.looseObject({
   titulo: texto,
+  titulo_en: en("titulo"),
   /** Quantos itens mais recentes exibir. */
   quantidade: z.number().int().min(0),
 });
@@ -336,21 +416,33 @@ export const arquivoHome = z.looseObject({
   $schema: z.string().optional(),
   hero: z.looseObject({
     titulo: texto,
+    titulo_en: en("titulo"),
     texto: markdown,
+    texto_en: en("texto"),
     imagem: caminhoPublico,
     botoes: z.array(botao).optional(),
   }),
   /** Sobretítulo pequeno da faixa escura da apresentação (ex.: "Por que existimos"). */
   apresentacao_sobretitulo: z.string().nullable().optional(),
+  apresentacao_sobretitulo_en: en("apresentacao_sobretitulo"),
   apresentacao: markdown,
+  apresentacao_en: en("apresentacao"),
   /** Cabeçalho da seção dos destaques (linhas de pesquisa), acima do espectro. */
   secao_destaques: z
-    .looseObject({ sobretitulo: z.string().nullable(), titulo: texto, texto: z.string().nullable() })
+    .looseObject({
+      sobretitulo: z.string().nullable(),
+      sobretitulo_en: en("sobretitulo"),
+      titulo: texto,
+      titulo_en: en("titulo"),
+      texto: z.string().nullable(),
+      texto_en: en("texto"),
+    })
     .nullable()
     .optional(),
   destaques: z.array(destaque),
   /** Bloco curto abaixo dos destaques (ex.: coordenação), em Markdown. */
   nota: markdown.nullable(),
+  nota_en: en("nota"),
   noticias: secaoRecentes,
   publicacoes: secaoRecentes,
 });
@@ -361,22 +453,25 @@ export const arquivoHome = z.looseObject({
 
 export const itemMenu = z.looseObject({
   rotulo: texto,
+  rotulo_en: en("rotulo"),
   link,
 });
 
 export const entradaMenu = z.union([
   itemMenu,
-  z.looseObject({ rotulo: texto, itens: z.array(itemMenu).min(1) }),
+  z.looseObject({ rotulo: texto, rotulo_en: en("rotulo"), itens: z.array(itemMenu).min(1) }),
 ]);
 
 export const arquivoSite = z.looseObject({
   $schema: z.string().optional(),
   titulo: texto,
   descricao: z.string().nullable(),
+  descricao_en: en("descricao"),
   /** Endereço público do site, usado no sitemap e no Open Graph. */
   url_base: url,
   logo: caminhoPublico,
   logo_alt: texto,
+  logo_alt_en: en("logo_alt"),
   favicon: caminhoPublico,
   /** Imagem padrão do Open Graph. */
   imagem_compartilhamento: caminhoPublico.nullable(),
@@ -388,20 +483,22 @@ export const arquivoSite = z.looseObject({
       ativo: z.boolean(),
       icone: z.string().nullable(),
       texto: markdown,
+      texto_en: en("texto"),
       link: link.nullable(),
     })
     .nullable(),
   rodape: z.looseObject({
     logo: caminhoPublico.nullable(),
     texto: z.string(),
+    texto_en: en("texto"),
     /** Ícones de redes sociais (nome do ícone bi-*, sem o prefixo). */
     redes: z.array(z.looseObject({ icone: texto, rotulo: texto, url })),
   }),
   google_analytics: z.string().regex(/^G-[A-Z0-9]+$/, "deve ser um ID do Google Analytics (G-XXXXXXX)").nullable(),
   /** Títulos das seções da página da equipe, na ordem de exibição. */
-  categorias_pessoas: z.array(z.looseObject({ chave: categoriaPessoa, titulo: texto })),
+  categorias_pessoas: z.array(z.looseObject({ chave: categoriaPessoa, titulo: texto, titulo_en: en("titulo") })),
   /** Temas usados no filtro de grupos. */
-  temas_grupos: z.array(z.looseObject({ slug, rotulo: texto })),
+  temas_grupos: z.array(z.looseObject({ slug, rotulo: texto, rotulo_en: en("rotulo") })),
 });
 
 // ---------------------------------------------------------------------------
@@ -418,7 +515,9 @@ export type Grupo = z.infer<typeof grupo>;
 export type Video = z.infer<typeof video>;
 export type Pagina = z.infer<typeof pagina>;
 export type CabecalhoNoticia = z.infer<typeof cabecalhoNoticia>;
-export type Noticia = CabecalhoNoticia & { id: string; corpo: string };
+export type CabecalhoNoticiaEn = z.infer<typeof cabecalhoNoticiaEn>;
+/** Notícia lida do .md; `en` = versão em inglês (content/noticias/en/), se existir. */
+export type Noticia = CabecalhoNoticia & { id: string; corpo: string; en?: CabecalhoNoticiaEn & { corpo: string } };
 export type Home = z.infer<typeof arquivoHome>;
 export type Site = z.infer<typeof arquivoSite>;
 

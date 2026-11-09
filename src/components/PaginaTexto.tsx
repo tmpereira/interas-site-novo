@@ -1,17 +1,18 @@
 import type { ReactNode } from "react";
 import type { Pagina } from "@/lib/esquemas";
+import type { Idioma } from "@/lib/i18n/rotas";
 import { markdownParaHtml } from "@/lib/markdown";
 import CabecalhoPagina from "./CabecalhoPagina";
 
-type Props = { pagina: Pagina; caminho: string; children?: ReactNode };
+type Props = { pagina: Pagina; idioma: Idioma; caminho: string; children?: ReactNode };
 
 /** Página institucional: título, subtítulo e texto em Markdown (content/paginas.json). */
-export default function PaginaTexto({ pagina, caminho, children }: Props) {
+export default function PaginaTexto({ pagina, idioma, caminho, children }: Props) {
   return (
     <div className="pagina">
       <CabecalhoPagina caminho={caminho} titulo={pagina.titulo} descricao={pagina.descricao} />
       <article className="leitura">
-        {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, { rebaixarTitulos: false }) }} />}
+        {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, idioma, { rebaixarTitulos: false }) }} />}
         {children}
       </article>
     </div>

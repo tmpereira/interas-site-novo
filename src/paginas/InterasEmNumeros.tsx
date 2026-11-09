@@ -12,12 +12,12 @@ import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { redeCoautoria } from "@/lib/rede";
 
 export function metadados(idioma: Idioma): Metadata {
-  const pagina = paginaPorSlug("interas-em-numeros");
+  const pagina = paginaPorSlug("interas-em-numeros", idioma);
   return metadadosPagina({ titulo: pagina.titulo, descricao: pagina.descricao, caminho: rota("numeros", idioma) });
 }
 
 export default function InterasEmNumeros({ idioma }: { idioma: Idioma }) {
-  const pagina = paginaPorSlug("interas-em-numeros");
+  const pagina = paginaPorSlug("interas-em-numeros", idioma);
   const r = rotulos(idioma).numeros;
   const inteiro = (n: number) => formatarNumero(n, idioma);
   const e = estatisticas(idioma);
@@ -45,7 +45,7 @@ export default function InterasEmNumeros({ idioma }: { idioma: Idioma }) {
   return (
     <div className="pagina">
       <CabecalhoPagina caminho={rota("numeros", idioma)} titulo={pagina.titulo} descricao={pagina.descricao}>
-        {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo) }} />}
+        {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, idioma) }} />}
       </CabecalhoPagina>
 
       <dl className="numeros-interas">

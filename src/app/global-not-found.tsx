@@ -9,7 +9,7 @@ import NaoEncontrada, { metadados } from "@/paginas/NaoEncontrada";
 export function generateMetadata(): Metadata {
   const { site } = carregarConteudo();
   const meta = metadados("pt");
-  return { ...metadadosRaiz(), ...meta, title: `${String(meta.title)} | ${site.titulo}` };
+  return { ...metadadosRaiz("pt"), ...meta, title: `${String(meta.title)} | ${site.titulo}` };
 }
 
 export default function GlobalNotFound() {

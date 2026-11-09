@@ -35,7 +35,7 @@ export default function ListaPatentes({ patentes, idioma }: { patentes: Patente[
           {p.conteudo && (
             <details className="lista-patentes__detalhes">
               <summary>{r.patentes.detalhes}</summary>
-              <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(semTitulo(p.conteudo)) }} />
+              <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(semTitulo(p.conteudo), idioma) }} />
             </details>
           )}
         </li>

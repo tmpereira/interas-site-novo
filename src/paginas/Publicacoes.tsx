@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
 import FiltroPublicacoes, { type ItemPublicacao } from "@/components/FiltroPublicacoes";
 import ListaPatentes from "@/components/ListaPatentes";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { paginaPorSlug, paisesEstrangeiros } from "@/lib/consultas";
 import { formatarData } from "@/lib/formatadores";
 import { markdownEmLinha, markdownParaHtml } from "@/lib/markdown";
@@ -11,25 +11,25 @@ import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  const pagina = paginaPorSlug("publicacoes");
+  const pagina = paginaPorSlug("publicacoes", idioma);
   return metadadosPagina({ titulo: pagina.titulo, descricao: rotulos(idioma).publicacoes.descricaoPagina, caminho: rota("publicacoes", idioma) });
 }
 
 export default function Publicacoes({ idioma }: { idioma: Idioma }) {
-  const { publicacoes, patentes, grupos, pessoas } = carregarConteudo();
-  const pagina = paginaPorSlug("publicacoes");
+  const { publicacoes, patentes, grupos, pessoas } = conteudoNoIdioma(idioma);
+  const pagina = paginaPorSlug("publicacoes", idioma);
   const r = rotulos(idioma).publicacoes;
 
   // Dados de cada publicação para a lista com filtros (o resumo aparece ao expandir o cartão)
   const itens: ItemPublicacao[] = publicacoes.map((p) => ({
     id: p.id,
     titulo: p.titulo,
-    tituloHtml: markdownEmLinha(p.titulo),
+    tituloHtml: markdownEmLinha(p.titulo, idioma),
     autores: p.autores,
     ano: p.ano,
     data: p.data,
     dataTexto: formatarData(p.data, idioma),
-    resumoHtml: p.resumo ? markdownParaHtml(p.resumo) : null,
+    resumoHtml: p.resumo ? markdownParaHtml(p.resumo, idioma) : null,
     periodico: p.periodico,
     volume: p.volume,
     numero: p.numero,

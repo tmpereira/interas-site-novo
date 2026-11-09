@@ -16,15 +16,15 @@ export function parametros() {
 }
 
 export function metadados(idioma: Idioma, slug: string): Metadata {
-  const pessoa = pessoaPorSlug(slug);
+  const pessoa = pessoaPorSlug(slug, idioma);
   const descricao = [pessoa.cargo, pessoa.instituicao?.nome].filter(Boolean).join(" — ");
   return metadadosPagina({ titulo: pessoa.nome, descricao, caminho: rota("equipe", idioma, pessoa.slug), imagem: pessoa.foto, tipo: "profile" });
 }
 
 export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: string }) {
-  const pessoa = pessoaPorSlug(slug);
+  const pessoa = pessoaPorSlug(slug, idioma);
   const publicacoes = publicacoesDaPessoa(pessoa.slug);
-  const grupos = gruposDaPessoa(pessoa);
+  const grupos = gruposDaPessoa(pessoa, idioma);
 
   const r = rotulos(idioma);
   const links = [
@@ -59,13 +59,13 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
         {pessoa.areas && (
           <section>
             <h2>{r.perfil.areas}</h2>
-            <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.areas) }} />
+            <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.areas, idioma) }} />
           </section>
         )}
         {pessoa.atuacao && (
           <section>
             <h2>{r.perfil.atuacao}</h2>
-            <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.atuacao) }} />
+            <div dangerouslySetInnerHTML={{ __html: markdownParaHtml(pessoa.atuacao, idioma) }} />
           </section>
         )}
         {grupos.length > 0 && (

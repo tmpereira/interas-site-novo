@@ -18,7 +18,7 @@ export default function ListaPublicacoes({ publicacoes, idioma }: { publicacoes:
           </time>
           <div className="lista-publicacoes__corpo">
             <Link href={rota("publicacoes", idioma, p.id)} className="lista-publicacoes__titulo">
-              <span dangerouslySetInnerHTML={{ __html: markdownEmLinha(p.titulo) }} />
+              <span dangerouslySetInnerHTML={{ __html: markdownEmLinha(p.titulo, idioma) }} />
             </Link>
             {p.autores.length > 0 && <p className="lista-publicacoes__autores">{autoresCurtos(p.autores)}</p>}
             {p.periodico && <p className="lista-publicacoes__periodico">{p.periodico}</p>}

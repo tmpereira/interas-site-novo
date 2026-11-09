@@ -17,6 +17,13 @@
         "null"
       ]
     },
+    "descricao_en": {
+      "description": "Tradução em inglês de \"descricao\". Vazio = usa o português.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "url_base": {
       "type": "string",
       "format": "uri"
@@ -28,6 +35,13 @@
     "logo_alt": {
       "type": "string",
       "minLength": 1
+    },
+    "logo_alt_en": {
+      "description": "Tradução em inglês de \"logo_alt\". Vazio = usa o português.",
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "favicon": {
       "type": "string",
@@ -55,6 +69,13 @@
                 "type": "string",
                 "minLength": 1
               },
+              "rotulo_en": {
+                "description": "Tradução em inglês de \"rotulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "link": {
                 "anyOf": [
                   {
@@ -81,6 +102,13 @@
                 "type": "string",
                 "minLength": 1
               },
+              "rotulo_en": {
+                "description": "Tradução em inglês de \"rotulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "itens": {
                 "minItems": 1,
                 "type": "array",
@@ -90,6 +118,13 @@
                     "rotulo": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "rotulo_en": {
+                      "description": "Tradução em inglês de \"rotulo\". Vazio = usa o português.",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
                     },
                     "link": {
                       "anyOf": [
@@ -142,6 +177,13 @@
             "texto": {
               "type": "string"
             },
+            "texto_en": {
+              "description": "Tradução em inglês de \"texto\". Vazio = usa o português.",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
             "link": {
               "anyOf": [
                 {
@@ -192,6 +234,13 @@
         },
         "texto": {
           "type": "string"
+        },
+        "texto_en": {
+          "description": "Tradução em inglês de \"texto\". Vazio = usa o português.",
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "redes": {
           "type": "array",
@@ -259,6 +308,13 @@
           "titulo": {
             "type": "string",
             "minLength": 1
+          },
+          "titulo_en": {
+            "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
           }
         },
         "required": [
@@ -280,6 +336,13 @@
           "rotulo": {
             "type": "string",
             "minLength": 1
+          },
+          "rotulo_en": {
+            "description": "Tradução em inglês de \"rotulo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
           }
         },
         "required": [

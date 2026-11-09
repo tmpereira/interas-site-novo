@@ -16,7 +16,9 @@ Etapas:
        - content/periodicos.json   periódicos novos e contagens/anos recalculados
        - content/patentes.json     patentes, softwares e marcas (a partir de --desde), lidos
                                    do HTML do currículo no cache (o JSON do scriptLattes vem
-                                   sem eles); nas existentes, só acrescenta `pessoas`
+                                   sem eles); nas existentes, só acrescenta `pessoas`. As novas
+                                   vêm só em português: o relatório lista a tradução pendente
+                                   (`titulo_en`, `categorias_en`, `conteudo_en`; CLAUDE.md, seção 13)
        - content/pessoas.json      o link `lattes`, quando difere do ID do .list do
                                    scriptLattes (o .list é a referência dos IDs), e a `foto`:
                                    baixa a foto do Lattes (link "servletrecuperafoto" do HTML
@@ -31,6 +33,8 @@ Etapas:
 
 Regras (CLAUDE.md, seção 11.1): nunca sobrescreve campo preenchido, nunca inclui
 duplicata (DOI; sem DOI, título normalizado + ano) e não inventa dados.
+Versão em inglês (seção 13): os itens existentes são regravados inteiros, então as
+traduções (`*_en`) são preservadas; nada é traduzido aqui.
 
 Uso (a partir da raiz do projeto ou de qualquer pasta):
   python3 web_scraping/get_lattes_data.py                  # baixa tudo e atualiza o site
@@ -747,6 +751,13 @@ def atualizar_patentes(membros, mapa, desde, rel, resumo):
         rel.append("\n### Existentes alterados\n")
         for i, add in alteradas:
             rel.append(f"- `{i}`: +pessoas {', '.join(add)}")
+    if novas:
+        # CLAUDE.md, seção 13.10: conteúdo novo traduzível fica com a tradução pendente e é listado
+        rel.append("\n### Tradução para o inglês pendente\n")
+        rel.append("Os registros novos estão só em português. Falta preencher `titulo_en`, `categorias_en` "
+                   "e `conteudo_en` em content/patentes.json (peça ao Claude Code para traduzir):\n")
+        for p in sorted(novas, key=lambda x: x["data"], reverse=True):
+            rel.append(f"- `{p['id']}` {p['titulo']}")
     return dados
 
 

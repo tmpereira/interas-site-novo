@@ -6,15 +6,15 @@ import { classesFontes } from "@/styles/fontes";
 import BarraAnuncio from "@/components/BarraAnuncio";
 import Navbar from "@/components/Navbar";
 import Rodape from "@/components/Rodape";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { type Idioma, LOCALE, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 import { markdownEmLinha } from "@/lib/markdown";
 import { menuNoIdioma } from "@/lib/menu";
 
-/** Metadados comuns a todas as páginas (usados pelos dois layouts raiz). */
-export function metadadosRaiz(): Metadata {
-  const { site } = carregarConteudo();
+/** Metadados comuns a todas as páginas do idioma (usados pelos dois layouts raiz). */
+export function metadadosRaiz(idioma: Idioma): Metadata {
+  const { site } = conteudoNoIdioma(idioma);
   return {
     metadataBase: new URL(site.url_base),
     title: { default: site.titulo, template: `%s | ${site.titulo}` },
@@ -28,7 +28,7 @@ export function metadadosRaiz(): Metadata {
  * raiz `app/(pt)/layout.tsx` e `app/en/layout.tsx` e pela página 404.
  */
 export default function Documento({ idioma, children }: { idioma: Idioma; children: React.ReactNode }) {
-  const { site } = carregarConteudo();
+  const { site } = conteudoNoIdioma(idioma);
   const anuncio = site.anuncio?.ativo ? site.anuncio : null;
   const r = rotulos(idioma);
   return (
@@ -49,7 +49,7 @@ gtag('config', '${site.google_analytics}');`}
           {r.layout.pularParaConteudo}
         </a>
         <header className="cabecalho">
-          {anuncio && <BarraAnuncio idioma={idioma} id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto)} />}
+          {anuncio && <BarraAnuncio idioma={idioma} id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto, idioma)} />}
           <Navbar idioma={idioma} logo={site.logo} logoAlt={site.logo_alt} menu={menuNoIdioma(site.menu, idioma)} inicio={rota("inicio", idioma)} />
         </header>
         <main id="conteudo" className="conteudo-principal">

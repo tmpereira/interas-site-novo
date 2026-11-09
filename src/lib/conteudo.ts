@@ -1,4 +1,5 @@
-// Leitura e validação de todo o conteúdo do site (content/*.json e content/noticias/*.md).
+// Leitura e validação de todo o conteúdo do site (content/*.json, content/noticias/*.md e as
+// versões em inglês das notícias em content/noticias/en/*.md).
 // Usado pelas páginas no build e pelo `npm run validar`.
 // Qualquer erro interrompe o build com uma mensagem em português indicando arquivo, item e campo.
 
@@ -9,8 +10,16 @@ import type { z } from "zod";
 import {
   ARQUIVOS_JSON,
   CATEGORIAS_PESSOA,
+  arquivoHome,
+  arquivoSite,
   cabecalhoNoticia,
+  cabecalhoNoticiaEn,
+  grupo,
   idNoticia,
+  pagina,
+  patente,
+  pessoa,
+  video,
   type Aluno,
   type Grupo,
   type Home,
@@ -22,9 +31,13 @@ import {
   type Site,
   type Video,
 } from "./esquemas.ts";
+import type { Idioma } from "./i18n/rotas.ts";
+import { localizar, type Pendencia, verificarTraducoes } from "./i18n/traduzir.ts";
 
 export const PASTA_CONTEUDO = path.join(process.cwd(), "content");
 export const PASTA_NOTICIAS = path.join(PASTA_CONTEUDO, "noticias");
+/** Versões em inglês das notícias: mesmo nome de arquivo do original. */
+export const PASTA_NOTICIAS_EN = path.join(PASTA_NOTICIAS, "en");
 export const PASTA_PUBLICA = path.join(process.cwd(), "public");
 
 export type Conteudo = {
@@ -44,6 +57,10 @@ export type ResultadoValidacao = {
   conteudo: Conteudo | null;
   erros: string[];
   avisos: string[];
+  /** Campos traduzíveis ainda sem a versão em inglês, por arquivo (seção 13.8 do CLAUDE.md). */
+  pendenciasTraducao: Record<string, Pendencia[]>;
+  /** Ids das notícias sem versão em inglês (elas não aparecem em /en/; não é erro). */
+  noticiasSemIngles: string[];
 };
 
 export class ErroConteudo extends Error {
@@ -162,6 +179,7 @@ export function validarConteudo(): ResultadoValidacao {
   const erros: string[] = [];
   const avisos: string[] = [];
   const lido: Record<string, unknown> = {};
+  const pendenciasTraducao: Record<string, Pendencia[]> = {};
 
   // 1. Arquivos JSON
   for (const [nome, esquema] of Object.entries(ARQUIVOS_JSON)) {
@@ -179,14 +197,18 @@ export function validarConteudo(): ResultadoValidacao {
       continue;
     }
     const r = (esquema as z.ZodType).safeParse(dados);
-    if (r.success) lido[nome] = r.data;
-    else erros.push(...formatarProblemas(rel, r.error, dados));
+    if (r.success) {
+      lido[nome] = r.data;
+      const t = verificarTraducoes(esquema as z.ZodType, r.data);
+      erros.push(...t.erros.map((e) => `${rel} › ${e}`));
+      if (t.pendencias.length > 0) pendenciasTraducao[rel] = t.pendencias;
+    } else erros.push(...formatarProblemas(rel, r.error, dados));
   }
 
   // 2. Notícias (um .md por notícia)
   const noticias: Noticia[] = [];
   const arquivosNoticias = fs.existsSync(PASTA_NOTICIAS)
-    ? fs.readdirSync(PASTA_NOTICIAS).filter((f) => !f.startsWith("."))
+    ? fs.readdirSync(PASTA_NOTICIAS).filter((f) => !f.startsWith(".") && f !== "en")
     : [];
   for (const arquivo of arquivosNoticias.sort()) {
     const rel = `content/noticias/${arquivo}`;
@@ -219,7 +241,36 @@ export function validarConteudo(): ResultadoValidacao {
     noticias.push({ ...r.data, id, corpo: lidoMd.content });
   }
 
-  if (erros.length > 0) return { conteudo: null, erros, avisos };
+  // 3. Versões em inglês das notícias (content/noticias/en/<mesmo nome>.md)
+  const arquivosEn = fs.existsSync(PASTA_NOTICIAS_EN) ? fs.readdirSync(PASTA_NOTICIAS_EN).filter((f) => !f.startsWith(".")) : [];
+  for (const arquivo of arquivosEn.sort()) {
+    const rel = `content/noticias/en/${arquivo}`;
+    const original = noticias.find((n) => `${n.id}.md` === arquivo);
+    if (!original) {
+      erros.push(`${rel}: não existe a notícia original content/noticias/${arquivo} (a versão em inglês deve ter o mesmo nome de arquivo)`);
+      continue;
+    }
+    let lidoMd: matter.GrayMatterFile<string>;
+    try {
+      lidoMd = matter(fs.readFileSync(path.join(PASTA_NOTICIAS_EN, arquivo), "utf8"));
+    } catch (e) {
+      erros.push(`${rel}: cabeçalho mal formado — ${(e as Error).message}`);
+      continue;
+    }
+    const r = cabecalhoNoticiaEn.safeParse(lidoMd.data);
+    if (!r.success) {
+      erros.push(...formatarProblemas(`${rel} › cabeçalho`, r.error, lidoMd.data));
+      continue;
+    }
+    if (!lidoMd.content.trim()) erros.push(`${rel}: o texto da notícia está vazio`);
+    if ((original.categorias?.length ?? 0) > 0 && !r.data.categorias?.length) {
+      (pendenciasTraducao[rel] ??= []).push({ local: "cabeçalho", campo: "categorias" });
+    }
+    original.en = { ...r.data, corpo: lidoMd.content };
+  }
+  const noticiasSemIngles = noticias.filter((n) => !n.en).map((n) => n.id);
+
+  if (erros.length > 0) return { conteudo: null, erros, avisos, pendenciasTraducao, noticiasSemIngles };
 
   const conteudo: Conteudo = {
     site: lido["site.json"] as Site,
@@ -235,7 +286,7 @@ export function validarConteudo(): ResultadoValidacao {
   };
 
   verificarReferencias(conteudo, erros, avisos);
-  return { conteudo: erros.length > 0 ? null : conteudo, erros, avisos };
+  return { conteudo: erros.length > 0 ? null : conteudo, erros, avisos, pendenciasTraducao, noticiasSemIngles };
 }
 
 /** Checagens entre coleções: ids únicos, referências existentes, imagens, ordem dos arquivos. */
@@ -356,4 +407,37 @@ export function carregarConteudo(): Conteudo {
   if (!conteudo) throw new ErroConteudo(erros);
   if (process.env.NODE_ENV === "production") cache = conteudo;
   return conteudo;
+}
+
+const cacheIdiomas = new Map<Idioma, Conteudo>();
+
+/**
+ * Conteúdo no idioma da página. Em português, é o próprio `carregarConteudo()`. Em inglês,
+ * cada campo traduzível vem da versão `_en` (quando preenchida; senão fica o português) e as
+ * notícias são só as que têm versão em inglês, com título, resumo, categorias e texto dela.
+ * Coleções que não se traduzem (publicações, alunos) ficam como estão.
+ */
+export function conteudoNoIdioma(idioma: Idioma): Conteudo {
+  const c = carregarConteudo();
+  if (idioma === "pt") return c;
+  const guardado = cacheIdiomas.get(idioma);
+  if (guardado) return guardado;
+  const lista = <T>(esquema: z.ZodType, itens: T[]) => itens.map((i) => localizar(esquema, i, idioma));
+  const traduzido: Conteudo = {
+    ...c,
+    site: localizar(arquivoSite, c.site, idioma),
+    home: localizar(arquivoHome, c.home, idioma),
+    pessoas: lista(pessoa, c.pessoas),
+    patentes: lista(patente, c.patentes),
+    grupos: lista(grupo, c.grupos),
+    videos: lista(video, c.videos),
+    paginas: lista(pagina, c.paginas),
+    noticias: c.noticias.flatMap((n) =>
+      n.en
+        ? [{ ...n, titulo: n.en.titulo, resumo: n.en.resumo ?? null, categorias: n.en.categorias?.length ? n.en.categorias : n.categorias, corpo: n.en.corpo }]
+        : [],
+    ),
+  };
+  if (process.env.NODE_ENV === "production") cacheIdiomas.set(idioma, traduzido);
+  return traduzido;
 }

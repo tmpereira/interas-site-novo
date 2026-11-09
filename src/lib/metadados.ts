@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { carregarConteudo } from "./conteudo";
+import { conteudoNoIdioma } from "./conteudo";
+import { idiomaDoCaminho } from "./i18n/rotas";
 
 type Opcoes = {
   titulo: string;
@@ -15,7 +16,7 @@ type Opcoes = {
 
 /** Metadados de uma página: título, descrição, canônica, Open Graph e cartão do Twitter. */
 export function metadadosPagina({ titulo, descricao, caminho, imagem, tipo = "website", extra }: Opcoes): Metadata {
-  const { site } = carregarConteudo();
+  const { site } = conteudoNoIdioma(idiomaDoCaminho(caminho));
   const desc = descricao || site.descricao || undefined;
   const img = imagem ?? site.imagem_compartilhamento ?? site.logo;
   return {

@@ -9,7 +9,7 @@ import { rotulos } from "@/lib/i18n/rotulos";
 import type { Rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  const pagina = paginaPorSlug("alunos");
+  const pagina = paginaPorSlug("alunos", idioma);
   return metadadosPagina({ titulo: pagina.titulo, descricao: pagina.descricao, caminho: rota("alunos", idioma) });
 }
 
@@ -23,7 +23,7 @@ function periodo(a: AlunoComOrientador, r: Rotulos["alunos"]): string {
 }
 
 export default function Alunos({ idioma }: { idioma: Idioma }) {
-  const pagina = paginaPorSlug("alunos");
+  const pagina = paginaPorSlug("alunos", idioma);
   const r = rotulos(idioma).alunos;
   const niveis = alunosPorNivel(idioma);
   const total = niveis.reduce((s, n) => s + n.alunos.length, 0);
@@ -31,7 +31,7 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
   return (
     <div className="pagina">
       <CabecalhoPagina caminho={rota("alunos", idioma)} titulo={pagina.titulo} descricao={pagina.descricao}>
-        {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo) }} />}
+        {pagina.conteudo && <div className="cabecalho-pagina__texto texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, idioma) }} />}
       </CabecalhoPagina>
 
       <section className="secao-alunos" aria-labelledby="alunos-resumo">

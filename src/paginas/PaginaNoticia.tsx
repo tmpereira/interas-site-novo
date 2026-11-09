@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { resumoDaNoticia } from "@/lib/consultas";
 import { formatarDataLonga } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
@@ -9,18 +10,28 @@ import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
-function noticiaPorId(id: string) {
-  const noticia = carregarConteudo().noticias.find((n) => n.id === id);
+/**
+ * Id provisório para quando o idioma ainda não tem nenhuma notícia: o export estático exige
+ * ao menos uma página na rota, então gera-se só esta, que responde 404 (`notFound`).
+ * Nenhum link aponta para ela; some sozinha quando houver a primeira notícia traduzida.
+ */
+const SEM_NOTICIAS = "_sem-noticias";
+
+function noticiaPorId(id: string, idioma: Idioma) {
+  if (id === SEM_NOTICIAS) notFound();
+  const noticia = conteudoNoIdioma(idioma).noticias.find((n) => n.id === id);
   if (!noticia) throw new Error(`content/noticias: não existe a notícia "${id}"`);
   return noticia;
 }
 
-export function parametros() {
-  return carregarConteudo().noticias.map((n) => ({ id: n.id }));
+/** Em inglês, só as notícias que têm versão em inglês (content/noticias/en/) geram página. */
+export function parametros(idioma: Idioma) {
+  const ids = conteudoNoIdioma(idioma).noticias.map((n) => ({ id: n.id }));
+  return ids.length > 0 ? ids : [{ id: SEM_NOTICIAS }];
 }
 
 export function metadados(idioma: Idioma, id: string): Metadata {
-  const n = noticiaPorId(id);
+  const n = noticiaPorId(id, idioma);
   const descricao = resumoDaNoticia(n);
   const meta = metadadosPagina({
     titulo: n.titulo,
@@ -34,7 +45,7 @@ export function metadados(idioma: Idioma, id: string): Metadata {
 }
 
 export default function PaginaNoticia({ idioma, id }: { idioma: Idioma; id: string }) {
-  const n = noticiaPorId(id);
+  const n = noticiaPorId(id, idioma);
   const r = rotulos(idioma);
   return (
     <div className="pagina">
@@ -55,7 +66,7 @@ export default function PaginaNoticia({ idioma, id }: { idioma: Idioma; id: stri
             <dd className="ficha__valor">{formatarDataLonga(n.data, idioma)}</dd>
           </div>
         </dl>
-        <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(n.corpo, { rebaixarTitulos: true }) }} />
+        <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(n.corpo, idioma, { rebaixarTitulos: true }) }} />
       </article>
     </div>
   );

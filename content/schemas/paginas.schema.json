@@ -20,7 +20,21 @@
             "type": "string",
             "minLength": 1
           },
+          "titulo_en": {
+            "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "descricao": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "descricao_en": {
+            "description": "Tradução em inglês de \"descricao\". Vazio = usa o português.",
             "type": [
               "string",
               "null"
@@ -28,6 +42,13 @@
           },
           "conteudo": {
             "type": "string"
+          },
+          "conteudo_en": {
+            "description": "Tradução em inglês de \"conteudo\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "missao": {
             "type": "object",
@@ -38,12 +59,33 @@
                   "null"
                 ]
               },
+              "sobretitulo_en": {
+                "description": "Tradução em inglês de \"sobretitulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "titulo": {
                 "type": "string",
                 "minLength": 1
               },
+              "titulo_en": {
+                "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "texto": {
                 "type": "string"
+              },
+              "texto_en": {
+                "description": "Tradução em inglês de \"texto\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "etiquetas": {
                 "type": "array",
@@ -51,6 +93,20 @@
                   "type": "string",
                   "minLength": 1
                 }
+              },
+              "etiquetas_en": {
+                "description": "Tradução em inglês de \"etiquetas\": lista do mesmo tamanho e na mesma ordem. Vazia = usa o português.",
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
               }
             },
             "required": [
@@ -70,9 +126,23 @@
                   "null"
                 ]
               },
+              "sobretitulo_en": {
+                "description": "Tradução em inglês de \"sobretitulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "titulo": {
                 "type": "string",
                 "minLength": 1
+              },
+              "titulo_en": {
+                "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "itens": {
                 "minItems": 1,
@@ -84,8 +154,22 @@
                       "type": "string",
                       "minLength": 1
                     },
+                    "titulo_en": {
+                      "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
                     "texto": {
                       "type": "string"
+                    },
+                    "texto_en": {
+                      "description": "Tradução em inglês de \"texto\". Vazio = usa o português.",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
                     }
                   },
                   "required": [
@@ -102,6 +186,72 @@
               "itens"
             ],
             "additionalProperties": {}
+          },
+          "cartoes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "titulo": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "titulo_en": {
+                  "description": "Tradução em inglês de \"titulo\". Vazio = usa o português.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "icone": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "conteudo": {
+                  "type": "string"
+                },
+                "conteudo_en": {
+                  "description": "Tradução em inglês de \"conteudo\". Vazio = usa o português.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "titulo",
+                "conteudo"
+              ],
+              "additionalProperties": {}
+            }
+          },
+          "titulo_artigos": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titulo_artigos_en": {
+            "description": "Tradução em inglês de \"titulo_artigos\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titulo_patentes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titulo_patentes_en": {
+            "description": "Tradução em inglês de \"titulo_patentes\". Vazio = usa o português.",
+            "type": [
+              "string",
+              "null"
+            ]
           }
         },
         "required": [

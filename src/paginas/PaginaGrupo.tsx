@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Abas from "@/components/Abas";
 import Image from "next/image";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
-import { carregarConteudo } from "@/lib/conteudo";
+import { carregarConteudo, conteudoNoIdioma } from "@/lib/conteudo";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
-function grupoPorSlug(slug: string) {
-  const grupo = carregarConteudo().grupos.find((g) => g.slug === slug);
+function grupoPorSlug(slug: string, idioma: Idioma) {
+  const grupo = conteudoNoIdioma(idioma).grupos.find((g) => g.slug === slug);
   if (!grupo) throw new Error(`content/grupos.json: não existe o grupo "${slug}"`);
   return grupo;
 }
@@ -19,13 +19,13 @@ export function parametros() {
 }
 
 export function metadados(idioma: Idioma, slug: string): Metadata {
-  const g = grupoPorSlug(slug);
+  const g = grupoPorSlug(slug, idioma);
   return metadadosPagina({ titulo: g.titulo, descricao: g.resumo, caminho: rota("grupos", idioma, g.slug), imagem: g.imagem });
 }
 
 export default function PaginaGrupo({ idioma, slug }: { idioma: Idioma; slug: string }) {
-  const g = grupoPorSlug(slug);
-  const { site } = carregarConteudo();
+  const g = grupoPorSlug(slug, idioma);
+  const { site } = conteudoNoIdioma(idioma);
   const rotulo = new Map(site.temas_grupos.map((t) => [t.slug, t.rotulo]));
   return (
     <div className="pagina">
@@ -42,8 +42,8 @@ export default function PaginaGrupo({ idioma, slug }: { idioma: Idioma; slug: st
             <Image src={g.imagem} alt="" fill priority sizes="(min-width: 768px) 46rem, 100vw" className="leitura__capa-img" />
           </div>
         )}
-        {g.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(g.conteudo) }} />}
-        {g.abas.length > 0 && <Abas prefixo={g.slug} abas={g.abas.map((a) => ({ titulo: a.titulo, html: markdownParaHtml(a.conteudo) }))} />}
+        {g.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(g.conteudo, idioma) }} />}
+        {g.abas.length > 0 && <Abas prefixo={g.slug} abas={g.abas.map((a) => ({ titulo: a.titulo, html: markdownParaHtml(a.conteudo, idioma) }))} />}
       </article>
     </div>
   );

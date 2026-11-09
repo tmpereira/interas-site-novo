@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { idiomaDoCaminho } from "@/lib/i18n/rotas";
 import { entradaDaPagina, menuNoIdioma, temItens } from "@/lib/menu";
 
@@ -20,8 +20,9 @@ type Props = {
 
 /** Topo das páginas internas: sobretítulo, <h1> e descrição. A navegação fica só no menu do topo. */
 export default function CabecalhoPagina({ caminho, titulo, tituloHtml, sobretitulo, descricao, etiquetas, midia, children }: Props) {
-  const { site } = carregarConteudo();
-  const entrada = entradaDaPagina(menuNoIdioma(site.menu, idiomaDoCaminho(caminho)), caminho);
+  const idioma = idiomaDoCaminho(caminho);
+  const { site } = conteudoNoIdioma(idioma);
+  const entrada = entradaDaPagina(menuNoIdioma(site.menu, idioma), caminho);
   const secao = entrada && temItens(entrada) ? entrada : null;
   const rotuloSecao = sobretitulo !== undefined ? sobretitulo : secao?.rotulo;
   return (

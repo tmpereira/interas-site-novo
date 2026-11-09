@@ -3,7 +3,7 @@ import PaginaNoticia, { metadados, parametros } from "@/paginas/PaginaNoticia";
 
 type Props = { params: Promise<{ id: string }> };
 
-export const generateStaticParams = parametros;
+export const generateStaticParams = () => parametros("en");
 
 export async function generateMetadata({ params }: Props) {
   return metadados("en", (await params).id);

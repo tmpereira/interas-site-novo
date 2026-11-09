@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BlocoArea from "@/components/BlocoArea";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
-import { carregarConteudo } from "@/lib/conteudo";
+import { conteudoNoIdioma } from "@/lib/conteudo";
 import { paginaPorSlug } from "@/lib/consultas";
 import { slugificar } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
@@ -10,7 +10,7 @@ import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
-  return metadadosPagina({ titulo: paginaPorSlug("areas-de-pesquisa").titulo, caminho: rota("areas", idioma) });
+  return metadadosPagina({ titulo: paginaPorSlug("areas-de-pesquisa", idioma).titulo, caminho: rota("areas", idioma) });
 }
 
 /**
@@ -18,8 +18,8 @@ export function metadados(idioma: Idioma): Metadata {
  * para não haver duas cópias: editar uma linha de pesquisa atualiza as duas páginas.
  */
 export default function AreasDePesquisa({ idioma }: { idioma: Idioma }) {
-  const { home } = carregarConteudo();
-  const pagina = paginaPorSlug("areas-de-pesquisa");
+  const { home } = conteudoNoIdioma(idioma);
+  const pagina = paginaPorSlug("areas-de-pesquisa", idioma);
   const areas = home.destaques.map((d) => ({ destaque: d, id: slugificar(d.titulo) }));
   return (
     <div className="pagina">
@@ -37,7 +37,7 @@ export default function AreasDePesquisa({ idioma }: { idioma: Idioma }) {
           <BlocoArea key={a.id} destaque={a.destaque} idioma={idioma} numero={i + 1} id={a.id} />
         ))}
       </div>
-      {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, { rebaixarTitulos: false }) }} />}
+      {pagina.conteudo && <div className="texto" dangerouslySetInnerHTML={{ __html: markdownParaHtml(pagina.conteudo, idioma, { rebaixarTitulos: false }) }} />}
     </div>
   );
 }
