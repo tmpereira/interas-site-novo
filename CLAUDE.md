@@ -43,7 +43,7 @@ previsível, validada e fácil de ler e editar por máquina.
 | Hospedagem futura        | Vercel, plano Hobby, conta pessoal do usuário. **Não configurar deploy agora.**                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Visual                   | **Visual "espectro"** (pedido do usuário em 2026-10-23, a partir do protótipo `interas.html`), que substituiu o Materia. Toda a parte de estilo fica separada da estrutura e do conteúdo (ver seção 9).                                                                                                                                                                                                                                                                                                                                |
 | Fora do escopo           | "Preprints", "Mulheres INTERAS". Não migrar. ("INTERAS em números" não foi migrado do site antigo, mas foi refeito em 2026-10-23 a pedido do usuário, com números calculados dos JSON; ver seção 7.)                                                                                                                                                                                                                                                                                                                                         |
-| Versão em inglês       | **Última etapa**, só depois que o site em português estiver pronto e aprovado.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Versão em inglês       | **Em andamento** (pedido do usuário em 2026-11-09). Português na raiz, inglês em `/en/`, traduções nos próprios JSON (campos `_en`). Plano na seção 13. |
 | Ambiente                 | Tudo desenvolvido e testado **localmente**, numa pasta no computador do usuário, **sem conexão com o GitHub**. Git apenas local (commits sem remoto). Quando o site estiver pronto, o usuário cria um **repositório novo** no GitHub. Publicação e migração do domínio ficam para depois.  **Atualização (2026-10-23):** a pedido do usuário, o projeto foi enviado para o repositório privado `tmpereira/interas-site-novo` no GitHub (remoto `origin`). Deploy, Vercel e domínio continuam para depois. |
 | Banco de dados / backend | Nenhum. Tudo é gerado no build a partir dos JSON do repositório.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
@@ -901,7 +901,7 @@ aprovação antes de seguir. Fazer commit ao fim de cada etapa.
 9. **Verificação final** — `npm run build` sem erros nem avisos, checagem de
    links internos quebrados, comparação visual com o site antigo, contagens
    batendo com o relatório de migração.
-10. **(Depois, só quando o usuário pedir)** versão em inglês.
+10. **Versão em inglês** — pedida pelo usuário em 2026-11-09; plano completo na seção 13.
 11. **(Depois, só quando o usuário pedir)** publicação na Vercel, branch nova,
     domínio e redirecionamentos.
 
@@ -998,3 +998,193 @@ usuário.
 - Ao terminar cada etapa: rodar o build, conferir no navegador e resumir em
   poucas linhas o que foi feito e o que falta.
 - Commits pequenos e descritivos, em português.
+
+---
+
+## 13. Versão em inglês
+
+Pedido do usuário em 2026-11-09: criar a versão em inglês do site. Esta seção
+é o plano dessa etapa (seção 10, etapa 10). Siga-a junto com as seções 2, 3 e
+12; nada aqui reabre as decisões da seção 2.
+
+### 13.1 Restrições que moldam a solução
+
+- **Export estático** (`output: "export"`): não há servidor, então **não usar
+  `middleware.ts`**, detecção de idioma pelo navegador, cookies de idioma nem
+  o `i18n` do `next.config` (não funciona com export). Também **não instalar
+  `next-intl`** nem outra biblioteca de i18n: um dicionário próprio tipado
+  basta e mantém o projeto simples (princípio 7).
+- **Conteúdo é dado** (princípio 1): toda tradução de conteúdo fica em
+  `content/`, nunca nos componentes.
+- **Uma coleção = um arquivo JSON** (princípio 2): as traduções ficam **no
+  mesmo item**, não em arquivos paralelos (exceto notícias, ver 13.4).
+- Esta versão do Next.js tem mudanças de API: leia o guia em
+  `node_modules/next/dist/docs/` antes de mexer em layouts, rotas ou
+  `generateStaticParams` (ver bloco ao fim deste arquivo).
+
+### 13.2 URLs
+
+- O português continua **exatamente nas URLs atuais** (raiz), sem prefixo.
+- O inglês fica sob **`/en/`**, com nomes de seção traduzidos e os mesmos
+  `slug`/`id` dos itens (que nunca mudam, seção 6.0):
+
+| Português               | Inglês                       |
+| ----------------------- | ---------------------------- |
+| `/`                     | `/en/`                       |
+| `/sobre-o-interas/`     | `/en/about/`                 |
+| `/equipe/[slug]/`       | `/en/team/[slug]/`           |
+| `/alunos/`              | `/en/students/`              |
+| `/areas-de-pesquisa/`   | `/en/research-areas/`        |
+| `/grupos/[slug]/`       | `/en/groups/[slug]/`         |
+| `/publicacoes/[id]/`    | `/en/publications/[id]/`     |
+| `/noticias/[id]/`       | `/en/news/[id]/`             |
+| `/videos/[slug]/`       | `/en/videos/[slug]/`         |
+| `/interas-em-numeros/`  | `/en/interas-in-numbers/`    |
+| `/contato/`             | `/en/contact/`               |
+
+- O mapa fica num só lugar, `src/lib/i18n/rotas.ts` (`rota(chave, idioma,
+  slug?)`), usado pelo menu, pelos links internos, pelo seletor de idioma,
+  pelo sitemap e pelo hreflang. **Nenhum componente monta URL à mão.**
+
+### 13.3 Estrutura de rotas (dois layouts raiz)
+
+Para ter `<html lang="pt-BR">` e `<html lang="en">` sem servidor, usar dois
+layouts raiz:
+
+```
+src/app/
+├── (pt)/            # grupo de rotas: não aparece na URL
+│   ├── layout.tsx   # <html lang="pt-BR">
+│   ├── page.tsx, equipe/, grupos/, ...   (as rotas de hoje, movidas para cá)
+├── en/
+│   ├── layout.tsx   # <html lang="en">
+│   ├── page.tsx, team/, groups/, ...
+├── sitemap.ts, robots.ts
+src/paginas/         # o JSX de cada página, compartilhado pelos dois idiomas
+```
+
+- Cada `page.tsx` vira um arquivo fino que só chama o componente de
+  `src/paginas/` passando `idioma="pt"` ou `idioma="en"`. A lógica e o
+  markup **não podem ser duplicados** entre as duas árvores.
+- `generateStaticParams` das rotas `[slug]`/`[id]` é o mesmo nos dois idiomas.
+- 404: `not-found.tsx` em português na raiz; se a versão do Next permitir,
+  uma versão em inglês para `/en/`.
+- Trocar de idioma recarrega a página inteira (mudança de layout raiz); isso
+  é esperado.
+
+### 13.4 Onde ficam as traduções
+
+**Rótulos de interface** (botões, filtros, cabeçalhos de tabela, "Citações",
+"Ver DOI", meses, mensagens vazias, aria-labels, textos dos gráficos etc.):
+`src/lib/i18n/rotulos.ts`, um objeto `{ pt: {...}, en: {...} }` tipado de
+forma que **faltar uma chave em `en` seja erro de TypeScript**. Mover para lá
+os `ROTULOS_TIPO_*` de `formatadores.ts` e os textos fixos hoje espalhados em
+`FiltroPublicacoes`, `alunos/page.tsx`, `RedeCoautoria`, `MapaInternacional`,
+`Espectro`, `ListaPatentes`, `FiltroPorCategoria`, `publicacoes/page.tsx` e
+`interas-em-numeros/page.tsx` (conferir com `grep` se há outros).
+
+**Conteúdo dos JSON:** campos com sufixo **`_en`** ao lado do original, no
+mesmo item. Exemplos:
+
+```json
+{ "slug": "contato", "titulo": "Contato", "titulo_en": "Contact",
+  "conteudo": "## Sede do INTERAS\n...", "conteudo_en": "## INTERAS headquarters\n..." }
+```
+
+```json
+{ "rotulo": "Coordenação e equipe", "rotulo_en": "Coordination and team", "link": "/equipe/" }
+```
+
+- Traduzir: `site.json` (descrição, menu, anúncio, rodapé), `home.json`,
+  `paginas.json` (todos os textos, incluindo `missao`, `etapas`, `cartoes`),
+  `grupos.json` (`titulo`, `resumo`, `temas`, `abas`, `conteudo`),
+  `videos.json` (`titulo`, `resumo`, `categorias`, `conteudo`),
+  `pessoas.json` (`cargo`, `areas`, `atuacao`), `patentes.json` (`titulo`
+  quando estiver em português, `categorias`).
+- **Não traduzir:** nomes de pessoas e instituições, siglas (INCT, IPEN,
+  CNPq...), `alunos.json` (títulos de trabalhos ficam no original), e
+  **`publicacoes.json`** — títulos, resumos e periódicos ficam como foram
+  publicados (quase todos já em inglês).
+- Categorias e cargos que são valores fixos do esquema (ex.: `categoria` de
+  pessoa) se traduzem em `rotulos.ts`, não no JSON.
+- Uma função única `traduzir(item, campo, idioma)` em `src/lib/i18n/` lê
+  `campo_en` quando `idioma === "en"` e cai no original se estiver vazio.
+
+**Notícias:** a versão em inglês é um arquivo com **o mesmo nome** em
+`content/noticias/en/` (mesmo `id`, cabeçalho só com os campos traduzidos:
+`titulo`, `resumo`, `categorias`; data e imagem vêm do original). Em `/en/news/`
+aparecem **só as notícias traduzidas**; as demais não geram página em inglês
+(decisão do usuário em 2026-11-09). Isso vale também para as "últimas
+notícias" da home em inglês e para o sitemap.
+
+**Esquemas:** acrescentar os campos `_en` opcionais em `src/lib/esquemas.ts`,
+rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
+`content/noticias/en/` e validar que todo arquivo de lá tem um original.
+
+### 13.5 Formatação por idioma
+
+- `formatadores.ts`, `GraficoBarras`, `interas-em-numeros`, `publicacoes/[id]`
+  e as ordenações com `localeCompare` recebem o idioma em vez de `"pt-BR"`
+  fixo (`"pt-BR"` / `"en"`). Datas em inglês: "Sep 24, 2026".
+- Plurais ("1 citação / 3 citações") via `rotulos.ts`, não com `if` no
+  componente.
+
+### 13.6 SEO e navegação
+
+- `metadadosPagina` (`src/lib/metadados.ts`) recebe o idioma e gera
+  `alternates.languages` com `pt-BR`, `en` e `x-default` (→ pt-BR), e
+  `openGraph.locale` (`pt_BR` / `en_US`).
+- `sitemap.ts` lista as URLs dos dois idiomas com os `alternates`.
+- **Seletor de idioma** (PT | EN) na `Navbar`, que leva à **página
+  equivalente** no outro idioma (via `rotas.ts`). Se a página não existir no
+  outro idioma (notícia não traduzida), leva à listagem.
+- Logo: hoje é `logo_pt_transparente.png`. Se existir versão em inglês,
+  usar `logo_en` em `site.json`; se não, perguntar ao usuário.
+
+### 13.7 Como traduzir
+
+- Inglês acadêmico natural, não literal; manter o tom institucional.
+- Termos fixos (manter consistentes; ampliar a lista se surgirem outros):
+  INCT → "National Institute of Science and Technology (INCT)";
+  "Radiações na Saúde" → "Radiation in Health";
+  "líder de laboratório" → "laboratory leader";
+  "bolsista" → "fellow"; "iniciação científica" → "undergraduate research";
+  "pós-doutorado" → "postdoctoral".
+- **Não inventar conteúdo** (seção 12): traduzir só o que existe. Ao final
+  de cada lote, listar para o usuário os termos em que houve dúvida.
+- Traduções feitas pelo Claude Code devem ser **revisadas pelo usuário**:
+  mostrar um resumo por arquivo antes do commit.
+
+### 13.8 Validação
+
+- `npm run validar` passa a **avisar** (sem falhar) quantos campos traduzíveis
+  estão sem `_en`, por arquivo e item. Com `npm run validar -- --en-estrito`
+  esses avisos viram erro (usar antes de publicar).
+- Checar também que nenhum link em `/en/` aponta para rota em português, e
+  que não sobrou texto em português nas páginas `/en/` (procurar no `out/en/`
+  por palavras comuns: " de ", "ção", "ões", "Página").
+
+### 13.9 Etapas (uma por vez, com aprovação e commit ao fim de cada uma)
+
+1. **Estrutura**: `(pt)/` + `en/`, `src/paginas/`, `rotas.ts`, `rotulos.ts`
+   com o português; `/en/` ainda mostrando português. Conferir que o site em
+   português ficou **idêntico** (mesmas URLs no `out/`).
+2. **Rótulos**: extrair todos os textos fixos dos componentes para
+   `rotulos.ts` e preencher `en`. Formatação por idioma (13.5).
+3. **Esquemas**: campos `_en`, notícias em `content/noticias/en/`,
+   `traduzir()`, avisos do validador.
+4. **Tradução do conteúdo**, em lotes revisados pelo usuário: `site.json` e
+   `home.json` → `paginas.json` → `grupos.json` → `pessoas.json` →
+   `videos.json` e `patentes.json` → notícias.
+5. **SEO e seletor**: hreflang, Open Graph, sitemap, seletor de idioma, logo.
+6. **Verificação**: `npm run build` sem erros, `validar -- --en-estrito`,
+   links internos, navegação completa nos dois idiomas no `npm run dev`.
+
+### 13.10 Manutenção depois da versão em inglês
+
+Acrescenta-se à seção 11:
+- Ao **incluir ou alterar** conteúdo traduzível (página, grupo, pessoa,
+  vídeo, notícia), perguntar ao usuário se deve traduzir já. Se ele não
+  responder, deixar o `_en` vazio (o validador avisa) e listar o pendente.
+- Ao alterar um texto em português que já tem `_en`, avisar que a tradução
+  ficou desatualizada e propor a atualização.
