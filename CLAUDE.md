@@ -1273,7 +1273,7 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
    `rotulos.ts` e preencher `en`. Formatação por idioma (13.5).
 3. **Esquemas** (feita em 2026-11-09): campos `_en`, notícias em `content/noticias/en/`,
    `traduzir()`, avisos do validador.
-4. **Tradução do conteúdo**, em lotes revisados pelo usuário: `site.json` e
+4. **Tradução do conteúdo** (feita em 2026-11-09; `validar -- --en-estrito` passa), em lotes revisados pelo usuário: `site.json` e
    `home.json` → `paginas.json` → `grupos.json` → `pessoas.json` →
    `videos.json` e `patentes.json` → notícias.
 5. **SEO e seletor**: hreflang, Open Graph, sitemap, seletor de idioma, logo.

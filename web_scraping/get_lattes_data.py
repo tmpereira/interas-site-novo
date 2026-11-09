@@ -706,7 +706,7 @@ def atualizar_patentes(membros, mapa, desde, rel, resumo):
         ids.add(novo_id)
 
         fmt = lambda d: f"{d[8:10]}/{d[5:7]}/{d[:4]}"
-        linhas = [f"### Detalhes do{'a' if titulo_det == 'Patente' else ''} {titulo_det}", "",
+        linhas = [f"### Detalhes {'da' if titulo_det == 'Patente' else 'do'} {titulo_det}", "",
                   f"- **{'Autores' if tipo == 'software' else 'Inventores'}:** " + "; ".join(it["autores"])]
         if it["numero"]:
             linhas.append(f"- **Número do Registro:** {it['numero']}")
