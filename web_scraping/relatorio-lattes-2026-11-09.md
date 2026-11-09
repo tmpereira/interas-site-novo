@@ -1,0 +1,1066 @@
+# Atualização a partir do Lattes — 2026-11-09
+
+Currículos lidos: 30 (pasta `web_scraping/scriptLattes/interas/lattes/json`)
+
+## Pessoas
+
+- Denise Maria Zezell: Lattes corrigido em pessoas.json, de http://lattes.cnpq.br/0751040282401769 para http://lattes.cnpq.br/3524890504250775 (ID do arquivo .list do scriptLattes).
+- Marcela Sorelli Carneiro Ramos: Lattes corrigido em pessoas.json, de http://lattes.cnpq.br/6452778998744417 para http://lattes.cnpq.br/6452778998744794 (ID do arquivo .list do scriptLattes).
+
+## Publicações (artigos a partir de 2020)
+
+- Artigos distintos nos currículos: 847
+- Já estavam no site: 349 (alterados: 50)
+- Novos: 498 (sem DOI: 40)
+- Novos por ano: 2020: 113, 2021: 145, 2022: 133, 2023: 5, 2024: 15, 2025: 12, 2026: 75
+
+### Artigos novos
+
+- `abdull_manap_chemometric_2026` (2026) Chemometric analysis of microplastics in tropical beach sediments of Bali, Indonesia: Distribution, polymer composition, and coastal processes — *REGIONAL STUDIES IN MARINE SCIENCE*
+- `agne_preclinical_2026` (2026) Preclinical Simulation of Transoral Robotic Thyroidectomy Using a Training Box and the Versius Robotic Platform — *Oto Open*
+- `albuquerque_design_2026` (2026) Design of a Multi-Pass Optical System for Neutral Particle Density and Electron Parameter Measurements in the TCABR Tokamak — *PLASMA PHYSICS AND CONTROLLED FUSION*
+- `almeida_influence_2026` (2026) Influence of Ce3-+ doping on the structural, optical, thermal, and photoelectrochemical properties of lithium-magnesium borate glasses — *Journal of Alloys and Compounds*
+- `anjos_lasis_2026` (2026) LASiS-Synthesized Metal Nanoparticles for Surface-Enhanced Infrared Absorption Spectroscopy of Amoxicillin — *ACS Applied Nano Materials*
+- `barros_accuracy_2026` (2026) Accuracy and Bias of Pulse Oximetry in the Intensive Care Unit: A Prospective Observational Study — *Nursing in Critical Care*
+- `barros_evaluating_2026` (2026) Evaluating pulse oximeters in ICU according to the new FDA guidances: skin tone and LED spectra assessment — *PHYSIOLOGICAL MEASUREMENT*
+- `batista_molecular_2026` (2026) Molecular Raman signatures of fiber types in mouse soleus muscle — *Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy*
+- `belmonte_effects_2026` (2026) Effects of Photobiomodulation Therapy in Lateral Luxation of Anterior Permanent Teeth: A Randomized, Double-Blind Clinical Trial — *DENTAL TRAUMATOLOGY*
+- `capelli_microrna_2026` (2026) MicroRNA expression signatures associated with metastatic progression in papillary thyroid carcinoma — *Archives of Endocrinology and Metabolism*
+- `carlos_gomes_junior_peak_2026` (2026) Peak-to-Peak Voltage Mapping Reveals Dynamic Arrhythmogenic Substrate Behavior in Isolated Rabbit Hearts — *ANNALS OF BIOMEDICAL ENGINEERING*
+- `castro_oropharyngeal_2026` (2026) Oropharyngeal cancer management in the era of artificial intelligence for optimal decision-making — *Brazilian Journal of Otorhinolaryngology*
+- `cavalcanti_dft_2026` (2026) DFT-based insight into the structural, optoelectronic, and elastic properties of an (HCNO)12 elastin fragment — *Computational and Theoretical Chemistry*
+- `cavalcanti_evaluation_2026` (2026) Evaluation of Physicochemical, Optical, and Ultrastructural Characteristics of Different Dental Whitening Toothpastes — *Pesquisa Brasileira Em Odontopediatria E Clinica Integrada*
+- `chaves_malignant_2026` (2026) Malignant salivary gland tumors in Brazil: epidemiology, treatment patterns, and survival outcomes in public Brazilian population — *Gland Surgery*
+- `costa_micro_2026` (2026) Micro-CT phantom-based optimization and [18F]FDG feasibility for molecular imaging of small herbaceous plants using a preclinical PET/CT system — *Journal of Radioanalytical and Nuclear Chemistry*
+- `costa_microplastics_2026` (2026) Microplastics in the sediment of the Amazonian fluvio-estuarine system: Possible influences of sediment characteristics on microplastics composition — *REGIONAL STUDIES IN MARINE SCIENCE*
+- `da_silva_calculations_2026` (2026) Calculations of the average relative intensities of clay, sand, and silt in agricultural soil samples using a speckle methodology — *Journal of the Optical Society of America A*
+- `da_silva_mir_2026` (2026) miR-1-3p downregulation drives tumor invasion in oral squamous cell carcinoma: insights from in vitro, in vivo, and ex vivo models — *MOLECULAR BIOLOGY REPORTS*
+- `da_silva_smoking_2026` (2026) Smoking, Tumor Subsite, and Stage as Predictors of Second Primary Tumors in Oropharyngeal Squamous Cell Carcinoma ( ): A Retrospective Cohort Study — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `das_chagas_e_silva_de_carvalho_from_2026` (2026) From Bench to Chairside: Vibrational Spectroscopy in Stomatology and Oral Pathology — *INTERNATIONAL DENTAL JOURNAL*
+- `de_araujo_autofluorescence_2026` (2026) Autofluorescence Imaging and Methylene Blue-Mediated Photodynamic Therapy for Early Detection and Management of Subclinical Actinic Cheilitis — *Journal of Biophotonics*
+- `de_araujo_microplastic_2026` (2026) Microplastic contamination in tadpoles (Anura) in the Brazilian Amazon — *Scientific Reports*
+- `de_barros_from_2026` (2026) From Peripheral Perfusion to Clinical Validation: Translational Considerations for Pulse Oximetry Accuracy Studies — *Nursing in Critical Care*
+- `de_moura_pereira_assessment_2026` (2026) Assessment of between-bottle homogeneity, particle size, and element content of candidate reference materials of black cricket (Gryllus assimilis) employing energy-dispersive X-ray fluorescence spectrometry — *ANALYTICAL AND BIOANALYTICAL CHEMISTRY*
+- `de_souza_analysis_2026` (2026) Analysis of the influence of geometric parametersof laser-produced texturing on carbide tools inTi6Al4V turning — *INTERNATIONAL JOURNAL OF ADVANCED MANUFACTURING TECHNOLOGY* — **sem DOI**
+- `dedivitis_navigating_2026` (2026) Navigating oral cancer management: combining artificial intelligence and clinical guidelines for optimal decision-making — *International Archives of Otorhinolaryngology*
+- `dias_electronic_2026` (2026) Electronic Brachytherapy: A Calibration Protocol in Terms of Absorbed Dose to Water — *Brazilian Journal of Radiation Sciences*
+- `dos_santos_conceicao_lopes_microplastic_2026` (2026) Microplastic Occurrence in Foragers of Two Neotropical Bee Species (Apidae: Meliponini) from the Eastern Amazon — *WATER, AIR AND SOIL POLLUTION (DORDRECHT. ONLINE)*
+- `eira_factors_2026` (2026) Factors Influencing Interest in General Surgery Among Medical Students: The Role of Discouragement and Sex Differences — *Journal of Surgical Education*
+- `eri_impact_2026` (2026) Impact of surgical volume and specialist availability on thyroidectomy outcomes in Brazil: an ecological study with a nationwide retrospective analysis of 230,345 cases (2008-2023) — *SAO PAULO MEDICAL JOURNAL*
+- `fernandes_integrated_2026` (2026) Integrated photonic platforms based on femtosecond laser-inscribed S-bend and Y-branch waveguides in Nd3+-doped GeO--PbO glass — *Results Opt*
+- `ferrari_de_castro_position_2026` (2026) Position paper of Brazilian Society of Head and Neck Surgery among competencies in Head and Neck Surgery teaching for general Surgery residents — *Brazilian Journal of Otorhinolaryngology*
+- `ferreira_predicting_2026` (2026) Predicting the Risk of Proteinuria Based on Blood Plasma Fourier-Transform Infrared Spectroscopy and Machine Learning Algorithms From Pregnant Women and Newborns — *Analytical Science Advances*
+- `ferro_occupational_2026` (2026) Occupational exposure assessment in ROLL procedures with Tc-99m: A Monte Carlo simulation approach — *Applied Radiation and Isotopes*
+- `fontgalland_ferreira_antimicrobial_2026` (2026) Antimicrobial photodynamic therapy mediated by phenothiazine photosensitizers against Candida albicans and Candida auris: a systematic review — *Lasers in Medical Science*
+- `girasol_is_2026` (2026) Is photobiomodulation therapy free from racial bias?: a narrative review of skin pigmentation — *SAO PAULO MEDICAL JOURNAL*
+- `girasol_monte_2026` (2026) Monte Carlo simulations of optical propagation in human skin using experimentally measured laser parameters — *Lasers in Medical Science*
+- `goncalves_al_espectroscopia_2026` (2026) ESPECTROSCOPIA FTIR APLICADA À CARACTERIZAÇÃO DE FORMULAÇÕES REGENERATIVAS CONTENDO PDRN — *Aesthetic Orofacial Science* — **sem DOI**
+- `kamarajah_evaluating_2026` (2026) Evaluating quality of colorectal cancer surgery across elective and emergency health systems: secondary analysis of prospective cohort studies in 95 countries — *Bjs Open* — **sem DOI**
+- `kulcsar_feasibility_2026` (2026) Feasibility, outcomes, and cost analysis of robotic head and neck surgery in the Public Health System — *einstein (São Paulo)*
+- `leite_vitro_2026` (2026) In Vitro Evaluation of Temperature Variation in Dental Tissues During Er:YAG Laser-Assisted Ceramic Veneer Removal — *Photobiomodulation, Photomedicine, and Laser Surgery*
+- `lemos_dos_santos_fundamentos_2026` (2026) Fundamentos do eletromagnetismo: adequação de uma proposta de sequência didática investigativa de ensino de física para alunos surdosFundamentals of electromagnetism: adaptation of a proposal for an investigative didactic sequence for the teaching of physics to deaf students — *SCIENTIA PLENA*
+- `lin_sentinel_2026` (2026) Sentinel lymph node biopsy in early-stage oral squamous cell carcinoma: reassessing its role in contemporary practice — *Translational Cancer Research*
+- `machado_from_2026` (2026) From Lipid Compositionto Electroporation: MechanicalEncoding of Barrier Resilience in Stratum Corneum Membranes — *ACS Omega*
+- `marinho_systemic_2026` (2026) Systemic metabolic signatures of apical periodontitis detected by Fourier-transform infrared spectroscopy in a rat model — *Photodiagnosis and Photodynamic Therapy*
+- `matos_patients_2026` (2026) Patients with oral squamous cell carcinoma with depth of invasion greater than 1 cm have improved outcomes with adjuvant radiotherapy — *INTERNATIONAL JOURNAL OF ORAL AND MAXILLOFACIAL SURGERY*
+- `moreira_effect_2026` (2026) Effect of photobiomodulation using red (630-nm) on the metabolism of human osteoblasts — *Photochemistry and Photobiology*
+- `nihr_global_health_research_unit_on_global_surgery_30_2026` (2026) 30-day postoperative mortality and the effects of hospital preparedness during the COVID-19 pandemic: a pooled analysis of prospective international cohort studies — *Lancet Regional Health-Europe* — **sem DOI**
+- `oliveira_controle_2026` (2026) Controle de Qualidade de um Equipamento Ultrassonográfico em um Hospital Universitário — *Revista Brasileira de Física Médica* — **sem DOI**
+- `pequenodasilva_protective_2026` (2026) Protective Effects of Er:YAG Laser and PRG Pro-Care Gel on Enamel Demineralization — *Lasers in Surgery and Medicine*
+- `peres_oral_2026` (2026) Oral Cancer Diagnosis Machine Learning and Micro- FTIR Hyperspectral Imaging — *Journal of Physics: Conference Series*
+- `pinto_intratumoral_2026` (2026) Intratumoral 198Au Nanobrachytherapy ReducesTumor Growth and Metastasis in a Murine Model of Triple-Negative BreastCancer — *ACS Omega*
+- `pinto_prosthetic_2026` (2026) Prosthetic rehabilitation associated with the use of high-power laser following pelveglossectomy and radiotherapy for oral squamous cell carcinoma: A clinical report — *JOURNAL OF PROSTHETIC DENTISTRY*
+- `pinto_protagonismo_2026` (2026) Protagonismo estudantil e consciência crítica: o caso césio-137 sob a lente da CTSA — *ARTEFACTUM (RIO DE JANEIRO)*
+- `quadros_impact_2026` (2026) The impact of regularisation methods for ECGI reconstructions during regular rhythms in an animal torso-tank model — *COMPUTERS IN BIOLOGY AND MEDICINE*
+- `raele_laser_2026` (2026) Laser decontamination of radioactive surfaces: scoping review — *Journal of Radioanalytical and Nuclear Chemistry* — **sem DOI**
+- `raimi_silico_2026` (2026) In Silico Analysis of TGF β1, Connexin43, and Galectin 3 with Active Components from Black Seed (Nigella sativa) for Potential Treatment of Atrial Fibrillation — *In Silico Research in Biomedicine*
+- `rodrigues_short_2026` (2026) Short-term depuration reduces the levels of microplastics of a commercial mussel from Eastern Amazon — *Environmental Science and Pollution Research*
+- `salvego_biomimetic_2026` (2026) A Biomimetic Breast Tumor-On-Chip Platform Reveals Mesenchymal Marker Upregulation Following Gold Nanorod Photothermal Therapy — *Small*
+- `santos_advances_2026` (2026) Advances in gold and silver nanoplatforms for photon therapies in breast cancer — *Biophysical Reviews*
+- `santos_dosimetry_2026` (2026) Dosimetry with LIF:Mg,Ti (TLD-100) for locating non-paubable breast cancer using Iodine-125 seeds — *Physica Medica-European Journal of Medical Physics*
+- `santos_erro_2026` (2026) O erro conceitual sob o olhar de alunos do ensino noturnoConceptual error from the perspective of night school students — *SCIENTIA PLENA*
+- `sellera_lighting_2026` (2026) Lighting the way or casting new shadows? A One Health perspective on light-based technologies against clinically important antimicrobial-resistant bacteria — *Frontiers in Cellular and Infection Microbiology*
+- `silva_assessing_2026` (2026) Assessing the dosimetric properties of CaSO4:Ce,Mn phosphors synthesized by different techniques: From beta irradiation to radiation processing dosimetry — *Radiation Measurements*
+- `silva_comparing_2026` (2026) Comparing the Effects of Chemical Optical Clearing Agents and Mechanical Compression on the Optical Attenuation of Porcine Skin — *Journal of Biophotonics*
+- `silva_development_2026` (2026) Development and dosimetric characterization of LiBaPO4:Eu phosphor synthesized via Sol-gel route — *Radiation Physics and Chemistry*
+- `silva_development_2026a` (2026) Development of high-sensitivity CaSO4:Tm,Mn detectors for thermoluminescent and optically stimulated luminescent dosimetry — *Applied Radiation and Isotopes*
+- `silva_first_2026` (2026) First-principles insights into the cation-dependent electronic and optical properties of Na2MSiO4 (M = Mg, Zn) compounds — *Computational Condensed Matter*
+- `silva_surface_2026` (2026) Surface mechanisms governing long-term stability of GEM detectors in CO -based gaseous mixtures — *NUCLEAR INSTRUMENTS & METHODS IN PHYSICS RESEARCH SECTION A-ACCELERATORS SPECTROMETERS DETECTORS AND ASSOCIATED EQUIPMENT*
+- `soares_amine_2026` (2026) Amine-PEG functionalized graphene oxide enhances the mechanical performance and biocompatibility of bovine pericardium for cardiovascular applications — *Nanomedicine-Nanotechnology Biology and Medicine*
+- `sotao_neto_spatio_2026` (2026) Spatio-temporal distribution of trace metals in tropical mangrove sediment cores, northeastern Brazil — *REGIONAL STUDIES IN MARINE SCIENCE*
+- `telles_resposta_2026` (2026) Resposta de um MOSFET comercial a feixes clínicos de fótons e elétrons usados em radioterapias — *Brazilian Journal of Radiation Sciences*
+- `vanini_therapeutic_2026` (2026) Therapeutic targeting of E2F inhibits stemness of salivary gland mucoepidermoid carcinoma — *Cancer Treatment And Research Communications*
+- `windlin_thermal_2026` (2026) Thermal, Morphological, and Optical Analysis in the Removal of Ceramic Veneers with Er:YAG Laser — *Photobiomodulation, Photomedicine, and Laser Surgery*
+- `azevedo_aceitabilidade_2025` (2025) Aceitabilidade do tratamento para hipersensibilidfade — *Brazilian Oral Research* — **sem DOI**
+- `barreira_technical_2025` (2025) Technical review by the Brazilian Society of Surgical Oncology and the Brazilian Society of Head and Neck Surgery on hierarchical coding in thyroid surgery — *REVISTA DO COLÉGIO BRASILEIRO DE CIRURGIÕES (ONLINE)*
+- `costa_radioisotopos_2025` (2025) Radioisótopos Naturais em Solos dos Estados da Bahia, Pernambuco e São Paulo, Brasil — *Boletim Informativo NRNE/SBCS* — **sem DOI**
+- `da_silva_suspension_2025` (2025) Suspension Analysis: an Innovative Approach for the Determination of Total Carbohydrates in Beans by Spectrophotometry — *Food Analytical Methods*
+- `de_freitas_use_2025` (2025) Use of antimicrobial photodynamic therapy and high-power Er:YAG laser in the treatment of drug- or radiation-induced bone necrosis: Case series — *National Journal of Maxillofacial Surgery*
+- `fernandes_impact_2025` (2025) Impact of Photobiomodulation on the Pro-Osteogenic Activity of Dental Pulp Mesenchymal Stem/Stromal Cells — *International Journal of Molecular Sciences*
+- `la_selva_herpes_2025` (2025) Herpes Simplex Treated With Antimicrobial Photodynamic Therapy: Randomized Controlled Trial — *Journal of Oral Pathology & Medicine*
+- `marinho_vitro_2025` (2025) In vitro study of high-power Er: YAG laser parameters for the management of dentin hypersensitivity in hypomineralized permanent teeth — *Lasers in Medical Science*
+- `nihr_global_health_research_unit_on_global_surgery_global_2025` (2025) Global Variation in Out-of-Pocket Payments for Cancer Surgery — *WORLD JOURNAL OF SURGERY* — **sem DOI**
+- `oliveira_acute_2025` (2025) Acute toxicity and biodistribution assessment of quantum dots conjugated to lectins from leaves (SteLL) and sarcotesta (PgTeL) — *DRUG AND CHEMICAL TOXICOLOGY*
+- `silva_plantas_2025` (2025) Plantas medicinais brasileiras com potencial radioprotetor para o tratamento de radiodermatites — *Revista Universitária Brasileira* — **sem DOI**
+- `silva_porous_2025` (2025) Porous Si3N4 Ceramics Prepared by Gelcasting Route and Pressureless Sintering at Different Temperatures — *MATERIALS RESEARCH* — **sem DOI**
+- `benitez_use_2024` (2024) Use of both the diode and Er: YAG lasers in esthetic crown lengthening with the aid of digitally guided dual technique: 3 years follow-up — *Journal of Esthetic and Restorative Dentistry*
+- `burin_evaluation_2024` (2024) EVALUATION OF THE ABSORBED DOSE OF A NEW PHOSPHORUS-32 SOURCE FOR BRACHYTHERAPY USING MONTE CARLO SIMULATION — *Physica Medica-European Journal of Medical Physics*
+- `costa_radioisotopos_2024` (2024) Radioisótopos Naturais em Solos dos Estados da Bahia, Pernambuco e São Paulo, Brasil — *Boletim Informativo / Sociedade Brasileira de Ciência do Solo, Núcleo Regional Nordeste* — **sem DOI**
+- `kowalski_enhancing_2024` (2024) Enhancing head and neck oncology training and research across academic levels in Brazil — *Wspolczesna Onkologia-Contemporary Oncology* — **sem DOI**
+- `leal_integration_2024` (2024) INTEGRATION OF ARTIFICIAL INTELLIGENCE AND ADDITIVE MANUFACTURING IN DOSIMETRY — *Physica Medica-European Journal of Medical Physics*
+- `medeiros_importance_2024` (2024) THE IMPORTANCE OF IODINE-125 PRODUCTION FOR USE IN BRACHYTHERAPY — *Physica Medica-European Journal of Medical Physics*
+- `melo_photobiomodulation_2024` (2024) Photobiomodulation Therapy in Management of Late Complications After Facial Filling — *Cureus*
+- `paiva_avaliacao_2024` (2024) Avaliação do teor de gordura no leite utilizando métodos ópticos — *OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA*
+- `palharim_enhanced_2024` (2024) Enhanced photocatalytic activity and stability of WO3-AgCl/Ag composites: Surface modulation by structure-directing agents for effective sunlight treatment of pharmaceutical wastewater — *JOURNAL OF PHOTOCHEMISTRY AND PHOTOBIOLOGY A-CHEMISTRY*
+- `queiroz_bilateral_2024` (2024) Bilateral lipomatous hamartoma of the tongue: A case report in a child with oral-facial-digital syndrome type VI — *SPECIAL CARE IN DENTISTRY*
+- `rodrigues_assessment_2024` (2024) ASSESSMENT OF DOSIMETRY IN ONCOLOGICAL TREATMENT USING RADIOACTIVE NANOPARTICLES: A COMPREHENSIVE LITERATURE REVIEW — *Physica Medica-European Journal of Medical Physics*
+- `rosa_development_2024` (2024) DEVELOPMENT OF METHODOLOGY FOR PRODUCTION OF IODINE-125 SOURCE FOR SKIN CANCER TREATMENT — *Physica Medica-European Journal of Medical Physics*
+- `silva_simulation_2024` (2024) SIMULATION OF RADIOACTIVE NANOPARTICLES IN BREAST CANCER USING MCNP — *Physica Medica-European Journal of Medical Physics*
+- `talacimon_evolution_2024` (2024) EVOLUTION OF FRICKE GEL DOSIMETRY FOR ENHANCED RADIOTHERAPY QUALITY ASSURANCE — *Physica Medica-European Journal of Medical Physics*
+- `teodoro_comparing_2024` (2024) Comparing two Monte Carlo codes to simulate the ideal activity of a phosphorus-32 film source using dose rate obtained by clinical applications — *Physica Medica-European Journal of Medical Physics*
+- `azevedo_use_2023` (2023) Use of Phototherapy and ER-YAG Laser in the Management of Mandible Osteoradionecrosis — *Journal Of Lasers In Medical Sciences*
+- `freire_sequencia_2023` (2023) Sequência de ensino investigativa sobre dilatação térmica: uma proposta de ensino sobre física térmica — *Revista de Produtos Educacionais e Pesquisas em Ensino (REPPE)* — **sem DOI**
+- `matos_editorial_2023` (2023) Editorial - XXIX Congresso Brasileiro de Cirurgia de Cabeça e Pescoço — *Archives of Head and Neck Surgery*
+- `santos_proposta_2023` (2023) Proposta de uma UEPS para introdução à óptica geométrica na Educação Básica — *EXPERIÊNCIAS EM ENSINO DE CIÊNCIAS (UFRGS)* — **sem DOI**
+- `soares_correction_2023` (2023) Correction to: Photobiomodulation, Transmucosal Laser Irradiation of Blood, or B complex as alternatives to treat Covid-19 Related Long-Term Taste Impairment: double-blind randomized clinical trial — *Lasers in Medical Science*
+- `albuquerque_anthropogenic_2022` (2022) Anthropogenic influences on sedimentary geochemistry of Itapessoca Estuarine Complex, Pernambuco, Brazil — *ENVIRONMENTAL MONITORING AND ASSESSMENT*
+- `alexandre_falconi_mo277_2022` (2022) MO277: Effect of P-Cresyl Sulfate in Cardiorenal Axis in Mice — *NEPHROLOGY DIALYSIS TRANSPLANTATION*
+- `almeida_barreto_calcifying_2022` (2022) Calcifying odontogenic cyst causing an atypical complication: Case report — *INTERNATIONAL JOURNAL OF CASE REPORTS AND IMAGES*
+- `araujo_characterization_2022` (2022) Characterization of sound enamel and natural white spot lesions — *BRAZILIAN DENTAL SCIENCE*
+- `armentano_effect_2022` (2022) Effect of COVID-19 on cardiorenal axis: known or unknown universe? — *BRAZILIAN JOURNAL OF MEDICAL AND BIOLOGICAL RESEARCH*
+- `bachmann_radiacao_2022` (2022) RADIAÇÃO ULTRAVIOLETA PARA A INATIVAÇÃO DE MICRORGANISMOS EM AMBIENTES PÚBLICOS — *Revista Brasileira de Física Médica*
+- `baffa_focal_2022` (2022) Focal cortical dysplasia classification for refractory epilepsy detection using artificial neural network — *Computer Methods In Biomechanics And Biomedical Engineering-Imaging And Visualization*
+- `bandeira_micro_2022` (2022) Micro-Fourier-transform infrared reflectance spectroscopy as tool for probing IgG glycosylation in COVID-19 patients — *Scientific Reports*
+- `barbosa_enhancing_2022` (2022) Enhancing the durability and performance of radiation-induced grafted low-density polyethylene-based anion-exchange membranes by controlling irradiation conditions — *JOURNAL OF MEMBRANE SCIENCE*
+- `batista_advances_2022` (2022) Advances in tissues and cells characterization by Raman micro-spectroscopy, atomic force microscopy, and tip-enhanced Raman spectroscopy — *JOURNAL OF RAMAN SPECTROSCOPY*
+- `bernaola_paredes_clinical_2022` (2022) Clinical and histopathological features of congenital epulis in a newborn submitted to laser surgery — *JOURNAL OF ORAL AND MAXILLOFACIAL PATHOLOGY*
+- `bernardes_highlight_2022` (2022) Highlight selection of radiochemistry and radiopharmacy developments by editorial board — *EJNMMI Radiopharmacy and Chemistry*
+- `bernardes_troponin_2022` (2022) Troponin in COVID-19: To Measure or Not to Measure? Insights from a Prospective Cohort Study' — *Journal of Clinical Medicine*
+- `beu_turbulence_2022` (2022) Turbulence Kinetic Energy Dissipation Rate Estimate for a Low-Level Jet with Doppler Lidar Data: A Case Study — *Earth Interactions*
+- `bordon_new_2022` (2022) A new double-line waveguide architecture for photonic applications using fs laser writing in Nd3+ doped GeO2-PbO glasses — *Optical Materials*
+- `brianezzi_effect_2022` (2022) Effect of Er, Cr: YSGG laser irradiation in the physics properties of different dentin bonding systems — *Research, Society and Development*
+- `briceno_effects_2022` (2022) Effects of Notch signaling pathway inhibition by dibenzazepine in acute experimental toxoplasmosis — *TISSUE & CELL*
+- `cabral_feline_2022` (2022) Feline sporotrichosis successfully treated with methylene blue-mediated antimicrobial photodynamic therapy and low doses of itraconazole — *Photodiagnosis and Photodynamic Therapy*
+- `campos_treatment_2022` (2022) Treatment of oral leukoplakia with CO2 laser (10,600 nm): analysis of 37 cases — *BRAZILIAN ORAL RESEARCH*
+- `carneiro_ramos_editorial_2022` (2022) Editorial: Contribution of Uremic Compounds to Cardiorenal Syndrome Development — *Frontiers in Physiology*
+- `carvalho_action_2022` (2022) Action potential variability in human pluripotent stem cell-derived cardiomyocytes obtained from healthy donors — *Frontiers in Physiology*
+- `castro_assessment_2022` (2022) Assessment of bone dose response using ATR-FTIR spectroscopy: A potential method for biodosimetry — *Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy*
+- `cernea_active_2022` (2022) Active Surveillance of Thyroid Microcarcinomas: a Critical View — *Current Oncology Reports*
+- `cesario_proposal_2022` (2022) Proposal of an algorithm to evaluate geometric distortion and artifact spreading in digital breast tomosynthesis — *ACTA RADIOLOGICA*
+- `charlie_silva_plasma_2022` (2022) Plasma proteome responses in zebrafish following λ-carrageenan-Induced inflammation are mediated by PMN leukocytes and correlate highly with their human counterparts — *Frontiers in Immunology*
+- `chu_simultaneous_2022` (2022) Simultaneous Whole-chamber Non-contact Mapping of Highest Dominant Frequency Sites during Persistent Atrial Fibrillation: a Prospective Ablation Study — *Frontiers in Physiology*
+- `coelho_biochemical_2022` (2022) Biochemical characterization of saliva of smoking and non-smoking patients by using Fourier-transform infrared spectroscopy — *Proceedings of SPIE* — **sem DOI**
+- `collaborative_mortality_2022` (2022) Mortality — *Journal of Trauma and Acute Care Surgery* — **sem DOI**
+- `collaborative_outcomes_2022` (2022) Outcomes of gynecologic cancer surgery during the COVID-19 pandemic: an international, multicenter, prospective CovidSurg-Gynecologic Oncology Cancer study — *AMERICAN JOURNAL OF OBSTETRICS AND GYNECOLOGY* — **sem DOI**
+- `costa_laser_2022` (2022) Laser decontamination of surface impregnated with radioactive material — *Journal of Radioanalytical and Nuclear Chemistry*
+- `coutinho_diminazene_2022` (2022) Diminazene aceturate, an angiotensin converting enzyme 2 (ACE2) activator, promotes cardioprotection in ischemia/reperfusion-induced cardiac injury — *PEPTIDES*
+- `covidsurg_collaborative_early_2022` (2022) Early outcomes and complications following cardiac surgery in patients testing positive for coronavirus disease 2019: An international cohort study — *JOURNAL OF THORACIC AND CARDIOVASCULAR SURGERY* — **sem DOI**
+- `covidsurg_collaborative_sars_2022` (2022) SARS-CoV-2 infection and venous thromboembolism after surgery: an international prospective cohort study — *Anaesthesia* — **sem DOI**
+- `cunha_interplay_2022` (2022) The Interplay between Uremic Toxins and Albumin, Membrane Transporters and Drug Interaction — *Toxins*
+- `da_collina_importance_2022` (2022) The importance of combining methods to assess Candida albicans biofilms following photodynamic inactivation — *Photodiagnosis and Photodynamic Therapy*
+- `da_silva_cladonia_2022` (2022) Cladonia verticillaris (lichen) can exhibit defense mechanisms against Rn-222 under controlled conditions — *Journal of Radioanalytical and Nuclear Chemistry*
+- `das_exploiting_2022` (2022) Exploiting Nanomaterials for Optical Coherence Tomography and Photoacoustic Imaging in Nanodentistry — *Nanomaterials*
+- `de_almeida_vieira_nd_2022` (2022) Nd:YLF laser at 1053 nm diode side pumped at 863 nm with a near quantum-defect slope efficiency — *Optics & Laser Technology*
+- `de_jesus_radiolytic_2022` (2022) RADIOLYTIC DEGRADATION OF LEVONORGESTREL AND GESTODENE: PERFORMANCE AND BIOASSAYS — *PROCESS SAFETY AND ENVIRONMENTAL PROTECTION*
+- `de_matos_comprehensive_2022` (2022) Comprehensive management of nonmelanoma skin cancer involving the skull base — *Current Opinion in Otolaryngology & Head and Neck Surgery*
+- `de_moura_santos_coelho_ferreira_optical_2022` (2022) OPTICAL BIOPSY AND ARTIFICIAL INTELLIGENCE AS A DIAGNOSTIC TOOL OF SMOKERS: A PILOT STUDY — *Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology*
+- `de_oliveira_santos_textos_2022` (2022) Textos de divulgação científica no ensino de física: a opinião de professores da educação básica — *SCIENTIA PLENA*
+- `de_souza_contatori_responses_2022` (2022) Responses of melanoma cells to photobiomodulation depend on cell pigmentation and light parameters — *Journal of Photochemistry and Photobiology B: Biology*
+- `dos_santos_jesus_triple_2022` (2022) Triple-negative breast cancer treatment in xenograft models by bifunctional nanoprobes combined to photodynamic therapy — *Photodiagnosis and Photodynamic Therapy*
+- `dos_santos_lead_2022` (2022) Lead phosphate glass Nd-doped by first principles calculations — *Computational and Theoretical Chemistry*
+- `elias_lycopene_2022` (2022) Lycopene induces bone marrow lymphopoiesis and differentiation of peritoneal IgA-producing cells — *ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS*
+- `faedo_sphingolipids_2022` (2022) Sphingolipids signature in plasma and tissue as diagnostic and prognostic tools in oral squamous cell carcinoma — *BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR AND CELL BIOLOGY OF LIPIDS*
+- `farooq_optimizing_2022` (2022) Optimizing and Quantifying Gold Nanospheres Based on LSPR Label-Free Biosensor for Dengue Diagnosis — *Polymers*
+- `fernandez_pernambuco_2022` (2022) Pernambuco Caatinga: relevance of soil chemical composition for biodiversity conservation — *CHEMISTRY AND ECOLOGY*
+- `ferreira_radioactive_2022` (2022) Radioactive Seed Localization for Conservative Surgery of Nonpalpable Breast Cancer: Recommendations for Technology Implantation Program — *International Journal Of Surgery Protocols*
+- `franca_quali_2022` (2022) Quali-quantitative radiometric characterization of thorianite minerals seized in Brazil — *Journal of Radioanalytical and Nuclear Chemistry*
+- `girasoli_laser_2022` (2022) Laser light sources for photobiomodulation: The role of power and beam characterization in treatment accuracy and reliability — *PLOS ONE*
+- `gonzaga_therapeutic_2022` (2022) Therapeutic Potential of Human Immature Dental Pulp Stem Cells Observed in Mouse Model for Acquired Aplastic Anemia — *Cells*
+- `grandizoli_assessment_2022` (2022) Assessment of the Ability of Desensitizing and Conventional Mouth Rinses to Promote Dentin Tubule Occlusion — *OPERATIVE DENTISTRY (ONLINE)*
+- `gusmao_synthesis_2022` (2022) Synthesis, Characterization, and Application of Pt/PtO2-TiO2/SiO2 Materials on a Continuous Flow Packed Bed Microreactor for Enhanced Photocatalytic Activity under Sunlight — *Water*
+- `horowitz_achieving_2022` (2022) Achieving negative resection margins in oral cavity cancer with masticator space involvement-Is it feasible? International collaborative study — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `ibarra_espinosa_changes_2022` (2022) Changes in a Bottom-Up Vehicular Emissions Inventory and Its Impact on Air Pollution During COVID-19 Lockdown in São Paulo, Brazil — *Frontiers in Sustainable Cities*
+- `ibarra_espinosa_effects_2022` (2022) Effects of Evaporative Emissions Control Measurements on Ozone Concentrations in Brazil — *Atmosphere*
+- `jordao_supercritical_2022` (2022) Supercritical CO2 Impregnation of Clove Extract in Polycarbonate: Effects of Operational Conditions on the Loading and Composition — *Processes*
+- `jr_o_evaluation_2022` (2022) Evaluation of rare-earth sesquioxides nanoparticles as a bottom-up strategy toward the formation of functional structures — *Current Applied Materials*
+- `junho_cardiorenal_2022` (2022) Cardiorenal syndrome: long road between kidney and heart. — *HEART FAILURE REVIEWS*
+- `junho_klotho_2022` (2022) Klotho relieves inflammation and exerts a cardioprotective effect during renal ischemia/reperfusion-induced cardiorenal syndrome — *Biomedicine & Pharmacotherapy*
+- `junho_unilateral_2022` (2022) Unilateral Acute Renal Ischemia-Reperfusion Injury Induces Cardiac Dysfunction through Intracellular Calcium Mishandling — *International Journal of Molecular Sciences*
+- `kreve_incorporation_2022` (2022) Incorporation of a β-AgVO3 Semiconductor in Resin Cement: Evaluation of Mechanical Properties and Antibacterial Efficacy — *Journal Of Adhesive Dentistry*
+- `landmayer_effect_2022` (2022) Effect of Nd:YAG laser irradiation, used as a desensitizing strategy, on bond strength to simulated hypersensitive dentin — *Clinical Oral Investigations*
+- `lazari_maldi_2022` (2022) MALDI-TOF mass spectrometry of saliva samples as a prognostic tool for COVID-19 — *Journal of Oral Microbiology*
+- `leitzke_evaluation_2022` (2022) Evaluation of laparoscopic skills in medical students — *einstein (São Paulo)*
+- `leme_beu_caracterizacao_2022` (2022) Caracterização do perfil vertical do vento em Iperó (São Paulo) com o uso de um lidar doppler — *Revista Brasileira de Climatologia*
+- `lima_construcao_2022` (2022) Construção de phantom de mama a partir de materiais de baixo custo para avaliação da qualidade da imagem por ultrassonografia — *Revista Brasileira de Física Médica*
+- `lopes_first_2022` (2022) First Lidar Campaign in the Industrial Sites of Volta Redonda-RJ and Lorena-SP, Brazil — *Remote Sensing*
+- `lunardon_set7_2022` (2022) Set7 deletion attenuates isoproterenol-induced cardiac fibrosis and delays cardiac dysfunction — *CLINICAL SCIENCE*
+- `malagueta_vieira_l_metformin_2022` (2022) Metformin Reduces Potassium Currents and Prolongs Repolarization in Non-Diabetic Heart — *International Journal of Molecular Sciences*
+- `matos_potential_2022` (2022) Potential application of human SALL4 on oral squamous cell carcinoma — *Annals of Translational Medicine*
+- `matos_sentinel_2022` (2022) Sentinel lymph node biopsy for early squamous cell carcinoma of the lip and oral cavity: Real-world experience in Brazil — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `melo_secondary_2022` (2022) Secondary syphilis in oral cavity: Case report and literature review — *INTERNATIONAL JOURNAL OF CASE REPORTS AND IMAGES*
+- `moll_bernardes_nkg2a_2022` (2022) NKG2A Expression among CD8 Cells Is Associated with COVID-19 Progression in Hypertensive Patients: Insights from the BRACE CORONA Randomized Trial — *Journal of Clinical Medicine*
+- `monte_physical_2022` (2022) Physical characterization of BiFeO3-based thin films with enhanced properties for photovoltaic applications — *Journal of the American Ceramic Society*
+- `monteiro_pd22_2022` (2022) PD22 Exploratory Analysis of a Brazilian Real-World Open Database Applied to Prostate Cancer — *INTERNATIONAL JOURNAL OF TECHNOLOGY ASSESSMENT IN HEALTH CARE*
+- `moraes_hydroxychloroquine_2022` (2022) Hydroxychloroquine for treatment of COVID-19 patients: a systematic review and meta-analysis of randomized controlled trials — *einstein (São Paulo)*
+- `morais_relationship_2022` (2022) Relationship between Land Use and Spatial Variability of Atmospheric Brown Carbon and Black Carbon Aerosols in Amazonia — *Atmosphere*
+- `morais_use_2022` (2022) Use of Biomphalaria glabrata as a bioindicator of groundwater quality under the influence of NORM — *JOURNAL OF ENVIRONMENTAL RADIOACTIVITY*
+- `moreira_assessing_2022` (2022) Assessing Spatial Variation of PBL Height and Aerosol Layer Aloft in São Paulo Megacity Using Simultaneously Two Lidar during Winter 2019 — *Atmosphere*
+- `moreira_performance_2022` (2022) Performance assessment of aerosol-lidar remote sensing skills to retrieve the time evolution of the urban boundary layer height in the Metropolitan Region of São Paulo City, Brazil — *ATMOSPHERIC RESEARCH*
+- `mosca_efficacy_2022` (2022) The Efficacy of Photobiomodulation Therapy in Improving Tissue Resilience and Healing of Radiation Skin Damage — *Photonics*
+- `nario_synthesis_2022` (2022) Synthesis of a 2-nitroimidazole derivative N-(4-[18F]fluorobenzyl)-2-(2-nitro-1H-imidazol-1-yl)-acetamide ([18 F]FBNA) as PET radiotracer for imaging tumor hypoxia — *EJNMMI Radiopharmacy and Chemistry*
+- `nogueira_ftir_2022` (2022) FTIR spectroscopy as a point of care diagnostic tool for diabetes and periodontitis: a saliva analysis approach — *Photodiagnosis and Photodynamic Therapy*
+- `nunes_risk_2022` (2022) Risk factors associated with disease-specific mortality in papillary thyroid cancer patients with distant metastases — *Endocrine*
+- `oliveira_challenges_2022` (2022) Challenges in personal and clinical dosimetry using Li2B4O7 and MgB4O7 as TLD and OSLD — *Brazilian Journal of Radiation Sciences*
+- `oliveira_radiacoes_2022` (2022) Radiações solares do tipo ultravioleta e fotoproteção: uma sequência didática para abordagem em física no ensino médio — *SCIENTIA PLENA*
+- `ordonez_aguilera_role_2022` (2022) Role of non-carious cervical lesions multicausality in the behavior of respective restorations — *Journal of the Mechanical Behavior of Biomedical Materials*
+- `paglioni_clinical_2022` (2022) Clinical predictors of malignant transformation and recurrence in oral potentially malignant disorders: a systematic review and meta-analysis — *Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology*
+- `palacios_evaluation_2022` (2022) Evaluation of MODIS Dark Target AOD Product with 3 and 10 km Resolution in Amazonia — *Atmosphere*
+- `palharim_effect_2022` (2022) Effect of temperature and time on the hydrothermal synthesis of WO3-AgCl photocatalysts regarding photocatalytic activity — *CHEMICAL ENGINEERING RESEARCH & DESIGN*
+- `paredes_circle_2022` (2022) Circle Method for Robust Estimation of Local Conduction Velocity High-Density Maps From Optical Mapping Data: Characterization of Radiofrequency Ablation Sites — *Frontiers in Physiology*
+- `pijeira_closer_2022` (2022) A closer look at the synthesis of 2-[18F]fluoroethyl tosylate to minimize the formation of volatile side-products — *EJNMMI Radiopharmacy and Chemistry*
+- `prado_computational_2022` (2022) Computational algorithm from the Huygens-Fresnel?s diffraction integral for two-dimensional holographic reconstruction — *Revista Brasileira de Ensino de Física*
+- `prado_thermal_2022` (2022) Thermal damage and excision time of micro and super pulsed diode lasers: A comparative ex vivo analysis — *Clinical and Experimental Dental Research*
+- `reganin_erythema_2022` (2022) Erythema multiforme: A case report with oral manifestations — *INTERNATIONAL JOURNAL OF CASE REPORTS AND IMAGES*
+- `ribeiro_determinacao_2022` (2022) Determinação de características mecânicas de folhas de papel utilizando a técnica de tomografia por coerência óptica, e suas aplicações na área forense — *Revista Brasileira de Ensino de Física*
+- `ribeiro_investigando_2022` (2022) Investigando a contribuição de uma unidade de ensino potencialmente significativa (UEPS) no processo de ensino e aprendizagem das razões trigonométricas no triângulo retângulo — *REVISTA SERGIPANA DE MATEMÁTICA E EDUCAÇÃO MATEMÁTICA*
+- `ribeiro_vibration_2022` (2022) Vibration amplitude mapping by stroboscopic structured light projection — *OPTICS COMMUNICATIONS*
+- `rstom_dermoscopy_2022` (2022) Dermoscopy and Reflectance Confocal Microscopy in Actinic Keratosis, Intraepithelial Carcinoma, and Invasive Squamous Cell Carcinoma — *Journal of Drugs in Dermatology*
+- `s_amorim_controle_2022` (2022) Controle de qualidade em unidades móveis de mamografia — *Revista Brasileira de Física Médica*
+- `sabino_biochemical_2022` (2022) The Biochemical Mechanisms of Antimicrobial Photodynamic Therapy — *Photochemistry and Photobiology*
+- `sampaio_optical_2022` (2022) Optical Attenuation Coefficients of Moist and Dry Tooth Determinate by Optical Coherence Tomography — *Brazilian Journal of Physics*
+- `santos_synthesis_2022` (2022) Synthesis of Thulium-yttria Nanoparticles with EPR Response — *Brazilian Journal of Radiation Sciences*
+- `santos_thermoluminescence_2022` (2022) Thermoluminescence and optically stimulated luminescence of Ba-doped Al2O3 produced by a modified sol-gel route — *Radiation Physics and Chemistry*
+- `sardo_does_2022` (2022) Does Photobiomodulation Affects CK10 and CK14 in Oral Mucositis Radioinduced Repair? — *International Journal of Molecular Sciences*
+- `savi_development_2022` (2022) Development of radiopaque FFF filaments for bone and teeth representation in 3D printed radiological objects — *Brazilian Journal of Radiation Sciences*
+- `seferin_impact_2022` (2022) The impact of sentinel lymph node biopsy on the quality of life in patients with oral cavity squamous cell carcinoma — *Brazilian Journal of Otorhinolaryngology*
+- `seguel_photochemical_2022` (2022) Photochemical sensitivity to emissions and local meteorology in Bogotá, Santiago, and São Paulo — *ELEMENTA: SCIENCE OF THE ANTHROPOCENE*
+- `sellera_clinical_2022` (2022) Clinical acceptance of antimicrobial photodynamic therapy in the age of WHO global priority pathogens: So what we need to move forward? — *Photodiagnosis and Photodynamic Therapy*
+- `sercundes_blockade_2022` (2022) Blockade of caspase cascade overcomes malaria-associated acute respiratory distress syndrome in mice — *Cell Death & Disease*
+- `sichero_biomarkers_2022` (2022) Biomarkers of human papillomavirus ( <scp>HPV</scp> )-driven head and neck cancer in Latin America and Europe study: Study design and <scp>HPV DNA</scp> /p16 <scp> INK4a</sup> </scp> status — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `silva_effects_2022` (2022) Effects of manganese and terbium on the dosimetric properties of CaSO4 — *Radiation Physics and Chemistry*
+- `sousa_oliveira_il_2022` (2022) IL-1β is not critical to chronic heart dysfunction in mice with Chagas disease — *Frontiers in Immunology*
+- `souza_photoinactivation_2022` (2022) Photoinactivation of Yeast and Biofilm Communities of Candida albicans Mediated by ZnTnHex-2-PyP4+ Porphyrin — *Journal of Fungi*
+- `souza_synthesis_2022` (2022) Synthesis, In Vitro Testing, and Biodistribution of Surfactant-Free Radioactive Nanoparticles for Cancer Treatment — *Nanomaterials*
+- `tofanello_magnetism_2022` (2022) Magnetism in a 2D Hybrid Ruddlesden-Popper Perovskite through Charge Redistribution Driven by an Organic Functional Spacer — *Journal of Physical Chemistry Letters*
+- `tolentino_ab_photobiomodulation_2022` (2022) Photobiomodulation therapy and 3% potassium nitrate gel as treatment of cervical dentin hypersensitivity: a randomized clinical trial — *Clinical Oral Investigations*
+- `trevisani_nutritional_2022` (2022) Nutritional and immunological parameters as prognostic factors in patients with advanced oral cancer — *Brazilian Journal of Otorhinolaryngology*
+- `valenca_comparison_2022` (2022) The comparison of a thin-film ZnO nanodevice with silicon-based electronic devices for diagnostic X-ray beam detection — *Radiation Effects and Defects in Solids*
+- `valente_analysis_2022` (2022) Analysis of the physical, mechanical and morphological properties of polyethylene terephthalate polymer in the manufacture of dentistry prosthetic components — *POLYMER BULLETIN*
+- `vanini_epithelial_2022` (2022) Epithelial-mesenchymal transition related to bone invasion in oral squamous cell carcinoma — *Journal of Bone Oncology*
+- `vasconcellos_knowledge_2022` (2022) Knowledge about head and neck cancer among adolescents — *Archives of Head and Neck Surgery*
+- `vellasco_sheltered_2022` (2022) Sheltered in Stromal Tissue Cells, Trypanosoma cruzi Orchestrates Inflammatory Neovascularization via Activation of the Mast Cell Chymase Pathway — *PATHOGENS*
+- `vigato_monoketonic_2022` (2022) Monoketonic Curcuminoid-Lidocaine Co-Deliver Using Thermosensitive Organogels: From Drug Synthesis to Epidermis Structural Studies — *Pharmaceutics*
+- `wieczorek_villas_boas_vitro_2022` (2022) In vitro and in vivo response of PSMA-617 radiolabeled with CA and NCA lutetium-177 — *Applied Radiation and Isotopes*
+- `yoshimura_could_2022` (2022) Could <scp>Light-Based</scp> Technologies Improve Stem Cell Therapy for Skin Wounds? A Systematic Review and <scp>Meta-Analysis</scp> of Preclinical Studies — *Photochemistry and Photobiology*
+- `zanata_iron_2022` (2022) Iron oxide nanoparticles-cellulose: a comprehensive insight on nanoclusters formation — *Journal of Materials Science*
+- `zanella_photobiomodulation_2022` (2022) Photobiomodulation for Preventive Therapy of Recurrent Herpes Labialis: A 2-Year In Vivo</i> Randomized Controlled Study — *Photobiomodulation, Photomedicine, and Laser Surgery*
+- `zanini_erbium_2022` (2022) The Erbium laser in the debonding of ceramics: a literature review — *BRAZILIAN DENTAL SCIENCE*
+- `zerbinati_use_2022` (2022) Use of Saliva and RT-PCR Screening for SARS-CoV-2 Variants of Concern: Surveillance and Monitoring — *JOURNAL OF MEDICAL VIROLOGY*
+- `abreu_anisotropy_2021` (2021) Anisotropy function of a new 192-Ir brachytherapy source — *Brazilian Journal of Radiation Sciences* — **sem DOI**
+- `alves_dosimetry_2021` (2021) Dosimetry in Digital Breast Tomosynthesis Evaluated by Monte Carlo Technique — *Health Physics*
+- `alves_estimated_2021` (2021) Estimated risk of radiation-induced cancer following breast screening employing tomosynthesis and digital mammography using Monte Carlo — *JOURNAL OF RADIOLOGICAL PROTECTION*
+- `angelocci_monte_2021` (2021) Monte Carlo simulation to assess free space and end-weld thickness variation effects on dose rate for a new Ir-192 brachytherapy source — *Applied Radiation and Isotopes*
+- `araujo_filho_time_2021` (2021) Time heals. A study of thyroidectomy scars — *Archives of Head and Neck Surgery*
+- `araujo_quantitative_2021` (2021) On the quantitative optical properties of Au nanoparticles embedded in biological tissue phantoms — *Optical Materials*
+- `azevedo_extracellular_2021` (2021) Extracellular Vesicles and Their Relationship with the Heart?Kidney Axis, Uremia and Peritoneal Dialysis — *Toxins*
+- `baptista_proposal_2021` (2021) A PROPOSAL OF PROCESS VALIDATION IN THE IMPLEMENTATION OF GOOD MANUFACTURING PRACTICES IN BRACHYTHERAPY SOURCES PRODUCTION — *Brazilian Journal of Radiation Sciences*
+- `batista_ensino_2021` (2021) Ensino de termologia: uma proposta de sequência didática baseada na pedagogia histórico-crítica — *Research, Society and Development*
+- `belinato_occupational_2021` (2021) Occupational exposures in PET procedures with 18F-FDG in adult and pediatric patients — *Radiation Physics and Chemistry*
+- `bereczki_dynamically_2021` (2021) Dynamically stable single frequency ring resonator from diode pumped Nd:YAG modules with 556 W of output power — *OPTICS EXPRESS*
+- `bernal_retreatment_2021` (2021) Retreatment of 6 Ceramic Restorations In A Single Session - The Application of Er:YAG Laser And CAD/CAM Technology: An 1 Year Follow Up Clinical Evaluation — *BRAZILIAN DENTAL SCIENCE*
+- `bezerra_analysis_2021` (2021) Analysis of patients with prostate cancer care at a reference hospital in the state of Tocantins, suitable for brachytherapy — *Brazilian Journal of Radiation Sciences* — **sem DOI**
+- `bhandi_influence_2021` (2021) Influence of Filler Composition on the Refractive Index of Four Different Enamel Shades of Composite Resins — *THE JOURNAL OF CONTEMPORARY DENTAL PRACTICE*
+- `biancolli_high_2021` (2021) High-performance radiation grafted anion-exchange membranes for fuel cell applications: Effects of irradiation conditions on ETFE-based membranes properties — *JOURNAL OF MEMBRANE SCIENCE*
+- `borges_bioactive_2021` (2021) Bioactive glass/poloxamer 407 hydrogel composite as a drug delivery system: The interplay between glass dissolution and drug release kinetics — *COLLOIDS AND SURFACES B-BIOINTERFACES*
+- `brancini_timing_2021` (2021) Timing and duration of light exposure during conidia development determine tolerance to ultraviolet radiation — *FEMS MICROBIOLOGY LETTERS*
+- `cabral_methylene_2021` (2021) Methylene blue-mediated antimicrobial photodynamic therapy for canine dermatophytosis caused by Microsporum canis: A successful case report with 6 months follow-up — *Photodiagnosis and Photodynamic Therapy*
+- `cabral_nitric_2021` (2021) Nitric-oxide releasing chitosan nanoparticles towards effective treatment of cutaneous leishmaniasis — *Nitric Oxide*
+- `cabral_organic_2021` (2021) Organic Light-Emitting Diodes as an Innovative Approach for Treating Cutaneous Leishmaniasis — *Advanced Materials Technologies*
+- `cabral_towards_2021` (2021) Towards effective cutaneous leishmaniasis treatment with light-based technologies. A systematic review and meta-analysis of preclinical studies — *Journal of Photochemistry and Photobiology B: Biology*
+- `cabrelli_glycerol_2021` (2021) Glycerol-in-SEBS gel as a material to manufacture stable wall-less vascular phantom for ultrasound and photoacoustic imaging — *Biomedical Physics & Engineering Express*
+- `campos_aspectos_2021` (2021) Aspectos relevantes do hipofracionamento na radioterapia de mama e de próstata — *Research, Society and Development*
+- `castro_characterization_2021` (2021) Characterization of swallowing disorders in myasthenia gravis through a fibre-optic endoscopic evaluation — *CESKA A SLOVENSKA NEUROLOGIE A NEUROCHIRURGIE*
+- `cavalheiro_survival_2021` (2021) Survival in differentiated thyroid carcinoma: Comparison between the 7th and 8th editions of the <scp>AJCC</scp> / <scp>UICC TNM</scp> staging system and the <scp>ATA</scp> initial risk stratification system — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `collaborative_impact_2021` (2021) Impact of Bacillus Calmette-Guérin (BCG) vaccination on postoperative mortality in patients with perioperative SARS-CoV-2 infection — *Bjs Open* — **sem DOI**
+- `costa_gamma_2021` (2021) Gamma spectrometry of iodine-125 produced in IEA-R1 nuclear reactor, using HPGe detector and fixation into epoxy matrix disc — *Applied Radiation and Isotopes*
+- `costa_silva_enhancement_2021` (2021) Enhancement lipase activity via immobilization onto chitosan beads used as seed particles during fluidized bed drying: application in butyl butyrate production — *APPLIED CATALYSIS A-GENERAL*
+- `costa_silva_immobilized_2021` (2021) Immobilized enzyme-driven value enhancement of lignocellulosic-based agricultural byproducts: Application in aroma synthesis — *JOURNAL OF CLEANER PRODUCTION*
+- `costa_valente_analysis_2021` (2021) Analysis of the mechanical and physicochemical properties of discs obtained by selective laser melting and subtractive manufacturing method — *JOURNAL OF BIOMEDICAL MATERIALS RESEARCH PART B-APPLIED BIOMATERIALS*
+- `covidsurg_collaborative_effect_2021` (2021) Effect of COVID-19 pandemic lockdowns on planned cancer surgery for 15 tumour types in 61 countries: an international, prospective, cohort study — *LANCET ONCOLOGY* — **sem DOI**
+- `covidsurg_collaborative_effects_2021` (2021) Effects of pre-operative isolation on postoperative pulmonary complications after elective surgery: an international prospective cohort study — *Anaesthesia* — **sem DOI**
+- `covidsurg_collaborative_machine_2021` (2021) Machine learning risk prediction of mortality for patients undergoing surgery with perioperative SARS-CoV-2: the COVIDSurg mortality score — *British Journal of Surgery* — **sem DOI**
+- `covidsurg_collaborative_sars_2021` (2021) SARS-CoV-2 vaccination modelling for safe surgery to save lives: data from an international prospective cohort study — *British Journal of Surgery* — **sem DOI**
+- `covidsurg_collaborative_timing_2021` (2021) Timing of surgery following SARS-CoV-2 infection: an international prospective cohort study — *Anaesthesia* — **sem DOI**
+- `da_cruz_junior_manufacture_2021` (2021) Manufacture and characterization of a 3D-printed integrating sphere — *Instrumentation Science & Technology*
+- `da_silva_profile_2021` (2021) Profile of sphingolipid-related genes and its association with prognosis highlights sphingolipid metabolism in oral cancer — *CANCER BIOMARKERS*
+- `dahan_importancia_2021` (2021) A IMPORTÂNCIA DO RECONHECIMENTO PRECOCE DO PÊNFIGO VULGAR E TRATAMENTO ADEQUADO: RELATO DE CASO — *Revista de Odontologia da Braz Cubas* — **sem DOI**
+- `daruich_de_souza_c_new_2021` (2021) New gold-198 nanoparticle synthesis to be used in cancer treatment — *Brazilian Journal of Radiation Sciences*
+- `de_andrade_tumor_2021` (2021) Tumor volume as a prognostic factor of locally advanced laryngeal cancer — *EUROPEAN ARCHIVES OF OTO-RHINO-LARYNGOLOGY*
+- `de_araujo_faria_prediction_2021` (2021) Prediction of Radiation-Related Dental Caries Through PyRadiomics Features and Artificial Neural Network on Panoramic Radiography — *JOURNAL OF DIGITAL IMAGING*
+- `de_arruda_moreira_covid_2021` (2021) COVID-19 outbreak and air quality: Analyzing the influence of physical distancing and the resumption of activities in São Paulo municipality — *URBAN CLIMATE*
+- `de_arruda_moreira_influence_2021` (2021) Influence of a Biomass-Burning Event in PM2.5 Concentration and Air Quality: A Case Study in the Metropolitan Area of São Paulo — *SENSORS*
+- `de_matos_editorial_2021` (2021) Editorial - XXVIII Congresso Brasileiro de Cirurgia de Cabeça e Pescoço — *Archives of Head and Neck Surgery*
+- `de_oliveira_involvement_2021` (2021) Involvement of substance P, osteopontin and satellite glial cells on photobiomodulation-induced antinociceptive effect in an experimental model of dentin hypersensitivity — *Lasers in Medical Science*
+- `de_sa_alves_identification_2021` (2021) Identification of Possible Salivary Metabolic Biomarkers and Altered Metabolic Pathways in South American Patients Diagnosed with Oral Squamous Cell Carcinoma — *METABOLITES*
+- `de_siqueira_toxicity_2021` (2021) Toxicity and genotoxicity of domestic sewage sludge in the freshwater snail Biomphalaria glabrata (Say, 1818) — *Environmental Science and Pollution Research*
+- `del_valle_impact_2021` (2021) The impact of scan number and its preprocessing in micro-FTIR imaging when applying machine learning for breast cancer subtypes classification — *Vibrational Spectroscopy*
+- `do_amaral_ingestao_2021` (2021) Ingestão de águas de poços em áreas do fosforito uranífero na região metropolitana do recife, pernambuco, e riscos associados / Ingestion of well water in areas of the uraniferous phosphorit in the metropolitan region of recife, pernambuco, and associated risks — *Brazilian Journal of Development*
+- `dominguez_random_2021` (2021) Random lasing at localization induced in correlated colloidal system — *Optical Materials*
+- `duarte_structural_2021` (2021) Structural and electronic properties of amorphous bismuth calcium borate from first-principle calculations — *STRUCTURAL CHEMISTRY*
+- `ermakov_localization_2021` (2021) Localization of light induced in ordered colloidal suspensions: powerful sensing tools — *Nanoscale*
+- `falconi_uremic_2021` (2021) Uremic toxins: an alarming danger concerning the cardiovascular system — *Frontiers in Physiology*
+- `foschini_aerosol_2021` (2021) Aerosol blocking assessment by different types of fabrics for homemade respiratory masks: spectroscopy and imaging study — *Open Science Journal*
+- `fruet_arruda_melanin_2021` (2021) Melanin pigmented gingival tissue impairs red-light lateral scattering for antimicrobial photodynamic therapy — *Photodiagnosis and Photodynamic Therapy*
+- `gaisler_da_silva_diet_2021` (2021) Diet-induced obesity differentially modulates cardiac inflammatory status in the C57 and FVB mouse strains — *CURRENT MOLECULAR MEDICINE*
+- `garofalo_increasing_2021` (2021) Increasing dental zirconia micro-retentive aspect through ultra-short pulsed laser microstructuring: study on flexural strength and crystal phase characterization — *Clinical Oral Investigations*
+- `gomes_photobiomodulation_2021` (2021) Photobiomodulation therapy to treat neuropathic oral pain after contagion by COVID-19 — *BRAZILIAN DENTAL SCIENCE*
+- `goncalves_correa_vitro_2021` (2021) In vitro cytotoxic data on Se-methylselenocysteine conjugated to dendritic poly(glycerol) against human squamous carcinoma cells — *Journal of Biomaterials Science, Polymer Edition*
+- `goroso_remote_2021` (2021) Remote monitoring of heart rate variability for obese children — *Biomedical Signal Processing and Control*
+- `guerle_doenca_2021` (2021) Doença Renal Crônica: a voz dos familiares quanto ao atendimento recebido — *Revista da Sociedade Brasileira de Clínica Médica* — **sem DOI**
+- `imamura_impact_2021` (2021) Impact of the COVID-19 Pandemic on Physicians Working in the Head and Neck Field — *International Archives of Otorhinolaryngology*
+- `junho_heat_2021` (2021) Heat Shock Proteins: Connectors between Heart and Kidney — *Cells*
+- `junior_candido_e_ameloblastoma_2021` (2021) Ameloblastoma multicístico reabilitado com prótese tridimensional — *RSBO. REVISTA SUL-BRASILEIRA DE ODONTOLOGIA* — **sem DOI**
+- `juraski_effect_2021` (2021) Effect of a whitlockite glass-ceramic on the occlusion of dentinal tubules for dentin hypersensitivity treatment — *Research, Society and Development*
+- `kantovitz_impact_2021` (2021) Impact of Resin Composite Viscosity and Fill-technique on Internal Gap in Class I Restorations: An OCT Evaluation — *OPERATIVE DENTISTRY*
+- `kiyan_femtosecond_2021` (2021) Femtosecond Ti: Sa ultra short-pulse laser irradiation effects on the properties and morphology of the zirconia surface after ageing — *Ceramics International*
+- `koyama_oral_2021` (2021) Oral Squamous Cell Carcinoma Bone Invasion: Possible Roles of E-Cadherin in Osteoclastogenesis and Bone Infiltration — *ORL-Journal for Oto-Rhino-Laryngology Head and Neck Surgery*
+- `leal_diagnosis_2021` (2021) Diagnosis of Systemic Diseases Using Infrared Spectroscopy: Detection of Iron Overload in Plasma-Preliminary Study — *BIOLOGICAL TRACE ELEMENT RESEARCH*
+- `leite_amelanotic_2021` (2021) Amelanotic melanoma presenting as a tongue tumor — *Oral Oncology*
+- `leite_impact_2021` (2021) The Impact of the COVID-19 Pandemic on Head and Neck Surgery Training: A Brazilian National Survey — *International Archives of Otorhinolaryngology*
+- `leite_short_2021` (2021) Short-term survival in extensive craniofacial resections — *Clinics*
+- `li_automatic_2021` (2021) Automatic Extraction of Recurrent Patterns of High Dominant Frequency Mapping During Human Persistent Atrial Fibrillation — *Frontiers in Physiology*
+- `lima_controversias_2021` (2021) CONTROVÉRSIAS SOBRE VACINAS: O QUE PENSAM OS ESTUDANTES? — *Revista Brasileira de Ensino de Ciências e Matemática*
+- `lombello_characterization_2021` (2021) Characterization of DELUX: Ultraviolet light sterilization device for PFF2 / N95 masks against COVID-19 — *INGENIUS*
+- `macedo_methane_2021` (2021) METHANE DETECTION IN THE LOWER TROPOSPHERE RELATED TO THE BURNING OF BIOMASS AND LEAKAGE IN A PETROCHEMICAL POLE, USING RAMAN LIDAR TECHNIQUE — *HOLOS Environment (Online)*
+- `machado_efficacy_2021` (2021) Efficacy of a calcium-phosphate/fluoride varnish and ionomeric sealant on cervical dentin hypersensitivity: A randomized, double-blind, placebo-controlled clinical study — *JOURNAL OF ORAL REHABILITATION*
+- `machado_formacao_2021` (2021) A formação inicial de professores de matemática como um espaço de mobilização e construção dos saberes docentes. — *REVEMAT*
+- `machado_modified_2021` (2021) A modified Er,Cr:YSGG laser protocol associated with fluoride gel for controlling dentin erosion — *Lasers in Dental Science*
+- `machado_state_2021` (2021) State of the art of tool texturing in machining — *JOURNAL OF MATERIALS PROCESSING TECHNOLOGY*
+- `machado_tuning_2021` (2021) Tuning the Transdermal Transport by Application of External Continuous Electric Field: A Molecular Dynamics Coarse-Grained Study. — *Physical Chemistry Chemical Physics*
+- `marianna_lopes_situ_2021` (2021) In situ evaluation of desensitizing toothpastes for protecting against erosive tooth wear and its characterization — *Clinical Oral Investigations*
+- `matos_hidden_2021` (2021) The hidden curve behind COVID-19 outbreak: the impact of delay in treatment initiation in cancer patients and how to mitigate the additional risk of dying-the head and neck cancer model — *CANCER CAUSES & CONTROL*
+- `menderico_junior_scp_2021` (2021) <scp>MicroRNA</scp> -mediated extracellular matrix remodeling in squamous cell carcinoma of the oral cavity — *HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK*
+- `miranda_frequency_2021` (2021) Frequency of processed kaolin application to prevent infestation and dispersal in flushing citrus orchards — *PEST MANAGEMENT SCIENCE*
+- `moll_bernardes_il_2021` (2021) IL-10 and IL-12 (P70) Levels Predict the Risk of Covid-19 Progression in Hypertensive Patients: Insights From the BRACE-CORONA Trial — *FRONTIERS IN CARDIOVASCULAR MEDICINE*
+- `moraes_assessment_2021` (2021) Assessment of the preventive effects of Nd:YAG laser associated with fluoride on enamel caries using optical coherence tomography and FTIR spectroscopy — *PLOS ONE*
+- `moraes_avaliacao_2021` (2021) AVALIAÇÃO DO DESEMPENHO TÉRMICO DAS ALVENARIAS DE UMA EDIFICAÇÃO EM REGIÃO DE CLIMA QUENTE E SECO / EVALUATION OF THE THERMAL PERFORMANCE OF MASONRY IN A BUILDING IN A REGION OF HOT AND DRY CLIMATE — *Brazilian Journal of Development*
+- `morais_filtration_2021` (2021) Filtration efficiency of a large set of COVID-19 face masks commonly used in Brazil — *Aerosol Science and Technology*
+- `negrini_neto_new_2021` (2021) New method for measure pen pressure in forensic analysis of handwriting - a proof of concept study — *ANALYST*
+- `nepomuceno_tyrosine_2021` (2021) Tyrosine and Tryptophan vibrational bands as markers of kidney injury: a renocardiac syndrome induced by renal ischemia and reperfusion study — *Scientific Reports*
+- `nogueira_rapid_2021` (2021) Rapid diagnosis of COVID-19 using FT-IR ATR spectroscopy and machine learning — *Scientific Reports*
+- `nunes_synthesis_2021` (2021) Synthesis, biological evaluation and molecular docking studies of novel 1,2,3-triazole-quinazolines as antiproliferative agents displaying ERK inhibitory activity — *BIOORGANIC CHEMISTRY*
+- `oliveira_reconstructing_2021` (2021) Reconstructing the history of environmental impact in a tropical mangrove ecosystem: A case study from the Suape port-industrial complex, Brazil — *REGIONAL STUDIES IN MARINE SCIENCE*
+- `passos_mangrove_2021` (2021) Mangrove carbon and nutrient accumulation shifts driven by rapid development in a tropical estuarine system, northeast Brazil — *Marine Pollution Bulletin*
+- `perini_matching_2021` (2021) Matching Technological Bid in Smart Cities Initiatives: A Case Study of Innovation Fairs at Research Institute in Brazil — *JOURNAL OF BUSINESS AND ECONOMICS*
+- `petersen_focus_2021` (2021) Focus issue introduction: Advanced Solid-State Lasers 2020 — *OPTICS EXPRESS*
+- `pinto_potential_2021` (2021) The potential of FT-IR spectroscopy for improving healthcare in sepsis - an animal model study — *Photodiagnosis and Photodynamic Therapy*
+- `poncio_novel_2021` (2021) Novel Sterile Insect Technology (SIT) program results in suppression of a field mosquito population and subsequently to reduced incidence of dengue — *JOURNAL OF INFECTIOUS DISEASES*
+- `primo_dose_2021` (2021) Dose-rate constant and air-kerma strength evaluation of a new 125I brachytherapy source using Monte Carlo — *Brazilian Journal of Radiation Sciences* — **sem DOI**
+- `ribeiro_analise_2021` (2021) Análise de mapa conceitual como ferramenta de avaliação de conhecimentos sobre teorias da aprendizagem — *Revista Currículo e Docência* — **sem DOI**
+- `ribeiro_da_silva_junior_utilizacao_2021` (2021) Utilização de Imagens no Domínio da Frequência Espacial e Redes Neurais Artificiais para Determinação de Propriedades Ópticas de Tecidos — *Revista Brasileira de Física Médica*
+- `rodrigues_analysis_2021` (2021) Analysis of enamel/restoration interface submitted cariogenic challenge and fluoride release — *MICROSCOPY RESEARCH AND TECHNIQUE*
+- `rodrigues_dft_2021` (2021) DFT calculations to investigate silver ions as a virucide from SARS-CoV-2 — *JOURNAL OF MOLECULAR MODELING (ONLINE)*
+- `rodrigues_prediction_2021` (2021) Prediction of electronic and vibrational properties of poly (hexamethylene biguanide) hydrochloride: A combined theoretical and experimental investigation — *JOURNAL OF MOLECULAR STRUCTURE*
+- `saito_nogueira_biochemical_2021` (2021) Biochemical Profiles of In Vivo Oral Mucosa by Using a Portable Raman Spectroscopy System — *Optics*
+- `salinet_caaos_2021` (2021) CAAos platform: an integrated platform for analysis of cerebral hemodynamics data — *PHYSIOLOGICAL MEASUREMENT*
+- `salinet_electrocardiographic_2021` (2021) Electrocardiographic imaging for atrial fibrillation: a perspective from computer models and animal experiments to clinical value — *Frontiers in Physiology*
+- `saltareli_apatite_2021` (2021) Apatite-like forming ability, porosity, and bond strength of calcium aluminate cement with chitosan, zirconium oxide, and hydroxyapatite additives — *MICROSCOPY RESEARCH AND TECHNIQUE*
+- `santana_oxigenoterapia_2021` (2021) Oxigenoterapia Hiperbárica, uma alternativa possível no tratamento para a Covid-19 — *Avanços em Medicina*
+- `santana_tapequim_2021` (2021) TAPEQUIM: UMA TABELA PERIÓDICA QUE CONTRIBUI PARA O ENSINO DE RADIOISÓTOPOS NATURAIS NA PERSPECTIVA DE UMA APRENDIZAGEM SIGNIFICATIVA CRÍTICA — *REVISTA DEBATES EM ENSINO DE QUÍMICA*
+- `santos_colloidal_2021` (2021) Colloidal processing of thulium-yttria microceramics — *JOURNAL OF PHYSICS AND CHEMISTRY OF SOLIDS*
+- `santos_ensino_2021` (2021) O ensino por investigação e o processo da aprendizagem na perspectiva de Piaget E Vygotsky: um estudo sobre os fungos — *EXPERIÊNCIAS EM ENSINO DE CIÊNCIAS (UFRGS)* — **sem DOI**
+- `santos_favorecimento_2021` (2021) Favorecimento da vivência da metacognição a partir da resolução de problemas aritméticos por estudantes dos anos finais do ensino fundamental — *REVEMAT*
+- `santos_knee_2021` (2021) Knee radiosynovectomy with 153Sm-hydroxyapatite compared to 90Y-hydroxyapatite: initial results of a prospective trial — *ANNALS OF NUCLEAR MEDICINE*
+- `santos_microstructure_2021` (2021) Microstructure evolution of yttria compacts by powder technology — *Current Smart Materials*
+- `santos_mitochondrial_2021` (2021) Mitochondrial Dysfunction in Cardiorenal Syndrome 3: Renocardiac Effect of Vitamin C — *Cells*
+- `santos_segmentacao_2021` (2021) Segmentação e Quantificação Automática de Biofilme em Imagens de Prótese Dentária — *journal of health informatics* — **sem DOI**
+- `santos_towards_2021` (2021) Towards a new promising dosimetric material from formation of thulium-yttria nanoparticles with EPR response — *MATERIALS CHEMISTRY AND PHYSICS*
+- `sato_fourier_2021` (2021) Fourier transform infrared absorption (FTIR) on dry stratum corneum, corneocyte-lipid interfaces: experimental and vibrational spectroscopy calculations — *Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy*
+- `savi_study_2021` (2021) Study on attenuation of 3D printing commercial filaments on standard X-ray beams for dosimetry and tissue equivalence — *Radiation Physics and Chemistry*
+- `scardini_surface_2021` (2021) Surface profile of different heat-treated nickel-titanium files before and after root canal preparation — *BRAZILIAN DENTAL JOURNAL*
+- `seid_ahmed_laser_2021` (2021) Laser surface texturing and characterization of austenitic stainless steel for the improvement of its surface properties — *INTERNATIONAL JOURNAL OF ADVANCED MANUFACTURING TECHNOLOGY*
+- `sellera_methylene_2021` (2021) Methylene blue-mediated antimicrobial photodynamic therapy can be a novel non-antibiotic platform for bovine digital dermatitis — *Photodiagnosis and Photodynamic Therapy*
+- `sellera_systematic_2021` (2021) A systematic scoping review of ultraviolet C (UVC) light systems for SARS-CoV-2 inactivation — *Journal of Photochemistry and Photobiology*
+- `sierra_pedestal_2021` (2021) Pedestal waveguides based on GeO2-Bi2O3, GeO2-PbO, Ta2O5 and SiOxNy cores as platforms for optical amplifiers and nonlinear optics applications: Review of recent advances — *Journal of Luminescence*
+- `silva_association_2021` (2021) Association of Nd:YAG laser and calcium-phosphate desensitizing pastes on dentin permeability and tubule occlusion — *Journal of Applied Oral Science*
+- `silva_effect_2021` (2021) Effect of terbium and silver co-doping on the enhancement of photoluminescence in CaSO4 phosphors — *Optical Materials*
+- `silva_new_2021` (2021) New model for an epoxy-based brachytherapy source to be used in spinal cancer treatment — *Applied Radiation and Isotopes*
+- `silva_photobiomodulation_2021` (2021) Photobiomodulation therapy combined with radiotherapy in the treatment of triple-negative breast cancer-bearing mice — *Journal of Photochemistry and Photobiology B: Biology*
+- `silva_souza_effectiveness_2021` (2021) Effectiveness of the low-level laser therapy in the management of bisphosphonate-induced osteonecrosis of the jaws: A case report — *Research, Society and Development*
+- `silveira_structural_2021` (2021) Structural, morphological and vibrational properties of LaAlO3 nanocrystals produced by four different methods — *Ceramics International*
+- `sobral_control_2021` (2021) The control of pain due to dentin hypersensitivity in individuals with molar-incisor hypomineralisation: a protocol for a randomised controlled clinical trial — *BMJ Open*
+- `sobreira_ra_2021` (2021) Ra-226 and Ra-228 adsorption by chitosan bead for industrial scales treatment — *Journal of Radioanalytical and Nuclear Chemistry*
+- `souza_application_2021` (2021) Application of optically stimulated luminescence in tandem systems for diagnostic radiology — *Radiation Physics and Chemistry*
+- `souza_efficient_2021` (2021) Efficient photodynamic inactivation of Leishmania parasites mediated by lipophilic water-soluble Zn(II) porphyrin ZnTnHex-2-PyP4+ — *BIOCHIMICA ET BIOPHYSICA ACTA-GENERAL SUBJECTS*
+- `souza_evaluation_2021` (2021) Evaluation of MgB4O7:Ce,Li and Ce-doped 80MgB2O4-20MgB4O7 as alternative OSL materials for use in quality assurance of 6MV photon beams — *Radiation Physics and Chemistry*
+- `toledo_implication_2021` (2021) Implication of the New <scp>AJCC pT</scp> Classification of <scp>SCC</scp> of the Lip Comparing With Other Oral Subsites — *The Laryngoscope*
+- `torso_charcoal_2021` (2021) Charcoal-based dentifrices: Effect on color stability and surface wear of resin composites — *Journal of Esthetic and Restorative Dentistry*
+- `valandro_antimicrobial_2021` (2021) Antimicrobial photodynamic therapy can be an effective adjuvant for surgical wound healing in cattle — *Photodiagnosis and Photodynamic Therapy*
+- `vera_nunez_water_2021` (2021) Water-soluble lectin (WSMoL) from Moringa oleifera seeds treatment recovers glycemic levels and improves left ventricular ejection fraction on Type-2 Diabetes mice model — *ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS*
+- `vieira_light_2021` (2021) Light transmission and bond strength of glass fiber posts submitted to different surface treatments — *JOURNAL OF PROSTHETIC DENTISTRY*
+- `vieira_teaching_2021` (2021) Teaching surgery during COVID¿19: The experience of Albert Einstein Medical School, Brazil — *MEDICAL EDUCATION*
+- `villani_study_2021` (2021) Study on electronic equilibrium of 137</sup> Cs gamma radiation for 3D printed phantoms using OSL dosimetry — *Journal of Physics: Conference Series*
+- `zanini_morphological_2021` (2021) Morphological, optical, and elemental analysis of dental enamel after debonding laminate veneer with Er,Cr:YSGG laser: A pilot study — *MICROSCOPY RESEARCH AND TECHNIQUE*
+- `alibhai_quantification_2020` (2020) QUANTIFICATION OF RETINAL CAPILLARY NONPERFUSION IN DIABETICS USING WIDE-FIELD OPTICAL COHERENCE TOMOGRAPHY ANGIOGRAPHY — *RETINA-THE JOURNAL OF RETINAL AND VITREOUS DISEASES*
+- `almeida_unsupervised_2020` (2020) Unsupervised Classification of Atrial Electrograms for Electroanatomic Mapping of Human Persistent Atrial Fibrillation — *IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING*
+- `alves_g_a_spatial_2020` (2020) Spatial energy transfer with observation of bimolecular singlet oxygen emission using quantum dots as donors and zinc-phthalocyanine as acceptors — *LUMINESCENCE*
+- `amaral_osteoporosis_2020` (2020) Osteoporosis evaluation through full developed speckle imaging — *Journal of Biophotonics*
+- `angelocci_po_2020` (2020) PO-1384: Assessing Ir-192 as an alternative to I-125 in ophthalmic treatment — *Radiotherapy and Oncology*
+- `araujo_microstructure_2020` (2020) A microstructure study of colloidal gold nanoparticles by X-ray diffraction line profile analysis — *JOURNAL OF PHYSICS AND CHEMISTRY OF SOLIDS*
+- `araujo_suitability_2020` (2020) Suitability of a set compost of 2D and a 3D array detectors for the commissioning of dynamic wedge filters — *Radiation Physics and Chemistry*
+- `assemany_evaluation_2020` (2020) Evaluation of 3D printing filaments for construction of a pediatric phantom for dosimetry in CBCT — *Radiation Physics and Chemistry*
+- `barbosa_analysis_2020` (2020) Analysis of low-level laser transmission at wavelengths 660, 830 and 904 nm in biological tissue samples — *Journal of Photochemistry and Photobiology B: Biology*
+- `barreto_gray_2020` (2020) Gray water footprint assessment for pesticide mixtures applied to a sugarcane crop in Brazil: A comparison between two models — *JOURNAL OF CLEANER PRODUCTION*
+- `batista_gold_2020` (2020) Gold nanochannels oxidation by confined water — *RSC Advances*
+- `bencherif_investigating_2020` (2020) Investigating the Long-Range Transport of Aerosol Plumes Following the Amazon Fires (August 2019): A Multi-Instrumental Approach from Ground-Based and Satellite Observations — *Remote Sensing*
+- `bernal_rodriguez_photobiomodulation_2020` (2020) Photobiomodulation Therapy to Treat Facial Paralysis of 8 Years: Case Report — *Photobiomodulation, Photomedicine, and Laser Surgery*
+- `bertolete_mechanical_2020` (2020) Mechanical characterisation and machining evaluation of ceramic cutting tools functionally graded with six layers — *Ceramics International*
+- `carvalho_can_2020` (2020) Can ethanol affect the cell structure - a dynamic molecular and Raman spectroscopy study — *Photodiagnosis and Photodynamic Therapy*
+- `carvalho_challenges_2020` (2020) Challenges for clinical implementation of Raman and FT-IR spectroscopy as a diagnostic tool — *Photodiagnosis and Photodynamic Therapy*
+- `carvalho_comportamento_2020` (2020) Comportamento in vitro dos fungos do gênero candida diante dos radiotraçadores emissores gama utilizados na cintilografia pulmonar inalação/perfusão e seu perfil de sensibilidade frente a anfotericina b após a irradiação — *https://doi.org/10.34119/bjhrv3n2-014*
+- `carvalho_proposta_2020` (2020) Proposta de Atualização da Versão Brasileira do Protocolo para Controle de Qualidade em Radioterapia TECDOC 1151 — *Revista Brasileira de Física Médica*
+- `castro_monitoring_2020` (2020) Monitoring the Progress and Healing Status of Burn Wounds Using Infrared Spectroscopy — *Applied Spectroscopy*
+- `castro_protein_2020` (2020) The Protein Corona Conundrum: Exploring the Advantages and 2 Drawbacks of its Presence around Amphiphilic Nanoparticles — *BIOCONJUGATE CHEMISTRY*
+- `corazza_enhancing_2020` (2020) Enhancing the Furosemide Permeability by Papain Minitablets Through a Triple Co-culture In Vitro Intestinal Cell Model — *AAPS PHARMSCITECH*
+- `corazza_papain_2020` (2020) Papain-cyclodextrin complexes as an intestinal permeation enhancer: Permeability and in vitro safety evaluation — *JOURNAL OF DRUG DELIVERY SCIENCE AND TECHNOLOGY*
+- `coutinho_camillo_invasion_2020` (2020) Invasión ósea del carcinoma de células escamosas de la cavidad oral, análisis clínico-patológico de 62 casos — *REVISTA ESTOMATOLÓGICA HEREDIANA*
+- `cunha_vivo_2020` (2020) In vivo and in vitro radiotherapy increased dentin enzymatic activity — *JOURNAL OF DENTISTRY*
+- `da_silva_double_2020` (2020) Double line waveguide amplifiers written by femtosecond laser irradiation in rare-earth doped germanate glasses — *Journal of Luminescence*
+- `da_silva_exploring_2020` (2020) Exploring the Twilight Zone: A Multi-Sensor Approach — *EPJ WEB OF CONFERENCES*
+- `dal_pra_nutritional_2020` (2020) Nutritional Evaluation of Brachiaria brizantha cv. marandu using Convolutional Neural Networks — *INTELIGENCIA ARTIFICIAL*
+- `das_chagas_e_silva_de_carvalho_oral_2020` (2020) Oral lesions of herpes zoster in COVID-19 patients or truly associated to the disease? — *ORAL DISEASES*
+- `de_alexandria_santos_approach_2020` (2020) An Approach for the Prevention, Diagnosis, and Treatment of Jaw Osteonecrosis: Report of a Case Associated with Zoledronic Acid — *THE AMERICAN JOURNAL OF CASE REPORTS*
+- `de_arruda_moreira_comparison_2020` (2020) Comparison Among the Atmospheric Boundary Layer Height Estimated From Three Different Tracers — *EPJ WEB OF CONFERENCES*
+- `de_carvalho_evaluation_2020` (2020) Evaluation of genotoxic potential of peptides used in nuclear medicine (PSMA -617 and -11, and Ubiquicidine 29-41) using a flow-cytometric, semi-automated analysis of micronuclei frequency in cell cultures — *TOXICOLOGY REPORTS*
+- `de_carvalho_optical_2020` (2020) Optical techniques for fast screening - towards prevention of the coronavirus COVID-19 outbreak — *Photodiagnosis and Photodynamic Therapy*
+- `de_jesus_guirro_measurement_2020` (2020) Measurement of Physical Parameters and Development of a Light Emitting Diodes Device for Therapeutic Use — *JOURNAL OF MEDICAL SYSTEMS*
+- `de_leo_engineering_2020` (2020) Engineering of galectin-3 for glycan-binding optical imaging — *Biochemical and Biophysical Research Communications*
+- `de_oliveira_goncalves_uptake_2020` (2020) Uptake of silver, gold, and hybrids silver-iron, gold-iron and silver-gold aminolevulinic acid nanoparticles by MCF-7 breast cancer cells — *Photodiagnosis and Photodynamic Therapy*
+- `de_pretto_nondestructive_2020` (2020) Nondestructive evaluation of fused filament fabrication 3D printed structures using optical coherence tomography — *RAPID PROTOTYPING JOURNAL*
+- `de_souza_fernandes_duarte_evaluation_2020` (2020) Evaluation of atmospheric aerosols in the metropolitan area of São Paulo simulated by the regional EURAD-IM model on high-resolution — *Atmospheric Pollution Research*
+- `dedivitis_association_2020` (2020) Association between Thyroiditis and Multifocality in Papillary Thyroid Carcinoma — *International Archives of Otorhinolaryngology*
+- `dedivitis_neck_2020` (2020) Neck recurrence in papillary thyroid carcinoma — *REVISTA DO COLÉGIO BRASILEIRO DE CIRURGIÕES (ONLINE)*
+- `dos_anjos_antimicrobial_2020` (2020) Antimicrobial blue light and photodynamic therapy inhibit clinically relevant β-lactamases with extended-spectrum (ESBL) and carbapenemase activity — *Photodiagnosis and Photodynamic Therapy*
+- `dos_anjos_inactivation_2020` (2020) Inactivation of milk-borne pathogens by blue light exposure — *JOURNAL OF DAIRY SCIENCE*
+- `ferreira_yb_2020` (2020) Yb:KGW self-Raman laser with 89-cm−1 Stokes shift and more than 32% diode-to-Stokes optical efficiency — *Optics & Laser Technology*
+- `fortunato_dos_santos_oliveira_aerosol_2020` (2020) Aerosol properties in the atmosphere of Natal/Brazil measured by an AERONET Sun-photometer — *Environmental Science and Pollution Research*
+- `franco_influence_2020` (2020) Influence of time between surgery and postoperative radiation therapy and total treatment time in locoregional control of patients with head and neck cancer: a single center experience — *Clinics*
+- `galloway_head_2020` (2020) Head and neck surgery recommendations during the COVID-19 pandemic — *LANCET ONCOLOGY*
+- `goncalves_overview_2020` (2020) Overview of care for head and neck cancer cases in Brazilian Cancer Centers during the COVID-19 pandemic — *Archives of Head and Neck Surgery*
+- `guerra_structural_2020` (2020) Structural, electrical and optical properties of (K,Ba)(Nb,Ni)O3-δ electroceramics: Oxygen vacancy and grain size effects — *Ceramics International*
+- `guimaraes_historical_2020` (2020) Historical inputs of polycyclicic aromatic hydrocarbons in the preserved tropical estuary of the Itapicuru River, Bahia, Brazil — *Marine Pollution Bulletin*
+- `joao_souza_toothpaste_2020` (2020) Toothpaste factors related to dentine tubule occlusion and dentine protection against erosion and abrasion — *Clinical Oral Investigations*
+- `junho_overview_2020` (2020) An overview of calcium/calmodulin-dependent protein kinase role in cardiorenal syndrome. — *Frontiers in Physiology*
+- `junho_time_2020` (2020) Time Course of Gene Expression Profile in Renal Ischemia and Reperfusion Injury in Mice — *TRANSPLANTATION PROCEEDINGS*
+- `junot_tl_2020` (2020) TL/OSL signal of CaSO4:Eu,Ag samples produced by variations of the slow evaporation route — *Radiation Measurements*
+- `kitakawa_d_herpes_2020` (2020) Herpes simplex lesion in the lip semimucosa in a COVID-19 patient — *European Review for Medical and Pharmacological Sciences*
+- `kowalski_effect_2020` (2020) Effect of the COVID-19 Pandemic on the Activity of Physicians Working in the Areas of Head and Neck Surgery and Otorhinolaryngology — *International Archives of Otorhinolaryngology*
+- `la_selva_treatment_2020` (2020) Treatment of herpes labialis by photodynamic therapy: Study protocol clinical trial (SPIRIT compliant) — *MEDICINE*
+- `la_selva_treatment_2020a` (2020) Treatment of herpes labialis by photodynamic therapy — *MEDICINE*
+- `landulfo_lalinet_2020` (2020) Lalinet Network Status — *EPJ WEB OF CONFERENCES*
+- `leao_influence_2020` (2020) Influence of Nonmodified Layered Double Hydroxide (LDH) Metal Constituents in PMMA/LDH Nanocomposites — *Journal of Inorganic and Organometallic Polymers and Materials*
+- `li_standardizing_2020` (2020) Standardizing Single-Frame Phase Singularity Identification Algorithms and Parameters in Phase Mapping During Human Atrial Fibrillation — *Frontiers in Physiology*
+- `lopes_enamel_2020` (2020) Enamel surface loss after erosive and abrasive cycling with different periods of immersion in human saliva — *ARCHIVES OF ORAL BIOLOGY*
+- `lopes_estrategias_2020` (2020) Estratégias de promoção da aprendizagem significativa sobre funções matemáticas — *CAMINHOS DA EDUCAÇÃO MATEMÁTICA EM REVISTA (ON-LINE)* — **sem DOI**
+- `lopes_lingual_2020` (2020) The lingual enamel morphology and bracket shear bond strength influenced by Nd:YAG laser and aluminum oxide sandblasting preconditioning Clinical Oral Investigation — *Clinical Oral Investigations*
+- `lopes_surface_2020` (2020) Surface Evaluation of Enamel Etched by Er,Cr:YSGG Laser for Orthodontic Purpose — *THE JOURNAL OF CONTEMPORARY DENTAL PRACTICE*
+- `loriato_brazilian_2020` (2020) Brazilian Coastal Region Modeling with WRF/SMOKE/CMAQ and Atmospheric Parameter Measurement Validation with Radio Probing, Sodar and Lidar — *International Journal of Research in Engineering and Science (IJRES)* — **sem DOI**
+- `marques_characterization_2020` (2020) Characterization of atrial arrhythmias in body surface potential mapping: A computational study — *COMPUTERS IN BIOLOGY AND MEDICINE*
+- `marques_robust_2020` (2020) A robust wavelet-based approach for dominant frequency analysis of atrial fibrillation in body surface signals — *Physiological Measurement*
+- `martins_patient_2020` (2020) Patient perception of swallowing after thyroidectomy in the absence of laryngeal nerve injury — *ORL-Journal for Oto-Rhino-Laryngology Head and Neck Surgery*
+- `matos_cancer_2020` (2020) Cancer-associated fibroblast regulation by microRNAs promotes invasion of oral squamous cell carcinoma — *Oral Oncology*
+- `messias_valiacao_2020` (2020) valiação da associação do biosilicato® ao laser de Nd:YAG para o tratamento de cárie — *Brazilian Journal of Health Review*
+- `moreira_study_2020` (2020) Study of the planetary boundary layer height in an urban environment using a combination of microwave radiometer and ceilometer — *ATMOSPHERIC RESEARCH*
+- `neves_feasibility_2020` (2020) Feasibility Of Prediction Of Radiation-Related Caries In Head-Neck Cancer Patients Using Machine Learning And Radiomics Features. — *International Journal of Radiation Oncology*Biology*Physics*
+- `oliveira_archeometric_2020` (2020) Archeometric study of pottery shards from Conjunto Vilas and São João, Amazon — *Radiation Physics and Chemistry*
+- `oliveira_assessing_2020` (2020) Assessing Urban effects on the climate of metropolitan regions of Brazil - Preliminary results of MCity Projetc — *Exploratory Environmental* — **sem DOI**
+- `oliveira_cerium_2020` (2020) Cerium-doped lithium tetraborate for thermoluminescent dosimetry — *Radiation Physics and Chemistry*
+- `oliveira_geochemical_2020` (2020) Geochemical background indicators within a tropical estuarine system influenced by a port-industrial complex — *Marine Pollution Bulletin*
+- `palacios_long_2020` (2020) Long Term Analysis of Optical and Radiative Properties of Aerosols in the Amazon Basin — *Aerosol and Air Quality Research*
+- `pardo_diaz_characterization_2020` (2020) Characterization and Comparative Analysis of Voids in Class II Composite Resin Restorations by Optical Coherence Tomography — *OPERATIVE DENTISTRY*
+- `pelin_self_2020` (2020) Self-assembled gold nanoparticles and amphiphile peptides: a colorimetric probe for copper( <scp>ii</scp> ) ion detection — *DALTON TRANSACTIONS*
+- `pereira_evaluating_2020` (2020) Evaluating biochemical differences in thyroglobulin from normal and Goitertissues by Infrared spectral imaging — *ANALYST*
+- `pereira_safety_2020` (2020) Safety and Clinical Impact of a Single Red Light Irradiation on Breast Tumor-Bearing Mice — *Photochemistry and Photobiology*
+- `petrarolha_lymph_2020` (2020) Lymph node density as a predictive factor for worse outcomes in laryngeal cancer — *EUROPEAN ARCHIVES OF OTO-RHINO-LARYNGOLOGY*
+- `pieretti_h2s_2020` (2020) H2S- and NO-releasing gasotransmitter platform: A crosstalk signaling pathway in the treatment of acute kidney injury — *PHARMACOLOGICAL RESEARCH*
+- `pinheiro_depth_2020` (2020) Depth of invasion applied to oropharynx does not improve prognosis discrimination according to AJCC stage groups for oral cancer — *Oral Oncology*
+- `queija_cervicofacial_2020` (2020) Cervicofacial and Pharyngolaryngeal Lymphedema and Deglutition After Head and Neck Cancer Treatment — *DYSPHAGIA*
+- `rodrigues_chemical_2020` (2020) Chemical features of the photosensitizers new methylene blue N and S137 influence their subcellular localization and photoinactivation efficiency in Candida albicans — *Journal of Photochemistry and Photobiology B: Biology*
+- `rodriguez_de_yurre_avaliacao_2020` (2020) Avaliação dos Efeitos Cardíacos de Lectina Solúvel em Água (WSMoL) de Sementes de Moringa Oleifera — *Arquivos Brasileiros de Cardiologia*
+- `ruybal_methylmercury_2020` (2020) Methylmercury Poisoning Induces Cardiac Electrical Remodeling and Increases Arrhythmia Susceptibility and Mortality — *International Journal of Molecular Sciences*
+- `sabino_global_2020` (2020) Global priority multidrug-resistant pathogens do not resist photodynamic therapy — *Journal of Photochemistry and Photobiology B: Biology*
+- `sabino_light_2020` (2020) Light-based technologies for management of COVID-19 pandemic crisis — *Journal of Photochemistry and Photobiology B: Biology*
+- `sabino_uv_2020` (2020) UV-C (254-nm) lethal doses for SARS-CoV-2 — *Photodiagnosis and Photodynamic Therapy*
+- `sahyli_ortega_pijeira_synthesis_2020` (2020) Synthesis and Evaluation of [18F]FEtLos and [18F]AMBF3Los as Novel 18F-Labelled Losartan Derivatives for Molecular Imaging of Angiotensin II Type 1 Receptors — *MOLECULES*
+- `saita_measurement_2020` (2020) Measurement of Differential Pressure by Optical Interferometry with Multimode Tunable Lasers — *Journal of Engineering Science and Technology Review*
+- `santos_dispersion_2020` (2020) Dispersion of thulium-yttria nanoparticles to build up smart structures — *Materials Today Communications*
+- `santos_evidencias_2020` (2020) Evidências de aspectos do pensamento crítico de alunos do ensino médio em abordagem didática sobre Albert Einstein — *CAMINHOS DA EDUCAÇÃO MATEMÁTICA EM REVISTA (ON-LINE)* — **sem DOI**
+- `santos_glance_2020` (2020) A glance on rare earth oxides: importance, reserves, demand, applications, critical uncertainties, global economy, and zeta potential characterization — *Current Smart Materials*
+- `santos_review_2020` (2020) A Review of Analytical Methods for Calcium Salts and Cholecalciferol in Dietary Supplements — *CRITICAL REVIEWS IN ANALYTICAL CHEMISTRY*
+- `schleier_nod_2020` (2020) NOD Mice Recapitulate the Cardiac Disturbances Observed in Type 1 Diabetes — *Journal of Cardiovascular Translational Research*
+- `silva_characterization_2020` (2020) Characterization of the oxidative stress in renal ischemia/reperfusion-induced cardiorenal syndrome type 3 — *Biomed Research International*
+- `silva_development_2020` (2020) Development of a shielding device for radiotherapy of breast cancer-bearing mice — *Brazilian Journal of Radiation Sciences*
+- `silva_low_2020` (2020) Low cost electron irradiator using 90sr+90y sources — *Radiation Physics and Chemistry*
+- `silva_structural_2020` (2020) Structural, optical and dosimetric characterization of CaSO4:Tb, CaSO4:Tb, Ag and CaSO4:Tb,Ag(NP) — *Journal of Luminescence*
+- `siqueira_study_2020` (2020) Study of genotoxic and cytotoxic effects after acute and chronic exposures to industrial sewage sludge on Biomphalaria glabrata hemocytes — *CHEMOSPHERE*
+- `soares_photodynamic_2020` (2020) Photodynamic activity on biofilm in endotracheal tubes of patients admitted to an intensive care unit — *Photochemistry and Photobiology*
+- `sobreira_aspectos_2020` (2020) ASPECTOS ESTRUTURAIS DE ESFERAS DE QUITOSANA/PVA RETICULADAS COM GLUTARALDEÍDO SUBMETIDAS A DIFERENTES TRATAMENTOS TÉRMICOS — *QUIMICA NOVA*
+- `souza_new_2020` (2020) New core configuration for the fabrication of 125I radioactive sources for cancer treatment — *Applied Radiation and Isotopes*
+- `teitelbaum_antimicrobial_2020` (2020) Antimicrobial Photodynamic Therapy Used as First Choice to Treat Herpes Zoster Virus Infection in Younger Patient: A Case Report — *Photobiomodulation, Photomedicine, and Laser Surgery*
+- `toledo_methylene_2020` (2020) Methylene blue-covered superparamagnetic iron oxide nanoparticles combined with red light as a novel platform to fight non-local bacterial infections: A proof of concept study against Escherichia coli — *Journal of Photochemistry and Photobiology B: Biology*
+- `tortamano_antimicrobial_2020` (2020) Antimicrobial photodynamic therapy mediated by methylene blue in surfactant vehicle on periodontopathogens — *Photodiagnosis and Photodynamic Therapy*
+- `vilela_mechanical_2020` (2020) Mechanical properties and surface roughness of polymer-based materials containing DCPD particles — *BRAZILIAN ORAL RESEARCH*
+- `villani_dosimetric_2020` (2020) Dosimetric characterization of 3D printed phantoms at different infill percentages for diagnostic X-ray energy range — *Radiation Physics and Chemistry*
+- `wetter_diode_2020` (2020) Diode-side-pumped, intracavity Nd:YLF/KGW/LBO Raman laser at 573 nm for retinal photocoagulation — *OPTICS LETTERS*
+- `xiao_development_2020` (2020) Development of ZJU High-Spectral-Resolution Lidar for Aerosol and Cloud: Extinction Retrieval — *Remote Sensing*
+- `yurre_type_2020` (2020) Type 2 diabetes mellitus alters cardiac mitochondrial content and function in a non-obese mice model — *ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS (ONLINE)*
+
+### Artigos existentes alterados
+
+- `almeida-santos_cd39_2026`: volume preenchido
+- `andrade_one_2025`: volume preenchido
+- `arata_found_optical_2023`: +pessoa anderson-zanardi-de-freitas
+- `araujo_evaluation_2024`: +pessoa divanizia-do-nascimento-souza
+- `baptista_proposal_2021`: +pessoa carlos-alberto-zeituni, doi preenchido
+- `barbezan_radioactive_2024`: +pessoa daniel-perez-vieira
+- `borbon_biomasp_2025`: volume preenchido
+- `bravo_prognostic_2024`: +pessoa leandro-luongo-de-matos
+- `carlesse_evaluation_2023`: doi preenchido
+- `chaves_challenges_2025`: volume preenchido
+- `correianeto_machine_2026`: volume preenchido
+- `de_castro_endoscopic_2023`: doi preenchido
+- `de_paula_thyroid_2023`: doi preenchido
+- `el_achkar_treatment_2023`: +pessoa luis-felipe-das-chagas-e-silva-de-carvalho, doi preenchido
+- `ferreira_ftir_2025`: +pessoa luis-felipe-das-chagas-e-silva-de-carvalho
+- `garcia_influence_2024`: volume preenchido, paginas preenchido
+- `geraldes_calculation_2024`: volume preenchido, paginas preenchido
+- `kruschewsky_congenital_2023`: volume preenchido, paginas preenchido
+- `machado_development_2024`: paginas preenchido
+- `maciel_angelika_2025`: +pessoa divanizia-do-nascimento-souza, volume preenchido, paginas preenchido
+- `maia_role_2025`: volume preenchido
+- `matos_latin_2024`: volume preenchido
+- `matos_training_2023`: doi preenchido
+- `medeiros_analysis_2026`: volume preenchido, paginas preenchido
+- `melo_de_lima_morais_low-level_2024`: paginas preenchido
+- `n_geraldes_evaluation_2025`: +pessoa maria-elisa-chuery-martins-rostelato, volume preenchido, paginas preenchido
+- `nascimento_performance_2025`: +pessoa orlando-rodrigues-junior
+- `neto_integrating_2025`: +pessoa luis-felipe-das-chagas-e-silva-de-carvalho
+- `noauthor_reducing_2023`: +pessoa leandro-luongo-de-matos, doi preenchido
+- `novaes_methylene_2023`: +pessoa martha-simoes-ribeiro
+- `pieretti_triboelectrochemical_2025`: +pessoa martha-simoes-ribeiro
+- `pozzo_metastatic_2023`: paginas preenchido
+- `ribeiro_clinical_2024`: +pessoa luis-felipe-das-chagas-e-silva-de-carvalho, paginas preenchido
+- `rodrigues_investigation_2024`: +pessoa maria-elisa-chuery-martins-rostelato, +pessoa carlos-alberto-zeituni, +pessoa orlando-rodrigues-junior
+- `saito_nogueira_bimolecular_2024`: paginas preenchido
+- `salas_linfoma_2024`: +pessoa leandro-luongo-de-matos, paginas preenchido
+- `sampaio_portable_2026`: +pessoa adamo-ferreira-gomes-do-monte
+- `santos_building_2023`: +pessoa orlando-rodrigues-junior
+- `santos_effect_2024`: +pessoa orlando-rodrigues-junior
+- `santos_formation_2026`: +pessoa orlando-rodrigues-junior
+- `santos_processing_2025`: +pessoa orlando-rodrigues-junior
+- `savi_step-by-step_2024`: +pessoa orlando-rodrigues-junior
+- `sc_alumina_2024`: +pessoa orlando-rodrigues-junior
+- `siles_integrated_2025`: volume preenchido
+- `silva_noninvasive_2023`: +pessoa maria-elisa-chuery-martins-rostelato, paginas preenchido
+- `silva_photodynamic_2025`: volume preenchido, paginas preenchido
+- `silva_thermoluminescence_2025`: +pessoa divanizia-do-nascimento-souza
+- `t_evaluation_2024`: +pessoa denise-maria-zezell
+- `tavares_attenuation_2024`: +pessoa orlando-rodrigues-junior
+- `villani_computed_2024`: +pessoa orlando-rodrigues-junior
+
+### Novos sem DOI (conferir se não são duplicatas com título diferente)
+
+- `oliveira_controle_2026` (2026) Controle de Qualidade de um Equipamento Ultrassonográfico em um Hospital Universitário
+- `freire_sequencia_2023` (2023) Sequência de ensino investigativa sobre dilatação térmica: uma proposta de ensino sobre física térmica
+- `santos_proposta_2023` (2023) Proposta de uma UEPS para introdução à óptica geométrica na Educação Básica
+- `santos_ensino_2021` (2021) O ensino por investigação e o processo da aprendizagem na perspectiva de Piaget E Vygotsky: um estudo sobre os fungos
+- `ribeiro_analise_2021` (2021) Análise de mapa conceitual como ferramenta de avaliação de conhecimentos sobre teorias da aprendizagem
+- `santos_evidencias_2020` (2020) Evidências de aspectos do pensamento crítico de alunos do ensino médio em abordagem didática sobre Albert Einstein
+- `lopes_estrategias_2020` (2020) Estratégias de promoção da aprendizagem significativa sobre funções matemáticas
+- `primo_dose_2021` (2021) Dose-rate constant and air-kerma strength evaluation of a new 125I brachytherapy source using Monte Carlo
+- `abreu_anisotropy_2021` (2021) Anisotropy function of a new 192-Ir brachytherapy source
+- `baptista_proposal_2021` (2021) A PROPOSAL OF PROCESS VALIDATION IN THE IMPLEMENTATION OF GOOD MANUFACTURING PRACTICES IN BRACHYTHERAPY SOURCES PRODUCTION
+- `bezerra_analysis_2021` (2021) Analysis of patients with prostate cancer care at a reference hospital in the state of Tocantins, suitable for brachytherapy
+- `de_souza_analysis_2026` (2026) Analysis of the influence of geometric parametersof laser-produced texturing on carbide tools inTi6Al4V turning
+- `silva_porous_2025` (2025) Porous Si3N4 Ceramics Prepared by Gelcasting Route and Pressureless Sintering at Different Temperatures
+- `loriato_brazilian_2020` (2020) Brazilian Coastal Region Modeling with WRF/SMOKE/CMAQ and Atmospheric Parameter Measurement Validation with Radio Probing, Sodar and Lidar
+- `oliveira_assessing_2020` (2020) Assessing Urban effects on the climate of metropolitan regions of Brazil - Preliminary results of MCity Projetc
+- `azevedo_aceitabilidade_2025` (2025) Aceitabilidade do tratamento para hipersensibilidfade
+- `goncalves_al_espectroscopia_2026` (2026) ESPECTROSCOPIA FTIR APLICADA À CARACTERIZAÇÃO DE FORMULAÇÕES REGENERATIVAS CONTENDO PDRN
+- `coelho_biochemical_2022` (2022) Biochemical characterization of saliva of smoking and non-smoking patients by using Fourier-transform infrared spectroscopy
+- `junior_candido_e_ameloblastoma_2021` (2021) Ameloblastoma multicístico reabilitado com prótese tridimensional
+- `dahan_importancia_2021` (2021) A IMPORTÂNCIA DO RECONHECIMENTO PRECOCE DO PÊNFIGO VULGAR E TRATAMENTO ADEQUADO: RELATO DE CASO
+- `raele_laser_2026` (2026) Laser decontamination of radioactive surfaces: scoping review
+- `costa_radioisotopos_2025` (2025) Radioisótopos Naturais em Solos dos Estados da Bahia, Pernambuco e São Paulo, Brasil
+- `silva_plantas_2025` (2025) Plantas medicinais brasileiras com potencial radioprotetor para o tratamento de radiodermatites
+- `costa_radioisotopos_2024` (2024) Radioisótopos Naturais em Solos dos Estados da Bahia, Pernambuco e São Paulo, Brasil
+- `santos_segmentacao_2021` (2021) Segmentação e Quantificação Automática de Biofilme em Imagens de Prótese Dentária
+- `nihr_global_health_research_unit_on_global_surgery_30_2026` (2026) 30-day postoperative mortality and the effects of hospital preparedness during the COVID-19 pandemic: a pooled analysis of prospective international cohort studies
+- `kamarajah_evaluating_2026` (2026) Evaluating quality of colorectal cancer surgery across elective and emergency health systems: secondary analysis of prospective cohort studies in 95 countries
+- `nihr_global_health_research_unit_on_global_surgery_global_2025` (2025) Global Variation in Out-of-Pocket Payments for Cancer Surgery
+- `kowalski_enhancing_2024` (2024) Enhancing head and neck oncology training and research across academic levels in Brazil
+- `covidsurg_collaborative_sars_2022` (2022) SARS-CoV-2 infection and venous thromboembolism after surgery: an international prospective cohort study
+- `collaborative_mortality_2022` (2022) Mortality
+- `covidsurg_collaborative_early_2022` (2022) Early outcomes and complications following cardiac surgery in patients testing positive for coronavirus disease 2019: An international cohort study
+- `collaborative_outcomes_2022` (2022) Outcomes of gynecologic cancer surgery during the COVID-19 pandemic: an international, multicenter, prospective CovidSurg-Gynecologic Oncology Cancer study
+- `covidsurg_collaborative_sars_2021` (2021) SARS-CoV-2 vaccination modelling for safe surgery to save lives: data from an international prospective cohort study
+- `covidsurg_collaborative_timing_2021` (2021) Timing of surgery following SARS-CoV-2 infection: an international prospective cohort study
+- `covidsurg_collaborative_machine_2021` (2021) Machine learning risk prediction of mortality for patients undergoing surgery with perioperative SARS-CoV-2: the COVIDSurg mortality score
+- `guerle_doenca_2021` (2021) Doença Renal Crônica: a voz dos familiares quanto ao atendimento recebido
+- `covidsurg_collaborative_effect_2021` (2021) Effect of COVID-19 pandemic lockdowns on planned cancer surgery for 15 tumour types in 61 countries: an international, prospective, cohort study
+- `covidsurg_collaborative_effects_2021` (2021) Effects of pre-operative isolation on postoperative pulmonary complications after elective surgery: an international prospective cohort study
+- `collaborative_impact_2021` (2021) Impact of Bacillus Calmette-Guérin (BCG) vaccination on postoperative mortality in patients with perioperative SARS-CoV-2 infection
+
+### Periódicos que não estavam em periodicos.json (nome como veio do Lattes)
+
+- AAPS PHARMSCITECH (1)
+- ACTA RADIOLOGICA (1)
+- AMERICAN JOURNAL OF OBSTETRICS AND GYNECOLOGY (1)
+- ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS (2)
+- ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS (ONLINE) (1)
+- ANALYST (2)
+- ANALYTICAL AND BIOANALYTICAL CHEMISTRY (1)
+- ANNALS OF BIOMEDICAL ENGINEERING (1)
+- ANNALS OF NUCLEAR MEDICINE (1)
+- APPLIED CATALYSIS A-GENERAL (1)
+- ARCHIVES OF ORAL BIOLOGY (1)
+- ARTEFACTUM (RIO DE JANEIRO) (1)
+- ATMOSPHERIC RESEARCH (2)
+- Advanced Materials Technologies (1)
+- Aerosol Science and Technology (1)
+- Aesthetic Orofacial Science (1)
+- Anaesthesia (3)
+- Analytical Science Advances (1)
+- Annals of Translational Medicine (1)
+- Avanços em Medicina (1)
+- BIOCHIMICA ET BIOPHYSICA ACTA-GENERAL SUBJECTS (1)
+- BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR AND CELL BIOLOGY OF LIPIDS (1)
+- BIOCONJUGATE CHEMISTRY (1)
+- BIOLOGICAL TRACE ELEMENT RESEARCH (1)
+- BIOORGANIC CHEMISTRY (1)
+- BMJ Open (1)
+- BRAZILIAN DENTAL JOURNAL (1)
+- BRAZILIAN DENTAL SCIENCE (4)
+- BRAZILIAN JOURNAL OF MEDICAL AND BIOLOGICAL RESEARCH (1)
+- BRAZILIAN ORAL RESEARCH (2)
+- Biomed Research International (1)
+- Biomedical Signal Processing and Control (1)
+- Bjs Open (2)
+- Boletim Informativo / Sociedade Brasileira de Ciência do Solo, Núcleo Regional Nordeste (1)
+- Boletim Informativo NRNE/SBCS (1)
+- Brazilian Journal of Development (2)
+- Brazilian Journal of Health Review (1)
+- Brazilian Oral Research (1)
+- CAMINHOS DA EDUCAÇÃO MATEMÁTICA EM REVISTA (ON-LINE) (2)
+- CANCER BIOMARKERS (1)
+- CANCER CAUSES & CONTROL (1)
+- CESKA A SLOVENSKA NEUROLOGIE A NEUROCHIRURGIE (1)
+- CHEMICAL ENGINEERING RESEARCH & DESIGN (1)
+- CHEMISTRY AND ECOLOGY (1)
+- CHEMOSPHERE (1)
+- CLINICAL SCIENCE (1)
+- COLLOIDS AND SURFACES B-BIOINTERFACES (1)
+- COMPUTERS IN BIOLOGY AND MEDICINE (2)
+- CRITICAL REVIEWS IN ANALYTICAL CHEMISTRY (1)
+- CURRENT MOLECULAR MEDICINE (1)
+- Cancer Treatment And Research Communications (1)
+- Cell Death & Disease (1)
+- Computational and Theoretical Chemistry (2)
+- Computer Methods In Biomechanics And Biomedical Engineering-Imaging And Visualization (1)
+- Cureus (1)
+- Current Applied Materials (1)
+- Current Opinion in Otolaryngology & Head and Neck Surgery (1)
+- Current Smart Materials (2)
+- DALTON TRANSACTIONS (1)
+- DENTAL TRAUMATOLOGY (1)
+- DRUG AND CHEMICAL TOXICOLOGY (1)
+- DYSPHAGIA (1)
+- ELEMENTA: SCIENCE OF THE ANTHROPOCENE (1)
+- ENVIRONMENTAL MONITORING AND ASSESSMENT (1)
+- EPJ WEB OF CONFERENCES (3)
+- EUROPEAN ARCHIVES OF OTO-RHINO-LARYNGOLOGY (2)
+- EXPERIÊNCIAS EM ENSINO DE CIÊNCIAS (UFRGS) (2)
+- Earth Interactions (1)
+- Environmental Science and Pollution Research (3)
+- European Review for Medical and Pharmacological Sciences (1)
+- Exploratory Environmental (1)
+- FEMS MICROBIOLOGY LETTERS (1)
+- FRONTIERS IN CARDIOVASCULAR MEDICINE (1)
+- Food Analytical Methods (1)
+- Frontiers in Cellular and Infection Microbiology (1)
+- Frontiers in Immunology (2)
+- Frontiers in Physiology (9)
+- Frontiers in Sustainable Cities (1)
+- Gland Surgery (1)
+- HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK (6)
+- HEART FAILURE REVIEWS (1)
+- HOLOS Environment (Online) (1)
+- IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING (1)
+- INGENIUS (1)
+- INTELIGENCIA ARTIFICIAL (1)
+- INTERNATIONAL DENTAL JOURNAL (1)
+- INTERNATIONAL JOURNAL OF ADVANCED MANUFACTURING TECHNOLOGY (2)
+- INTERNATIONAL JOURNAL OF CASE REPORTS AND IMAGES (3)
+- INTERNATIONAL JOURNAL OF ORAL AND MAXILLOFACIAL SURGERY (1)
+- INTERNATIONAL JOURNAL OF TECHNOLOGY ASSESSMENT IN HEALTH CARE (1)
+- In Silico Research in Biomedicine (1)
+- International Journal Of Surgery Protocols (1)
+- International Journal of Research in Engineering and Science (IJRES) (1)
+- JOURNAL OF BIOMEDICAL MATERIALS RESEARCH PART B-APPLIED BIOMATERIALS (1)
+- JOURNAL OF BUSINESS AND ECONOMICS (1)
+- JOURNAL OF CLEANER PRODUCTION (2)
+- JOURNAL OF DAIRY SCIENCE (1)
+- JOURNAL OF DENTISTRY (1)
+- JOURNAL OF DIGITAL IMAGING (1)
+- JOURNAL OF DRUG DELIVERY SCIENCE AND TECHNOLOGY (1)
+- JOURNAL OF ENVIRONMENTAL RADIOACTIVITY (1)
+- JOURNAL OF INFECTIOUS DISEASES (1)
+- JOURNAL OF MATERIALS PROCESSING TECHNOLOGY (1)
+- JOURNAL OF MEDICAL SYSTEMS (1)
+- JOURNAL OF MEDICAL VIROLOGY (1)
+- JOURNAL OF MEMBRANE SCIENCE (2)
+- JOURNAL OF MOLECULAR MODELING (ONLINE) (1)
+- JOURNAL OF MOLECULAR STRUCTURE (1)
+- JOURNAL OF ORAL AND MAXILLOFACIAL PATHOLOGY (1)
+- JOURNAL OF ORAL REHABILITATION (1)
+- JOURNAL OF PHOTOCHEMISTRY AND PHOTOBIOLOGY A-CHEMISTRY (1)
+- JOURNAL OF PHYSICS AND CHEMISTRY OF SOLIDS (2)
+- JOURNAL OF PROSTHETIC DENTISTRY (2)
+- JOURNAL OF RADIOLOGICAL PROTECTION (1)
+- JOURNAL OF RAMAN SPECTROSCOPY (1)
+- JOURNAL OF THORACIC AND CARDIOVASCULAR SURGERY (1)
+- Journal Of Adhesive Dentistry (1)
+- Journal Of Lasers In Medical Sciences (1)
+- Journal of Biomaterials Science, Polymer Edition (1)
+- Journal of Bone Oncology (1)
+- Journal of Cardiovascular Translational Research (1)
+- Journal of Drugs in Dermatology (1)
+- Journal of Engineering Science and Technology Review (1)
+- Journal of Inorganic and Organometallic Polymers and Materials (1)
+- Journal of Oral Microbiology (1)
+- Journal of Photochemistry and Photobiology (1)
+- Journal of Physical Chemistry Letters (1)
+- Journal of Surgical Education (1)
+- Journal of Trauma and Acute Care Surgery (1)
+- Journal of the American Ceramic Society (1)
+- Journal of the Mechanical Behavior of Biomedical Materials (1)
+- LANCET ONCOLOGY (2)
+- LUMINESCENCE (1)
+- Lancet Regional Health-Europe (1)
+- Lasers in Dental Science (1)
+- MATERIALS CHEMISTRY AND PHYSICS (1)
+- MATERIALS RESEARCH (1)
+- MEDICAL EDUCATION (1)
+- MEDICINE (2)
+- METABOLITES (1)
+- MICROSCOPY RESEARCH AND TECHNIQUE (3)
+- MOLECULAR BIOLOGY REPORTS (1)
+- MOLECULES (1)
+- Materials Today Communications (1)
+- NEPHROLOGY DIALYSIS TRANSPLANTATION (1)
+- NUCLEAR INSTRUMENTS & METHODS IN PHYSICS RESEARCH SECTION A-ACCELERATORS SPECTROMETERS DETECTORS AND ASSOCIATED EQUIPMENT (1)
+- Nanomedicine-Nanotechnology Biology and Medicine (1)
+- National Journal of Maxillofacial Surgery (1)
+- Nursing in Critical Care (2)
+- OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA (1)
+- OPERATIVE DENTISTRY (2)
+- OPERATIVE DENTISTRY (ONLINE) (1)
+- OPTICS COMMUNICATIONS (1)
+- OPTICS EXPRESS (2)
+- OPTICS LETTERS (1)
+- ORAL DISEASES (1)
+- ORL-Journal for Oto-Rhino-Laryngology Head and Neck Surgery (2)
+- Open Science Journal (1)
+- Optics (1)
+- Oto Open (1)
+- PATHOGENS (1)
+- PEPTIDES (1)
+- PEST MANAGEMENT SCIENCE (1)
+- PHARMACOLOGICAL RESEARCH (1)
+- PHYSIOLOGICAL MEASUREMENT (2)
+- PLASMA PHYSICS AND CONTROLLED FUSION (1)
+- POLYMER BULLETIN (1)
+- PROCESS SAFETY AND ENVIRONMENTAL PROTECTION (1)
+- Pesquisa Brasileira Em Odontopediatria E Clinica Integrada (1)
+- Physica Medica-European Journal of Medical Physics (9)
+- Physiological Measurement (1)
+- Proceedings of SPIE (1)
+- QUIMICA NOVA (1)
+- RAPID PROTOTYPING JOURNAL (1)
+- REGIONAL STUDIES IN MARINE SCIENCE (4)
+- RETINA-THE JOURNAL OF RETINAL AND VITREOUS DISEASES (1)
+- REVEMAT (2)
+- REVISTA DEBATES EM ENSINO DE QUÍMICA (1)
+- REVISTA DO COLÉGIO BRASILEIRO DE CIRURGIÕES (ONLINE) (2)
+- REVISTA ESTOMATOLÓGICA HEREDIANA (1)
+- REVISTA SERGIPANA DE MATEMÁTICA E EDUCAÇÃO MATEMÁTICA (1)
+- RSBO. REVISTA SUL-BRASILEIRA DE ODONTOLOGIA (1)
+- RSC Advances (1)
+- Radiation Effects and Defects in Solids (1)
+- Results Opt (1)
+- Revista Brasileira de Climatologia (1)
+- Revista Brasileira de Ensino de Ciências e Matemática (1)
+- Revista Currículo e Docência (1)
+- Revista Universitária Brasileira (1)
+- Revista da Sociedade Brasileira de Clínica Médica (1)
+- Revista de Odontologia da Braz Cubas (1)
+- Revista de Produtos Educacionais e Pesquisas em Ensino (REPPE) (1)
+- SAO PAULO MEDICAL JOURNAL (2)
+- SCIENTIA PLENA (4)
+- SENSORS (1)
+- SPECIAL CARE IN DENTISTRY (1)
+- STRUCTURAL CHEMISTRY (1)
+- Small (1)
+- THE AMERICAN JOURNAL OF CASE REPORTS (1)
+- THE JOURNAL OF CONTEMPORARY DENTAL PRACTICE (2)
+- TISSUE & CELL (1)
+- TOXICOLOGY REPORTS (1)
+- TRANSPLANTATION PROCEEDINGS (1)
+- Translational Cancer Research (1)
+- URBAN CLIMATE (1)
+- WATER, AIR AND SOIL POLLUTION (DORDRECHT. ONLINE) (1)
+- WORLD JOURNAL OF SURGERY (1)
+- Water (1)
+- Wspolczesna Onkologia-Contemporary Oncology (1)
+- https://doi.org/10.34119/bjhrv3n2-014 (1)
+- journal of health informatics (1)
+
+## Alunos
+
+- Novos: 169
+- Passaram de em andamento para concluída: 5
+
+### Alunos novos
+
+- Daniella Lúmara Pereira Mendes de Oliveira Peres — doutorado, em-andamento (2025), orientação: denise-maria-zezell
+- Raffaele Stasi — doutorado, em-andamento (2025), orientação: denise-maria-zezell
+- Vinicius Pereira dos Anjos — doutorado, em-andamento (2024), orientação: denise-maria-zezell
+- Valeria Mendes — doutorado, em-andamento (2024), orientação: denise-maria-zezell
+- Ana Luiza Mendes Martins — iniciacao-cientifica, em-andamento (2026), orientação: denise-maria-zezell
+- Vítor Toledo de Oliveira — iniciacao-cientifica, em-andamento (2026), orientação: denise-maria-zezell
+- Simone Reis Barbosa — mestrado, em-andamento (2024), orientação: emiliano-horacio-medei
+- João Pedro Espindola de Andrade — iniciacao-cientifica, em-andamento (2025), orientação: emiliano-horacio-medei
+- Carla Vitória Felix Conceição — iniciacao-cientifica, em-andamento (2024), orientação: emiliano-horacio-medei
+- Sophia de Barros e Silva — iniciacao-cientifica, em-andamento (2023), orientação: emiliano-horacio-medei
+- Evelin Monteiro — iniciacao-cientifica, em-andamento (2023), orientação: emiliano-horacio-medei
+- Marcelo Franklin da Silva Santos — doutorado, em-andamento (2026), orientação: divanizia-do-nascimento-souza
+- Edvaldo José dos Santos — doutorado, em-andamento (2024), orientação: divanizia-do-nascimento-souza
+- Junio de Oliveira Maciel — doutorado, em-andamento (2024), orientação: divanizia-do-nascimento-souza
+- Ivana Mara Gomes Andersen Cavalcanti — doutorado, em-andamento (2024), orientação: divanizia-do-nascimento-souza
+- Ana Cácia Santos — doutorado, em-andamento (2023), orientação: divanizia-do-nascimento-souza
+- Rosane Karine Tavares Idalino — doutorado, em-andamento (2022), orientação: divanizia-do-nascimento-souza
+- Emmily Thais Almeida Silva — mestrado, em-andamento (2025), orientação: divanizia-do-nascimento-souza
+- Diego Batista Santos Calefi — mestrado, em-andamento (2024), orientação: divanizia-do-nascimento-souza
+- Giovana Bonano Carlos — doutorado, em-andamento (2025), orientação: herculano-da-silva-martinho
+- Benjamin Osebi Elegbe — doutorado, em-andamento (2024), orientação: herculano-da-silva-martinho
+- Oscar Mosquera — doutorado, em-andamento (2024), orientação: herculano-da-silva-martinho
+- Julian Alape — doutorado, em-andamento (2024), orientação: herculano-da-silva-martinho
+- Vitor Daniel Silvério Dallava — iniciacao-cientifica, em-andamento (2025), orientação: herculano-da-silva-martinho
+- Emily Oliveira dos Santos — iniciacao-cientifica, em-andamento (2025), orientação: herculano-da-silva-martinho
+- Gustavo Rico Freitas — doutorado, em-andamento (2025), orientação: maria-elisa-chuery-martins-rostelato
+- Danielly Tamires da Silva Costa — doutorado, em-andamento (2024), orientação: maria-elisa-chuery-martins-rostelato
+- Lara El Hajj Teodoro — doutorado, em-andamento (2024), orientação: maria-elisa-chuery-martins-rostelato
+- Ana Laura Burin — doutorado, em-andamento (2023), orientação: maria-elisa-chuery-martins-rostelato
+- Wilmmer Alexander Arcos Rosero — doutorado, em-andamento (2023), orientação: maria-elisa-chuery-martins-rostelato
+- Ana Gabryele Moreira dos Santos — doutorado, em-andamento (2022), orientação: maria-elisa-chuery-martins-rostelato
+- Priscila Santos Rodrigues — doutorado, em-andamento (2022), orientação: maria-elisa-chuery-martins-rostelato
+- SilaS Leonel P. Miranda — mestrado, em-andamento (2024), orientação: maria-elisa-chuery-martins-rostelato
+- Pedro Henrique Ricardo — mestrado, em-andamento (2024), orientação: maria-elisa-chuery-martins-rostelato
+- Sabrina Spigaroli Sgrignoli — mestrado, em-andamento (2023), orientação: maria-elisa-chuery-martins-rostelato
+- Marília Araujo Camêlo — mestrado, em-andamento (2023), orientação: maria-elisa-chuery-martins-rostelato
+- Cristhian Ferreira Talacimon — mestrado, em-andamento (2022), orientação: maria-elisa-chuery-martins-rostelato
+- Juliana Mike dos Santos — iniciacao-cientifica, em-andamento (2025), orientação: maria-elisa-chuery-martins-rostelato
+- Júlia Rosa de Oliveira — iniciacao-cientifica, em-andamento (2025), orientação: maria-elisa-chuery-martins-rostelato
+- PAULO JORGE DUDA DE MORAIS — doutorado, em-andamento (2023), orientação: wagner-de-rossi
+- Thaís Andrade da Silva — doutorado, em-andamento (2022), orientação: wagner-de-rossi
+- Jeane Oliveira Santos — doutorado, em-andamento (2024), orientação: anderson-zanardi-de-freitas
+- Lucas Antônio de Souza Ribeiro — mestrado, em-andamento (2023), orientação: anderson-zanardi-de-freitas
+- Ana Catarina Koka de Souza Silva — doutorado, em-andamento (2024), orientação: carlos-alberto-zeituni
+- Ana Lucia da Fonseca Braganca Pinheiro — doutorado, em-andamento (2024), orientação: carlos-alberto-zeituni
+- David Alexander Urbina Leal — doutorado, em-andamento (2023), orientação: carlos-alberto-zeituni
+- PEDRO AMARAL MEDEIROS — mestrado, em-andamento (2025), orientação: carlos-alberto-zeituni
+- Leonardo Lima Jardim — mestrado, em-andamento (2025), orientação: carlos-alberto-zeituni
+- SARA PROTÁSIO ASSIS — mestrado, em-andamento (2024), orientação: carlos-alberto-zeituni
+- Danielle Nunes de Vita Silva — mestrado, em-andamento (2023), orientação: carlos-alberto-zeituni
+- Natalia Moreno Lima — mestrado, em-andamento (2023), orientação: carlos-alberto-zeituni
+- Guilherme Gonçalves Guerini — doutorado, em-andamento (2025), orientação: daniel-perez-vieira
+- Esther Carolina dos Santos — mestrado, em-andamento (2025), orientação: daniel-perez-vieira
+- Thais Monteiro da Silva — mestrado, em-andamento (2025), orientação: daniel-perez-vieira
+- Amanda Moura Algalvez — iniciacao-cientifica, em-andamento (2026), orientação: daniel-perez-vieira
+- Giovanni Souza — doutorado, em-andamento (2023), orientação: eduardo-landulfo
+- José Carlos dos Santos — doutorado, em-andamento (2023), orientação: eduardo-landulfo
+- Gabriel Marques da Silva — mestrado, em-andamento (2023), orientação: eduardo-landulfo
+- RENATA SAMMARA DA SILVA SANTOS — mestrado, em-andamento (2020), orientação: eduardo-landulfo
+- DINO SEIGO GSUHIKEN JUNIOR — doutorado, em-andamento (2021), orientação: emerson-soares-bernardes
+- Jhonatas Pedrosa Marim Pereira — doutorado, em-andamento (2021), orientação: emerson-soares-bernardes
+- André Henrique Silva — doutorado, em-andamento (2021), orientação: emerson-soares-bernardes
+- Maria Ângela Pepe Carneiro — doutorado, em-andamento (2020), orientação: emerson-soares-bernardes
+- Guilherme Bonifácio — mestrado, em-andamento (2020), orientação: emerson-soares-bernardes
+- RAPHAEL OLIVEIRA VIEIRA — iniciacao-cientifica, em-andamento (2020), orientação: emerson-soares-bernardes
+- RAÍSSA OLIVEIRA NASCIMENTO — iniciacao-cientifica, em-andamento (2020), orientação: emerson-soares-bernardes
+- Karem Costa Parra — mestrado, concluida (2020), orientação: ilka-tiemy-kato
+- André Morilha Duarte — mestrado, concluida (2022), orientação: joao-loures-salinet-junior
+- Melissa Del Carmen Mc Innis — mestrado, concluida (2021), orientação: joao-loures-salinet-junior
+- Victor Gonçalves Marques — mestrado, concluida (2020), orientação: joao-loures-salinet-junior
+- Jimena Gabriela Siles Paredes — mestrado, concluida (2020), orientação: joao-loures-salinet-junior
+- Gabriel Victor Costa — iniciacao-cientifica, concluida (2022), orientação: joao-loures-salinet-junior
+- Camila Rocha Restivo — iniciacao-cientifica, concluida (2022), orientação: joao-loures-salinet-junior
+- Matheus Oliveira Zamai — iniciacao-cientifica, concluida (2022), orientação: joao-loures-salinet-junior
+- Isabella Rizzi Rios — iniciacao-cientifica, concluida (2022), orientação: joao-loures-salinet-junior
+- Maria Eduarda Tramontina Antunes — iniciacao-cientifica, concluida (2022), orientação: joao-loures-salinet-junior
+- Renata Romanelli da Costa — iniciacao-cientifica, concluida (2021), orientação: joao-loures-salinet-junior
+- Camila Rocha Restivo (coorientador no InCor, bolsa ITI) — iniciacao-cientifica, concluida (2020), orientação: joao-loures-salinet-junior
+- Carolina Gonçalves Garcia. Avaliação do uso da fotobiomodulação após a cirurgia do freio lingual com o laser de diodo de alta potencia — mestrado, concluida (2025), orientação: luciane-hiramatsu-azevedo
+- Gabriela Reganin Montreiro — doutorado, concluida (2024), orientação: luis-felipe-das-chagas-e-silva-de-carvalho
+- Natália de Castro Magalhães — mestrado, concluida (2020), orientação: luis-felipe-das-chagas-e-silva-de-carvalho
+- Vitórya Carvalho Pádua de Magalhães — iniciacao-cientifica, concluida (2022), orientação: luis-felipe-das-chagas-e-silva-de-carvalho
+- Anna Laura Almeida Barreto — iniciacao-cientifica, concluida (2021), orientação: luis-felipe-das-chagas-e-silva-de-carvalho
+- Maria Clara de Moura Santos Coelho Ferreira — iniciacao-cientifica, concluida (2021), orientação: luis-felipe-das-chagas-e-silva-de-carvalho
+- Marcio Ribas — mestrado, concluida (2020), orientação: marcus-paulo-raele
+- Cintia Maria Perotto Mesquita da Silva — mestrado, concluida (2022), orientação: mario-olimpio-de-menezes
+- Claudia Chamas — mestrado, concluida (2021), orientação: mario-olimpio-de-menezes
+- Glauber Mauch de Carvalho — mestrado, concluida (2020), orientação: mario-olimpio-de-menezes
+- Felipe Marliere Cabral Ciabattari — iniciacao-cientifica, concluida (2021), orientação: mario-olimpio-de-menezes
+- Jesica Ayelen Dimmer — pos-doutorado, concluida (2021), orientação: martha-simoes-ribeiro
+- Caetano Padial Sabino — doutorado, concluida (2021), orientação: martha-simoes-ribeiro
+- Aline de Barros Coelho — doutorado, concluida (2021), orientação: martha-simoes-ribeiro
+- Fernanda Viana Cabral — doutorado, concluida (2021), orientação: martha-simoes-ribeiro
+- Camila Ramos Silva — doutorado, concluida (2020), orientação: martha-simoes-ribeiro
+- Renata Franciulli de Figueiredo. Tecnologias baseadas em luz no tratamento de pacientes com líquen escleroso vulvar em substituição aos corticóides de alta potência — mestrado, concluida (2022), orientação: martha-simoes-ribeiro
+- Denise Rodrigues Ferreira — mestrado, concluida (2022), orientação: martha-simoes-ribeiro
+- Fernando Couto Pereira — mestrado, concluida (2022), orientação: martha-simoes-ribeiro
+- Ana Rita Correia Durães — mestrado, concluida (2022), orientação: martha-simoes-ribeiro
+- Maressa Donato Ferreira de Souza — mestrado, concluida (2021), orientação: martha-simoes-ribeiro
+- Clemilton Barroso de Souza Furtado — iniciacao-cientifica, concluida (2022), orientação: moises-oliveira-dos-santos
+- Marcus Vinicius Catarina — mestrado, concluida (2021), orientação: niklaus-ursus-wetter
+- Allan Bereczki — pos-doutorado, concluida (2022), orientação: niklaus-ursus-wetter
+- Allan Bereczki — doutorado, concluida (2021), orientação: niklaus-ursus-wetter
+- Felipe Maia Prado — mestrado, concluida (2022), orientação: niklaus-ursus-wetter
+- Gabriela Scalco Munro — mestrado, concluida (2022), orientação: orlando-rodrigues-junior
+- José Neres de Almeida Junior — mestrado, concluida (2022), orientação: orlando-rodrigues-junior
+- Darlan Lima Guerra — mestrado, concluida (2022), orientação: orlando-rodrigues-junior
+- Marcella Rodrigues Ueda Fernandes — doutorado, concluida (2020), orientação: ana-cecilia-correa-aranha
+- Victor Hugo Torso — doutorado, concluida (2020), orientação: ana-cecilia-correa-aranha
+- Brhuna Dorothy Magnago — mestrado, concluida (2020), orientação: ana-cecilia-correa-aranha
+- LAURA FARIA SCHIMENES — iniciacao-cientifica, concluida (2020), orientação: ana-cecilia-correa-aranha
+- Thiago Oliveira dos Santos — pos-doutorado, concluida (2021), orientação: elvis-joacir-de-franca
+- Williams Nascimento de Siqueira — pos-doutorado, concluida (2021), orientação: elvis-joacir-de-franca
+- MARIANA LUIZA DE OLIVEIRA SANTOS. SAÚDE DA POPULAÇÃO EM ÁREA DENSAMENTE HABITADA SOB INFLUÊNCIA DE FOSFORITO URANÍFERO. 1 — doutorado, concluida (2021), orientação: elvis-joacir-de-franca
+- KATARINE MIZAN BARBOSA SANTOS — doutorado, concluida (2021), orientação: elvis-joacir-de-franca
+- MAÍRA VASCONCELOS LIMA — doutorado, concluida (2021), orientação: elvis-joacir-de-franca
+- MARIANA LUIZA DE OLIVEIRA SANTOS RAMOS — doutorado, concluida (2020), orientação: elvis-joacir-de-franca
+- LAIS DE CARVALHO SANTOS BEZERRA — mestrado, concluida (2022), orientação: elvis-joacir-de-franca
+- DALIANA THAISA MARIA TELES DE OLIVEIRA SOUZA — mestrado, concluida (2022), orientação: elvis-joacir-de-franca
+- Wanuska Munique Portugal — mestrado, concluida (2022), orientação: elvis-joacir-de-franca
+- Vilma Ribeiro de Lima — mestrado, concluida (2022), orientação: elvis-joacir-de-franca
+- Felipe Rogério Ferreira da Silva — mestrado, concluida (2021), orientação: elvis-joacir-de-franca
+- Alberto Pereira Neto — mestrado, concluida (2021), orientação: elvis-joacir-de-franca
+- MARCELO BELMIRO GOMES DE LIRA — mestrado, concluida (2020), orientação: elvis-joacir-de-franca
+- JOSÉ ALFREDO SOARES MIRANDA — mestrado, concluida (2020), orientação: elvis-joacir-de-franca
+- Almir Mendes da Silva — iniciacao-cientifica, concluida (2022), orientação: elvis-joacir-de-franca
+- Ítalo Braz da Silva — iniciacao-cientifica, concluida (2021), orientação: elvis-joacir-de-franca
+- Rauanna Crys Carvalho dos Santos — iniciacao-cientifica, concluida (2021), orientação: elvis-joacir-de-franca
+- Ana Carolina Veras Barros de Albuquerque — iniciacao-cientifica, concluida (2021), orientação: elvis-joacir-de-franca
+- Carlos Daniel da Silva Cordeiro — iniciacao-cientifica, concluida (2021), orientação: elvis-joacir-de-franca
+- Matheus de Freitas Oliveira Baffa — doutorado, concluida (2020), orientação: joaquim-cezar-felipe
+- Leonardo Gavioli dos Santos — mestrado, concluida (2022), orientação: joaquim-cezar-felipe
+- Thaine Cravo Marques dos Santos — mestrado, concluida (2020), orientação: joaquim-cezar-felipe
+- Victor Kikuti Maceron — iniciacao-cientifica, concluida (2022), orientação: joaquim-cezar-felipe
+- Carlos Eduardo Rodrigues dos Santos — iniciacao-cientifica, concluida (2022), orientação: joaquim-cezar-felipe
+- Luciano Gabriel de Araujo — iniciacao-cientifica, concluida (2021), orientação: joaquim-cezar-felipe
+- Bruno Gabriel Justino dos Santos — iniciacao-cientifica, concluida (2021), orientação: joaquim-cezar-felipe
+- Fernanda Sacardo Merli — iniciacao-cientifica, concluida (2020), orientação: joaquim-cezar-felipe
+- Isabela Toso — iniciacao-cientifica, concluida (2020), orientação: joaquim-cezar-felipe
+- Gabriel Modina — iniciacao-cientifica, concluida (2020), orientação: joaquim-cezar-felipe
+- Leonardo dos Santos Gavioli — iniciacao-cientifica, concluida (2020), orientação: joaquim-cezar-felipe
+- Ana Kober Nogueira Leite — pos-doutorado, concluida (2020), orientação: leandro-luongo-de-matos
+- Cecilia Eugênio — doutorado, concluida (2020), orientação: leandro-luongo-de-matos
+- Paulo Rodrigues de Oliveira Junior — iniciacao-cientifica, concluida (2022), orientação: leandro-luongo-de-matos
+- João Guilherme Furtado de Souza — iniciacao-cientifica, concluida (2021), orientação: leandro-luongo-de-matos
+- Yasmin Sá Cerqueira — iniciacao-cientifica, concluida (2021), orientação: leandro-luongo-de-matos
+- Carlos Augusto Rossetti — iniciacao-cientifica, concluida (2020), orientação: leandro-luongo-de-matos
+- Luismar B. da C. Junior — doutorado, concluida (2023), orientação: luciano-bachmann
+- Arthur Melo de Oliveira — iniciacao-cientifica, concluida (2022), orientação: luciano-bachmann
+- Raíssa Mendonça Quaranta Lobão — iniciacao-cientifica, concluida (2022), orientação: luciano-bachmann
+- Kaio Bernardo de Barros — iniciacao-cientifica, concluida (2020), orientação: luciano-bachmann
+- Carolina Victoria da Cruz Junho — doutorado, concluida (2022), orientação: marcela-sorelli-carneiro-ramos
+- Joana Claudio Pieretti — doutorado, concluida (2020), orientação: marcela-sorelli-carneiro-ramos
+- Carlos Alexandre Falconi — doutorado, concluida (2020), orientação: marcela-sorelli-carneiro-ramos
+- Fernanda Fogaça Ruiz — mestrado, concluida (2022), orientação: marcela-sorelli-carneiro-ramos
+- Giovana Marchini Armentano — mestrado, concluida (2021), orientação: marcela-sorelli-carneiro-ramos
+- Imara Caridad Stable Vernier — mestrado, concluida (2020), orientação: marcela-sorelli-carneiro-ramos
+- Jessica Veronica da Silva — iniciacao-cientifica, concluida (2022), orientação: marcela-sorelli-carneiro-ramos
+- Débora Carajiliascov Ferraraz — doutorado, concluida (2020), orientação: patricia-aparecida-da-ana
+- Cláudio Ricardo Hehl Forjaz — mestrado, concluida (2022), orientação: patricia-aparecida-da-ana
+- Giovanna Lepore — mestrado, concluida (2022), orientação: patricia-aparecida-da-ana
+- Aline de Almeida Ferreira — mestrado, concluida (2021), orientação: patricia-aparecida-da-ana
+- Sofia Gadelha de Moraes — iniciacao-cientifica, concluida (2022), orientação: patricia-aparecida-da-ana
+- José Marques de Araujo Junior — iniciacao-cientifica, concluida (2021), orientação: patricia-aparecida-da-ana
+- Vinicius Granço — mestrado, em-andamento (2026), orientação: thiago-martini-pereira
+- ALEX FRANCO DA COSTA — mestrado, em-andamento (2023), orientação: thiago-martini-pereira
+- ALESSANDRA SANTOS VIEIRA — mestrado, em-andamento (2023), orientação: thiago-martini-pereira
+- Bruno do Amarante Augusto — mestrado, concluida (2021), orientação: thiago-martini-pereira
+- BENEDITO VITAL RIBEIRO JUNIOR — mestrado, concluida (2020), orientação: thiago-martini-pereira
+
+### Concluídos
+
+- Nathalia Luzia Aidar Alves — mestrado (2026), orientação: mario-olimpio-de-menezes
+- Wendell da Luz Silva — mestrado (2026), orientação: mario-olimpio-de-menezes
+- Tania Mateus Yoshimura — pos-doutorado (2020), orientação: martha-simoes-ribeiro
+- Marcus Vinicius Catarina — mestrado (2021), orientação: niklaus-ursus-wetter
+- Octavio Xavier Furio — iniciacao-cientifica (2022), orientação: joaquim-cezar-felipe
+
+## Periódicos
+
+- Novos em periodicos.json: 207 (contagens recalculadas)
+
+## Patentes e registros (a partir de 2020, lidos do HTML do Lattes)
+
+- Itens distintos nos currículos: 34
+- Novos: 23 · já existentes que ganharam pessoas: 11
+
+### Registros novos
+
+- `p2026-biorreator-perfusao-metodo` (2026-06-22, patente) BIORREATOR DE PERFUSÃO, E, MÉTODO DE CULTIVO E ESTIMULAÇÃO DE TECIDOS BIOLÓGICOS EM UM BIORREATOR DE PERFUSÃO — nº BR10202601572
+- `p2026-radia` (2026-06-15, software) RadIA — nº BR512026006254-3
+- `p2026-disposicao-construtiva-tridimensional` (2026-06-11, patente) Disposição Construtiva Tridimensional Aplicada em Régua Forense — nº BR10202601445
+- `p2025-sensor-nivel-liquido` (2025-12-31, patente) Sensor de nível de líquido para segurança de pessoas surdas — nº BR10202502954
+- `p2022-dispositivo-posicionamento-tubos` (2022-08-09, modelo-utilidade) Dispositivo para posicionamento de tubos em sistema de ultrassom para controle de qualidade de fontes radioativas seladas — nº BR10201600265
+- `p2022-processo-soldagem-laser` (2022-08-02, patente) Processo de soldagem a laser para produção de fontes radioativas — nº BR1020170156982
+- `p2022-detector-ctdi-msad` (2022-07-12, patente) Detector CTDI-MSAD Multiplex - PI 1105444-1 — nº PI11054441
+- `p2022-objeto-simulador-seringa` (2022-07-04, patente) Objeto simulador seringa para teste de centro de rotação de câmara de cintilação do tipo SPECT — nº BR10202201335
+- `p2022-laser-estado-solido` (2022-06-14, patente) LASER DE ESTADO SÓLIDO COM EFICIÊNCIA PERTO DO LIMITE POR DEFEITO QUÂNTICO — nº BR1020220117284
+- `p2022-aparato-ajuste-intensidade` (2022-06-07, modelo-utilidade) Aparato para ajuste de intensidade luminosa — nº BR102016009927
+- `p2022-rodo-uvc-desinfeccao` (2022-05-25, patente) Rodo UVC para desinfecção de superfícies — nº BR10202201013
+- `p2022-artefato-avaliacao-pericial` (2022-01-24, patente) Artefato de avaliação pericial de disparo de arma de fogo artesanal — nº BR10202200122
+- `p2022-disposicao-construtiva-cervical` (2022-01-11, patente) Disposição construtiva cervical de dosimetria e calibração do contador de tireoide — nº BR20202200051
+- `p2022-smartdroplet` (2022-01-01, software) SmartDroplet — nº BR51202200324-0
+- `p2021-densitometro-optico-transmissao` (2021-12-16, patente) Densitômetro óptico de transmissão — nº BR10202102538
+- `p2021-objeto-simulador-teste` (2021-12-07, patente) Objeto simulador de teste de campo de radiação de raios x odontológico intrabucal (BR1020140193480) — nº BR1020140193480
+- `p2021-metodo-optico-diagnostico` (2021-12-02, patente) MÉTODO ÓPTICO PARA DIAGNÓSTICO DE CÂNCER ORAL VIA SALIVA; USO DO MÉTODO E PROTÓTIPO — nº BR1020210243
+- `p2021-vidro-oxido-boro` (2021-05-10, patente) Vidro de óxido de boro dopado com nitrato de prata para uso em dosimetria OSL — nº BR10202100907
+- `p2021-sistema-posicionamento-amostras` (2021-05-05, modelo-utilidade) Sistema para Posicionamento de Amostras e Fontes Radioativas sobre a Janela de Detecção de Espectrômetros Gama. — nº BR1020210087099
+- `p2021-dispositivo-plataforma-transparente` (2021-04-16, patente) DISPOSITIVO COM PLATAFORMA TRANSPARENTE PARA DETECÇÃO COLORIMÉTRICA E ÓPTICA DE HEPATITE D E METODOLOGIA PARA SEU DESENVOLVIMENTO — nº BR10202100730
+- `p2020-disposicao-construtiva-simulador` (2020-08-17, patente) Disposição construtiva em simulador tridimensional para teste da mesa de exame em câmara cintilográfica na varredura de corpo total — nº BR1020200167405
+- `p2020-sintese-nanoparticulas-radioativas` (2020-04-14, patente) Síntese de nanopartículas radioativas e não-radioativas de ouro para uso terapêutico — nº BR1020200072250
+- `p2020-simoct-simulador-oct` (2020-01-15, software) SimOCT- Simulador de OCT — nº BR512020000423-7
+
+### Existentes alterados
+
+- `p2023-modelo-anatomico`: +pessoas divanizia-do-nascimento-souza
+- `p2023-phantom-telles`: +pessoas divanizia-do-nascimento-souza
+- `p2024-vidro-boro`: +pessoas divanizia-do-nascimento-souza
+- `p2025-fantoma-braqui-gineco`: +pessoas divanizia-do-nascimento-souza
+- `p2023-software-focal`: +pessoas divanizia-do-nascimento-souza
+- `p2023-marca-telles`: +pessoas divanizia-do-nascimento-souza
+- `p2024-fonte-radioativa-flexivel`: +pessoas maria-elisa-chuery-martins-rostelato, carlos-alberto-zeituni
+- `p2023-microcartucho-radioisotopos`: +pessoas wagner-de-rossi
+- `p2025-nanoparticulas-quitosana`: +pessoas martha-simoes-ribeiro
+- `p2023-laser-sub-nanosegundo`: +pessoas niklaus-ursus-wetter
+- `p2024-mapeamento-espectroscopia`: +pessoas niklaus-ursus-wetter
+
+## Métricas (OpenAlex, 2026-11-09)
+
+- Artigos atualizados: 796 (citações que mudaram: 54)
+- `fator_impacto` é um proxy do JCR: média de citações em 2 anos da revista (2yr_mean_citedness).
+- DOI não encontrado no OpenAlex (17): `azevedo_use_2023`, `de_matos_editorial_2021`, `el_achkar_treatment_2023`, `girasoli_laser_2022`, `joao_souza_toothpaste_2020`, `la_selva_treatment_2020`, `macedo_methane_2021`, `matos_editorial_2023`, `melo_photobiomodulation_2024`, `monteiro_studying_2024`, `noauthor_reducing_2023`, `parize_evaluation_2024`, `perini_matching_2021`, `santana_tapequim_2021`, `souza-ferreira_first_2024`, `souza_new_2020`, `tolentino_ab_photobiomodulation_2022`

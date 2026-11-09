@@ -88,7 +88,11 @@ function contar(publicacoes: Publicacao[]) {
 }
 
 export function redeCoautoria(): Rede {
-  const { publicacoes, pessoas } = carregarConteudo();
+  const conteudo = carregarConteudo();
+  // Só pesquisadores entram na rede (pedido do usuário em 2026-11-09): bolsistas ficam de fora
+  const pessoas = conteudo.pessoas.filter((p) => p.categoria !== "bolsista");
+  const incluidos = new Set(pessoas.map((p) => p.slug));
+  const publicacoes = conteudo.publicacoes.map((p) => ({ ...p, pessoas: p.pessoas.filter((s) => incluidos.has(s)) }));
   const geral = contar(publicacoes);
 
   // Ordem estável: mais publicações primeiro, depois nome

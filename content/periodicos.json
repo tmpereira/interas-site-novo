@@ -1,6 +1,19 @@
 {
   "periodicos": [
     {
+      "slug": "aaps-pharmscitech",
+      "nome": "AAPS PHARMSCITECH",
+      "abreviacao": null,
+      "issn": [
+        "1530-9932"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
       "slug": "acs-applied-materials-interfaces",
       "nome": "ACS Applied Materials & Interfaces",
       "abreviacao": "ACS Appl. Mater. Interfaces",
@@ -21,9 +34,9 @@
         "2574-0970"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
+      "quantidade_publicacoes": 2,
       "primeiro_ano": 2025,
-      "ultimo_ano": 2025
+      "ultimo_ano": 2026
     },
     {
       "slug": "acs-omega",
@@ -33,9 +46,35 @@
         "2470-1343"
       ],
       "editora": null,
-      "quantidade_publicacoes": 5,
+      "quantidade_publicacoes": 7,
       "primeiro_ano": 2024,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "acta-radiologica",
+      "nome": "ACTA RADIOLOGICA",
+      "abreviacao": null,
+      "issn": [
+        "0284-1851"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "advanced-materials-technologies",
+      "nome": "Advanced Materials Technologies",
+      "abreviacao": null,
+      "issn": [
+        "2365-709X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "advances-in-materials-science-and-engineering",
@@ -68,13 +107,40 @@
       "nome": "Aerosol and Air Quality Research",
       "abreviacao": "Aerosol Air Qual. Res.",
       "issn": [
+        "1680-8584",
         "16808584",
         "20711409"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "aerosol-science-and-technology",
+      "nome": "Aerosol Science and Technology",
+      "abreviacao": null,
+      "issn": [
+        "1521-7388"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "aesthetic-orofacial-science",
+      "nome": "Aesthetic Orofacial Science",
+      "abreviacao": null,
+      "issn": [
+        "2675-7311"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "aims-materials-science",
@@ -101,6 +167,71 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "american-journal-of-obstetrics-and-gynecology",
+      "nome": "AMERICAN JOURNAL OF OBSTETRICS AND GYNECOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0002-9378"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "anaesthesia",
+      "nome": "Anaesthesia",
+      "abreviacao": null,
+      "issn": [
+        "1365-2044"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "anais-da-academia-brasileira-de-ciencias",
+      "nome": "ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS",
+      "abreviacao": null,
+      "issn": [
+        "1678-2690"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "analyst",
+      "nome": "ANALYST",
+      "abreviacao": null,
+      "issn": [
+        "0003-2654"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "analytical-and-bioanalytical-chemistry",
+      "nome": "ANALYTICAL AND BIOANALYTICAL CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "1618-2642"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "analytical-chemistry",
       "nome": "Analytical Chemistry",
       "abreviacao": "Anal. Chem.",
@@ -112,6 +243,45 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2026,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "analytical-science-advances",
+      "nome": "Analytical Science Advances",
+      "abreviacao": null,
+      "issn": [
+        "2628-5452"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "annals-of-biomedical-engineering",
+      "nome": "ANNALS OF BIOMEDICAL ENGINEERING",
+      "abreviacao": null,
+      "issn": [
+        "0090-6964"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "annals-of-nuclear-medicine",
+      "nome": "ANNALS OF NUCLEAR MEDICINE",
+      "abreviacao": null,
+      "issn": [
+        "0914-7187"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "annals-of-otology-rhinology-laryngology",
@@ -127,6 +297,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "annals-of-translational-medicine",
+      "nome": "Annals of Translational Medicine",
+      "abreviacao": null,
+      "issn": [
+        "2305-5839"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "antibiotics",
       "nome": "Antibiotics",
       "abreviacao": "Antibiotics",
@@ -137,6 +320,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2024,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "applied-catalysis-a-general",
+      "nome": "APPLIED CATALYSIS A-GENERAL",
+      "abreviacao": null,
+      "issn": [
+        "0926-860X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "applied-optics",
@@ -156,11 +352,12 @@
       "nome": "Applied Radiation and Isotopes",
       "abreviacao": "Applied Radiation and Isotopes",
       "issn": [
+        "0969-8043",
         "09698043"
       ],
       "editora": null,
-      "quantidade_publicacoes": 7,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 14,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -172,8 +369,8 @@
         "1943-3530"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
     },
     {
@@ -197,19 +394,34 @@
         "2359-4292"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
+      "quantidade_publicacoes": 2,
       "primeiro_ano": 2024,
-      "ultimo_ano": 2024
+      "ultimo_ano": 2026
     },
     {
       "slug": "archives-of-head-and-neck-surgery",
       "nome": "Archives of Head and Neck Surgery",
       "abreviacao": null,
-      "issn": [],
+      "issn": [
+        "2595-2544"
+      ],
       "editora": null,
-      "quantidade_publicacoes": 4,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 9,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "archives-of-oral-biology",
+      "nome": "ARCHIVES OF ORAL BIOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0003-9969"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "arquivos-brasileiros-de-cardiologia",
@@ -220,9 +432,22 @@
         "1678-4170"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "artefactum-rio-de-janeiro",
+      "nome": "ARTEFACTUM (RIO DE JANEIRO)",
+      "abreviacao": null,
+      "issn": [
+        "1984-3852"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "atmosphere",
@@ -232,8 +457,8 @@
         "2073-4433"
       ],
       "editora": null,
-      "quantidade_publicacoes": 4,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 8,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2025
     },
     {
@@ -241,24 +466,78 @@
       "nome": "Atmospheric Pollution Research",
       "abreviacao": "Atmospheric Pollution Research",
       "issn": [
+        "1309-1042",
         "13091042"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "atmospheric-research",
+      "nome": "ATMOSPHERIC RESEARCH",
+      "abreviacao": null,
+      "issn": [
+        "0169-8095"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "avancos-em-medicina",
+      "nome": "Avanços em Medicina",
+      "abreviacao": null,
+      "issn": [
+        "2676-0347"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "biochemical-and-biophysical-research-communications",
       "nome": "Biochemical and Biophysical Research Communications",
       "abreviacao": "Biochemical and Biophysical Research Communications",
       "issn": [
+        "0006-291X",
         "0006291X"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "biochimica-et-biophysica-acta-general-subjects",
+      "nome": "BIOCHIMICA ET BIOPHYSICA ACTA-GENERAL SUBJECTS",
+      "abreviacao": null,
+      "issn": [
+        "0304-4165"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "biochimica-et-biophysica-acta-molecular-and-cell-biology-of-lipids",
+      "nome": "BIOCHIMICA ET BIOPHYSICA ACTA-MOLECULAR AND CELL BIOLOGY OF LIPIDS",
+      "abreviacao": null,
+      "issn": [
+        "1388-1981"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "biochimie",
@@ -273,6 +552,45 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "bioconjugate-chemistry",
+      "nome": "BIOCONJUGATE CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "1043-1802"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "biological-trace-element-research",
+      "nome": "BIOLOGICAL TRACE ELEMENT RESEARCH",
+      "abreviacao": null,
+      "issn": [
+        "0163-4984"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "biomed-research-international",
+      "nome": "Biomed Research International",
+      "abreviacao": null,
+      "issn": [
+        "2314-6133"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
       "slug": "biomedical-physics-engineering-express",
       "nome": "Biomedical Physics & Engineering Express",
       "abreviacao": "Biomed. Phys. Eng. Express",
@@ -280,20 +598,34 @@
         "2057-1976"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "biomedical-signal-processing-and-control",
+      "nome": "Biomedical Signal Processing and Control",
+      "abreviacao": null,
+      "issn": [
+        "1746-8094"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "biomedicine-pharmacotherapy",
       "nome": "Biomedicine & Pharmacotherapy",
       "abreviacao": "Biomedicine & Pharmacotherapy",
       "issn": [
+        "0753-3322",
         "07533322"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2024
     },
     {
@@ -310,6 +642,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "bioorganic-chemistry",
+      "nome": "BIOORGANIC CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "0045-2068"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "biophysical-reviews",
       "nome": "Biophysical Reviews",
       "abreviacao": "Biophys Rev",
@@ -318,9 +663,22 @@
         "1867-2469"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
+      "quantidade_publicacoes": 3,
       "primeiro_ano": 2023,
-      "ultimo_ano": 2025
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "bjs-open",
+      "nome": "Bjs Open",
+      "abreviacao": null,
+      "issn": [
+        "2474-9842"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
     },
     {
       "slug": "bmc-medical-ethics",
@@ -347,15 +705,120 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "bmj-open",
+      "nome": "BMJ Open",
+      "abreviacao": null,
+      "issn": [
+        "2044-6055"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "boletim-informativo-sociedade-brasileira-de-ciencia-do-solo-nucleo-regional-nordeste",
+      "nome": "Boletim Informativo / Sociedade Brasileira de Ciência do Solo, Núcleo Regional Nordeste",
+      "abreviacao": null,
+      "issn": [
+        "2764-5274"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "boletim-informativo-nrne-sbcs",
+      "nome": "Boletim Informativo NRNE/SBCS",
+      "abreviacao": null,
+      "issn": [
+        "2764-5274"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "brazilian-dental-journal",
+      "nome": "BRAZILIAN DENTAL JOURNAL",
+      "abreviacao": null,
+      "issn": [
+        "1806-4760"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "brazilian-dental-science",
+      "nome": "BRAZILIAN DENTAL SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "2178-6011"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "brazilian-journal-of-development",
+      "nome": "Brazilian Journal of Development",
+      "abreviacao": null,
+      "issn": [
+        "2525-8761"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "brazilian-journal-of-health-review",
+      "nome": "Brazilian Journal of Health Review",
+      "abreviacao": null,
+      "issn": [
+        "2595-6825"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "brazilian-journal-of-medical-and-biological-research",
+      "nome": "BRAZILIAN JOURNAL OF MEDICAL AND BIOLOGICAL RESEARCH",
+      "abreviacao": null,
+      "issn": [
+        "0100-879X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "brazilian-journal-of-otorhinolaryngology",
       "nome": "Brazilian Journal of Otorhinolaryngology",
       "abreviacao": "Brazilian Journal of Otorhinolaryngology",
       "issn": [
+        "1808-8694",
         "18088694"
       ],
       "editora": null,
-      "quantidade_publicacoes": 21,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 25,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2026
     },
     {
@@ -379,8 +842,8 @@
         "1678-4448"
       ],
       "editora": null,
-      "quantidade_publicacoes": 3,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2025
     },
     {
@@ -391,9 +854,23 @@
         "2319-0612"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2024
+      "quantidade_publicacoes": 13,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "brazilian-oral-research",
+      "nome": "Brazilian Oral Research",
+      "abreviacao": null,
+      "issn": [
+        "1806-8324",
+        "1807-3107"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2025
     },
     {
       "slug": "breast-cancer-research-and-treatment",
@@ -412,10 +889,12 @@
       "slug": "british-journal-of-surgery",
       "nome": "British Journal of Surgery",
       "abreviacao": null,
-      "issn": [],
+      "issn": [
+        "1365-2168"
+      ],
       "editora": "Oxford University Press US",
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2023
     },
     {
@@ -467,6 +946,45 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "caminhos-da-educacao-matematica-em-revista-on-line",
+      "nome": "CAMINHOS DA EDUCAÇÃO MATEMÁTICA EM REVISTA (ON-LINE)",
+      "abreviacao": null,
+      "issn": [
+        "2358-4750"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "cancer-biomarkers",
+      "nome": "CANCER BIOMARKERS",
+      "abreviacao": null,
+      "issn": [
+        "1875-8592"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "cancer-causes-control",
+      "nome": "CANCER CAUSES & CONTROL",
+      "abreviacao": null,
+      "issn": [
+        "0957-5243"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "cancer-nanotechnology",
       "nome": "Cancer Nanotechnology",
       "abreviacao": "Cancer Nano",
@@ -478,6 +996,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2023,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "cancer-treatment-and-research-communications",
+      "nome": "Cancer Treatment And Research Communications",
+      "abreviacao": null,
+      "issn": [
+        "2468-2942"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "cancers",
@@ -517,6 +1048,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "cell-death-disease",
+      "nome": "Cell Death & Disease",
+      "abreviacao": null,
+      "issn": [
+        "2041-4889"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "cells",
       "nome": "Cells",
       "abreviacao": "Cells",
@@ -524,8 +1068,8 @@
         "2073-4409"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2023
     },
     {
@@ -546,12 +1090,26 @@
       "nome": "Ceramics International",
       "abreviacao": "Ceramics International",
       "issn": [
+        "0272-8842",
         "02728842"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 5,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "ceska-a-slovenska-neurologie-a-neurochirurgie",
+      "nome": "CESKA A SLOVENSKA NEUROLOGIE A NEUROCHIRURGIE",
+      "abreviacao": null,
+      "issn": [
+        "1210-7859"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "chemcatchem",
@@ -567,6 +1125,32 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "chemical-engineering-research-design",
+      "nome": "CHEMICAL ENGINEERING RESEARCH & DESIGN",
+      "abreviacao": null,
+      "issn": [
+        "0263-8762"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "chemistry-and-ecology",
+      "nome": "CHEMISTRY AND ECOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0275-7540"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "chemosensors",
       "nome": "Chemosensors",
       "abreviacao": "Chemosensors",
@@ -577,6 +1161,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2023,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "chemosphere",
+      "nome": "CHEMOSPHERE",
+      "abreviacao": null,
+      "issn": [
+        "0045-6535"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "ciencia-saude-coletiva",
@@ -599,8 +1196,8 @@
         "2057-4347"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2024
     },
     {
@@ -608,34 +1205,76 @@
       "nome": "Clinical Oral Investigations",
       "abreviacao": "Clin Oral Invest",
       "issn": [
+        "1432-6981",
         "1436-3771"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "clinical-science",
+      "nome": "CLINICAL SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "0143-5221"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "clinics",
       "nome": "Clinics",
       "abreviacao": "Clinics",
       "issn": [
+        "1807-5932",
         "18075932"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "colloids-and-surfaces-b-biointerfaces",
+      "nome": "COLLOIDS AND SURFACES B-BIOINTERFACES",
+      "abreviacao": null,
+      "issn": [
+        "0927-7765"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "computational-and-theoretical-chemistry",
+      "nome": "Computational and Theoretical Chemistry",
+      "abreviacao": null,
+      "issn": [
+        "2210-271X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2026
     },
     {
       "slug": "computational-condensed-matter",
       "nome": "Computational Condensed Matter",
       "abreviacao": "Computational Condensed Matter",
       "issn": [
+        "2352-2143",
         "23522143"
       ],
       "editora": null,
-      "quantidade_publicacoes": 3,
+      "quantidade_publicacoes": 4,
       "primeiro_ano": 2023,
       "ultimo_ano": 2026
     },
@@ -652,6 +1291,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "computer-methods-in-biomechanics-and-biomedical-engineering-imaging-and-visualization",
+      "nome": "Computer Methods In Biomechanics And Biomedical Engineering-Imaging And Visualization",
+      "abreviacao": null,
+      "issn": [
+        "2168-1171"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "computers-and-electronics-in-agriculture",
       "nome": "Computers and Electronics in Agriculture",
       "abreviacao": "Computers and Electronics in Agriculture",
@@ -662,6 +1314,32 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2026,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "computers-in-biology-and-medicine",
+      "nome": "COMPUTERS IN BIOLOGY AND MEDICINE",
+      "abreviacao": null,
+      "issn": [
+        "0010-4825"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "critical-reviews-in-analytical-chemistry",
+      "nome": "CRITICAL REVIEWS IN ANALYTICAL CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "1040-8347"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "critical-reviews-in-food-science-and-nutrition",
@@ -701,6 +1379,32 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "cureus",
+      "nome": "Cureus",
+      "abreviacao": null,
+      "issn": [
+        "2168-8184"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "current-applied-materials",
+      "nome": "Current Applied Materials",
+      "abreviacao": null,
+      "issn": [
+        "2666-7312"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "current-materials-science",
       "nome": "Current Materials Science",
       "abreviacao": "CMS",
@@ -713,6 +1417,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "current-molecular-medicine",
+      "nome": "CURRENT MOLECULAR MEDICINE",
+      "abreviacao": null,
+      "issn": [
+        "1566-5240"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "current-oncology-reports",
       "nome": "Current Oncology Reports",
       "abreviacao": "Curr Oncol Rep",
@@ -721,9 +1438,48 @@
         "1534-6269"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "current-opinion-in-otolaryngology-head-and-neck-surgery",
+      "nome": "Current Opinion in Otolaryngology & Head and Neck Surgery",
+      "abreviacao": null,
+      "issn": [
+        "1068-9508"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "current-smart-materials",
+      "nome": "Current Smart Materials",
+      "abreviacao": null,
+      "issn": [
+        "2405-4658"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "dalton-transactions",
+      "nome": "DALTON TRANSACTIONS",
+      "abreviacao": null,
+      "issn": [
+        "1477-9226"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "data-in-brief",
@@ -736,6 +1492,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "dental-traumatology",
+      "nome": "DENTAL TRAUMATOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "1600-4469"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "diagnostics",
@@ -762,6 +1531,45 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "drug-and-chemical-toxicology",
+      "nome": "DRUG AND CHEMICAL TOXICOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0148-0545"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "dysphagia",
+      "nome": "DYSPHAGIA",
+      "abreviacao": null,
+      "issn": [
+        "0179-051X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "earth-interactions",
+      "nome": "Earth Interactions",
+      "abreviacao": null,
+      "issn": [
+        "1087-3562"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "einstein-sao-paulo",
       "nome": "einstein (São Paulo)",
       "abreviacao": null,
@@ -770,9 +1578,9 @@
         "2317-6385"
       ],
       "editora": null,
-      "quantidade_publicacoes": 5,
-      "primeiro_ano": 2024,
-      "ultimo_ano": 2025
+      "quantidade_publicacoes": 8,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2026
     },
     {
       "slug": "ejnmmi-radiopharmacy-and-chemistry",
@@ -782,21 +1590,153 @@
         "2365-421X"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "elementa-science-of-the-anthropocene",
+      "nome": "ELEMENTA: SCIENCE OF THE ANTHROPOCENE",
+      "abreviacao": null,
+      "issn": [
+        "2325-1026"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "endocrine",
       "nome": "Endocrine",
       "abreviacao": "Endocrine",
       "issn": [
+        "1355-008X",
         "1559-0100"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "environmental-monitoring-and-assessment",
+      "nome": "ENVIRONMENTAL MONITORING AND ASSESSMENT",
+      "abreviacao": null,
+      "issn": [
+        "0167-6369"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "environmental-science-and-pollution-research",
+      "nome": "Environmental Science and Pollution Research",
+      "abreviacao": null,
+      "issn": [
+        "0944-1344",
+        "1614-7499"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "epj-web-of-conferences",
+      "nome": "EPJ WEB OF CONFERENCES",
+      "abreviacao": null,
+      "issn": [
+        "2100-014X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "european-archives-of-oto-rhino-laryngology",
+      "nome": "EUROPEAN ARCHIVES OF OTO-RHINO-LARYNGOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0937-4477"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "european-review-for-medical-and-pharmacological-sciences",
+      "nome": "European Review for Medical and Pharmacological Sciences",
+      "abreviacao": null,
+      "issn": [
+        "2284-0729"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "experiencias-em-ensino-de-ciencias-ufrgs",
+      "nome": "EXPERIÊNCIAS EM ENSINO DE CIÊNCIAS (UFRGS)",
+      "abreviacao": null,
+      "issn": [
+        "1982-2413"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "exploratory-environmental",
+      "nome": "Exploratory Environmental",
+      "abreviacao": null,
+      "issn": [
+        "1111-1111"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "fems-microbiology-letters",
+      "nome": "FEMS MICROBIOLOGY LETTERS",
+      "abreviacao": null,
+      "issn": [
+        "0378-1097"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "food-analytical-methods",
+      "nome": "Food Analytical Methods",
+      "abreviacao": null,
+      "issn": [
+        "1936-9751"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
     },
     {
       "slug": "food-chemistry",
@@ -823,6 +1763,32 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "frontiers-in-cardiovascular-medicine",
+      "nome": "FRONTIERS IN CARDIOVASCULAR MEDICINE",
+      "abreviacao": null,
+      "issn": [
+        "2297-055X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "frontiers-in-cellular-and-infection-microbiology",
+      "nome": "Frontiers in Cellular and Infection Microbiology",
+      "abreviacao": null,
+      "issn": [
+        "2235-2988"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "frontiers-in-earth-science",
       "nome": "Frontiers in Earth Science",
       "abreviacao": "Front. Earth Sci.",
@@ -833,6 +1799,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "frontiers-in-immunology",
+      "nome": "Frontiers in Immunology",
+      "abreviacao": null,
+      "issn": [
+        "1664-3224"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "frontiers-in-oral-health",
@@ -847,6 +1826,32 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "frontiers-in-physiology",
+      "nome": "Frontiers in Physiology",
+      "abreviacao": null,
+      "issn": [
+        "1664-042X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 9,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "frontiers-in-sustainable-cities",
+      "nome": "Frontiers in Sustainable Cities",
+      "abreviacao": null,
+      "issn": [
+        "2624-9634"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "geoscientific-instrumentation-methods-and-data-systems",
       "nome": "Geoscientific Instrumentation, Methods and Data Systems",
       "abreviacao": "Geosci. Instrum. Method. Data Syst.",
@@ -859,6 +1864,32 @@
       "ultimo_ano": 2023
     },
     {
+      "slug": "gland-surgery",
+      "nome": "Gland Surgery",
+      "abreviacao": null,
+      "issn": [
+        "2227-684X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "head-and-neck-journal-for-the-sciences-and-specialties-of-the-head-and-neck",
+      "nome": "HEAD AND NECK-JOURNAL FOR THE SCIENCES AND SPECIALTIES OF THE HEAD AND NECK",
+      "abreviacao": null,
+      "issn": [
+        "1043-3074"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "health-physics",
       "nome": "Health Physics",
       "abreviacao": "Health Physics",
@@ -867,9 +1898,22 @@
         "1538-5159"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "heart-failure-reviews",
+      "nome": "HEART FAILURE REVIEWS",
+      "abreviacao": null,
+      "issn": [
+        "1382-4147"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "heart-lung-and-circulation",
@@ -908,6 +1952,45 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "holos-environment-online",
+      "nome": "HOLOS Environment (Online)",
+      "abreviacao": null,
+      "issn": [
+        "1519-8633"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "https-doi-org-10-34119-bjhrv3n2-014",
+      "nome": "https://doi.org/10.34119/bjhrv3n2-014",
+      "abreviacao": null,
+      "issn": [
+        "2595-6825"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "ieee-transactions-on-biomedical-engineering",
+      "nome": "IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING",
+      "abreviacao": null,
+      "issn": [
+        "0018-9294"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
       "slug": "ieee-transactions-on-geoscience-and-remote-sensing",
       "nome": "IEEE Transactions on Geoscience and Remote Sensing",
       "abreviacao": "IEEE Trans. Geosci. Remote Sensing",
@@ -933,6 +2016,32 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "in-silico-research-in-biomedicine",
+      "nome": "In Silico Research in Biomedicine",
+      "abreviacao": null,
+      "issn": [
+        "3050-7871"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "ingenius",
+      "nome": "INGENIUS",
+      "abreviacao": null,
+      "issn": [
+        "1390-860X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "instrumentation-science-technology",
       "nome": "Instrumentation Science & Technology",
       "abreviacao": "Instrumentation Science & Technology",
@@ -941,9 +2050,22 @@
         "1525-6030"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "inteligencia-artificial",
+      "nome": "INTELIGENCIA ARTIFICIAL",
+      "abreviacao": null,
+      "issn": [
+        "1137-3601"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "international-archives-of-otorhinolaryngology",
@@ -954,9 +2076,35 @@
         "1809-9777"
       ],
       "editora": null,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "international-dental-journal",
+      "nome": "INTERNATIONAL DENTAL JOURNAL",
+      "abreviacao": null,
+      "issn": [
+        "0020-6539"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "international-journal-of-advanced-manufacturing-technology",
+      "nome": "INTERNATIONAL JOURNAL OF ADVANCED MANUFACTURING TECHNOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0268-3768"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
       "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2024
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
     },
     {
       "slug": "international-journal-of-biological-macromolecules",
@@ -983,6 +2131,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "international-journal-of-case-reports-and-images",
+      "nome": "INTERNATIONAL JOURNAL OF CASE REPORTS AND IMAGES",
+      "abreviacao": null,
+      "issn": [
+        "0976-3198"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "international-journal-of-health-science",
       "nome": "International Journal of Health Science",
       "abreviacao": "JHS",
@@ -1002,8 +2163,8 @@
         "1422-0067"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -1032,6 +2193,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "international-journal-of-oral-and-maxillofacial-surgery",
+      "nome": "INTERNATIONAL JOURNAL OF ORAL AND MAXILLOFACIAL SURGERY",
+      "abreviacao": null,
+      "issn": [
+        "0901-5027"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "international-journal-of-pharmaceutics",
       "nome": "International Journal of Pharmaceutics",
       "abreviacao": "International Journal of Pharmaceutics",
@@ -1048,12 +2222,52 @@
       "nome": "International Journal of Radiation Oncology*Biology*Physics",
       "abreviacao": "International Journal of Radiation Oncology*Biology*Physics",
       "issn": [
+        "0360-3016",
         "03603016"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "international-journal-of-research-in-engineering-and-science-ijres",
+      "nome": "International Journal of Research in Engineering and Science (IJRES)",
+      "abreviacao": null,
+      "issn": [
+        "2320-9364"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "international-journal-of-surgery-protocols",
+      "nome": "International Journal Of Surgery Protocols",
+      "abreviacao": null,
+      "issn": [
+        "2468-3574"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "international-journal-of-technology-assessment-in-health-care",
+      "nome": "INTERNATIONAL JOURNAL OF TECHNOLOGY ASSESSMENT IN HEALTH CARE",
+      "abreviacao": null,
+      "issn": [
+        "0266-4623"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "investigacoes-em-ensino-de-ciencias",
@@ -1117,16 +2331,30 @@
       "ultimo_ano": 2023
     },
     {
+      "slug": "journal-of-adhesive-dentistry",
+      "nome": "Journal Of Adhesive Dentistry",
+      "abreviacao": null,
+      "issn": [
+        "1757-9988"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "journal-of-alloys-and-compounds",
       "nome": "Journal of Alloys and Compounds",
       "abreviacao": "Journal of Alloys and Compounds",
       "issn": [
+        "0925-8388",
         "09258388"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
+      "quantidade_publicacoes": 3,
       "primeiro_ano": 2024,
-      "ultimo_ano": 2025
+      "ultimo_ano": 2026
     },
     {
       "slug": "journal-of-applied-crystallography",
@@ -1149,8 +2377,8 @@
         "1678-7765"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2025
     },
     {
@@ -1166,6 +2394,32 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "journal-of-biomaterials-science-polymer-edition",
+      "nome": "Journal of Biomaterials Science, Polymer Edition",
+      "abreviacao": null,
+      "issn": [
+        "1568-5624"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-biomedical-materials-research-part-b-applied-biomaterials",
+      "nome": "JOURNAL OF BIOMEDICAL MATERIALS RESEARCH PART B-APPLIED BIOMATERIALS",
+      "abreviacao": null,
+      "issn": [
+        "1552-4973"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "journal-of-biophotonics",
       "nome": "Journal of Biophotonics",
       "abreviacao": "Journal of Biophotonics",
@@ -1174,9 +2428,61 @@
         "1864-0648"
       ],
       "editora": null,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-bone-oncology",
+      "nome": "Journal of Bone Oncology",
+      "abreviacao": null,
+      "issn": [
+        "2212-1374"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
       "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
-      "ultimo_ano": 2024
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-business-and-economics",
+      "nome": "JOURNAL OF BUSINESS AND ECONOMICS",
+      "abreviacao": null,
+      "issn": [
+        "2155-7950"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-cardiovascular-translational-research",
+      "nome": "Journal of Cardiovascular Translational Research",
+      "abreviacao": null,
+      "issn": [
+        "1937-5387"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-cleaner-production",
+      "nome": "JOURNAL OF CLEANER PRODUCTION",
+      "abreviacao": null,
+      "issn": [
+        "0959-6526"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
     },
     {
       "slug": "journal-of-clinical-immunology",
@@ -1199,8 +2505,8 @@
         "2077-0383"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2024
     },
     {
@@ -1216,6 +2522,71 @@
       "ultimo_ano": 2023
     },
     {
+      "slug": "journal-of-dairy-science",
+      "nome": "JOURNAL OF DAIRY SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "0022-0302"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-dentistry",
+      "nome": "JOURNAL OF DENTISTRY",
+      "abreviacao": null,
+      "issn": [
+        "0300-5712"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-digital-imaging",
+      "nome": "JOURNAL OF DIGITAL IMAGING",
+      "abreviacao": null,
+      "issn": [
+        "0897-1889"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-drug-delivery-science-and-technology",
+      "nome": "JOURNAL OF DRUG DELIVERY SCIENCE AND TECHNOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "1773-2247"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-drugs-in-dermatology",
+      "nome": "Journal of Drugs in Dermatology",
+      "abreviacao": null,
+      "issn": [
+        "1545-9616"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "journal-of-endodontics",
       "nome": "Journal of Endodontics",
       "abreviacao": "Journal of Endodontics",
@@ -1226,6 +2597,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-engineering-science-and-technology-review",
+      "nome": "Journal of Engineering Science and Technology Review",
+      "abreviacao": null,
+      "issn": [
+        "1791-2377"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "journal-of-environmental-management",
@@ -1240,6 +2624,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "journal-of-environmental-radioactivity",
+      "nome": "JOURNAL OF ENVIRONMENTAL RADIOACTIVITY",
+      "abreviacao": null,
+      "issn": [
+        "0265-931X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "journal-of-esthetic-and-restorative-dentistry",
       "nome": "Journal of Esthetic and Restorative Dentistry",
       "abreviacao": "J Esthet Restor Dent",
@@ -1248,8 +2645,8 @@
         "1708-8240"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2025
     },
     {
@@ -1260,6 +2657,58 @@
         "2309-608X"
       ],
       "editora": null,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "journal-of-health-informatics",
+      "nome": "journal of health informatics",
+      "abreviacao": null,
+      "issn": [
+        "2175-4411"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-infectious-diseases",
+      "nome": "JOURNAL OF INFECTIOUS DISEASES",
+      "abreviacao": null,
+      "issn": [
+        "0022-1899"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-inorganic-and-organometallic-polymers-and-materials",
+      "nome": "Journal of Inorganic and Organometallic Polymers and Materials",
+      "abreviacao": null,
+      "issn": [
+        "1574-1443"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-lasers-in-medical-sciences",
+      "nome": "Journal Of Lasers In Medical Sciences",
+      "abreviacao": null,
+      "issn": [
+        "2008-9783"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2023,
       "ultimo_ano": 2023
@@ -1269,12 +2718,26 @@
       "nome": "Journal of Luminescence",
       "abreviacao": "Journal of Luminescence",
       "issn": [
+        "0022-2313",
         "00222313"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 5,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-materials-processing-technology",
+      "nome": "JOURNAL OF MATERIALS PROCESSING TECHNOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0924-0136"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "journal-of-materials-science",
@@ -1285,9 +2748,100 @@
         "1573-4803"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-medical-systems",
+      "nome": "JOURNAL OF MEDICAL SYSTEMS",
+      "abreviacao": null,
+      "issn": [
+        "0148-5598"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "journal-of-medical-virology",
+      "nome": "JOURNAL OF MEDICAL VIROLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0146-6615"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-membrane-science",
+      "nome": "JOURNAL OF MEMBRANE SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "0376-7388"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-molecular-modeling-online",
+      "nome": "JOURNAL OF MOLECULAR MODELING (ONLINE)",
+      "abreviacao": null,
+      "issn": [
+        "0948-5023"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-molecular-structure",
+      "nome": "JOURNAL OF MOLECULAR STRUCTURE",
+      "abreviacao": null,
+      "issn": [
+        "0022-2860"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-oral-and-maxillofacial-pathology",
+      "nome": "JOURNAL OF ORAL AND MAXILLOFACIAL PATHOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "0973-029X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-oral-microbiology",
+      "nome": "Journal of Oral Microbiology",
+      "abreviacao": null,
+      "issn": [
+        "2000-2297"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "journal-of-oral-pathology-medicine",
@@ -1298,9 +2852,22 @@
         "1600-0714"
       ],
       "editora": null,
-      "quantidade_publicacoes": 3,
+      "quantidade_publicacoes": 4,
       "primeiro_ano": 2025,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-oral-rehabilitation",
+      "nome": "JOURNAL OF ORAL REHABILITATION",
+      "abreviacao": null,
+      "issn": [
+        "0305-182X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "journal-of-pharmaceutical-and-biomedical-analysis",
@@ -1327,16 +2894,69 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "journal-of-photochemistry-and-photobiology",
+      "nome": "Journal of Photochemistry and Photobiology",
+      "abreviacao": null,
+      "issn": [
+        "2666-4690"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-photochemistry-and-photobiology-a-chemistry",
+      "nome": "JOURNAL OF PHOTOCHEMISTRY AND PHOTOBIOLOGY A-CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "1010-6030"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
       "slug": "journal-of-photochemistry-and-photobiology-b-biology",
       "nome": "Journal of Photochemistry and Photobiology B: Biology",
       "abreviacao": "Journal of Photochemistry and Photobiology B: Biology",
       "issn": [
+        "1011-1344",
         "10111344"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 9,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-physical-chemistry-letters",
+      "nome": "Journal of Physical Chemistry Letters",
+      "abreviacao": null,
+      "issn": [
+        "1948-7185"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-physics-and-chemistry-of-solids",
+      "nome": "JOURNAL OF PHYSICS AND CHEMISTRY OF SOLIDS",
+      "abreviacao": null,
+      "issn": [
+        "0022-3697"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
     },
     {
       "slug": "journal-of-physics-conference-series",
@@ -1347,8 +2967,21 @@
         "1742-6596"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-prosthetic-dentistry",
+      "nome": "JOURNAL OF PROSTHETIC DENTISTRY",
+      "abreviacao": null,
+      "issn": [
+        "0022-3913"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
     },
     {
@@ -1373,9 +3006,35 @@
         "1588-2780"
       ],
       "editora": null,
-      "quantidade_publicacoes": 6,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 12,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-radiological-protection",
+      "nome": "JOURNAL OF RADIOLOGICAL PROTECTION",
+      "abreviacao": null,
+      "issn": [
+        "0952-4746"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "journal-of-raman-spectroscopy",
+      "nome": "JOURNAL OF RAMAN SPECTROSCOPY",
+      "abreviacao": null,
+      "issn": [
+        "0377-0486"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "journal-of-robotic-surgery",
@@ -1388,6 +3047,32 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "journal-of-surgical-education",
+      "nome": "Journal of Surgical Education",
+      "abreviacao": null,
+      "issn": [
+        "1931-7204"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "journal-of-the-american-ceramic-society",
+      "nome": "Journal of the American Ceramic Society",
+      "abreviacao": null,
+      "issn": [
+        "1551-2916"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "journal-of-the-brazilian-chemical-society",
@@ -1403,6 +3088,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "journal-of-the-mechanical-behavior-of-biomedical-materials",
+      "nome": "Journal of the Mechanical Behavior of Biomedical Materials",
+      "abreviacao": null,
+      "issn": [
+        "1751-6161"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "journal-of-the-optical-society-of-america-a",
       "nome": "Journal of the Optical Society of America A",
       "abreviacao": "J. Opt. Soc. Am. A",
@@ -1411,9 +3109,9 @@
         "1520-8532"
       ],
       "editora": null,
-      "quantidade_publicacoes": 6,
+      "quantidade_publicacoes": 7,
       "primeiro_ano": 2023,
-      "ultimo_ano": 2024
+      "ultimo_ano": 2026
     },
     {
       "slug": "journal-of-the-optical-society-of-america-b",
@@ -1427,6 +3125,58 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2024,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "journal-of-thoracic-and-cardiovascular-surgery",
+      "nome": "JOURNAL OF THORACIC AND CARDIOVASCULAR SURGERY",
+      "abreviacao": null,
+      "issn": [
+        "0022-5223"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "journal-of-trauma-and-acute-care-surgery",
+      "nome": "Journal of Trauma and Acute Care Surgery",
+      "abreviacao": null,
+      "issn": [
+        "2163-0755"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "lancet-oncology",
+      "nome": "LANCET ONCOLOGY",
+      "abreviacao": null,
+      "issn": [
+        "1470-2045"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "lancet-regional-health-europe",
+      "nome": "Lancet Regional Health-Europe",
+      "abreviacao": null,
+      "issn": [
+        "2666-7762"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "laryngoscope-investigative-otolaryngology",
@@ -1467,16 +3217,30 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "lasers-in-dental-science",
+      "nome": "Lasers in Dental Science",
+      "abreviacao": null,
+      "issn": [
+        "2367-2587"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "lasers-in-medical-science",
       "nome": "Lasers in Medical Science",
       "abreviacao": "Lasers Med Sci",
       "issn": [
+        "0268-8921",
         "1435-604X"
       ],
       "editora": null,
-      "quantidade_publicacoes": 7,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2025
+      "quantidade_publicacoes": 12,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
     },
     {
       "slug": "lasers-in-surgery-and-medicine",
@@ -1487,7 +3251,7 @@
         "1096-9101"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
+      "quantidade_publicacoes": 2,
       "primeiro_ano": 2026,
       "ultimo_ano": 2026
     },
@@ -1502,6 +3266,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "luminescence",
+      "nome": "LUMINESCENCE",
+      "abreviacao": null,
+      "issn": [
+        "1522-7235"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "macromolecular-symposia",
@@ -1521,11 +3298,12 @@
       "nome": "Marine Pollution Bulletin",
       "abreviacao": "Marine Pollution Bulletin",
       "issn": [
+        "0025-326X",
         "0025326X"
       ],
       "editora": null,
-      "quantidade_publicacoes": 7,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 10,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -1553,6 +3331,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "materials-chemistry-and-physics",
+      "nome": "MATERIALS CHEMISTRY AND PHYSICS",
+      "abreviacao": null,
+      "issn": [
+        "0254-0584"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "materials-performance-and-characterization",
       "nome": "Materials Performance and Characterization",
       "abreviacao": null,
@@ -1566,6 +3357,19 @@
       "ultimo_ano": 2023
     },
     {
+      "slug": "materials-research",
+      "nome": "MATERIALS RESEARCH",
+      "abreviacao": null,
+      "issn": [
+        "1980-5373"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
       "slug": "materials-science-and-engineering-b",
       "nome": "Materials Science and Engineering: B",
       "abreviacao": "Materials Science and Engineering: B",
@@ -1576,6 +3380,58 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2026,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "materials-today-communications",
+      "nome": "Materials Today Communications",
+      "abreviacao": null,
+      "issn": [
+        "2352-4928"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "medical-education",
+      "nome": "MEDICAL EDUCATION",
+      "abreviacao": null,
+      "issn": [
+        "0308-0110"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "medicine",
+      "nome": "MEDICINE",
+      "abreviacao": null,
+      "issn": [
+        "0025-7974"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "metabolites",
+      "nome": "METABOLITES",
+      "abreviacao": null,
+      "issn": [
+        "2218-1989"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "microbiology-spectrum",
@@ -1614,6 +3470,20 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "microscopy-research-and-technique",
+      "nome": "MICROSCOPY RESEARCH AND TECHNIQUE",
+      "abreviacao": null,
+      "issn": [
+        "1059-910X",
+        "1097-0029"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "molecular-cellular-proteomics",
       "nome": "Molecular & Cellular Proteomics",
       "abreviacao": "Molecular & Cellular Proteomics",
@@ -1624,6 +3494,32 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2023,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "molecular-biology-reports",
+      "nome": "MOLECULAR BIOLOGY REPORTS",
+      "abreviacao": null,
+      "issn": [
+        "0301-4851"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "molecules",
+      "nome": "MOLECULES",
+      "abreviacao": null,
+      "issn": [
+        "1420-3049"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "mucosal-immunology",
@@ -1645,9 +3541,22 @@
         "2079-4991"
       ],
       "editora": null,
-      "quantidade_publicacoes": 4,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "nanomedicine-nanotechnology-biology-and-medicine",
+      "nome": "Nanomedicine-Nanotechnology Biology and Medicine",
+      "abreviacao": null,
+      "issn": [
+        "1549-9634"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "nanoscale",
@@ -1658,8 +3567,8 @@
         "2040-3372"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2025
     },
     {
@@ -1687,6 +3596,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "national-journal-of-maxillofacial-surgery",
+      "nome": "National Journal of Maxillofacial Surgery",
+      "abreviacao": null,
+      "issn": [
+        "0975-5950"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
       "slug": "nature-cardiovascular-research",
       "nome": "Nature Cardiovascular Research",
       "abreviacao": "Nat Cardiovasc Res",
@@ -1697,6 +3619,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "nephrology-dialysis-transplantation",
+      "nome": "NEPHROLOGY DIALYSIS TRANSPLANTATION",
+      "abreviacao": null,
+      "issn": [
+        "0931-0509"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "next-materials",
@@ -1715,12 +3650,26 @@
       "nome": "Nitric Oxide",
       "abreviacao": "Nitric Oxide",
       "issn": [
+        "1089-8603",
         "10898603"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "nuclear-instruments-methods-in-physics-research-section-a-accelerators-spectrometers-detectors-and-associated-equipment",
+      "nome": "NUCLEAR INSTRUMENTS & METHODS IN PHYSICS RESEARCH SECTION A-ACCELERATORS SPECTROMETERS DETECTORS AND ASSOCIATED EQUIPMENT",
+      "abreviacao": null,
+      "issn": [
+        "0168-9002"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "nuclear-medicine-and-biology",
@@ -1735,6 +3684,32 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "nursing-in-critical-care",
+      "nome": "Nursing in Critical Care",
+      "abreviacao": null,
+      "issn": [
+        "1362-1017"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "observatorio-de-la-economia-latinoamericana",
+      "nome": "OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA",
+      "abreviacao": null,
+      "issn": [
+        "1696-8352"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
       "slug": "ocean-and-coastal-research",
       "nome": "Ocean and Coastal Research",
       "abreviacao": "Ocean Coast. Res.",
@@ -1745,6 +3720,33 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2024,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "open-science-journal",
+      "nome": "Open Science Journal",
+      "abreviacao": null,
+      "issn": [
+        "2466-4308"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "operative-dentistry-online",
+      "nome": "OPERATIVE DENTISTRY (ONLINE)",
+      "abreviacao": null,
+      "issn": [
+        "0361-7734",
+        "1559-2863"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2022
     },
     {
       "slug": "optical-and-quantum-electronics",
@@ -1763,35 +3765,103 @@
       "nome": "Optical Materials",
       "abreviacao": "Optical Materials",
       "issn": [
+        "0925-3467",
         "09253467"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "optics",
+      "nome": "Optics",
+      "abreviacao": null,
+      "issn": [
+        "2673-3269"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "optics-laser-technology",
       "nome": "Optics & Laser Technology",
       "abreviacao": "Optics & Laser Technology",
       "issn": [
+        "0030-3992",
         "00303992"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "optics-communications",
+      "nome": "OPTICS COMMUNICATIONS",
+      "abreviacao": null,
+      "issn": [
+        "0030-4018"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "optics-express",
+      "nome": "OPTICS EXPRESS",
+      "abreviacao": null,
+      "issn": [
+        "1094-4087"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "optics-letters",
+      "nome": "OPTICS LETTERS",
+      "abreviacao": null,
+      "issn": [
+        "0146-9592"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "oral-diseases",
+      "nome": "ORAL DISEASES",
+      "abreviacao": null,
+      "issn": [
+        "1354-523X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "oral-oncology",
       "nome": "Oral Oncology",
       "abreviacao": "Oral Oncology",
       "issn": [
+        "1368-8375",
         "13688375"
       ],
       "editora": null,
-      "quantidade_publicacoes": 6,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 9,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
     },
     {
@@ -1799,12 +3869,91 @@
       "nome": "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
       "abreviacao": "Oral Surgery, Oral Medicine, Oral Pathology and Oral Radiology",
       "issn": [
+        "2212-4403",
         "22124403"
       ],
       "editora": "Elsevier",
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "orl-journal-for-oto-rhino-laryngology-head-and-neck-surgery",
+      "nome": "ORL-Journal for Oto-Rhino-Laryngology Head and Neck Surgery",
+      "abreviacao": null,
+      "issn": [
+        "0301-1569"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "oto-open",
+      "nome": "Oto Open",
+      "abreviacao": null,
+      "issn": [
+        "2473-974X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "pathogens",
+      "nome": "PATHOGENS",
+      "abreviacao": null,
+      "issn": [
+        "2076-0817"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "peptides",
+      "nome": "PEPTIDES",
+      "abreviacao": null,
+      "issn": [
+        "0196-9781"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "pesquisa-brasileira-em-odontopediatria-e-clinica-integrada",
+      "nome": "Pesquisa Brasileira Em Odontopediatria E Clinica Integrada",
+      "abreviacao": null,
+      "issn": [
+        "1983-4632"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "pest-management-science",
+      "nome": "PEST MANAGEMENT SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "1526-498X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "pharmaceutics",
@@ -1814,9 +3963,22 @@
         "1999-4923"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "pharmacological-research",
+      "nome": "PHARMACOLOGICAL RESEARCH",
+      "abreviacao": null,
+      "issn": [
+        "1043-6618"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "photoacoustics",
@@ -1838,9 +4000,9 @@
         "2578-5478"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2023
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
     },
     {
       "slug": "photochemical-photobiological-sciences",
@@ -1864,8 +4026,8 @@
         "1751-1097"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -1873,12 +4035,13 @@
       "nome": "Photodiagnosis and Photodynamic Therapy",
       "abreviacao": "Photodiagnosis and Photodynamic Therapy",
       "issn": [
+        "1572-1000",
         "15721000"
       ],
       "editora": null,
-      "quantidade_publicacoes": 6,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2025
+      "quantidade_publicacoes": 24,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
     },
     {
       "slug": "photonics",
@@ -1888,7 +4051,7 @@
         "2304-6732"
       ],
       "editora": null,
-      "quantidade_publicacoes": 5,
+      "quantidade_publicacoes": 6,
       "primeiro_ano": 2022,
       "ultimo_ano": 2024
     },
@@ -1905,6 +4068,19 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "physica-medica-european-journal-of-medical-physics",
+      "nome": "Physica Medica-European Journal of Medical Physics",
+      "abreviacao": null,
+      "issn": [
+        "1120-1797"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 9,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "physical-chemistry-chemical-physics",
       "nome": "Physical Chemistry Chemical Physics",
       "abreviacao": "Phys. Chem. Chem. Phys.",
@@ -1913,9 +4089,23 @@
         "1463-9084"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "physiological-measurement",
+      "nome": "PHYSIOLOGICAL MEASUREMENT",
+      "abreviacao": null,
+      "issn": [
+        "0967-3334",
+        "1361-6579"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
     },
     {
       "slug": "plants",
@@ -1928,6 +4118,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "plasma-physics-and-controlled-fusion",
+      "nome": "PLASMA PHYSICS AND CONTROLLED FUSION",
+      "abreviacao": null,
+      "issn": [
+        "0741-3335"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
     },
     {
       "slug": "plasmonics",
@@ -1962,9 +4165,22 @@
         "1932-6203"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "polymer-bulletin",
+      "nome": "POLYMER BULLETIN",
+      "abreviacao": null,
+      "issn": [
+        "0170-0839"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "polymers",
@@ -1974,9 +4190,22 @@
         "2073-4360"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "proceedings-of-spie",
+      "nome": "Proceedings of SPIE",
+      "abreviacao": null,
+      "issn": [
+        "1018-4732"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
     },
     {
       "slug": "proceedings-of-the-institution-of-mechanical-engineers-part-b-journal-of-engineering-manufacture",
@@ -1992,6 +4221,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "process-safety-and-environmental-protection",
+      "nome": "PROCESS SAFETY AND ENVIRONMENTAL PROTECTION",
+      "abreviacao": null,
+      "issn": [
+        "0957-5820"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "processes",
       "nome": "Processes",
       "abreviacao": "Processes",
@@ -1999,9 +4241,22 @@
         "2227-9717"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "quimica-nova",
+      "nome": "QUIMICA NOVA",
+      "abreviacao": null,
+      "issn": [
+        "0100-4042"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "radiation-and-environmental-biophysics",
@@ -2017,15 +4272,29 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "radiation-effects-and-defects-in-solids",
+      "nome": "Radiation Effects and Defects in Solids",
+      "abreviacao": null,
+      "issn": [
+        "1042-0150"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "radiation-measurements",
       "nome": "Radiation Measurements",
       "abreviacao": "Radiation Measurements",
       "issn": [
+        "1350-4487",
         "13504487"
       ],
       "editora": null,
-      "quantidade_publicacoes": 4,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -2033,11 +4302,12 @@
       "nome": "Radiation Physics and Chemistry",
       "abreviacao": "Radiation Physics and Chemistry",
       "issn": [
+        "0969-806X",
         "0969806X"
       ],
       "editora": null,
-      "quantidade_publicacoes": 11,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 24,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2026
     },
     {
@@ -2057,11 +4327,12 @@
       "nome": "Radiotherapy and Oncology",
       "abreviacao": "Radiotherapy and Oncology",
       "issn": [
+        "0167-8140",
         "01678140"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2024
     },
     {
@@ -2078,6 +4349,32 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "rapid-prototyping-journal",
+      "nome": "RAPID PROTOTYPING JOURNAL",
+      "abreviacao": null,
+      "issn": [
+        "1355-2546"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "regional-studies-in-marine-science",
+      "nome": "REGIONAL STUDIES IN MARINE SCIENCE",
+      "abreviacao": null,
+      "issn": [
+        "2352-4855"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "remote-sensing",
       "nome": "Remote Sensing",
       "abreviacao": "Remote Sensing",
@@ -2085,8 +4382,8 @@
         "2072-4292"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2025,
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2020,
       "ultimo_ano": 2025
     },
     {
@@ -2097,9 +4394,48 @@
         "2525-3409"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2024,
+      "quantidade_publicacoes": 6,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "results-opt",
+      "nome": "Results Opt",
+      "abreviacao": null,
+      "issn": [
+        "2666-9501"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "retina-the-journal-of-retinal-and-vitreous-diseases",
+      "nome": "RETINA-THE JOURNAL OF RETINAL AND VITREOUS DISEASES",
+      "abreviacao": null,
+      "issn": [
+        "0275-004X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "revemat",
+      "nome": "REVEMAT",
+      "abreviacao": null,
+      "issn": [
+        "1981-1322"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "reviews-in-cardiovascular-medicine",
@@ -2127,6 +4463,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "revista-brasileira-de-climatologia",
+      "nome": "Revista Brasileira de Climatologia",
+      "abreviacao": null,
+      "issn": [
+        "2237-8642"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "revista-brasileira-de-educacao-medica",
       "nome": "Revista Brasileira de Educação Médica",
       "abreviacao": "Rev. bras. educ. med.",
@@ -2140,6 +4489,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "revista-brasileira-de-ensino-de-ciencias-e-matematica",
+      "nome": "Revista Brasileira de Ensino de Ciências e Matemática",
+      "abreviacao": null,
+      "issn": [
+        "2595-7376"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "revista-brasileira-de-ensino-de-fisica",
       "nome": "Revista Brasileira de Ensino de Física",
       "abreviacao": "Rev. Bras. Ensino Fís.",
@@ -2148,8 +4510,8 @@
         "1806-9126"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2022,
       "ultimo_ano": 2023
     },
     {
@@ -2161,9 +4523,9 @@
         "2176-8978"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
-      "ultimo_ano": 2024
+      "quantidade_publicacoes": 8,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2026
     },
     {
       "slug": "revista-brasileira-multidisciplinar",
@@ -2179,6 +4541,84 @@
       "ultimo_ano": 2023
     },
     {
+      "slug": "revista-curriculo-e-docencia",
+      "nome": "Revista Currículo e Docência",
+      "abreviacao": null,
+      "issn": [
+        "2675-4630"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "revista-da-sociedade-brasileira-de-clinica-medica",
+      "nome": "Revista da Sociedade Brasileira de Clínica Médica",
+      "abreviacao": null,
+      "issn": [
+        "2525-2933"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "revista-de-odontologia-da-braz-cubas",
+      "nome": "Revista de Odontologia da Braz Cubas",
+      "abreviacao": null,
+      "issn": [
+        "2359-6258"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "revista-de-produtos-educacionais-e-pesquisas-em-ensino-reppe",
+      "nome": "Revista de Produtos Educacionais e Pesquisas em Ensino (REPPE)",
+      "abreviacao": null,
+      "issn": [
+        "2526-9542"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2023,
+      "ultimo_ano": 2023
+    },
+    {
+      "slug": "revista-debates-em-ensino-de-quimica",
+      "nome": "REVISTA DEBATES EM ENSINO DE QUÍMICA",
+      "abreviacao": null,
+      "issn": [
+        "2447-6099"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "revista-do-colegio-brasileiro-de-cirurgioes-online",
+      "nome": "REVISTA DO COLÉGIO BRASILEIRO DE CIRURGIÕES (ONLINE)",
+      "abreviacao": null,
+      "issn": [
+        "1809-4546"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2025
+    },
+    {
       "slug": "revista-ensin-ufms",
       "nome": "Revista Ensin@ UFMS",
       "abreviacao": "RevENSIN@",
@@ -2189,6 +4629,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2024,
       "ultimo_ano": 2024
+    },
+    {
+      "slug": "revista-estomatologica-herediana",
+      "nome": "REVISTA ESTOMATOLÓGICA HEREDIANA",
+      "abreviacao": null,
+      "issn": [
+        "2225-7616"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "revista-insignare-scientia-ris",
@@ -2203,6 +4656,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "revista-sergipana-de-matematica-e-educacao-matematica",
+      "nome": "REVISTA SERGIPANA DE MATEMÁTICA E EDUCAÇÃO MATEMÁTICA",
+      "abreviacao": null,
+      "issn": [
+        "2525-5444"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
       "slug": "revista-thema-et-scientia",
       "nome": "Revista Thêma et Scientia",
       "abreviacao": null,
@@ -2213,6 +4679,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2023,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "revista-universitaria-brasileira",
+      "nome": "Revista Universitária Brasileira",
+      "abreviacao": null,
+      "issn": [
+        "2965-3215"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
     },
     {
       "slug": "road-materials-and-pavement-design",
@@ -2228,6 +4707,45 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "rsbo-revista-sul-brasileira-de-odontologia",
+      "nome": "RSBO. REVISTA SUL-BRASILEIRA DE ODONTOLOGIA",
+      "abreviacao": null,
+      "issn": [
+        "1806-7727"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
+      "slug": "rsc-advances",
+      "nome": "RSC Advances",
+      "abreviacao": null,
+      "issn": [
+        "2046-2069"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
+      "slug": "sao-paulo-medical-journal",
+      "nome": "SAO PAULO MEDICAL JOURNAL",
+      "abreviacao": null,
+      "issn": [
+        "1806-9460"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "science-of-the-total-environment",
       "nome": "Science of The Total Environment",
       "abreviacao": "Science of The Total Environment",
@@ -2240,6 +4758,19 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "scientia-plena",
+      "nome": "SCIENTIA PLENA",
+      "abreviacao": null,
+      "issn": [
+        "1808-2793"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 4,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "scientific-reports",
       "nome": "Scientific Reports",
       "abreviacao": "Sci Rep",
@@ -2247,9 +4778,9 @@
         "2045-2322"
       ],
       "editora": null,
-      "quantidade_publicacoes": 3,
-      "primeiro_ano": 2025,
-      "ultimo_ano": 2025
+      "quantidade_publicacoes": 7,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2026
     },
     {
       "slug": "scientifica",
@@ -2264,6 +4795,19 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "sensors",
+      "nome": "SENSORS",
+      "abreviacao": null,
+      "issn": [
+        "1424-8220"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "sleep-medicine",
       "nome": "Sleep Medicine",
       "abreviacao": "Sleep Medicine",
@@ -2276,16 +4820,56 @@
       "ultimo_ano": 2024
     },
     {
+      "slug": "small",
+      "nome": "Small",
+      "abreviacao": null,
+      "issn": [
+        "1613-6810"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "special-care-in-dentistry",
+      "nome": "SPECIAL CARE IN DENTISTRY",
+      "abreviacao": null,
+      "issn": [
+        "0275-1879"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
       "slug": "spectrochimica-acta-part-a-molecular-and-biomolecular-spectroscopy",
       "nome": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
       "abreviacao": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy",
       "issn": [
+        "1386-1425",
         "13861425"
       ],
       "editora": null,
-      "quantidade_publicacoes": 7,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 10,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
+    },
+    {
+      "slug": "structural-chemistry",
+      "nome": "STRUCTURAL CHEMISTRY",
+      "abreviacao": null,
+      "issn": [
+        "1040-0400"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
     },
     {
       "slug": "technology-in-cancer-research-treatment",
@@ -2301,6 +4885,19 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "the-american-journal-of-case-reports",
+      "nome": "THE AMERICAN JOURNAL OF CASE REPORTS",
+      "abreviacao": null,
+      "issn": [
+        "1941-5923"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
       "slug": "the-european-physical-journal-special-topics",
       "nome": "The European Physical Journal Special Topics",
       "abreviacao": "Eur. Phys. J. Spec. Top.",
@@ -2312,6 +4909,19 @@
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2025,
       "ultimo_ano": 2025
+    },
+    {
+      "slug": "the-journal-of-contemporary-dental-practice",
+      "nome": "THE JOURNAL OF CONTEMPORARY DENTAL PRACTICE",
+      "abreviacao": null,
+      "issn": [
+        "1526-3711"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2021
     },
     {
       "slug": "the-journal-of-nutritional-biochemistry",
@@ -2383,8 +4993,8 @@
         "1531-4995"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2026,
+      "quantidade_publicacoes": 2,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2026
     },
     {
@@ -2411,6 +5021,32 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "tissue-cell",
+      "nome": "TISSUE & CELL",
+      "abreviacao": null,
+      "issn": [
+        "0040-8166"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "toxicology-reports",
+      "nome": "TOXICOLOGY REPORTS",
+      "abreviacao": null,
+      "issn": [
+        "2214-7500"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
+    },
+    {
       "slug": "toxins",
       "nome": "Toxins",
       "abreviacao": "Toxins",
@@ -2418,9 +5054,35 @@
         "2072-6651"
       ],
       "editora": null,
-      "quantidade_publicacoes": 1,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2023
+    },
+    {
+      "slug": "translational-cancer-research",
+      "nome": "Translational Cancer Research",
+      "abreviacao": null,
+      "issn": [
+        "2218-676X"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
+      "slug": "transplantation-proceedings",
+      "nome": "TRANSPLANTATION PROCEEDINGS",
+      "abreviacao": null,
+      "issn": [
+        "0041-1345"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2020,
+      "ultimo_ano": 2020
     },
     {
       "slug": "tribology-international",
@@ -2435,15 +5097,29 @@
       "ultimo_ano": 2025
     },
     {
+      "slug": "urban-climate",
+      "nome": "URBAN CLIMATE",
+      "abreviacao": null,
+      "issn": [
+        "2212-0955"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2021,
+      "ultimo_ano": 2021
+    },
+    {
       "slug": "vibrational-spectroscopy",
       "nome": "Vibrational Spectroscopy",
       "abreviacao": "Vibrational Spectroscopy",
       "issn": [
+        "0924-2031",
         "09242031"
       ],
       "editora": null,
-      "quantidade_publicacoes": 2,
-      "primeiro_ano": 2023,
+      "quantidade_publicacoes": 3,
+      "primeiro_ano": 2021,
       "ultimo_ano": 2024
     },
     {
@@ -2460,6 +5136,32 @@
       "ultimo_ano": 2026
     },
     {
+      "slug": "water",
+      "nome": "Water",
+      "abreviacao": null,
+      "issn": [
+        "2073-4441"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2022,
+      "ultimo_ano": 2022
+    },
+    {
+      "slug": "water-air-and-soil-pollution-dordrecht-online",
+      "nome": "WATER, AIR AND SOIL POLLUTION (DORDRECHT. ONLINE)",
+      "abreviacao": null,
+      "issn": [
+        "1573-2932"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2026,
+      "ultimo_ano": 2026
+    },
+    {
       "slug": "wind-energy-science",
       "nome": "Wind Energy Science",
       "abreviacao": "Wind Energ. Sci.",
@@ -2467,6 +5169,32 @@
         "2366-7451"
       ],
       "editora": null,
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2024,
+      "ultimo_ano": 2024
+    },
+    {
+      "slug": "world-journal-of-surgery",
+      "nome": "WORLD JOURNAL OF SURGERY",
+      "abreviacao": null,
+      "issn": [
+        "0364-2313"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
+      "quantidade_publicacoes": 1,
+      "primeiro_ano": 2025,
+      "ultimo_ano": 2025
+    },
+    {
+      "slug": "wspolczesna-onkologia-contemporary-oncology",
+      "nome": "Wspolczesna Onkologia-Contemporary Oncology",
+      "abreviacao": null,
+      "issn": [
+        "1897-4309"
+      ],
+      "editora": null,
+      "fonte": "lattes-2026-11-09",
       "quantidade_publicacoes": 1,
       "primeiro_ano": 2024,
       "ultimo_ano": 2024

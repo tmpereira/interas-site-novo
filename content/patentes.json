@@ -2,6 +2,101 @@
   "$schema": "./schemas/patentes.schema.json",
   "patentes": [
     {
+      "id": "p2026-biorreator-perfusao-metodo",
+      "titulo": "BIORREATOR DE PERFUSÃO, E, MÉTODO DE CULTIVO E ESTIMULAÇÃO DE TECIDOS BIOLÓGICOS EM UM BIORREATOR DE PERFUSÃO",
+      "tipo": "patente",
+      "autores": [
+        "Windisch Neto, Hermann",
+        "Ana, P A",
+        "Lombello, C. B."
+      ],
+      "numero": "BR10202601572",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2026-06-22",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "patricia-aparecida-da-ana"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Windisch Neto, Hermann; Ana, P A; Lombello, C. B.\n- **Número do Registro:** BR10202601572\n- **Data de Depósito:** 22/06/2026\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial\n- **Instituição(ões) financiadora(s):** UFABC",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2026-radia",
+      "titulo": "RadIA",
+      "tipo": "software",
+      "autores": [
+        "Nathália L.A. Alves",
+        "Menezes, M. O."
+      ],
+      "numero": "BR512026006254-3",
+      "orgao": "INPI - Programa de Computador",
+      "data": "2026-06-15",
+      "categorias": [
+        "Software",
+        "INPI"
+      ],
+      "pessoas": [
+        "mario-olimpio-de-menezes"
+      ],
+      "conteudo": "### Detalhes do Registro\n\n- **Autores:** Nathália L.A. Alves; Menezes, M. O.\n- **Número do Registro:** BR512026006254-3\n- **Data de Registro:** 15/06/2026\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2026-disposicao-construtiva-tridimensional",
+      "titulo": "Disposição Construtiva Tridimensional Aplicada em Régua Forense",
+      "tipo": "patente",
+      "autores": [
+        "Ferreira, F.C.L.",
+        "Ferreira, F. C. L",
+        "Araujo, L. B.",
+        "Nascimento Souza, Divanizia DO",
+        "Sa, J. A. S.",
+        "Poleto, T.",
+        "Alves, D. V.",
+        "Alves, D. V.",
+        "Silva, C. S. S.",
+        "Cantanhede, T. S."
+      ],
+      "numero": "BR10202601445",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2026-06-11",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Ferreira, F.C.L.; Ferreira, F. C. L; Araujo, L. B.; Nascimento Souza, Divanizia DO; Sa, J. A. S.; Poleto, T.; Alves, D. V.; Alves, D. V.; Silva, C. S. S.; Cantanhede, T. S.\n- **Número do Registro:** BR10202601445\n- **Data de Depósito:** 11/06/2026\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2025-sensor-nivel-liquido",
+      "titulo": "Sensor de nível de líquido para segurança de pessoas surdas",
+      "tipo": "patente",
+      "autores": [
+        "Cordeiro, M. A.",
+        "Cordeiro, M. A.",
+        "Oliveira, A. C.",
+        "Souza, D.N."
+      ],
+      "numero": "BR10202502954",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2025-12-31",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Cordeiro, M. A.; Cordeiro, M. A.; Oliveira, A. C.; Souza, D.N.\n- **Número do Registro:** BR10202502954\n- **Data de Depósito:** 31/12/2025\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
       "id": "p2025-nanoparticulas-quitosana",
       "titulo": "Nanopartículas de quitosana contendo ácido S nitroso-mercaptosuccínico (S-nitroso-MSA) para tratamento de leishmaniose cutânea",
       "tipo": "patente",
@@ -19,7 +114,9 @@
         "Privilégio de Inovação",
         "Concedida"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "martha-simoes-ribeiro"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Seabra, A. B.; Ribeiro, M. S.; Miotto, R.; Cabral, F. V.; Pelegrino, M. T.\n- **Número do Registro:** BR1020180002325\n- **Data de Depósito:** 04/01/2018\n- **Data de Concessão:** 13/05/2025\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -40,7 +137,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Souza, D. N.; Silva, R. M. V.; Maciel, J. O.; Santos, A.; Araujo, Andreyson S.\n- **Número do Registro:** BR10202500926\n- **Data de Depósito:** 09/05/2025\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -58,7 +157,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "niklaus-ursus-wetter"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Wetter, Niklaus Ursus; Bereczki, Allan\n- **Número do Registro:** BR1020240220870\n- **Data de Depósito:** 24/10/2024\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -84,7 +185,10 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "maria-elisa-chuery-martins-rostelato",
+        "carlos-alberto-zeituni"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Teodoro, L. E. H.; Rostelato, M. E. C. M.; Vieira, J. M.; Talacimon, C. F.; Tavares, P.; Rodrigues Junior, O.; Zeituni, C. A.; Moura, J. A.; Feher, A.; Rosero, W. A. A.\n- **Número do Registro:** BR1020240203780\n- **Data de Depósito:** 01/10/2024\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -104,7 +208,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Santos, A. W. S.; Guedes, B. D. O.; Silveira, I. S.; Souza, D. N.\n- **Número do Registro:** BR10202400660\n- **Data de Depósito:** 04/04/2024\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -126,7 +232,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Telles, L. F. K.; Oliveira, L. S. S.; Santos Filho, M. L.; Araujo, M. V.; Galvao, I. L. B.; Souza, D. N.\n- **Número do Registro:** BR10202302783\n- **Data de Depósito:** 29/12/2023\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -146,7 +254,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "wagner-de-rossi"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** de Rossi, W.; Gomes, A. A.; Nario, A. P.; Bernardes, E. S.\n- **Número do Registro:** BR10202302690\n- **Data de Depósito:** 19/12/2023\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -166,7 +276,9 @@
         "Software",
         "INPI"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes do Registro\n\n- **Autores:** Telles, L. F. K.; Oliveira, L. S. S.; Santos Filho, M. L.; Souza, D. N.\n- **Número do Registro:** 512023003626-9\n- **Data de Registro:** 24/11/2023\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -183,7 +295,9 @@
         "Privilégio de Inovação",
         "Depósito"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "niklaus-ursus-wetter"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Wetter, Niklaus Ursus\n- **Número do Registro:** BR1020230061575\n- **Data de Depósito:** 31/03/2023\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -203,7 +317,9 @@
         "Privilégio de Inovação",
         "Concedida"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes da Patente\n\n- **Inventores:** Marcal, A. C.; Souza, D. N.; Souza, R. M. P.; Araujo, E. M. A.\n- **Número do Registro:** BR1020160100542\n- **Data de Depósito:** 04/05/2016\n- **Data de Concessão:** 07/02/2023\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial"
     },
     {
@@ -223,8 +339,495 @@
         "Marca Registrada",
         "INPI"
       ],
-      "pessoas": [],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
       "conteudo": "### Detalhes do Registro\n\n- **Inventores:** Telles, L. F. K.; Oliveira, L. S. S.; Santos Filho, M. L.; Souza, D. N.\n- **Número do Registro:** 933089015\n- **Título:** Telles\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial\n- **Ano:** 2023"
+    },
+    {
+      "id": "p2022-dispositivo-posicionamento-tubos",
+      "titulo": "Dispositivo para posicionamento de tubos em sistema de ultrassom para controle de qualidade de fontes radioativas seladas",
+      "tipo": "modelo-utilidade",
+      "autores": [
+        "Rostelato, M. E. C. M.",
+        "Moura, J. A.",
+        "Zeituni, C. A.",
+        "Feher, A.",
+        "Souza, C. D.",
+        "Costa, O. L.",
+        "Somessari, S.",
+        "Moura, E. S."
+      ],
+      "numero": "BR10201600265",
+      "orgao": "INPI - Modelo de Utilidade (Concedida)",
+      "data": "2022-08-09",
+      "categorias": [
+        "Modelo de Utilidade",
+        "Concedida"
+      ],
+      "pessoas": [
+        "maria-elisa-chuery-martins-rostelato"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Rostelato, M. E. C. M.; Moura, J. A.; Zeituni, C. A.; Feher, A.; Souza, C. D.; Costa, O. L.; Somessari, S.; Moura, E. S.\n- **Número do Registro:** BR10201600265\n- **Data de Depósito:** 05/02/2016\n- **Data de Concessão:** 09/08/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-processo-soldagem-laser",
+      "titulo": "Processo de soldagem a laser para produção de fontes radioativas",
+      "tipo": "patente",
+      "autores": [
+        "Rostelato, M. E. C. M.",
+        "Feher, A.",
+        "Zeituni, C. A.",
+        "Souza, C. D",
+        "Calvo, W. A. P.",
+        "Costa, O. L.",
+        "Somessari, S.L.",
+        "Moura, J. A.",
+        "Sprenger, F."
+      ],
+      "numero": "BR1020170156982",
+      "orgao": "INPI - Privilégio de Inovação (Concedida)",
+      "data": "2022-08-02",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Concedida"
+      ],
+      "pessoas": [
+        "maria-elisa-chuery-martins-rostelato"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Rostelato, M. E. C. M.; Feher, A.; Zeituni, C. A.; Souza, C. D; Calvo, W. A. P.; Costa, O. L.; Somessari, S.L.; Moura, J. A.; Sprenger, F.\n- **Número do Registro:** BR1020170156982\n- **Data de Depósito:** 21/07/2017\n- **Data de Concessão:** 02/08/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-detector-ctdi-msad",
+      "titulo": "Detector CTDI-MSAD Multiplex - PI 1105444-1",
+      "tipo": "patente",
+      "autores": [
+        "dos Santos L.A.P",
+        "Paschoal, C. M. M.",
+        "Souza, D N",
+        "Souza, D.N."
+      ],
+      "numero": "PI11054441",
+      "orgao": "INPI - Privilégio de Inovação (Concedida)",
+      "data": "2022-07-12",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Concedida"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** dos Santos L.A.P; Paschoal, C. M. M.; Souza, D N; Souza, D.N.\n- **Número do Registro:** PI11054441\n- **Data de Depósito:** 22/09/2011\n- **Data de Concessão:** 12/07/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial\n- **Instituição(ões) financiadora(s):** CNEN; CNPq; CAPES",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-objeto-simulador-seringa",
+      "titulo": "Objeto simulador seringa para teste de centro de rotação de câmara de cintilação do tipo SPECT",
+      "tipo": "patente",
+      "autores": [
+        "Ferreira, F. C. L",
+        "Ferreira, F. C. L.",
+        "Fernandes, C. S.",
+        "Sa, J. A. S.",
+        "Araujo, L. B.",
+        "Silva, E. G.",
+        "Souza, D. N.",
+        "Souza, F. F.",
+        "Gomes, :. L. M.",
+        "Cunha, C. J."
+      ],
+      "numero": "BR10202201335",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2022-07-04",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Ferreira, F. C. L; Ferreira, F. C. L.; Fernandes, C. S.; Sa, J. A. S.; Araujo, L. B.; Silva, E. G.; Souza, D. N.; Souza, F. F.; Gomes, :. L. M.; Cunha, C. J.\n- **Número do Registro:** BR10202201335\n- **Data de Depósito:** 04/07/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-laser-estado-solido",
+      "titulo": "LASER DE ESTADO SÓLIDO COM EFICIÊNCIA PERTO DO LIMITE POR DEFEITO QUÂNTICO",
+      "tipo": "patente",
+      "autores": [],
+      "numero": "BR1020220117284",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2022-06-14",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "niklaus-ursus-wetter"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** \n- **Número do Registro:** BR1020220117284\n- **Data de Depósito:** 14/06/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-aparato-ajuste-intensidade",
+      "titulo": "Aparato para ajuste de intensidade luminosa",
+      "tipo": "modelo-utilidade",
+      "autores": [
+        "Martinho, H. S.",
+        "Milazzotto, M. P.",
+        "Alva, T. D. M.",
+        "Santos Junior, A. R.",
+        "Christoffolete MA",
+        "Carneiro-Ramos, M. S."
+      ],
+      "numero": "BR102016009927",
+      "orgao": "INPI - Modelo de Utilidade (Concedida)",
+      "data": "2022-06-07",
+      "categorias": [
+        "Modelo de Utilidade",
+        "Concedida"
+      ],
+      "pessoas": [
+        "marcela-sorelli-carneiro-ramos"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Martinho, H. S.; Milazzotto, M. P.; Alva, T. D. M.; Santos Junior, A. R.; Christoffolete MA; Carneiro-Ramos, M. S.\n- **Número do Registro:** BR102016009927\n- **Data de Depósito:** 04/05/2016\n- **Data de Concessão:** 07/06/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-rodo-uvc-desinfeccao",
+      "titulo": "Rodo UVC para desinfecção de superfícies",
+      "tipo": "patente",
+      "autores": [
+        "Santos, Victor G. B.",
+        "Souza, Divanizia N",
+        "Melo, Adeilson P.",
+        "Santos, Edvaldo J.",
+        "Lalic, Susana DE Souza",
+        "Santos, Paulo C. L."
+      ],
+      "numero": "BR10202201013",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2022-05-25",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Santos, Victor G. B.; Souza, Divanizia N; Melo, Adeilson P.; Santos, Edvaldo J.; Lalic, Susana DE Souza; Santos, Paulo C. L.\n- **Número do Registro:** BR10202201013\n- **Data de Depósito:** 25/05/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-artefato-avaliacao-pericial",
+      "titulo": "Artefato de avaliação pericial de disparo de arma de fogo artesanal",
+      "tipo": "patente",
+      "autores": [
+        "Ferreira, F. C. L.",
+        "Fernandes, C. S.",
+        "Souza, D N",
+        "Souza, D.N.",
+        "Sa, J. A. S.",
+        "Novais, A.L.F.",
+        "Silva, K. J. P.",
+        "Araujo, L. B.",
+        "Alves, J. A. P.",
+        "Andrade, J. A. B.",
+        "Silva, F. J. S.",
+        "Andrade, J. E.",
+        "Gomes, D. A.",
+        "Gurgel, W. P."
+      ],
+      "numero": "BR10202200122",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2022-01-24",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Ferreira, F. C. L.; Fernandes, C. S.; Souza, D N; Souza, D.N.; Sa, J. A. S.; Novais, A.L.F.; Silva, K. J. P.; Araujo, L. B.; Alves, J. A. P.; Andrade, J. A. B.; Silva, F. J. S.; Andrade, J. E.; Gomes, D. A.; Gurgel, W. P.\n- **Número do Registro:** BR10202200122\n- **Data de Depósito:** 24/01/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-disposicao-construtiva-cervical",
+      "titulo": "Disposição construtiva cervical de dosimetria e calibração do contador de tireoide",
+      "tipo": "patente",
+      "autores": [
+        "Fernandes, C. S.",
+        "Ferreira, F. C. L.",
+        "Souza, D.N.",
+        "Sa, J. A. S.",
+        "Novais, A. L. F.",
+        "Silva, K. J. P.",
+        "Araujo, L. B.",
+        "Lhamas, D. E. L.",
+        "Couto, T. L. S.",
+        "De Novais, Erico Raimundo Pereira",
+        "Rodrigues, Aldimar Machado",
+        "Cunha, C.J.",
+        "Santos, W. S."
+      ],
+      "numero": "BR20202200051",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2022-01-11",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Fernandes, C. S.; Ferreira, F. C. L.; Souza, D.N.; Sa, J. A. S.; Novais, A. L. F.; Silva, K. J. P.; Araujo, L. B.; Lhamas, D. E. L.; Couto, T. L. S.; De Novais, Erico Raimundo Pereira; Rodrigues, Aldimar Machado; Cunha, C.J.; Santos, W. S.\n- **Número do Registro:** BR20202200051\n- **Data de Depósito:** 11/01/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2022-smartdroplet",
+      "titulo": "SmartDroplet",
+      "tipo": "software",
+      "autores": [
+        "Foiani, Letícia",
+        "Herculano da Silva Martinho"
+      ],
+      "numero": "BR51202200324-0",
+      "orgao": "INPI - Programa de Computador",
+      "data": "2022-01-01",
+      "categorias": [
+        "Software",
+        "INPI"
+      ],
+      "pessoas": [
+        "herculano-da-silva-martinho"
+      ],
+      "conteudo": "### Detalhes do Registro\n\n- **Autores:** Foiani, Letícia; Herculano da Silva Martinho\n- **Número do Registro:** BR51202200324-0\n- **Data de Registro:** 01/01/2022\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-densitometro-optico-transmissao",
+      "titulo": "Densitômetro óptico de transmissão",
+      "tipo": "patente",
+      "autores": [
+        "Souza, D.N.",
+        "Xavier, F. H. D. H.",
+        "Amorim, P. S.",
+        "Santos, K. A. M."
+      ],
+      "numero": "BR10202102538",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2021-12-16",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Souza, D.N.; Xavier, F. H. D. H.; Amorim, P. S.; Santos, K. A. M.\n- **Número do Registro:** BR10202102538\n- **Data de Depósito:** 16/12/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-objeto-simulador-teste",
+      "titulo": "Objeto simulador de teste de campo de radiação de raios x odontológico intrabucal (BR1020140193480)",
+      "tipo": "patente",
+      "autores": [
+        "Souza, D.N.",
+        "Ferreira, F. C. L.",
+        "Silva, L. F.",
+        "Souza, F. F."
+      ],
+      "numero": "BR1020140193480",
+      "orgao": "INPI - Privilégio de Inovação (Concedida)",
+      "data": "2021-12-07",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Concedida"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Souza, D.N.; Ferreira, F. C. L.; Silva, L. F.; Souza, F. F.\n- **Número do Registro:** BR1020140193480\n- **Data de Depósito:** 28/07/2014\n- **Data de Concessão:** 07/12/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial\n- **Instituição(ões) financiadora(s):** CNPq; CAPES; FAPITEC-SE; FAPESPA",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-metodo-optico-diagnostico",
+      "titulo": "MÉTODO ÓPTICO PARA DIAGNÓSTICO DE CÂNCER ORAL VIA SALIVA; USO DO MÉTODO E PROTÓTIPO",
+      "tipo": "patente",
+      "autores": [
+        "Janete, A.D.",
+        "Nepomuceno, Gabrielle",
+        "De Sá Rodrigues, Nayara",
+        "MS Alves",
+        "JT Figueirede",
+        "CM Bandeira",
+        "Martinho, Herculano da Silva"
+      ],
+      "numero": "BR1020210243",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2021-12-02",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "herculano-da-silva-martinho"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Janete, A.D.; Nepomuceno, Gabrielle; De Sá Rodrigues, Nayara; MS Alves; JT Figueirede; CM Bandeira; Martinho, Herculano da Silva\n- **Número do Registro:** BR1020210243\n- **Data de Depósito:** 02/12/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-vidro-oxido-boro",
+      "titulo": "Vidro de óxido de boro dopado com nitrato de prata para uso em dosimetria OSL",
+      "tipo": "patente",
+      "autores": [
+        "Souza, D. N.",
+        "Almeida, Adriel S.",
+        "Vidigal, B. M.",
+        "Salles, E. L. S."
+      ],
+      "numero": "BR10202100907",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2021-05-10",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Souza, D. N.; Almeida, Adriel S.; Vidigal, B. M.; Salles, E. L. S.\n- **Número do Registro:** BR10202100907\n- **Data de Depósito:** 10/05/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-sistema-posicionamento-amostras",
+      "titulo": "Sistema para Posicionamento de Amostras e Fontes Radioativas sobre a Janela de Detecção de Espectrômetros Gama.",
+      "tipo": "modelo-utilidade",
+      "autores": [
+        "Zeituni, C. A.",
+        "Correia, R. W.",
+        "Souza, C. D.",
+        "Rostelato, M. E. C. M."
+      ],
+      "numero": "BR1020210087099",
+      "orgao": "INPI - Modelo de Utilidade (Depósito)",
+      "data": "2021-05-05",
+      "categorias": [
+        "Modelo de Utilidade",
+        "Depósito"
+      ],
+      "pessoas": [
+        "carlos-alberto-zeituni",
+        "maria-elisa-chuery-martins-rostelato"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Zeituni, C. A.; Correia, R. W.; Souza, C. D.; Rostelato, M. E. C. M.\n- **Número do Registro:** BR1020210087099\n- **Data de Depósito:** 05/05/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2021-dispositivo-plataforma-transparente",
+      "titulo": "DISPOSITIVO COM PLATAFORMA TRANSPARENTE PARA DETECÇÃO COLORIMÉTRICA E ÓPTICA DE HEPATITE D E METODOLOGIA PARA SEU DESENVOLVIMENTO",
+      "tipo": "patente",
+      "autores": [
+        "Madurro, A. G.",
+        "Madurro, J. M.",
+        "Moraes, D. D.",
+        "Monte, A.F.G.",
+        "Moco, A. C. R.",
+        "Camara, G. C."
+      ],
+      "numero": "BR10202100730",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2021-04-16",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "adamo-ferreira-gomes-do-monte"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Madurro, A. G.; Madurro, J. M.; Moraes, D. D.; Monte, A.F.G.; Moco, A. C. R.; Camara, G. C.\n- **Número do Registro:** BR10202100730\n- **Data de Depósito:** 16/04/2021\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2020-disposicao-construtiva-simulador",
+      "titulo": "Disposição construtiva em simulador tridimensional para teste da mesa de exame em câmara cintilográfica na varredura de corpo total",
+      "tipo": "patente",
+      "autores": [
+        "Ferreira, F. C. L.",
+        "Fernandes, C. S.",
+        "Paschoal, C.M.M.",
+        "Santos, A. D. F.",
+        "Souza, D.N.",
+        "Santos, J. A. S.",
+        "Oliveira, L. S. S.",
+        "Chagas, M. L.",
+        "Holanda Filho, G. C.",
+        "Silva, F. J. S.",
+        "Cesario, C. J.",
+        "Andrade, J. E.",
+        "Cunha, C.J."
+      ],
+      "numero": "BR1020200167405",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2020-08-17",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "divanizia-do-nascimento-souza"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Ferreira, F. C. L.; Fernandes, C. S.; Paschoal, C.M.M.; Santos, A. D. F.; Souza, D.N.; Santos, J. A. S.; Oliveira, L. S. S.; Chagas, M. L.; Holanda Filho, G. C.; Silva, F. J. S.; Cesario, C. J.; Andrade, J. E.; Cunha, C.J.\n- **Número do Registro:** BR1020200167405\n- **Data de Depósito:** 17/08/2020\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2020-sintese-nanoparticulas-radioativas",
+      "titulo": "Síntese de nanopartículas radioativas e não-radioativas de ouro para uso terapêutico",
+      "tipo": "patente",
+      "autores": [
+        "Rostelato, M. E. C. M.",
+        "Souza, C. D",
+        "Zeituni, C. A.",
+        "Nogueira, B. R.",
+        "Rosero, W. A. A."
+      ],
+      "numero": "BR1020200072250",
+      "orgao": "INPI - Privilégio de Inovação (Depósito)",
+      "data": "2020-04-14",
+      "categorias": [
+        "Privilégio de Inovação",
+        "Depósito"
+      ],
+      "pessoas": [
+        "carlos-alberto-zeituni",
+        "maria-elisa-chuery-martins-rostelato"
+      ],
+      "conteudo": "### Detalhes doa Patente\n\n- **Inventores:** Rostelato, M. E. C. M.; Souza, C. D; Zeituni, C. A.; Nogueira, B. R.; Rosero, W. A. A.\n- **Número do Registro:** BR1020200072250\n- **Data de Depósito:** 14/04/2020\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
+    },
+    {
+      "id": "p2020-simoct-simulador-oct",
+      "titulo": "SimOCT- Simulador de OCT",
+      "tipo": "software",
+      "autores": [
+        "Freitas, A. Z.",
+        "Raele, M. P.",
+        "De Pretto, L. R."
+      ],
+      "numero": "BR512020000423-7",
+      "orgao": "INPI - Programa de Computador",
+      "data": "2020-01-15",
+      "categorias": [
+        "Software",
+        "INPI"
+      ],
+      "pessoas": [
+        "anderson-zanardi-de-freitas",
+        "marcus-paulo-raele"
+      ],
+      "conteudo": "### Detalhes do Registro\n\n- **Autores:** Freitas, A. Z.; Raele, M. P.; De Pretto, L. R.\n- **Número do Registro:** BR512020000423-7\n- **Data de Registro:** 15/01/2020\n- **Instituição:** INPI - Instituto Nacional da Propriedade Industrial",
+      "fonte": "lattes-2026-11-09"
     }
   ]
 }

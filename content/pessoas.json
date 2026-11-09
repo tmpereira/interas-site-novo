@@ -15,7 +15,7 @@
       "grupos": [
         "lab-biofotonica"
       ],
-      "lattes": "http://lattes.cnpq.br/0751040282401769",
+      "lattes": "http://lattes.cnpq.br/3524890504250775",
       "scholar": "https://scholar.google.com/citations?hl=en&user=T-7bPc0AAAAJ",
       "orcid": "https://orcid.org/0000-0001-7404-9606",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6603450411",
@@ -51,7 +51,7 @@
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/divanizia-do-nascimento-souza.jpg",
       "instituicao": {
         "nome": "Universidade Federal de Sergipe / Departamento de Fisica-UFS-SE- Brasil",
         "url": "http://www.ufs.br"
@@ -63,7 +63,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55582700900",
       "areas": "Instrumentação para Medida e Controle de Radiação, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Métodos e Técnicas de Ensino, Física, Física da Matéria Condensada",
       "atuacao": "O uso de fontes radioativas em medicina demanda estudos dosimétricos com técnicas que se adequem tanto a procedimentos de irradiação simulados quanto in vivo. Nas simulações, que podem ser físicas ou computacionais, pacientes ou amostras são representados por objetos simuladores (phantoms). Os phantoms podem ser físicos ou virtuais, tais como sólidos com uma geometria simples ou os antropomórficos. Neste projeto, a minha colaboração e do grupo e laboratório de Física Médica que coordeno na Universidade Federal de Sergipe será realizar procedimentos dosimétricos empregado técnicas luminescentes e computacionais. Será enfatizado o desenvolvimento de protocolos dosimétricos para radioterapia empregando fontes radioativas sintetizadas e caracterizadas neste projeto e de demais feixes de radiação de interesse. A termoluminescência e a luminescência opticamente estimulada serão as técnicas físicas empregadas; para as simulações computacionais será empregado o código computacional Monte Carlo",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "herculano-da-silva-martinho",
@@ -71,7 +72,7 @@
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/herculano-da-silva-martinho.jpg",
       "instituicao": {
         "nome": "Universidade Federal do ABC / Centro de Ciências Naturais e Humanas - UFABC-SP-Brasil",
         "url": "http://www.ufabc.br"
@@ -82,7 +83,8 @@
       "orcid": "https://orcid.org/0000-0002-7690-014X",
       "areas": "Física da Matéria Condensada, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Propriedades Térmicas da Matéria Condensada, Modelos Analíticos e de Simulação, Engenharia Biomédica",
       "atuacao": "Liderará experimentos envolvendo espectroscopia vibracional (espectroscopias Raman, Absorção no Infravermelho) em escalas macro (milímetros), micro (microns), e nano (200 nanômetros) de amostras de biofluidos (saliva, plasma, sangue) de pacientes acometidos por doenças ou situações clínicas onde inflamação ou hiperinflamação são fatores importantes ((por exemplo COVID-19, ¿Monkeypox¿). Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver metodologia adequada para a obtenção dos sinais espectrais; ii) liderar o desenvolvimento de métodos de análise dos dados espectrais, usando ferramentas de mineração de dados; iii) liderar a busca por possíveis correlações entre os achados espectrais e outras técnicas; iv) liderar o desenvolvimento de simulações computacionais de macromoléculas e tecidos a fim de subsidiar a interpretação dos dados.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "maria-elisa-chuery-martins-rostelato",
@@ -90,7 +92,7 @@
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/maria-elisa-chuery-martins-rostelato.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -102,7 +104,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8613224900",
       "areas": "Produção de Radioisótopos, Aplicações Industriais de Radioisótopos, Produção de Fontes Radioativas",
       "atuacao": "Responsável pelo desenvolvimento de novas tecnologias para tratamento de câncer com radiações ionizantes, em especial a nanobraquiterapia, e pelo Laboratório de Produção de Fontes Radioativas para Radioterapia do IPEN, que produz e distribui fontes radioativas para os hospitais, desde 1997. Os principais desafios incluem: síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor; ensaios de citotoxicidade in vitro; ensaios em modelo animal de tumor de próstata; associação da Terapia com Laser de Baixa Potência à nanobraquiterapia in vivo; desenvolvimento de ensaios pré-clínicos de câncer de próstata para investigar o efeito biológico da associação das radiações ionizante e não ionizante; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica, ao uso de fontes radioativas em câncer, auxiliando nas tomadas de decisões na Saúde; dosimetria em radioterapia.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "wagner-de-rossi",
@@ -110,7 +113,7 @@
       "categoria": "comite-gestor",
       "cargo": "Membro do Comitê Gestor",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/wagner-de-rossi.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -122,7 +125,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=16311450700",
       "areas": "Processos de Usinagem a Laser, microusinagem com laser de femtosegundo, Soldagem a Laser, Lasers",
       "atuacao": "1-Responsável pela Estação de microusinagem com laser de femtosegundos.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "anderson-zanardi-de-freitas",
@@ -130,7 +134,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/anderson-zanardi-de-freitas.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -142,7 +146,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8572637000",
       "areas": "Médotos de Diagnóstico Ópticos, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Laser, Sensoriamento Remoto, Linguagens de Programação",
       "atuacao": "Gerenciar os experimentos envolvendo a técnica de tomografia por coerência óptica para realização de caracterizações morfológicas e funcionais (microfluxo) de tecidos biológicos (biópsia óptica), envolvendo as técnicas de fluxometria doppler e laser speckle. Coordenar os experimentos no IPEN, envolvendo caracterização espectral de tecidos biológicos por meio de espalhamento Raman em escala micrométrica e nanométrica com a utilização das técnicas TERS (Tip Enhanced Raman Spectroscopy) e SNOM.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "ariel-escobar",
@@ -169,7 +174,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/carlos-alberto-zeituni.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -181,7 +186,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6508070904",
       "areas": "Exames Pós Irradiação, Aplicações Industriais de Radioisótopos, Administração de Recursos Humanos, Garantia de Controle de Qualidade",
       "atuacao": "Responsável pela produçao de novas fontes radioativas para o desenvolvimento de novas tecnologias para tratamento de câncer. Irradiar as nanoparticulas no reator nuclear IEA-R1 desenvolvendo previamente a tecnologia para que não ocorra a aglutinação das mesmas durante o tempo da irradiação. Além disso será responsável pela manipulação das nanopartículas radioativas na hot-cell do CETER (Centro de Tecnologia das Radiações do IPENCNEN) de forma que durante a funcionalização das nanos com o material carreador químico, todo o processo ocorra de maneira segura e que garanta a minimização de dose dos operadores/pesquisadores nesta etapa do projeto.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "daniel-perez-vieira",
@@ -189,7 +195,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/daniel-perez-vieira.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -201,7 +207,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55504380000",
       "areas": "Radiologia e Fotobiologia, Biologia Molecular, Hematologia, Protozoologia Parasitária Humana, Protozoologia Parasitária Animal, Imunologia Celular",
       "atuacao": "Planejamento, execução e apoio para ensaios de citotoxicidade, genotoxicidade e microscopia óptica de fluorescência para avaliação dos efeitos de radiofármacos ou de novos compostos em modelos in vitro estruturados em duas ou três dimensões. Poderão ser utilizados modelos tumorais ou não-tumorais, majoritariamente na forma de esferoides de linhagem celular única.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "eduardo-landulfo",
@@ -209,7 +216,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/eduardo-landulfo.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares - IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -221,7 +228,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6602420251",
       "areas": "Sensoriamento Remoto, Métodos Experimentais e Instrumentação para Partículas Elementares e Física Nuclear, Estrutura Nuclear, Desenvolvimento de Instrumentação Geofísica",
       "atuacao": "Desenvolver uma metodologia de detecção de bioaerossóis na atmosfera e ambientes fechados e concomitantemente levantar um banco de dados de fluorescência e espectroscopia Raman + FTIR de aerossóis de origem biológica.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "emerson-soares-bernardes",
@@ -229,7 +237,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/emerson-soares-bernardes.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -240,7 +248,8 @@
       "orcid": null,
       "areas": "Imagem Molecular, Glicobiologia tumoral, Glicoimunologia, Inflamação e Câncer",
       "atuacao": "Desenvolver radiofármacos baseados em anticorpos como estratégia diagnóstica e terapêutica no combate ao câncer. O desenvolvimento de radio-imunoconjugados tem como potencial não só prever o nível de progressão da doença oncológica, como também auxiliar no planejamento do tratamento e na monitorização da resposta ao tratamento em pacientes com câncer. Entre os principais desafios encontram-se: (1) radiomarcação de anticorpos com radioisótopos emissores de pósitron para imagem diagnóstica por Tomografia por Emissão de Pósitron (PET) e radioisótopos emissores gama para a imagem diagnóstica por Tomografia por Emissão de Fóton Único (SPECT) e respectivo controle de qualidade; (2) Desenvolvimento de ensaios pré-clínicos in vitro para investigar a imunoreatividade dos radio-imunoconjugados; (3) Desenvolvimento de modelos tumorais in vivo relevantes para a realização de ensaios pré-clinicos de imagem PET/SPECT, biodistribuição e farmacocinética.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "ilka-tiemy-kato",
@@ -248,7 +257,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/ilka-tiemy-kato.jpg",
       "instituicao": {
         "nome": "Universidade Federal do ABC / Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas - UFABC- SP-Brasil",
         "url": "http://www.ufabc.br"
@@ -260,7 +269,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=8398276600",
       "areas": "ESTOMATOLOGIA, Terapia Fotodinâmica, Modelagem de Sistemas Biológicos, Laser em Odontologia",
       "atuacao": "Empregar a biofotônica para estudar a interação da radiação não ionizante com os tecidos do sistema nervoso central e desenvolver estratégias terapêuticas que empregam tecnologias baseadas em luz no tratamento das sequelas causadas pela asfixia perinatal. Os principais desafios a serem superados: desenvolver metodologias de análise para avaliar a penetração da radiação nas estruturas do encéfalo de animais neonatos; desenvolver e aprimorar estratégias terapêuticas para evitar ou minimizar as sequelas causadas pela privação de oxigênio nos tecidos cerebrais.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "joao-loures-salinet-junior",
@@ -268,7 +278,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/joao-loures-salinet-junior.jpg",
       "instituicao": {
         "nome": "Universidade Federal do ABC / Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas -UFABC - SP-Brasil",
         "url": "http://www.ufabc.br"
@@ -279,7 +289,8 @@
       "orcid": null,
       "areas": "Engenharia Biomédica, Bioengenharia, Instrumentação Odontológica e Médico-Hospitalar, Processamento de Sinais Biológicos",
       "atuacao": "A fibrilação atrial (FA) é a arritmia cardíaca sustentada mais frequente na prática clínica, considerada uma epidemia cardiovascular não infecciosa crônica, com sérias ameaças à saúde humana, e grande consumo de recursos. Devido à complexidade dessa arritmia e grande sensibilidade a erros pelos atuais sistemas comerciais, a localização das áreas responsáveis pelo disparo e manutenção da FA, para cauterização e eliminação da arritmia, é o atual desafio clínico. Este projeto visa caracterizar o miocárdio através da biofotônica e a óptica biomédica, relacionando-o com os padrões e mecanismos a serem observados durante um modelo experimental in situ de FA induzida em coelhos, através do mapeamento óptico panorâmico e elétrico simultaneamente, de forma a possibilitar a geração de mapas eletrofisiológicos e eletrocardiográficos mais realísticos com a fisiopatologia da FA, que podem ser posteriormente trasladados para a prática clínica, através do aprimoramento dos equipamentos comerciais.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "luciane-hiramatsu-azevedo",
@@ -287,7 +298,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/luciane-hiramatsu-azevedo.jpg",
       "instituicao": {
         "nome": "Universidade de São Paulo / Departamento de Dentística-USP- SP-Brasil",
         "url": "http://www.usp.br"
@@ -298,7 +309,8 @@
       "orcid": "https://orcid.org/0000-0001-9481-0108",
       "areas": "Odontologia, Odontopediatria, LASER",
       "atuacao": "Utilizar os lasers de alta potência no tratamento cirúrgico de lesões dos tecidos moles orais em pacientes que apresentem tumores benignos, lesões vasculares e lesões potencialmente cancerizáveis. As lesões removidas serão encaminhadas para exames histopatológicos (Departamento de Patologia da FOUSP). A eficácia da aplicação de lasers de alta potência no tratamento de lesões da mucosa oral será avaliada dentro dos seguintes critérios: ausência de recidiva após 1 (no mínimo) de seguimento clínico, conforto do paciente no pós- operatório, sintomatologia e uso de medicamentos analgésicos e antiinflamatórios. Promover treinamento de profissionais e atuar na difusào cientifica.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "luis-felipe-das-chagas-e-silva-de-carvalho",
@@ -306,7 +318,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/luis-felipe-das-chagas-e-silva-de-carvalho.jpg",
       "instituicao": {
         "nome": "Universidade de Taubaté / Departamento de Odontologia- UNITAU-SP-Brasil",
         "url": "http://www.unitau.br"
@@ -317,7 +329,8 @@
       "orcid": null,
       "areas": "Nanobiotecnologia, Estomatologia, Câncer Bucal",
       "atuacao": "Será responsável por investigar amostras de salivas de pacientes com câncer bucal e normasis visando 1) padronizar a caracterização do biofluído em indivíduos saudáveis como grupo comparador; 2) investigar fatores confundidores do paciente (por exemplo, fumantes versus não fumantes); 3) investigar condições potencialmente malignas. Sua abordagem terá viés diretamente clínico, em conjunto com a CK Estomatologia e outros parceiros neste projeto.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "marcus-paulo-raele",
@@ -325,7 +338,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/marcus-paulo-raele.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -336,7 +349,8 @@
       "orcid": "https://orcid.org/0000-0002-6461-6766",
       "areas": "Ótica, Interferometria, Física Nuclear, Estrutura Nuclear",
       "atuacao": "Propor, executar e auxiliar na análise de características ópticas de tecidos biológicos via espectroscopia de absorção visando um melhor entendimento da aplicação de radiação não ionizante transcraniana em camundongos neonatos (em parceria com Profa Dra Ilka Tiemy Kato Prates, UFABC). Produzir, via ablação de laser de femtosegundos nanopartículas de ouro para aplicação em nano braquiterapia (em parceria com a Profa Dra Elisa Rostelato e Prof Dr. Wagner de Rossi IPEN).",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "maria-de-la-salud-guillhem-sanchez",
@@ -363,7 +377,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/mario-olimpio-de-menezes.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -377,7 +391,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57211271327",
       "areas": "Inteligência Artificial e Aprendizado de Máquina, Física Nuclear, Modelos Analíticos e de Simulação, Computação Paralela e Distribuída, Ciência da Computação, Física",
       "atuacao": "Estudo e aplicação de aprendizado de máquina, redes neurais diversas e outras técnicas de inteligência artificial para análises de dados e imagens, geração de insights e melhoria de processos. Analisar imagens hiperespectrais de amostras de tecidos irradiados por luz em diversos processos biológicos no tratamentos de cânceres. Os principais desafios científicos e tecnológicos que deverá superar incluem, mas não se limitam a: i) apropriação dos conceitos básicos relacionados à técnica de FTIR; ii) apropriação dos conceitos básicos da aquisição das imagens e dos respectivos espectrômetros; iii) identificação das técnicas de aprendizado de máquina apropriadas para análises deste tipo de imagens; iv) expor as explicações das técnicas de aprendizado de máquina empregadas nas análises de modo a aumentar a confiabilidade dos resultados; v) buscar o engajamento com outros pesquisadores de aprendizado de máquina e inteligência artificial do projeto visando fomentar a formação de alunos.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "martha-simoes-ribeiro",
@@ -385,7 +400,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/martha-simoes-ribeiro.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -397,7 +412,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7201715432",
       "areas": "Terapia Óptica, Biofotônica, Radiologia e Fotobiologia",
       "atuacao": "Desenvolver estratégias terapêuticas de vanguarda baseadas em radiações e sistemas nanoestruturados para combate ao câncer e doenças infecciosas resistentes, de modo a fornecer tecnologias de ponta para a melhora da qualidade de vida da população. Os principais desafios incluem: desenvolvimento de ensaios pré-clínicos de câncer de mama para investigar o efeito biológico da associação das radiações ionizante e não ionizante; desenvolvimento de modelos pré-clínicos de doenças infecciosas (bacterianas, fúngicas e parasitárias) para explorar o uso de compostos fotoativos e nanoestruturados; Desenvolver irradiadores dedicados baseados em LEDs, em parceria com uma startup, para tratamento de infecções resistentes a antimicrobianos convencionais bem como verificar a viabilidade do uso de OLEDs como curativo em infecções de pele; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica do uso de tecnologias baseadas em luz, para tomada de decisões.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "moises-oliveira-dos-santos",
@@ -405,7 +421,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/moises-oliveira-dos-santos.jpg",
       "instituicao": {
         "nome": "Universidade do Estado do Amazonas-UEA-AM-Brasil",
         "url": "https://www.uea.edu.br/"
@@ -417,7 +433,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56081210300",
       "areas": "Física Geral, Física da Matéria Condensada, Ótica, Robótica, Mecatrônica e Automação, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part.",
       "atuacao": "Estudar e desenvolver (i) métodos e dispositivos de análise de imagem multiespectral que são capazes de recuperar dados de imagens hiperespectrais; (ii) desenvolver métodos de análise de imagens (classificação e diferenciação) hiperespectrais na faixa do infravermelho médio (espectroscopia vibracional) e na região do visível (microscopia óptica) de amostras de câncer de mama e outros tecidos biológicos. As análises serão baseadas em aprendizado de máquina, incluindo aprendizado profundo.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "niklaus-ursus-wetter",
@@ -425,7 +442,7 @@
       "categoria": "pesquisador",
       "cargo": "Pesquisador",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/niklaus-ursus-wetter.jpg",
       "instituicao": {
         "nome": "Instituto de Pesquisas Energéticas e Nucleares- IPEN/CNEN-SP-Brasil",
         "url": "http://www.ipen.br"
@@ -437,7 +454,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=6701628386",
       "areas": "Ótica, Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Lasers, Processamento de Sinais Biológicos, Instrumentação Odontológica e Médico-Hospitalar",
       "atuacao": "1) Responsável pelo equipamento multiusuário n-SNOM (Scanning Near Field Optical Microscopy): (https://www.sites.google.com/site/ipencla/multiusuario/sistemas-fapesp/snom) 2) Dar apoio aos experimentos que envolvem medidas de microRaman, nanoRaman, TERS (Tip Enhanced Raman Spectroscopy). 3) Desenvolvimento de substratos SERS (Surface Enhanced Raman Spectroscopy) para medidas em amostras biológicas.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "orlando-rodrigues-junior",
@@ -753,7 +771,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/adamo-ferreira-gomes-do-monte.jpg",
       "instituicao": {
         "nome": "Universidade Federal de Uberlândia / Instituto de Física-UFU-MG-Brasil",
         "url": "http://www.ufu.br"
@@ -765,7 +783,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7004412814",
       "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Instrumentação Odontológica e Médico-Hospitalar, Prop. Óticas e Elétricas de Nanoestruturas Semicondutoras",
       "atuacao": "Obter protocolos clínicos com resultado terapêutico in-vivo baseado no conhecimento da localização e concentração de cromóforos no tecido cutâneo (oxi-hemoglobina, deoxi-hemoglobina, água, melanina e lipídios). Desenvolvemos método inovador no Brasil in-vivo não-invasivo para determinar a concentração desses cromóforos e sua distribuição espacial, por meio da reconstituição da imagem óptica difusa utilizando redes neurais artificiais para o mapeamento e diagnóstico de tumores e lesões de tecidos. Detectar quantitativa e não-invasiva da absorção óptica e do espalhamento em tecidos. A técnica de imagem no domínio da frequência espacial (SFDI) irá funcionar como um dispositivo aplicado à Medicina, promovendo grande impacto com o desenvolvimento de estudos ligados ao diagnóstico óptico precoce de tecidos e também mapeamento de tumores cutâneos in-vivo. Na área tecnológica, a também será utilizada para realizar tomografía óptica de tecidos.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "ana-cecilia-correa-aranha",
@@ -773,7 +792,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/ana-cecilia-correa-aranha.jpg",
       "instituicao": {
         "nome": "Universidade de São Paulo / Departamento de Dentística- USP-SP-Brasil",
         "url": "http://www.usp.br"
@@ -784,7 +803,8 @@
       "orcid": null,
       "areas": "Odontologia, Dentistica Restauradora, Clínica Odontológica, Materiais Odontológicos, Laser",
       "atuacao": "Estudar os efeitos da radiação ionizante nas proteases endógenas em dentina hígida e restaurada. Desenvolvimento de metodologia com uso de lasers combinada ou não a outras tecnicas para prevençao e tratamento de lesões cervicais não cariosas, hipersensibilidade dentinária. Estudo clinico duplo cego, longitudinal randomizado com Laser de Er, Cr:YSGG e pasta de fosfosilicato de sódio cálcio como tratamentos de consultório da hipersensibilidade dentinária. Promover treinamento de profissionais e atuar na difusão científica.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "elvis-joacir-de-franca",
@@ -832,7 +852,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/leandro-luongo-de-matos.jpg",
       "instituicao": {
         "nome": "Instituto do Câncer do Estado de São Paulo Octávio Frias de Oliveira-ICESP-SP-Brasil",
         "url": "https://icesp.org.br/"
@@ -847,7 +867,8 @@
       "scopus_alternativo": "https://www.scopus.com/authid/detail.uri?authorId=57219465859",
       "areas": "Cirurgia de Cabeça e Pescoço, Cirurgia, Medicina, Biologia Molecular, Bioestatística, Epidemologia",
       "atuacao": "É crescente a busca por microRNAs associados à carcinogênese, progressão tumoral e também no prognóstico de pacientes com carcinoma espinocelular de cavidade oral. Para essa neoplasia, a espessura tumoral é bem documentada como um fator isolado de pior prognóstico, porém pouco se sabe sobre as causas moleculares envolvidas nesse processo. Dessa forma, neste Instituto iremos contribuir na avaliação do papel dos proteoglicanos e identificação dos microRNAs envolvidos no processo de invasão tumoral, além de relacioná-los com variáveis demográficas, histopatológicas e imuno-histoquímicas e o prognóstico de pacientes acometidos por carcinoma espinocelular de cavidade oral, assim como tireóide. Selecionar e preparar tissue micro-arrays (TMAs) destes tecidos em lâminas cristalina de CaF2 para análise vibracional por imagem por FTIR.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "luciano-bachmann",
@@ -855,7 +876,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/luciano-bachmann.jpg",
       "instituicao": {
         "nome": "Universidade de São Paulo / Departamento de Física - USP- SP-Brasil",
         "url": "http://www.usp.br"
@@ -867,7 +888,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=7005450678",
       "areas": "Física da Matéria Condensada, Aplicações de Lasers Em Ciências da Vida, fisica médica, Métodos Óticos de Análise, MEDICINA II",
       "atuacao": "Os sinais hiperespectrais, obtidos por meio de equipamentos de infravermelho, caracterizam-se por apresentar para cada pixel da imagem um espectro de valores de absorbância para as diferentes frequências, que se mostra sensível às características do tecido subjacente. Iremos contribuir neste Instituto investigando sinais hiperespectrais infravermelhos obtidos a partir de lâminas contendo amostras de tecido sadio e de tecido anormal oriundas de diferentes órgãos, tais como tireoide, pele e mama, sadios e com características anormais, em especial a ocorrência de neoplasias, com uso de técnicas computacionais de Aprendizagem Profunda, para a implementação de classificadores, com os quais será possível caracterizar as regiões da lâmina de acordo com as possíveis anomalias presentes. A validação será feita com imagens obtidas a partir de lâminas de biópsias coradas com Hematoxilina e Eosina.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "marcela-sorelli-carneiro-ramos",
@@ -875,7 +897,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/marcela-sorelli-carneiro-ramos.jpg",
       "instituicao": {
         "nome": "Universidade Federal do ABC / Centro de Ciências Naturais e Humanas-UFABC- SP-Brasil",
         "url": "http://www.ufabc.br"
@@ -883,12 +905,13 @@
       "grupos": [
         "lab-imunologiacardio-ufabc"
       ],
-      "lattes": "http://lattes.cnpq.br/6452778998744417",
+      "lattes": "http://lattes.cnpq.br/6452778998744794",
       "scholar": null,
       "orcid": null,
       "areas": "Fisiologia Cardiovascular, Citologia e Biologia Celular, Histologia, Imunologia Celular, Fisiologia Endócrina",
       "atuacao": "Coordenar as investigação dos processos inflamatórios derivados de doenças cardiovasculares. É bem estabelecido que as funções cardíacas e renais estão intimamente conectadas e, portanto, alteração em um dos órgãos, é capaz de levar à alterações no outro órgão. Nesse sentido, é bastante relevante o entendimento dos conectores do eixo rim-coração. Assim, dentre as diversas doenças cardiovasculares, iremos focar no quadro de síndrome cardiorrenal tipo 3, onde é possível observar os efeitos cardíacos oriundos de um quadro de lesão renal aguda (LRA). A LRA apresenta elevada incidência na população mundial e, quando não diagnosticada corretamente ou tardiamente, pode levar ao quadro de doença renal crônica, onde ocorre a perda progressiva e irreversível da função renal e, consequentemente, cardíaca. O presente projeto conta com as colaborações nacionais e internacionais (UFPR, Canada e Espanha)",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "patricia-aparecida-da-ana",
@@ -896,7 +919,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/patricia-aparecida-da-ana.jpg",
       "instituicao": {
         "nome": "Universidade Federal do ABC / Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas-UFABC-SP- Brasil",
         "url": "http://www.ufabc.br"
@@ -908,7 +931,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=15059916900",
       "areas": "Biofotonica e Óptica Biomédica, Engenharia Biomédica, Lasers Em Odontologia",
       "atuacao": "Empregar a Biofotônica e a óptica biomédica para desenvolver estratégias diagnósticas e terapêuticas para combate ao câncer e doenças crônicas que acometem a cavidade oral, tais como cárie, erosão dentária e osteoporose, para fornecer tecnologias de ponta e de baixo custo para melhora da qualidade de vida. Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver dispositivo baseado em fluorescência e inteligência artificial para diagnóstico precoce e preditivo de câncer de mama por análise de saliva; ii) desenvolver e aprimorar estratégias que empreguem lasers de alta potência Q-switched para paralisar lesões de tecidos duros dentais; iii) desenvolver e aplicar biomaterial à base de colágeno com potencial de drug delivery, a fim de possibilitar o reparo de lesões de tecidos ósseos; iv) aprimorar metodologia analítica, envolvendo tomografia por coerência óptica, para diagnóstico precoce e monitoramento de osteoporose.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "thiago-martini-pereira",
@@ -916,7 +940,7 @@
       "categoria": "lider-laboratorio",
       "cargo": "Líder de Laboratório Associado",
       "ordem": null,
-      "foto": null,
+      "foto": "/fotos/pessoas/thiago-martini-pereira.jpg",
       "instituicao": {
         "nome": "Universidade Federal de São Paulo / Departamento de Ciência e Tecnologia-UNIFESP- SP-Brasil",
         "url": "http://www.unifesp.br"
@@ -928,7 +952,8 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=12345555800",
       "areas": "ESPECTROSCOPIA NO INFRAVERMELHO, ESPECTROSCOPIA RAMAN, PROCESSAMENTO DE SINAIS BIOESPECTROSCOPICOS, COMPUTER AIDED DIAGNOSIS",
       "atuacao": "Otimização de métodos de processamento de imagens hiperespectrais na região do infravermelho para o diagnóstico de neoplasias e outras doenças de interesse do projeto. Adicionalmente será o responsável pelo desenvolvimento da plataforma Web para a unificação dos dados espectroscópicos com o objetivo de divulgar as técnicas ópticas dentro da comunidade médica. Serás o responsável pelo desenvolvimento de uma aplicação para tablet na qual ira auxiliar o patologista na análise dos dados do projeto.",
-      "ativo": true
+      "ativo": true,
+      "foto_fonte": "lattes-2026-11-09"
     },
     {
       "slug": "anselmo-feher",

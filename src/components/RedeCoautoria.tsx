@@ -42,10 +42,8 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
   return (
     <figure className="rede-coautoria">
       <figcaption className="rede-coautoria__cabecalho">
-        <span className="rede-coautoria__titulo">Coautoria entre membros do INTERAS</span>
+        <span className="rede-coautoria__titulo">Coautoria entre pesquisadores do INTERAS</span>
         <span className="rede-coautoria__legenda">
-          <span className="rede-coautoria__chave rede-coautoria__chave--pesquisador">Pesquisadores</span>
-          <span className="rede-coautoria__chave rede-coautoria__chave--bolsista">Bolsistas</span>
           <span className="rede-coautoria__explicacao">Bolinha maior = mais publicações · linha mais grossa = mais artigos juntos</span>
         </span>
       </figcaption>
@@ -57,7 +55,7 @@ export default function RedeCoautoria({ rede, periodo, seletor }: Props) {
           className={`rede-coautoria__svg${ativo ? " rede-coautoria__svg--realce" : ""}`}
           viewBox={`0 0 ${rede.largura} ${rede.altura}`}
           role="img"
-          aria-label={`Rede de coautoria (${periodo.chave === "todos" ? "todos os anos" : periodo.rotulo}) com ${nosVisiveis.length} membros e ${periodo.arestas.length} pares de coautores. A tabela abaixo traz os mesmos dados.`}
+          aria-label={`Rede de coautoria (${periodo.chave === "todos" ? "todos os anos" : periodo.rotulo}) com ${nosVisiveis.length} pesquisadores e ${periodo.arestas.length} pares de coautores. A tabela abaixo traz os mesmos dados.`}
           onMouseLeave={() => setAtivo(null)}
         >
           <g className="rede-coautoria__arestas">
