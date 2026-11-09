@@ -109,6 +109,16 @@ export const pessoa = z.looseObject({
   areas_en: en("areas"),
   atuacao: z.string().nullable(),
   atuacao_en: en("atuacao"),
+  /** Perfil de autor no OpenAlex (https://openalex.org/A...), de onde vêm `indice_h` e `citacoes`. */
+  openalex: url.nullable().optional(),
+  /** Índice h da carreira inteira (OpenAlex). Gravado por web_scraping/get_lattes_data.py. */
+  indice_h: z.number().int().nonnegative().nullable().optional(),
+  /** Índice i10 (trabalhos com 10 ou mais citações), carreira inteira (OpenAlex). */
+  indice_i10: z.number().int().nonnegative().nullable().optional(),
+  /** Total de citações da carreira inteira (OpenAlex). */
+  citacoes: z.number().int().nonnegative().nullable().optional(),
+  /** Origem de `indice_h`/`citacoes`, ex.: "openalex-2026-11-09". Outra fonte = o script não mexe. */
+  fonte_metricas: z.string().nullable().optional(),
   /** false = mantém no histórico, mas não aparece na página da equipe. */
   ativo: z.boolean(),
 });

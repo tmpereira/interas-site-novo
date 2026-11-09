@@ -187,10 +187,29 @@
     margin: $espaco-6 0 0;
     padding: 0;
     list-style: none;
+
+    // Segunda linha (índice h, i10, citações), logo abaixo dos links
+    & + & {
+      margin-top: $espaco-3;
+    }
   }
 
-  &__botao {
+  // Links e métricas: borda na mesma cor do anel da foto
+  &__botao,
+  &__metrica {
     @include pilula-pequena;
+    border-color: var(--cor-frente, #{$cor-acento});
+  }
+
+  // Índice h, i10 e citações: um em cada pílula, preenchida e sem ação
+  &__metrica {
+    background: $cor-superficie;
+    cursor: help;
+
+    strong {
+      font-family: $fonte-mono;
+      font-weight: $peso-titulo;
+    }
   }
 
   section {

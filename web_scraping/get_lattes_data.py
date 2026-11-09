@@ -28,6 +28,9 @@ Etapas:
      fator de impacto "proxy JCR" e países/colaboração internacional), toda vez.
      Métricas de outra fonte (fonte_metricas que não começa com "openalex") não
      são tocadas. Chave opcional da API: variável OPENALEX_API_KEY.
+     Também grava em content/pessoas.json o índice h, o índice i10 e o total de citações de cada
+     pessoa (perfil de autor do OpenAlex, achado pelo campo `openalex`, pelo ORCID ou
+     pelos artigos dela no site), exibidos no topo do perfil.
   4. Reordena os arquivos como o site espera e roda `npm run validar`.
   5. Grava um relatório em web_scraping/relatorio-lattes-<data>.md.
 
@@ -982,6 +985,158 @@ def atualizar_metricas(pubs: list[dict], rel: list[str], resumo: dict) -> None:
         rel.append(f"- DOI não encontrado no OpenAlex ({len(nao_achados)}): " + ", ".join(f"`{i}`" for i in sorted(nao_achados)))
 
 
+def _mesmo_autor(nome_pessoa: str, nome_autor: str | None) -> bool:
+    """Confere se um nome de autor do OpenAlex é compatível com o nome da pessoa:
+    o último sobrenome da pessoa aparece no nome do autor e a inicial do primeiro nome bate."""
+    if not nome_autor:
+        return False
+    p = normaliza(nome_pessoa).split()
+    a = normaliza(nome_autor).split()
+    if not p or not a:
+        return False
+    return p[-1] in a and a[0][0] == p[0][0]
+
+
+def _id_openalex(v: str | None) -> str | None:
+    return v.rsplit("/", 1)[-1] if v else None
+
+
+def atualizar_metricas_pessoas(pessoas: list[dict], pubs: list[dict], rel: list[str], resumo: dict) -> bool:
+    """Índice h, índice i10 e total de citações de cada pessoa, pelo perfil de autor do OpenAlex.
+
+    Como o perfil é encontrado (nesta ordem):
+      1. campo `openalex` já gravado em pessoas.json (pode ser corrigido à mão);
+      2. ORCID da pessoa;
+      3. artigos dela com DOI em publicacoes.json: o autor do OpenAlex com nome compatível
+         que mais aparece nesses artigos (pelo menos 2 artigos, ou 1 se ela só tiver 1).
+    Grava `openalex`, `indice_h`, `indice_i10`, `citacoes` e `fonte_metricas` ("openalex-AAAA-MM-DD").
+    Pessoas com `fonte_metricas` de outra fonte não são tocadas.
+    """
+    fonte = f"openalex-{HOJE}"
+    alvo = [p for p in pessoas
+            if not (p.get("fonte_metricas") and not str(p["fonte_metricas"]).startswith("openalex"))]
+    print(f"\nBuscando índice h e citações no OpenAlex para {len(alvo)} pessoas...")
+
+    ids: dict[str, str] = {}  # slug -> id OpenAlex (A123...)
+    origem: dict[str, str] = {}
+    for p in alvo:
+        if p.get("openalex"):
+            ids[p["slug"]] = _id_openalex(p["openalex"])
+            origem[p["slug"]] = "gravado"
+
+    # 2. ORCID
+    por_orcid = {}
+    for p in alvo:
+        if p["slug"] in ids or not p.get("orcid"):
+            continue
+        m = re.search(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]", p["orcid"])
+        if m:
+            por_orcid[m.group(0)] = p["slug"]
+    orcids = list(por_orcid)
+    for i in range(0, len(orcids), 50):
+        d = openalex_get("authors", {"filter": "orcid:" + "|".join(orcids[i:i + 50]), "per-page": 50,
+                                     "select": "id,orcid,works_count"})
+        achados: dict[str, dict] = {}
+        for a in d.get("results", []):
+            oc = (a.get("orcid") or "").rsplit("/", 1)[-1]
+            # Se o OpenAlex tiver mais de um perfil com o mesmo ORCID, fica o de mais trabalhos
+            if oc in por_orcid and (oc not in achados or a.get("works_count", 0) > achados[oc].get("works_count", 0)):
+                achados[oc] = a
+        for oc, a in achados.items():
+            ids[por_orcid[oc]] = _id_openalex(a["id"])
+            origem[por_orcid[oc]] = "orcid"
+
+    # 3. Artigos da pessoa no site
+    faltam = {p["slug"]: p for p in alvo if p["slug"] not in ids}
+    dois_da_pessoa: dict[str, set[str]] = defaultdict(set)
+    for pub in pubs:
+        doi = normaliza_doi(pub.get("doi"))
+        if not doi:
+            continue
+        for s in pub.get("pessoas", []):
+            if s in faltam:
+                dois_da_pessoa[s].add(doi.lower())
+    todos_dois = sorted({d for ds in dois_da_pessoa.values() for d in ds})
+    autorias: dict[str, list] = {}
+    for i in range(0, len(todos_dois), 50):
+        d = openalex_get("works", {"filter": "doi:" + "|".join(todos_dois[i:i + 50]), "per-page": 50,
+                                   "select": "doi,authorships"})
+        for w in d.get("results", []):
+            autorias[normaliza_doi(w.get("doi")).lower()] = w.get("authorships", [])
+    duvidosos = []
+    votos_pessoa: dict[str, Counter] = {}
+    for s, dois in dois_da_pessoa.items():
+        votos: Counter = Counter()
+        for doi in dois:
+            vistos = set()
+            for a in autorias.get(doi, []):
+                aut = a.get("author") or {}
+                aid = _id_openalex(aut.get("id"))
+                if aid and aid not in vistos and (_mesmo_autor(faltam[s]["nome"], aut.get("display_name"))
+                                                  or _mesmo_autor(faltam[s]["nome"], a.get("raw_author_name"))):
+                    votos[aid] += 1
+                    vistos.add(aid)
+        if votos:
+            votos_pessoa[s] = votos
+
+    # Busca os perfis encontrados e os candidatos
+    perfis: dict[str, dict] = {}
+    lista = sorted(set(ids.values()) | {aid for v in votos_pessoa.values() for aid in v})
+    for i in range(0, len(lista), 50):
+        d = openalex_get("authors", {"filter": "openalex:" + "|".join(lista[i:i + 50]), "per-page": 50,
+                                     "select": "id,display_name,cited_by_count,summary_stats"})
+        for a in d.get("results", []):
+            perfis[_id_openalex(a["id"])] = a
+
+    # O OpenAlex às vezes divide uma pessoa em vários perfis: entre os candidatos,
+    # fica o que aparece em mais artigos e, no empate, o de mais citações.
+    for s, votos in votos_pessoa.items():
+        aid = max(votos, key=lambda x: (votos[x], (perfis.get(x) or {}).get("cited_by_count") or 0))
+        n = votos[aid]
+        if n >= 2 or (n == 1 and len(dois_da_pessoa[s]) == 1):
+            ids[s] = aid
+            origem[s] = "artigos"
+        else:
+            duvidosos.append(faltam[s]["nome"])
+
+    mudou = False
+    atualizadas, sem_perfil = 0, []
+    linhas = []
+    for p in alvo:
+        a = perfis.get(ids.get(p["slug"], ""))
+        if not a:
+            sem_perfil.append(p["nome"])
+            continue
+        novo = {
+            "openalex": f"https://openalex.org/{_id_openalex(a['id'])}",
+            "indice_h": (a.get("summary_stats") or {}).get("h_index"),
+            "indice_i10": (a.get("summary_stats") or {}).get("i10_index"),
+            "citacoes": a.get("cited_by_count"),
+        }
+        if any(p.get(k) != v for k, v in novo.items()):
+            mudou = True
+        p.update(novo)
+        if p.get("fonte_metricas") != fonte:
+            p["fonte_metricas"] = fonte
+            mudou = True
+        atualizadas += 1
+        linhas.append(f"  - {p['nome']}: h = {novo['indice_h']}, i10 = {novo['indice_i10']}, citações = {novo['citacoes']} "
+                      f"(perfil {a.get('display_name')}, via {origem[p['slug']]})")
+
+    resumo["pessoas_com_indice_h"] = atualizadas
+    rel.append(f"\n## Índice h e citações das pessoas (OpenAlex, {HOJE})\n")
+    rel.append(f"- Pessoas atualizadas: {atualizadas} de {len(alvo)}")
+    rel.append("- O perfil vem do campo `openalex`, do ORCID ou dos artigos da pessoa no site. Perfis encontrados "
+               "pelos artigos podem estar divididos no OpenAlex (índice h menor que o real); para corrigir, "
+               "grave o link certo em `openalex` ou o ORCID da pessoa.")
+    rel.extend(linhas)
+    if duvidosos:
+        rel.append("- Só 1 artigo com nome compatível (não gravado, conferir à mão): " + ", ".join(sorted(duvidosos)))
+    if sem_perfil:
+        rel.append(f"- Sem perfil no OpenAlex ({len(sem_perfil)}): " + ", ".join(sorted(sem_perfil)))
+    return mudou
+
+
 def ordenar_com_node(simular: bool) -> None:
     """Ordena publicações e periódicos com as mesmas regras do site (localeCompare do JS)."""
     if simular:
@@ -1017,7 +1172,7 @@ def main() -> None:
     ap.add_argument("--desde", type=int, default=2020,
                     help="ano mínimo dos artigos e patentes incluídos (padrão: 2020)")
     ap.add_argument("--sem-metricas", action="store_true",
-                    help="não consulta o OpenAlex (citações, fator de impacto e países)")
+                    help="não consulta o OpenAlex (citações, fator de impacto, países e índice h das pessoas)")
     ap.add_argument("--simular", action="store_true", help="não grava nada; só mostra o relatório")
     args = ap.parse_args()
 
@@ -1050,8 +1205,11 @@ def main() -> None:
     periodicos = atualizar_periodicos(periodicos, pubs["publicacoes"], rel, resumo)
     patentes = atualizar_patentes(membros, mapa, args.desde, rel, resumo)
     fotos_mudaram = atualizar_fotos(pessoas_dados["pessoas"], membros, mapa, args.simular, rel, resumo)
+    metricas_pessoas_mudaram = False
     if not args.sem_metricas:
         atualizar_metricas(pubs["publicacoes"], rel, resumo)
+        metricas_pessoas_mudaram = atualizar_metricas_pessoas(
+            pessoas_dados["pessoas"], pubs["publicacoes"], rel, resumo)
 
     print("\nResumo:")
     for k, v in resumo.items():
@@ -1064,7 +1222,7 @@ def main() -> None:
 
     for p, _, novo in correcoes:
         p["lattes"] = novo
-    if correcoes or fotos_mudaram:
+    if correcoes or fotos_mudaram or metricas_pessoas_mudaram:
         gravar_json(CONTENT / "pessoas.json", pessoas_dados)
     gravar_json(CONTENT / "publicacoes.json", pubs)
     gravar_json(CONTENT / "patentes.json", patentes)

@@ -24,7 +24,12 @@
       "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles",
       "atuacao": "Gerenciar o INCT, coordenação geral e dos subprojetos; liderar a equipe, coordenar os ensaios pré-clínicos (in vitro e in vivo); coordenar as ações de difusão científica; coordenar as ações de transferência de tecnologia para empresas e hospitais; coordenar a busca de parcerias nacionais e internacionais; coordenar as atividades de formação de recursos humanos.",
       "atuacao_en": "Managing the INCT, with overall coordination and coordination of the subprojects; leading the team; coordinating the preclinical studies (in vitro and in vivo); coordinating science communication activities; coordinating technology transfer to companies and hospitals; coordinating the search for national and international partnerships; coordinating human resources training activities.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5011563150",
+      "indice_h": 40,
+      "citacoes": 4738,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 110
     },
     {
       "slug": "emiliano-horacio-medei",
@@ -49,7 +54,12 @@
       "areas_en": "Medicine, Physiology, Stem cells, Chagas disease, Cardiac Electrophysiology, Cardiac Arrhythmias",
       "atuacao": "Será responsável pela caracterização e análise dos resultados relativos à fisiopatologia da fibrilação atrial (FA) induzida em modelo animal. A FA é a arritmia cardíaca mais frequente, sendo importante fator de morbidade e mortalidade. Na última década vários trabalhos têm mostrado que as patologias cardiovasculares, de alta relevância para a saúde pública, apresentam como pontos em comum o estabelecimento de uma inflamação sistêmica/local. As análises funcionais serão realizadas através de registros de eletrocardiograma e registro de potencial de ação e transiente de cálcio ventricular em coração inteiro, exvivo. Ainda, a geometria e função atrial serão analisadas utilizando RMN-7T e Ultrassonografia de alta resolução. A Microscopia de Fluorescência no Campo Local (ulsed Local Field Fluorescence Microscopy, PLFM nos auxiliará a estudar de maneira holística os fenômenos elétricos e o manejo do cálcio no coração inteiro simultaneamente, sem necessidade de isolamento de células cardíacas",
       "atuacao_en": "Responsible for characterizing and analyzing the results on the pathophysiology of atrial fibrillation (AF) induced in an animal model. AF is the most common cardiac arrhythmia and an important cause of morbidity and mortality. Over the last decade, several studies have shown that cardiovascular diseases, which are highly relevant to public health, have in common the establishment of systemic/local inflammation. Functional analyses will be carried out through electrocardiogram recordings and recordings of action potentials and ventricular calcium transients in the whole heart, ex vivo. In addition, atrial geometry and function will be analyzed using 7T MRI and high-resolution ultrasonography. Pulsed Local Field Fluorescence Microscopy (PLFM) will help us study, holistically and simultaneously, electrical phenomena and calcium handling in the whole heart, without the need to isolate cardiac cells.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5072046306",
+      "indice_h": 25,
+      "citacoes": 1851,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 42
     },
     {
       "slug": "divanizia-do-nascimento-souza",
@@ -73,7 +83,12 @@
       "atuacao": "O uso de fontes radioativas em medicina demanda estudos dosimétricos com técnicas que se adequem tanto a procedimentos de irradiação simulados quanto in vivo. Nas simulações, que podem ser físicas ou computacionais, pacientes ou amostras são representados por objetos simuladores (phantoms). Os phantoms podem ser físicos ou virtuais, tais como sólidos com uma geometria simples ou os antropomórficos. Neste projeto, a minha colaboração e do grupo e laboratório de Física Médica que coordeno na Universidade Federal de Sergipe será realizar procedimentos dosimétricos empregado técnicas luminescentes e computacionais. Será enfatizado o desenvolvimento de protocolos dosimétricos para radioterapia empregando fontes radioativas sintetizadas e caracterizadas neste projeto e de demais feixes de radiação de interesse. A termoluminescência e a luminescência opticamente estimulada serão as técnicas físicas empregadas; para as simulações computacionais será empregado o código computacional Monte Carlo",
       "atuacao_en": "The use of radioactive sources in medicine requires dosimetric studies with techniques suited to both simulated and in vivo irradiation procedures. In simulations, which may be physical or computational, patients or samples are represented by phantoms. Phantoms can be physical or virtual, such as solids with simple geometry or anthropomorphic phantoms. In this project, my contribution and that of the Medical Physics group and laboratory I coordinate at the Universidade Federal de Sergipe will be to carry out dosimetric procedures using luminescence and computational techniques. Emphasis will be placed on developing dosimetric protocols for radiotherapy using the radioactive sources synthesized and characterized in this project and other radiation beams of interest. Thermoluminescence and optically stimulated luminescence will be the physical techniques used; the computer simulations will use the Monte Carlo code.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5065455153",
+      "indice_h": 18,
+      "citacoes": 1235,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 48
     },
     {
       "slug": "herculano-da-silva-martinho",
@@ -96,7 +111,12 @@
       "atuacao": "Liderará experimentos envolvendo espectroscopia vibracional (espectroscopias Raman, Absorção no Infravermelho) em escalas macro (milímetros), micro (microns), e nano (200 nanômetros) de amostras de biofluidos (saliva, plasma, sangue) de pacientes acometidos por doenças ou situações clínicas onde inflamação ou hiperinflamação são fatores importantes ((por exemplo COVID-19, ¿Monkeypox¿). Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver metodologia adequada para a obtenção dos sinais espectrais; ii) liderar o desenvolvimento de métodos de análise dos dados espectrais, usando ferramentas de mineração de dados; iii) liderar a busca por possíveis correlações entre os achados espectrais e outras técnicas; iv) liderar o desenvolvimento de simulações computacionais de macromoléculas e tecidos a fim de subsidiar a interpretação dos dados.",
       "atuacao_en": "Will lead experiments involving vibrational spectroscopy (Raman and infrared absorption spectroscopy) at macro (millimeters), micro (microns) and nano (200 nanometers) scales on biofluid samples (saliva, plasma, blood) from patients affected by diseases or clinical conditions in which inflammation or hyperinflammation are important factors (e.g., COVID-19, \"Monkeypox\"). The main scientific and technological challenges to be overcome include, but are not limited to: i) developing an appropriate methodology for obtaining the spectral signals; ii) leading the development of methods for analyzing the spectral data using data mining tools; iii) leading the search for possible correlations between the spectral findings and other techniques; iv) leading the development of computer simulations of macromolecules and tissues to support data interpretation.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5064248171",
+      "indice_h": 19,
+      "citacoes": 1137,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 35
     },
     {
       "slug": "maria-elisa-chuery-martins-rostelato",
@@ -120,7 +140,12 @@
       "atuacao": "Responsável pelo desenvolvimento de novas tecnologias para tratamento de câncer com radiações ionizantes, em especial a nanobraquiterapia, e pelo Laboratório de Produção de Fontes Radioativas para Radioterapia do IPEN, que produz e distribui fontes radioativas para os hospitais, desde 1997. Os principais desafios incluem: síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor; ensaios de citotoxicidade in vitro; ensaios em modelo animal de tumor de próstata; associação da Terapia com Laser de Baixa Potência à nanobraquiterapia in vivo; desenvolvimento de ensaios pré-clínicos de câncer de próstata para investigar o efeito biológico da associação das radiações ionizante e não ionizante; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica, ao uso de fontes radioativas em câncer, auxiliando nas tomadas de decisões na Saúde; dosimetria em radioterapia.",
       "atuacao_en": "Responsible for developing new technologies for cancer treatment with ionizing radiation, especially nanobrachytherapy, and for IPEN's Laboratory for the Production of Radioactive Sources for Radiotherapy, which has produced and distributed radioactive sources to hospitals since 1997. The main challenges include: synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting; in vitro cytotoxicity assays; studies in an animal model of prostate tumor; combining Low-Level Laser Therapy with nanobrachytherapy in vivo; developing preclinical prostate cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation; conducting clinical trials to increase the level of evidence in the scientific literature on the use of radioactive sources in cancer, supporting health decision-making; dosimetry in radiotherapy.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5049034714",
+      "indice_h": 9,
+      "citacoes": 905,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 8
     },
     {
       "slug": "wagner-de-rossi",
@@ -144,7 +169,12 @@
       "atuacao": "1-Responsável pela Estação de microusinagem com laser de femtosegundos.",
       "atuacao_en": "1- Responsible for the femtosecond laser micromachining station.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5013281360",
+      "indice_h": 22,
+      "citacoes": 1496,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 33
     },
     {
       "slug": "anderson-zanardi-de-freitas",
@@ -168,7 +198,12 @@
       "atuacao": "Gerenciar os experimentos envolvendo a técnica de tomografia por coerência óptica para realização de caracterizações morfológicas e funcionais (microfluxo) de tecidos biológicos (biópsia óptica), envolvendo as técnicas de fluxometria doppler e laser speckle. Coordenar os experimentos no IPEN, envolvendo caracterização espectral de tecidos biológicos por meio de espalhamento Raman em escala micrométrica e nanométrica com a utilização das técnicas TERS (Tip Enhanced Raman Spectroscopy) e SNOM.",
       "atuacao_en": "Managing the experiments using optical coherence tomography for the morphological and functional (microflow) characterization of biological tissues (optical biopsy), involving Doppler flowmetry and laser speckle techniques. Coordinating the experiments at IPEN involving the spectral characterization of biological tissues by Raman scattering at the micrometer and nanometer scales, using TERS (Tip Enhanced Raman Spectroscopy) and SNOM.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5066664220",
+      "indice_h": 25,
+      "citacoes": 2076,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 48
     },
     {
       "slug": "ariel-escobar",
@@ -189,7 +224,12 @@
       "areas": null,
       "atuacao": "Em seu grupo na University of California ¿Merced¿ USA irá conduzir estudos eletrofisiológicos e medidas de transiente de cálcio em coração inteiro.",
       "atuacao_en": "Will conduct electrophysiological studies and whole-heart calcium transient measurements in the group at the University of California, Merced (USA).",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5001635104",
+      "indice_h": 25,
+      "citacoes": 1808,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 41
     },
     {
       "slug": "carlos-alberto-zeituni",
@@ -213,7 +253,12 @@
       "atuacao": "Responsável pela produçao de novas fontes radioativas para o desenvolvimento de novas tecnologias para tratamento de câncer. Irradiar as nanoparticulas no reator nuclear IEA-R1 desenvolvendo previamente a tecnologia para que não ocorra a aglutinação das mesmas durante o tempo da irradiação. Além disso será responsável pela manipulação das nanopartículas radioativas na hot-cell do CETER (Centro de Tecnologia das Radiações do IPENCNEN) de forma que durante a funcionalização das nanos com o material carreador químico, todo o processo ocorra de maneira segura e que garanta a minimização de dose dos operadores/pesquisadores nesta etapa do projeto.",
       "atuacao_en": "Responsible for producing new radioactive sources for the development of new cancer treatment technologies. Irradiating the nanoparticles in the IEA-R1 nuclear reactor, after first developing the technology to prevent them from agglomerating during irradiation. Also responsible for handling the radioactive nanoparticles in the hot cell of CETER (IPEN-CNEN's Radiation Technology Center), so that the whole process of functionalizing the nanoparticles with the chemical carrier is carried out safely and keeps the dose to operators/researchers to a minimum at this stage of the project.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5001700175",
+      "indice_h": 9,
+      "citacoes": 295,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 8
     },
     {
       "slug": "daniel-perez-vieira",
@@ -237,7 +282,12 @@
       "atuacao": "Planejamento, execução e apoio para ensaios de citotoxicidade, genotoxicidade e microscopia óptica de fluorescência para avaliação dos efeitos de radiofármacos ou de novos compostos em modelos in vitro estruturados em duas ou três dimensões. Poderão ser utilizados modelos tumorais ou não-tumorais, majoritariamente na forma de esferoides de linhagem celular única.",
       "atuacao_en": "Planning, conducting and supporting cytotoxicity and genotoxicity assays and fluorescence optical microscopy to evaluate the effects of radiopharmaceuticals or new compounds in two- or three-dimensional in vitro models. Tumor or non-tumor models may be used, mostly in the form of single-cell-line spheroids.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5062523583",
+      "indice_h": 10,
+      "citacoes": 313,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 10
     },
     {
       "slug": "eduardo-landulfo",
@@ -261,7 +311,12 @@
       "atuacao": "Desenvolver uma metodologia de detecção de bioaerossóis na atmosfera e ambientes fechados e concomitantemente levantar um banco de dados de fluorescência e espectroscopia Raman + FTIR de aerossóis de origem biológica.",
       "atuacao_en": "Developing a methodology for detecting bioaerosols in the atmosphere and in indoor environments and, at the same time, building a database of fluorescence and Raman + FTIR spectroscopy of aerosols of biological origin.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5052279858",
+      "indice_h": 25,
+      "citacoes": 2208,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 60
     },
     {
       "slug": "emerson-soares-bernardes",
@@ -284,7 +339,12 @@
       "atuacao": "Desenvolver radiofármacos baseados em anticorpos como estratégia diagnóstica e terapêutica no combate ao câncer. O desenvolvimento de radio-imunoconjugados tem como potencial não só prever o nível de progressão da doença oncológica, como também auxiliar no planejamento do tratamento e na monitorização da resposta ao tratamento em pacientes com câncer. Entre os principais desafios encontram-se: (1) radiomarcação de anticorpos com radioisótopos emissores de pósitron para imagem diagnóstica por Tomografia por Emissão de Pósitron (PET) e radioisótopos emissores gama para a imagem diagnóstica por Tomografia por Emissão de Fóton Único (SPECT) e respectivo controle de qualidade; (2) Desenvolvimento de ensaios pré-clínicos in vitro para investigar a imunoreatividade dos radio-imunoconjugados; (3) Desenvolvimento de modelos tumorais in vivo relevantes para a realização de ensaios pré-clinicos de imagem PET/SPECT, biodistribuição e farmacocinética.",
       "atuacao_en": "Developing antibody-based radiopharmaceuticals as a diagnostic and therapeutic strategy against cancer. Radioimmunoconjugates have the potential not only to predict the level of progression of oncological disease, but also to help plan treatment and monitor treatment response in cancer patients. The main challenges include: (1) radiolabeling antibodies with positron-emitting radioisotopes for Positron Emission Tomography (PET) diagnostic imaging and with gamma-emitting radioisotopes for Single Photon Emission Computed Tomography (SPECT) diagnostic imaging, and the corresponding quality control; (2) developing in vitro preclinical assays to investigate the immunoreactivity of the radioimmunoconjugates; (3) developing relevant in vivo tumor models for preclinical PET/SPECT imaging, biodistribution and pharmacokinetic studies.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5051348893",
+      "indice_h": 25,
+      "citacoes": 1853,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 47
     },
     {
       "slug": "ilka-tiemy-kato",
@@ -308,7 +368,12 @@
       "atuacao": "Empregar a biofotônica para estudar a interação da radiação não ionizante com os tecidos do sistema nervoso central e desenvolver estratégias terapêuticas que empregam tecnologias baseadas em luz no tratamento das sequelas causadas pela asfixia perinatal. Os principais desafios a serem superados: desenvolver metodologias de análise para avaliar a penetração da radiação nas estruturas do encéfalo de animais neonatos; desenvolver e aprimorar estratégias terapêuticas para evitar ou minimizar as sequelas causadas pela privação de oxigênio nos tecidos cerebrais.",
       "atuacao_en": "Using biophotonics to study the interaction of non-ionizing radiation with central nervous system tissues and to develop therapeutic strategies that use light-based technologies to treat the sequelae of perinatal asphyxia. The main challenges to be overcome: developing analysis methodologies to assess the penetration of radiation into the brain structures of neonatal animals; developing and improving therapeutic strategies to prevent or minimize the sequelae caused by oxygen deprivation in brain tissue.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5049808068",
+      "indice_h": 19,
+      "citacoes": 1071,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 25
     },
     {
       "slug": "joao-loures-salinet-junior",
@@ -354,7 +419,12 @@
       "atuacao": "Utilizar os lasers de alta potência no tratamento cirúrgico de lesões dos tecidos moles orais em pacientes que apresentem tumores benignos, lesões vasculares e lesões potencialmente cancerizáveis. As lesões removidas serão encaminhadas para exames histopatológicos (Departamento de Patologia da FOUSP). A eficácia da aplicação de lasers de alta potência no tratamento de lesões da mucosa oral será avaliada dentro dos seguintes critérios: ausência de recidiva após 1 (no mínimo) de seguimento clínico, conforto do paciente no pós- operatório, sintomatologia e uso de medicamentos analgésicos e antiinflamatórios. Promover treinamento de profissionais e atuar na difusào cientifica.",
       "atuacao_en": "Using high-power lasers in the surgical treatment of oral soft tissue lesions in patients with benign tumors, vascular lesions and potentially malignant lesions. The removed lesions will be sent for histopathological examination (Department of Pathology, FOUSP). The effectiveness of high-power lasers in treating oral mucosal lesions will be assessed by the following criteria: absence of recurrence during clinical follow-up, patient comfort after surgery, symptoms and use of analgesic and anti-inflammatory drugs. Training professionals and contributing to science communication.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5112524797",
+      "indice_h": 13,
+      "citacoes": 547,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 17
     },
     {
       "slug": "luis-felipe-das-chagas-e-silva-de-carvalho",
@@ -377,7 +447,12 @@
       "atuacao": "Será responsável por investigar amostras de salivas de pacientes com câncer bucal e normasis visando 1) padronizar a caracterização do biofluído em indivíduos saudáveis como grupo comparador; 2) investigar fatores confundidores do paciente (por exemplo, fumantes versus não fumantes); 3) investigar condições potencialmente malignas. Sua abordagem terá viés diretamente clínico, em conjunto com a CK Estomatologia e outros parceiros neste projeto.",
       "atuacao_en": "Responsible for investigating saliva samples from patients with oral cancer and from healthy individuals in order to 1) standardize the characterization of the biofluid in healthy individuals as a comparison group; 2) investigate patient confounding factors (e.g., smokers versus non-smokers); 3) investigate potentially malignant conditions. The approach will be directly clinical, together with CK Estomatologia and other partners in this project.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5009998199",
+      "indice_h": 15,
+      "citacoes": 557,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 17
     },
     {
       "slug": "marcus-paulo-raele",
@@ -400,7 +475,12 @@
       "atuacao": "Propor, executar e auxiliar na análise de características ópticas de tecidos biológicos via espectroscopia de absorção visando um melhor entendimento da aplicação de radiação não ionizante transcraniana em camundongos neonatos (em parceria com Profa Dra Ilka Tiemy Kato Prates, UFABC). Produzir, via ablação de laser de femtosegundos nanopartículas de ouro para aplicação em nano braquiterapia (em parceria com a Profa Dra Elisa Rostelato e Prof Dr. Wagner de Rossi IPEN).",
       "atuacao_en": "Proposing, conducting and helping analyze the optical characteristics of biological tissues by absorption spectroscopy, aiming at a better understanding of the application of transcranial non-ionizing radiation in neonatal mice (in partnership with Prof. Dr. Ilka Tiemy Kato Prates, UFABC). Producing gold nanoparticles by femtosecond laser ablation for use in nanobrachytherapy (in partnership with Prof. Dr. Elisa Rostelato and Prof. Dr. Wagner de Rossi, IPEN).",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5067889635",
+      "indice_h": 9,
+      "citacoes": 306,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 9
     },
     {
       "slug": "maria-de-la-salud-guillhem-sanchez",
@@ -447,7 +527,12 @@
       "atuacao": "Estudo e aplicação de aprendizado de máquina, redes neurais diversas e outras técnicas de inteligência artificial para análises de dados e imagens, geração de insights e melhoria de processos. Analisar imagens hiperespectrais de amostras de tecidos irradiados por luz em diversos processos biológicos no tratamentos de cânceres. Os principais desafios científicos e tecnológicos que deverá superar incluem, mas não se limitam a: i) apropriação dos conceitos básicos relacionados à técnica de FTIR; ii) apropriação dos conceitos básicos da aquisição das imagens e dos respectivos espectrômetros; iii) identificação das técnicas de aprendizado de máquina apropriadas para análises deste tipo de imagens; iv) expor as explicações das técnicas de aprendizado de máquina empregadas nas análises de modo a aumentar a confiabilidade dos resultados; v) buscar o engajamento com outros pesquisadores de aprendizado de máquina e inteligência artificial do projeto visando fomentar a formação de alunos.",
       "atuacao_en": "Study and application of machine learning, various neural networks and other artificial intelligence techniques for data and image analysis, generating insights and improving processes. Analyzing hyperspectral images of tissue samples irradiated by light in various biological processes in cancer treatment. The main scientific and technological challenges to be overcome include, but are not limited to: i) mastering the basic concepts of the FTIR technique; ii) mastering the basic concepts of image acquisition and of the corresponding spectrometers; iii) identifying machine learning techniques suitable for analyzing this type of image; iv) explaining the machine learning techniques used in the analyses so as to increase the reliability of the results; v) engaging with other machine learning and artificial intelligence researchers in the project to foster student training.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5010996160",
+      "indice_h": 5,
+      "citacoes": 95,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 3
     },
     {
       "slug": "martha-simoes-ribeiro",
@@ -471,7 +556,12 @@
       "atuacao": "Desenvolver estratégias terapêuticas de vanguarda baseadas em radiações e sistemas nanoestruturados para combate ao câncer e doenças infecciosas resistentes, de modo a fornecer tecnologias de ponta para a melhora da qualidade de vida da população. Os principais desafios incluem: desenvolvimento de ensaios pré-clínicos de câncer de mama para investigar o efeito biológico da associação das radiações ionizante e não ionizante; desenvolvimento de modelos pré-clínicos de doenças infecciosas (bacterianas, fúngicas e parasitárias) para explorar o uso de compostos fotoativos e nanoestruturados; Desenvolver irradiadores dedicados baseados em LEDs, em parceria com uma startup, para tratamento de infecções resistentes a antimicrobianos convencionais bem como verificar a viabilidade do uso de OLEDs como curativo em infecções de pele; realização de ensaios clínicos para aumentar o nível de evidências na literatura científica do uso de tecnologias baseadas em luz, para tomada de decisões.",
       "atuacao_en": "Developing cutting-edge therapeutic strategies based on radiation and nanostructured systems to fight cancer and resistant infectious diseases, providing state-of-the-art technologies to improve the population's quality of life. The main challenges include: developing preclinical breast cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation; developing preclinical models of infectious diseases (bacterial, fungal and parasitic) to explore the use of photoactive and nanostructured compounds; developing dedicated LED-based irradiators, in partnership with a startup, to treat infections resistant to conventional antimicrobials, as well as assessing the feasibility of using OLEDs as dressings for skin infections; conducting clinical trials to increase the level of evidence in the scientific literature on the use of light-based technologies, to support decision-making.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5067107112",
+      "indice_h": 46,
+      "citacoes": 7845,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 116
     },
     {
       "slug": "moises-oliveira-dos-santos",
@@ -495,7 +585,12 @@
       "atuacao": "Estudar e desenvolver (i) métodos e dispositivos de análise de imagem multiespectral que são capazes de recuperar dados de imagens hiperespectrais; (ii) desenvolver métodos de análise de imagens (classificação e diferenciação) hiperespectrais na faixa do infravermelho médio (espectroscopia vibracional) e na região do visível (microscopia óptica) de amostras de câncer de mama e outros tecidos biológicos. As análises serão baseadas em aprendizado de máquina, incluindo aprendizado profundo.",
       "atuacao_en": "Studying and developing (i) multispectral image analysis methods and devices capable of recovering hyperspectral image data; (ii) methods for analyzing (classifying and differentiating) hyperspectral images in the mid-infrared range (vibrational spectroscopy) and in the visible region (optical microscopy) of breast cancer samples and other biological tissues. The analyses will be based on machine learning, including deep learning.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5005588954",
+      "indice_h": 6,
+      "citacoes": 113,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 3
     },
     {
       "slug": "niklaus-ursus-wetter",
@@ -519,7 +614,12 @@
       "atuacao": "1) Responsável pelo equipamento multiusuário n-SNOM (Scanning Near Field Optical Microscopy): (https://www.sites.google.com/site/ipencla/multiusuario/sistemas-fapesp/snom) 2) Dar apoio aos experimentos que envolvem medidas de microRaman, nanoRaman, TERS (Tip Enhanced Raman Spectroscopy). 3) Desenvolvimento de substratos SERS (Surface Enhanced Raman Spectroscopy) para medidas em amostras biológicas.",
       "atuacao_en": "1) Responsible for the n-SNOM (Scanning Near Field Optical Microscopy) multi-user facility: (https://www.sites.google.com/site/ipencla/multiusuario/sistemas-fapesp/snom) 2) Supporting experiments involving microRaman, nanoRaman and TERS (Tip Enhanced Raman Spectroscopy) measurements. 3) Developing SERS (Surface Enhanced Raman Spectroscopy) substrates for measurements on biological samples.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5041784947",
+      "indice_h": 32,
+      "citacoes": 3671,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 85
     },
     {
       "slug": "orlando-rodrigues-junior",
@@ -542,7 +642,12 @@
       "areas_en": "Instrumentation for Radiation Measurement and Control, Radiation Protection, Mathematical Methods of Physics, Analytical and Simulation Models, Information Systems",
       "atuacao": "Pesquisa e desenvolvimento de materiais de interesse em dosimetria para radiações ionizantes e não ionizantes em aplicações nas áreas da indústria e saúde. Dosimetria experimental; irradiação de amostras, estudos por ressonância paramagnética eletrônica; impressão 3D; simulações computacionais e processamento de imagens.",
       "atuacao_en": "Research and development of materials of interest for the dosimetry of ionizing and non-ionizing radiation in industrial and health applications. Experimental dosimetry; sample irradiation; electron paramagnetic resonance studies; 3D printing; computer simulations and image processing.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5062784098",
+      "indice_h": 10,
+      "citacoes": 383,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 13
     },
     {
       "slug": "andrea-emilia-marques-stinghen",
@@ -565,7 +670,12 @@
       "areas_en": "Nephrology, Renal Physiology, Cell Biology, Cytology and Cell Biology",
       "atuacao": "Empregará técnicas de espectroscopia vibracional, em amostras de soro e dialisato peritoneal, de pacientes em diferentes fases da doença renal crônica. O objetivo é mapear novos biomarcadores nas diferentes fases da doença.",
       "atuacao_en": "Will use vibrational spectroscopy techniques on serum and peritoneal dialysate samples from patients at different stages of chronic kidney disease. The aim is to map new biomarkers at the different stages of the disease.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5031180468",
+      "indice_h": 28,
+      "citacoes": 2303,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 47
     },
     {
       "slug": "gustavo-ramos",
@@ -607,7 +717,12 @@
       "areas": null,
       "atuacao": "Irá colaborar no desenvolvimento do setup experimental e análise crítica dos resultados, em especial no modelo animal e mapeamento óptico panorâmico da atividade arrítmica.",
       "atuacao_en": "Will collaborate on the development of the experimental setup and on the critical analysis of the results, especially regarding the animal model and the panoramic optical mapping of arrhythmic activity.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5090625304",
+      "indice_h": 13,
+      "citacoes": 672,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 15
     },
     {
       "slug": "jesica-ayelen-dimmer",
@@ -628,7 +743,12 @@
       "areas": null,
       "atuacao": "Estudo conjuntos com o IPEN no uso de tecnologias assistidas por luz para caracterização e terapia de doença de Chagas e Leishmania.",
       "atuacao_en": "Joint studies with IPEN on the use of light-assisted technologies for the characterization and therapy of Chagas disease and Leishmania.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5081236691",
+      "indice_h": 5,
+      "citacoes": 100,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "marcia-cristina-dias-de-moraes",
@@ -650,7 +770,12 @@
       "areas_en": "Laser Therapy, Clinical Dentistry, Inhalation Sedation",
       "atuacao": "Empregar em ambiente ambulatorial e/ou hospitalar, lasers em alta e baixa intensidade e a terapia fotodinâmica antimicrobiana (aPDT) em processos infecciosos na cavidade oral; manejo de osteonecrose dos maxilares e descontaminação pré-cirúrgica nas estruturas ósseas orais; infecções oportunistas em pacientes oncológicos e pacientes com necessidades especiais. Empregar a tomografia por coerência óptica (OCT) para avaliar as alterações em tecidos orais provenientes de tratamento oncológico e em diferentes patologias, em tecidos moles e duros na cavidade oral.",
       "atuacao_en": "Using high- and low-intensity lasers and antimicrobial photodynamic therapy (aPDT), in outpatient and/or hospital settings, for infectious processes in the oral cavity; management of osteonecrosis of the jaws and pre-surgical decontamination of oral bone structures; opportunistic infections in cancer patients and patients with special needs. Using optical coherence tomography (OCT) to assess changes in oral tissues resulting from cancer treatment and from different pathologies, in soft and hard tissues of the oral cavity.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5114472474",
+      "indice_h": 1,
+      "citacoes": 1,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "renata-aparecida-belotto",
@@ -715,7 +840,12 @@
       "areas": null,
       "atuacao": "Estudar a fotofísica e o desenvolvimento de novos materiais como diodos emissores de luz e lasers. Colaboração com Martha S. Ribeiro do IPEN nos Diodos Emissores de Luz Orgânicos (OLEDs), para desenvolvimento de fontes de luz vestíveis para terapia fotodinâmica ambulatorial de câncer de pele e outras doenças.",
       "atuacao_en": "Studying photophysics and the development of new materials such as light-emitting diodes and lasers. Collaboration with Martha S. Ribeiro of IPEN on Organic Light-Emitting Diodes (OLEDs), to develop wearable light sources for outpatient photodynamic therapy of skin cancer and other diseases.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5072773499",
+      "indice_h": 90,
+      "citacoes": 32178,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 485
     },
     {
       "slug": "john-michael-girkin",
@@ -736,7 +866,12 @@
       "areas": null,
       "atuacao": "Colaborar com o grupo de aplicações de laser e também no diagnóstico com luz. Usar a imagem no domínio da frequência espacial (SFDI) como um candidato promissor para melhorar o diagnóstico da ferida cirúrgica, detectando a heterogeneidade vertical e medindo o valor de espalhamento reduzido ¿¿¿¿¿¿ Para melhorar melhorar a imagem in vivo no pulmão. Novos Detectores de Avalanche de Fóton Único (SPADS) que foram projetados com eletrônica de contagem de fóton único integrado para realizar imagens de vida de fluorescência com alta resolução espectral, espacial e temporal. Esta tecnologia é combinada com uma gama de novos marcadores fluorescentes medicamente seguros e um único feixe de fibra coerente de modo único para obter imagens gravadas dentro do pulmão humano vivo.",
       "atuacao_en": "Collaborating with the laser applications group and also on light-based diagnosis. Using spatial frequency domain imaging (SFDI) as a promising candidate for improving the diagnosis of surgical wounds, by detecting vertical heterogeneity and measuring the reduced scattering coefficient. To improve in vivo imaging in the lung, new Single Photon Avalanche Detectors (SPADs) were designed with integrated single-photon counting electronics to perform fluorescence lifetime imaging with high spectral, spatial and temporal resolution. This technology is combined with a range of new medically safe fluorescent markers and a single coherent single-mode fiber bundle to obtain images recorded inside the living human lung.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5040309588",
+      "indice_h": 39,
+      "citacoes": 4857,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 95
     },
     {
       "slug": "juan-jose-nogueira",
@@ -758,7 +893,12 @@
       "areas": null,
       "atuacao": "Lidera o grupo de dinâmica molecular, que irá contribuir desenvolvendo métodos de simulação computacional visando desvendar mecanismos e processos relacionados ao desenvolvimento de novos fármacos.",
       "atuacao_en": "Leads the molecular dynamics group, which will contribute by developing computer simulation methods to unravel mechanisms and processes related to the development of new drugs.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5031304454",
+      "indice_h": 21,
+      "citacoes": 1584,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 44
     },
     {
       "slug": "larry-dewerd",
@@ -779,7 +919,12 @@
       "areas": null,
       "atuacao": "Fara a intercomparação da metodologia de dosimetria das nanoparticulas radioativas com a dosimetria utilizada para radioisótopos e radiofarmacos além de ser um consultor para auxiliar o desenvolvimento desta metodologia. Por ser o responsavel pelo Laboratório de Dosimetria da Universidade de Wisconsin, ele nos possibilitará intercomparar os nossos sistemas dosimétricos com os sistemas padrões utilizados neste laboratório.",
       "atuacao_en": "Will carry out the intercomparison of the dosimetry methodology for radioactive nanoparticles with the dosimetry used for radioisotopes and radiopharmaceuticals, and will also act as a consultant to help develop this methodology. As head of the Dosimetry Laboratory at the University of Wisconsin, will allow us to intercompare our dosimetry systems with the standard systems used in that laboratory.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5071702024",
+      "indice_h": 37,
+      "citacoes": 8660,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 115
     },
     {
       "slug": "nicholas-stone",
@@ -863,7 +1008,12 @@
       "areas": null,
       "atuacao": "Empregará técnicas de espectroscopia ultra-rápida (femtosegundos) para elucidação de mecanismos de reação e processos dinâmicos ocorrendo em biofluidos.",
       "atuacao_en": "Will use ultrafast (femtosecond) spectroscopy techniques to elucidate reaction mechanisms and dynamic processes occurring in biofluids.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5082839273",
+      "indice_h": 34,
+      "citacoes": 3215,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 82
     },
     {
       "slug": "adamo-ferreira-gomes-do-monte",
@@ -887,7 +1037,12 @@
       "atuacao": "Obter protocolos clínicos com resultado terapêutico in-vivo baseado no conhecimento da localização e concentração de cromóforos no tecido cutâneo (oxi-hemoglobina, deoxi-hemoglobina, água, melanina e lipídios). Desenvolvemos método inovador no Brasil in-vivo não-invasivo para determinar a concentração desses cromóforos e sua distribuição espacial, por meio da reconstituição da imagem óptica difusa utilizando redes neurais artificiais para o mapeamento e diagnóstico de tumores e lesões de tecidos. Detectar quantitativa e não-invasiva da absorção óptica e do espalhamento em tecidos. A técnica de imagem no domínio da frequência espacial (SFDI) irá funcionar como um dispositivo aplicado à Medicina, promovendo grande impacto com o desenvolvimento de estudos ligados ao diagnóstico óptico precoce de tecidos e também mapeamento de tumores cutâneos in-vivo. Na área tecnológica, a também será utilizada para realizar tomografía óptica de tecidos.",
       "atuacao_en": "Obtaining clinical protocols with in vivo therapeutic outcomes based on knowledge of the location and concentration of chromophores in skin tissue (oxyhemoglobin, deoxyhemoglobin, water, melanin and lipids). We have developed an innovative in vivo, non-invasive method in Brazil to determine the concentration of these chromophores and their spatial distribution, by reconstructing diffuse optical images using artificial neural networks for the mapping and diagnosis of tumors and tissue lesions. Quantitative, non-invasive detection of optical absorption and scattering in tissues. Spatial frequency domain imaging (SFDI) will work as a device applied to medicine, with great impact through studies on early optical diagnosis of tissues and the in vivo mapping of skin tumors. In the technological area, the technique will also be used to perform optical tomography of tissues.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5075081355",
+      "indice_h": 14,
+      "citacoes": 693,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 23
     },
     {
       "slug": "ana-cecilia-correa-aranha",
@@ -910,7 +1065,12 @@
       "atuacao": "Estudar os efeitos da radiação ionizante nas proteases endógenas em dentina hígida e restaurada. Desenvolvimento de metodologia com uso de lasers combinada ou não a outras tecnicas para prevençao e tratamento de lesões cervicais não cariosas, hipersensibilidade dentinária. Estudo clinico duplo cego, longitudinal randomizado com Laser de Er, Cr:YSGG e pasta de fosfosilicato de sódio cálcio como tratamentos de consultório da hipersensibilidade dentinária. Promover treinamento de profissionais e atuar na difusão científica.",
       "atuacao_en": "Studying the effects of ionizing radiation on endogenous proteases in sound and restored dentin. Developing a methodology using lasers, combined or not with other techniques, for the prevention and treatment of non-carious cervical lesions and dentin hypersensitivity. Double-blind, longitudinal, randomized clinical study with Er,Cr:YSGG laser and calcium sodium phosphosilicate paste as in-office treatments for dentin hypersensitivity. Training professionals and contributing to science communication.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5047790822",
+      "indice_h": 40,
+      "citacoes": 4035,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 90
     },
     {
       "slug": "elvis-joacir-de-franca",
@@ -933,7 +1093,12 @@
       "areas_en": "Cycling of Chemical Elements, Trace Analysis and Environmental Chemistry, Quality Control, Environmental Management, Soil Management and Conservation, Radioecology",
       "atuacao": "A proximidade de um cíclotron ao hospital público favorece a aplicação das Radiações Ionizantes na Saúde, ampliando-se a gama de fármacos a serem utilizados para o imageamento molecular em pacientes com respeito ao diagnóstico/enfrentamento de neoplasias, doenças coronárias e desordens cerebrais. Neste INCT, propõe-se disponibilizar infraestrutura para ensaios pré-clínicos para antígeno de membrana prostático específico (PSMA), receptor de estrogênio positivo de câncer de mama (FES) е fluoreto de sódio (NaF), denominado de farmacêutico sem carreador para a detecção de lesões benignas e malignas em osso, além de flutemetamol para o diagnóstico de pacientes com Alzheimer. Os esforços para a implementação do laboratório integrado de pesquisas na Região Nordeste, no contexto desse INCT, são motivados a partir da necessidade de expandir os serviços prestados à sociedade em Medicina Nuclear na Região Norte/Nordeste, além de fomentar pesquisas científicas de alto nível.",
       "atuacao_en": "Having a cyclotron close to a public hospital favors the application of ionizing radiation in health, broadening the range of drugs that can be used for molecular imaging of patients in the diagnosis and treatment of neoplasms, coronary diseases and brain disorders. In this INCT, the proposal is to provide infrastructure for preclinical studies with prostate-specific membrane antigen (PSMA), estrogen receptor-positive breast cancer imaging (FES) and sodium fluoride (NaF), a carrier-free pharmaceutical for detecting benign and malignant bone lesions, as well as flutemetamol for the diagnosis of patients with Alzheimer's disease. The efforts to set up the integrated research laboratory in the Northeast Region, in the context of this INCT, are driven by the need to expand Nuclear Medicine services to society in the North/Northeast Region and to foster high-level scientific research.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5059515392",
+      "indice_h": 18,
+      "citacoes": 1034,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 39
     },
     {
       "slug": "joaquim-cezar-felipe",
@@ -956,7 +1121,12 @@
       "areas_en": "Biomedical Informatics, Image Indexing and Retrieval, Computer-Aided Diagnosis Systems, Bioinformatics, Health Information Systems, Databases",
       "atuacao": "Investigação e avaliação de técnicas de Aprendizado de Máquina, convencionais e também aquelas baseadas em aprendizado profundo, aplicadas ao auxílio ao diagnóstico médico, por meio da análise de imagens de amostras histológicas, assim como dos sinais hiperespectrais obtidos por absorção no infravermelho. Extrair características radiômicas da imagem de HE e analisar sinais hiperespectrais explorando a informação contida nos espectros de infravermelho de cada pixel da amostra de diferentes tecidos humanos (saudáveis e lesionados) previamente avaliados por especialistas. As técnicas de aprendizado profundo a serem exploradas são as redes neurais convolucionais, as redes neurais completamente conectadas e as redes neurais recorrentes, em abordagem supervisionada para a modelagem de classificadores. Este grupo também fornecerá suporte em aplicações de Aprendizado de Máquina para outros grupos pertencentes ao INTERAS, nas demandas em que for pertinente a utilização de tais técnicas.",
       "atuacao_en": "Investigating and evaluating machine learning techniques, both conventional and deep learning-based, applied to support medical diagnosis through the analysis of images of histological samples and of hyperspectral signals obtained by infrared absorption. Extracting radiomic features from H&E images and analyzing hyperspectral signals, exploring the information contained in the infrared spectra of each pixel of samples of different human tissues (healthy and diseased) previously assessed by specialists. The deep learning techniques to be explored are convolutional neural networks, fully connected neural networks and recurrent neural networks, in a supervised approach for building classifiers. This group will also support machine learning applications for other INTERAS groups whenever the use of such techniques is relevant.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5010490030",
+      "indice_h": 15,
+      "citacoes": 887,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 19
     },
     {
       "slug": "leandro-luongo-de-matos",
@@ -983,7 +1153,12 @@
       "atuacao": "É crescente a busca por microRNAs associados à carcinogênese, progressão tumoral e também no prognóstico de pacientes com carcinoma espinocelular de cavidade oral. Para essa neoplasia, a espessura tumoral é bem documentada como um fator isolado de pior prognóstico, porém pouco se sabe sobre as causas moleculares envolvidas nesse processo. Dessa forma, neste Instituto iremos contribuir na avaliação do papel dos proteoglicanos e identificação dos microRNAs envolvidos no processo de invasão tumoral, além de relacioná-los com variáveis demográficas, histopatológicas e imuno-histoquímicas e o prognóstico de pacientes acometidos por carcinoma espinocelular de cavidade oral, assim como tireóide. Selecionar e preparar tissue micro-arrays (TMAs) destes tecidos em lâminas cristalina de CaF2 para análise vibracional por imagem por FTIR.",
       "atuacao_en": "There is a growing search for microRNAs associated with carcinogenesis, tumor progression and the prognosis of patients with oral cavity squamous cell carcinoma. For this neoplasm, tumor thickness is well documented as an independent factor of worse prognosis, but little is known about the molecular causes involved in this process. In this Institute, we will therefore contribute to evaluating the role of proteoglycans and identifying the microRNAs involved in the tumor invasion process, and to relating them to demographic, histopathological and immunohistochemical variables and to the prognosis of patients with oral cavity squamous cell carcinoma, as well as thyroid cancer. Selecting and preparing tissue microarrays (TMAs) of these tissues on CaF2 crystal slides for vibrational analysis by FTIR imaging.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5020861481",
+      "indice_h": 28,
+      "citacoes": 3291,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 95
     },
     {
       "slug": "luciano-bachmann",
@@ -1007,7 +1182,12 @@
       "atuacao": "Os sinais hiperespectrais, obtidos por meio de equipamentos de infravermelho, caracterizam-se por apresentar para cada pixel da imagem um espectro de valores de absorbância para as diferentes frequências, que se mostra sensível às características do tecido subjacente. Iremos contribuir neste Instituto investigando sinais hiperespectrais infravermelhos obtidos a partir de lâminas contendo amostras de tecido sadio e de tecido anormal oriundas de diferentes órgãos, tais como tireoide, pele e mama, sadios e com características anormais, em especial a ocorrência de neoplasias, com uso de técnicas computacionais de Aprendizagem Profunda, para a implementação de classificadores, com os quais será possível caracterizar as regiões da lâmina de acordo com as possíveis anomalias presentes. A validação será feita com imagens obtidas a partir de lâminas de biópsias coradas com Hematoxilina e Eosina.",
       "atuacao_en": "Hyperspectral signals obtained with infrared equipment provide, for each pixel of the image, a spectrum of absorbance values at different frequencies that is sensitive to the characteristics of the underlying tissue. We will contribute to this Institute by investigating infrared hyperspectral signals obtained from slides containing samples of healthy and abnormal tissue from different organs, such as the thyroid, skin and breast, both healthy and with abnormal features, especially neoplasms, using Deep Learning computational techniques to build classifiers that make it possible to characterize regions of the slide according to the anomalies present. Validation will be carried out with images obtained from biopsy slides stained with Hematoxylin and Eosin.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5035888755",
+      "indice_h": 32,
+      "citacoes": 3125,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 72
     },
     {
       "slug": "marcela-sorelli-carneiro-ramos",
@@ -1032,7 +1212,12 @@
       "atuacao": "Coordenar as investigação dos processos inflamatórios derivados de doenças cardiovasculares. É bem estabelecido que as funções cardíacas e renais estão intimamente conectadas e, portanto, alteração em um dos órgãos, é capaz de levar à alterações no outro órgão. Nesse sentido, é bastante relevante o entendimento dos conectores do eixo rim-coração. Assim, dentre as diversas doenças cardiovasculares, iremos focar no quadro de síndrome cardiorrenal tipo 3, onde é possível observar os efeitos cardíacos oriundos de um quadro de lesão renal aguda (LRA). A LRA apresenta elevada incidência na população mundial e, quando não diagnosticada corretamente ou tardiamente, pode levar ao quadro de doença renal crônica, onde ocorre a perda progressiva e irreversível da função renal e, consequentemente, cardíaca. O presente projeto conta com as colaborações nacionais e internacionais (UFPR, Canada e Espanha)",
       "atuacao_en": "Coordinating the investigation of inflammatory processes arising from cardiovascular diseases. It is well established that cardiac and renal functions are closely connected, so that changes in one of these organs can lead to changes in the other. Understanding the connectors of the kidney-heart axis is therefore highly relevant. Among the various cardiovascular diseases, we will focus on type 3 cardiorenal syndrome, in which the cardiac effects of acute kidney injury (AKI) can be observed. AKI has a high incidence in the world population and, when it is not diagnosed correctly or is diagnosed late, it can lead to chronic kidney disease, with progressive and irreversible loss of renal and, consequently, cardiac function. This project has national and international collaborations (UFPR, Canada and Spain).",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5001981967",
+      "indice_h": 25,
+      "citacoes": 1719,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 45
     },
     {
       "slug": "patricia-aparecida-da-ana",
@@ -1056,7 +1241,12 @@
       "atuacao": "Empregar a Biofotônica e a óptica biomédica para desenvolver estratégias diagnósticas e terapêuticas para combate ao câncer e doenças crônicas que acometem a cavidade oral, tais como cárie, erosão dentária e osteoporose, para fornecer tecnologias de ponta e de baixo custo para melhora da qualidade de vida. Os principais desafios científicos e tecnológicos que deverá superar envolvem, mas não limitam-se a, i) desenvolver dispositivo baseado em fluorescência e inteligência artificial para diagnóstico precoce e preditivo de câncer de mama por análise de saliva; ii) desenvolver e aprimorar estratégias que empreguem lasers de alta potência Q-switched para paralisar lesões de tecidos duros dentais; iii) desenvolver e aplicar biomaterial à base de colágeno com potencial de drug delivery, a fim de possibilitar o reparo de lesões de tecidos ósseos; iv) aprimorar metodologia analítica, envolvendo tomografia por coerência óptica, para diagnóstico precoce e monitoramento de osteoporose.",
       "atuacao_en": "Using biophotonics and biomedical optics to develop diagnostic and therapeutic strategies against cancer and chronic diseases of the oral cavity, such as caries, dental erosion and osteoporosis, to provide cutting-edge, low-cost technologies that improve quality of life. The main scientific and technological challenges to be overcome include, but are not limited to: i) developing a device based on fluorescence and artificial intelligence for the early and predictive diagnosis of breast cancer by saliva analysis; ii) developing and improving strategies using high-power Q-switched lasers to arrest lesions in dental hard tissues; iii) developing and applying a collagen-based biomaterial with drug delivery potential to enable the repair of bone tissue lesions; iv) improving an analytical methodology, involving optical coherence tomography, for the early diagnosis and monitoring of osteoporosis.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5034603161",
+      "indice_h": 20,
+      "citacoes": 1308,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 35
     },
     {
       "slug": "thiago-martini-pereira",
@@ -1080,7 +1270,12 @@
       "atuacao": "Otimização de métodos de processamento de imagens hiperespectrais na região do infravermelho para o diagnóstico de neoplasias e outras doenças de interesse do projeto. Adicionalmente será o responsável pelo desenvolvimento da plataforma Web para a unificação dos dados espectroscópicos com o objetivo de divulgar as técnicas ópticas dentro da comunidade médica. Serás o responsável pelo desenvolvimento de uma aplicação para tablet na qual ira auxiliar o patologista na análise dos dados do projeto.",
       "atuacao_en": "Optimizing methods for processing hyperspectral infrared images for the diagnosis of neoplasms and other diseases of interest to the project. Also responsible for developing the web platform that brings together the spectroscopic data, with the aim of disseminating optical techniques within the medical community. Responsible for developing a tablet application to help the pathologist analyze the project data.",
       "ativo": true,
-      "foto_fonte": "lattes-2026-11-09"
+      "foto_fonte": "lattes-2026-11-09",
+      "openalex": "https://openalex.org/A5032445632",
+      "indice_h": 9,
+      "citacoes": 360,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 9
     },
     {
       "slug": "anselmo-feher",
@@ -1144,7 +1339,12 @@
       "areas": null,
       "atuacao": "Responsável pelas medidas de espectros raman e análise de dados para caracterização de processos de desmineralização em esmalte dental e dentina",
       "atuacao_en": "Responsible for Raman spectra measurements and data analysis to characterize demineralization processes in dental enamel and dentin.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5068718129",
+      "indice_h": 8,
+      "citacoes": 156,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 7
     },
     {
       "slug": "amanda-caramel-juvino",
@@ -1166,7 +1366,12 @@
       "areas_en": "Dentistry, Laser Therapy, Biophotonics",
       "atuacao": "Realizar os ensaios laboratoriais de caracterização de esmalte dental irradiado a laser para prevenção da cárie dental.",
       "atuacao_en": "Carrying out laboratory tests to characterize laser-irradiated dental enamel for the prevention of dental caries.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5084567716",
+      "indice_h": 2,
+      "citacoes": 27,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 1
     },
     {
       "slug": "andre-mourao-batista",
@@ -1188,7 +1393,12 @@
       "areas_en": "Chemistry",
       "atuacao": "Irá desenvolver experimentos de microfluidica sondados por espectroscopia Raman para analisar amostras no contexto deste projeto.",
       "atuacao_en": "Will develop microfluidics experiments probed by Raman spectroscopy to analyze samples in the context of this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5010864163",
+      "indice_h": 4,
+      "citacoes": 93,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 3
     },
     {
       "slug": "angelica-bueno-barbezan",
@@ -1210,7 +1420,12 @@
       "areas_en": "Nanobrachytherapy, Radiopharmaceuticals, Food Irradiation, Clinical Analysis, Imaging",
       "atuacao": "Ensaios de citotoxicidade in vitro; ensaios em modelo animal de tumor de próstata; associação da Terapia com Laser de Baixa Potência (TLBP) à nanobraquiterapia in vivo; desenvolvimento de ensaios pré-clínicos de câncer de próstata para investigar o efeito biológico da associação das radiações ionizante e não ionizante.",
       "atuacao_en": "In vitro cytotoxicity assays; studies in an animal model of prostate tumor; combining Low-Level Laser Therapy (LLLT) with nanobrachytherapy in vivo; developing preclinical prostate cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5046696271",
+      "indice_h": 6,
+      "citacoes": 233,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 3
     },
     {
       "slug": "antonio-arleques-gomes",
@@ -1232,7 +1447,12 @@
       "areas_en": "Chemistry, Fluid Dynamics, Manufacturing Processes",
       "atuacao": "Desenvolver sistemas microfluídicos para síntese de radiofármacos que usam flúor radioativo.",
       "atuacao_en": "Developing microfluidic systems for the synthesis of radiopharmaceuticals that use radioactive fluorine.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5060618350",
+      "indice_h": 5,
+      "citacoes": 72,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 2
     },
     {
       "slug": "arian-perez-nario",
@@ -1254,7 +1474,12 @@
       "areas_en": "Organic Chemistry, Radiochemistry, Organic Synthesis",
       "atuacao": "Desenvolver sistemas microfluídicos para síntese de radiofármacos que usam flúor radioativo.",
       "atuacao_en": "Developing microfluidic systems for the synthesis of radiopharmaceuticals that use radioactive fluorine.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5008659427",
+      "indice_h": 3,
+      "citacoes": 31,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 2
     },
     {
       "slug": "arthur-melo-de-oliveira",
@@ -1320,7 +1545,12 @@
       "areas_en": "Radiology",
       "atuacao": "Irá avaliar a eficácia de fotobioestimulação nos temas envolvidos no presente projeto.",
       "atuacao_en": "Will evaluate the effectiveness of photobiostimulation in the topics covered by this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5040912381",
+      "indice_h": 1,
+      "citacoes": 19,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 1
     },
     {
       "slug": "camila-ramos-silva",
@@ -1342,7 +1572,12 @@
       "areas_en": "Optical Therapy, Biophotonics, Radiobiology and Photobiology, Biomedical Engineering, Biophysics",
       "atuacao": "Realizará estudos de avaliação pré-clinica de fotobiomodulação combinada à radioterapia no tratamento de câncer de mama.",
       "atuacao_en": "Will carry out preclinical studies of photobiomodulation combined with radiotherapy in the treatment of breast cancer.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5018784992",
+      "indice_h": 5,
+      "citacoes": 52,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "carla-carolina-silva-bandeira",
@@ -1364,7 +1599,12 @@
       "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles",
       "atuacao": "Irá desenvolver substratos SERS para caracterização de biofluidos no contexto deste projeto.",
       "atuacao_en": "Will develop SERS substrates for the characterization of biofluids in the context of this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5061865678",
+      "indice_h": 3,
+      "citacoes": 44,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 1
     },
     {
       "slug": "daniela-maria-cerqueira-leite",
@@ -1408,7 +1648,12 @@
       "areas": null,
       "atuacao": "Responsável pelas medidas de espectros raman e análise de dados utilizando softwares de IA para caracterização de estruturas biológicas.",
       "atuacao_en": "Responsible for Raman spectra measurements and data analysis using AI software to characterize biological structures.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5056614196",
+      "indice_h": 5,
+      "citacoes": 104,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "elizabete-dos-santos-ferreira",
@@ -1495,7 +1740,12 @@
       "areas_en": "Environmental Sciences, Molecular Biology, Biophysics, Multivariate Analysis",
       "atuacao": "Irá desenvolver metodologia para avaliação espectral de micro gotas de biofluidos de pacientes envolvidos neste projeto.",
       "atuacao_en": "Will develop a methodology for the spectral evaluation of microdroplets of biofluids from patients involved in this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5077352024",
+      "indice_h": 5,
+      "citacoes": 115,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "gleice-conceicao-mendonca-germano",
@@ -1517,7 +1767,12 @@
       "areas_en": "Magnetic Materials and Magnetic Properties, Molecular Biology, Random LASERs, Study of optical nonlinearity in 2D materials",
       "atuacao": "Responsável pela aquisição das imagens hiperespectrais de tumores orais e pele e cálculos de remoção de vapor de agua e parafina",
       "atuacao_en": "Responsible for acquiring hyperspectral images of oral and skin tumors and for the calculations to remove water vapor and paraffin.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5040403206",
+      "indice_h": 2,
+      "citacoes": 38,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 2
     },
     {
       "slug": "hermann-windisch-neto",
@@ -1562,7 +1817,12 @@
       "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Specific Theories and Interaction Models; Particle Systematics; Cosmic Rays, Collision Processes and Interactions of Atoms and Molecules",
       "atuacao": "Responsável pelas medidas de espectros raman e microscopia de força atômica para para caracterização de Zica virus, em função de doses de radiação gama.",
       "atuacao_en": "Responsible for Raman spectra measurements and atomic force microscopy to characterize the Zika virus as a function of gamma radiation doses.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5055843150",
+      "indice_h": 11,
+      "citacoes": 315,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 13
     },
     {
       "slug": "jessica-veronica-da-silva",
@@ -1585,7 +1845,12 @@
       "areas_en": "Biological Sciences, Molecular Biology, Bioinformatics",
       "atuacao": "A aluna irá realizar a técnica de FTIR para análise de biomarcadores na doença renal",
       "atuacao_en": "The student will use FTIR to analyze biomarkers in kidney disease.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5022351506",
+      "indice_h": 3,
+      "citacoes": 35,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 1
     },
     {
       "slug": "julio-gallinaro-maranho",
@@ -1629,7 +1894,12 @@
       "areas_en": "Applied Physics, Condensed Matter Physics, Science Communication",
       "atuacao": "Caracterização óptica de amostras altamente espalhadoras na região espectral do visível e infravermelho próximo",
       "atuacao_en": "Optical characterization of highly scattering samples in the visible and near-infrared spectral regions.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5013155308",
+      "indice_h": 5,
+      "citacoes": 68,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 3
     },
     {
       "slug": "marcelo-da-rocha-leao-de-magalhaes",
@@ -1650,7 +1920,12 @@
       "areas": null,
       "atuacao": "Implementação do biotério de experimentação; definição dos protocolos de imageamento molecular por Micro-PET/CT",
       "atuacao_en": "Setting up the experimental animal facility; defining the protocols for molecular imaging by Micro-PET/CT.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5037393080",
+      "indice_h": 1,
+      "citacoes": 3,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "marcos-humberto-dos-santos",
@@ -1694,7 +1969,12 @@
       "areas_en": "Medical Physics",
       "atuacao": "Síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor; ensaios de citotoxicidade in vitro.",
       "atuacao_en": "Synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting; in vitro cytotoxicity assays.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5088445956",
+      "indice_h": 2,
+      "citacoes": 23,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 1
     },
     {
       "slug": "mateus-costola-windlin",
@@ -1738,7 +2018,12 @@
       "areas_en": "Natural Products Chemistry, Environmental Engineering, Occupational Safety Engineering, Industrial Microbiology and Fermentation, Radioecology and Environmental Analysis, Analytical Chemistry/Specialty: Trace Analysis and Environmental Chemistry.",
       "atuacao": "Desenvolvimento de radiomarcacao de moléculas; imageamento molecular por Micro-PET/CT",
       "atuacao_en": "Development of radiolabeling of molecules; molecular imaging by Micro-PET/CT.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5085416251",
+      "indice_h": 3,
+      "citacoes": 21,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "matheus-de-freitas-oliveira-baffa",
@@ -1761,7 +2046,12 @@
       "areas_en": "Computer Vision, Machine Learning, Medical Image Processing and Analysis, Computer Graphics, Biomedical Informatics",
       "atuacao": "Desenvolvimento de técnicas de analise de imagem de cortes patológicos em HE, por técnicas de aprendizado de maquina profundo.",
       "atuacao_en": "Development of image analysis techniques for H&E-stained pathology sections using deep learning.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5091038735",
+      "indice_h": 7,
+      "citacoes": 213,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "mayara-santana-pinto",
@@ -1828,7 +2118,12 @@
       "areas_en": "Biomedical Engineering, General Biology, Biophysics, Biochemistry, Bioinformatics, Biotechnology",
       "atuacao": "Irá implementar algoritmos e simulações de dinâmica molecular \"course- grained\" e \"fine-grained\" para avaliação de ação de fármacos e principios ativos sobre a pele.",
       "atuacao_en": "Will implement coarse-grained and fine-grained molecular dynamics algorithms and simulations to evaluate the action of drugs and active ingredients on the skin.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5088123234",
+      "indice_h": 6,
+      "citacoes": 106,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "oscar-jesus-moreno-loaiza",
@@ -1852,7 +2147,12 @@
       "areas_en": "Electrophysiology, Cardiovascular Physiology",
       "atuacao": "Irá realizar experimentos de eletrofisiologia no contexto do presente projeto.",
       "atuacao_en": "Will carry out electrophysiology experiments in the context of this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5080244225",
+      "indice_h": 6,
+      "citacoes": 164,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 4
     },
     {
       "slug": "paulo-ney-lyra-de-moraes",
@@ -1896,7 +2196,12 @@
       "areas_en": "Medical Physics",
       "atuacao": "Ensaios dosimétricos com Filmes radiocrômicos, Fricke gel e Monte Carlo",
       "atuacao_en": "Dosimetric tests with radiochromic films, Fricke gel and Monte Carlo.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5100598413",
+      "indice_h": 1,
+      "citacoes": 2,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "raissa-mendonca-quaranta-lobao",
@@ -1918,7 +2223,12 @@
       "areas_en": "Medical Physics",
       "atuacao": "Simulações de Monte Carlo para propagação de radiação óptica na pele",
       "atuacao_en": "Monte Carlo simulations of optical radiation propagation in the skin.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5111397574",
+      "indice_h": 1,
+      "citacoes": 7,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "raquel-silva-neres-dos-santos",
@@ -1942,7 +2252,12 @@
       "areas_en": "Biological Sciences, Molecular Biology, Cardiovascular Physiology, Histology",
       "atuacao": "The student will collaborate with the interpretation of FTIR spectra for the analysis of biomarkers Will perform in vitro tests to validate the biomarkers",
       "atuacao_en": "The student will collaborate on the interpretation of FTIR spectra for biomarker analysis and will perform in vitro tests to validate the biomarkers.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5046243700",
+      "indice_h": 6,
+      "citacoes": 207,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 5
     },
     {
       "slug": "regiane-stafim-da-cunha",
@@ -1964,7 +2279,12 @@
       "areas_en": "Pathology, Education, Biochemistry, General Biology",
       "atuacao": "A aluna irá realizar ensaios de de FTIR a partir do dialisato peritoneal de pacientes com doença renal crônica",
       "atuacao_en": "The student will perform FTIR tests on peritoneal dialysate from patients with chronic kidney disease.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5069725659",
+      "indice_h": 13,
+      "citacoes": 617,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 15
     },
     {
       "slug": "sajid-farooq",
@@ -1987,7 +2307,12 @@
       "areas_en": "Biomedical Engineering",
       "atuacao": "Desenvolver metodologia de caracterização de tecidos biológicos e de diagnóstico de doenças for imagem hiperespectral por FTIR e analise de aprendizado de maquina profundo.",
       "atuacao_en": "Developing a methodology for characterizing biological tissues and diagnosing diseases by FTIR hyperspectral imaging and deep learning analysis.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5002717495",
+      "indice_h": 20,
+      "citacoes": 1164,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 31
     },
     {
       "slug": "tatiana-pereira-da-silva",
@@ -2009,7 +2334,12 @@
       "areas_en": "Cellular Immunology, Molecular Biology",
       "atuacao": "Irá realizar experimentos de eletrofisiologia no contexto do presente projeto.",
       "atuacao_en": "Will carry out electrophysiology experiments in the context of this project.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5054283589",
+      "indice_h": 7,
+      "citacoes": 341,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 7
     },
     {
       "slug": "valeria-mendes",
@@ -2031,7 +2361,12 @@
       "areas_en": "Dentistry, Dentistry for Patients with Special Needs, Health Management with Emphasis on Clinics and Hospitals, Clinical Dentistry, Oral Rehabilitation",
       "atuacao": "Desenvolver e testar clinicamente a associação de lasers de érbio e neodímio, bao ablativos, para o tratamento de apneia do sono",
       "atuacao_en": "Developing and clinically testing the combination of non-ablative erbium and neodymium lasers for the treatment of sleep apnea.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5134887258",
+      "indice_h": 0,
+      "citacoes": 0,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     },
     {
       "slug": "vanessa-moredo-alonso",
@@ -2076,7 +2411,12 @@
       "areas_en": "Physical Organic Chemistry",
       "atuacao": "Síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor.",
       "atuacao_en": "Synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting.",
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5083641391",
+      "indice_h": 5,
+      "citacoes": 209,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 2
     },
     {
       "slug": "yasmin-reis-fontes-de-oliveira",
@@ -2097,7 +2437,12 @@
       "areas": "Odonotologia, Laserterapia, Biofotonica",
       "areas_en": "Dentistry, Laser Therapy, Biophotonics",
       "atuacao": null,
-      "ativo": true
+      "ativo": true,
+      "openalex": "https://openalex.org/A5092712048",
+      "indice_h": 0,
+      "citacoes": 0,
+      "fonte_metricas": "openalex-2026-11-09",
+      "indice_i10": 0
     }
   ]
 }

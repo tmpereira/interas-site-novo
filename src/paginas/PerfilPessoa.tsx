@@ -5,6 +5,7 @@ import { FotoPessoa } from "@/components/CardPessoa";
 import ListaPublicacoes from "@/components/ListaPublicacoes";
 import { carregarConteudo } from "@/lib/conteudo";
 import { gruposDaPessoa, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consultas";
+import { formatarNumero } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
@@ -34,6 +35,20 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
     { rotulo: r.perfil.instituicao, icone: "bank", url: pessoa.instituicao?.url ?? null },
   ].filter((l): l is { rotulo: string; icone: string; url: string } => Boolean(l.url));
 
+  // Índice h e citações da carreira (OpenAlex). Zero costuma ser perfil incompleto: não mostra.
+  const indiceH = pessoa.indice_h ?? 0;
+  const citacoes = pessoa.citacoes ?? 0;
+  const metricas =
+    indiceH > 0 || citacoes > 0
+      ? [
+          { chave: "h", valor: formatarNumero(indiceH, idioma), rotulo: r.perfil.indiceH, icone: "graph-up", antes: true },
+          ...(pessoa.indice_i10 != null
+            ? [{ chave: "i10", valor: formatarNumero(pessoa.indice_i10, idioma), rotulo: r.perfil.indiceI10, icone: "bar-chart", antes: true }]
+            : []),
+          { chave: "cit", valor: formatarNumero(citacoes, idioma), rotulo: r.perfil.citacoes(citacoes), icone: "quote", antes: false },
+        ]
+      : [];
+
   return (
     <div className="pagina">
       <CabecalhoPagina
@@ -50,6 +65,26 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
                 <a href={l.url} target="_blank" rel="noopener noreferrer" className="perfil__botao">
                   <i className={`bi bi-${l.icone}`} aria-hidden="true" /> {l.rotulo}
                 </a>
+              </li>
+            ))}
+          </ul>
+        )}
+        {metricas.length > 0 && (
+          <ul className="perfil__links perfil__links--metricas" aria-label={r.perfil.metricas}>
+            {metricas.map((m) => (
+              <li key={m.chave}>
+                <span className="perfil__metrica" title={r.perfil.fonteMetricas}>
+                  <i className={`bi bi-${m.icone}`} aria-hidden="true" />
+                  {m.antes ? (
+                    <>
+                      {m.rotulo} <strong>{m.valor}</strong>
+                    </>
+                  ) : (
+                    <>
+                      <strong>{m.valor}</strong> {m.rotulo}
+                    </>
+                  )}
+                </span>
               </li>
             ))}
           </ul>

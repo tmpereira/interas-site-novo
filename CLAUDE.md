@@ -219,6 +219,14 @@ que não estão previstos, mas avise o usuário e atualize esta seção.
   `web_scraping/get_lattes_data.py`. Esse script só troca fotos com essa marca ou pessoas sem
   foto; foto colocada à mão (sem `foto_fonte`) não é tocada.
 - O `lattes` é o identificador usado nas atualizações via Lattes (seção 11).
+- Métricas da carreira (opcionais, pedido do usuário em 2026-11-09): `indice_h`, `indice_i10`, `citacoes`,
+  `openalex` (link do perfil de autor) e `fonte_metricas` (`openalex-AAAA-MM-DD`). Gravadas por
+  `web_scraping/get_lattes_data.py` a cada execução; o perfil é achado pelo `openalex` já
+  gravado, pelo ORCID ou pelos artigos da pessoa com DOI (autor com nome compatível que mais
+  aparece; no empate, o de mais citações). Para corrigir um perfil errado, gravar o link certo
+  em `openalex`; `fonte_metricas` de outra origem faz o script não mexer. O perfil mostra
+  "Índice h", "Índice i10" e "citações" em pílulas numa segunda linha, abaixo dos botões
+  (Lattes, Scholar, ORCID, Instituição), só quando o índice h ou as citações são maiores que zero.
 
 Categorias válidas (na ordem de exibição da página "Coordenação e Equipe"):
 
