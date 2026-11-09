@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { Site } from "@/lib/esquemas";
-import type { Idioma } from "@/lib/i18n/rotas";
+import { IDIOMAS, type Idioma, LOCALE, NOME_IDIOMA, SIGLA_IDIOMA, caminhoEquivalente } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 import { entradaDaPagina, estaEm, temItens } from "@/lib/menu";
 
@@ -17,6 +17,8 @@ type Props = {
   menu: Site["menu"];
   /** Página inicial do idioma (link do logo). */
   inicio: string;
+  /** Ids das notícias com versão em inglês: as outras levam à lista de notícias no seletor de idioma. */
+  noticiasEn: string[];
 };
 
 /** Seta do botão de submenu (gira quando o submenu abre). */
@@ -28,7 +30,7 @@ function Seta() {
   );
 }
 
-export default function Navbar({ idioma, logo, logoAlt, menu, inicio }: Props) {
+export default function Navbar({ idioma, logo, logoAlt, menu, inicio, noticiasEn }: Props) {
   const r = rotulos(idioma).layout;
   const [aberto, setAberto] = useState(false);
   const [submenuAberto, setSubmenuAberto] = useState<string | null>(null);
@@ -113,9 +115,51 @@ export default function Navbar({ idioma, logo, logoAlt, menu, inicio }: Props) {
                 </li>
               );
             })}
+            <li className="menu-principal__item menu-principal__item--idiomas">
+              <SeletorIdioma idioma={idioma} caminho={pathname} rotulo={r.idioma} noticiasEn={noticiasEn} />
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+  );
+}
+
+/**
+ * Seletor PT | EN: o idioma atual marcado e o outro com link para a página equivalente
+ * (`caminhoEquivalente`). Trocar de idioma recarrega a página (cada idioma tem o seu layout
+ * raiz), por isso é um <a> comum; o clique mantém os filtros e a âncora do endereço.
+ */
+function SeletorIdioma({ idioma, caminho, rotulo, noticiasEn }: { idioma: Idioma; caminho: string; rotulo: string; noticiasEn: string[] }) {
+  const traduzidas = new Set(noticiasEn);
+  const existe = (destino: Idioma) => (chave: string, slug: string) => destino === "pt" || chave !== "noticias" || traduzidas.has(slug);
+  return (
+    <div className="seletor-idioma" role="group" aria-label={rotulo}>
+      {IDIOMAS.map((i) =>
+        i === idioma ? (
+          <span key={i} className="seletor-idioma__opcao seletor-idioma__opcao--atual" lang={LOCALE[i]} aria-current="true" title={NOME_IDIOMA[i]}>
+            {SIGLA_IDIOMA[i]}
+          </span>
+        ) : (
+          <a
+            key={i}
+            href={caminhoEquivalente(caminho, i, existe(i))}
+            className="seletor-idioma__opcao"
+            lang={LOCALE[i]}
+            hrefLang={LOCALE[i]}
+            title={NOME_IDIOMA[i]}
+            aria-label={NOME_IDIOMA[i]}
+            onClick={(e) => {
+              const { search, hash } = window.location;
+              if (!search && !hash) return;
+              e.preventDefault();
+              window.location.assign(e.currentTarget.getAttribute("href") + search + hash);
+            }}
+          >
+            {SIGLA_IDIOMA[i]}
+          </a>
+        ),
+      )}
+    </div>
   );
 }

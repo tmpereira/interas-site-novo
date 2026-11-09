@@ -54,3 +54,32 @@ export function linkNoIdioma(link: string, idioma: Idioma): string {
   if (!chave) return link;
   return ROTAS[chave][idioma] + comBarra.slice(ROTAS[chave].pt.length) + sufixo;
 }
+
+/** Nome de cada idioma no próprio idioma e a sigla do seletor (não se traduzem). */
+export const NOME_IDIOMA: Record<Idioma, string> = { pt: "Português", en: "English" };
+export const SIGLA_IDIOMA: Record<Idioma, string> = { pt: "PT", en: "EN" };
+
+/**
+ * Seção de um caminho do site e o que vem depois dela (o slug/id), em qualquer idioma:
+ * "/en/team/fulano/" → { chave: "equipe", resto: "fulano/" }. `null` se não for uma seção.
+ */
+export function secaoDoCaminho(caminho: string): { chave: ChaveRota; resto: string } | null {
+  const idioma = idiomaDoCaminho(caminho);
+  const comBarra = caminho.endsWith("/") ? caminho : `${caminho}/`;
+  if (comBarra === ROTAS.inicio[idioma]) return { chave: "inicio", resto: "" };
+  const chave = CHAVES_ROTAS.find((c) => c !== "inicio" && comBarra.startsWith(ROTAS[c][idioma]));
+  return chave ? { chave, resto: comBarra.slice(ROTAS[chave][idioma].length) } : null;
+}
+
+/**
+ * Página equivalente no outro idioma (seletor de idioma): mesma seção e mesmo slug/id.
+ * `existe(chave, slug)` diz se o item tem página no idioma de destino (ex.: notícia não
+ * traduzida); se não tiver, ou se o caminho não for de uma seção, leva à listagem ou à home.
+ */
+export function caminhoEquivalente(caminho: string, destino: Idioma, existe: (chave: ChaveRota, slug: string) => boolean = () => true): string {
+  const secao = secaoDoCaminho(caminho);
+  if (!secao) return ROTAS.inicio[destino];
+  const slug = secao.resto.replace(/\/$/, "");
+  if (slug && !existe(secao.chave, slug)) return ROTAS[secao.chave][destino];
+  return ROTAS[secao.chave][destino] + secao.resto;
+}

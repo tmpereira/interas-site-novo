@@ -1228,6 +1228,11 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 - **Seletor de idioma** (PT | EN) na `Navbar`, que leva à **página
   equivalente** no outro idioma (via `rotas.ts`). Se a página não existir no
   outro idioma (notícia não traduzida), leva à listagem.
+  **Feito em 2026-11-09** (antecipado a pedido do usuário): `SeletorIdioma`, no fim do
+  menu, depois de "INTERAS em números" (`Navbar.tsx`; estilo `.seletor-idioma` em
+  `_layout.scss`). `caminhoEquivalente(caminho, destino, existe)` e `secaoDoCaminho`
+  ficam em `rotas.ts`; a lista de notícias traduzidas vem do `Documento`. O clique
+  mantém `?filtros` e `#âncora`. No celular, o seletor aparece dentro do menu aberto.
 - Logo: hoje é `logo_pt_transparente.png`. Se existir versão em inglês,
   usar `logo_en` em `site.json`; se não, perguntar ao usuário.
 

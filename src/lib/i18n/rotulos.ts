@@ -23,6 +23,8 @@ const pt = {
     botaoMenu: "Menu",
     aviso: "Aviso",
     fecharAviso: "Fechar aviso",
+    /** Rótulo do grupo de botões PT | EN (leitores de tela). */
+    idioma: "Idioma",
   },
   naoEncontrada: {
     tituloAba: "Página não encontrada",
@@ -258,6 +260,7 @@ const en: Rotulos = {
     botaoMenu: "Menu",
     aviso: "Notice",
     fecharAviso: "Close notice",
+    idioma: "Language",
   },
   naoEncontrada: {
     tituloAba: "Page not found",

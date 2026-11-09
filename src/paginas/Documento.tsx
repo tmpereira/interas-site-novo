@@ -50,7 +50,7 @@ gtag('config', '${site.google_analytics}');`}
         </a>
         <header className="cabecalho">
           {anuncio && <BarraAnuncio idioma={idioma} id={anuncio.id} icone={anuncio.icone} html={markdownEmLinha(anuncio.texto, idioma)} />}
-          <Navbar idioma={idioma} logo={site.logo} logoAlt={site.logo_alt} menu={menuNoIdioma(site.menu, idioma)} inicio={rota("inicio", idioma)} />
+          <Navbar idioma={idioma} logo={site.logo} logoAlt={site.logo_alt} menu={menuNoIdioma(site.menu, idioma)} inicio={rota("inicio", idioma)} noticiasEn={conteudoNoIdioma("en").noticias.map((n) => n.id)} />
         </header>
         <main id="conteudo" className="conteudo-principal">
           {children}

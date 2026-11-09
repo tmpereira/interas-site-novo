@@ -278,6 +278,52 @@
   }
 }
 
+// --- Seletor de idioma (PT | EN), no fim do menu ------------------------------
+.menu-principal__item--idiomas {
+  padding: $espaco-3 0;
+}
+
+.seletor-idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: $espaco-1;
+  padding: $espaco-1;
+  border: $borda;
+  border-radius: $raio-pilula;
+
+  &__opcao {
+    padding: $espaco-1 $espaco-2;
+    border-radius: $raio-pilula;
+    font-family: $fonte-mono;
+    font-size: $tamanho-xs;
+    font-weight: $peso-medio;
+    line-height: 1;
+    color: $cor-texto-suave;
+    text-decoration: none;
+
+    &:hover {
+      background: $cor-superficie;
+      color: $cor-texto;
+    }
+
+    &--atual,
+    &--atual:hover {
+      background: $cor-texto;
+      color: $cor-fundo;
+    }
+  }
+
+  @media (min-width: $bp-lg) {
+    margin-left: $espaco-2;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  .menu-principal__item--idiomas {
+    padding: 0;
+  }
+}
+
 // --- Topo das páginas internas ----------------------------------------------
 .cabecalho-pagina {
   padding: $espaco-12 0 $espaco-10;
