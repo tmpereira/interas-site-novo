@@ -23,3 +23,8 @@ npm-debug.log*
 
 # vercel
 .vercel
+
+# scriptLattes (web_scraping/scriptLattes): currículos baixados e JSON gerados a cada
+# execução; o venv e o chromedriver já são ignorados pelo .gitignore da própria pasta
+/web_scraping/scriptLattes/interas/lattes/
+**/__pycache__/
