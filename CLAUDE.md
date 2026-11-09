@@ -1235,6 +1235,14 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
   mantém `?filtros` e `#âncora`. No celular, o seletor aparece dentro do menu aberto.
 - Logo: hoje é `logo_pt_transparente.png`. Se existir versão em inglês,
   usar `logo_en` em `site.json`; se não, perguntar ao usuário.
+- **Como ficou (etapa 5, 2026-11-09):** `src/lib/i18n/versoes.ts` diz em que idiomas
+  cada página existe (`versoesDaPagina`; notícia sem tradução só em português) e monta o
+  hreflang (`idiomasAlternativos`: `pt-BR`, `en` e `x-default` → português).
+  `metadadosPagina` usa isso em `alternates.languages` e põe `og:locale` (`pt_BR` /
+  `en_US`) e `og:locale:alternate`. O `sitemap.xml` lista as páginas dos dois idiomas
+  (1.970 URLs em 2026-11-09), cada uma com as versões alternativas. Logo: nenhum
+  arquivo do projeto nem de `_legado/images/` tem versão em inglês (todos com o texto
+  em português); pendente com o usuário.
 
 ### 13.7 Como traduzir
 
@@ -1276,7 +1284,7 @@ rodar `npm run schemas`, atualizar a seção 6. Ajustar `conteudo.ts` para ler
 4. **Tradução do conteúdo** (feita em 2026-11-09; `validar -- --en-estrito` passa), em lotes revisados pelo usuário: `site.json` e
    `home.json` → `paginas.json` → `grupos.json` → `pessoas.json` →
    `videos.json` e `patentes.json` → notícias.
-5. **SEO e seletor**: hreflang, Open Graph, sitemap, seletor de idioma, logo.
+5. **SEO e seletor** (feita em 2026-11-09, menos o logo em inglês): hreflang, Open Graph, sitemap, seletor de idioma, logo.
 6. **Verificação**: `npm run build` sem erros, `validar -- --en-estrito`,
    links internos, navegação completa nos dois idiomas no `npm run dev`.
 
