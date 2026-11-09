@@ -4,43 +4,67 @@
     {
       "slug": "sobre-o-interas",
       "titulo": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde",
+      "titulo_en": "National Institute of Science and Technology for Radiation in Health",
       "descricao": "INTERAS",
+      "descricao_en": "INTERAS",
       "conteudo": "",
       "missao": {
         "sobretitulo": "Por que existimos",
+        "sobretitulo_en": "Why we exist",
         "titulo": "A pandemia de COVID‑19 mostrou a urgência por diagnósticos rápidos e tratamentos eficazes.",
+        "titulo_en": "The COVID‑19 pandemic showed the urgent need for rapid diagnosis and effective treatment.",
         "texto": "Inspirado por esse e outros grandes desafios da saúde, como o câncer e as doenças cardiovasculares, nasceu o INTERAS: uma rede de pesquisadores dedicada a desenvolver soluções baseadas em todo o espectro da radiação.\n\nUnimos **fotônica, nanotecnologia, radiações atômicas e medicina nuclear** à Ciência de Dados e à Inteligência Artificial para criar métodos diagnósticos não invasivos, terapias de alta precisão e formar os futuros líderes da ciência no Brasil.",
+        "texto_en": "Inspired by this and other major health challenges, such as cancer and cardiovascular disease, INTERAS was born: a network of researchers dedicated to developing solutions based on the entire radiation spectrum.\n\nWe combine **photonics, nanotechnology, atomic radiation and nuclear medicine** with Data Science and Artificial Intelligence to create non-invasive diagnostic methods and high-precision therapies, and to train the future leaders of science in Brazil.",
         "etiquetas": [
           "Fotônica",
           "Nanotecnologia",
           "Radiações atômicas",
           "Medicina nuclear",
           "Machine Learning"
+        ],
+        "etiquetas_en": [
+          "Photonics",
+          "Nanotechnology",
+          "Atomic radiation",
+          "Nuclear medicine",
+          "Machine Learning"
         ]
       },
       "etapas": {
         "sobretitulo": "Do laboratório ao SUS",
+        "sobretitulo_en": "From the lab to SUS",
         "titulo": "Ciência que sai da bancada e chega à vida das pessoas.",
+        "titulo_en": "Science that leaves the bench and reaches people's lives.",
         "itens": [
           {
             "titulo": "Pesquisa fundamental",
-            "texto": "Mecanismos de doença e novos alvos terapêuticos."
+            "titulo_en": "Fundamental research",
+            "texto": "Mecanismos de doença e novos alvos terapêuticos.",
+            "texto_en": "Disease mechanisms and new therapeutic targets."
           },
           {
             "titulo": "Método",
-            "texto": "Diagnóstico espectral, terapia ou radiofármaco."
+            "titulo_en": "Method",
+            "texto": "Diagnóstico espectral, terapia ou radiofármaco.",
+            "texto_en": "Spectral diagnosis, therapy or radiopharmaceutical."
           },
           {
             "titulo": "Validação pré-clínica",
-            "texto": "Segurança e eficácia comprovadas."
+            "titulo_en": "Preclinical validation",
+            "texto": "Segurança e eficácia comprovadas.",
+            "texto_en": "Proven safety and efficacy."
           },
           {
             "titulo": "Produto e protocolo",
-            "texto": "Tecnologia pronta para uso clínico."
+            "titulo_en": "Product and protocol",
+            "texto": "Tecnologia pronta para uso clínico.",
+            "texto_en": "Technology ready for clinical use."
           },
           {
             "titulo": "Mercado e SUS",
-            "texto": "Acesso para hospitais e pacientes."
+            "titulo_en": "Market and SUS",
+            "texto": "Acesso para hospitais e pacientes.",
+            "texto_en": "Access for hospitals and patients."
           }
         ]
       }
@@ -48,69 +72,90 @@
     {
       "slug": "areas-de-pesquisa",
       "titulo": "Áreas de Pesquisa",
+      "titulo_en": "Research Areas",
       "descricao": null,
       "conteudo": ""
     },
     {
       "slug": "contato",
       "titulo": "Contato",
+      "titulo_en": "Contact",
       "descricao": null,
       "conteudo": "## Sede do INTERAS\n\n#### IPEN\n\nO INTERAS tem sede no IPEN - Instituto de Pesquisas Energéticas e Nucleares.",
+      "conteudo_en": "## INTERAS headquarters\n\n#### IPEN\n\nINTERAS is headquartered at IPEN - Instituto de Pesquisas Energéticas e Nucleares.",
       "cartoes": [
         {
           "titulo": "Secretaria e Contatos",
+          "titulo_en": "Secretariat and Contacts",
           "icone": "people-fill",
-          "conteudo": "**Patrícia Neves**  \nSecretaria INTERAS\n\nTelefone: +5511 2810-1646\n\n**Horário de Atendimento:**  \nSegunda a Sexta-feira: 08h00 às 16h45"
+          "conteudo": "**Patrícia Neves**  \nSecretaria INTERAS\n\nTelefone: +5511 2810-1646\n\n**Horário de Atendimento:**  \nSegunda a Sexta-feira: 08h00 às 16h45",
+          "conteudo_en": "**Patrícia Neves**  \nINTERAS Secretariat\n\nPhone: +5511 2810-1646\n\n**Office hours:**  \nMonday to Friday: 08:00 to 16:45"
         },
         {
           "titulo": "Localização e Email",
+          "titulo_en": "Location and Email",
           "icone": "geo-alt-fill",
-          "conteudo": "Para entrar em contato, use nosso email:\n\n### [inctinteras@gmail.com](mailto:inctinteras@gmail.com)\n\n**Endereço Físico:**\n\nInstituto de Pesquisas Energéticas e Nucleares - IPEN/CNEN, SP  \nINTERAS - Centro de Lasers e Aplicações (CELAP)  \nAv. Lineu Prestes, 2242 - Cidade Universitária  \nCEP 05508-000 -- São Paulo/SP"
+          "conteudo": "Para entrar em contato, use nosso email:\n\n### [inctinteras@gmail.com](mailto:inctinteras@gmail.com)\n\n**Endereço Físico:**\n\nInstituto de Pesquisas Energéticas e Nucleares - IPEN/CNEN, SP  \nINTERAS - Centro de Lasers e Aplicações (CELAP)  \nAv. Lineu Prestes, 2242 - Cidade Universitária  \nCEP 05508-000 -- São Paulo/SP",
+          "conteudo_en": "To get in touch, use our email:\n\n### [inctinteras@gmail.com](mailto:inctinteras@gmail.com)\n\n**Address:**\n\nInstituto de Pesquisas Energéticas e Nucleares - IPEN/CNEN, SP  \nINTERAS - Centro de Lasers e Aplicações (CELAP)  \nAv. Lineu Prestes, 2242 - Cidade Universitária  \nCEP 05508-000 -- São Paulo/SP"
         }
       ]
     },
     {
       "slug": "equipe",
       "titulo": "Coordenação e equipe",
+      "titulo_en": "Coordination and team",
       "descricao": null,
       "conteudo": ""
     },
     {
       "slug": "alunos",
       "titulo": "Alunos",
+      "titulo_en": "Students",
       "descricao": "Orientações de iniciação científica, mestrado, doutorado e pós-doutorado dos pesquisadores do INTERAS",
+      "descricao_en": "Undergraduate research, master's, PhD and postdoctoral supervision by INTERAS researchers",
       "conteudo": ""
     },
     {
       "slug": "grupos",
       "titulo": "Grupos de Pesquisa do INTERAS",
+      "titulo_en": "INTERAS Research Groups",
       "descricao": null,
-      "conteudo": "Abaixo estão listados os grupos de pesquisa e laboratórios que compõem o Instituto Nacional de Tecnologia das Radiações na Saúde (INTERAS).\n\nUtilize os filtros para navegar pelos principais eixos de atuação do instituto."
+      "conteudo": "Abaixo estão listados os grupos de pesquisa e laboratórios que compõem o Instituto Nacional de Tecnologia das Radiações na Saúde (INTERAS).\n\nUtilize os filtros para navegar pelos principais eixos de atuação do instituto.",
+      "conteudo_en": "Below are the research groups and laboratories that make up the National Institute of Science and Technology for Radiation in Health (INTERAS).\n\nUse the filters to browse the institute's main areas of work."
     },
     {
       "slug": "publicacoes",
       "titulo": "Produção Científica e Tecnológica",
+      "titulo_en": "Scientific and Technological Output",
       "descricao": null,
       "conteudo": "",
       "titulo_artigos": "Artigos Originais",
-      "titulo_patentes": "Propriedade Intelectual (Patentes e Softwares)"
+      "titulo_artigos_en": "Original Articles",
+      "titulo_patentes": "Propriedade Intelectual (Patentes e Softwares)",
+      "titulo_patentes_en": "Intellectual Property (Patents and Software)"
     },
     {
       "slug": "noticias",
       "titulo": "Notícias",
+      "titulo_en": "News",
       "descricao": null,
       "conteudo": ""
     },
     {
       "slug": "videos",
       "titulo": "Produções Audiovisuais",
+      "titulo_en": "Audiovisual Productions",
       "descricao": "Documentação e Divulgação Científica INTERAS",
-      "conteudo": "Nesta seção, disponibilizamos vídeos institucionais, registros de eventos e materiais de divulgação produzidos pelo INTERAS."
+      "descricao_en": "INTERAS Documentation and Science Communication",
+      "conteudo": "Nesta seção, disponibilizamos vídeos institucionais, registros de eventos e materiais de divulgação produzidos pelo INTERAS.",
+      "conteudo_en": "In this section, we provide institutional videos, event recordings and outreach materials produced by INTERAS."
     },
     {
       "slug": "interas-em-numeros",
       "titulo": "INTERAS em números",
+      "titulo_en": "INTERAS in numbers",
       "descricao": "Produção científica e formação de recursos humanos do INCT INTERAS",
+      "descricao_en": "Scientific output and human resources training at INCT INTERAS",
       "conteudo": ""
     }
   ]
