@@ -1065,6 +1065,7 @@
       "nome": "Allan Bereczki",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1077,6 +1078,7 @@
       "orcid": "https://orcid.org/0000-0003-0813-5527",
       "areas": null,
       "atuacao": "Responsável pelas medidas de espectros raman e análise de dados para caracterização de processos de desmineralização em esmalte dental e dentina",
+      "atuacao_en": "Responsible for Raman spectra measurements and data analysis to characterize demineralization processes in dental enamel and dentin.",
       "ativo": true
     },
     {
@@ -1084,6 +1086,7 @@
       "nome": "Amanda Caramel Juvino",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1095,7 +1098,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=m4XvuP0AAAAJ",
       "orcid": "https://orcid.org/0000-0001-6027-9603",
       "areas": "Odontologia, Laserterapia, Biotofonica",
+      "areas_en": "Dentistry, Laser Therapy, Biophotonics",
       "atuacao": "Realizar os ensaios laboratoriais de caracterização de esmalte dental irradiado a laser para prevenção da cárie dental.",
+      "atuacao_en": "Carrying out laboratory tests to characterize laser-irradiated dental enamel for the prevention of dental caries.",
       "ativo": true
     },
     {
@@ -1103,6 +1108,7 @@
       "nome": "André Mourão Batista",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1114,7 +1120,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Química",
+      "areas_en": "Chemistry",
       "atuacao": "Irá desenvolver experimentos de microfluidica sondados por espectroscopia Raman para analisar amostras no contexto deste projeto.",
+      "atuacao_en": "Will develop microfluidics experiments probed by Raman spectroscopy to analyze samples in the context of this project.",
       "ativo": true
     },
     {
@@ -1122,6 +1130,7 @@
       "nome": "Angélica Bueno Barbezan",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1133,7 +1142,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0001-7615-9091",
       "areas": "Nanobraquiterapia, Radiofármacos, Irradiação de Alimentos, Análises Clínicas, Imagem",
+      "areas_en": "Nanobrachytherapy, Radiopharmaceuticals, Food Irradiation, Clinical Analysis, Imaging",
       "atuacao": "Ensaios de citotoxicidade in vitro; ensaios em modelo animal de tumor de próstata; associação da Terapia com Laser de Baixa Potência (TLBP) à nanobraquiterapia in vivo; desenvolvimento de ensaios pré-clínicos de câncer de próstata para investigar o efeito biológico da associação das radiações ionizante e não ionizante.",
+      "atuacao_en": "In vitro cytotoxicity assays; studies in an animal model of prostate tumor; combining Low-Level Laser Therapy (LLLT) with nanobrachytherapy in vivo; developing preclinical prostate cancer studies to investigate the biological effect of combining ionizing and non-ionizing radiation.",
       "ativo": true
     },
     {
@@ -1141,6 +1152,7 @@
       "nome": "Antonio Arleques Gomes",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1152,7 +1164,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Química, Dinâmica dos Fluídos, Processos de Fabricação",
+      "areas_en": "Chemistry, Fluid Dynamics, Manufacturing Processes",
       "atuacao": "Desenvolver sistemas microfluídicos para síntese de radiofármacos que usam flúor radioativo.",
+      "atuacao_en": "Developing microfluidic systems for the synthesis of radiopharmaceuticals that use radioactive fluorine.",
       "ativo": true
     },
     {
@@ -1160,6 +1174,7 @@
       "nome": "Arian Pérez Nario",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1171,7 +1186,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0009-0001-0477-0673",
       "areas": "Química Orgânica, Radioquímica, Síntese Orgânica",
+      "areas_en": "Organic Chemistry, Radiochemistry, Organic Synthesis",
       "atuacao": "Desenvolver sistemas microfluídicos para síntese de radiofármacos que usam flúor radioativo.",
+      "atuacao_en": "Developing microfluidic systems for the synthesis of radiopharmaceuticals that use radioactive fluorine.",
       "ativo": true
     },
     {
@@ -1179,6 +1196,7 @@
       "nome": "Arthur Melo de Oliveira",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1190,7 +1208,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Física Médica",
+      "areas_en": "Medical Physics",
       "atuacao": "Simulações de Monte Carlo para propagação de radiação óptica na pele",
+      "atuacao_en": "Monte Carlo simulations of optical radiation propagation in the skin.",
       "ativo": true
     },
     {
@@ -1198,6 +1218,7 @@
       "nome": "Bruna Martins dos Santos",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1209,7 +1230,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Odontologia",
+      "areas_en": "Dentistry",
       "atuacao": "Determinar a resistência de remoção de laminados cerâmicos com laser Er:YAG em diferentes potências, de esmalte dental.",
+      "atuacao_en": "Determining the removal resistance of ceramic veneers from dental enamel with an Er:YAG laser at different powers.",
       "ativo": true
     },
     {
@@ -1217,6 +1240,7 @@
       "nome": "Camila de Almeida Salvego",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1228,7 +1252,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=rDgLTawAAAAJ",
       "orcid": "https://orcid.org/0000-0003-3573-8948",
       "areas": "Radiologia",
+      "areas_en": "Radiology",
       "atuacao": "Irá avaliar a eficácia de fotobioestimulação nos temas envolvidos no presente projeto.",
+      "atuacao_en": "Will evaluate the effectiveness of photobiostimulation in the topics covered by this project.",
       "ativo": true
     },
     {
@@ -1236,6 +1262,7 @@
       "nome": "Camila Ramos Silva",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1247,7 +1274,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=M_cfbmMAAAAJ",
       "orcid": null,
       "areas": "Terapia Óptica, Biofotônica, Radiobiologia e Fotobiologia, Engenharia Biomédica, biofísica",
+      "areas_en": "Optical Therapy, Biophotonics, Radiobiology and Photobiology, Biomedical Engineering, Biophysics",
       "atuacao": "Realizará estudos de avaliação pré-clinica de fotobiomodulação combinada à radioterapia no tratamento de câncer de mama.",
+      "atuacao_en": "Will carry out preclinical studies of photobiomodulation combined with radiotherapy in the treatment of breast cancer.",
       "ativo": true
     },
     {
@@ -1255,6 +1284,7 @@
       "nome": "Carla Carolina Silva Bandeira",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1266,7 +1296,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0003-4565-8693",
       "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part.",
+      "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles",
       "atuacao": "Irá desenvolver substratos SERS para caracterização de biofluidos no contexto deste projeto.",
+      "atuacao_en": "Will develop SERS substrates for the characterization of biofluids in the context of this project.",
       "ativo": true
     },
     {
@@ -1274,6 +1306,7 @@
       "nome": "Daniela Maria Cerqueira Leite",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1285,7 +1318,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=QhS9DfYAAAAJ",
       "orcid": null,
       "areas": "Laserterapia",
+      "areas_en": "Laser Therapy",
       "atuacao": "Desenvolver protocolo seguro de descolamento de facetas cerâmicas com lasers, em dentes irradiados por radiação gama.",
+      "atuacao_en": "Developing a safe protocol for debonding ceramic veneers with lasers in teeth irradiated with gamma radiation.",
       "ativo": true
     },
     {
@@ -1293,6 +1328,7 @@
       "nome": "Diego Roberto da Cunha Pascoal",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1306,6 +1342,7 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57190010138",
       "areas": null,
       "atuacao": "Responsável pelas medidas de espectros raman e análise de dados utilizando softwares de IA para caracterização de estruturas biológicas.",
+      "atuacao_en": "Responsible for Raman spectra measurements and data analysis using AI software to characterize biological structures.",
       "ativo": true
     },
     {
@@ -1313,6 +1350,7 @@
       "nome": "Elizabete dos Santos Ferreira",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1324,7 +1362,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Clínica Odontológica, Ortodontia, Engenharia Biomédica",
+      "areas_en": "Clinical Dentistry, Orthodontics, Biomedical Engineering",
       "atuacao": "Durabilidade do tratamento efetuado com laser de pulsos curtos na prevenção de lesões cariosas e não cariosas.",
+      "atuacao_en": "Durability of short-pulse laser treatment in the prevention of carious and non-carious lesions.",
       "ativo": true
     },
     {
@@ -1332,6 +1372,7 @@
       "nome": "Fabrizio Manoel Rodrigues",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1343,7 +1384,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Odontologia",
+      "areas_en": "Dentistry",
       "atuacao": "Desenvolvimento de um hidrogel combinado com biocerâmica e terapia fotodinâmica para reparo ósseoar",
+      "atuacao_en": "Development of a hydrogel combined with bioceramics and photodynamic therapy for bone repair.",
       "ativo": true
     },
     {
@@ -1351,6 +1394,7 @@
       "nome": "Fernanda Keli do Carmo Santos Miranda",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1363,6 +1407,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Estudo dos efeitos sinérgicos de laser em alta intensidade Q-switched e fotoabsorvedor modificado na adesão de biofilme cariogênico e na paralisação da cárie de radiação radicular",
+      "atuacao_en": "Study of the synergistic effects of high-intensity Q-switched laser and a modified photoabsorber on cariogenic biofilm adhesion and on the arrest of radiation-related root caries.",
       "ativo": true
     },
     {
@@ -1370,6 +1415,7 @@
       "nome": "Gabrielle Luana Jimenez Teodoro Nepomuceno",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1381,7 +1427,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=RxueLEMAAAAJ",
       "orcid": null,
       "areas": "Ciências Ambientais, Biologia Molecular, Biofísica, Análise Multivariada",
+      "areas_en": "Environmental Sciences, Molecular Biology, Biophysics, Multivariate Analysis",
       "atuacao": "Irá desenvolver metodologia para avaliação espectral de micro gotas de biofluidos de pacientes envolvidos neste projeto.",
+      "atuacao_en": "Will develop a methodology for the spectral evaluation of microdroplets of biofluids from patients involved in this project.",
       "ativo": true
     },
     {
@@ -1389,6 +1437,7 @@
       "nome": "Gleice Conceição Mendonça Germano",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1400,7 +1449,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0003-3760-5516",
       "areas": "Materiais Magnéticos e Propriedades Magnéticas, Biologia Molecular, LASER Aleatórios, Estudo de não linearidade otica em materiais 2D",
+      "areas_en": "Magnetic Materials and Magnetic Properties, Molecular Biology, Random LASERs, Study of optical nonlinearity in 2D materials",
       "atuacao": "Responsável pela aquisição das imagens hiperespectrais de tumores orais e pele e cálculos de remoção de vapor de agua e parafina",
+      "atuacao_en": "Responsible for acquiring hyperspectral images of oral and skin tumors and for the calculations to remove water vapor and paraffin.",
       "ativo": true
     },
     {
@@ -1408,6 +1459,7 @@
       "nome": "Hermann Windisch Neto",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1419,7 +1471,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Engenharia Mecânica, Engenharia Biomédica",
+      "areas_en": "Mechanical Engineering, Biomedical Engineering",
       "atuacao": "Desenvolvimento de Biorreator com fototerapia para cultura de tecidos",
+      "atuacao_en": "Development of a bioreactor with phototherapy for tissue culture.",
       "ativo": true
     },
     {
@@ -1427,6 +1481,7 @@
       "nome": "Jessica Dipold",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1439,7 +1494,9 @@
       "orcid": "https://orcid.org/0000-0002-1855-3020",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=55911786600",
       "areas": "Prop. Óticas e Espectrosc. da Mat. Condens; Outras Inter. da Mat. com Rad. e Part., Teorias Específicas e Modelos de Interação; Sistemática de Partículas; Raios Cósmicos, Processos de Colisão e Interações de Átomos e Moléculas",
+      "areas_en": "Optical Properties and Spectroscopy of Condensed Matter; Other Interactions of Matter with Radiation and Particles, Specific Theories and Interaction Models; Particle Systematics; Cosmic Rays, Collision Processes and Interactions of Atoms and Molecules",
       "atuacao": "Responsável pelas medidas de espectros raman e microscopia de força atômica para para caracterização de Zica virus, em função de doses de radiação gama.",
+      "atuacao_en": "Responsible for Raman spectra measurements and atomic force microscopy to characterize the Zika virus as a function of gamma radiation doses.",
       "ativo": true
     },
     {
@@ -1447,6 +1504,7 @@
       "nome": "Jéssica Verônica da Silva",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1459,7 +1517,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57343301900",
       "areas": "Ciências Biológicas, Biologia Molecular, Bioinformática",
+      "areas_en": "Biological Sciences, Molecular Biology, Bioinformatics",
       "atuacao": "A aluna irá realizar a técnica de FTIR para análise de biomarcadores na doença renal",
+      "atuacao_en": "The student will use FTIR to analyze biomarkers in kidney disease.",
       "ativo": true
     },
     {
@@ -1467,6 +1527,7 @@
       "nome": "Júlio Gallinaro Maranho",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1478,7 +1539,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Data Science, Probabilidade e Estatística Aplicadas, Modelos Analíticos e de Simulação, Infraestrutura aeroportuária",
+      "areas_en": "Data Science, Applied Probability and Statistics, Analytical and Simulation Models, Airport Infrastructure",
       "atuacao": "PROPOSTA DE DISPOSITIVO PORTÁTIL PARA DIAGNÓSTICO PRECOCE DE CÂNCER DE MAMA POR ESPECTROSCOPIA DE FLUORESCÊNCIA EM SALIVA",
+      "atuacao_en": "Proposal of a portable device for the early diagnosis of breast cancer by fluorescence spectroscopy of saliva.",
       "ativo": true
     },
     {
@@ -1486,6 +1549,7 @@
       "nome": "Luismar Barbosa da Cruz Junior",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1497,7 +1561,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=GsgEJlcAAAAJ",
       "orcid": "https://orcid.org/0000-0002-1364-5321",
       "areas": "Física Aplicada, Física da Matéria Condensada, Divulgação Científica",
+      "areas_en": "Applied Physics, Condensed Matter Physics, Science Communication",
       "atuacao": "Caracterização óptica de amostras altamente espalhadoras na região espectral do visível e infravermelho próximo",
+      "atuacao_en": "Optical characterization of highly scattering samples in the visible and near-infrared spectral regions.",
       "ativo": true
     },
     {
@@ -1505,6 +1571,7 @@
       "nome": "Marcelo da Rocha Leão de Magalhães",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1517,6 +1584,7 @@
       "orcid": null,
       "areas": null,
       "atuacao": "Implementação do biotério de experimentação; definição dos protocolos de imageamento molecular por Micro-PET/CT",
+      "atuacao_en": "Setting up the experimental animal facility; defining the protocols for molecular imaging by Micro-PET/CT.",
       "ativo": true
     },
     {
@@ -1524,6 +1592,7 @@
       "nome": "Marcos Humberto dos Santos",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1535,7 +1604,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Radiologia Odontológica",
+      "areas_en": "Dental Radiology",
       "atuacao": "AVALIAÇÃO IN VITRO DE DIFERENTES GRAUS DE CÁRIES PROXIMAIS UTILIZANDO TOMOGRAFIA DE COERÊNCIA ÓPTICA.",
+      "atuacao_en": "In vitro evaluation of different degrees of proximal caries using optical coherence tomography.",
       "ativo": true
     },
     {
@@ -1543,6 +1614,7 @@
       "nome": "Maria Eduarda Zaganin Rigo",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1554,7 +1626,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Física Médica",
+      "areas_en": "Medical Physics",
       "atuacao": "Síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor; ensaios de citotoxicidade in vitro.",
+      "atuacao_en": "Synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting; in vitro cytotoxicity assays.",
       "ativo": true
     },
     {
@@ -1562,6 +1636,7 @@
       "nome": "Mateus Cóstola Windlin",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1573,7 +1648,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=9j9A5zQAAAAJ",
       "orcid": "https://orcid.org/0009-0009-2768-942X",
       "areas": "Odontologia, Estética, Laserterapia, Oncologia",
+      "areas_en": "Dentistry, Aesthetics, Laser Therapy, Oncology",
       "atuacao": "Desenvolver protocolo de descolamento de laminados cerâmicos com laser de Er:YAG, de esmalte dental. Ensaios de temperatura de segurando-vos; ca durante a irradiação.",
+      "atuacao_en": "Developing a protocol for debonding ceramic veneers from dental enamel with an Er:YAG laser. Temperature safety tests during irradiation.",
       "ativo": true
     },
     {
@@ -1581,6 +1658,7 @@
       "nome": "Matheus Andrade Rocha Costa",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1592,7 +1670,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=I9i_mPgAAAAJ",
       "orcid": null,
       "areas": "Química de Produtos Naturais., Engenharia Ambiental, Engenharia de Segurança do Trabalho, Microbiologia Industrial e de Fermentação, Radioecologia e Análises Ambientais, Química Analítica/Especialidade: Análise de Traços e Química Ambiental.",
+      "areas_en": "Natural Products Chemistry, Environmental Engineering, Occupational Safety Engineering, Industrial Microbiology and Fermentation, Radioecology and Environmental Analysis, Analytical Chemistry/Specialty: Trace Analysis and Environmental Chemistry.",
       "atuacao": "Desenvolvimento de radiomarcacao de moléculas; imageamento molecular por Micro-PET/CT",
+      "atuacao_en": "Development of radiolabeling of molecules; molecular imaging by Micro-PET/CT.",
       "ativo": true
     },
     {
@@ -1600,6 +1680,7 @@
       "nome": "Matheus De Freitas Oliveira Baffa",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1612,7 +1693,9 @@
       "orcid": "https://orcid.org/0000-0003-0335-7358",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57193131974",
       "areas": "Visão Computacional, Aprendizagem de Máquina, Processamento e Análise de Imagens Médicas, Computação Gráfica, Informática Biomédica",
+      "areas_en": "Computer Vision, Machine Learning, Medical Image Processing and Analysis, Computer Graphics, Biomedical Informatics",
       "atuacao": "Desenvolvimento de técnicas de analise de imagem de cortes patológicos em HE, por técnicas de aprendizado de maquina profundo.",
+      "atuacao_en": "Development of image analysis techniques for H&E-stained pathology sections using deep learning.",
       "ativo": true
     },
     {
@@ -1620,6 +1703,7 @@
       "nome": "Mayara Santana Pinto",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1631,7 +1715,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Química Analítica, Química Orgânica, Biofotônica",
+      "areas_en": "Analytical Chemistry, Organic Chemistry, Biophotonics",
       "atuacao": "Irá avaliar a eficácia de fotobioestimulação nos temas envolvidos no presente projeto.",
+      "atuacao_en": "Will evaluate the effectiveness of photobiostimulation in the topics covered by this project.",
       "ativo": true
     },
     {
@@ -1639,6 +1725,7 @@
       "nome": "Monique Rodrigues",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1650,7 +1737,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=ph2SUQMAAAAJ",
       "orcid": null,
       "areas": "Odontologia",
+      "areas_en": "Dentistry",
       "atuacao": "Efeitos de laser emissor no ultravioleta para paralisação da cárie de radiação",
+      "atuacao_en": "Effects of an ultraviolet-emitting laser on the arrest of radiation caries.",
       "ativo": true
     },
     {
@@ -1658,6 +1747,7 @@
       "nome": "Neila Cristina Fonseca Machado",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1670,7 +1760,9 @@
       "orcid": "https://orcid.org/0000-0002-0321-2290",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=56572352200",
       "areas": "Engenharia Biomédica, Biologia Geral, Biofísica, Bioquímica, Bioinformática, Biotecnologia",
+      "areas_en": "Biomedical Engineering, General Biology, Biophysics, Biochemistry, Bioinformatics, Biotechnology",
       "atuacao": "Irá implementar algoritmos e simulações de dinâmica molecular \"course- grained\" e \"fine-grained\" para avaliação de ação de fármacos e principios ativos sobre a pele.",
+      "atuacao_en": "Will implement coarse-grained and fine-grained molecular dynamics algorithms and simulations to evaluate the action of drugs and active ingredients on the skin.",
       "ativo": true
     },
     {
@@ -1678,6 +1770,7 @@
       "nome": "Oscar Jesus Moreno Loaiza",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1691,7 +1784,9 @@
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=36810074700",
       "scopus_alternativo": "https://www.scopus.com/authid/detail.uri?authorId=57208484216",
       "areas": "eletrofisiologia, Fisiologia Cardiovascular",
+      "areas_en": "Electrophysiology, Cardiovascular Physiology",
       "atuacao": "Irá realizar experimentos de eletrofisiologia no contexto do presente projeto.",
+      "atuacao_en": "Will carry out electrophysiology experiments in the context of this project.",
       "ativo": true
     },
     {
@@ -1699,6 +1794,7 @@
       "nome": "Paulo Ney Lyra de Moraes",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1710,7 +1806,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Clínica Odontológica, Implantodontia, Cirurgia Oral Menor, Laserterapia",
+      "areas_en": "Clinical Dentistry, Implant Dentistry, Minor Oral Surgery, Laser Therapy",
       "atuacao": "Desenvolvimento de protocolo clinico da colocação de implantes em pacientes em associação a terapia fotodinamica antimicrobiana.",
+      "atuacao_en": "Development of a clinical protocol for placing implants in patients combined with antimicrobial photodynamic therapy.",
       "ativo": true
     },
     {
@@ -1718,6 +1816,7 @@
       "nome": "Priscila Santos Rodrigues",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1729,7 +1828,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "FÍSICA MÉDICA",
+      "areas_en": "Medical Physics",
       "atuacao": "Ensaios dosimétricos com Filmes radiocrômicos, Fricke gel e Monte Carlo",
+      "atuacao_en": "Dosimetric tests with radiochromic films, Fricke gel and Monte Carlo.",
       "ativo": true
     },
     {
@@ -1737,6 +1838,7 @@
       "nome": "Raíssa Mendonça Quaranta Lobão",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1748,7 +1850,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0002-2157-9395",
       "areas": "Física Médica",
+      "areas_en": "Medical Physics",
       "atuacao": "Simulações de Monte Carlo para propagação de radiação óptica na pele",
+      "atuacao_en": "Monte Carlo simulations of optical radiation propagation in the skin.",
       "ativo": true
     },
     {
@@ -1756,6 +1860,7 @@
       "nome": "Raquel Silva Neres dos Santos",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1769,7 +1874,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=7hu60AgAAAAJ",
       "orcid": null,
       "areas": "Ciências Biológicas, Biologia Molecular, Fisiologia Cardiovascular, Histologia",
+      "areas_en": "Biological Sciences, Molecular Biology, Cardiovascular Physiology, Histology",
       "atuacao": "The student will collaborate with the interpretation of FTIR spectra for the analysis of biomarkers Will perform in vitro tests to validate the biomarkers",
+      "atuacao_en": "The student will collaborate on the interpretation of FTIR spectra for biomarker analysis and will perform in vitro tests to validate the biomarkers.",
       "ativo": true
     },
     {
@@ -1777,6 +1884,7 @@
       "nome": "Regiane Stafim da Cunha",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1788,7 +1896,9 @@
       "scholar": "https://scholar.google.com/citations?hl=en&user=Z3YAyDYAAAAJ",
       "orcid": "https://orcid.org/0000-0002-7925-7698",
       "areas": "Patologia, Educação, Bioquímica, Biologia Geral",
+      "areas_en": "Pathology, Education, Biochemistry, General Biology",
       "atuacao": "A aluna irá realizar ensaios de de FTIR a partir do dialisato peritoneal de pacientes com doença renal crônica",
+      "atuacao_en": "The student will perform FTIR tests on peritoneal dialysate from patients with chronic kidney disease.",
       "ativo": true
     },
     {
@@ -1796,6 +1906,7 @@
       "nome": "Sajid Farooq",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1808,7 +1919,9 @@
       "orcid": null,
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57200139076",
       "areas": "Engenharia Biomédica",
+      "areas_en": "Biomedical Engineering",
       "atuacao": "Desenvolver metodologia de caracterização de tecidos biológicos e de diagnóstico de doenças for imagem hiperespectral por FTIR e analise de aprendizado de maquina profundo.",
+      "atuacao_en": "Developing a methodology for characterizing biological tissues and diagnosing diseases by FTIR hyperspectral imaging and deep learning analysis.",
       "ativo": true
     },
     {
@@ -1816,6 +1929,7 @@
       "nome": "Tatiana Pereira da Silva",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1827,7 +1941,9 @@
       "scholar": null,
       "orcid": null,
       "areas": "Imunologia Celular, Biologia Molecular",
+      "areas_en": "Cellular Immunology, Molecular Biology",
       "atuacao": "Irá realizar experimentos de eletrofisiologia no contexto do presente projeto.",
+      "atuacao_en": "Will carry out electrophysiology experiments in the context of this project.",
       "ativo": true
     },
     {
@@ -1835,6 +1951,7 @@
       "nome": "Valeria Mendes",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1846,7 +1963,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0001-7852-3942",
       "areas": "Odontologia, ODONTOLOGIA PARA PACIENTES COM NECESSIDADES ESPECIAIS, GESTÃO DE SAÚDE COM ENFASE EM CLINICAS E HOSPITAIS, Clínica Odontológica, Reabilitação oral",
+      "areas_en": "Dentistry, Dentistry for Patients with Special Needs, Health Management with Emphasis on Clinics and Hospitals, Clinical Dentistry, Oral Rehabilitation",
       "atuacao": "Desenvolver e testar clinicamente a associação de lasers de érbio e neodímio, bao ablativos, para o tratamento de apneia do sono",
+      "atuacao_en": "Developing and clinically testing the combination of non-ablative erbium and neodymium lasers for the treatment of sleep apnea.",
       "ativo": true
     },
     {
@@ -1854,6 +1973,7 @@
       "nome": "Vanessa Moredo Alonso",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1865,7 +1985,9 @@
       "scholar": null,
       "orcid": "https://orcid.org/0000-0001-8735-3279",
       "areas": "Endodontia, Clínica Odontológica",
+      "areas_en": "Endodontics, Clinical Dentistry",
       "atuacao": "Desenvolver métodos espectrometros em escala micro/nano para caracterização de materiais biologicos",
+      "atuacao_en": "Developing spectrometric methods at the micro/nano scale for the characterization of biological materials.",
       "ativo": true
     },
     {
@@ -1873,6 +1995,7 @@
       "nome": "Wilmmer Alexander Arcos Rosero",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1885,7 +2008,9 @@
       "orcid": "https://orcid.org/0009-0002-4828-4199",
       "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57282451500",
       "areas": "Físico-Química Orgânica",
+      "areas_en": "Physical Organic Chemistry",
       "atuacao": "Síntese e caracterização de nanopartículas de ouro (AuNPs) radioativa e não-radioativa; funcionalização das nanopartículas para direcionamento ao tumor.",
+      "atuacao_en": "Synthesis and characterization of radioactive and non-radioactive gold nanoparticles (AuNPs); functionalization of the nanoparticles for tumor targeting.",
       "ativo": true
     },
     {
@@ -1893,6 +2018,7 @@
       "nome": "Yasmin Reis Fontes de Oliveira",
       "categoria": "bolsista",
       "cargo": "Bolsista",
+      "cargo_en": "Fellow",
       "ordem": null,
       "foto": null,
       "instituicao": {
@@ -1904,6 +2030,7 @@
       "scholar": null,
       "orcid": null,
       "areas": "Odonotologia, Laserterapia, Biofotonica",
+      "areas_en": "Dentistry, Laser Therapy, Biophotonics",
       "atuacao": null,
       "ativo": true
     }
