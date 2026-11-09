@@ -4,7 +4,9 @@
     {
       "slug": "resgroup-cinas",
       "titulo": "Grupo de Pesquisas em Computação e Inteligência Artificial em Nuclear e Saúde",
+      "titulo_en": "Research Group on Computing and Artificial Intelligence in Nuclear Science and Health",
       "resumo": "O Grupo de Computação e Inteligência Artificial em Nuclear e Saúde (CINAS) atua na fronteira do conhecimento, preenchendo a lacuna entre o desenvolvimento algorítmico e a aplicação crítica em infraestruturas nucleares e ambientes clínicos. Nossa missão é desenvolver metodologias que incorporam o conhecimento físico e biológico (domain knowledge) dentro da arquitetura de modelos inteligentes.",
+      "resumo_en": "The Computing and Artificial Intelligence in Nuclear Science and Health Group (CINAS) works at the frontier of knowledge, bridging the gap between algorithm development and critical applications in nuclear facilities and clinical settings. Our mission is to develop methodologies that embed physical and biological knowledge (domain knowledge) in the architecture of intelligent models.",
       "imagem": "/images/grupos/logo_CINAS_348x348.png",
       "temas": [
         "inteligencia-artificial",
@@ -20,19 +22,26 @@
       "abas": [
         {
           "titulo": "Membros do Laboratório",
-          "conteudo": "#### Coordenação\n\n[Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/)\n\n#### Pós Docs\nAline Araújo Perini (co-orientação)\n\n#### Mestrandos\n\n**Acadêmico**\n\nGabriel Caldana Guimarães  \nLuiza Manso  \nMárcio de Aguiar dos Santos  \nNathália Luzia Aidar Alves  \n\n<!-- Luciana Silva Albuquerque Melo (2025)   -->\n<!-- Patrícia Pedrosa Moreira Mendes (2023) -->\n<!-- Caroline Zeppellini dos Santos Emiliozzi (2023)   -->\n<!-- Cláudia Chamas (2021)   -->\n<!-- Glauber Mauch de Carvalho (2020)   -->\n\n**Profissional**\n\nGuilherme Cremasco  \nJardson Oliveira Peixinho  \nJuciene dos Santos Batista  \nLarisse Neumann Bonatto  \nLeandro dos Santos Baptista  \nLilian Polidório Caires  \nLuan Forstman Pantolfi  \nWendell da Luz Silva  \n\n<!-- Erica Maurício Policarpo (2024)   -->\n<!-- Marcelo Moreira da Silva (2024)   -->\n<!-- Ana Karolina Defente Caetano (2024)   -->\n<!-- Carolina Roberta Caldeira -- co-orientação (2023)   -->\n<!-- Cíntia Maria Perotto Mesquita da Silva (2022) -->\n\n#### Iniciação Científica\n\nMarcelo Henrique da Cunha Ponciano"
+          "titulo_en": "Laboratory Members",
+          "conteudo": "#### Coordenação\n\n[Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/)\n\n#### Pós Docs\nAline Araújo Perini (co-orientação)\n\n#### Mestrandos\n\n**Acadêmico**\n\nGabriel Caldana Guimarães  \nLuiza Manso  \nMárcio de Aguiar dos Santos  \nNathália Luzia Aidar Alves  \n\n<!-- Luciana Silva Albuquerque Melo (2025)   -->\n<!-- Patrícia Pedrosa Moreira Mendes (2023) -->\n<!-- Caroline Zeppellini dos Santos Emiliozzi (2023)   -->\n<!-- Cláudia Chamas (2021)   -->\n<!-- Glauber Mauch de Carvalho (2020)   -->\n\n**Profissional**\n\nGuilherme Cremasco  \nJardson Oliveira Peixinho  \nJuciene dos Santos Batista  \nLarisse Neumann Bonatto  \nLeandro dos Santos Baptista  \nLilian Polidório Caires  \nLuan Forstman Pantolfi  \nWendell da Luz Silva  \n\n<!-- Erica Maurício Policarpo (2024)   -->\n<!-- Marcelo Moreira da Silva (2024)   -->\n<!-- Ana Karolina Defente Caetano (2024)   -->\n<!-- Carolina Roberta Caldeira -- co-orientação (2023)   -->\n<!-- Cíntia Maria Perotto Mesquita da Silva (2022) -->\n\n#### Iniciação Científica\n\nMarcelo Henrique da Cunha Ponciano",
+          "conteudo_en": "#### Coordinator\n\n[Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/)\n\n#### Postdocs\nAline Araújo Perini (co-supervision)\n\n#### Master's students\n\n**Academic**\n\nGabriel Caldana Guimarães  \nLuiza Manso  \nMárcio de Aguiar dos Santos  \nNathália Luzia Aidar Alves  \n\n<!-- Luciana Silva Albuquerque Melo (2025)   -->\n<!-- Patrícia Pedrosa Moreira Mendes (2023) -->\n<!-- Caroline Zeppellini dos Santos Emiliozzi (2023)   -->\n<!-- Cláudia Chamas (2021)   -->\n<!-- Glauber Mauch de Carvalho (2020)   -->\n\n**Professional**\n\nGuilherme Cremasco  \nJardson Oliveira Peixinho  \nJuciene dos Santos Batista  \nLarisse Neumann Bonatto  \nLeandro dos Santos Baptista  \nLilian Polidório Caires  \nLuan Forstman Pantolfi  \nWendell da Luz Silva  \n\n<!-- Erica Maurício Policarpo (2024)   -->\n<!-- Marcelo Moreira da Silva (2024)   -->\n<!-- Ana Karolina Defente Caetano (2024)   -->\n<!-- Carolina Roberta Caldeira -- co-orientação (2023)   -->\n<!-- Cíntia Maria Perotto Mesquita da Silva (2022) -->\n\n#### Undergraduate research\n\nMarcelo Henrique da Cunha Ponciano"
         },
         {
           "titulo": "Endereço de Correspondência",
-          "conteudo": "#### Grupo de Pesquisas CINAS\n\nResearch Reactors Center -- CERPQ  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
+          "titulo_en": "Mailing Address",
+          "conteudo": "#### Grupo de Pesquisas CINAS\n\nResearch Reactors Center -- CERPQ  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL",
+          "conteudo_en": "#### Grupo de Pesquisas CINAS\n\nResearch Reactors Center -- CERPQ  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
         }
       ],
-      "conteudo": "## Sobre o Grupo\n\nO CINAS consolida uma iniciativa de pesquisa translacional situada na convergência entre a Ciência da Computação Avançada e as Ciências das Radiações.\n\nEm um cenário global onde a transformação digital redefine paradigmas científicos, operamos sob a premissa de que a próxima fronteira da inovação nuclear e médica virá da inteligência extraída dos dados.\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Grupo de Pesquisa em Computação e Inteligência Artificial em Nuclear e Saúde (CINAS) do IPEN é coordenado pelo [Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/).\n\nVisite a [página do Grupo para conhecer mais!](https://cinas.ipen.br)"
+      "conteudo": "## Sobre o Grupo\n\nO CINAS consolida uma iniciativa de pesquisa translacional situada na convergência entre a Ciência da Computação Avançada e as Ciências das Radiações.\n\nEm um cenário global onde a transformação digital redefine paradigmas científicos, operamos sob a premissa de que a próxima fronteira da inovação nuclear e médica virá da inteligência extraída dos dados.\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Grupo de Pesquisa em Computação e Inteligência Artificial em Nuclear e Saúde (CINAS) do IPEN é coordenado pelo [Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/).\n\nVisite a [página do Grupo para conhecer mais!](https://cinas.ipen.br)",
+      "conteudo_en": "## About the Group\n\nCINAS brings together a translational research initiative at the convergence of Advanced Computer Science and Radiation Sciences.\n\nIn a global scenario where digital transformation is redefining scientific paradigms, we work on the premise that the next frontier of nuclear and medical innovation will come from the intelligence extracted from data.\n\nHeadquartered at the Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, IPEN's Research Group on Computing and Artificial Intelligence in Nuclear Science and Health (CINAS) is coordinated by [Dr. Mário Olímpio de Menezes](/equipe/mario-olimpio-de-menezes/).\n\nVisit the [Group's website to learn more!](https://cinas.ipen.br)"
     },
     {
       "slug": "lab-biofotonica",
       "titulo": "Laboratório de Biofotônica Aplicada",
+      "titulo_en": "Applied Biophotonics Laboratory",
       "resumo": "Nosso laboratório busca gerar conhecimento científico, formar profissionais e desenvolver novas terapias e diagnósticos a laser. Nossa principal pesquisa é entender as mudanças que o laser provoca nos tecidos, o que nos permite criar novos tratamentos para a medicina e odontologia.",
+      "resumo_en": "Our laboratory seeks to generate scientific knowledge, train professionals and develop new laser-based therapies and diagnostics. Our main research aims to understand the changes that lasers cause in tissues, which allows us to create new treatments for medicine and dentistry.",
       "imagem": "/images/grupos/lab_biofotonica_g.jpeg",
       "temas": [
         "diagnostico",
@@ -49,23 +58,32 @@
       "abas": [
         {
           "titulo": "Membros do Laboratório",
-          "conteudo": "#### Coordenação\n\n[Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/)\n\n#### Pós Docs\nDaniela de Fatima Teixiera da Silva  \nMaria Renata Valente Brandão Freire  \nLuciane Hiramatsu Azevedo\n\n#### Doutorandos\nValeria Mendes  \nDaniela Cerqueira Leite  \nDaniella Lúmara Pereira Mendes de Oliveira Peres  \nVinicius Pereira dos Anjos  \nRafaelle Stasi\n\n#### Mestrandos\nJulia Guerra Cavalero"
+          "titulo_en": "Laboratory Members",
+          "conteudo": "#### Coordenação\n\n[Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/)\n\n#### Pós Docs\nDaniela de Fatima Teixiera da Silva  \nMaria Renata Valente Brandão Freire  \nLuciane Hiramatsu Azevedo\n\n#### Doutorandos\nValeria Mendes  \nDaniela Cerqueira Leite  \nDaniella Lúmara Pereira Mendes de Oliveira Peres  \nVinicius Pereira dos Anjos  \nRafaelle Stasi\n\n#### Mestrandos\nJulia Guerra Cavalero",
+          "conteudo_en": "#### Coordinator\n\n[Dr. Denise Maria Zezell](/equipe/denise-maria-zezell/)\n\n#### Postdocs\nDaniela de Fatima Teixiera da Silva  \nMaria Renata Valente Brandão Freire  \nLuciane Hiramatsu Azevedo\n\n#### PhD students\nValeria Mendes  \nDaniela Cerqueira Leite  \nDaniella Lúmara Pereira Mendes de Oliveira Peres  \nVinicius Pereira dos Anjos  \nRafaelle Stasi\n\n#### Master's students\nJulia Guerra Cavalero"
         },
         {
           "titulo": "Algumas fotos dos membros",
-          "conteudo": "![Dezembro 2024](/images/grupos/lab_biofotonica_Dez_2024.jpeg)\n\n![Alunos](/images/grupos/lab_biofotonica_alunos-Denise-Maria-Zezell.jpg)"
+          "titulo_en": "Photos of the team",
+          "conteudo": "![Dezembro 2024](/images/grupos/lab_biofotonica_Dez_2024.jpeg)\n\n![Alunos](/images/grupos/lab_biofotonica_alunos-Denise-Maria-Zezell.jpg)",
+          "conteudo_en": "![December 2024](/images/grupos/lab_biofotonica_Dez_2024.jpeg)\n\n![Students](/images/grupos/lab_biofotonica_alunos-Denise-Maria-Zezell.jpg)"
         },
         {
           "titulo": "Endereço de Correspondência",
-          "conteudo": "#### Laboratory of Biophotonics\n\nCenter for Lasers and Applications  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
+          "titulo_en": "Mailing Address",
+          "conteudo": "#### Laboratory of Biophotonics\n\nCenter for Lasers and Applications  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL",
+          "conteudo_en": "#### Laboratory of Biophotonics\n\nCenter for Lasers and Applications  \nNuclear and Energy Research Institute, IPEN-CNEN  \nAv. Prof. Lineu Prestes 2242  \nCidade Universitária USP  \nCEP 05508-000  \nSão Paulo-SP- BRAZIL"
         }
       ],
-      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Laboratório de Biofotônica do IPEN é coordenado pela [Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/).\n\nVisite a [página do Laboratório para conhecer mais!](https://biophotonics.my.canva.site/)"
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, o Laboratório de Biofotônica do IPEN é coordenado pela [Dra. Denise Maria Zezell](/equipe/denise-maria-zezell/).\n\nVisite a [página do Laboratório para conhecer mais!](https://biophotonics.my.canva.site/)",
+      "conteudo_en": "## About the Laboratory\n\nHeadquartered at the Instituto de Pesquisas Energéticas e Nucleares - IPEN-CNEN, IPEN's Biophotonics Laboratory is coordinated by [Dr. Denise Maria Zezell](/equipe/denise-maria-zezell/).\n\nVisit the [Laboratory's website to learn more!](https://biophotonics.my.canva.site/)"
     },
     {
       "slug": "lab-cardioimunologia",
       "titulo": "Laboratório de Cardioimunologia",
+      "titulo_en": "Cardioimmunology Laboratory",
       "resumo": "Nosso principal eixo de pesquisa diz respeito ao estudo de como o coração e o sistema imune conversam entre si.",
+      "resumo_en": "Our main line of research is the study of how the heart and the immune system communicate with each other.",
       "imagem": "/images/grupos/lab_cardioimunologia_g.jpeg",
       "temas": [
         "diagnostico",
@@ -79,19 +97,26 @@
       "abas": [
         {
           "titulo": "Membros do Laboratório",
-          "conteudo": "#### Coordenação\n\n[Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/)\n\n#### Pós Docs\nRicardo Correia\n\n#### Doutorandos, Mestrandos, ICs e ITs\nGuilherme Muradas Pires  \nSimone Reis Barbosa"
+          "titulo_en": "Laboratory Members",
+          "conteudo": "#### Coordenação\n\n[Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/)\n\n#### Pós Docs\nRicardo Correia\n\n#### Doutorandos, Mestrandos, ICs e ITs\nGuilherme Muradas Pires  \nSimone Reis Barbosa",
+          "conteudo_en": "#### Coordinator\n\n[Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/)\n\n#### Postdocs\nRicardo Correia\n\n#### PhD, master's, undergraduate research and technical training students\nGuilherme Muradas Pires  \nSimone Reis Barbosa"
         },
         {
           "titulo": "Endereço de Correspondência",
-          "conteudo": "#### Laboratório de Cardioimunologia\n\nAv. Carlos Chagas Filho 373  \nCCS - Bloco G - Segundo andar Sala 45  \nCEP 21941-902 - Rio de Janeiro - Brasil"
+          "titulo_en": "Mailing Address",
+          "conteudo": "#### Laboratório de Cardioimunologia\n\nAv. Carlos Chagas Filho 373  \nCCS - Bloco G - Segundo andar Sala 45  \nCEP 21941-902 - Rio de Janeiro - Brasil",
+          "conteudo_en": "#### Laboratório de Cardioimunologia\n\nAv. Carlos Chagas Filho 373  \nCCS - Bloco G - Segundo andar Sala 45  \nCEP 21941-902 - Rio de Janeiro - Brasil"
         }
       ],
-      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Biofísica Carlos Chagas Filho (IBCCF) da Universidade Federal do Rio de Janeiro (UFRJ), o Laboratório de Cardioimunologia é coordenado pelo [Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/).\n\nVisite a [página do Laboratório para conhecer mais!](https://pesquisa.biof.ufrj.br/medicina-regenerativa/lci/)"
+      "conteudo": "## Sobre o Laboratório\n\nCom sede no Instituto de Biofísica Carlos Chagas Filho (IBCCF) da Universidade Federal do Rio de Janeiro (UFRJ), o Laboratório de Cardioimunologia é coordenado pelo [Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/).\n\nVisite a [página do Laboratório para conhecer mais!](https://pesquisa.biof.ufrj.br/medicina-regenerativa/lci/)",
+      "conteudo_en": "## About the Laboratory\n\nHeadquartered at the Instituto de Biofísica Carlos Chagas Filho (IBCCF) of the Universidade Federal do Rio de Janeiro (UFRJ), the Cardioimmunology Laboratory is coordinated by [Dr. Emiliano Medei](/equipe/emiliano-horacio-medei/).\n\nVisit the [Laboratory's website to learn more!](https://pesquisa.biof.ufrj.br/medicina-regenerativa/lci/)"
     },
     {
       "slug": "lab-imunologiacardio-ufabc",
       "titulo": "Laboratório de Imunologia Cardiovascular",
+      "titulo_en": "Cardiovascular Immunology Laboratory",
       "resumo": "Nosso principal eixo de pesquisa diz respeito ao estudo do impacto da resposta inflamatória e o sistema imune nas mudanças cardiovasculares observadas na Síndrome Cardiorenal e o papel das toxinas urêmicas sulfato de indoxyl e sulfato p-cresyl no desenvolvimento da síndrome cardiorenal.",
+      "resumo_en": "Our main line of research is the study of the impact of the inflammatory response and the immune system on the cardiovascular changes observed in Cardiorenal Syndrome, and of the role of the uremic toxins indoxyl sulfate and p-cresyl sulfate in the development of cardiorenal syndrome.",
       "imagem": "/images/grupos/logo_lab_imunologia_cardiovascular_ufabc.jpg",
       "temas": [
         "diagnostico",
@@ -105,19 +130,26 @@
       "abas": [
         {
           "titulo": "Membros do Laboratório",
-          "conteudo": "#### Coordenação\n\n[Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)\n\n#### Pós Docs\nAline Parletta\n\n#### Doutorandos, Mestrandos, ICs e ITs\n[Raquel Silva Neres dos Santos](/equipe/raquel-silva-neres-dos-santos/)"
+          "titulo_en": "Laboratory Members",
+          "conteudo": "#### Coordenação\n\n[Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)\n\n#### Pós Docs\nAline Parletta\n\n#### Doutorandos, Mestrandos, ICs e ITs\n[Raquel Silva Neres dos Santos](/equipe/raquel-silva-neres-dos-santos/)",
+          "conteudo_en": "#### Coordinator\n\n[Dr. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)\n\n#### Postdocs\nAline Parletta\n\n#### PhD, master's, undergraduate research and technical training students\n[Raquel Silva Neres dos Santos](/equipe/raquel-silva-neres-dos-santos/)"
         },
         {
           "titulo": "Endereço de Correspondência",
-          "conteudo": "#### Laboratório de Imunologia Cardiovascular\n\nAvenida dos Estados, 5001 - Bloco L - L-308  \nSanto André - SP  \nCEP 09210-580"
+          "titulo_en": "Mailing Address",
+          "conteudo": "#### Laboratório de Imunologia Cardiovascular\n\nAvenida dos Estados, 5001 - Bloco L - L-308  \nSanto André - SP  \nCEP 09210-580",
+          "conteudo_en": "#### Laboratório de Imunologia Cardiovascular\n\nAvenida dos Estados, 5001 - Bloco L - L-308  \nSanto André - SP  \nCEP 09210-580"
         }
       ],
-      "conteudo": "## Sobre o Laboratório\n\nCom sede na Universidade Federal do ABC (UFABC), o Laboratório de Imunologia Cardiovascular é coordenado pela [Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)."
+      "conteudo": "## Sobre o Laboratório\n\nCom sede na Universidade Federal do ABC (UFABC), o Laboratório de Imunologia Cardiovascular é coordenado pela [Dra. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/).",
+      "conteudo_en": "## About the Laboratory\n\nHeadquartered at the Universidade Federal do ABC (UFABC), the Cardiovascular Immunology Laboratory is coordinated by [Dr. Marcela Sorelli Carneiro Ramos](/equipe/marcela-sorelli-carneiro-ramos/)."
     },
     {
       "slug": "lab-investigacaomedica28",
       "titulo": "Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)",
+      "titulo_en": "Medical Investigation Laboratory 28 (Head and Neck Surgery)",
       "resumo": "Nosso laboratório investiga MicroRNAs associados ao processo de invasão tumoral do câncer de cavidade oral com o uso de modelos experimentais",
+      "resumo_en": "Our laboratory investigates microRNAs associated with the tumor invasion process in oral cavity cancer using experimental models",
       "imagem": "/images/grupos/lab_investigacaomedica_g.jpeg",
       "temas": [
         "diagnostico",
@@ -131,14 +163,19 @@
       "abas": [
         {
           "titulo": "Membros do Laboratório",
-          "conteudo": "#### Coordenação\n\n[Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/)\n\n#### Pós Docs\nRicardo Correia\n\n#### Doutorandos, Mestrandos, ICs e ITs\nGuilherme Muradas Pires  \nSimone Reis Barbosa"
+          "titulo_en": "Laboratory Members",
+          "conteudo": "#### Coordenação\n\n[Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/)",
+          "conteudo_en": "#### Coordinator\n\n[Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/)"
         },
         {
           "titulo": "Endereço de Correspondência",
-          "conteudo": "#### Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)\n\nAv. Dr. Arnaldo, 455  \n2º andar – sala 2206 / ICHC 8º andar – sala 8174  \nTel. (011) 3061-7373 / 3081-7453 / 2661-6425  \nCerqueira César, Pacaembu  \nCEP 01246-903 - São Paulo, SP, Brasil"
+          "titulo_en": "Mailing Address",
+          "conteudo": "#### Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)\n\nAv. Dr. Arnaldo, 455  \n2º andar – sala 2206 / ICHC 8º andar – sala 8174  \nTel. (011) 3061-7373 / 3081-7453 / 2661-6425  \nCerqueira César, Pacaembu  \nCEP 01246-903 - São Paulo, SP, Brasil",
+          "conteudo_en": "#### Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço)\n\nAv. Dr. Arnaldo, 455  \n2º andar – sala 2206 / ICHC 8º andar – sala 8174  \nTel. (011) 3061-7373 / 3081-7453 / 2661-6425  \nCerqueira César, Pacaembu  \nCEP 01246-903 - São Paulo, SP, Brasil"
         }
       ],
-      "conteudo": "## Sobre o Laboratório\n\nCom sede no Faculdade de Medicina da Universidade de São Paulo, o Laboratório de Investigação Médica 28/08 (Cirurgia de Cabeça e Pescoço) é coordenado pelo [Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/).\n\nVisite a [página do Laboratório para conhecer mais!](https://limhc.fm.usp.br/portal/lim28-laboratorio-de-cirurgia-vascular-e-da-cabeca-e-pescoco/)"
+      "conteudo": "## Sobre o Laboratório\n\nCom sede na Faculdade de Medicina da Universidade de São Paulo, o Laboratório de Investigação Médica 28 (Cirurgia de Cabeça e Pescoço) é coordenado pelo [Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/).\n\nVisite a [página do Laboratório para conhecer mais!](https://limhc.fm.usp.br/portal/lim28-laboratorio-de-cirurgia-vascular-e-da-cabeca-e-pescoco/)",
+      "conteudo_en": "## About the Laboratory\n\nHeadquartered at the Faculdade de Medicina da Universidade de São Paulo, the Medical Investigation Laboratory 28 (Head and Neck Surgery) is coordinated by [Dr. Leandro Luongo de Matos](/equipe/leandro-luongo-de-matos/).\n\nVisit the [Laboratory's website to learn more!](https://limhc.fm.usp.br/portal/lim28-laboratorio-de-cirurgia-vascular-e-da-cabeca-e-pescoco/)"
     }
   ]
 }
