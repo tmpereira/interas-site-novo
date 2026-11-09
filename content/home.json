@@ -2,119 +2,177 @@
   "$schema": "./schemas/home.schema.json",
   "hero": {
     "titulo": "Iluminando o Futuro da Saúde",
+    "titulo_en": "Illuminating the Future of Health",
     "texto": "No INTERAS, unimos os maiores especialistas do país para transformar as radiações — da luz visível às radiações atômicas — em poderosas ferramentas para diagnósticos precoces e terapias inovadoras. Nossa missão é clara: usar a ciência da radiação para salvar vidas e melhorar a saúde de todos.",
+    "texto_en": "At INTERAS, we bring together the country's leading experts to turn radiation — from visible light to atomic radiation — into powerful tools for early diagnosis and innovative therapies. Our mission is clear: to use radiation science to save lives and improve health for all.",
     "imagem": "/images/hero-espectro.jpg",
     "botoes": [
       {
         "rotulo": "Conheça as linhas de pesquisa",
+        "rotulo_en": "Explore our research lines",
         "link": "/#linhas-de-pesquisa"
       },
       {
         "rotulo": "Sobre o instituto",
+        "rotulo_en": "About the institute",
         "link": "/sobre-o-interas/"
       }
     ]
   },
   "apresentacao_sobretitulo": "Por que existimos",
+  "apresentacao_sobretitulo_en": "Why we exist",
   "apresentacao": "A pandemia de COVID-19 nos mostrou a urgência por diagnósticos rápidos e tratamentos eficazes.\n\nInspirados por este e outros grandes desafios da saúde, como o câncer e as doenças cardiovasculares, nasceu o INTERAS. Somos um Instituto Nacional de Ciência e Tecnologia dedicado a desenvolver soluções inovadoras baseadas em todo o espectro da radiação. Unindo fotônica, nanotecnologia, radiações atômicas e medicina nuclear com o poder de ferramentas avançadas de Ciência de Dados e Inteligência Artificial (especialmente Machine Learning), nossa rede de pesquisadores cria métodos diagnósticos não-invasivos, terapias de alta precisão e forma os futuros líderes da ciência no Brasil.",
+  "apresentacao_en": "The COVID-19 pandemic showed us the urgent need for rapid diagnosis and effective treatment.\n\nINTERAS was born in response to this and other major health challenges, such as cancer and cardiovascular disease. We are a National Institute of Science and Technology dedicated to developing innovative solutions based on the entire radiation spectrum. Combining photonics, nanotechnology, atomic radiation and nuclear medicine with the power of advanced Data Science and Artificial Intelligence tools (especially Machine Learning), our network of researchers creates non-invasive diagnostic methods and high-precision therapies, and trains the future leaders of science in Brazil.",
   "secao_destaques": {
     "sobretitulo": "Linhas de pesquisa",
+    "sobretitulo_en": "Research lines",
     "titulo": "Cinco frentes, um mesmo espectro.",
-    "texto": "As três primeiras frentes ocupam faixas específicas do espectro. As duas últimas atravessam todas elas: os dados que aceleram cada descoberta e as pessoas que levam a ciência adiante."
+    "titulo_en": "Five fronts, one spectrum.",
+    "texto": "As três primeiras frentes ocupam faixas específicas do espectro. As duas últimas atravessam todas elas: os dados que aceleram cada descoberta e as pessoas que levam a ciência adiante.",
+    "texto_en": "The first three fronts occupy specific bands of the spectrum. The last two cut across all of them: the data that speed up every discovery and the people who carry science forward."
   },
   "destaques": [
     {
       "titulo": "A Luz que Revela",
+      "titulo_en": "The Light that Reveals",
       "texto": "Utilizamos a luz como uma poderosa ferramenta de investigação, atuando em duas frentes cruciais. Em nível fundamental, usamos feixes de luz para entender os mecanismos das doenças em modelos experimentais, iluminando seus processos e nos permitindo descobrir novos alvos terapêuticos.\n\nEm paralelo, transformamos esse conhecimento em diagnóstico precoce. Desenvolvemos métodos de alta precisão que usam espectroscopia (Raman e Infravermelho), inteligência artificial e biofluídos — como sangue e saliva — para detectar câncer, infecções e outras doenças em seus estágios iniciais. Nosso objetivo é criar exames mais rápidos, precisos e menos invasivos, transformando o prognóstico e salvando vidas.",
+      "texto_en": "We use light as a powerful research tool, working on two crucial fronts. At the fundamental level, we use light beams to understand disease mechanisms in experimental models, shedding light on their processes and allowing us to discover new therapeutic targets.\n\nIn parallel, we turn this knowledge into early diagnosis. We develop high-precision methods that combine spectroscopy (Raman and infrared), artificial intelligence and biofluids — such as blood and saliva — to detect cancer, infections and other diseases at their earliest stages. Our goal is to create faster, more accurate and less invasive tests, changing prognoses and saving lives.",
       "imagem": "/images/luz_que_revela.jpeg",
       "posicao_imagem": "esquerda",
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
+        "rotulo_en": "See the groups working on this theme",
         "link": "/grupos/?tema=diagnostico"
       },
       "faixa": "luz",
       "rotulo_faixa": "Infravermelho e visível\n2,5–25 µm · 785 nm",
+      "rotulo_faixa_en": "Infrared and visible\n2.5–25 µm · 785 nm",
       "etiquetas": [
         "Espectroscopia Raman",
         "FTIR",
         "Biofluidos",
         "Modelos experimentais"
+      ],
+      "etiquetas_en": [
+        "Raman spectroscopy",
+        "FTIR",
+        "Biofluids",
+        "Experimental models"
       ]
     },
     {
       "titulo": "Radiação que Cura",
+      "titulo_en": "Radiation that Heals",
       "texto": "Vamos além do diagnóstico. Pesquisamos e desenvolvemos terapias de ponta que usam a radiação de forma controlada e precisa para tratar doenças. Nossas frentes incluem desde o aprimoramento da radioterapia, o uso de nanopartículas para tratamentos localizados (nanobraquiterapia), até a aplicação de lasers em cirurgias e terapias fotodinâmicas para combater infecções. Buscamos tratamentos mais eficazes, seguros e personalizados.",
+      "texto_en": "We go beyond diagnosis. We research and develop cutting-edge therapies that use radiation in a controlled and precise way to treat disease. Our work ranges from improving radiotherapy and using nanoparticles for localized treatment (nanobrachytherapy) to applying lasers in surgery and photodynamic therapies to fight infections. We seek more effective, safer and personalized treatments.",
       "imagem": "/images/feixe_incidindo_celulas_cancerosas_v2.jpeg",
       "posicao_imagem": "direita",
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
+        "rotulo_en": "See the groups working on this theme",
         "link": "/grupos/?tema=terapias"
       },
       "faixa": "cura",
       "rotulo_faixa": "Raios X, γ e lasers\nkeV → MeV",
+      "rotulo_faixa_en": "X-rays, γ-rays and lasers\nkeV → MeV",
       "etiquetas": [
         "Radioterapia",
         "Nanobraquiterapia",
         "Cirurgia a laser",
         "Terapia fotodinâmica"
+      ],
+      "etiquetas_en": [
+        "Radiotherapy",
+        "Nanobrachytherapy",
+        "Laser surgery",
+        "Photodynamic therapy"
       ]
     },
     {
       "titulo": "Moléculas Inteligentes",
+      "titulo_en": "Smart Molecules",
       "texto": "Para que as imagens médicas revelem o que é invisível e as terapias atinjam apenas o alvo certo, criamos \"moléculas inteligentes\" chamadas radiofármacos. Desenvolvemos e testamos novos compostos que guiam os equipamentos de imagem (PET/SPECT) ou entregam doses terapêuticas diretamente nas células doentes. Toda essa inovação é validada em rigorosos ensaios pré-clínicos, garantindo a segurança e a eficácia das tecnologias que chegarão aos hospitais.",
+      "texto_en": "So that medical images can reveal what is invisible and therapies can reach only the right target, we create \"smart molecules\" called radiopharmaceuticals. We develop and test new compounds that guide imaging equipment (PET/SPECT) or deliver therapeutic doses directly to diseased cells. All this innovation is validated in rigorous preclinical studies, ensuring the safety and efficacy of the technologies that will reach hospitals.",
       "imagem": "/images/imagem_pet_estilizada_v2.jpeg",
       "posicao_imagem": "esquerda",
       "botao": null,
       "faixa": "moleculas",
       "rotulo_faixa": "Medicina nuclear\nSPECT 140 keV · PET 511 keV",
+      "rotulo_faixa_en": "Nuclear medicine\nSPECT 140 keV · PET 511 keV",
       "etiquetas": [
         "Radiofármacos",
         "PET/SPECT",
         "Ensaios pré-clínicos"
+      ],
+      "etiquetas_en": [
+        "Radiopharmaceuticals",
+        "PET/SPECT",
+        "Preclinical studies"
       ]
     },
     {
       "titulo": "Inteligência que Acelera",
+      "titulo_en": "Intelligence that Accelerates",
       "texto": "O futuro da saúde passa pela análise inteligente de dados. No INTERAS, usamos aprendizado de máquina e *deep learning* para decifrar a complexa informação contida em imagens médicas e dados espectrais. Nossos algoritmos ajudam a identificar padrões invisíveis ao olho humano, tornando o diagnóstico mais rápido e assertivo. Além disso, criamos simulações computacionais para melhorar a entrega de doses, para entender a origem das doenças e desenhar novas terapias.",
+      "texto_en": "The future of health depends on the intelligent analysis of data. At INTERAS, we use machine learning and *deep learning* to decode the complex information contained in medical images and spectral data. Our algorithms help identify patterns invisible to the human eye, making diagnosis faster and more accurate. We also build computer simulations to improve dose delivery, to understand the origin of diseases and to design new therapies.",
       "imagem": "/images/imagem_microscopia_rede_neural_v2.jpeg",
       "posicao_imagem": "direita",
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
+        "rotulo_en": "See the groups working on this theme",
         "link": "/grupos/?tema=inteligencia-artificial"
       },
       "faixa": null,
       "rotulo_faixa": "Transversal\nimagens e dados espectrais",
+      "rotulo_faixa_en": "Cross-cutting\nimages and spectral data",
       "etiquetas": [
         "Machine Learning",
         "Deep Learning",
         "Simulação de dose"
+      ],
+      "etiquetas_en": [
+        "Machine Learning",
+        "Deep Learning",
+        "Dose simulation"
       ]
     },
     {
       "titulo": "Conhecimento que Transforma",
+      "titulo_en": "Knowledge that Transforms",
       "texto": "Acreditamos que o conhecimento deve ser compartilhado. Formamos a próxima geração de cientistas, desde a iniciação científica até o pós-doutorado; através da atuação dos nossos pesquisadores nos diversos cursos de graduação e nos programas de pós-graduação, atuamos para melhorar a formação da nova geração, aperfeiçoar os profissionais em programas de Mestrado Profissional, Pós-Graduação Acadêmica e outros cursos para profissionais da saúde. Promovemos a colaboração internacional e trabalhamos para que nossas descobertas se tornem produtos e protocolos acessíveis no mercado e no SUS. Nosso compromisso é levar a ciência para além dos laboratórios, impactando diretamente a vida das pessoas.",
+      "texto_en": "We believe knowledge should be shared. We train the next generation of scientists, from undergraduate research to postdoctoral level. Through our researchers' work in undergraduate courses and graduate programs, we strive to improve the education of the new generation and to further train professionals in Professional Master's programs, academic graduate programs and other courses for health professionals. We promote international collaboration and work to turn our discoveries into products and protocols available on the market and in SUS (Brazil's public health system). Our commitment is to take science beyond the laboratory, directly improving people's lives.",
       "imagem": "/images/image_conhecimento_transforma.jpeg",
       "posicao_imagem": "esquerda",
       "botao": {
         "rotulo": "Veja os grupos que atuam nesse tema",
+        "rotulo_en": "See the groups working on this theme",
         "link": "/grupos/?tema=formacao"
       },
       "faixa": null,
       "rotulo_faixa": "Transversal\nformação e transferência",
+      "rotulo_faixa_en": "Cross-cutting\ntraining and transfer",
       "etiquetas": [
         "Pós-graduação",
         "Cooperação internacional",
         "Inovação no SUS"
+      ],
+      "etiquetas_en": [
+        "Graduate programs",
+        "International cooperation",
+        "Innovation in SUS"
       ]
     }
   ],
   "nota": "**Coordenação**: [Denise M. Zezell - IPEN - CNEN](/equipe/denise-maria-zezell/)  \n**Vice-Coordenação**: [Emiliano H. Medei  - UFRJ](/equipe/emiliano-horacio-medei/)",
+  "nota_en": "**Coordinator**: [Denise M. Zezell - IPEN - CNEN](/equipe/denise-maria-zezell/)  \n**Vice-Coordinator**: [Emiliano H. Medei  - UFRJ](/equipe/emiliano-horacio-medei/)",
   "noticias": {
     "titulo": "Últimas notícias do INTERAS",
+    "titulo_en": "Latest INTERAS news",
     "quantidade": 3
   },
   "publicacoes": {
     "titulo": "Últimas publicações do INTERAS",
+    "titulo_en": "Latest INTERAS publications",
     "quantidade": 6
   }
 }

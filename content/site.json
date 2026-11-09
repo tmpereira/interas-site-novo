@@ -2,64 +2,79 @@
   "$schema": "./schemas/site.schema.json",
   "titulo": "INTERAS",
   "descricao": "Instituto Nacional de Ciência e Tecnologia das Radiações na Saúde",
+  "descricao_en": "National Institute of Science and Technology for Radiation in Health",
   "url_base": "https://www.interas.org",
   "logo": "/images/logo_pt_transparente.png",
   "logo_alt": "INCT INTERAS",
+  "logo_alt_en": "INCT INTERAS",
   "favicon": "/images/favicon.ico",
   "imagem_compartilhamento": null,
   "menu": [
     {
       "rotulo": "INCT INTERAS",
+      "rotulo_en": "INCT INTERAS",
       "itens": [
         {
           "rotulo": "O INCT INTERAS",
+          "rotulo_en": "About INCT INTERAS",
           "link": "/sobre-o-interas/"
         },
         {
           "rotulo": "Coordenação e equipe",
+          "rotulo_en": "Coordination and team",
           "link": "/equipe/"
         },
         {
           "rotulo": "Alunos",
+          "rotulo_en": "Students",
           "link": "/alunos/"
         },
         {
           "rotulo": "Áreas de pesquisa",
+          "rotulo_en": "Research areas",
           "link": "/areas-de-pesquisa/"
         },
         {
           "rotulo": "Grupos e laboratórios",
+          "rotulo_en": "Groups and laboratories",
           "link": "/grupos/"
         },
         {
           "rotulo": "Contato",
+          "rotulo_en": "Contact",
           "link": "/contato/"
         }
       ]
     },
     {
       "rotulo": "Produção",
+      "rotulo_en": "Research output",
       "itens": [
         {
           "rotulo": "Artigos",
+          "rotulo_en": "Articles",
           "link": "/publicacoes/#artigos"
         },
         {
           "rotulo": "Patentes",
+          "rotulo_en": "Patents",
           "link": "/publicacoes/#patentes"
         }
       ]
     },
     {
       "rotulo": "Notícias",
+      "rotulo_en": "News",
       "link": "/noticias/"
     },
     {
       "rotulo": "Vídeos",
+      "rotulo_en": "Videos",
       "link": "/videos/"
     },
     {
       "rotulo": "INTERAS em números",
+      "rotulo_en": "INTERAS in numbers",
       "link": "/interas-em-numeros/"
     }
   ],
@@ -68,72 +83,88 @@
     "ativo": true,
     "icone": "play-btn",
     "texto": "📢 **Novos Vídeos Institucionais do INTERAS**. [Assista!](/videos/)",
+    "texto_en": "📢 **New INTERAS Institutional Videos**. [Watch now!](/videos/)",
     "link": null
   },
   "rodape": {
     "logo": "/images/3125_bordas_minimas_redim.png",
     "texto": "Copyright 2026 INTERAS",
+    "texto_en": "Copyright 2026 INTERAS",
     "redes": []
   },
   "google_analytics": "G-GSTPFS7CEE",
   "categorias_pessoas": [
     {
       "chave": "coordenacao",
-      "titulo": "COORDENAÇÃO"
+      "titulo": "COORDENAÇÃO",
+      "titulo_en": "COORDINATION"
     },
     {
       "chave": "comite-gestor",
-      "titulo": "COMITÊ GESTOR"
+      "titulo": "COMITÊ GESTOR",
+      "titulo_en": "STEERING COMMITTEE"
     },
     {
       "chave": "pesquisador",
-      "titulo": "PESQUISADORES"
+      "titulo": "PESQUISADORES",
+      "titulo_en": "RESEARCHERS"
     },
     {
       "chave": "colaborador",
-      "titulo": "COLABORADORES"
+      "titulo": "COLABORADORES",
+      "titulo_en": "COLLABORATORS"
     },
     {
       "chave": "equipe-estrangeira",
-      "titulo": "EQUIPE ESTRANGEIRA"
+      "titulo": "EQUIPE ESTRANGEIRA",
+      "titulo_en": "INTERNATIONAL TEAM"
     },
     {
       "chave": "lider-laboratorio",
-      "titulo": "LÍDERES DE LABORATÓRIOS ASSOCIADOS"
+      "titulo": "LÍDERES DE LABORATÓRIOS ASSOCIADOS",
+      "titulo_en": "ASSOCIATED LABORATORY LEADERS"
     },
     {
       "chave": "apoio-tecnico",
-      "titulo": "APOIO TÉCNICO"
+      "titulo": "APOIO TÉCNICO",
+      "titulo_en": "TECHNICAL SUPPORT"
     },
     {
       "chave": "bolsista",
-      "titulo": "BOLSISTAS"
+      "titulo": "BOLSISTAS",
+      "titulo_en": "FELLOWS"
     }
   ],
   "temas_grupos": [
     {
       "slug": "diagnostico",
-      "rotulo": "Diagnóstico"
+      "rotulo": "Diagnóstico",
+      "rotulo_en": "Diagnosis"
     },
     {
       "slug": "terapias",
-      "rotulo": "Terapias"
+      "rotulo": "Terapias",
+      "rotulo_en": "Therapies"
     },
     {
       "slug": "dados",
-      "rotulo": "Dados"
+      "rotulo": "Dados",
+      "rotulo_en": "Data"
     },
     {
       "slug": "inteligencia-artificial",
-      "rotulo": "Inteligência artificial"
+      "rotulo": "Inteligência artificial",
+      "rotulo_en": "Artificial intelligence"
     },
     {
       "slug": "formacao",
-      "rotulo": "Formação"
+      "rotulo": "Formação",
+      "rotulo_en": "Training"
     },
     {
       "slug": "computacao-cientifica",
-      "rotulo": "Computação científica"
+      "rotulo": "Computação científica",
+      "rotulo_en": "Scientific computing"
     }
   ]
 }
