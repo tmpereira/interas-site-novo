@@ -3,11 +3,14 @@ import Link from "next/link";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
 import { FotoPessoa } from "@/components/CardPessoa";
 import ListaPublicacoes from "@/components/ListaPublicacoes";
+import RedeCoautoria from "@/components/RedeCoautoria";
+import TabelaOrientacoes, { type ItemOrientacao } from "@/components/TabelaOrientacoes";
 import { carregarConteudo } from "@/lib/conteudo";
-import { gruposDaPessoa, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consultas";
+import { gruposDaPessoa, orientacoesDaPessoa, periodoAluno, pessoaPorSlug, publicacoesDaPessoa } from "@/lib/consultas";
 import { formatarNumero } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
+import { nomeCurto, redeDaPessoa } from "@/lib/rede";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 
@@ -26,6 +29,8 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
   const pessoa = pessoaPorSlug(slug, idioma);
   const publicacoes = publicacoesDaPessoa(pessoa.slug);
   const grupos = gruposDaPessoa(pessoa, idioma);
+  const orientacoes = orientacoesDaPessoa(pessoa.slug, idioma);
+  const rede = redeDaPessoa(pessoa.slug);
 
   const r = rotulos(idioma);
   const links = [
@@ -118,7 +123,44 @@ export default function PerfilPessoa({ idioma, slug }: { idioma: Idioma; slug: s
         {publicacoes.length > 0 && (
           <section>
             <h2>{r.perfil.publicacoes(publicacoes.length)}</h2>
-            <ListaPublicacoes publicacoes={publicacoes} idioma={idioma} />
+            <ListaPublicacoes publicacoes={publicacoes} idioma={idioma} paginada />
+          </section>
+        )}
+        {orientacoes.total > 0 && (
+          <section className="perfil__orientacoes">
+            <h2>{r.perfil.orientacoes(orientacoes.total)}</h2>
+            {(
+              [
+                ["em-andamento", orientacoes.emAndamento, r.perfil.orientacoesEmAndamento],
+                ["concluida", orientacoes.concluidas, r.perfil.orientacoesConcluidas],
+              ] as const
+            ).map(([situacao, niveis, titulo]) => {
+              // Uma tabela por situação, com os níveis na ordem da página Alunos
+              const itens: ItemOrientacao[] = niveis.flatMap((n) =>
+                n.alunos.map((a) => ({ nome: a.nome, nivel: n.titulo, situacao: a.situacao, periodo: periodoAluno(a, idioma), titulo: a.titulo ?? null })),
+              );
+              if (itens.length === 0) return null;
+              return (
+                <div key={situacao} className={`orientacoes orientacoes--${situacao}`}>
+                  <h3 className="orientacoes__titulo">{titulo(itens.length)}</h3>
+                  <TabelaOrientacoes idioma={idioma} itens={itens} rotuloPaginas={r.perfil.orientacoesPaginas(titulo(itens.length))} />
+                </div>
+              );
+            })}
+          </section>
+        )}
+        {rede && (
+          <section className="perfil__rede">
+            <h2>{r.perfil.coautoria}</h2>
+            <RedeCoautoria
+              idioma={idioma}
+              rede={rede}
+              periodo={rede.periodos[0]}
+              rotuloPeriodo={null}
+              titulo={r.perfil.redeTitulo(pessoa.nome)}
+              explicacao={r.perfil.redeExplicacao(nomeCurto(pessoa.nome))}
+              centro={pessoa.slug}
+            />
           </section>
         )}
       </article>

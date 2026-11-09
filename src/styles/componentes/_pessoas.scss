@@ -178,7 +178,15 @@
 
 // --- Perfil -----------------------------------------------------------------
 .perfil {
-  max-width: $largura-leitura;
+  // Coluna de leitura para o texto; a rede de coautoria usa a largura toda da página
+  > section {
+    max-width: $largura-leitura;
+  }
+
+  > .perfil__rede,
+  > .perfil__orientacoes {
+    max-width: none;
+  }
 
   &__links {
     display: flex;
@@ -235,5 +243,25 @@
 
   .lista-publicacoes {
     border-top: 0;
+  }
+}
+
+// --- Orientações no perfil (em andamento / concluídas; tabela de _alunos.scss) 
+.orientacoes {
+  & + & {
+    margin-top: $espaco-6;
+  }
+
+  &__titulo {
+    margin: 0 0 $espaco-3;
+    font-family: $fonte-titulo;
+    font-size: $tamanho-lg;
+    font-weight: $peso-titulo;
+  }
+
+  &--em-andamento &__titulo::before {
+    @include ponto-frente;
+    content: "";
+    margin-right: $espaco-2;
   }
 }

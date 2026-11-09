@@ -17,6 +17,10 @@ export type NoRede = {
   x: number;
   y: number;
   raio: number;
+  /** Posição do nome (se omitida, fica centralizado acima da bolinha). */
+  rotuloX?: number;
+  rotuloY?: number;
+  ancora?: "start" | "middle" | "end";
 };
 
 export type ArestaRede = { a: string; b: string; peso: number };
@@ -258,4 +262,90 @@ function ajustarNaArea(nos: NoRede[]) {
     n.x = (n.x - minX) * escalaX + MARGEM;
     n.y = (n.y - minY) * escalaY + MARGEM;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Rede de uma pessoa (perfil): ela no centro e os coautores do INTERAS em volta
+// ---------------------------------------------------------------------------
+
+const LARGURA_PESSOA = 1000;
+const ALTURA_PESSOA = 640;
+const RAIO_ANEL = 230;
+
+/**
+ * Coautoria de uma pessoa: só as publicações dela, com todos os membros (inclusive bolsistas).
+ * A pessoa fica no centro; os coautores, num anel em volta (mais artigos juntos primeiro, a
+ * partir do topo, no sentido horário), com o nome do lado de fora. Linhas entre coautores
+ * (artigos que eles fizeram juntos com a pessoa) também aparecem.
+ * O tamanho de cada bolinha é o número de artigos com a pessoa (a dela, o total de artigos).
+ * Devolve `null` se a pessoa não tem coautoria com outro membro.
+ */
+export function redeDaPessoa(slug: string): Rede | null {
+  const conteudo = carregarConteudo();
+  const porSlug = new Map(conteudo.pessoas.map((p) => [p.slug, p]));
+  const publicacoes = conteudo.publicacoes.filter((p) => p.pessoas.includes(slug));
+  const { contagem, arestas } = contar(publicacoes);
+  const coautores = [...contagem.keys()].filter((s) => s !== slug && porSlug.has(s));
+  if (coautores.length === 0) return null;
+
+  const pesoCom = new Map(arestas.filter((a) => a.a === slug || a.b === slug).map((a) => [a.a === slug ? a.b : a.a, a.peso]));
+  coautores.sort((a, b) => (pesoCom.get(b) ?? 0) - (pesoCom.get(a) ?? 0) || porSlug.get(a)!.nome.localeCompare(porSlug.get(b)!.nome, "pt-BR"));
+
+  const cx = LARGURA_PESSOA / 2;
+  const cy = ALTURA_PESSOA / 2;
+  const pessoa = porSlug.get(slug)!;
+  const publicacoesNo: Record<string, number> = { [slug]: contagem.get(slug) ?? 0 };
+  const nos: NoRede[] = [
+    {
+      slug,
+      nome: pessoa.nome,
+      rotulo: nomeCurto(pessoa.nome),
+      grupo: grupoDaCategoria(pessoa.categoria),
+      publicacoes: publicacoesNo[slug],
+      x: cx,
+      y: cy,
+      raio: raioDoNo(publicacoesNo[slug]),
+    },
+  ];
+  coautores.forEach((s, i) => {
+    const p = porSlug.get(s)!;
+    const n = pesoCom.get(s) ?? 0;
+    publicacoesNo[s] = n;
+    const angulo = -Math.PI / 2 + (2 * Math.PI * i) / coautores.length;
+    const raio = raioDoNo(n);
+    const [cos, sin] = [Math.cos(angulo), Math.sin(angulo)];
+    const x = cx + RAIO_ANEL * cos;
+    const y = cy + RAIO_ANEL * sin;
+    // Nome do lado de fora do anel, alinhado conforme o lado
+    const distancia = raio + 8;
+    nos.push({
+      slug: s,
+      nome: p.nome,
+      rotulo: nomeCurto(p.nome),
+      grupo: grupoDaCategoria(p.categoria),
+      publicacoes: n,
+      x,
+      y,
+      raio,
+      rotuloX: x + distancia * cos,
+      rotuloY: y + distancia * sin + (sin > 0.3 ? 10 : Math.abs(sin) <= 0.3 ? 4 : 0),
+      ancora: cos > 0.3 ? "start" : cos < -0.3 ? "end" : "middle",
+    });
+  });
+
+  return {
+    largura: LARGURA_PESSOA,
+    altura: ALTURA_PESSOA,
+    nos,
+    periodos: [
+      {
+        chave: "todos",
+        rotulo: "Todos",
+        publicacoes: publicacoesNo,
+        raios: Object.fromEntries(nos.map((n) => [n.slug, n.raio])),
+        arestas: arestas.filter((a) => porSlug.has(a.a) && porSlug.has(a.b)),
+        isolados: [],
+      },
+    ],
+  };
 }

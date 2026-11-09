@@ -90,7 +90,7 @@ export const paisesEstrangeiros = (idioma: Idioma, codigos: string[] = []) => co
 export type AlunoComOrientador = Aluno & { pessoaOrientadora: Pessoa };
 
 /** Em andamento primeiro (início mais recente antes), depois concluídos (conclusão mais recente antes), depois nome. */
-const compararAlunos = (idioma: Idioma) => (a: Aluno, b: Aluno) =>
+export const compararAlunos = (idioma: Idioma) => (a: Aluno, b: Aluno) =>
   (a.situacao === "em-andamento" ? 0 : 1) - (b.situacao === "em-andamento" ? 0 : 1) ||
   (b.ano_conclusao ?? b.ano_inicio ?? 0) - (a.ano_conclusao ?? a.ano_inicio ?? 0) ||
   a.nome.localeCompare(b.nome, LOCALE[idioma], { sensitivity: "base" });
@@ -106,6 +106,28 @@ export function alunosPorNivel(idioma: Idioma): { nivel: NivelAluno; titulo: str
       .sort(compararAlunos(idioma))
       .map((a) => ({ ...a, pessoaOrientadora: pessoaPorSlug(a.orientador) })),
   })).filter((n) => n.alunos.length > 0);
+}
+
+/** Período de uma orientação: "2021–2024", "desde 2024", "2024" ou "—". */
+export function periodoAluno(a: Aluno, idioma: Idioma): string {
+  if (a.situacao === "em-andamento") return a.ano_inicio ? rotulos(idioma).alunos.desde(a.ano_inicio) : "—";
+  if (a.ano_inicio && a.ano_conclusao && a.ano_inicio !== a.ano_conclusao) return `${a.ano_inicio}–${a.ano_conclusao}`;
+  return String(a.ano_conclusao ?? a.ano_inicio ?? "—");
+}
+
+/**
+ * Orientações de uma pessoa (perfil): em andamento e concluídas, cada uma dividida por nível
+ * (na ordem de NIVEIS_ALUNO) e, dentro do nível, mais recentes primeiro. Níveis vazios ficam de fora.
+ */
+export function orientacoesDaPessoa(slug: string, idioma: Idioma) {
+  const alunos = carregarConteudo().alunos.filter((a) => a.orientador === slug).sort(compararAlunos(idioma));
+  const porNivel = (situacao: Aluno["situacao"]) =>
+    NIVEIS_ALUNO.map((nivel) => ({
+      nivel,
+      titulo: rotulos(idioma).alunos.niveis[nivel],
+      alunos: alunos.filter((a) => a.situacao === situacao && a.nivel === nivel),
+    })).filter((n) => n.alunos.length > 0);
+  return { total: alunos.length, emAndamento: porNivel("em-andamento"), concluidas: porNivel("concluida") };
 }
 
 /** Pessoa pelo slug, no idioma (o português, se omitido: só nome e dados que não se traduzem). */

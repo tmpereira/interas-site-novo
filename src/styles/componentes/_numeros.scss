@@ -276,12 +276,24 @@
       font-family: $fonte-base;
       font-size: $tamanho-texto-rede;
       fill: $cor-texto;
-      text-anchor: middle;
+      // text-anchor vem do atributo do <text> (RedeCoautoria.tsx): no centro, ou para fora do anel no perfil
       paint-order: stroke;
       stroke: $cor-fundo;
       stroke-width: 3;
       stroke-linejoin: round;
       pointer-events: none;
+    }
+
+    // Pessoa do centro (rede do perfil): anel em volta e nome em negrito
+    &--centro {
+      circle {
+        stroke: $cor-texto;
+        stroke-width: 3;
+      }
+
+      text {
+        font-weight: $peso-titulo;
+      }
     }
   }
 

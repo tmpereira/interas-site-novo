@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
+import { useMemo, useRef, useState, type ReactNode } from "react";
 import type { Idioma } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
 import type { PeriodoRede, Rede } from "@/lib/rede";
+import Paginacao, { usePaginacao } from "./Paginacao";
 
 type Props = {
   idioma: Idioma;
@@ -12,8 +13,13 @@ type Props = {
   periodo: PeriodoRede;
   /** Período para as frases ("2025"); `null` = todos os anos. */
   rotuloPeriodo: string | null;
-  /** Pílulas de período, desenhadas abaixo da legenda. */
-  seletor: ReactNode;
+  /** Pílulas de período, desenhadas abaixo da legenda (opcional). */
+  seletor?: ReactNode;
+  /** Título e explicação próprios (padrão: os da rede geral do INTERAS). */
+  titulo?: string;
+  explicacao?: string;
+  /** Pessoa em destaque (rede do perfil: a pessoa do centro). */
+  centro?: string;
 };
 
 const arredondar = (n: number) => Math.round(n * 10) / 10;
@@ -25,7 +31,7 @@ const espessura = (peso: number) => arredondar(Math.min(1 + (peso - 1) * 0.6, 9)
  * Passar o mouse numa pessoa realça as conexões dela. As posições são as mesmas em todos
  * os períodos, para facilitar a comparação.
  */
-export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, seletor }: Props) {
+export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, seletor, titulo, explicacao, centro }: Props) {
   const r = rotulos(idioma).rede;
   const [ativo, setAtivo] = useState<string | null>(null);
   const porSlug = useMemo(() => new Map(rede.nos.map((n) => [n.slug, n])), [rede.nos]);
@@ -40,13 +46,16 @@ export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, se
     return v;
   }, [ativo, periodo.arestas]);
   const paresOrdenados = useMemo(() => [...periodo.arestas].sort((x, y) => y.peso - x.peso || x.a.localeCompare(y.a)), [periodo.arestas]);
+  // Tabela de pares paginada; volta para a página 1 ao trocar de período
+  const tabela = useRef<HTMLDetailsElement>(null);
+  const pares = usePaginacao(paresOrdenados, rotuloPeriodo ?? "", () => tabela.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
 
   return (
     <figure className="rede-coautoria">
       <figcaption className="rede-coautoria__cabecalho">
-        <span className="rede-coautoria__titulo">{r.titulo}</span>
+        <span className="rede-coautoria__titulo">{titulo ?? r.titulo}</span>
         <span className="rede-coautoria__legenda">
-          <span className="rede-coautoria__explicacao">{r.explicacao}</span>
+          <span className="rede-coautoria__explicacao">{explicacao ?? r.explicacao}</span>
         </span>
       </figcaption>
 
@@ -86,16 +95,17 @@ export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, se
               const publicacoes = periodo.publicacoes[n.slug];
               const raio = periodo.raios[n.slug];
               const estado = vizinhos === null ? "" : vizinhos.has(n.slug) ? " rede-coautoria__no--ativo" : " rede-coautoria__no--apagado";
+              const destaque = n.slug === centro ? " rede-coautoria__no--centro" : "";
               return (
                 <g
                   key={n.slug}
-                  className={`rede-coautoria__no rede-coautoria__no--${n.grupo}${estado}`}
+                  className={`rede-coautoria__no rede-coautoria__no--${n.grupo}${destaque}${estado}`}
                   onMouseEnter={() => setAtivo(n.slug)}
                   onClick={() => setAtivo(n.slug)}
                 >
                   <title>{`${n.nome} · ${r[n.grupo]} · ${r.publicacoes(publicacoes)}`}</title>
                   <circle cx={arredondar(n.x)} cy={arredondar(n.y)} r={arredondar(raio)} />
-                  <text x={arredondar(n.x)} y={arredondar(n.y - raio - 6)}>
+                  <text x={arredondar(n.rotuloX ?? n.x)} y={arredondar(n.rotuloY ?? n.y - raio - 6)} textAnchor={n.ancora ?? "middle"}>
                     {n.rotulo}
                   </text>
                 </g>
@@ -109,7 +119,7 @@ export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, se
         <p className="rede-coautoria__nota">{r.isolados(rotuloPeriodo, periodo.isolados.map((i) => i.nome).join(", "))}</p>
       )}
 
-      <details className="rede-coautoria__tabela">
+      <details ref={tabela} className="rede-coautoria__tabela">
         <summary>{r.verTabela(periodo.arestas.length)}</summary>
         <div className="tabela-alunos__rolagem">
           <table className="tabela-alunos tabela-alunos--resumo">
@@ -123,7 +133,7 @@ export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, se
               </tr>
             </thead>
             <tbody>
-              {paresOrdenados.map((a) => (
+              {pares.daPagina.map((a) => (
                 <tr key={`${a.a}|${a.b}`}>
                   <td>{porSlug.get(a.a)?.nome}</td>
                   <td>{porSlug.get(a.b)?.nome}</td>
@@ -133,6 +143,18 @@ export default function RedeCoautoria({ idioma, rede, periodo, rotuloPeriodo, se
             </tbody>
           </table>
         </div>
+        {paresOrdenados.length > 0 && (
+          <Paginacao
+            idioma={idioma}
+            pagina={pares.pagina}
+            totalPaginas={pares.totalPaginas}
+            porPagina={pares.porPagina}
+            aoMudarPagina={pares.irPara}
+            aoMudarPorPagina={pares.setPorPagina}
+            rotuloPorPagina={r.porPagina}
+            rotuloPaginas={r.paginas}
+          />
+        )}
       </details>
     </figure>
   );

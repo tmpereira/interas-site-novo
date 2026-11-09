@@ -69,6 +69,17 @@ const pt = {
     areas: "Áreas de Atuação",
     atuacao: "Atuação no Projeto",
     publicacoes: (n: number) => `Publicações (${n})`,
+    porPagina: "Publicações por página",
+    paginas: "Páginas de publicações",
+    orientacoes: (n: number) => `Orientações (${n})`,
+    orientacoesEmAndamento: (n: number) => `Em andamento (${n})`,
+    orientacoesConcluidas: (n: number) => `Concluídas (${n})`,
+    orientacoesPorPagina: "Orientações por página",
+    orientacoesPaginas: (bloco: string) => `Páginas de orientações: ${bloco}`,
+    coautoria: "Rede de coautoria",
+    redeTitulo: (nome: string) => `Com quem ${nome} publica no INTERAS`,
+    redeExplicacao: (nome: string) =>
+      `${nome} no centro · bolinha maior = mais artigos com ${nome} · linha mais grossa = mais artigos juntos`,
   },
   alunos: {
     niveis: {
@@ -92,6 +103,18 @@ const pt = {
     situacaoEmAndamento: "Em andamento",
     situacaoConcluida: "Concluída",
     desde: (ano: number) => `desde ${ano}`,
+    lista: "Orientações",
+    filtrarNivel: "Filtrar por nível",
+    buscarNome: "Buscar pelo nome do aluno",
+    digite: "Digite um nome…",
+    orientador: "Orientador(a)",
+    contagem: (n: number) => `${n} orientações`,
+    contagemFiltrada: (visiveis: number, total: number) => `${visiveis} de ${total} orientações`,
+    mostrando: (de: number, ate: number) => ` · mostrando ${de}–${ate}`,
+    limpar: "Limpar filtros",
+    vazio: "Nenhum aluno encontrado com esses filtros.",
+    porPagina: "Alunos por página",
+    paginas: "Páginas da lista de alunos",
   },
   areas: {
     indice: "Áreas desta página",
@@ -160,6 +183,9 @@ const pt = {
     semResumo: "Não há resumo.",
     porPagina: "Artigos por página",
     paginas: "Páginas de artigos",
+  },
+  /** Botões da paginação (componente Paginacao), comuns a publicações e alunos. */
+  paginacao: {
     pagina: (n: number) => `Página ${n}`,
     /** Botões de página: texto antes, parte só para leitores de tela, texto depois. */
     anterior: { antes: "← ", oculto: "Página", depois: " anterior" },
@@ -226,6 +252,8 @@ const pt = {
     verTabela: (n: number) => `Ver tabela de coautorias (${n})`,
     membro: "Membro",
     artigosJuntos: "Artigos juntos",
+    porPagina: "Pares por página",
+    paginas: "Páginas da tabela de coautorias",
   },
   mapa: {
     titulo: "Países dos coautores",
@@ -309,6 +337,17 @@ const en: Rotulos = {
     areas: "Areas of Expertise",
     atuacao: "Role in the Project",
     publicacoes: (n) => `Publications (${n})`,
+    porPagina: "Publications per page",
+    paginas: "Publication pages",
+    orientacoes: (n) => `Supervisions (${n})`,
+    orientacoesEmAndamento: (n) => `Ongoing (${n})`,
+    orientacoesConcluidas: (n) => `Completed (${n})`,
+    orientacoesPorPagina: "Supervisions per page",
+    orientacoesPaginas: (bloco) => `Supervision pages: ${bloco}`,
+    coautoria: "Co-authorship network",
+    redeTitulo: (nome) => `Who ${nome} publishes with at INTERAS`,
+    redeExplicacao: (nome) =>
+      `${nome} at the center · larger circle = more articles with ${nome} · thicker line = more joint articles`,
   },
   alunos: {
     niveis: {
@@ -332,6 +371,18 @@ const en: Rotulos = {
     situacaoEmAndamento: "Ongoing",
     situacaoConcluida: "Completed",
     desde: (ano) => `since ${ano}`,
+    lista: "Supervisions",
+    filtrarNivel: "Filter by level",
+    buscarNome: "Search by student name",
+    digite: "Type a name…",
+    orientador: "Supervisor",
+    contagem: (n) => `${n} supervisions`,
+    contagemFiltrada: (visiveis, total) => `${visiveis} of ${total} supervisions`,
+    mostrando: (de, ate) => ` · showing ${de}–${ate}`,
+    limpar: "Clear filters",
+    vazio: "No students match these filters.",
+    porPagina: "Students per page",
+    paginas: "Student list pages",
   },
   areas: {
     indice: "Areas on this page",
@@ -398,6 +449,8 @@ const en: Rotulos = {
     semResumo: "No abstract available.",
     porPagina: "Articles per page",
     paginas: "Article pages",
+  },
+  paginacao: {
     pagina: (n) => `Page ${n}`,
     anterior: { antes: "← Previous ", oculto: "page", depois: "" },
     proxima: { antes: "Next ", oculto: "page", depois: " →" },
@@ -463,6 +516,8 @@ const en: Rotulos = {
     verTabela: (n) => `Show co-authorship table (${n})`,
     membro: "Member",
     artigosJuntos: "Joint articles",
+    porPagina: "Pairs per page",
+    paginas: "Co-authorship table pages",
   },
   mapa: {
     titulo: "Co-authors' countries",

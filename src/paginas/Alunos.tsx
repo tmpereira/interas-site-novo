@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import CabecalhoPagina from "@/components/CabecalhoPagina";
-import { alunosPorNivel, paginaPorSlug, type AlunoComOrientador } from "@/lib/consultas";
+import TabelaAlunos, { type ItemAluno } from "@/components/TabelaAlunos";
+import { alunosPorNivel, compararAlunos, paginaPorSlug, periodoAluno, type AlunoComOrientador } from "@/lib/consultas";
+import { compararTexto } from "@/lib/formatadores";
 import { markdownParaHtml } from "@/lib/markdown";
 import { metadadosPagina } from "@/lib/metadados";
 import { type Idioma, rota } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
-import type { Rotulos } from "@/lib/i18n/rotulos";
 
 export function metadados(idioma: Idioma): Metadata {
   const pagina = paginaPorSlug("alunos", idioma);
@@ -15,19 +15,32 @@ export function metadados(idioma: Idioma): Metadata {
 
 const emAndamento = (alunos: AlunoComOrientador[]) => alunos.filter((a) => a.situacao === "em-andamento").length;
 
-/** "2021–2024", "desde 2024", "2024" ou "—". */
-function periodo(a: AlunoComOrientador, r: Rotulos["alunos"]): string {
-  if (a.situacao === "em-andamento") return a.ano_inicio ? r.desde(a.ano_inicio) : "—";
-  if (a.ano_inicio && a.ano_conclusao && a.ano_inicio !== a.ano_conclusao) return `${a.ano_inicio}–${a.ano_conclusao}`;
-  return String(a.ano_conclusao ?? a.ano_inicio ?? "—");
-}
-
 export default function Alunos({ idioma }: { idioma: Idioma }) {
   const pagina = paginaPorSlug("alunos", idioma);
   const r = rotulos(idioma).alunos;
   const niveis = alunosPorNivel(idioma);
   const total = niveis.reduce((s, n) => s + n.alunos.length, 0);
   const totalAndamento = niveis.reduce((s, n) => s + emAndamento(n.alunos), 0);
+
+  // Lista única para a tabela paginada: em andamento primeiro, depois os mais recentes (todos os níveis)
+  const todos = niveis.flatMap((n) => n.alunos).sort(compararAlunos(idioma));
+  const itens: ItemAluno[] = todos.map((a) => ({
+    nome: a.nome,
+    nivel: a.nivel,
+    situacao: a.situacao,
+    periodo: periodoAluno(a, idioma),
+    instituicao: a.instituicao ?? null,
+    titulo: a.titulo ?? null,
+    coorientacao: a.coorientacao ?? null,
+    orientador: a.orientador,
+    orientadorNome: a.pessoaOrientadora.nome,
+    orientadorLink: rota("equipe", idioma, a.orientador),
+  }));
+  const ordemTexto = compararTexto(idioma);
+  const orientadores = [...new Map(todos.map((a) => [a.orientador, a.pessoaOrientadora.nome])).entries()]
+    .map(([slug, nome]) => ({ slug, nome }))
+    .sort((a, b) => ordemTexto(a.nome, b.nome));
+  const instituicoes = [...new Set(todos.map((a) => a.instituicao).filter((i): i is string => Boolean(i)))].sort(ordemTexto);
   return (
     <div className="pagina">
       <CabecalhoPagina caminho={rota("alunos", idioma)} titulo={pagina.titulo} descricao={pagina.descricao}>
@@ -72,46 +85,13 @@ export default function Alunos({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {niveis.map((n) => (
-        <section key={n.nivel} id={`alunos-${n.nivel}`} className="secao-alunos" aria-labelledby={`alunos-${n.nivel}-titulo`}>
-          <h2 id={`alunos-${n.nivel}-titulo`} className="secao-alunos__titulo">
-            {n.titulo} <span className="secao-alunos__contagem">({n.alunos.length})</span>
-          </h2>
-          <div className="tabela-alunos__rolagem">
-            <table className="tabela-alunos">
-              <thead>
-                <tr>
-                  <th scope="col">{r.nome}</th>
-                  <th scope="col">{r.orientacao}</th>
-                  <th scope="col">{r.situacao}</th>
-                  <th scope="col">{r.periodo}</th>
-                  <th scope="col">{r.instituicao}</th>
-                  <th scope="col">{r.tituloTrabalho}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {n.alunos.map((a, i) => (
-                  <tr key={`${a.nome}-${a.orientador}-${i}`}>
-                    <th scope="row" className="tabela-alunos__nome">{a.nome}</th>
-                    <td>
-                      <Link href={rota("equipe", idioma, a.orientador)}>{a.pessoaOrientadora.nome}</Link>
-                      {a.coorientacao && <span className="tabela-alunos__coorientacao">{r.coorientacao(a.coorientacao)}</span>}
-                    </td>
-                    <td>
-                      <span className={`situacao-aluno situacao-aluno--${a.situacao}`}>
-                        {a.situacao === "em-andamento" ? r.situacaoEmAndamento : r.situacaoConcluida}
-                      </span>
-                    </td>
-                    <td className="tabela-alunos__periodo">{periodo(a, r)}</td>
-                    <td>{a.instituicao ?? "—"}</td>
-                    <td className="tabela-alunos__titulo-trabalho">{a.titulo ?? "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      ))}
+      <TabelaAlunos
+        idioma={idioma}
+        itens={itens}
+        niveis={niveis.map((n) => ({ nivel: n.nivel, titulo: n.titulo }))}
+        orientadores={orientadores}
+        instituicoes={instituicoes}
+      />
     </div>
   );
 }

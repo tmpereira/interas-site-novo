@@ -199,7 +199,7 @@ $largura-coluna-imagem-pilar: 18rem;
 $largura-barra-categorias: 14rem;
 $largura-miniatura-noticia: 12rem;
 $tamanho-foto-destaque: 6rem;
-$tamanho-foto-cartao: 4rem;
+$tamanho-foto-cartao: 4.75rem; // 4rem × √1,4 (área +40%, pedido de 2026-11-09)
 $tamanho-foto-perfil: 11rem;
 $espessura-anel-foto: 3px;
 $tamanho-ponto: 0.5rem;
@@ -207,6 +207,7 @@ $tamanho-botao-play: 3.5rem;
 $largura-coluna-autores: 14rem;
 $largura-coluna-titulo-trabalho: 22rem; // título do trabalho na tabela de alunos
 $largura-minima-tabela-alunos: 56rem;
+$largura-filtro-alunos: 16rem;
 $largura-minima-espectro: 640px;
 $proporcao-hero: unquote("1024 / 804");
 $proporcao-pilar: unquote("4 / 3");

@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import { formatarCitacoes, formatarJcr, normalizarBusca } from "@/lib/formatadores";
 import type { Idioma } from "@/lib/i18n/rotas";
 import { rotulos } from "@/lib/i18n/rotulos";
+import Paginacao, { usePaginacao } from "./Paginacao";
 
 /** Dados de cada publicação enviados ao navegador. */
 export type ItemPublicacao = {
@@ -45,16 +46,6 @@ type Props = {
 /** Valor interno do filtro de colaboração internacional (o texto exibido vem dos rótulos). */
 const valorInternacional = (v: boolean | null) => (v === null ? "—" : v ? "Sim" : "Não");
 
-const OPCOES_POR_PAGINA = [10, 20, 50, 100];
-
-/** Páginas a mostrar na paginação: janela de 5 em volta da atual, mais a primeira e a última; "…" nos saltos. */
-function paginasVisiveis(atual: number, total: number): (number | "…")[] {
-  const inicio = Math.max(1, Math.min(atual - 2, total - 4));
-  const janela = Array.from({ length: Math.min(5, total) }, (_, i) => inicio + i);
-  const numeros = [...new Set([1, ...janela, total])].sort((a, b) => a - b);
-  return numeros.flatMap((n, i) => (i > 0 && n - numeros[i - 1] > 1 ? (["…", n] as const) : [n]));
-}
-
 /** Autores abreviados: os três primeiros e "et al." */
 const autoresCurtos = (autores: string[]) => (autores.length > 3 ? `${autores.slice(0, 3).join("; ")} et al.` : autores.join("; "));
 
@@ -76,10 +67,6 @@ export default function FiltroPublicacoes({ idioma, titulo, itens, grupos }: Pro
   const [minCitacoes, setMinCitacoes] = useState("");
   const [minImpacto, setMinImpacto] = useState("");
   const [abertos, setAbertos] = useState<Set<string>>(() => new Set());
-  const [porPagina, setPorPagina] = useState(OPCOES_POR_PAGINA[0]);
-  // A página volta para a 1 sempre que um filtro ou o tamanho da página muda
-  const chaveFiltros = JSON.stringify([busca, ano, grupo, qualis, internacional, minCitacoes, minImpacto, porPagina]);
-  const [estadoPagina, setEstadoPagina] = useState({ chave: chaveFiltros, pagina: 1 });
   const inicioLista = useRef<HTMLParagraphElement>(null);
   const alternar = (id: string) =>
     setAbertos((atual) => {
@@ -113,14 +100,11 @@ export default function FiltroPublicacoes({ idioma, titulo, itens, grupos }: Pro
       .sort((a, b) => b.data.localeCompare(a.data) || a.id.localeCompare(b.id));
   }, [itens, indiceBusca, busca, ano, grupo, qualis, internacional, minCitacoes, minImpacto]);
 
-  const totalPaginas = Math.max(1, Math.ceil(visiveis.length / porPagina));
-  const pagina = estadoPagina.chave === chaveFiltros ? Math.min(estadoPagina.pagina, totalPaginas) : 1;
-  const primeiro = (pagina - 1) * porPagina;
-  const daPagina = visiveis.slice(primeiro, primeiro + porPagina);
-  const irPara = (n: number) => {
-    setEstadoPagina({ chave: chaveFiltros, pagina: n });
-    inicioLista.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  // A página volta para a 1 sempre que um filtro muda
+  const chaveFiltros = JSON.stringify([busca, ano, grupo, qualis, internacional, minCitacoes, minImpacto]);
+  const { daPagina, primeiro, pagina, totalPaginas, porPagina, setPorPagina, irPara } = usePaginacao(visiveis, chaveFiltros, () =>
+    inicioLista.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
+  );
 
   const filtrando = Boolean(busca || ano || grupo || qualis || internacional || minCitacoes || minImpacto);
   const limpar = () => {
@@ -277,50 +261,16 @@ export default function FiltroPublicacoes({ idioma, titulo, itens, grupos }: Pro
       )}
 
       {visiveis.length > 0 && (
-        <div className="paginacao">
-          <label className="paginacao__por-pagina">
-            <span>{f.porPagina}</span>
-            <select value={porPagina} onChange={(e) => setPorPagina(Number(e.target.value))} className="filtro-publicacoes__entrada">
-              {OPCOES_POR_PAGINA.map((n) => (
-                <option key={n} value={n}>
-                  {n}
-                </option>
-              ))}
-            </select>
-          </label>
-          {totalPaginas > 1 && (
-            <nav className="paginacao__paginas" aria-label={f.paginas}>
-              <button type="button" className="paginacao__botao" disabled={pagina === 1} onClick={() => irPara(pagina - 1)}>
-                {f.anterior.antes}
-                <span className="somente-leitor">{f.anterior.oculto}</span>
-                {f.anterior.depois}
-              </button>
-              {paginasVisiveis(pagina, totalPaginas).map((n, i) =>
-                n === "…" ? (
-                  <span key={`salto-${i}`} className="paginacao__salto" aria-hidden="true">
-                    …
-                  </span>
-                ) : (
-                  <button
-                    key={n}
-                    type="button"
-                    className="paginacao__botao paginacao__botao--numero"
-                    aria-current={n === pagina ? "page" : undefined}
-                    aria-label={f.pagina(n)}
-                    onClick={() => irPara(n)}
-                  >
-                    {n}
-                  </button>
-                ),
-              )}
-              <button type="button" className="paginacao__botao" disabled={pagina === totalPaginas} onClick={() => irPara(pagina + 1)}>
-                {f.proxima.antes}
-                <span className="somente-leitor">{f.proxima.oculto}</span>
-                {f.proxima.depois}
-              </button>
-            </nav>
-          )}
-        </div>
+        <Paginacao
+          idioma={idioma}
+          pagina={pagina}
+          totalPaginas={totalPaginas}
+          porPagina={porPagina}
+          aoMudarPagina={irPara}
+          aoMudarPorPagina={setPorPagina}
+          rotuloPorPagina={f.porPagina}
+          rotuloPaginas={f.paginas}
+        />
       )}
     </div>
   );

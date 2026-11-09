@@ -1,7 +1,10 @@
-// Alunos: resumo por nível e uma tabela por nível (iniciação científica, mestrado...).
+// Alunos: resumo por nível e lista única paginada, com busca e filtros (TabelaAlunos.tsx).
+// Os controles de filtro e a paginação reaproveitam as classes de publicações.
 
 .secao-alunos {
   margin-top: $espaco-12;
+  // Folga extra além do scroll-padding geral: o cabeçalho com o aviso é mais alto que ele
+  scroll-margin-top: $espaco-8;
 
   h2#{&}__titulo {
     @include sobretitulo;
@@ -79,6 +82,10 @@
     font-variant-numeric: tabular-nums;
   }
 
+  &__nivel {
+    white-space: nowrap;
+  }
+
   &__periodo {
     font-family: $fonte-mono;
     white-space: nowrap;
@@ -112,5 +119,16 @@
   &--concluida {
     border: $borda;
     color: $cor-texto-suave;
+  }
+}
+
+// Orientador e instituição dividem a linha com a busca; nomes longos são cortados no seletor
+.secao-alunos .filtro-publicacoes__campo:not(.filtro-publicacoes__campo--busca) {
+  flex: 0 1 $largura-filtro-alunos;
+  min-width: 0;
+
+  select {
+    width: 100%;
+    text-overflow: ellipsis;
   }
 }
