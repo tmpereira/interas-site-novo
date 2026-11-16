@@ -3704,13 +3704,24 @@
       "fonte": "lattes-2026-11-09"
     },
     {
+      "nome": "Luiza Manso",
+      "orientador": "mario-olimpio-de-menezes",
+      "nivel": "mestrado",
+      "situacao": "em-andamento",
+      "titulo": "Segmentação Automática de Parede de Bexiga em Imagens CT mediante Arquitetura MH2AFormer com Active Learning para Melhoria da Dosimetria em Terapia Personalizada",
+      "ano_inicio": 2026,
+      "ano_conclusao": null,
+      "instituicao": "Universidade de São Paulo",
+      "fonte": "lattes-2026-11-16"
+    },
+    {
       "nome": "Gabriel da Silva Coelho",
       "orientador": "mario-olimpio-de-menezes",
       "nivel": "iniciacao-cientifica",
-      "situacao": "em-andamento",
+      "situacao": "concluida",
       "titulo": "Integração de Arduíno e Análise de Dados na avaliação da precisão de previsões meteorológicas e da percepção pública na cidade de são paulo",
       "ano_inicio": 2025,
-      "ano_conclusao": null,
+      "ano_conclusao": 2026,
       "instituicao": "Universidade Presbiteriana Mackenzie",
       "fonte": "lattes-2026-10-23"
     },
@@ -3867,6 +3878,17 @@
       "ano_conclusao": 2021,
       "instituicao": "Universidad Nacional de Córdoba - Argentina",
       "fonte": "lattes-2026-11-09"
+    },
+    {
+      "nome": "Tania Mateus Yoshimura",
+      "orientador": "martha-simoes-ribeiro",
+      "nivel": "pos-doutorado",
+      "situacao": "em-andamento",
+      "titulo": null,
+      "ano_inicio": 2023,
+      "ano_conclusao": null,
+      "instituicao": "Instituto de Pesquisas Energéticas e Nucleares",
+      "fonte": "lattes-2026-11-16"
     },
     {
       "nome": "Joselin Judith Meza Martínez",
@@ -4340,6 +4362,17 @@
       "ano_conclusao": 2022,
       "instituicao": "Universidade de São Paulo",
       "fonte": "lattes-2026-11-09"
+    },
+    {
+      "nome": "Marcus Vinicius Catarina",
+      "orientador": "niklaus-ursus-wetter",
+      "nivel": "mestrado",
+      "situacao": "em-andamento",
+      "titulo": "Desenvolvimento de um oscilador mestre para um sistema laser de alta energia operando no regime de subnanossegundo para uso em remoção de tatuagens",
+      "ano_inicio": 2021,
+      "ano_conclusao": null,
+      "instituicao": "Universidade de São Paulo",
+      "fonte": "lattes-2026-11-16"
     },
     {
       "nome": "Teresa Cristina Cavalcanti Soares",
@@ -5607,6 +5640,17 @@
       "fonte": "lattes-2026-11-09"
     },
     {
+      "nome": "Octavio Xavier Furio",
+      "orientador": "joaquim-cezar-felipe",
+      "nivel": "iniciacao-cientifica",
+      "situacao": "em-andamento",
+      "titulo": "Ferramenta computacional baseada em aprendizado profundo para detecção de ateromas carotídeos em radiografias panorâmicas da região bucomaxilofacial",
+      "ano_inicio": 2026,
+      "ano_conclusao": null,
+      "instituicao": "Faculdade de Filosofia",
+      "fonte": "lattes-2026-11-16"
+    },
+    {
       "nome": "Juliana Mota Siqueira",
       "orientador": "leandro-luongo-de-matos",
       "nivel": "pos-doutorado",
@@ -6523,10 +6567,10 @@
       "nome": "Júlia Campos Andrade dos Santos",
       "orientador": "patricia-aparecida-da-ana",
       "nivel": "iniciacao-cientifica",
-      "situacao": "em-andamento",
+      "situacao": "concluida",
       "titulo": "Durabilidade dos efeitos do laser de Nd:YAG Q-switched na prevenção da cárie",
       "ano_inicio": 2025,
-      "ano_conclusao": null,
+      "ano_conclusao": 2026,
       "instituicao": "Universidade Federal do ABC",
       "fonte": "lattes-2026-10-23"
     },
@@ -6551,6 +6595,39 @@
       "ano_conclusao": 2021,
       "instituicao": "Universidade Federal do ABC",
       "fonte": "lattes-2026-11-09"
+    },
+    {
+      "nome": "Sofia Antonello Rhoden",
+      "orientador": "patricia-aparecida-da-ana",
+      "nivel": "iniciacao-cientifica",
+      "situacao": "em-andamento",
+      "titulo": "Reticulação de gelatina com LEDs vermelho e azul",
+      "ano_inicio": 2026,
+      "ano_conclusao": null,
+      "instituicao": "Universidade Federal do ABC",
+      "fonte": "lattes-2026-11-16"
+    },
+    {
+      "nome": "Karolinne Ribeiro de Moura",
+      "orientador": "patricia-aparecida-da-ana",
+      "nivel": "iniciacao-cientifica",
+      "situacao": "em-andamento",
+      "titulo": "Reticulação da gelatina com LEDS azul e vermelho",
+      "ano_inicio": 2026,
+      "ano_conclusao": null,
+      "instituicao": "Universidade Federal do ABC",
+      "fonte": "lattes-2026-11-16"
+    },
+    {
+      "nome": "Luca Gomes Messias",
+      "orientador": "patricia-aparecida-da-ana",
+      "nivel": "iniciacao-cientifica",
+      "situacao": "em-andamento",
+      "titulo": "Efeitos prolongados do laser de Nd:YAG Q-switched na prevenção da cárie de esmalte",
+      "ano_inicio": 2026,
+      "ano_conclusao": null,
+      "instituicao": "Universidade Federal do ABC",
+      "fonte": "lattes-2026-11-16"
     },
     {
       "nome": "ELOAH DA SILVA ALMEIDA",
